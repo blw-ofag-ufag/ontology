@@ -1,2 +1,5 @@
-# ontology
-A proof-of-concept ontology for the Swiss agricultural and food sector
+# A proof-of-concept ontology for the Swiss agricultural and food sector
+
+Ontology, derived from the Greek words *Onto* (existence or being real) and *Logia* (science or study), is a term that explores the nature of being and existence. In a philosophical context, ontology asks the fundamental questions about what truly exists and what is real. Philosophers use ontology to build theories and models that help them understand the world's foundational components and how they relate to each other. For example, they might ask whether physical objects like shoes are more real than immaterial concepts like walking, or explore the relationship between tangible items and the actions associated with them.
+
+In non-philosophical contexts -- especially in information theory -- ontology takes on a more specialized meaning. Here, it refers to the description of what exists within a specific field, including the relationships and hierarchies between its parts. Researchers focus on naming parts and processes and grouping similar ones into categories, rather than debating their true essence or reality. They aim to systematically organize knowledge within a domain to facilitate understanding and communication.
