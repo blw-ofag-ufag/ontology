@@ -56,7 +56,7 @@ An ontology takes things even further than terminologies, taxonomies, and thesau
 
 ## What is the difference between ontologies and knowledge graphs?
 
-Knowledge graphs are closely related to ontologies. To better understand the separating line, we’ll have to understand the distinction between **objects** and **concepts**. The difference is not neat, but generally, some elements are called concepts because they usually represent abstract objects and not specified, real-world concepts. For example, the concept *cow* (`http://aims.fao.org/aos/agrovoc/c_1939`) does not represent a specific cow, but rather the general category of cows (Stellato, [2012](https://doi.org/10.1016/S2095-3119(12)60060-4)). While knowledge graphs (may) include objects and their relationships, ontologies only include concepts and their relationships.
+Knowledge graphs are closely related to ontologies. To better understand the separating line, we’ll have to understand the distinction between **objects** and **concepts**. The difference is not neat, but generally, some elements are called concepts because they usually represent abstract objects and not specified, real-world concepts. For example, the concept *cow* (`http://aims.fao.org/aos/agrovoc/c_1939`) does not represent a specific cow, but rather the general category of cows ([Stellato, 2012](https://doi.org/10.1016/S2095-3119(12)60060-4)). While knowledge graphs (may) include objects and their relationships, ontologies only include concepts and their relationships.
 
 # One-sentence description of (somewhat) related concepts
 
@@ -82,3 +82,7 @@ Knowledge graphs are closely related to ontologies. To better understand the sep
 | **Conceptual Model** | A representation of concepts and their relationships within a system or domain. |
 | **Logic Model** | A visual or narrative depiction of the relationships between activities, outputs, and outcomes. |
 | **Standardization** | The process of implementing and developing technical standards to ensure consistency. |
+| **Master data** | Information about core entities such as customers, products, employees, or suppliers, consistently used across an organization. |
+| **Reference data** | Standardized data used to categorize or classify other data within systems, often including codes like country codes or currency codes. |
+| **Namespace** | A container or context that holds a set of identifiers, ensuring names are unique and unambiguous within a particular scope or system. |
+| **Semantic web** | An extension of the World Wide Web enabling machines to understand and interpret data through standardized formats, promoting data sharing and reuse. |
