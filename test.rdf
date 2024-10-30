@@ -1,18 +1,39 @@
-@prefix ex: <http://example.org/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ex: <http://example.org/ppp#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w3: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-# Define a Book resource
-ex:Book1 a dcterms:BibliographicResource ;
-    dcterms:title "Learning RDF Basics" ;
-    dcterms:creator ex:Author1 ;
-    dcterms:date "2023-01-01"^^xsd:date .
+# Define the top-level category (already defined in your code)
+ex:ProductCategory a rdfs:Class ;
+    rdfs:label "Product Category" .
 
-# Define the Author resource
-ex:Author1 a foaf:Person ;
-    foaf:name "Alice Smith" ;
-    foaf:mbox <mailto:alice@example.org> .
+# Chemicals and Herbicides category (already defined in your code)
+ex:Chemicals a ex:ProductCategory ;
+    rdfs:label "Chemicals" ;
+    rdfs:subClassOf ex:ProductCategory .
 
-# Additional relationship between the Author and the Book
-ex:Author1 foaf:made ex:Book1 .
+ex:Herbicides a ex:Chemicals ;
+    rdfs:label "Herbicides" ;
+    rdfs:subClassOf ex:Chemicals .
+
+# Define Roundup PowerFlex as an instance of Herbicides
+ex:RoundupPowerFlex a ex:Herbicides ;
+    rdfs:label "Roundup PowerFlex" ;
+    ex:soldBy ex:BayerAG ;
+    ex:containsActiveIngredient ex:Glyphosate_35_74_Percent ;
+    ex:allowedOn ex:Meadows .
+
+# Define Bayer AG as the manufacturer
+ex:BayerAG a ex:Company ;
+    rdfs:label "Bayer AG" .
+
+# Define Glyphosate as an active ingredient with specific concentration
+ex:Glyphosate_35_74_Percent a ex:ActiveIngredient ;
+    rdfs:label "Glyphosate (35.74% or 480 g/l)" ;
+    ex:concentration "35.74%"^^xsd:string ;
+    ex:concentrationPerLiter "480 g/l"^^xsd:string .
+
+# Define Meadows as an allowed application area
+ex:Meadows a ex:ApplicationArea ;
+    rdfs:label "Meadows" .
