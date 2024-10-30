@@ -1,0 +1,17 @@
+@prefix ex: <http://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+# Define a Book resource
+ex:Book1 a dcterms:BibliographicResource ;
+    dcterms:title "Learning RDF Basics" ;
+    dcterms:creator ex:Author1 ;
+    dcterms:date "2023-01-01"^^xsd:date .
+
+# Define the Author resource
+ex:Author1 a foaf:Person ;
+    foaf:name "Alice Smith" ;
+    foaf:mbox <mailto:alice@example.org> .
+
+# Additional relationship between the Author and the Book
+ex:Author1 foaf:made ex:Book1 .
