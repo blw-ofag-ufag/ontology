@@ -1,0 +1,46 @@
+@prefix : <http://example.com/agriculture#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Ontology Declaration
+<http://example.com/agriculture> a owl:Ontology ;
+    rdfs:comment "An example ontology for basic agricultural concepts." .
+
+# Classes
+:class a owl:Class ;
+    rdfs:label "Crop" ;
+    rdfs:comment "A type of plant cultivated for food, feed or other uses." .
+
+:Fertilizer a owl:Class ;
+    rdfs:label "Fertilizer" ;
+    rdfs:comment "A substance added to soil to enhance plant growth." .
+
+:FarmingTechnique a owl:Class ;
+    rdfs:label "Farming Technique" ;
+    rdfs:comment "A method used in cultivating crops." .
+
+# Subclasses (taxonomies)
+:OrganicFertilizer a owl:Class ;
+    rdfs:label "Organic Fertilizer" ;
+    rdfs:subClassOf :Fertilizer ;
+    rdfs:comment "A type of fertilizer derived from organic sources." .
+
+:InorganicFertilizer a owl:Class ;
+    rdfs:label "Inorganic Fertilizer" ;
+    rdfs:subClassOf :Fertilizer ;
+    rdfs:comment "A type of fertilizer made from synthetic materials." .
+
+# Object Properties
+:appliedTo a owl:ObjectProperty ;
+    rdfs:label "applied to" ;
+    rdfs:domain :Fertilizer ;
+    rdfs:range :Crop ;
+    rdfs:comment "A relationship indicating which crop the fertilizer is applied to." .
+
+:usesTechnique a owl:ObjectProperty ;
+    rdfs:label "uses technique" ;
+    rdfs:domain :Crop ;
+    rdfs:range :FarmingTechnique ;
+    rdfs:comment "A relationship indicating which farming technique is used on the crop." .
