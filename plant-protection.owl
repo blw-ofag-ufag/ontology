@@ -327,10 +327,16 @@
     rdfs:domain :AuthorizedUsage ;
     rdfs:range :TimeFrame .
 
-# Declare wd:Q16521 as a class (optional but clarifies its use)
+# Declare wd:Q16521 as a class with multilingual labels and comments
 wd:Q16521 a owl:Class ;
     rdfs:label "Taxon"@en ;
-    rdfs:comment "A taxonomic group of any rank."@en .
+    rdfs:label "Taxon"@de ;
+    rdfs:label "Taxon"@fr ;
+    rdfs:label "Taxon"@it ;
+    rdfs:comment "A taxonomic group of any rank."@en ;
+    rdfs:comment "Eine taxonomische Gruppe beliebigen Ranges."@de ;
+    rdfs:comment "Un groupe taxonomique de n'importe quel rang."@fr ;
+    rdfs:comment "Un gruppo tassonomico di qualsiasi rango."@it .
 
 # Update the property to :relatesToTaxon
 :relatesToTaxon a owl:ObjectProperty ;
