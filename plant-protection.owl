@@ -351,3 +351,334 @@ wd:Q16521 a owl:Class ;
     rdfs:domain [ a owl:Class ;
                   owl:unionOf ( :Crop :Pest :Product ) ] ;
     rdfs:range wd:Q16521 .
+
+# Add a taxonomy for products (essentially a better version of https://www.psm.admin.ch/de/kategorien)
+:Pesticide a owl:Class ;
+    rdfs:label "Pesticide"@en ;
+    rdfs:label "Pestizid"@de ;
+    rdfs:label "Pesticide"@fr ;
+    rdfs:label "Pesticida"@it ;
+    rdfs:comment "A substance used to kill, repel, or control pests that are considered harmful to plants."@en ;
+    rdfs:comment "Eine Substanz, die verwendet wird, um Schädlinge zu töten, abzuwehren oder zu kontrollieren, die als schädlich für Pflanzen gelten."@de ;
+    rdfs:comment "Une substance utilisée pour tuer, repousser ou contrôler les nuisibles considérés comme nuisibles aux plantes."@fr ;
+    rdfs:comment "Una sostanza utilizzata per uccidere, respingere o controllare parassiti considerati dannosi per le piante."@it ;
+    rdfs:subClassOf :Product .
+# Acaricide Class
+:Acaricide a owl:Class ;
+    rdfs:label "Acaricide"@en ;
+    rdfs:label "Akarizid"@de ;
+    rdfs:label "Acaricide"@fr ;
+    rdfs:label "Acaricida"@it ;
+    rdfs:comment "A pesticide that kills mites and ticks."@en ;
+    rdfs:comment "Ein Pestizid, das Milben und Zecken tötet."@de ;
+    rdfs:comment "Un pesticide qui tue les acariens et les tiques."@fr ;
+    rdfs:comment "Un pesticida che uccide acari e zecche."@it ;
+    rdfs:subClassOf :Pesticide .
+# Bactericide Class
+:Bactericide a owl:Class ;
+    rdfs:label "Bactericide"@en ;
+    rdfs:label "Bakterizid"@de ;
+    rdfs:label "Bactéricide"@fr ;
+    rdfs:label "Battericida"@it ;
+    rdfs:comment "A substance that kills bacteria."@en ;
+    rdfs:comment "Eine Substanz, die Bakterien tötet."@de ;
+    rdfs:comment "Une substance qui tue les bactéries."@fr ;
+    rdfs:comment "Una sostanza che uccide i batteri."@it ;
+    rdfs:subClassOf :Pesticide .
+# Fungicide Class
+:Fungicide a owl:Class ;
+    rdfs:label "Fungicide"@en ;
+    rdfs:label "Fungizid"@de ;
+    rdfs:label "Fongicide"@fr ;
+    rdfs:label "Fungicida"@it ;
+    rdfs:comment "A chemical compound or biological organism used to kill or inhibit fungi or fungal spores."@en ;
+    rdfs:comment "Eine chemische Verbindung oder ein biologischer Organismus, der verwendet wird, um Pilze oder Pilzsporen zu töten oder zu hemmen."@de ;
+    rdfs:comment "Un composé chimique ou un organisme biologique utilisé pour tuer ou inhiber les champignons ou les spores fongiques."@fr ;
+    rdfs:comment "Un composto chimico o un organismo biologico utilizzato per uccidere o inibire funghi o spore fungine."@it ;
+    rdfs:subClassOf :Pesticide .
+# Herbicide Class
+:Herbicide a owl:Class ;
+    rdfs:label "Herbicide"@en ;
+    rdfs:label "Herbizid"@de ;
+    rdfs:label "Herbicide"@fr ;
+    rdfs:label "Erbicida"@it ;
+    rdfs:comment "A substance that is toxic to plants and is used to destroy unwanted vegetation."@en ;
+    rdfs:comment "Eine Substanz, die für Pflanzen giftig ist und verwendet wird, um unerwünschte Vegetation zu zerstören."@de ;
+    rdfs:comment "Une substance toxique pour les plantes utilisée pour détruire la végétation indésirable."@fr ;
+    rdfs:comment "Una sostanza tossica per le piante utilizzata per distruggere la vegetazione indesiderata."@it ;
+    rdfs:subClassOf :Pesticide .
+# Insecticide Class
+:Insecticide a owl:Class ;
+    rdfs:label "Insecticide"@en ;
+    rdfs:label "Insektizid"@de ;
+    rdfs:label "Insecticide"@fr ;
+    rdfs:label "Insetticida"@it ;
+    rdfs:comment "A substance used to kill insects."@en ;
+    rdfs:comment "Eine Substanz, die verwendet wird, um Insekten zu töten."@de ;
+    rdfs:comment "Une substance utilisée pour tuer les insectes."@fr ;
+    rdfs:comment "Una sostanza utilizzata per uccidere gli insetti."@it ;
+    rdfs:subClassOf :Pesticide .
+# Insect Attractant/Pheromone Class
+:InsectAttractantPheromone a owl:Class ;
+    rdfs:label "Insect Attractant (Pheromone)"@en ;
+    rdfs:label "Insektenlockstoff (Pheromon)"@de ;
+    rdfs:label "Attractif pour insectes (Phéromone)"@fr ;
+    rdfs:label "Attrattivo per insetti (Feromone)"@it ;
+    rdfs:comment "Substances that mimic insect pheromones to attract insects for trapping or monitoring."@en ;
+    rdfs:comment "Substanzen, die Insektenpheromone imitieren, um Insekten zum Einfangen oder Überwachen anzulocken."@de ;
+    rdfs:comment "Substances qui imitent les phéromones d'insectes pour attirer les insectes pour la capture ou la surveillance."@fr ;
+    rdfs:comment "Sostanze che imitano i feromoni degli insetti per attirare gli insetti per intrappolarli o monitorarli."@it ;
+    rdfs:subClassOf :Insecticide .
+# Insecticide Soap Class
+:InsecticideSoap a owl:Class ;
+    rdfs:label "Insecticide (Soap Preparation)"@en ;
+    rdfs:label "Insektizid (Seifenpräparat)"@de ;
+    rdfs:label "Insecticide (Préparation savonneuse)"@fr ;
+    rdfs:label "Insetticida (Preparato a base di sapone)"@it ;
+    rdfs:comment "Soap-based insecticides used to control soft-bodied insects."@en ;
+    rdfs:comment "Seifenbasierte Insektizide zur Bekämpfung weichhäutiger Insekten."@de ;
+    rdfs:comment "Insecticides à base de savon utilisés pour contrôler les insectes à corps mou."@fr ;
+    rdfs:comment "Insetticidi a base di sapone utilizzati per controllare insetti a corpo molle."@it ;
+    rdfs:subClassOf :Insecticide .
+# Molluscicide Class
+:Molluscicide a owl:Class ;
+    rdfs:label "Molluscicide"@en ;
+    rdfs:label "Molluskizid"@de ;
+    rdfs:label "Molluscicide"@fr ;
+    rdfs:label "Molluschicida"@it ;
+    rdfs:comment "A substance used to kill mollusks such as snails and slugs."@en ;
+    rdfs:comment "Eine Substanz, die verwendet wird, um Mollusken wie Schnecken zu töten."@de ;
+    rdfs:comment "Une substance utilisée pour tuer les mollusques comme les escargots et les limaces."@fr ;
+    rdfs:comment "Una sostanza utilizzata per uccidere molluschi come lumache e chiocciole."@it ;
+    rdfs:subClassOf :Pesticide .
+# Nematicide Class
+:Nematicide a owl:Class ;
+    rdfs:label "Nematicide"@en ;
+    rdfs:label "Nematizid"@de ;
+    rdfs:label "Nématicide"@fr ;
+    rdfs:label "Nematicida"@it ;
+    rdfs:comment "A chemical pesticide used to kill parasitic nematodes."@en ;
+    rdfs:comment "Ein chemisches Pestizid, das verwendet wird, um parasitäre Nematoden zu töten."@de ;
+    rdfs:comment "Un pesticide chimique utilisé pour tuer les nématodes parasites."@fr ;
+    rdfs:comment "Un pesticida chimico utilizzato per uccidere nematodi parassiti."@it ;
+    rdfs:subClassOf :Pesticide .
+# Rodenticide Class
+:Rodenticide a owl:Class ;
+    rdfs:label "Rodenticide"@en ;
+    rdfs:label "Rodentizid"@de ;
+    rdfs:label "Raticide"@fr ;
+    rdfs:label "Rodenticida"@it ;
+    rdfs:comment "A poison used to kill rodents."@en ;
+    rdfs:comment "Ein Gift, das verwendet wird, um Nagetiere zu töten."@de ;
+    rdfs:comment "Un poison utilisé pour tuer les rongeurs."@fr ;
+    rdfs:comment "Un veleno utilizzato per uccidere i roditori."@it ;
+    rdfs:subClassOf :Pesticide .
+# Viricide Class
+:Viricide a owl:Class ;
+    rdfs:label "Viricide"@en ;
+    rdfs:label "Virizid"@de ;
+    rdfs:label "Virucide"@fr ;
+    rdfs:label "Virucida"@it ;
+    rdfs:comment "An agent that deactivates or destroys viruses."@en ;
+    rdfs:comment "Ein Mittel, das Viren deaktiviert oder zerstört."@de ;
+    rdfs:comment "Un agent qui désactive ou détruit les virus."@fr ;
+    rdfs:comment "Un agente che disattiva o distrugge i virus."@it ;
+    rdfs:subClassOf :Pesticide .
+# Biological Control Agent Class
+:BiologicalControlAgent a owl:Class ;
+    rdfs:label "Biological Control Agent"@en ;
+    rdfs:label "Lebender Organismus"@de ;
+    rdfs:label "Agent de lutte biologique"@fr ;
+    rdfs:label "Agente di controllo biologico"@it ;
+    rdfs:comment "Living organisms used to control pests and diseases."@en ;
+    rdfs:comment "Lebende Organismen, die zur Bekämpfung von Schädlingen und Krankheiten eingesetzt werden."@de ;
+    rdfs:comment "Organismes vivants utilisés pour lutter contre les ravageurs et les maladies."@fr ;
+    rdfs:comment "Organismi viventi utilizzati per controllare parassiti e malattie."@it ;
+    rdfs:subClassOf :Product .
+# Biological Control Agent Class
+:BiologicalControlAgent a owl:Class ;
+    rdfs:label "Biological Control Agent"@en ;
+    rdfs:label "Lebender Organismus"@de ;
+    rdfs:label "Agent de lutte biologique"@fr ;
+    rdfs:label "Agente di controllo biologico"@it ;
+    rdfs:comment "Living organisms used to control pests and diseases."@en ;
+    rdfs:comment "Lebende Organismen, die zur Bekämpfung von Schädlingen und Krankheiten eingesetzt werden."@de ;
+    rdfs:comment "Organismes vivants utilisés pour lutter contre les ravageurs et les maladies."@fr ;
+    rdfs:comment "Organismi viventi utilizzati per controllare parassiti e malattie."@it ;
+    rdfs:subClassOf :Product .
+# Biological Control Agent - Bacteria
+:BCA_Bacteria a owl:Class ;
+    rdfs:label "Biological Control Agent (Bacteria)"@en ;
+    rdfs:label "Lebender Organismus (Bakterien)"@de ;
+    rdfs:label "Agent de lutte biologique (Bactéries)"@fr ;
+    rdfs:label "Agente di controllo biologico (Batteri)"@it ;
+    rdfs:comment "Bacterial organisms used as biological control agents."@en ;
+    rdfs:comment "Bakterielle Organismen, die als biologische Kontrollagenten verwendet werden."@de ;
+    rdfs:comment "Organismes bactériens utilisés comme agents de lutte biologique."@fr ;
+    rdfs:comment "Organismi batterici utilizzati come agenti di controllo biologico."@it ;
+    rdfs:subClassOf :BiologicalControlAgent .
+# Biological Control Agent - Fungi
+:BCA_Fungi a owl:Class ;
+    rdfs:label "Biological Control Agent (Fungi)"@en ;
+    rdfs:label "Lebender Organismus (Pilze)"@de ;
+    rdfs:label "Agent de lutte biologique (Champignons)"@fr ;
+    rdfs:label "Agente di controllo biologico (Funghi)"@it ;
+    rdfs:comment "Fungal organisms used as biological control agents."@en ;
+    rdfs:comment "Pilzorganismen, die als biologische Kontrollagenten verwendet werden."@de ;
+    rdfs:comment "Organismes fongiques utilisés comme agents de lutte biologique."@fr ;
+    rdfs:comment "Organismi fungini utilizzati come agenti di controllo biologico."@it ;
+    rdfs:subClassOf :BiologicalControlAgent .
+# Biological Control Agent - Insects
+:BCA_Insects a owl:Class ;
+    rdfs:label "Biological Control Agent (Insects)"@en ;
+    rdfs:label "Lebender Organismus (Insekten)"@de ;
+    rdfs:label "Agent de lutte biologique (Insectes)"@fr ;
+    rdfs:label "Agente di controllo biologico (Insetti)"@it ;
+    rdfs:comment "Insect organisms used as biological control agents."@en ;
+    rdfs:comment "Insektenorganismen, die als biologische Kontrollagenten verwendet werden."@de ;
+    rdfs:comment "Organismes d'insectes utilisés comme agents de lutte biologique."@fr ;
+    rdfs:comment "Organismi insetti utilizzati come agenti di controllo biologico."@it ;
+    rdfs:subClassOf :BiologicalControlAgent .
+# Biological Control Agent - Insect Viruses
+:BCA_InsectViruses a owl:Class ;
+    rdfs:label "Biological Control Agent (Insect Viruses)"@en ;
+    rdfs:label "Lebender Organismus (Insektenviren)"@de ;
+    rdfs:label "Agent de lutte biologique (Virus d'insectes)"@fr ;
+    rdfs:label "Agente di controllo biologico (Virus degli insetti)"@it ;
+    rdfs:comment "Viral agents used to control insect populations."@en ;
+    rdfs:comment "Virale Agenten, die zur Kontrolle von Insektenpopulationen verwendet werden."@de ;
+    rdfs:comment "Agents viraux utilisés pour contrôler les populations d'insectes."@fr ;
+    rdfs:comment "Agenti virali utilizzati per controllare le popolazioni di insetti."@it ;
+    rdfs:subClassOf :BiologicalControlAgent .
+# Biological Control Agent - Mites
+:BCA_Mites a owl:Class ;
+    rdfs:label "Biological Control Agent (Mites)"@en ;
+    rdfs:label "Lebender Organismus (Milben)"@de ;
+    rdfs:label "Agent de lutte biologique (Acariens)"@fr ;
+    rdfs:label "Agente di controllo biologico (Acaro)"@it ;
+    rdfs:comment "Mite organisms used as biological control agents."@en ;
+    rdfs:comment "Milbenorganismen, die als biologische Kontrollagenten verwendet werden."@de ;
+    rdfs:comment "Organismes d'acariens utilisés comme agents de lutte biologique."@fr ;
+    rdfs:comment "Organismi acari utilizzati come agenti di controllo biologico."@it ;
+    rdfs:subClassOf :BiologicalControlAgent .
+# Biological Control Agent - Nematodes
+:BCA_Nematodes a owl:Class ;
+    rdfs:label "Biological Control Agent (Nematodes)"@en ;
+    rdfs:label "Lebender Organismus (Nematoden)"@de ;
+    rdfs:label "Agent de lutte biologique (Nématodes)"@fr ;
+    rdfs:label "Agente di controllo biologico (Nematodi)"@it ;
+    rdfs:comment "Nematode organisms used as biological control agents."@en ;
+    rdfs:comment "Nematodenorganismen, die als biologische Kontrollagenten verwendet werden."@de ;
+    rdfs:comment "Organismes de nématodes utilisés comme agents de lutte biologique."@fr ;
+    rdfs:comment "Organismi nematodi utilizzati come agenti di controllo biologico."@it ;
+    rdfs:subClassOf :BiologicalControlAgent .
+# Biological Control Agent - Against Fungi
+:BCA_AgainstFungi a owl:Class ;
+    rdfs:label "Biological Control Agent (Against Fungi)"@en ;
+    rdfs:label "Lebender Organismus (gegen Pilze)"@de ;
+    rdfs:label "Agent de lutte biologique (contre les champignons)"@fr ;
+    rdfs:label "Agente di controllo biologico (contro i funghi)"@it ;
+    rdfs:comment "Biological agents used specifically against fungal pathogens."@en ;
+    rdfs:comment "Biologische Agenten, die speziell gegen Pilzpathogene eingesetzt werden."@de ;
+    rdfs:comment "Agents biologiques utilisés spécifiquement contre les agents pathogènes fongiques."@fr ;
+    rdfs:comment "Agenti biologici utilizzati specificamente contro i patogeni fungini."@it ;
+    rdfs:subClassOf :BiologicalControlAgent .
+# Disinfectant Class
+:Disinfectant a owl:Class ;
+    rdfs:label "Disinfectant"@en ;
+    rdfs:label "Desinfektionsmittel"@de ;
+    rdfs:label "Désinfectant"@fr ;
+    rdfs:label "Disinfettante"@it ;
+    rdfs:comment "A chemical agent used to destroy or inhibit the growth of harmful microorganisms."@en ;
+    rdfs:comment "Ein chemisches Mittel, das verwendet wird, um schädliche Mikroorganismen zu zerstören oder ihr Wachstum zu hemmen."@de ;
+    rdfs:comment "Un agent chimique utilisé pour détruire ou inhiber la croissance des micro-organismes nuisibles."@fr ;
+    rdfs:comment "Un agente chimico utilizzato per distruggere o inibire la crescita di microrganismi dannosi."@it ;
+    rdfs:subClassOf :Product .
+# Adjuvant Class
+:Adjuvant a owl:Class ;
+    rdfs:label "Adjuvant"@en ;
+    rdfs:label "Netz- und Haftmittel"@de ;
+    rdfs:label "Adjuvant"@fr ;
+    rdfs:label "Adiuvante"@it ;
+    rdfs:comment "Substances added to pesticides to enhance their effectiveness."@en ;
+    rdfs:comment "Substanzen, die Pestiziden zugesetzt werden, um ihre Wirksamkeit zu erhöhen."@de ;
+    rdfs:comment "Substances ajoutées aux pesticides pour améliorer leur efficacité."@fr ;
+    rdfs:comment "Sostanze aggiunte ai pesticidi per migliorarne l'efficacia."@it ;
+    rdfs:subClassOf :Product .
+# Wetting and Adhesive Agents Class
+:WettingAndAdhesiveAgent a owl:Class ;
+    rdfs:label "Wetting and Adhesive Agent"@en ;
+    rdfs:label "Netz- und Haftmittel"@de ;
+    rdfs:label "Agent mouillant et adhésif"@fr ;
+    rdfs:label "Agente bagnante e adesivo"@it ;
+    rdfs:comment "Adjuvants that improve the spreading and sticking of pesticides on plant surfaces."@en ;
+    rdfs:comment "Hilfsstoffe, die das Verbreiten und Haften von Pestiziden auf Pflanzenoberflächen verbessern."@de ;
+    rdfs:comment "Adjuvants qui améliorent la répartition et l'adhérence des pesticides sur les surfaces des plantes."@fr ;
+    rdfs:comment "Adiuvanti che migliorano la distribuzione e l'adesione dei pesticidi sulle superfici delle piante."@it ;
+    rdfs:subClassOf :Adjuvant .
+# Plant Growth Regulator Class
+:PlantGrowthRegulator a owl:Class ;
+    rdfs:label "Plant Growth Regulator"@en ;
+    rdfs:label "Pflanzenwachstumsregulator"@de ;
+    rdfs:label "Régulateur de croissance des plantes"@fr ;
+    rdfs:label "Regolatore di crescita delle piante"@it ;
+    rdfs:comment "Substances that influence the growth and development of plants."@en ;
+    rdfs:comment "Substanzen, die das Wachstum und die Entwicklung von Pflanzen beeinflussen."@de ;
+    rdfs:comment "Substances qui influencent la croissance et le développement des plantes."@fr ;
+    rdfs:comment "Sostanze che influenzano la crescita e lo sviluppo delle piante."@it ;
+    rdfs:subClassOf :Product .
+# Seed Treatment Class
+:SeedTreatment a owl:Class ;
+    rdfs:label "Seed Treatment"@en ;
+    rdfs:label "Saatbeizmittel"@de ;
+    rdfs:label "Traitement des semences"@fr ;
+    rdfs:label "Trattamento delle sementi"@it ;
+    rdfs:comment "Products applied to seeds before planting to protect them from pests and diseases."@en ;
+    rdfs:comment "Produkte, die vor der Aussaat auf Samen aufgebracht werden, um sie vor Schädlingen und Krankheiten zu schützen."@de ;
+    rdfs:comment "Produits appliqués aux semences avant la plantation pour les protéger des ravageurs et des maladies."@fr ;
+    rdfs:comment "Prodotti applicati ai semi prima della semina per proteggerli da parassiti e malattie."@it ;
+    rdfs:subClassOf :Product .
+# Defense Stimulator Class
+:DefenseStimulator a owl:Class ;
+    rdfs:label "Stimulator of Natural Defenses"@en ;
+    rdfs:label "Stimulator der natürlichen Abwehrkräfte"@de ;
+    rdfs:label "Stimulateur des défenses naturelles"@fr ;
+    rdfs:label "Stimolatore delle difese naturali"@it ;
+    rdfs:comment "Products that enhance the natural defense mechanisms of plants."@en ;
+    rdfs:comment "Produkte, die die natürlichen Abwehrmechanismen von Pflanzen verstärken."@de ;
+    rdfs:comment "Produits qui renforcent les mécanismes de défense naturels des plantes."@fr ;
+    rdfs:comment "Prodotti che potenziano i meccanismi di difesa naturali delle piante."@it ;
+    rdfs:subClassOf :Product .
+# Storage Protection Agent Class
+:StorageProtectionAgent a owl:Class ;
+    rdfs:label "Storage Protection Agent"@en ;
+    rdfs:label "Vorratsschutzmittel"@de ;
+    rdfs:label "Agent de protection des stocks"@fr ;
+    rdfs:label "Agente di protezione delle scorte"@it ;
+    rdfs:comment "Products used to protect stored agricultural products from pests."@en ;
+    rdfs:comment "Produkte, die verwendet werden, um gelagerte landwirtschaftliche Produkte vor Schädlingen zu schützen."@de ;
+    rdfs:comment "Produits utilisés pour protéger les produits agricoles stockés contre les ravageurs."@fr ;
+    rdfs:comment "Prodotti utilizzati per proteggere i prodotti agricoli immagazzinati dai parassiti."@it ;
+    rdfs:subClassOf :Product .
+# Wildlife Repellent Class
+:WildlifeRepellent a owl:Class ;
+    rdfs:label "Wildlife Repellent"@en ;
+    rdfs:label "Wildabhaltemittel"@de ;
+    rdfs:label "Répulsif pour animaux sauvages"@fr ;
+    rdfs:label "Repellente per animali selvatici"@it ;
+    rdfs:comment "Products used to deter wild animals from damaging crops."@en ;
+    rdfs:comment "Produkte, die verwendet werden, um Wildtiere davon abzuhalten, Pflanzen zu beschädigen."@de ;
+    rdfs:comment "Produits utilisés pour dissuader les animaux sauvages de nuire aux cultures."@fr ;
+    rdfs:comment "Prodotti utilizzati per dissuadere gli animali selvatici dal danneggiare le colture."@it ;
+    rdfs:subClassOf :Product .
+# Wound Sealant Class
+:WoundSealant a owl:Class ;
+    rdfs:label "Wound Sealant"@en ;
+    rdfs:label "Wundverschlussmittel"@de ;
+    rdfs:label "Cicatrisant"@fr ;
+    rdfs:label "Cicatrizzante"@it ;
+    rdfs:comment "Products used to protect plant wounds from infection and promote healing."@en ;
+    rdfs:comment "Produkte, die verwendet werden, um Pflanzenwunden vor Infektionen zu schützen und die Heilung zu fördern."@de ;
+    rdfs:comment "Produits utilisés pour protéger les blessures des plantes contre l'infection et favoriser la guérison."@fr ;
+    rdfs:comment "Prodotti utilizzati per proteggere le ferite delle piante dalle infezioni e favorire la guarigione."@it ;
+    rdfs:subClassOf :Product .
