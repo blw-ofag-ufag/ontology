@@ -5,6 +5,8 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix dc: <http://purl.org/dc/terms/> .
+@prefix agrovoc: <http://aims.fao.org/aos/agrovoc/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 # Ontology Declaration
 <http://example.com/agriculture> a owl:Ontology ;
@@ -15,24 +17,25 @@
 
 # Classes
 :Crop a owl:Class ;
+    owl:equivalentClass agrovoc:c_1972 ;
     rdfs:label "Crop"@en ;
     rdfs:label "Kulturpflanze"@de ;
     rdfs:label "Culture"@fr ;
     rdfs:label "Coltura"@it ;
-    rdfs:comment "A type of plant cultivated for food, feed, or other uses."@en ;
-    rdfs:comment "Eine Pflanzenart, die für Nahrung, Futter oder andere Zwecke kultiviert wird."@de ;
-    rdfs:comment "Un type de plante cultivée pour l'alimentation, le fourrage ou d'autres usages."@fr ;
-    rdfs:comment "Un tipo di pianta coltivata per alimenti, foraggio o altri usi."@it .
+    rdfs:comment "A crop is any plant or plant product that is cultivated and harvested extensively for economic purposes, such as food, feed, fiber, fuel, or other valuable uses."@en ;
+    rdfs:comment "Eine Kulturpflanze ist jede Pflanze oder jedes Pflanzenprodukt, das umfangreich für wirtschaftliche Zwecke wie Nahrung, Futtermittel, Fasern, Brennstoff oder andere wertvolle Anwendungen angebaut und geerntet wird."@de ;
+    rdfs:comment "Une culture est toute plante ou produit végétal cultivé et récolté extensivement à des fins économiques, telles que l'alimentation, les fourrages, les fibres, les combustibles ou d'autres usages de valeur."@fr ;
+    rdfs:comment "Una coltura è qualsiasi pianta o prodotto vegetale coltivato e raccolto estensivamente per scopi economici, come alimenti, foraggio, fibre, combustibile o altri usi di valore."@it .
 
 :Product a owl:Class ;
     rdfs:label "Product"@en ;
     rdfs:label "Produkt"@de ;
     rdfs:label "Produit"@fr ;
     rdfs:label "Prodotto"@it ;
-    rdfs:comment "A plant protection product under its commercial name."@en ;
-    rdfs:comment "Ein Pflanzenschutzmittel unter seinem kommerziellen Namen."@de ;
-    rdfs:comment "Un produit phytosanitaire sous son nom commercial."@fr ;
-    rdfs:comment "Un prodotto fitosanitario con il suo nome commerciale."@it .
+    rdfs:comment "A product is any commercially available substance or mixture of substances that is manufactured, formulated, or packaged for sale or use, especially those intended for agricultural purposes such as protecting plants, controlling pests, or enhancing crop productivity."@en ;
+    rdfs:comment "Ein Produkt ist jede kommerziell verfügbare Substanz oder Mischung von Substanzen, die hergestellt, formuliert oder verpackt wird, um verkauft oder verwendet zu werden, insbesondere solche, die für landwirtschaftliche Zwecke bestimmt sind, wie zum Beispiel den Schutz von Pflanzen, die Bekämpfung von Schädlingen oder die Steigerung der Ernteproduktivität."@de ;
+    rdfs:comment "Un produit est toute substance ou mélange de substances disponible dans le commerce, qui est fabriqué, formulé ou emballé pour la vente ou l'utilisation, en particulier ceux destinés à des fins agricoles telles que la protection des plantes, la lutte contre les ravageurs ou l'amélioration de la productivité des cultures."@fr ;
+    rdfs:comment "Un prodotto è qualsiasi sostanza o miscela di sostanze disponibile in commercio, che è prodotta, formulata o confezionata per la vendita o l'uso, specialmente quelli destinati a scopi agricoli come la protezione delle piante, il controllo dei parassiti o il miglioramento della produttività delle colture."@it .
 
 :Ingredient a owl:Class ;
     rdfs:label "Active ingredient"@en ;
@@ -90,3 +93,255 @@
     rdfs:domain :Product ;
     rdfs:range xsd:string .
     
+:Company a owl:Class ;
+    rdfs:label "Company"@en ;
+    rdfs:label "Firma"@de ;
+    rdfs:label "Entreprise"@fr ;
+    rdfs:label "Azienda"@it ;
+    rdfs:comment "A company that can act as a licence holder for a plant protection product."@en ;
+    rdfs:comment "Ein Unternehmen, das als Bewilligungsinhaber für ein Pflanzenschutzmittel fungieren kann."@de ;
+    rdfs:comment "Une entreprise pouvant agir en tant que titulaire de licence pour un produit phytosanitaire."@fr ;
+    rdfs:comment "Una azienda che può fungere da titolare della licenza per un prodotto fitosanitario."@it .
+
+:address a owl:DatatypeProperty ;
+    rdfs:label "address"@en ;
+    rdfs:label "Adresse"@de ;
+    rdfs:label "adresse"@fr ;
+    rdfs:label "indirizzo"@it ;
+    rdfs:comment "The physical address of the company."@en ;
+    rdfs:comment "Die physische Adresse des Unternehmens."@de ;
+    rdfs:comment "L'adresse physique de l'entreprise."@fr ;
+    rdfs:comment "L'indirizzo fisico dell'azienda."@it ;
+    rdfs:domain :Company ;
+    rdfs:range xsd:string .
+
+:phoneNumber a owl:DatatypeProperty ;
+    rdfs:label "phone number"@en ;
+    rdfs:label "Telefonnummer"@de ;
+    rdfs:label "numéro de téléphone"@fr ;
+    rdfs:label "numero di telefono"@it ;
+    rdfs:comment "The phone number of the company."@en ;
+    rdfs:comment "Die Telefonnummer des Unternehmens."@de ;
+    rdfs:comment "Le numéro de téléphone de l'entreprise."@fr ;
+    rdfs:comment "Il numero di telefono dell'azienda."@it ;
+    rdfs:domain :Company ;
+    rdfs:range xsd:string .
+
+:emailAddress a owl:DatatypeProperty ;
+    rdfs:label "email address"@en ;
+    rdfs:label "E-Mail-Adresse"@de ;
+    rdfs:label "adresse électronique"@fr ;
+    rdfs:label "indirizzo email"@it ;
+    rdfs:comment "The email address of the company."@en ;
+    rdfs:comment "Die E-Mail-Adresse des Unternehmens."@de ;
+    rdfs:comment "L'adresse électronique de l'entreprise."@fr ;
+    rdfs:comment "L'indirizzo email dell'azienda."@it ;
+    rdfs:domain :Company ;
+    rdfs:range xsd:string .
+
+:hasLicenceHolder a owl:ObjectProperty ;
+    rdfs:label "has licence holder"@en ;
+    rdfs:label "hat Bewilligungsinhaber"@de ;
+    rdfs:label "a titulaire de licence"@fr ;
+    rdfs:label "ha titolare di licenza"@it ;
+    rdfs:comment "Indicates the company holding the licence for a plant protection product."@en ;
+    rdfs:comment "Zeigt das Unternehmen an, das die Bewilligung für ein Pflanzenschutzmittel besitzt."@de ;
+    rdfs:comment "Indique l'entreprise titulaire de la licence pour un produit phytosanitaire."@fr ;
+    rdfs:comment "Indica l'azienda che detiene la licenza per un prodotto fitosanitario."@it ;
+    rdfs:domain :Product ;
+    rdfs:range :Company .
+
+:isSameProductAs a owl:ObjectProperty ;
+    rdfs:label "is same product as"@en ;
+    rdfs:label "ist dasselbe Produkt wie"@de ;
+    rdfs:label "est le même produit que"@fr ;
+    rdfs:label "è lo stesso prodotto di"@it ;
+    rdfs:comment "Indicates that this product is the same as another product, sold under a different commercial name."@en ;
+    rdfs:comment "Zeigt an, dass dieses Produkt dasselbe ist wie ein anderes Produkt, das unter einem anderen Handelsnamen verkauft wird."@de ;
+    rdfs:comment "Indique que ce produit est le même qu'un autre produit, vendu sous un nom commercial différent."@fr ;
+    rdfs:comment "Indica che questo prodotto è lo stesso di un altro prodotto, venduto sotto un nome commerciale diverso."@it ;
+    rdfs:domain :Product ;
+    rdfs:range :Product ;
+    owl:symmetricProperty true .
+
+# Datatype property for IUPAC code
+:iupacCode a owl:DatatypeProperty ;
+    rdfs:label "IUPAC code"@en ;
+    rdfs:label "IUPAC-Code"@de ;
+    rdfs:label "code IUPAC"@fr ;
+    rdfs:label "codice IUPAC"@it ;
+    rdfs:comment "The universal IUPAC code of the active ingredient."@en ;
+    rdfs:comment "Der universelle IUPAC-Code des Wirkstoffs."@de ;
+    rdfs:comment "Le code IUPAC universel de l'ingrédient actif."@fr ;
+    rdfs:comment "Il codice IUPAC universale del principio attivo."@it ;
+    rdfs:domain :Ingredient ;
+    rdfs:range xsd:string .
+
+# Class for Authorized Usage
+:AuthorizedUsage a owl:Class ;
+    rdfs:label "Authorized usage"@en ;
+    rdfs:label "Zugelassene Anwendung"@de ;
+    rdfs:label "Utilisation Autorisée"@fr ;
+    rdfs:label "Uso Autorizzato"@it ;
+    rdfs:comment "An instance representing the authorization of a product against a pest on a crop under specific conditions and time periods."@en ;
+    rdfs:comment "Eine Instanz, die die Zulassung eines Produkts gegen einen Schädling auf einer Kulturpflanze unter bestimmten Bedingungen und Zeiträumen darstellt."@de ;
+    rdfs:comment "Une instance représentant l'autorisation d'un produit contre un ravageur sur une culture sous des conditions et des périodes spécifiques."@fr ;
+    rdfs:comment "Un'istanza che rappresenta l'autorizzazione di un prodotto contro un parassita su una coltura in condizioni e periodi specifici."@it .
+
+# Object property linking AuthorizedUsage to Product
+:authorizedProduct a owl:ObjectProperty ;
+    rdfs:label "authorized product"@en ;
+    rdfs:label "zugelassenes Produkt"@de ;
+    rdfs:label "produit autorisé"@fr ;
+    rdfs:label "prodotto autorizzato"@it ;
+    rdfs:comment "Links an authorized usage to the specific product."@en ;
+    rdfs:domain :AuthorizedUsage ;
+    rdfs:range :Product .
+
+# Object property linking AuthorizedUsage to Pest
+:targetPest a owl:ObjectProperty ;
+    rdfs:label "target pest"@en ;
+    rdfs:label "Zielschädling"@de ;
+    rdfs:label "ravageur cible"@fr ;
+    rdfs:label "parassita bersaglio"@it ;
+    rdfs:comment "Specifies the pest that the product is authorized to control."@en ;
+    rdfs:domain :AuthorizedUsage ;
+    rdfs:range :Pest .
+
+# Object property linking AuthorizedUsage to Crop
+:targetCrop a owl:ObjectProperty ;
+    rdfs:label "target crop"@en ;
+    rdfs:label "Zielkultur"@de ;
+    rdfs:label "culture cible"@fr ;
+    rdfs:label "coltura bersaglio"@it ;
+    rdfs:comment "Indicates the crop on which the product can be used."@en ;
+    rdfs:domain :AuthorizedUsage ;
+    rdfs:range :Crop .
+
+# Datatype property for usage conditions
+:usageConditions a owl:DatatypeProperty ;
+    rdfs:label "usage conditions"@en ;
+    rdfs:label "Anwendungsbedingungen"@de ;
+    rdfs:label "conditions d'utilisation"@fr ;
+    rdfs:label "condizioni d'uso"@it ;
+    rdfs:comment "Contains textual descriptions of the conditions under which the product may be used."@en ;
+    rdfs:domain :AuthorizedUsage ;
+    rdfs:range rdf:langString .
+
+# Class for Growth Stage
+:GrowthStage a owl:Class ;
+    rdfs:label "Growth stage"@en ;
+    rdfs:label "Wachstumsstadium"@de ;
+    rdfs:label "Stade de croissance"@fr ;
+    rdfs:label "Stadio di crescita"@it ;
+    rdfs:comment "A stage in the growth cycle of a crop."@en ;
+    rdfs:comment "Ein Stadium im Wachstumszyklus einer Kulturpflanze."@de ;
+    rdfs:comment "Un stade dans le cycle de croissance d'une culture."@fr ;
+    rdfs:comment "Uno stadio nel ciclo di crescita di una coltura."@it .
+
+# Instances of GrowthStage
+:PreSowing a :GrowthStage ;
+    rdfs:label "Pre-sowing"@en ;
+    rdfs:label "Vor der Aussaat"@de ;
+    rdfs:label "Avant le semis"@fr ;
+    rdfs:label "Prima della semina"@it .
+
+:Germination a :GrowthStage ;
+    rdfs:label "Germination"@en ;
+    rdfs:label "Keimung"@de ;
+    rdfs:label "Germination"@fr ;
+    rdfs:label "Germinazione"@it .
+
+:Flowering a :GrowthStage ;
+    rdfs:label "Flowering"@en ;
+    rdfs:label "Blüte"@de ;
+    rdfs:label "Floraison"@fr ;
+    rdfs:label "Fioritura"@it .
+
+:Harvest a :GrowthStage ;
+    rdfs:label "Harvest"@en ;
+    rdfs:label "Ernte"@de ;
+    rdfs:label "Récolte"@fr ;
+    rdfs:label "Raccolta"@it .
+
+# Add more growth stages as needed
+
+# Object property for application time
+:applicationTime a owl:ObjectProperty ;
+    rdfs:label "application time"@en ;
+    rdfs:label "Anwendungszeitpunkt"@de ;
+    rdfs:label "moment d'application"@fr ;
+    rdfs:label "momento di applicazione"@it ;
+    rdfs:comment "Indicates the time during the season when the product may be applied."@en ;
+    rdfs:domain :AuthorizedUsage ;
+    rdfs:range :GrowthStage .
+    
+# Datatype property for maximum number of applications
+:maximumApplications a owl:DatatypeProperty ;
+    rdfs:label "maximum applications"@en ;
+    rdfs:label "maximale Anwendungen"@de ;
+    rdfs:label "applications maximales"@fr ;
+    rdfs:label "applicazioni massime"@it ;
+    rdfs:comment "Specifies the maximum number of times the product can be applied within a specified time frame."@en ;
+    rdfs:comment "Gibt die maximale Anzahl der Anwendungen des Produkts innerhalb eines bestimmten Zeitraums an."@de ;
+    rdfs:comment "Indique le nombre maximal de fois que le produit peut être appliqué dans une période donnée."@fr ;
+    rdfs:comment "Specifica il numero massimo di volte in cui il prodotto può essere applicato in un determinato periodo."@it ;
+    rdfs:domain :AuthorizedUsage ;
+    rdfs:range xsd:integer .
+
+# Class for TimeFrame
+:TimeFrame a owl:Class ;
+    rdfs:label "Time Frame"@en ;
+    rdfs:label "Zeitrahmen"@de ;
+    rdfs:label "Période"@fr ;
+    rdfs:label "Periodo di tempo"@it ;
+    rdfs:comment "A period within which certain conditions apply."@en ;
+    rdfs:comment "Ein Zeitraum, innerhalb dessen bestimmte Bedingungen gelten."@de ;
+    rdfs:comment "Une période pendant laquelle certaines conditions s'appliquent."@fr ;
+    rdfs:comment "Un periodo di tempo durante il quale si applicano determinate condizioni."@it .
+
+# Instance: Per Year
+:PerYear a :TimeFrame ;
+    rdfs:label "per year"@en ;
+    rdfs:label "pro Jahr"@de ;
+    rdfs:label "par an"@fr ;
+    rdfs:label "per anno"@it .
+
+# Instance: Per Crop Cycle
+:PerCropCycle a :TimeFrame ;
+    rdfs:label "per crop cycle"@en ;
+    rdfs:label "pro Kulturzyklus"@de ;
+    rdfs:label "par cycle de culture"@fr ;
+    rdfs:label "per ciclo colturale"@it .
+
+# Object property for time frame
+:timeFrame a owl:ObjectProperty ;
+    rdfs:label "time frame"@en ;
+    rdfs:label "Zeitrahmen"@de ;
+    rdfs:label "période"@fr ;
+    rdfs:label "periodo di tempo"@it ;
+    rdfs:comment "Specifies the time frame within which the maximum applications apply."@en ;
+    rdfs:comment "Gibt den Zeitraum an, innerhalb dessen die maximalen Anwendungen gelten."@de ;
+    rdfs:comment "Spécifie la période pendant laquelle les applications maximales s'appliquent."@fr ;
+    rdfs:comment "Specifica il periodo di tempo entro il quale si applicano le applicazioni massime."@it ;
+    rdfs:domain :AuthorizedUsage ;
+    rdfs:range :TimeFrame .
+
+# Declare wd:Q16521 as a class (optional but clarifies its use)
+wd:Q16521 a owl:Class ;
+    rdfs:label "Taxon"@en ;
+    rdfs:comment "A taxonomic group of any rank."@en .
+
+# Update the property to :relatesToTaxon
+:relatesToTaxon a owl:ObjectProperty ;
+    rdfs:label "relates to taxon"@en ;
+    rdfs:label "bezieht sich auf Taxon"@de ;
+    rdfs:label "se rapporte au taxon"@fr ;
+    rdfs:label "si riferisce al taxon"@it ;
+    rdfs:comment "Links an entity to its corresponding biological taxon."@en ;
+    rdfs:comment "Verknüpft eine Entität mit ihrem entsprechenden biologischen Taxon."@de ;
+    rdfs:comment "Lie une entité à son taxon biologique correspondant."@fr ;
+    rdfs:comment "Collega un'entità al suo corrispondente taxon biologico."@it ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( :Crop :Pest :Product ) ] ;
+    rdfs:range wd:Q16521 .
