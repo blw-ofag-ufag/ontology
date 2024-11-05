@@ -3,44 +3,90 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/terms/> .
 
 # Ontology Declaration
 <http://example.com/agriculture> a owl:Ontology ;
-    rdfs:comment "An example ontology for basic agricultural concepts." .
+                                 dc:title "This is the ontology title"@en;
+                                 dc:description "Write the ontology description here"@en;
+                                 owl:versionInfo "0.1";
+                                 dc:creator "Damian Oswald" .
 
 # Classes
-:class a owl:Class ;
-    rdfs:label "Crop" ;
-    rdfs:comment "A type of plant cultivated for food, feed or other uses." .
+:Crop a owl:Class ;
+    rdfs:label "Crop"@en ;
+    rdfs:label "Kulturpflanze"@de ;
+    rdfs:label "Culture"@fr ;
+    rdfs:label "Coltura"@it ;
+    rdfs:comment "A type of plant cultivated for food, feed, or other uses."@en ;
+    rdfs:comment "Eine Pflanzenart, die für Nahrung, Futter oder andere Zwecke kultiviert wird."@de ;
+    rdfs:comment "Un type de plante cultivée pour l'alimentation, le fourrage ou d'autres usages."@fr ;
+    rdfs:comment "Un tipo di pianta coltivata per alimenti, foraggio o altri usi."@it .
 
-:Fertilizer a owl:Class ;
-    rdfs:label "Fertilizer" ;
-    rdfs:comment "A substance added to soil to enhance plant growth." .
+:Product a owl:Class ;
+    rdfs:label "Product"@en ;
+    rdfs:label "Produkt"@de ;
+    rdfs:label "Produit"@fr ;
+    rdfs:label "Prodotto"@it ;
+    rdfs:comment "A plant protection product under its commercial name."@en ;
+    rdfs:comment "Ein Pflanzenschutzmittel unter seinem kommerziellen Namen."@de ;
+    rdfs:comment "Un produit phytosanitaire sous son nom commercial."@fr ;
+    rdfs:comment "Un prodotto fitosanitario con il suo nome commerciale."@it .
 
-:FarmingTechnique a owl:Class ;
-    rdfs:label "Farming Technique" ;
-    rdfs:comment "A method used in cultivating crops." .
+:Ingredient a owl:Class ;
+    rdfs:label "Active ingredient"@en ;
+    rdfs:label "Wirkstoff"@de ;
+    rdfs:label "Ingrédient actif"@fr ;
+    rdfs:label "Principio attivo"@it ;
+    rdfs:comment "A substance or compound in a pharmaceutical or chemical product that is biologically active, responsible for the intended effects or therapeutic action of the product."@en ;
+    rdfs:comment "Eine biologisch aktive Substanz oder Verbindung in einem pharmazeutischen oder chemischen Produkt, die für die beabsichtigten Wirkungen oder die therapeutische Wirkung des Produkts verantwortlich ist."@de ;
+    rdfs:comment "Une substance ou un composé dans un produit pharmaceutique ou chimique qui est biologiquement actif, responsable des effets ou de l'action thérapeutique du produit."@fr ;
+    rdfs:comment "Una sostanza o un composto in un prodotto farmaceutico o chimico che è biologicamente attivo, responsabile degli effetti previsti o dell'azione terapeutica del prodotto."@it .
 
-# Subclasses (taxonomies)
-:OrganicFertilizer a owl:Class ;
-    rdfs:label "Organic Fertilizer" ;
-    rdfs:subClassOf :Fertilizer ;
-    rdfs:comment "A type of fertilizer derived from organic sources." .
+:Pest a owl:Class ;
+    rdfs:label "Pest"@en ;
+    rdfs:label "Ravageur"@fr ;
+    rdfs:label "Parassita"@it ;
+    rdfs:comment "Any organism -- typically insects, mites, fungi, bacteria, viruses, weeds, nematodes, or rodents -- that negatively affects crop plants. These pests can damage crops by feeding on plant parts (like leaves, stems, roots, or fruits), spreading diseases, competing with the crop for nutrients, or contaminating harvested products. Crop pests are problematic because they can reduce crop yields, lower the quality of produce, and, in severe cases, lead to crop failure, which can have significant economic and food security impacts."@en ;
+    rdfs:comment "Ein beliebiger Organismus -- typischerweise Insekten, Milben, Pilze, Bakterien, Viren, Unkräuter, Nematoden oder Nagetiere -- welcher eine Kulturpflanze negativ beeinflusst. Diese Schädlinge können Ernten schädigen, indem sie sich von Pflanzenteilen (wie Blättern, Stängeln, Wurzeln oder Früchten) ernähren, Krankheiten verbreiten, mit der Pflanze um Nährstoffe konkurrieren oder geerntete Produkte kontaminieren. Pflanzenschädlinge sind problematisch, weil sie die Ernteerträge verringern, die Qualität der Erzeugnisse mindern und in schweren Fällen zu Ernteausfällen führen können, was erhebliche Auswirkungen auf die Wirtschaft und die Ernährungssicherheit haben kann."@de ;
+    rdfs:comment "Tout organisme -- typiquement des insectes, acariens, champignons, bactéries, virus, mauvaises herbes, nématodes ou rongeurs -- qui affecte négativement les cultures. Ces ravageurs peuvent endommager les cultures en se nourrissant de parties de plantes (comme les feuilles, les tiges, les racines ou les fruits), en propageant des maladies, en entrant en concurrence avec la culture pour les nutriments ou en contaminant les produits récoltés. Les ravageurs des cultures sont problématiques car ils peuvent réduire les rendements, diminuer la qualité des produits et, dans les cas graves, conduire à des échecs de récolte, avec des impacts importants sur l'économie et la sécurité alimentaire."@fr ;
+    rdfs:comment "Qualsiasi organismo -- tipicamente insetti, acari, funghi, batteri, virus, erbacce, nematodi o roditori -- che colpisce negativamente le piante coltivate. Questi parassiti possono danneggiare le colture nutrendosi di parti della pianta (come foglie, steli, radici o frutti), diffondendo malattie, competendo con la coltura per i nutrienti o contaminando i prodotti raccolti. I parassiti delle colture sono problematici perché possono ridurre le rese, diminuire la qualità del raccolto e, nei casi più gravi, portare al fallimento delle colture, con impatti significativi sull'economia e la sicurezza alimentare."@it .
 
-:InorganicFertilizer a owl:Class ;
-    rdfs:label "Inorganic Fertilizer" ;
-    rdfs:subClassOf :Fertilizer ;
-    rdfs:comment "A type of fertilizer made from synthetic materials." .
+# Relationships
+:attacksCrop a owl:ObjectProperty ;
+    rdfs:label "attacks crop"@en ;
+    rdfs:label "greift Kulturpflanzen an"@de ;
+    rdfs:label "attaque la culture"@fr ;
+    rdfs:label "attacca la coltura"@it ;
+    rdfs:domain :Pest ;
+    rdfs:range :Crop .
 
-# Object Properties
-:appliedTo a owl:ObjectProperty ;
-    rdfs:label "applied to" ;
-    rdfs:domain :Fertilizer ;
-    rdfs:range :Crop ;
-    rdfs:comment "A relationship indicating which crop the fertilizer is applied to." .
+:attacksPest a owl:ObjectProperty ;
+    rdfs:label "attacks pest"@en ;
+    rdfs:label "greift Schädling an"@de ;
+    rdfs:label "attaque les parasites"@fr ;
+    rdfs:label "attacca i parassiti"@it ;
+    rdfs:domain :Product ;
+    rdfs:range :Pest .
 
-:usesTechnique a owl:ObjectProperty ;
-    rdfs:label "uses technique" ;
-    rdfs:domain :Crop ;
-    rdfs:range :FarmingTechnique ;
-    rdfs:comment "A relationship indicating which farming technique is used on the crop." .
+:contains a owl:ObjectProperty ;
+    rdfs:label "contains"@en ;
+    rdfs:label "beinhaltet"@de ;
+    rdfs:label "contient"@fr ;
+    rdfs:label "contiene"@it ;
+    rdfs:domain :Product ;
+    rdfs:range :Ingredient .
+    
+:registrationCode a owl:DatatypeProperty ;
+    rdfs:label "registration code"@en ;
+    rdfs:label "Eidgenössische Zulassungsnummer"@de ;
+    rdfs:label "numéro d'enregistrement"@fr ;
+    rdfs:label "numero di registrazione"@it ;
+    rdfs:comment "A specific code assigned to each plant protection product."@en ;
+    rdfs:comment "Ein spezifischer Code, der jedem Pflanzenschutzmittel zugewiesen wird."@de ;
+    rdfs:comment "Un code spécifique attribué à chaque produit phytosanitaire."@fr ;
+    rdfs:comment "Un codice specifico assegnato a ciascun prodotto fitosanitario."@it ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:string .
+    
