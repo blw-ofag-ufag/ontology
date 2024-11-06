@@ -10,10 +10,16 @@
 
 # Ontology Declaration
 <http://example.com/agriculture> a owl:Ontology ;
-                                 dc:title "This is the ontology title"@en;
-                                 dc:description "Write the ontology description here"@en;
-                                 owl:versionInfo "0.1";
-                                 dc:creator "Damian Oswald" .
+    dc:title "A (demonstrative) ontology for crop protection in Switzerland"@en ;
+    dc:title "Eine (demonstrative) Ontologie für den Pflanzenschutz in der Schweiz"@de ;
+    dc:title "Une ontologie (démonstrative) pour la protection des cultures en Suisse"@fr ;
+    dc:title "Un'ontologia (dimostrativa) per la protezione delle colture in Svizzera"@it ;
+    dc:description "This ontology exemplifies the value of comprehensive and well-structured ontology development for the Swiss Federal Office for Agriculture (and more broadly the Swiss agri-food sector). By capturing the complexities of crop protection (with a focus on registered products) in a formal model, it enhances understanding of current rules and allows their effective communication via IT-services."@en ;
+    dc:description "Diese Ontologie veranschaulicht den Wert einer umfassenden und gut strukturierten Ontologieentwicklung für das Bundesamt für Landwirtschaft (und allgemein den Schweizer Agrar- und Lebensmittelsektor). Durch die formale Modellierung der Komplexität des Pflanzenschutzes (mit Schwerpunkt auf zugelassenen Produkten) verbessert sie das Verständnis der aktuellen Regeln und ermöglicht deren effektive Kommunikation über IT-Dienste."@de ;
+    dc:description "Cette ontologie illustre la valeur d'un développement d'ontologie complet et bien structuré pour l'Office fédéral de l'agriculture (et plus largement le secteur agroalimentaire suisse). En capturant les complexités de la protection des cultures (avec un accent sur les produits enregistrés) dans un modèle formel, elle améliore la compréhension des règles actuelles et permet leur communication efficace via des services informatiques."@fr ;
+    dc:description "Questa ontologia esemplifica il valore di uno sviluppo ontologico completo e ben strutturato per l'Ufficio federale dell'agricoltura (e più in generale per il settore agroalimentare svizzero). Catturando le complessità della protezione delle colture (con un focus sui prodotti registrati) in un modello formale, migliora la comprensione delle regole attuali e ne consente una comunicazione efficace attraverso i servizi informatici."@it ;
+    owl:versionInfo "0.2" ;
+    dc:creator "Damian Oswald" .
 
 # Classes
 :Crop a owl:Class ;
