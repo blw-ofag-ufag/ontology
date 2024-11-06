@@ -49,6 +49,7 @@
 
 :Pest a owl:Class ;
     rdfs:label "Pest"@en ;
+    rdfs:label "Schädling"@de ;
     rdfs:label "Ravageur"@fr ;
     rdfs:label "Parassita"@it ;
     rdfs:comment "Any organism -- typically insects, mites, fungi, bacteria, viruses, weeds, nematodes, or rodents -- that negatively affects crop plants. These pests can damage crops by feeding on plant parts (like leaves, stems, roots, or fruits), spreading diseases, competing with the crop for nutrients, or contaminating harvested products. Crop pests are problematic because they can reduce crop yields, lower the quality of produce, and, in severe cases, lead to crop failure, which can have significant economic and food security impacts."@en ;
@@ -330,10 +331,10 @@
 
 # Declare wd:Q16521 as a class with multilingual labels and comments
 wd:Q16521 a owl:Class ;
-    rdfs:label "Taxon"@en ;
-    rdfs:label "Taxon"@de ;
-    rdfs:label "Taxon"@fr ;
-    rdfs:label "Taxon"@it ;
+    rdfs:label "Taxon from Wikidata"@en ;
+    rdfs:label "Taxon aus Wikidata"@de ;
+    rdfs:label "Taxon de Wikidata"@fr ;
+    rdfs:label "Taxon di Wikidata"@it ;
     rdfs:comment "A taxonomic group of any rank."@en ;
     rdfs:comment "Eine taxonomische Gruppe beliebigen Ranges."@de ;
     rdfs:comment "Un groupe taxonomique de n'importe quel rang."@fr ;
