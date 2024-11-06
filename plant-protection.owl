@@ -78,7 +78,8 @@
     rdfs:label "beinhaltet"@de ;
     rdfs:label "contient"@fr ;
     rdfs:label "contiene"@it ;
-    rdfs:domain :Product ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( :Pesticide :Disinfectant :SeedTreatment :DefenseStimulator :StorageProtectionAgent :PlantGrowthRegulator :Adjuvant :WoundSealant :WildlifeRepellent ) ] ;
     rdfs:range :Ingredient .
     
 :registrationCode a owl:DatatypeProperty ;
@@ -349,7 +350,7 @@ wd:Q16521 a owl:Class ;
     rdfs:comment "Lie une entité à son taxon biologique correspondant."@fr ;
     rdfs:comment "Collega un'entità al suo corrispondente taxon biologico."@it ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( :Crop :Pest :Product ) ] ;
+                  owl:unionOf ( :Crop :Pest :BiologicalControlAgent ) ] ;
     rdfs:range wd:Q16521 .
 
 # Add a taxonomy for products (essentially a better version of https://www.psm.admin.ch/de/kategorien)
