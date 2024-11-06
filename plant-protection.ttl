@@ -690,3 +690,523 @@ wd:Q16521 a owl:Class ;
     rdfs:comment "Produits utilisés pour protéger les blessures des plantes contre l'infection et favoriser la guérison."@fr ;
     rdfs:comment "Prodotti utilizzati per proteggere le ferite delle piante dalle infezioni e favorire la guarigione."@it ;
     rdfs:subClassOf :Product .
+
+### Organophosphorus Compounds
+
+:OrganophosphorusCompound a owl:Class ;
+    rdfs:subClassOf :Ingredient ;
+    rdfs:label "Organophosphorus Compound"@en ;
+    rdfs:label "Organophosphorverbindung"@de ;
+    rdfs:label "Composé organophosphoré"@fr ;
+    rdfs:label "Composto organofosforico"@it ;
+    rdfs:comment "Organic compounds containing phosphorus, widely used as pesticides due to their effectiveness against insects."@en ;
+    rdfs:comment "Organische Verbindungen, die Phosphor enthalten und aufgrund ihrer Wirksamkeit gegen Insekten häufig als Pestizide verwendet werden."@de ;
+    rdfs:comment "Composés organiques contenant du phosphore, largement utilisés comme pesticides en raison de leur efficacité contre les insectes."@fr ;
+    rdfs:comment "Composti organici contenenti fosforo, ampiamente usati come pesticidi per la loro efficacia contro gli insetti."@it .
+
+:AliphaticOrganophosphate a owl:Class ;
+    rdfs:subClassOf :OrganophosphorusCompound ;
+    rdfs:label "Aliphatic Organophosphate"@en ;
+    rdfs:label "Aliphatisches Organophosphat"@de ;
+    rdfs:label "Organophosphate aliphatique"@fr ;
+    rdfs:label "Organofosfato alifatico"@it ;
+    rdfs:comment "Organophosphates with aliphatic chains, used as insecticides."@en ;
+    rdfs:comment "Organophosphate mit aliphatischen Ketten, verwendet als Insektizide."@de ;
+    rdfs:comment "Organophosphates avec chaînes aliphatiques, utilisés comme insecticides."@fr ;
+    rdfs:comment "Organofosfati con catene alifatiche, usati come insetticidi."@it .
+
+:HeterocyclicOrganophosphate a owl:Class ;
+    rdfs:subClassOf :OrganophosphorusCompound ;
+    rdfs:label "Heterocyclic Organophosphate"@en ;
+    rdfs:label "Heterocyclisches Organophosphat"@de ;
+    rdfs:label "Organophosphate hétérocyclique"@fr ;
+    rdfs:label "Organofosfato eterociclico"@it ;
+    rdfs:comment "Organophosphates containing heterocyclic rings, used in various pesticides."@en ;
+    rdfs:comment "Organophosphate mit heterocyclischen Ringen, verwendet in verschiedenen Pestiziden."@de ;
+    rdfs:comment "Organophosphates contenant des cycles hétérocycliques, utilisés dans divers pesticides."@fr ;
+    rdfs:comment "Organofosfati contenenti anelli eterociclici, utilizzati in vari pesticidi."@it .
+
+:Organothiophosphate a owl:Class ;
+    rdfs:subClassOf :OrganophosphorusCompound ;
+    rdfs:label "Organothiophosphate"@en ;
+    rdfs:label "Organothiophosphat"@de ;
+    rdfs:label "Organothiophosphate"@fr ;
+    rdfs:label "Organotiofosfato"@it ;
+    rdfs:comment "Organophosphates containing sulfur atoms, used as insecticides and acaricides."@en ;
+    rdfs:comment "Organophosphate, die Schwefel enthalten, verwendet als Insektizide und Akarizide."@de ;
+    rdfs:comment "Organophosphates contenant des atomes de soufre, utilisés comme insecticides et acaricides."@fr ;
+    rdfs:comment "Organofosfati contenenti atomi di zolfo, usati come insetticidi e acaricidi."@it .
+
+:Phosphonate a owl:Class ;
+    rdfs:subClassOf :OrganophosphorusCompound ;
+    rdfs:label "Phosphonate"@en ;
+    rdfs:label "Phosphonat"@de ;
+    rdfs:label "Phosphonate"@fr ;
+    rdfs:label "Fosfonato"@it ;
+    rdfs:comment "Compounds containing a phosphonate group, used as herbicides like glyphosate."@en ;
+    rdfs:comment "Verbindungen mit einer Phosphonatgruppe, verwendet als Herbizide wie Glyphosat."@de ;
+    rdfs:comment "Composés contenant un groupe phosphonate, utilisés comme herbicides tels que le glyphosate."@fr ;
+    rdfs:comment "Composti contenenti un gruppo fosfonato, usati come erbicidi come il glifosato."@it .
+
+### Carbamates
+
+:Carbamate a owl:Class ;
+    rdfs:subClassOf :Ingredient ;
+    rdfs:label "Carbamate"@en ;
+    rdfs:label "Carbamat"@de ;
+    rdfs:label "Carbamate"@fr ;
+    rdfs:label "Carbamato"@it ;
+    rdfs:comment "Compounds derived from carbamic acid, used as insecticides and fungicides."@en ;
+    rdfs:comment "Verbindungen, die von Carbaminsäure abgeleitet sind, verwendet als Insektizide und Fungizide."@de ;
+    rdfs:comment "Composés dérivés de l'acide carbamique, utilisés comme insecticides et fongicides."@fr ;
+    rdfs:comment "Composti derivati dall'acido carbammico, usati come insetticidi e fungicidi."@it .
+
+:NMethylCarbamate a owl:Class ;
+    rdfs:subClassOf :Carbamate ;
+    rdfs:label "N-Methyl Carbamate"@en ;
+    rdfs:label "N-Methyl-Carbamat"@de ;
+    rdfs:label "N-Méthyl carbamate"@fr ;
+    rdfs:label "N-Metil carbammato"@it ;
+    rdfs:comment "Carbamates with an N-methyl group, acting as insecticides."@en ;
+    rdfs:comment "Carbamate mit einer N-Methyl-Gruppe, wirken als Insektizide."@de ;
+    rdfs:comment "Carbamates avec un groupe N-méthyle, agissant comme insecticides."@fr ;
+    rdfs:comment "Carbamati con un gruppo N-metile, agiscono come insetticidi."@it .
+
+:NDimethylCarbamate a owl:Class ;
+    rdfs:subClassOf :Carbamate ;
+    rdfs:label "N,N-Dimethyl Carbamate"@en ;
+    rdfs:label "N,N-Dimethyl-Carbamat"@de ;
+    rdfs:label "N,N-Diméthyl carbamate"@fr ;
+    rdfs:label "N,N-Dimetil carbammato"@it ;
+    rdfs:comment "Carbamates with an N,N-dimethyl group, used as insecticides."@en ;
+    rdfs:comment "Carbamate mit einer N,N-Dimethyl-Gruppe, verwendet als Insektizide."@de ;
+    rdfs:comment "Carbamates avec un groupe N,N-diméthyle, utilisés comme insecticides."@fr ;
+    rdfs:comment "Carbamati con un gruppo N,N-dimetile, usati come insetticidi."@it .
+
+:Thiocarbamate a owl:Class ;
+    rdfs:subClassOf :Carbamate ;
+    rdfs:label "Thiocarbamate"@en ;
+    rdfs:label "Thiocarbamat"@de ;
+    rdfs:label "Thiocarbamate"@fr ;
+    rdfs:label "Tiocarbammato"@it ;
+    rdfs:comment "Carbamates containing sulfur, used as herbicides."@en ;
+    rdfs:comment "Carbamate, die Schwefel enthalten, verwendet als Herbizide."@de ;
+    rdfs:comment "Carbamates contenant du soufre, utilisés comme herbicides."@fr ;
+    rdfs:comment "Carbamati contenenti zolfo, usati come erbicidi."@it .
+
+### Organochlorines
+
+:Organochlorine a owl:Class ;
+    rdfs:subClassOf :Ingredient ;
+    rdfs:label "Organochlorine"@en ;
+    rdfs:label "Organochlorverbindung"@de ;
+    rdfs:label "Organochloré"@fr ;
+    rdfs:label "Organoclorurato"@it ;
+    rdfs:comment "Organic compounds containing chlorine, known for their persistence in the environment."@en ;
+    rdfs:comment "Organische Verbindungen, die Chlor enthalten und für ihre Persistenz in der Umwelt bekannt sind."@de ;
+    rdfs:comment "Composés organiques contenant du chlore, connus pour leur persistance dans l'environnement."@fr ;
+    rdfs:comment "Composti organici contenenti cloro, noti per la loro persistenza nell'ambiente."@it .
+
+:DDTAnalog a owl:Class ;
+    rdfs:subClassOf :Organochlorine ;
+    rdfs:label "DDT Analog"@en ;
+    rdfs:label "DDT-Analogon"@de ;
+    rdfs:label "Analogue du DDT"@fr ;
+    rdfs:label "Analogo del DDT"@it ;
+    rdfs:comment "Compounds structurally similar to DDT, used as insecticides."@en ;
+    rdfs:comment "Verbindungen, die strukturell dem DDT ähneln, verwendet als Insektizide."@de ;
+    rdfs:comment "Composés structurellement similaires au DDT, utilisés comme insecticides."@fr ;
+    rdfs:comment "Composti strutturalmente simili al DDT, usati come insetticidi."@it .
+
+:Cyclodiene a owl:Class ;
+    rdfs:subClassOf :Organochlorine ;
+    rdfs:label "Cyclodiene"@en ;
+    rdfs:label "Cyclodien"@de ;
+    rdfs:label "Cyclodiène"@fr ;
+    rdfs:label "Ciclodiene"@it ;
+    rdfs:comment "A class of organochlorines with a cyclodiene structure, used as insecticides."@en ;
+    rdfs:comment "Eine Klasse von Organochlorverbindungen mit Cyclodien-Struktur, verwendet als Insektizide."@de ;
+    rdfs:comment "Une classe d'organochlorés avec une structure cyclodiène, utilisés comme insecticides."@fr ;
+    rdfs:comment "Una classe di organoclorurati con struttura ciclodiene, usati come insetticidi."@it .
+
+:Hexachlorocyclohexane a owl:Class ;
+    rdfs:subClassOf :Organochlorine ;
+    rdfs:label "Hexachlorocyclohexane"@en ;
+    rdfs:label "Hexachlorcyclohexan"@de ;
+    rdfs:label "Hexachlorocyclohexane"@fr ;
+    rdfs:label "Esaclorocicloesano"@it ;
+    rdfs:comment "Isomers of hexachlorocyclohexane, used as insecticides like lindane."@en ;
+    rdfs:comment "Isomere von Hexachlorcyclohexan, verwendet als Insektizide wie Lindan."@de ;
+    rdfs:comment "Isomères de l'hexachlorocyclohexane, utilisés comme insecticides tels que le lindane."@fr ;
+    rdfs:comment "Isomeri dell'esaclorocicloesano, usati come insetticidi come il lindano."@it .
+
+:Polychloroterpene a owl:Class ;
+    rdfs:subClassOf :Organochlorine ;
+    rdfs:label "Polychloroterpene"@en ;
+    rdfs:label "Polychlorierter Terpen"@de ;
+    rdfs:label "Polychloroterpène"@fr ;
+    rdfs:label "Policloroterpene"@it ;
+    rdfs:comment "Highly chlorinated terpenes, used as insecticides."@en ;
+    rdfs:comment "Hochchlorierte Terpene, verwendet als Insektizide."@de ;
+    rdfs:comment "Terpènes hautement chlorés, utilisés comme insecticides."@fr ;
+    rdfs:comment "Terpeni altamente clorurati, usati come insetticidi."@it .
+
+### Pyrethroids
+
+:Pyrethroid a owl:Class ;
+    rdfs:subClassOf :Ingredient ;
+    rdfs:label "Pyrethroid"@en ;
+    rdfs:label "Pyrethroid"@de ;
+    rdfs:label "Pyréthrinoïde"@fr ;
+    rdfs:label "Piretroide"@it ;
+    rdfs:comment "Synthetic analogs of natural pyrethrins, used as insecticides."@en ;
+    rdfs:comment "Synthetische Analoga natürlicher Pyrethrine, verwendet als Insektizide."@de ;
+    rdfs:comment "Analogues synthétiques des pyréthrines naturelles, utilisés comme insecticides."@fr ;
+    rdfs:comment "Analoghi sintetici delle piretrine naturali, usati come insetticidi."@it .
+
+:TypeIPyrethroid a owl:Class ;
+    rdfs:subClassOf :Pyrethroid ;
+    rdfs:label "Type I Pyrethroid"@en ;
+    rdfs:label "Typ I Pyrethroid"@de ;
+    rdfs:label "Pyréthrinoïde de type I"@fr ;
+    rdfs:label "Piretroide di tipo I"@it ;
+    rdfs:comment "Non-cyano pyrethroids without an alpha-cyano group, acting on insect nervous systems."@en ;
+    rdfs:comment "Nicht-Cyano-Pyrethroide ohne eine Alpha-Cyano-Gruppe, wirken auf das Nervensystem von Insekten."@de ;
+    rdfs:comment "Pyréthrinoïdes non-cyano sans groupe alpha-cyano, agissant sur le système nerveux des insectes."@fr ;
+    rdfs:comment "Piretroidi non-ciano senza gruppo alfa-ciano, agiscono sul sistema nervoso degli insetti."@it .
+
+:TypeIIPyrethroid a owl:Class ;
+    rdfs:subClassOf :Pyrethroid ;
+    rdfs:label "Type II Pyrethroid"@en ;
+    rdfs:label "Typ II Pyrethroid"@de ;
+    rdfs:label "Pyréthrinoïde de type II"@fr ;
+    rdfs:label "Piretroide di tipo II"@it ;
+    rdfs:comment "Pyrethroids containing an alpha-cyano group, with enhanced insecticidal activity."@en ;
+    rdfs:comment "Pyrethroide mit einer Alpha-Cyano-Gruppe, mit erhöhter insektizider Aktivität."@de ;
+    rdfs:comment "Pyréthrinoïdes contenant un groupe alpha-cyano, avec une activité insecticide accrue."@fr ;
+    rdfs:comment "Piretroidi contenenti un gruppo alfa-ciano, con attività insetticida aumentata."@it .
+
+### Neonicotinoids
+
+:Neonicotinoid a owl:Class ;
+    rdfs:subClassOf :Ingredient ;
+    rdfs:label "Neonicotinoid"@en ;
+    rdfs:label "Neonicotinoid"@de ;
+    rdfs:label "Néonicotinoïde"@fr ;
+    rdfs:label "Neonicotinoide"@it ;
+    rdfs:comment "Compounds structurally similar to nicotine, used as systemic insecticides."@en ;
+    rdfs:comment "Verbindungen, die strukturell dem Nikotin ähneln, verwendet als systemische Insektizide."@de ;
+    rdfs:comment "Composés structurellement similaires à la nicotine, utilisés comme insecticides systémiques."@fr ;
+    rdfs:comment "Composti strutturalmente simili alla nicotina, usati come insetticidi sistemici."@it .
+
+:Nitroguanidine a owl:Class ;
+    rdfs:subClassOf :Neonicotinoid ;
+    rdfs:label "Nitroguanidine"@en ;
+    rdfs:label "Nitroguanidin"@de ;
+    rdfs:label "Nitroguanidine"@fr ;
+    rdfs:label "Nitroguanidina"@it ;
+    rdfs:comment "Neonicotinoids with a nitroguanidine group, highly effective insecticides."@en ;
+    rdfs:comment "Neonicotinoide mit einer Nitroguanidin-Gruppe, hochwirksame Insektizide."@de ;
+    rdfs:comment "Néonicotinoïdes avec un groupe nitroguanidine, insecticides très efficaces."@fr ;
+    rdfs:comment "Neonicotinoidi con un gruppo nitroguanidina, insetticidi altamente efficaci."@it .
+
+:Nitromethylene a owl:Class ;
+    rdfs:subClassOf :Neonicotinoid ;
+    rdfs:label "Nitromethylene"@en ;
+    rdfs:label "Nitromethylen"@de ;
+    rdfs:label "Nitrométhylène"@fr ;
+    rdfs:label "Nitrometilene"@it ;
+    rdfs:comment "Neonicotinoids with a nitromethylene group, used as insecticides."@en ;
+    rdfs:comment "Neonicotinoide mit einer Nitromethylen-Gruppe, verwendet als Insektizide."@de ;
+    rdfs:comment "Néonicotinoïdes avec un groupe nitrométhylène, utilisés comme insecticides."@fr ;
+    rdfs:comment "Neonicotinoidi con un gruppo nitrometilene, usati come insetticidi."@it .
+
+:Cyanoamidine a owl:Class ;
+    rdfs:subClassOf :Neonicotinoid ;
+    rdfs:label "Cyanoamidine"@en ;
+    rdfs:label "Cyanoamidin"@de ;
+    rdfs:label "Cyanoamidine"@fr ;
+    rdfs:label "Cianoamidina"@it ;
+    rdfs:comment "Neonicotinoids with a cyanoamidine group, used as insecticides."@en ;
+    rdfs:comment "Neonicotinoide mit einer Cyanoamidin-Gruppe, verwendet als Insektizide."@de ;
+    rdfs:comment "Néonicotinoïdes avec un groupe cyanoamidine, utilisés comme insecticides."@fr ;
+    rdfs:comment "Neonicotinoidi con un gruppo cianoamidina, usati come insetticidi."@it .
+
+### Phenoxy and Benzoic Acid Derivatives
+
+:PhenoxyBenzoicAcidDerivative a owl:Class ;
+    rdfs:subClassOf :Ingredient ;
+    rdfs:label "Phenoxy and Benzoic Acid Derivative"@en ;
+    rdfs:label "Phenoxy- und Benzoesäurederivat"@de ;
+    rdfs:label "Dérivé d'acide phénoxy et benzoïque"@fr ;
+    rdfs:label "Derivato dell'acido fenossibenzoico"@it ;
+    rdfs:comment "Compounds derived from phenoxy and benzoic acids, used primarily as herbicides."@en ;
+    rdfs:comment "Verbindungen, die von Phenoxy- und Benzoesäuren abgeleitet sind, hauptsächlich als Herbizide verwendet."@de ;
+    rdfs:comment "Composés dérivés des acides phénoxy et benzoïque, utilisés principalement comme herbicides."@fr ;
+    rdfs:comment "Composti derivati dagli acidi fenossibenzoici, usati principalmente come erbicidi."@it .
+
+:PhenoxyaceticAcid a owl:Class ;
+    rdfs:subClassOf :PhenoxyBenzoicAcidDerivative ;
+    rdfs:label "Phenoxyacetic Acid"@en ;
+    rdfs:label "Phenoxyessigsäure"@de ;
+    rdfs:label "Acide phénoxyacétique"@fr ;
+    rdfs:label "Acido fenossiacetico"@it ;
+    rdfs:comment "Herbicides derived from phenoxyacetic acid, such as 2,4-D."@en ;
+    rdfs:comment "Herbizide, die von Phenoxyessigsäure abgeleitet sind, wie 2,4-D."@de ;
+    rdfs:comment "Herbicides dérivés de l'acide phénoxyacétique, tels que le 2,4-D."@fr ;
+    rdfs:comment "Erbicidi derivati dall'acido fenossiacetico, come il 2,4-D."@it .
+
+:BenzoicAcidDerivative a owl:Class ;
+    rdfs:subClassOf :PhenoxyBenzoicAcidDerivative ;
+    rdfs:label "Benzoic Acid Derivative"@en ;
+    rdfs:label "Benzoesäurederivat"@de ;
+    rdfs:label "Dérivé d'acide benzoïque"@fr ;
+    rdfs:label "Derivato dell'acido benzoico"@it ;
+    rdfs:comment "Herbicides derived from benzoic acid, such as dicamba."@en ;
+    rdfs:comment "Herbizide, die von Benzoesäure abgeleitet sind, wie Dicamba."@de ;
+    rdfs:comment "Herbicides dérivés de l'acide benzoïque, tels que le dicamba."@fr ;
+    rdfs:comment "Erbicidi derivati dall'acido benzoico, come il dicamba."@it .
+
+### Triazines
+
+:Triazine a owl:Class ;
+    rdfs:subClassOf :Ingredient ;
+    rdfs:label "Triazine"@en ;
+    rdfs:label "Triazin"@de ;
+    rdfs:label "Triazine"@fr ;
+    rdfs:label "Triazina"@it ;
+    rdfs:comment "Nitrogen-containing heterocyclic compounds used primarily as herbicides."@en ;
+    rdfs:comment "Stickstoffhaltige heterocyclische Verbindungen, hauptsächlich als Herbizide verwendet."@de ;
+    rdfs:comment "Composés hétérocycliques contenant de l'azote, utilisés principalement comme herbicides."@fr ;
+    rdfs:comment "Composti eterociclici contenenti azoto, usati principalmente come erbicidi."@it .
+
+:Chlorotriazine a owl:Class ;
+    rdfs:subClassOf :Triazine ;
+    rdfs:label "Chlorotriazine"@en ;
+    rdfs:label "Chlortriazin"@de ;
+    rdfs:label "Chlorotriazine"@fr ;
+    rdfs:label "Clorotriazina"@it ;
+    rdfs:comment "Triazines containing chlorine atoms, used as selective herbicides."@en ;
+    rdfs:comment "Triazine mit Chloratomen, verwendet als selektive Herbizide."@de ;
+    rdfs:comment "Triazines contenant des atomes de chlore, utilisées comme herbicides sélectifs."@fr ;
+    rdfs:comment "Triazine contenenti atomi di cloro, usate come erbicidi selettivi."@it .
+
+:Methoxytriazine a owl:Class ;
+    rdfs:subClassOf :Triazine ;
+    rdfs:label "Methoxytriazine"@en ;
+    rdfs:label "Methoxytriazine"@de ;
+    rdfs:label "Méthoxytriazine"@fr ;
+    rdfs:label "Metossitriazina"@it ;
+    rdfs:comment "Triazines with methoxy groups, used as herbicides."@en ;
+    rdfs:comment "Triazine mit Methoxygruppen, verwendet als Herbizide."@de ;
+    rdfs:comment "Triazines avec des groupes méthoxy, utilisées comme herbicides."@fr ;
+    rdfs:comment "Triazine con gruppi metossi, usate come erbicidi."@it .
+
+### Sulfonylureas
+
+:Sulfonylurea a owl:Class ;
+    rdfs:subClassOf :Ingredient ;
+    rdfs:label "Sulfonylurea"@en ;
+    rdfs:label "Sulfonylharnstoff"@de ;
+    rdfs:label "Sulfonylurée"@fr ;
+    rdfs:label "Sulfonilurea"@it ;
+    rdfs:comment "Compounds containing a sulfonylurea group, used as herbicides due to their high potency at low use rates."@en ;
+    rdfs:comment "Verbindungen mit einer Sulfonylharnstoffgruppe, verwendet als Herbizide aufgrund ihrer hohen Wirksamkeit bei niedrigen Einsatzraten."@de ;
+    rdfs:comment "Composés contenant un groupe sulfonylurée, utilisés comme herbicides en raison de leur haute efficacité à faible taux d'utilisation."@fr ;
+    rdfs:comment "Composti contenenti un gruppo sulfonilurea, usati come erbicidi per la loro alta potenza a bassi dosaggi."@it .
+
+:Arylsulfonylurea a owl:Class ;
+    rdfs:subClassOf :Sulfonylurea ;
+    rdfs:label "Arylsulfonylurea"@en ;
+    rdfs:label "Arylsulfonylharnstoff"@de ;
+    rdfs:label "Arylsulfonylurée"@fr ;
+    rdfs:label "Arilsulfonilurea"@it ;
+    rdfs:comment "Sulfonylureas containing aryl groups, used as herbicides."@en ;
+    rdfs:comment "Sulfonylharnstoffe mit Arylgruppen, verwendet als Herbizide."@de ;
+    rdfs:comment "Sulfonylurées contenant des groupes aryles, utilisées comme herbicides."@fr ;
+    rdfs:comment "Sulfoniluree contenenti gruppi arilici, usate come erbicidi."@it .
+
+:Pyrimidinylsulfonylurea a owl:Class ;
+    rdfs:subClassOf :Sulfonylurea ;
+    rdfs:label "Pyrimidinylsulfonylurea"@en ;
+    rdfs:label "Pyrimidinylsulfonylharnstoff"@de ;
+    rdfs:label "Pyrimidinylsulfonylurée"@fr ;
+    rdfs:label "Pirimidinilsulfonilurea"@it ;
+    rdfs:comment "Sulfonylureas containing pyrimidinyl groups, used as herbicides."@en ;
+    rdfs:comment "Sulfonylharnstoffe mit Pyrimidinylgruppen, verwendet als Herbizide."@de ;
+    rdfs:comment "Sulfonylurées contenant des groupes pyrimidinyles, utilisées comme herbicides."@fr ;
+    rdfs:comment "Sulfoniluree contenenti gruppi pirimidinilici, usate come erbicidi."@it .
+
+### Dinitroanilines
+
+:Dinitroaniline a owl:Class ;
+    rdfs:subClassOf :Ingredient ;
+    rdfs:label "Dinitroaniline"@en ;
+    rdfs:label "Dinitroanilin"@de ;
+    rdfs:label "Dinitroaniline"@fr ;
+    rdfs:label "Dinitroanilina"@it ;
+    rdfs:comment "Compounds containing two nitro groups attached to an aniline ring, used as herbicides."@en ;
+    rdfs:comment "Verbindungen mit zwei Nitrogruppen an einem Anilinring, verwendet als Herbizide."@de ;
+    rdfs:comment "Composés contenant deux groupes nitro attachés à un anneau aniline, utilisés comme herbicides."@fr ;
+    rdfs:comment "Composti contenenti due gruppi nitro legati a un anello anilinico, usati come erbicidi."@it .
+
+### Imidazolinones
+
+:Imidazolinone a owl:Class ;
+    rdfs:subClassOf :Ingredient ;
+    rdfs:label "Imidazolinone"@en ;
+    rdfs:label "Imidazolinon"@de ;
+    rdfs:label "Imidazolinone"@fr ;
+    rdfs:label "Imidazolinone"@it ;
+    rdfs:comment "Heterocyclic compounds containing an imidazolinone ring, used as herbicides."@en ;
+    rdfs:comment "Heterocyclische Verbindungen mit einem Imidazolinon-Ring, verwendet als Herbizide."@de ;
+    rdfs:comment "Composés hétérocycliques contenant un anneau imidazolinone, utilisés comme herbicides."@fr ;
+    rdfs:comment "Composti eterociclici contenenti un anello imidazolinone, usati come erbicidi."@it .
+
+### Strobilurins
+
+:Strobilurin a owl:Class ;
+    rdfs:subClassOf :Ingredient ;
+    rdfs:label "Strobilurin"@en ;
+    rdfs:label "Strobilurin"@de ;
+    rdfs:label "Strobilurine"@fr ;
+    rdfs:label "Strobilurina"@it ;
+    rdfs:comment "Fungicides derived from natural compounds produced by certain mushrooms, inhibiting mitochondrial respiration."@en ;
+    rdfs:comment "Fungizide, die von natürlichen Verbindungen bestimmter Pilze abgeleitet sind und die mitochondriale Atmung hemmen."@de ;
+    rdfs:comment "Fongicides dérivés de composés naturels produits par certains champignons, inhibant la respiration mitochondriale."@fr ;
+    rdfs:comment "Fungicidi derivati da composti naturali prodotti da alcuni funghi, che inibiscono la respirazione mitocondriale."@it .
+
+### Azoles
+
+:Azole a owl:Class ;
+    rdfs:subClassOf :Ingredient ;
+    rdfs:label "Azole"@en ;
+    rdfs:label "Azol"@de ;
+    rdfs:label "Azole"@fr ;
+    rdfs:label "Azolo"@it ;
+    rdfs:comment "Five-membered nitrogen heterocyclic compounds used as fungicides."@en ;
+    rdfs:comment "Fünfgliedrige stickstoffhaltige heterocyclische Verbindungen, verwendet als Fungizide."@de ;
+    rdfs:comment "Composés hétérocycliques azotés à cinq chaînons, utilisés comme fongicides."@fr ;
+    rdfs:comment "Composti eterociclici azotati a cinque membri, usati come fungicidi."@it .
+
+:Triazole a owl:Class ;
+    rdfs:subClassOf :Azole ;
+    rdfs:label "Triazole"@en ;
+    rdfs:label "Triazol"@de ;
+    rdfs:label "Triazole"@fr ;
+    rdfs:label "Triazolo"@it ;
+    rdfs:comment "Azoles containing three nitrogen atoms, used as fungicides."@en ;
+    rdfs:comment "Azole mit drei Stickstoffatomen, verwendet als Fungizide."@de ;
+    rdfs:comment "Azoles contenant trois atomes d'azote, utilisés comme fongicides."@fr ;
+    rdfs:comment "Azoli contenenti tre atomi di azoto, usati come fungicidi."@it .
+
+:Imidazole a owl:Class ;
+    rdfs:subClassOf :Azole ;
+    rdfs:label "Imidazole"@en ;
+    rdfs:label "Imidazol"@de ;
+    rdfs:label "Imidazole"@fr ;
+    rdfs:label "Imidazolo"@it ;
+    rdfs:comment "Azoles containing two nitrogen atoms at non-adjacent positions, used as fungicides."@en ;
+    rdfs:comment "Azole mit zwei Stickstoffatomen an nicht benachbarten Positionen, verwendet als Fungizide."@de ;
+    rdfs:comment "Azoles contenant deux atomes d'azote à des positions non adjacentes, utilisés comme fongicides."@fr ;
+    rdfs:comment "Azoli contenenti due atomi di azoto in posizioni non adiacenti, usati come fungicidi."@it .
+
+### Dithiocarbamates
+
+:Dithiocarbamate a owl:Class ;
+    rdfs:subClassOf :Ingredient ;
+    rdfs:label "Dithiocarbamate"@en ;
+    rdfs:label "Dithiocarbamat"@de ;
+    rdfs:label "Dithiocarbamate"@fr ;
+    rdfs:label "Ditioarbammato"@it ;
+    rdfs:comment "Compounds containing the dithiocarbamate functional group, used as fungicides."@en ;
+    rdfs:comment "Verbindungen mit der Dithiocarbamat-Funktionsgruppe, verwendet als Fungizide."@de ;
+    rdfs:comment "Composés contenant le groupe fonctionnel dithiocarbamate, utilisés comme fongicides."@fr ;
+    rdfs:comment "Composti contenenti il gruppo funzionale ditioarbammato, usati come fungicidi."@it .
+
+### Phenylamides
+
+:Phenylamide a owl:Class ;
+    rdfs:subClassOf :Ingredient ;
+    rdfs:label "Phenylamide"@en ;
+    rdfs:label "Phenylamid"@de ;
+    rdfs:label "Phénylamide"@fr ;
+    rdfs:label "Fenilammide"@it ;
+    rdfs:comment "Compounds containing a phenylamide group, used as systemic fungicides."@en ;
+    rdfs:comment "Verbindungen mit einer Phenylamid-Gruppe, verwendet als systemische Fungizide."@de ;
+    rdfs:comment "Composés contenant un groupe phénylamide, utilisés comme fongicides systémiques."@fr ;
+    rdfs:comment "Composti contenenti un gruppo fenilammide, usati come fungicidi sistemici."@it .
+
+### Copper Compounds
+
+:CopperCompound a owl:Class ;
+    rdfs:subClassOf :Ingredient ;
+    rdfs:label "Copper Compound"@en ;
+    rdfs:label "Kupferverbindung"@de ;
+    rdfs:label "Composé de cuivre"@fr ;
+    rdfs:label "Composto di rame"@it ;
+    rdfs:comment "Inorganic or organic compounds containing copper, used as fungicides and bactericides."@en ;
+    rdfs:comment "Anorganische oder organische Verbindungen, die Kupfer enthalten, verwendet als Fungizide und Bakterizide."@de ;
+    rdfs:comment "Composés inorganiques ou organiques contenant du cuivre, utilisés comme fongicides et bactéricides."@fr ;
+    rdfs:comment "Composti inorganici o organici contenenti rame, usati come fungicidi e battericidi."@it .
+
+### Bipyridyl Compounds
+
+:BipyridylCompound a owl:Class ;
+    rdfs:subClassOf :Ingredient ;
+    rdfs:label "Bipyridyl Compound"@en ;
+    rdfs:label "Bipyridylverbindung"@de ;
+    rdfs:label "Composé bipyridyle"@fr ;
+    rdfs:label "Composto bipiridilico"@it ;
+    rdfs:comment "Compounds containing bipyridyl rings, used as non-selective herbicides."@en ;
+    rdfs:comment "Verbindungen mit Bipyridyl-Ringen, verwendet als nicht-selektive Herbizide."@de ;
+    rdfs:comment "Composés contenant des anneaux bipyridyle, utilisés comme herbicides non sélectifs."@fr ;
+    rdfs:comment "Composti contenenti anelli bipiridilici, usati come erbicidi non selettivi."@it .
+
+### Biological Compounds
+
+:BiologicalCompound a owl:Class ;
+    rdfs:subClassOf :Ingredient ;
+    rdfs:label "Biological Compound"@en ;
+    rdfs:label "Biologischer Wirkstoff"@de ;
+    rdfs:label "Composé biologique"@fr ;
+    rdfs:label "Composto biologico"@it ;
+    rdfs:comment "Naturally occurring substances or microorganisms used for pest control."@en ;
+    rdfs:comment "Natürlich vorkommende Substanzen oder Mikroorganismen, die zur Schädlingsbekämpfung verwendet werden."@de ;
+    rdfs:comment "Substances naturelles ou micro-organismes utilisés pour le contrôle des ravageurs."@fr ;
+    rdfs:comment "Sostanze naturali o microrganismi usati per il controllo dei parassiti."@it .
+
+:MicrobialPesticide a owl:Class ;
+    rdfs:subClassOf :BiologicalCompound ;
+    rdfs:label "Microbial Pesticide"@en ;
+    rdfs:label "Mikrobielles Pestizid"@de ;
+    rdfs:label "Pesticide microbien"@fr ;
+    rdfs:label "Pesticida microbico"@it ;
+    rdfs:comment "Pesticides that contain microorganisms as the active ingredient."@en ;
+    rdfs:comment "Pestizide, die Mikroorganismen als Wirkstoff enthalten."@de ;
+    rdfs:comment "Pesticides contenant des micro-organismes comme ingrédient actif."@fr ;
+    rdfs:comment "Pesticidi che contengono microrganismi come principio attivo."@it .
+
+:BotanicalPesticide a owl:Class ;
+    rdfs:subClassOf :BiologicalCompound ;
+    rdfs:label "Botanical Pesticide"@en ;
+    rdfs:label "Botanisches Pestizid"@de ;
+    rdfs:label "Pesticide botanique"@fr ;
+    rdfs:label "Pesticida botanico"@it ;
+    rdfs:comment "Pesticides derived from plants or plant extracts."@en ;
+    rdfs:comment "Pestizide, die aus Pflanzen oder Pflanzenextrakten gewonnen werden."@de ;
+    rdfs:comment "Pesticides dérivés de plantes ou d'extraits de plantes."@fr ;
+    rdfs:comment "Pesticidi derivati da piante o estratti vegetali."@it .
+
+### Inorganic Compounds
+
+:InorganicCompound a owl:Class ;
+    rdfs:subClassOf :Ingredient ;
+    rdfs:label "Inorganic Compound"@en ;
+    rdfs:label "Anorganische Verbindung"@de ;
+    rdfs:label "Composé inorganique"@fr ;
+    rdfs:label "Composto inorganico"@it ;
+    rdfs:comment "Mineral-based compounds used as pesticides, such as sulfur and copper sulfate."@en ;
+    rdfs:comment "Mineralbasierte Verbindungen, die als Pestizide verwendet werden, wie Schwefel und Kupfersulfat."@de ;
+    rdfs:comment "Composés à base de minéraux utilisés comme pesticides, tels que le soufre et le sulfate de cuivre."@fr ;
+    rdfs:comment "Composti a base minerale usati come pesticidi, come zolfo e solfato di rame."@it .
