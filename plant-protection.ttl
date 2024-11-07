@@ -62,7 +62,7 @@
                  "Relie un produit à un composant de sa formulation."@fr,
                  "Relaziona un prodotto a una componente della sua formulazione."@it ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( :Pesticide :Disinfectant :SeedTreatment :DefenseStimulator :StorageProtectionAgent :PlantGrowthRegulator :Adjuvant :WoundSealant :WildlifeRepellent ) ] ;
+                  owl:unionOf ( :Pesticide :PlantProtectant :Adjuvant :PlantHealthPromoter ) ] ;
     rdfs:range :FormulationComponent .
 
 # Link between formulation component and ingredient
@@ -115,7 +115,7 @@
 :contains a owl:ObjectProperty ;
     rdfs:label "contains"@en , "beinhaltet"@de , "contient"@fr , "contiene"@it ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( :Pesticide :Disinfectant :SeedTreatment :DefenseStimulator :StorageProtectionAgent :PlantGrowthRegulator :Adjuvant :WoundSealant :WildlifeRepellent ) ] ;
+                  owl:unionOf ( :Pesticide :PlantProtectant :Adjuvant :PlantHealthPromoter ) ] ;
     rdfs:range :Ingredient .
 
 # Registration code (W-number) for a product
@@ -464,14 +464,14 @@ wd:Q16521 a owl:Class ;
                  "Organismi nematodi utilizzati come agenti di controllo biologico."@it ;
     rdfs:subClassOf :BiologicalControlAgent .
 :BCA_AgainstFungi a owl:Class ;
-    rdfs:label "Against Fungi"@en, "gegen Pilze"@de, "contre les champignons"@fr, "contro i funghi"@it ;
+    rdfs:label "Against Fungi"@en, "Gegen Pilze"@de, "contre les champignons"@fr, "contro i funghi"@it ;
     rdfs:comment "Biological agents used specifically against fungal pathogens."@en,
                  "Biologische Agenten, die speziell gegen Pilzpathogene eingesetzt werden."@de,
                  "Agents biologiques utilisés spécifiquement contre les agents pathogènes fongiques."@fr,
                  "Agenti biologici utilizzati specificamente contro i patogeni fungini."@it ;
     rdfs:subClassOf :BiologicalControlAgent .
 :Adjuvant a owl:Class ;
-    rdfs:label "Adjuvant"@en, "Netz- und Haftmittel"@de, "Adjuvant"@fr, "Adiuvante"@it ;
+    rdfs:label "Adjuvant"@en, "Adjuvant"@de, "Adjuvant"@fr, "Adiuvante"@it ;
     rdfs:comment "Substances added to pesticides to enhance their effectiveness."@en,
                  "Substanzen, die Pestiziden zugesetzt werden, um ihre Wirksamkeit zu erhöhen."@de,
                  "Substances ajoutées aux pesticides pour améliorer leur efficacité."@fr,
