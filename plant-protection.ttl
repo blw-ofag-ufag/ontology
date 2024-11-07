@@ -548,6 +548,9 @@ wd:Q16521 a owl:Class ;
                  "Prodotti che potenziano i meccanismi di difesa naturali delle piante."@it ;
     rdfs:subClassOf :PlantHealthPromoter .
 
+# Define class disjointness among product taxonomy
+:BiologicalControlAgent owl:disjointWith :Pesticide .
+
 # Subclasses of ingredients and disjointness statements
 :ActiveIngredient rdfs:subClassOf :Ingredient ;
                   rdfs:label "Active Ingredient"@en, "Wirkstoff"@de, "Ingrédient actif"@fr, "Ingrediente attivo"@it ;
