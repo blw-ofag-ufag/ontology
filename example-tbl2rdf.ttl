@@ -1,0 +1,184 @@
+# We start with a table...
+
+Productgroup              Product                     Code
+Insecticide               Affirm                      W-7363-1
+Insecticide               Blocker                     W-7541
+Fungicide                 Fezan                       W-6589
+
+# Let's reshape to the SPO form
+
+Subject                   Predicate                   Object
+Affirm                    hasCode                     W-7363-1
+Blocker                   isATypeOf                   Insecticide
+Blocker                   hasCode                     W-7541
+Fezan                     isATypeOf                   Fungicide
+Fezan                     hasCode                     W-6589
+
+# Things need to be unique...
+
+http://ppp.ch/Affirm      http://ppp.ch/isATypeOf     http://ppp.ch/Insecticide .
+http://ppp.ch/Affirm      http://ppp.ch/hasCode       "W-7363-1" .
+http://ppp.ch/Blocker     http://ppp.ch/isATypeOf     http://ppp.ch/Insecticide .
+http://ppp.ch/Blocker     http://ppp.ch/hasCode       "W-7541" .
+http://ppp.ch/Fezan       http://ppp.ch/isATypeOf     http://ppp.ch/Fungicide .
+http://ppp.ch/Fezan       http://ppp.ch/hasCode       "W-6589" .
+
+# Actually, this could be more human readable
+
+@prefix : <http://ppp.ch/> .
+
+:Affirm                   :isATypeOf                  :Insecticide .
+:Affirm                   :hasCode                    "W-7363-1" .
+:Blocker                  :isATypeOf                  :Insecticide .
+:Blocker                  :hasCode                    "W-7541" .
+:Fezan                    :isATypeOf                  :Fungicide .
+:Fezan                    :hasCode                    "W-6589" .
+
+# Repeated subjects can be omitted
+
+@prefix : <http://ppp.ch/> .
+
+:Affirm                   :isATypeOf                  :Insecticide ;
+                          :hasCode                    "W-7363-1" .
+:Blocker                  :isATypeOf                  :Insecticide ;
+                          :hasCode                    "W-7541" .
+:Fezan                    :isATypeOf                  :Fungicide ;
+                          :hasCode                    "W-6589" .
+
+# Now, some of our relationships are already defined much better than we ever could...
+
+@prefix :     <http://ppp.ch/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:Affirm                   rdf:type                    :Insecticide ;
+                          :hasCode                    "W-7363-1" .
+:Blocker                  rdf:type                    :Insecticide ;
+                          :hasCode                    "W-7541" .
+:Fezan                    rdf:type                    :Fungicide ;
+                          :hasCode                    "W-6589" .
+
+# Actually, rdf:type is so common that we can simply write `a`
+
+@prefix :     <http://ppp.ch/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:Affirm                   a                           :Insecticide ;
+                          :hasCode                    "W-7363-1" .
+:Blocker                  a                           :Insecticide ;
+                          :hasCode                    "W-7541" .
+:Fezan                    a                           :Fungicide ;
+                          :hasCode                    "W-6589" .
+
+# We may also add empty lines for better legibility
+
+@prefix :     <http://ppp.ch/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:Affirm                   a                           :Insecticide ;
+                          :hasCode                    "W-7363-1" .
+
+:Blocker                  a                           :Insecticide ;
+                          :hasCode                    "W-7541" .
+
+:Fezan                    a                           :Fungicide ;
+                          :hasCode                    "W-6589" .
+
+# Now, let's add some knowledge that so far was implicit. We start with a pesticide taxonomy
+
+@prefix :     <http://ppp.ch/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Pesticide                rdfs:label                  "Pesticide"@en ;
+                          rdfs:comment                "Chemical product used for killing pests."@en .
+
+:Insecticide              rdfs:subClassOf             :Pesticide ;
+                          rdfs:label                  "Insecticide"@en ;
+                          rdfs:comment                "A chemical that kills insects."@en .
+
+:Fungicide                rdfs:subClassOf             :Pesticide ;
+                          rdfs:label                  "Fungicide"@en ;
+                          rdfs:comment                "A chemical that kills fungi."@en .
+
+:Affirm                   a                           :Insecticide ;
+                          :hasCode                    "W-7363-1" .
+
+:Blocker                  a                           :Insecticide ;
+                          :hasCode                    "W-7541" .
+
+:Fezan                    a                           :Fungicide ;
+                          :hasCode                    "W-6589" .
+
+# Next, we declare that :Pesticide is an owl class and we describe it's properties.
+
+@prefix :     <http://ppp.ch/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Pesticide                a                           owl:Class ;
+                          rdfs:label                  "Pesticide"@en ;
+                          rdfs:comment                "Chemical product used for killing pests."@en .
+
+:hasCode                  a                           owl:DatatypeProperty ;
+                          rdfs:label                  "Federal registration code"@en ;
+                          rdfs:domain                 :Pesticide ;
+                          rdfs:range                  xsd:string .
+
+:Insecticide              rdfs:subClassOf             :Pesticide ;
+                          rdfs:label                  "Insecticide"@en ;
+                          rdfs:comment                "A chemical that kills insects."@en .
+
+:Fungicide                rdfs:subClassOf             :Pesticide ;
+                          rdfs:label                  "Fungicide"@en ;
+                          rdfs:comment                "A chemical that kills fungi."@en .
+
+:Affirm                   a                           :Insecticide ;
+                          :hasCode                    "W-7363-1" .
+
+:Blocker                  a                           :Insecticide ;
+                          :hasCode                    "W-7541" .
+
+:Fezan                    a                           :Fungicide ;
+                          :hasCode                    "W-6589" .
+
+# Finally, let's describe the ontology we defined
+
+@prefix :     <http://ppp.ch/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+:                         a                           owl:Ontology ;
+                          dc:title                    "A tiny example ontology"@en ;
+                          dc:description              "This is only an example."@en ;
+                          dc:creator                  "Max Mustermann" .
+
+:Pesticide                a                           owl:Class ;
+                          rdfs:label                  "Pesticide"@en ;
+                          rdfs:comment                "Chemical product used for killing pests."@en .
+
+:hasCode                  a                           owl:DatatypeProperty ;
+                          rdfs:label                  "Federal registration code"@en ;
+                          rdfs:domain                 :Pesticide ;
+                          rdfs:range                  xsd:string .
+
+:Insecticide              rdfs:subClassOf             :Pesticide ;
+                          rdfs:label                  "Insecticide"@en ;
+                          rdfs:comment                "A chemical that kills insects."@en .
+
+:Fungicide                rdfs:subClassOf             :Pesticide ;
+                          rdfs:label                  "Fungicide"@en ;
+                          rdfs:comment                "A chemical that kills fungi."@en .
+
+:Affirm                   a                           :Insecticide ;
+                          :hasCode                    "W-7363-1" .
+
+:Blocker                  a                           :Insecticide ;
+                          :hasCode                    "W-7541" .
+
+:Fezan                    a                           :Fungicide ;
+                          :hasCode                    "W-6589" .

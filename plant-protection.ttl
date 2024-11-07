@@ -90,7 +90,7 @@
     rdfs:range :Ingredient .
     
 :registrationCode a owl:DatatypeProperty ;
-    rdfs:label "registration code"@en ;
+    rdfs:label "Federal registration code"@en ;
     rdfs:label "Eidgenössische Zulassungsnummer"@de ;
     rdfs:label "numéro d'enregistrement"@fr ;
     rdfs:label "numero di registrazione"@it ;
