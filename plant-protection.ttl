@@ -27,8 +27,8 @@
     rdfs:comment "A crop is any plant or plant product that is cultivated and harvested extensively for economic purposes, such as food, feed, fiber, fuel, or other valuable uses."@en,
                  "Eine Kulturpflanze ist jede Pflanze oder jedes Pflanzenprodukt, das umfangreich für wirtschaftliche Zwecke wie Nahrung, Futtermittel, Fasern, Brennstoff oder andere wertvolle Anwendungen angebaut und geerntet wird."@de,
                  "Une culture est toute plante ou produit végétal cultivé et récolté extensivement à des fins économiques, telles que l'alimentation, les fourrages, les fibres, les combustibles ou d'autres usages de valeur."@fr,
-                 "Una coltura è qualsiasi pianta o prodotto vegetale coltivato e raccolto estensivamente per scopi economici, come alimenti, foraggio, fibre, combustibile o altri usi di valore."@it .
-    owl:equivalentClass agrovoc:c_1972 ;
+                 "Una coltura è qualsiasi pianta o prodotto vegetale coltivato e raccolto estensivamente per scopi economici, come alimenti, foraggio, fibre, combustibile o altri usi di valore."@it ;
+    owl:equivalentClass agrovoc:c_1972 .
 
 # Product admissions
 :Product a owl:Class ;
