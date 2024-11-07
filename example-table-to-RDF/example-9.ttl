@@ -1,0 +1,13 @@
+# We may also add empty lines for better legibility
+
+@prefix :     <http://ppp.ch/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:Affirm                   a                           :Insecticide ;
+                          :hasCode                    "W-7363-1" .
+
+:Blocker                  a                           :Insecticide ;
+                          :hasCode                    "W-7541" .
+
+:Fezan                    a                           :Fungicide ;
+                          :hasCode                    "W-6589" .

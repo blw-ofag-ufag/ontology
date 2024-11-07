@@ -1,0 +1,25 @@
+# Now, let's add some knowledge that so far was implicit. We start with a pesticide taxonomy
+
+@prefix :     <http://ppp.ch/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Pesticide                rdfs:label                  "Pesticide"@en ;
+                          rdfs:comment                "Chemical used against pests."@en .
+
+:Insecticide              rdfs:subClassOf             :Pesticide ;
+                          rdfs:label                  "Insecticide"@en ;
+                          rdfs:comment                "A chemical that kills insects."@en .
+
+:Fungicide                rdfs:subClassOf             :Pesticide ;
+                          rdfs:label                  "Fungicide"@en ;
+                          rdfs:comment                "A chemical that kills fungi."@en .
+
+:Affirm                   a                           :Insecticide ;
+                          :hasCode                    "W-7363-1" .
+
+:Blocker                  a                           :Insecticide ;
+                          :hasCode                    "W-7541" .
+
+:Fezan                    a                           :Fungicide ;
+                          :hasCode                    "W-6589" .

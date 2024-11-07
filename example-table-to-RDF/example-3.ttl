@@ -1,0 +1,8 @@
+# Things need to be unique...
+
+http://ppp.ch/Affirm      http://ppp.ch/isATypeOf     http://ppp.ch/Insecticide .
+http://ppp.ch/Affirm      http://ppp.ch/hasCode       "W-7363-1" .
+http://ppp.ch/Blocker     http://ppp.ch/isATypeOf     http://ppp.ch/Insecticide .
+http://ppp.ch/Blocker     http://ppp.ch/hasCode       "W-7541" .
+http://ppp.ch/Fezan       http://ppp.ch/isATypeOf     http://ppp.ch/Fungicide .
+http://ppp.ch/Fezan       http://ppp.ch/hasCode       "W-6589" .

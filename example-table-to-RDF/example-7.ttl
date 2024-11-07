@@ -1,0 +1,11 @@
+# Now, some of our relationships are already defined much better than we ever could...
+
+@prefix :     <http://ppp.ch/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:Affirm                   rdf:type                    :Insecticide ;
+                          :hasCode                    "W-7363-1" .
+:Blocker                  rdf:type                    :Insecticide ;
+                          :hasCode                    "W-7541" .
+:Fezan                    rdf:type                    :Fungicide ;
+                          :hasCode                    "W-6589" .

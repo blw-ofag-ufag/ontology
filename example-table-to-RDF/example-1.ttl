@@ -1,0 +1,6 @@
+# We start with a table...
+
+Productgroup              Product                     Code
+Insecticide               Affirm                      W-7363-1
+Insecticide               Blocker                     W-7541
+Fungicide                 Fezan                       W-6589

@@ -1,0 +1,9 @@
+# Let's reshape to the SPO form
+
+Subject                   Predicate                   Object
+Affirm                    is a type of                Insecticide
+Affirm                    has registration code       W-7363-1
+Blocker                   is a type of                Insecticide
+Blocker                   has registration code       W-7541
+Fezan                     is a type of                Fungicide
+Fezan                     has registration code       W-6589

@@ -1,0 +1,10 @@
+# Actually, this could be more human readable
+
+@prefix : <http://ppp.ch/> .
+
+:Affirm                   :isATypeOf                  :Insecticide .
+:Affirm                   :hasCode                    "W-7363-1" .
+:Blocker                  :isATypeOf                  :Insecticide .
+:Blocker                  :hasCode                    "W-7541" .
+:Fezan                    :isATypeOf                  :Fungicide .
+:Fezan                    :hasCode                    "W-6589" .

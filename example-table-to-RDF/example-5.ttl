@@ -1,0 +1,10 @@
+# Repeated subjects can be omitted
+
+@prefix : <http://ppp.ch/> .
+
+:Affirm                   :isATypeOf                  :Insecticide ;
+                          :hasCode                    "W-7363-1" .
+:Blocker                  :isATypeOf                  :Insecticide ;
+                          :hasCode                    "W-7541" .
+:Fezan                    :isATypeOf                  :Fungicide ;
+                          :hasCode                    "W-6589" .
