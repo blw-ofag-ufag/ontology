@@ -22,6 +22,7 @@
 :Fungicide                rdfs:subClassOf             :Pesticide ;
                           rdfs:label                  "Fungicide"@en ;
                           rdfs:comment                "A chemical that kills fungi."@en .
+                          owl:disjointWith            :Insecticide .
 
 :Affirm                   a                           :Insecticide ;
                           :hasCode                    "W-7363-1" .
