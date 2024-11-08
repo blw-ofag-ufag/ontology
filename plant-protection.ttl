@@ -18,7 +18,7 @@
         "Diese Ontologie veranschaulicht den Wert einer umfassenden und gut strukturierten Ontologieentwicklung für das Bundesamt für Landwirtschaft (und allgemein den Schweizer Agrar- und Lebensmittelsektor). Durch die formale Modellierung der Komplexität des Pflanzenschutzes (mit Schwerpunkt auf zugelassenen Produkten) verbessert sie das Verständnis der aktuellen Regeln und ermöglicht deren effektive Kommunikation über IT-Dienste."@de,
         "Cette ontologie illustre la valeur d'un développement d'ontologie complet et bien structuré pour l'Office fédéral de l'agriculture (et plus largement le secteur agroalimentaire suisse). En capturant les complexités de la protection des cultures (avec un accent sur les produits enregistrés) dans un modèle formel, elle améliore la compréhension des règles actuelles et permet leur communication efficace via des services informatiques."@fr,
         "Questa ontologia esemplifica il valore di uno sviluppo ontologico completo e ben strutturato per l'Ufficio federale dell'agricoltura (e più in generale per il settore agroalimentare svizzero). Catturando le complessità della protezione delle colture (con un focus sui prodotti registrati) in un modello formale, migliora la comprensione delle regole attuali e ne consente una comunicazione efficace attraverso i servizi informatici."@it ;
-    owl:versionInfo "0.3" ;
+    owl:versionInfo "0.4" ;
     dc:creator "Damian Oswald" .
 
 # Crops
@@ -196,15 +196,13 @@
     rdfs:domain :Substance ;
     rdfs:range xsd:string .
 
-# Class for Authorized Usage
+# Authorized usages and its object properties
 :AuthorizedUsage a owl:Class ;
     rdfs:label "Authorized usage"@en, "Zugelassene Anwendung"@de, "Utilisation autorisée"@fr, "Uso autorizzato"@it ;
     rdfs:comment "An instance representing the authorization of a product against a pest on a crop under specific conditions and time periods."@en,
         "Eine Instanz, die die Zulassung eines Produkts gegen einen Schädling auf einer Kulturpflanze unter bestimmten Bedingungen und Zeiträumen darstellt."@de,
         "Une instance représentant l'autorisation d'un produit contre un ravageur sur une culture sous des conditions et des périodes spécifiques."@fr,
         "Un'istanza che rappresenta l'autorizzazione di un prodotto contro un parassita su una coltura in condizioni e periodi specifici."@it .
-
-# Object property linking AuthorizedUsage to Product
 :authorizedProduct a owl:ObjectProperty ;
     rdfs:label "authorized product"@en, "zugelassenes Produkt"@de, "produit autorisé"@fr, "prodotto autorizzato"@it ;
     rdfs:comment "Links an authorized usage to the specific product."@en,
@@ -213,8 +211,6 @@
         "Collega un uso autorizzato al prodotto specifico."@it ;
     rdfs:domain :AuthorizedUsage ;
     rdfs:range :Product .
-
-# Object property linking AuthorizedUsage to Pest
 :targetPest a owl:ObjectProperty ;
     rdfs:label "target pest"@en, "Zielschädling"@de, "ravageur cible"@fr, "parassita bersaglio"@it ;    
     rdfs:comment "Specifies the pest that the product is authorized to control."@en,
@@ -223,8 +219,6 @@
         "Specifica il parassita che il prodotto è autorizzato a controllare."@it ;
     rdfs:domain :AuthorizedUsage ;
     rdfs:range :Pest .
-
-# Object property linking AuthorizedUsage to Crop
 :targetCrop a owl:ObjectProperty ;
     rdfs:label "target crop"@en, "Zielkultur"@de, "culture cible"@fr, "coltura bersaglio"@it ;
     rdfs:comment "Indicates the crop on which the product can be used."@en,
@@ -233,6 +227,67 @@
         "Indica la coltura su cui può essere utilizzato il prodotto."@it ;
     rdfs:domain :AuthorizedUsage ;
     rdfs:range :Crop .
+:hasCodeS a owl:ObjectProperty ;
+    rdfs:label "has Code S"@en , "hat Code S"@de , "a Code S"@fr , "ha Codice S"@it ;
+    rdfs:domain :AuthorizedUsage ;
+    rdfs:range :CodeS .
+:hasObligation a owl:ObjectProperty ;
+    rdfs:label "has obligation"@en , 
+               "hat Auflage zur Verwendung"@de ,
+               "a obligation"@fr ,
+               "ha obbligo"@it ;
+    rdfs:domain :AuthorizedUsage ;
+    rdfs:range :Obligation .
+
+# Obligations on PPP applications
+:Obligation a owl:Class ;
+    rdfs:label "Obligation"@en , "Auflage"@de , "Obligation"@fr , "Obbligo"@it ;
+    rdfs:comment "A general class representing a regulation or requirement that must be adhered to in agricultural, environmental, or other contexts."@en ;
+    rdfs:comment "Eine allgemeine Klasse, die eine Regelung oder Anforderung darstellt, die in landwirtschaftlichen, umweltbezogenen oder anderen Kontexten eingehalten werden muss."@de ;
+    rdfs:comment "Une classe générale représentant une réglementation ou une exigence à respecter dans des contextes agricoles, environnementaux ou autres."@fr ;
+    rdfs:comment "Una classe generale che rappresenta una regolamentazione o un requisito che deve essere rispettato in contesti agricoli, ambientali o altri."@it .
+:ObligationApplicationFrequency a owl:Class ;
+    rdfs:label "Application Frequency"@en , "Anwendungshäufigkeit"@de , "Fréquence d'application"@fr , "Frequenza di applicazione"@it ;
+    rdfs:subClassOf :Obligation ;
+    rdfs:comment "Specifies the maximum number of allowed applications per plot, year, or cultivation cycle, as well as minimum intervals between applications."@en ;
+    rdfs:comment "Legt die maximale Anzahl erlaubter Anwendungen pro Parzelle, Jahr oder Kulturzyklus sowie Mindestabstände zwischen den Anwendungen fest."@de ;
+    rdfs:comment "Précise le nombre maximal d'applications autorisées par parcelle, par an ou par cycle de culture, ainsi que les intervalles minimum entre les applications."@fr ;
+    rdfs:comment "Specifica il numero massimo di applicazioni consentite per parcella, anno o ciclo colturale, nonché gli intervalli minimi tra le applicazioni."@it .
+:ObligationDosageAdjustment a owl:Class ;
+    rdfs:label "Dosage Adjustment"@en , "Dosierungsanpassung"@de , "Ajustement de dosage"@fr , "Regolazione del dosaggio"@it ;
+    rdfs:subClassOf :Obligation ;
+    rdfs:comment "Describes required dosages and adjustments based on factors like crop type, growth stage, or environmental conditions."@en ;
+    rdfs:comment "Beschreibt die erforderlichen Dosierungen und Dosierungsanpassungen basierend auf Faktoren wie Kulturart, Wachstumsstadium oder Umweltbedingungen."@de ;
+    rdfs:comment "Décrit les dosages requis et les ajustements basés sur des facteurs tels que le type de culture, le stade de croissance ou les conditions environnementales."@fr ;
+    rdfs:comment "Descrive i dosaggi richiesti e le regolazioni basate su fattori come il tipo di coltura, lo stadio di crescita o le condizioni ambientali."@it .
+:ObligationProtectiveEquipment a owl:Class ;
+    rdfs:label "Protective Equipment"@en , "Schutzausrüstung"@de , "Équipement de protection"@fr , "Dispositivi di protezione"@it ;
+    rdfs:subClassOf :Obligation ;
+    rdfs:comment "Specifies the required personal protective equipment (PPE) when handling and applying products, such as gloves, masks, suits, or shields."@en ;
+    rdfs:comment "Legt die erforderliche persönliche Schutzausrüstung (PSA) für den Umgang und die Anwendung von Produkten fest, wie z.B. Handschuhe, Masken, Anzüge oder Schutzschilde."@de ;
+    rdfs:comment "Précise l'équipement de protection individuelle (EPI) requis pour manipuler et appliquer les produits, tels que gants, masques, combinaisons ou écrans."@fr ;
+    rdfs:comment "Specifica i dispositivi di protezione individuale (DPI) richiesti per manipolare e applicare i prodotti, come guanti, maschere, tute o scudi."@it .
+:ObligationEnvironmentalProtection a owl:Class ;
+    rdfs:label "Environmental Protection"@en , "Umweltschutz"@de , "Protection de l'environnement"@fr , "Protezione ambientale"@it ;
+    rdfs:subClassOf :Obligation ;
+    rdfs:comment "Includes measures to protect the environment, such as buffer zones, restrictions near water bodies, and protection for non-target organisms like bees and wildlife."@en ;
+    rdfs:comment "Umfasst Maßnahmen zum Schutz der Umwelt, wie Pufferzonen, Einschränkungen in der Nähe von Gewässern und Schutz für Nichtzielorganismen wie Bienen und Wildtiere."@de ;
+    rdfs:comment "Comprend des mesures pour protéger l'environnement, telles que des zones tampons, des restrictions à proximité des plans d'eau et la protection des organismes non ciblés comme les abeilles et la faune."@fr ;
+    rdfs:comment "Include misure per proteggere l'ambiente, come zone cuscinetto, restrizioni vicino ai corpi idrici e protezione per organismi non bersaglio come api e fauna selvatica."@it .
+:ObligationCropSpecificApplication a owl:Class ;
+    rdfs:label "Crop-Specific Application"@en , "Kulturspezifische Anwendung"@de , "Application spécifique à la culture"@fr , "Applicazione specifica per coltura"@it ;
+    rdfs:subClassOf :Obligation ;
+    rdfs:comment "Details restrictions specific to certain crops or plant varieties, including suitable growth stages or sensitive types."@en ;
+    rdfs:comment "Enthält Einschränkungen für bestimmte Kulturen oder Pflanzensorten, einschließlich geeigneter Wachstumsstadien oder empfindlicher Sorten."@de ;
+    rdfs:comment "Détaille les restrictions spécifiques à certaines cultures ou variétés de plantes, y compris les stades de croissance appropriés ou les types sensibles."@fr ;
+    rdfs:comment "Dettaglia restrizioni specifiche per determinate colture o varietà di piante, inclusi stadi di crescita appropriati o tipi sensibili."@it .
+:ObligationApplicationMethod a owl:Class ;
+    rdfs:label "Application Method"@en , "Anwendungstechnik"@de , "Méthode d'application"@fr , "Metodo di applicazione"@it ;
+    rdfs:subClassOf :Obligation ;
+    rdfs:comment "Defines specific requirements for application methods, such as aerial spraying, backpack sprayers, or specific devices to be used."@en ;
+    rdfs:comment "Definiert spezifische Anforderungen an Anwendungsmethoden, wie z.B. Luftapplikation, Rückenspritzen oder bestimmte zu verwendende Geräte."@de ;
+    rdfs:comment "Définit des exigences spécifiques pour les méthodes d'application, telles que la pulvérisation aérienne, les pulvérisateurs à dos ou les dispositifs spécifiques à utiliser."@fr ;
+    rdfs:comment "Definisce requisiti specifici per i metodi di applicazione, come l'irrorazione aerea, gli spruzzatori a spalla o dispositivi specifici da utilizzare."@it .
 
 # Datatype property for usage conditions
 :usageConditions a owl:DatatypeProperty ;
@@ -318,7 +373,7 @@ wd:Q16521 a owl:Class ;
         "Lie une entité à son taxon biologique correspondant."@fr,
         "Collega un'entità al suo corrispondente taxon biologico."@it ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( :Crop :Pest :BiologicalControlAgent ) ] ;
+                  owl:unionOf ( :Crop :Pest agrovoc:c_920 ) ] ;
     rdfs:range wd:Q16521 .
 
 # Add a taxonomy for products (essentially a better version of https://www.psm.admin.ch/de/kategorien)
@@ -406,7 +461,7 @@ wd:Q16521 a owl:Class ;
         "Un agent qui désactive ou détruit les virus."@fr,
         "Un agente che disattiva o distrugge i virus."@it ;
     rdfs:subClassOf :Pesticide .
-:BiologicalControlAgent a owl:Class ;
+agrovoc:c_920 a owl:Class ;
     rdfs:label "Biological Control Agent"@en, "Lebender Organismus"@de, "Agent de lutte biologique"@fr, "Agente di controllo biologico"@it ;
     rdfs:comment "Living organisms used to control pests and diseases."@en,
         "Lebende Organismen, die zur Bekämpfung von Schädlingen und Krankheiten eingesetzt werden."@de,
@@ -419,49 +474,49 @@ wd:Q16521 a owl:Class ;
         "Bakterielle Organismen, die als biologische Kontrollagenten verwendet werden."@de,
         "Organismes bactériens utilisés comme agents de lutte biologique."@fr,
         "Organismi batterici utilizzati come agenti di controllo biologico."@it ;
-    rdfs:subClassOf :BiologicalControlAgent .
+    rdfs:subClassOf agrovoc:c_920 .
 :BCA_Fungi a owl:Class ;
     rdfs:label "Fungi"@en, "Pilze"@de, "Champignons"@fr, "Funghi"@it ;
     rdfs:comment "Fungal organisms used as biological control agents."@en,
         "Pilzorganismen, die als biologische Kontrollagenten verwendet werden."@de,
         "Organismes fongiques utilisés comme agents de lutte biologique."@fr,
         "Organismi fungini utilizzati come agenti di controllo biologico."@it ;
-    rdfs:subClassOf :BiologicalControlAgent .
+    rdfs:subClassOf agrovoc:c_920 .
 :BCA_Insects a owl:Class ;
     rdfs:label "Insects"@en, "Insekten"@de, "Insectes"@fr, "Insetti"@it ;
     rdfs:comment "Insect organisms used as biological control agents."@en,
         "Insektenorganismen, die als biologische Kontrollagenten verwendet werden."@de,
         "Organismes d'insectes utilisés comme agents de lutte biologique."@fr,
         "Organismi insetti utilizzati come agenti di controllo biologico."@it ;
-    rdfs:subClassOf :BiologicalControlAgent .
+    rdfs:subClassOf agrovoc:c_920 .
 :BCA_InsectViruses a owl:Class ;
     rdfs:label "Insect Viruses"@en, "Insektenviren"@de, "Virus d'insectes"@fr, "Virus degli insetti"@it ;
     rdfs:comment "Viral agents used to control insect populations."@en,
         "Virale Agenten, die zur Kontrolle von Insektenpopulationen verwendet werden."@de,
         "Agents viraux utilisés pour contrôler les populations d'insectes."@fr,
         "Agenti virali utilizzati per controllare le popolazioni di insetti."@it ;
-    rdfs:subClassOf :BiologicalControlAgent .
+    rdfs:subClassOf agrovoc:c_920 .
 :BCA_Mites a owl:Class ;
     rdfs:label "Mites"@en, "Milben"@de, "Acariens"@fr, "Acaro"@it ;
     rdfs:comment "Mite organisms used as biological control agents."@en,
         "Milbenorganismen, die als biologische Kontrollagenten verwendet werden."@de,
         "Organismes d'acariens utilisés comme agents de lutte biologique."@fr,
         "Organismi acari utilizzati come agenti di controllo biologico."@it ;
-    rdfs:subClassOf :BiologicalControlAgent .
+    rdfs:subClassOf agrovoc:c_920 .
 :BCA_Nematodes a owl:Class ;
     rdfs:label "Nematodes"@en, "Nematoden"@de, "Nématodes"@fr, "Nematodi"@it ;
     rdfs:comment "Nematode organisms used as biological control agents."@en,
         "Nematodenorganismen, die als biologische Kontrollagenten verwendet werden."@de,
         "Organismes de nématodes utilisés comme agents de lutte biologique."@fr,
         "Organismi nematodi utilizzati come agenti di controllo biologico."@it ;
-    rdfs:subClassOf :BiologicalControlAgent .
+    rdfs:subClassOf agrovoc:c_920 .
 :BCA_AgainstFungi a owl:Class ;
     rdfs:label "Against Fungi"@en, "Gegen Pilze"@de, "contre les champignons"@fr, "contro i funghi"@it ;
     rdfs:comment "Biological agents used specifically against fungal pathogens."@en,
         "Biologische Agenten, die speziell gegen Pilzpathogene eingesetzt werden."@de,
         "Agents biologiques utilisés spécifiquement contre les agents pathogènes fongiques."@fr,
         "Agenti biologici utilizzati specificamente contro i patogeni fungini."@it ;
-    rdfs:subClassOf :BiologicalControlAgent .
+    rdfs:subClassOf agrovoc:c_920 .
 :Adjuvant a owl:Class ;
     rdfs:label "Adjuvant"@en, "Adjuvant"@de, "Adjuvant"@fr, "Adiuvante"@it ;
     rdfs:comment "Substances added to pesticides to enhance their effectiveness."@en,
@@ -541,7 +596,7 @@ wd:Q16521 a owl:Class ;
     rdfs:subClassOf :PlantHealthPromoter .
 
 # Define class disjointness among product taxonomy
-:BiologicalControlAgent owl:disjointWith :Pesticide .
+agrovoc:c_920 owl:disjointWith :Pesticide .
 
 # Substances, its subclasses and their disjointness statements
 :Substance a owl:Class ;
@@ -549,7 +604,7 @@ wd:Q16521 a owl:Class ;
     rdfs:comment "A substance or compound in a chemical product that is biologically active, responsible for the intended effects or therapeutic action of the product."@en,
         "Eine biologisch aktive Substanz oder Verbindung in einem chemischen Produkt, die für die beabsichtigten Wirkungen oder die therapeutische Wirkung des Produkts verantwortlich ist."@de,
         "Une substance ou un composé dans un produit chimique qui est biologiquement actif, responsable des effets ou de l'action thérapeutique du produit."@fr,
-        "Una sostanza o un composto in un prodotto chimico che è biologicamente attivo, responsabile degli effetti previsti o dell'azione terapeutica del prodotto."@it .
+        "Una sostanza o un composto in un prodotto farmaceutico o chimico che è biologicamente attivo, responsabile degli effetti previsti o dell'azione terapeutica del prodotto."@it .
 :ActiveIngredient rdfs:subClassOf :Substance ;
     rdfs:label "Active Ingredient"@en, "Wirkstoff"@de, "Ingrédient actif"@fr, "Ingrediente attivo"@it ;
     rdfs:comment "An ingredient that provides the primary effect in a product."@en,
@@ -577,3 +632,123 @@ wd:Q16521 a owl:Class ;
 :ActiveIngredient owl:disjointWith :AdditiveToDeclare, :Synergist, :Safener .
 :AdditiveToDeclare owl:disjointWith :Synergist, :Safener .
 :Synergist owl:disjointWith :Safener .
+
+# Code S and its instances
+:CodeS a owl:Class ;
+    rdfs:label "Code S" .
+:codeS1 a :CodeS ; 
+	rdfs:label "Bewilligt für die nichtberufliche Verwendung."@de , 
+		"Autorisé pour l'utilisation non professionnelle."@fr , 
+		"Autorizzato per l'utilizzazione non professionale."@it .
+:codeS2 a :CodeS ; 
+	rdfs:label "Darf nicht in die Hände von Kindern gelangen."@de , 
+		"Tenir hors de portée des enfants."@fr , 
+		"Tenere fuori dalla portata dei bambini."@it .
+:codeS3 a :CodeS ; 
+	rdfs:label "Mittel und/oder dessen Behälter nicht in Gewässer gelangen lassen."@de , 
+		"Ne pas polluer l'eau avec le produit ou son emballage."@fr , 
+		"Non contaminare l'acqua con il prodotto o il suo imballaggio."@it .
+:codeS4 a :CodeS ; 
+	rdfs:label "Zur Vermeidung von Risiken für Mensch und Umwelt ist die Gebrauchsanleitung einzuhalten."@de , 
+		"Respectez les instructions d'utilisation pour éviter les risques pour l'homme et l'environnement."@fr , 
+		"Per evitare rischi per l'uomo e per l'ambiente seguire le istruzioni per l'uso."@it .
+:codeS5 a :CodeS ; 
+	rdfs:label "Darf nicht in die Hände von Kindern gelangen."@de , 
+		"Conserver hors de la portée des enfants."@fr , 
+		"Conservare fuori della portata dei bambini."@it .
+:codeS6 a :CodeS ; 
+	rdfs:label "Abfälle und Behälter müssen in gesicherter Weise beseitigt werden."@de , 
+		"Ne se débarrasser de ce produit et de son récipient qu'en prenant toutes précautions d'usage."@fr , 
+		"Non disfarsi del prodotto e del recipiente se non con le dovute precauzioni."@it .
+:codeS7 a :CodeS ; 
+	rdfs:label "Nur für den berufsmässigen Verwender."@de , 
+		"Réservé aux utilisateurs professionnels. "@fr , 
+		"A uso esclusivamente professionale. "@it .
+:codeS8 a :CodeS ; 
+	rdfs:label "Bienengefährlich"@de , 
+		"Dangereux pour les abeilles"@fr , 
+		"Pericoloso per le api"@it .
+:codeS9 a :CodeS ; 
+	rdfs:label "Zum Schutz von Bodenorganismen dieses Pflanzenschutzmittel oder andere Pflanzenschutzmittel, die den Wirkstoff Dazomet (DMTT) enthalten, nicht mehr als 1 mal alle 3 Jahre auf derselben Parzelle anwenden."@de , 
+		"En vue de protéger les organismes du sol, ne pas appliquer ce produit phytosanitaire ou d'autres produits contenant la substance active Dazomet (DMTT) plus d'une fois tous les trois ans sur la même parcelle."@fr , 
+		"Per proteggere gli organismi del suolo non applicare questo o altri prodotti fitosanitari contenenti il principio attivo Dazomet (DMTT) più di 1 volta ogni 3 anni sulla stessa particella."@it .
+:codeS10 a :CodeS ; 
+	rdfs:label "Zum Schutz von Grundwasser nicht in Grundwasserschutzzonen (S2 und Sh) ausbringen."@de , 
+		"Afin de protéger les eaux souterraines, ne pas appliquer ce produit dans les zones de protection des eaux souterraines (S2 et Sh)."@fr , 
+		"Onde proteggere le acque sotterranee evitare i trattamenti nelle zone di protezione delle acque sotterranee (S2 e Sh)."@it .
+:codeS11 a :CodeS ; 
+	rdfs:label "Nach Anzünden des Mittels Rauch nicht einatmen und die behandelte Fläche sofort verlassen."@de , 
+		"Après déclenchement de la fumigation, ne pas inhaler la fumée et quitter la zone traitée immédiatement."@fr , 
+		"Una volta avviata la fumigazione, non inalare il fumo e abbandonare immediatamente la zona trattata."@it .
+:codeS12 a :CodeS ; 
+	rdfs:label "Vorsicht! Beim Entzünden der Patrone entsteht giftiges Gas (Schwefeldioxid)."@de , 
+		"Attention! Après l'allumage, la cartouche produit du gaz toxique (dioxyde de soufre)."@fr , 
+		"Attenzione! All'accensione la cartuccia rilascia gas tossico (anidride solforosa)."@it .
+:codeS13 a :CodeS ; 
+	rdfs:label "Nur für den berufsmässigen Verwender. Keine Anwendung im Siedlungsgebiet."@de , 
+		"Résérvé aux utilisateurs professionnels. Utilisation interdite dans les zones urbanisées."@fr , 
+		"A uso esclusivamente professionale. Uso vietato nelle zone d'insediamento."@it .
+:codeS14 a :CodeS ; 
+	rdfs:label "Nach Kontakt mit der Haut zuerst das Mittel mit einem trockenen Tuch entfernen und dann die Haut mit reichlich Wasser abspülen."@de , 
+		"Après contact avec la peau, éliminer d'abord le produit avec un chiffon sec, puis laver la peau abondamment à l'eau."@fr , 
+		"Dopo il contatto con la pelle, rimuovere dapprima il prodotto con un panno asciutto e quindi lavare abbondantemente con acqua."@it .
+:codeS15 a :CodeS ; 
+	rdfs:label "Die gesamte Schutzkleidung muss nach Gebrauch gewaschen werden."@de , 
+		"Laver tous les équipements de protection après utilisation."@fr , 
+		"Lavare tutto l'abbigliamento di protezione dopo l'impiego."@it .
+:codeS16 a :CodeS ; 
+	rdfs:label "Aerosol nicht einatmen."@de , 
+		"Ne pas respirer les aérosols."@fr , 
+		"Non respirare i aerosoli."@it .
+:codeS17 a :CodeS ; 
+	rdfs:label "Berührung mit der Haut vermeiden."@de , 
+		"Eviter le contact avec la peau."@fr , 
+		"Evitare il contatto con la pelle."@it .
+:codeS18 a :CodeS ; 
+	rdfs:label "Sensibilisierung durch Einatmen und Hautkontakt möglich."@de , 
+		"Peut entraîner une sensibilisation par inhalation et par contact avec la peau."@fr , 
+		"Può provocare sensibilizzazione per inalazione e a contatto con la pelle."@it .
+:codeS19 a :CodeS ; 
+	rdfs:label "Bei der Arbeit geeignete Schutzhandschuhe und Schutzkleidung tragen. "@de , 
+		"Porter un vêtement de protection et des gants appropriés. "@fr , 
+		"Usare indumenti protettivi e guanti adatti. "@it .
+:codeS20 a :CodeS ; 
+	rdfs:label "Zum Schutz von Grundwasser nicht in Grundwasserschutzzonen (S2 und Sh) ausbringen und nicht in Karstgebieten anwenden. "@de , 
+		"Afin de protéger les eaux souterraines, ne pas appliquer ce produit dans les zones de protection des eaux souterraines (S2 et Sh) et dans les régions karstiques. "@fr , 
+		"Onde proteggere le acque sotterranee evitare i trattamenti nelle zone di protezione delle acque sotterranee (S2 e Sh) e nelle regioni carsiche. "@it .
+:codeS21 a :CodeS ; 
+	rdfs:label "Bei der Arbeit geeignete Schutzhandschuhe, Schutzkleidung und Schutzbrille tragen."@de , 
+		"Porter un vêtement de protection, des gants appropriés et des lunettes de protection."@fr , 
+		"Usare indumenti protettivi, guanti adatti e occhiali di protezione."@it .
+:codeS22 a :CodeS ; 
+	rdfs:label "Bei der Anwendung in einem geschlossenen Raum (z.B. Gewächshaus) ist der behandelte Raum vor dem Wiederbetreten [gründlich / oder Zeit angeben / bis zur Abtrocknung des Spritzbelages] zu lüften."@de , 
+		"En cas d'utilisation dans un endroit confiné, ventiler [à fond / ou durée à préciser / jusqu'au séchage de la pulvérisation] les zones / serres traitées avant d'y accéder."@fr , 
+		"In caso di utilizzazione in un ambiente chiuso (p.es. serra), arieggiare [a lungo / per ... durata da specificare / fino all'essiccazione dello spray] gli ambienti trattati prima di potervi accedere nuovamente."@it .
+:codeS23 a :CodeS ; 
+	rdfs:label "Zum Schutz von Vögeln und wildlebenden Säugetieren muss das verschüttete Pflanzenschutzmittel beseitigt werden."@de , 
+		"Pour protéger les oiseaux et les mammifères sauvages, récupérer tout produit phytosanitaire accidentellement répandu."@fr , 
+		"Per proteggere gli uccelli e i mammiferi selvatici recuperare il prodotto fuoriuscito accidentalmente."@it .
+:codeS24 a :CodeS ; 
+	rdfs:label "Der Behälter muss im Freien und Trockenen geöffnet werden."@de , 
+		"L'emballage doit être ouvert à l'extérieur par temps sec."@fr , 
+		"L'imballaggio deve essere aperto all'esterno e in condizioni di tempo secco."@it .
+:codeS25 a :CodeS ; 
+	rdfs:label "Zum Schutz von Bodenorganismen dieses Pflanzenschutzmittel nicht mehr als 4 mal pro Parzelle und Jahr anwenden. "@de , 
+		"Pour protéger les organismes du sol, ne pas appliquer ce produit plus de 4 fois par parcelle et par année."@fr , 
+		"Per proteggere gli organismi del suolo non applicare questo prodotto più di 4 volte per anno e particella. "@it .
+:codeS26 a :CodeS ; 
+	rdfs:label "Zum Schutz von Vögeln und Säugetieren muss das verschüttete Pflanzenschutzmittel beseitigt werden."@de , 
+		"Pour protéger les oiseaux et les mammifères, récupérer tout produit phytosanitaire accidentellement répandu."@fr , 
+		"Per proteggere gli uccelli e i mammiferi recuperare il prodotto fuoriuscito accidentalmente."@it .
+:codeS27 a :CodeS ; 
+	rdfs:label "Die Köder verdeckt und unzugänglich für andere Tiere ausbringen. Köder sichern, so dass ein Verschleppen durch Nagetiere nicht möglich ist."@de , 
+		"Les appâts doivent être disposés de manière à minimiser le risque d'ingestion par d'autres animaux. Sécuriser les appâts afin qu'ils ne puissent pas être emmenés par les rongeurs."@fr , 
+		"Le esche devono essere disposte in modo da minimizzare il rischio di ingerimento da parte di altri animali. Fissare le esche in modo che non possano essere trascinate via dai roditori."@it .
+:codeS28 a :CodeS ; 
+	rdfs:label "Zum Schutz von Grundwasser nicht in Grundwasserschutzzonen (S2) ausbringen."@de , 
+		"Afin de protéger les eaux souterraines, ne pas appliquer ce produit dans les zones de protection des eaux souterraines (S2)."@fr , 
+		"Onde proteggere le acque sotterranee evitare i trattamenti nelle zone di protezione delle acque sotterranee (S2)."@it .
+:codeS29 a :CodeS ; 
+	rdfs:label "Siehe Gefahrenkennzeichnungen der Produkte Legan (W 7127-1) bzw. Slick (W 5056)."@de , 
+		"Voir indications relatives à la sécurité des produits Legan (W 7127-1) et Slick (W 5056). "@fr , 
+		"Vedi caratterizzazioni di pericolo dei prodotti Legan (W 7127-1) e Slick (W 5056). "@it .
