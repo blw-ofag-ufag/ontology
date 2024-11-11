@@ -635,120 +635,178 @@ agrovoc:c_920 owl:disjointWith :Pesticide .
 
 # Code S and its instances
 :CodeS a owl:Class ;
-    rdfs:label "Code S" .
+    rdfs:label "Code S"@en.
 :codeS1 a :CodeS ; 
-	rdfs:label "Bewilligt für die nichtberufliche Verwendung."@de , 
-		"Autorisé pour l'utilisation non professionnelle."@fr , 
-		"Autorizzato per l'utilizzazione non professionale."@it .
+    rdfs:label "Non-professional use"@en, "Nichtberufliche Verwendung"@de, "Utilisation non professionnelle"@fr, "Utilizzazione non professionale"@it ;
+    rdfs:comment "Authorized for non-professional use."@en,
+                 "Bewilligt für die nichtberufliche Verwendung."@de , 
+                 "Autorisé pour l'utilisation non professionnelle."@fr , 
+                 "Autorizzato per l'utilizzazione non professionale."@it .
 :codeS2 a :CodeS ; 
-	rdfs:label "Darf nicht in die Hände von Kindern gelangen."@de , 
-		"Tenir hors de portée des enfants."@fr , 
-		"Tenere fuori dalla portata dei bambini."@it .
+    rdfs:label "Keep out of reach of children"@en, "Darf nicht in Kinderhände"@de, "Hors de portée des enfants"@fr, "Fuori dalla portata dei bambini"@it ;
+    rdfs:comment "Must not be accessible to children."@en,
+                 "Darf nicht in die Hände von Kindern gelangen."@de , 
+                 "Tenir hors de portée des enfants."@fr , 
+                 "Tenere fuori dalla portata dei bambini."@it .
 :codeS3 a :CodeS ; 
-	rdfs:label "Mittel und/oder dessen Behälter nicht in Gewässer gelangen lassen."@de , 
-		"Ne pas polluer l'eau avec le produit ou son emballage."@fr , 
-		"Non contaminare l'acqua con il prodotto o il suo imballaggio."@it .
+    rdfs:label "Protect water"@en, "Kein Wasser"@de, "Pas de pollution de l'eau"@fr, "Nessuna contaminazione delle acque"@it ;
+    rdfs:comment "Do not allow product or container to enter water bodies."@en,
+                 "Mittel und/oder dessen Behälter nicht in Gewässer gelangen lassen."@de , 
+                 "Ne pas polluer l'eau avec le produit ou son emballage."@fr , 
+                 "Non contaminare l'acqua con il prodotto o il suo imballaggio."@it .
 :codeS4 a :CodeS ; 
-	rdfs:label "Zur Vermeidung von Risiken für Mensch und Umwelt ist die Gebrauchsanleitung einzuhalten."@de , 
-		"Respectez les instructions d'utilisation pour éviter les risques pour l'homme et l'environnement."@fr , 
-		"Per evitare rischi per l'uomo e per l'ambiente seguire le istruzioni per l'uso."@it .
+    rdfs:label "Follow instructions"@en, "Gebrauchsanleitung einhalten"@de, "Suivre instructions"@fr, "Seguire istruzioni"@it ;
+    rdfs:comment "Follow usage instructions to avoid risks to humans and environment."@en,
+                 "Zur Vermeidung von Risiken für Mensch und Umwelt ist die Gebrauchsanleitung einzuhalten."@de , 
+                 "Respectez les instructions d'utilisation pour éviter les risques pour l'homme et l'environnement."@fr , 
+                 "Per evitare rischi per l'uomo e per l'ambiente seguire le istruzioni per l'uso."@it .
 :codeS5 a :CodeS ; 
-	rdfs:label "Darf nicht in die Hände von Kindern gelangen."@de , 
-		"Conserver hors de la portée des enfants."@fr , 
-		"Conservare fuori della portata dei bambini."@it .
+    rdfs:label "Keep out of reach of children"@en, "Darf nicht in Kinderhände"@de, "Hors de portée des enfants"@fr, "Fuori dalla portata dei bambini"@it ;
+    rdfs:comment "Must not be accessible to children."@en,
+                 "Darf nicht in die Hände von Kindern gelangen."@de , 
+                 "Conserver hors de la portée des enfants."@fr , 
+                 "Conservare fuori della portata dei bambini."@it .
 :codeS6 a :CodeS ; 
-	rdfs:label "Abfälle und Behälter müssen in gesicherter Weise beseitigt werden."@de , 
-		"Ne se débarrasser de ce produit et de son récipient qu'en prenant toutes précautions d'usage."@fr , 
-		"Non disfarsi del prodotto e del recipiente se non con le dovute precauzioni."@it .
+    rdfs:label "Dispose carefully"@en, "Abfälle sicher beseitigen"@de, "Elimination prudente"@fr, "Smaltimento sicuro"@it ;
+    rdfs:comment "Waste and containers must be disposed of safely."@en,
+                 "Abfälle und Behälter müssen in gesicherter Weise beseitigt werden."@de , 
+                 "Ne se débarrasser de ce produit et de son récipient qu'en prenant toutes précautions d'usage."@fr , 
+                 "Non disfarsi del prodotto e del recipiente se non con le dovute precauzioni."@it .
 :codeS7 a :CodeS ; 
-	rdfs:label "Nur für den berufsmässigen Verwender."@de , 
-		"Réservé aux utilisateurs professionnels. "@fr , 
-		"A uso esclusivamente professionale. "@it .
+    rdfs:label "Professional use only"@en, "Nur berufsmäßig"@de, "Professionnels seulement"@fr, "Solo per professionisti"@it ;
+    rdfs:comment "For professional users only."@en,
+                 "Nur für den berufsmässigen Verwender."@de , 
+                 "Réservé aux utilisateurs professionnels."@fr , 
+                 "A uso esclusivamente professionale."@it .
 :codeS8 a :CodeS ; 
-	rdfs:label "Bienengefährlich"@de , 
-		"Dangereux pour les abeilles"@fr , 
-		"Pericoloso per le api"@it .
+    rdfs:label "Harmful to bees"@en, "Bienengefährlich"@de, "Dangereux pour les abeilles"@fr, "Pericoloso per le api"@it ;
+    rdfs:comment "Hazardous to bees."@en,
+                 "Bienengefährlich"@de , 
+                 "Dangereux pour les abeilles"@fr , 
+                 "Pericoloso per le api"@it .
 :codeS9 a :CodeS ; 
-	rdfs:label "Zum Schutz von Bodenorganismen dieses Pflanzenschutzmittel oder andere Pflanzenschutzmittel, die den Wirkstoff Dazomet (DMTT) enthalten, nicht mehr als 1 mal alle 3 Jahre auf derselben Parzelle anwenden."@de , 
-		"En vue de protéger les organismes du sol, ne pas appliquer ce produit phytosanitaire ou d'autres produits contenant la substance active Dazomet (DMTT) plus d'une fois tous les trois ans sur la même parcelle."@fr , 
-		"Per proteggere gli organismi del suolo non applicare questo o altri prodotti fitosanitari contenenti il principio attivo Dazomet (DMTT) più di 1 volta ogni 3 anni sulla stessa particella."@it .
+    rdfs:label "Protect soil organisms"@en, "Schutz von Bodenorganismen"@de, "Protection des organismes du sol"@fr, "Protezione degli organismi del suolo"@it ;
+    rdfs:comment "Apply this or other products with Dazomet only once every 3 years on the same plot to protect soil organisms."@en,
+                 "Zum Schutz von Bodenorganismen dieses Pflanzenschutzmittel oder andere Pflanzenschutzmittel, die den Wirkstoff Dazomet (DMTT) enthalten, nicht mehr als 1 mal alle 3 Jahre auf derselben Parzelle anwenden."@de , 
+                 "En vue de protéger les organismes du sol, ne pas appliquer ce produit phytosanitaire ou d'autres produits contenant la substance active Dazomet (DMTT) plus d'une fois tous les trois ans sur la même parcelle."@fr , 
+                 "Per proteggere gli organismi del suolo non applicare questo o altri prodotti fitosanitari contenenti il principio attivo Dazomet (DMTT) più di 1 volta ogni 3 anni sulla stessa particella."@it .
 :codeS10 a :CodeS ; 
-	rdfs:label "Zum Schutz von Grundwasser nicht in Grundwasserschutzzonen (S2 und Sh) ausbringen."@de , 
-		"Afin de protéger les eaux souterraines, ne pas appliquer ce produit dans les zones de protection des eaux souterraines (S2 et Sh)."@fr , 
-		"Onde proteggere le acque sotterranee evitare i trattamenti nelle zone di protezione delle acque sotterranee (S2 e Sh)."@it .
+    rdfs:label "Protect groundwater"@en, "Schutz des Grundwassers"@de, "Protection des eaux souterraines"@fr, "Protezione delle acque sotterranee"@it ;
+    rdfs:comment "Do not apply in groundwater protection zones (S2 and Sh) to protect groundwater."@en,
+                 "Zum Schutz von Grundwasser nicht in Grundwasserschutzzonen (S2 und Sh) ausbringen."@de , 
+                 "Afin de protéger les eaux souterraines, ne pas appliquer ce produit dans les zones de protection des eaux souterraines (S2 et Sh)."@fr , 
+                 "Onde proteggere le acque sotterranee evitare i trattamenti nelle zone di protezione delle acque sotterranee (S2 e Sh)."@it .
 :codeS11 a :CodeS ; 
-	rdfs:label "Nach Anzünden des Mittels Rauch nicht einatmen und die behandelte Fläche sofort verlassen."@de , 
-		"Après déclenchement de la fumigation, ne pas inhaler la fumée et quitter la zone traitée immédiatement."@fr , 
-		"Una volta avviata la fumigazione, non inalare il fumo e abbandonare immediatamente la zona trattata."@it .
+    rdfs:label "Avoid inhaling smoke"@en, "Kein Rauch einatmen"@de, "Ne pas inhaler la fumée"@fr, "Non inalare il fumo"@it ;
+    rdfs:comment "After igniting, do not inhale smoke and leave the treated area immediately."@en,
+                 "Nach Anzünden des Mittels Rauch nicht einatmen und die behandelte Fläche sofort verlassen."@de , 
+                 "Après déclenchement de la fumigation, ne pas inhaler la fumée et quitter la zone traitée immédiatement."@fr , 
+                 "Una volta avviata la fumigazione, non inalare il fumo e abbandonare immediatamente la zona trattata."@it .
 :codeS12 a :CodeS ; 
-	rdfs:label "Vorsicht! Beim Entzünden der Patrone entsteht giftiges Gas (Schwefeldioxid)."@de , 
-		"Attention! Après l'allumage, la cartouche produit du gaz toxique (dioxyde de soufre)."@fr , 
-		"Attenzione! All'accensione la cartuccia rilascia gas tossico (anidride solforosa)."@it .
+    rdfs:label "Toxic gas warning"@en, "Achtung giftiges Gas"@de, "Attention gaz toxique"@fr, "Attenzione gas tossico"@it ;
+    rdfs:comment "Caution! Lighting the cartridge releases toxic gas (sulfur dioxide)."@en,
+                 "Vorsicht! Beim Entzünden der Patrone entsteht giftiges Gas (Schwefeldioxid)."@de , 
+                 "Attention! Après l'allumage, la cartouche produit du gaz toxique (dioxyde de soufre)."@fr , 
+                 "Attenzione! All'accensione la cartuccia rilascia gas tossico (anidride solforosa)."@it .
 :codeS13 a :CodeS ; 
-	rdfs:label "Nur für den berufsmässigen Verwender. Keine Anwendung im Siedlungsgebiet."@de , 
-		"Résérvé aux utilisateurs professionnels. Utilisation interdite dans les zones urbanisées."@fr , 
-		"A uso esclusivamente professionale. Uso vietato nelle zone d'insediamento."@it .
+    rdfs:label "Professional use, no residential areas"@en, "Nur berufsmäßig, kein Siedlungsgebiet"@de, "Professionnel, pas de zones urbanisées"@fr, "Solo professionale, non in aree residenziali"@it ;
+    rdfs:comment "For professional users only. Not for use in residential areas."@en,
+                 "Nur für den berufsmässigen Verwender. Keine Anwendung im Siedlungsgebiet."@de , 
+                 "Résérvé aux utilisateurs professionnels. Utilisation interdite dans les zones urbanisées."@fr , 
+                 "A uso esclusivamente professionale. Uso vietato nelle zone d'insediamento."@it .
 :codeS14 a :CodeS ; 
-	rdfs:label "Nach Kontakt mit der Haut zuerst das Mittel mit einem trockenen Tuch entfernen und dann die Haut mit reichlich Wasser abspülen."@de , 
-		"Après contact avec la peau, éliminer d'abord le produit avec un chiffon sec, puis laver la peau abondamment à l'eau."@fr , 
-		"Dopo il contatto con la pelle, rimuovere dapprima il prodotto con un panno asciutto e quindi lavare abbondantemente con acqua."@it .
+    rdfs:label "Remove from skin, wash with water"@en, "Von Haut entfernen, mit Wasser abspülen"@de, "Éliminer de la peau, laver à l'eau"@fr, "Rimuovere dalla pelle, lavare con acqua"@it ;
+    rdfs:comment "After skin contact, remove product with a dry cloth, then rinse skin with plenty of water."@en,
+                 "Nach Kontakt mit der Haut zuerst das Mittel mit einem trockenen Tuch entfernen und dann die Haut mit reichlich Wasser abspülen."@de , 
+                 "Après contact avec la peau, éliminer d'abord le produit avec un chiffon sec, puis laver la peau abondamment à l'eau."@fr , 
+                 "Dopo il contatto con la pelle, rimuovere dapprima il prodotto con un panno asciutto e quindi lavare abbondantemente con acqua."@it .
 :codeS15 a :CodeS ; 
-	rdfs:label "Die gesamte Schutzkleidung muss nach Gebrauch gewaschen werden."@de , 
-		"Laver tous les équipements de protection après utilisation."@fr , 
-		"Lavare tutto l'abbigliamento di protezione dopo l'impiego."@it .
+    rdfs:label "Wash protective clothing"@en, "Schutzkleidung waschen"@de, "Laver équipements de protection"@fr, "Lavare abbigliamento protettivo"@it ;
+    rdfs:comment "All protective clothing must be washed after use."@en,
+                 "Die gesamte Schutzkleidung muss nach Gebrauch gewaschen werden."@de , 
+                 "Laver tous les équipements de protection après utilisation."@fr , 
+                 "Lavare tutto l'abbigliamento di protezione dopo l'impiego."@it .
 :codeS16 a :CodeS ; 
-	rdfs:label "Aerosol nicht einatmen."@de , 
-		"Ne pas respirer les aérosols."@fr , 
-		"Non respirare i aerosoli."@it .
+    rdfs:label "Do not inhale aerosol"@en, "Kein Aerosol einatmen"@de, "Ne pas inhaler les aérosols"@fr, "Non inalare aerosol"@it ;
+    rdfs:comment "Avoid inhaling aerosol."@en,
+                 "Aerosol nicht einatmen."@de , 
+                 "Ne pas respirer les aérosols."@fr , 
+                 "Non respirare i aerosoli."@it .
 :codeS17 a :CodeS ; 
-	rdfs:label "Berührung mit der Haut vermeiden."@de , 
-		"Eviter le contact avec la peau."@fr , 
-		"Evitare il contatto con la pelle."@it .
+    rdfs:label "Avoid skin contact"@en, "Hautkontakt vermeiden"@de, "Éviter contact avec la peau"@fr, "Evitare contatto con la pelle"@it ;
+    rdfs:comment "Avoid contact with skin."@en,
+                 "Berührung mit der Haut vermeiden."@de , 
+                 "Eviter le contact avec la peau."@fr , 
+                 "Evitare il contatto con la pelle."@it .
 :codeS18 a :CodeS ; 
-	rdfs:label "Sensibilisierung durch Einatmen und Hautkontakt möglich."@de , 
-		"Peut entraîner une sensibilisation par inhalation et par contact avec la peau."@fr , 
-		"Può provocare sensibilizzazione per inalazione e a contatto con la pelle."@it .
+    rdfs:label "May cause sensitization"@en, "Sensibilisierung möglich"@de, "Peut sensibiliser"@fr, "Può causare sensibilizzazione"@it ;
+    rdfs:comment "May cause sensitization by inhalation and skin contact."@en,
+                 "Sensibilisierung durch Einatmen und Hautkontakt möglich."@de , 
+                 "Peut entraîner une sensibilisation par inhalation et par contact avec la peau."@fr , 
+                 "Può provocare sensibilizzazione per inalazione e a contatto con la pelle."@it .
 :codeS19 a :CodeS ; 
-	rdfs:label "Bei der Arbeit geeignete Schutzhandschuhe und Schutzkleidung tragen. "@de , 
-		"Porter un vêtement de protection et des gants appropriés. "@fr , 
-		"Usare indumenti protettivi e guanti adatti. "@it .
+    rdfs:label "Wear protective clothing and gloves"@en, "Schutzkleidung und Handschuhe tragen"@de, "Vêtement et gants de protection"@fr, "Indumenti e guanti protettivi"@it ;
+    rdfs:comment "Wear appropriate protective clothing and gloves while working."@en,
+                 "Bei der Arbeit geeignete Schutzhandschuhe und Schutzkleidung tragen."@de , 
+                 "Porter un vêtement de protection et des gants appropriés."@fr , 
+                 "Usare indumenti protettivi e guanti adatti."@it .
 :codeS20 a :CodeS ; 
-	rdfs:label "Zum Schutz von Grundwasser nicht in Grundwasserschutzzonen (S2 und Sh) ausbringen und nicht in Karstgebieten anwenden. "@de , 
-		"Afin de protéger les eaux souterraines, ne pas appliquer ce produit dans les zones de protection des eaux souterraines (S2 et Sh) et dans les régions karstiques. "@fr , 
-		"Onde proteggere le acque sotterranee evitare i trattamenti nelle zone di protezione delle acque sotterranee (S2 e Sh) e nelle regioni carsiche. "@it .
+    rdfs:label "Protect groundwater, no karst areas"@en, "Schutz des Grundwassers, kein Karstgebiet"@de, "Protéger les eaux, pas de karst"@fr, "Protezione delle acque, non in aree carsiche"@it ;
+    rdfs:comment "Do not apply in groundwater protection zones (S2 and Sh) or in karst areas to protect groundwater."@en,
+                 "Zum Schutz von Grundwasser nicht in Grundwasserschutzzonen (S2 und Sh) ausbringen und nicht in Karstgebieten anwenden."@de , 
+                 "Afin de protéger les eaux souterraines, ne pas appliquer ce produit dans les zones de protection des eaux souterraines (S2 et Sh) et dans les régions karstiques."@fr , 
+                 "Onde proteggere le acque sotterranee evitare i trattamenti nelle zone di protezione delle acque sotterranee (S2 e Sh) e nelle regioni carsiche."@it .
 :codeS21 a :CodeS ; 
-	rdfs:label "Bei der Arbeit geeignete Schutzhandschuhe, Schutzkleidung und Schutzbrille tragen."@de , 
-		"Porter un vêtement de protection, des gants appropriés et des lunettes de protection."@fr , 
-		"Usare indumenti protettivi, guanti adatti e occhiali di protezione."@it .
+    rdfs:label "Wear gloves, clothing, goggles"@en, "Handschuhe, Kleidung, Brille tragen"@de, "Gants, vêtements, lunettes"@fr, "Guanti, abiti, occhiali"@it ;
+    rdfs:comment "Wear suitable protective gloves, clothing, and goggles while working."@en,
+                 "Bei der Arbeit geeignete Schutzhandschuhe, Schutzkleidung und Schutzbrille tragen."@de , 
+                 "Porter un vêtement de protection, des gants appropriés et des lunettes de protection."@fr , 
+                 "Usare indumenti protettivi, guanti adatti e occhiali di protezione."@it .
 :codeS22 a :CodeS ; 
-	rdfs:label "Bei der Anwendung in einem geschlossenen Raum (z.B. Gewächshaus) ist der behandelte Raum vor dem Wiederbetreten [gründlich / oder Zeit angeben / bis zur Abtrocknung des Spritzbelages] zu lüften."@de , 
-		"En cas d'utilisation dans un endroit confiné, ventiler [à fond / ou durée à préciser / jusqu'au séchage de la pulvérisation] les zones / serres traitées avant d'y accéder."@fr , 
-		"In caso di utilizzazione in un ambiente chiuso (p.es. serra), arieggiare [a lungo / per ... durata da specificare / fino all'essiccazione dello spray] gli ambienti trattati prima di potervi accedere nuovamente."@it .
+    rdfs:label "Ventilate enclosed areas"@en, "Belüftung geschlossener Räume"@de, "Ventilation des zones confinées"@fr, "Ventilazione degli ambienti chiusi"@it ;
+    rdfs:comment "If used in an enclosed space (e.g., greenhouse), thoroughly ventilate the area before re-entering."@en,
+                 "Bei der Anwendung in einem geschlossenen Raum (z.B. Gewächshaus) ist der behandelte Raum vor dem Wiederbetreten gründlich zu lüften."@de , 
+                 "En cas d'utilisation dans un endroit confiné, ventiler à fond les zones traitées avant d'y accéder."@fr , 
+                 "In caso di utilizzazione in un ambiente chiuso (p.es. serra), arieggiare a lungo gli ambienti trattati prima di potervi accedere nuovamente."@it .
 :codeS23 a :CodeS ; 
-	rdfs:label "Zum Schutz von Vögeln und wildlebenden Säugetieren muss das verschüttete Pflanzenschutzmittel beseitigt werden."@de , 
-		"Pour protéger les oiseaux et les mammifères sauvages, récupérer tout produit phytosanitaire accidentellement répandu."@fr , 
-		"Per proteggere gli uccelli e i mammiferi selvatici recuperare il prodotto fuoriuscito accidentalmente."@it .
+    rdfs:label "Protect birds and mammals"@en, "Vögel und Säugetiere schützen"@de, "Protection des oiseaux et mammifères"@fr, "Protezione di uccelli e mammiferi"@it ;
+    rdfs:comment "To protect birds and wild mammals, clean up spilled product."@en,
+                 "Zum Schutz von Vögeln und wildlebenden Säugetieren muss das verschüttete Pflanzenschutzmittel beseitigt werden."@de , 
+                 "Pour protéger les oiseaux et les mammifères sauvages, récupérer tout produit accidentellement répandu."@fr , 
+                 "Per proteggere gli uccelli e i mammiferi selvatici recuperare il prodotto fuoriuscito accidentalmente."@it .
 :codeS24 a :CodeS ; 
-	rdfs:label "Der Behälter muss im Freien und Trockenen geöffnet werden."@de , 
-		"L'emballage doit être ouvert à l'extérieur par temps sec."@fr , 
-		"L'imballaggio deve essere aperto all'esterno e in condizioni di tempo secco."@it .
+    rdfs:label "Open container outdoors"@en, "Behälter draußen öffnen"@de, "Ouvrir à l'extérieur"@fr, "Aprire all'esterno"@it ;
+    rdfs:comment "Open the container outdoors and in dry conditions."@en,
+                 "Der Behälter muss im Freien und Trockenen geöffnet werden."@de , 
+                 "L'emballage doit être ouvert à l'extérieur par temps sec."@fr , 
+                 "L'imballaggio deve essere aperto all'esterno e in condizioni di tempo secco."@it .
 :codeS25 a :CodeS ; 
-	rdfs:label "Zum Schutz von Bodenorganismen dieses Pflanzenschutzmittel nicht mehr als 4 mal pro Parzelle und Jahr anwenden. "@de , 
-		"Pour protéger les organismes du sol, ne pas appliquer ce produit plus de 4 fois par parcelle et par année."@fr , 
-		"Per proteggere gli organismi del suolo non applicare questo prodotto più di 4 volte per anno e particella. "@it .
+    rdfs:label "Limit soil applications"@en, "Eingeschränkte Bodenanwendung"@de, "Limitation d'applications au sol"@fr, "Applicazione limitata sul suolo"@it ;
+    rdfs:comment "To protect soil organisms, apply this product no more than four times per plot per year."@en,
+                 "Zum Schutz von Bodenorganismen dieses Pflanzenschutzmittel nicht mehr als 4 mal pro Parzelle und Jahr anwenden."@de , 
+                 "Pour protéger les organismes du sol, ne pas appliquer ce produit plus de 4 fois par parcelle et par année."@fr , 
+                 "Per proteggere gli organismi del suolo non applicare questo prodotto più di 4 volte per anno e particella."@it .
 :codeS26 a :CodeS ; 
-	rdfs:label "Zum Schutz von Vögeln und Säugetieren muss das verschüttete Pflanzenschutzmittel beseitigt werden."@de , 
-		"Pour protéger les oiseaux et les mammifères, récupérer tout produit phytosanitaire accidentellement répandu."@fr , 
-		"Per proteggere gli uccelli e i mammiferi recuperare il prodotto fuoriuscito accidentalmente."@it .
+    rdfs:label "Protect birds and mammals"@en, "Vögel und Säugetiere schützen"@de, "Protection des oiseaux et mammifères"@fr, "Protezione di uccelli e mammiferi"@it ;
+    rdfs:comment "To protect birds and wild mammals, clean up spilled product."@en,
+                 "Zum Schutz von Vögeln und Säugetieren muss das verschüttete Pflanzenschutzmittel beseitigt werden."@de , 
+                 "Pour protéger les oiseaux et les mammifères, récupérer tout produit accidentellement répandu."@fr , 
+                 "Per proteggere gli uccelli e i mammiferi recuperare il prodotto fuoriuscito accidentalmente."@it .
 :codeS27 a :CodeS ; 
-	rdfs:label "Die Köder verdeckt und unzugänglich für andere Tiere ausbringen. Köder sichern, so dass ein Verschleppen durch Nagetiere nicht möglich ist."@de , 
-		"Les appâts doivent être disposés de manière à minimiser le risque d'ingestion par d'autres animaux. Sécuriser les appâts afin qu'ils ne puissent pas être emmenés par les rongeurs."@fr , 
-		"Le esche devono essere disposte in modo da minimizzare il rischio di ingerimento da parte di altri animali. Fissare le esche in modo che non possano essere trascinate via dai roditori."@it .
+    rdfs:label "Use covered, secure baits"@en, "Verdeckte, gesicherte Köder"@de, "Appâts couverts, sécurisés"@fr, "Esche coperte e fissate"@it ;
+    rdfs:comment "Place baits in a way that minimizes risk to other animals and secure to prevent rodent removal."@en,
+                 "Die Köder verdeckt und unzugänglich für andere Tiere ausbringen. Köder sichern, so dass ein Verschleppen durch Nagetiere nicht möglich ist."@de , 
+                 "Les appâts doivent être disposés de manière à minimiser le risque d'ingestion par d'autres animaux. Sécuriser les appâts afin qu'ils ne puissent pas être emmenés par les rongeurs."@fr , 
+                 "Le esche devono essere disposte in modo da minimizzare il rischio di ingerimento da parte di altri animali. Fissare le esche in modo che non possano essere trascinate via dai roditori."@it .
 :codeS28 a :CodeS ; 
-	rdfs:label "Zum Schutz von Grundwasser nicht in Grundwasserschutzzonen (S2) ausbringen."@de , 
-		"Afin de protéger les eaux souterraines, ne pas appliquer ce produit dans les zones de protection des eaux souterraines (S2)."@fr , 
-		"Onde proteggere le acque sotterranee evitare i trattamenti nelle zone di protezione delle acque sotterranee (S2)."@it .
+    rdfs:label "Protect groundwater"@en, "Schutz des Grundwassers"@de, "Protection des eaux souterraines"@fr, "Protezione delle acque sotterranee"@it ;
+    rdfs:comment "Do not apply in groundwater protection zones (S2) to protect groundwater."@en,
+                 "Zum Schutz von Grundwasser nicht in Grundwasserschutzzonen (S2) ausbringen."@de , 
+                 "Afin de protéger les eaux souterraines, ne pas appliquer ce produit dans les zones de protection des eaux souterraines (S2)."@fr , 
+                 "Onde proteggere le acque sotterranee evitare i trattamenti nelle zone di protezione delle acque sotterranee (S2)."@it .
 :codeS29 a :CodeS ; 
-	rdfs:label "Siehe Gefahrenkennzeichnungen der Produkte Legan (W 7127-1) bzw. Slick (W 5056)."@de , 
-		"Voir indications relatives à la sécurité des produits Legan (W 7127-1) et Slick (W 5056). "@fr , 
-		"Vedi caratterizzazioni di pericolo dei prodotti Legan (W 7127-1) e Slick (W 5056). "@it .
+    rdfs:label "Refer to hazard labels"@en, "Siehe Gefahrenkennzeichnungen"@de, "Voir les étiquettes de danger"@fr, "Vedere etichette di pericolo"@it ;
+    rdfs:comment "Refer to hazard labels on Legan (W 7127-1) and Slick (W 5056) products."@en,
+                 "Siehe Gefahrenkennzeichnungen der Produkte Legan (W 7127-1) bzw. Slick (W 5056)."@de , 
+                 "Voir indications relatives à la sécurité des produits Legan (W 7127-1) et Slick (W 5056)."@fr , 
+                 "Vedi caratterizzazioni di pericolo dei prodotti Legan (W 7127-1) e Slick (W 5056)."@it .

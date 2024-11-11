@@ -10,7 +10,7 @@
 :                         a                           owl:Ontology ;
                           dc:title                    "A tiny example ontology"@en ;
                           dc:description              "This is only an example."@en ;
-                          dc:creator                  "Max Mustermann" .
+                          dc:creator                  "Damian Oswald" .
 
 :Pesticide                a                           owl:Class ;
                           rdfs:label                  "Pesticide"@en ;
