@@ -271,14 +271,14 @@
     rdfs:label "Environmental Protection"@en , "Umweltschutz"@de , "Protection de l'environnement"@fr , "Protezione ambientale"@it ;
     rdfs:subClassOf :Obligation ;
     rdfs:comment "Includes measures to protect the environment, such as buffer zones, restrictions near water bodies, and protection for non-target organisms like bees and wildlife."@en ;
-    rdfs:comment "Umfasst Maßnahmen zum Schutz der Umwelt, wie Pufferzonen, Einschränkungen in der Nähe von Gewässern und Schutz für Nichtzielorganismen wie Bienen und Wildtiere."@de ;
+    rdfs:comment "Umfasst Massnahmen zum Schutz der Umwelt, wie Pufferzonen, Einschränkungen in der Nähe von Gewässern und Schutz für Nichtzielorganismen wie Bienen und Wildtiere."@de ;
     rdfs:comment "Comprend des mesures pour protéger l'environnement, telles que des zones tampons, des restrictions à proximité des plans d'eau et la protection des organismes non ciblés comme les abeilles et la faune."@fr ;
     rdfs:comment "Include misure per proteggere l'ambiente, come zone cuscinetto, restrizioni vicino ai corpi idrici e protezione per organismi non bersaglio come api e fauna selvatica."@it .
 :ObligationCropSpecificApplication a owl:Class ;
     rdfs:label "Crop-Specific Application"@en , "Kulturspezifische Anwendung"@de , "Application spécifique à la culture"@fr , "Applicazione specifica per coltura"@it ;
     rdfs:subClassOf :Obligation ;
     rdfs:comment "Details restrictions specific to certain crops or plant varieties, including suitable growth stages or sensitive types."@en ;
-    rdfs:comment "Enthält Einschränkungen für bestimmte Kulturen oder Pflanzensorten, einschließlich geeigneter Wachstumsstadien oder empfindlicher Sorten."@de ;
+    rdfs:comment "Enthält Einschränkungen für bestimmte Kulturen oder Pflanzensorten, einschliesslich geeigneter Wachstumsstadien oder empfindlicher Sorten."@de ;
     rdfs:comment "Détaille les restrictions spécifiques à certaines cultures ou variétés de plantes, y compris les stades de croissance appropriés ou les types sensibles."@fr ;
     rdfs:comment "Dettaglia restrizioni specifiche per determinate colture o varietà di piante, inclusi stadi di crescita appropriati o tipi sensibili."@it .
 :ObligationApplicationMethod a owl:Class ;
@@ -673,7 +673,7 @@ agrovoc:c_920 owl:disjointWith :Pesticide .
                  "Ne se débarrasser de ce produit et de son récipient qu'en prenant toutes précautions d'usage."@fr , 
                  "Non disfarsi del prodotto e del recipiente se non con le dovute precauzioni."@it .
 :codeS7 a :CodeS ; 
-    rdfs:label "Professional use only"@en, "Nur berufsmäßig"@de, "Professionnels seulement"@fr, "Solo per professionisti"@it ;
+    rdfs:label "Professional use only"@en, "Nur berufsmässig"@de, "Professionnels seulement"@fr, "Solo per professionisti"@it ;
     rdfs:comment "For professional users only."@en,
                  "Nur für den berufsmässigen Verwender."@de , 
                  "Réservé aux utilisateurs professionnels."@fr , 
@@ -709,7 +709,7 @@ agrovoc:c_920 owl:disjointWith :Pesticide .
                  "Attention! Après l'allumage, la cartouche produit du gaz toxique (dioxyde de soufre)."@fr , 
                  "Attenzione! All'accensione la cartuccia rilascia gas tossico (anidride solforosa)."@it .
 :codeS13 a :CodeS ; 
-    rdfs:label "Professional use, no residential areas"@en, "Nur berufsmäßig, kein Siedlungsgebiet"@de, "Professionnel, pas de zones urbanisées"@fr, "Solo professionale, non in aree residenziali"@it ;
+    rdfs:label "Professional use, no residential areas"@en, "Nur berufsmässig, kein Siedlungsgebiet"@de, "Professionnel, pas de zones urbanisées"@fr, "Solo professionale, non in aree residenziali"@it ;
     rdfs:comment "For professional users only. Not for use in residential areas."@en,
                  "Nur für den berufsmässigen Verwender. Keine Anwendung im Siedlungsgebiet."@de , 
                  "Résérvé aux utilisateurs professionnels. Utilisation interdite dans les zones urbanisées."@fr , 
@@ -775,7 +775,7 @@ agrovoc:c_920 owl:disjointWith :Pesticide .
                  "Pour protéger les oiseaux et les mammifères sauvages, récupérer tout produit accidentellement répandu."@fr , 
                  "Per proteggere gli uccelli e i mammiferi selvatici recuperare il prodotto fuoriuscito accidentalmente."@it .
 :codeS24 a :CodeS ; 
-    rdfs:label "Open container outdoors"@en, "Behälter draußen öffnen"@de, "Ouvrir à l'extérieur"@fr, "Aprire all'esterno"@it ;
+    rdfs:label "Open container outdoors"@en, "Behälter draussen öffnen"@de, "Ouvrir à l'extérieur"@fr, "Aprire all'esterno"@it ;
     rdfs:comment "Open the container outdoors and in dry conditions."@en,
                  "Der Behälter muss im Freien und Trockenen geöffnet werden."@de , 
                  "L'emballage doit être ouvert à l'extérieur par temps sec."@fr , 
