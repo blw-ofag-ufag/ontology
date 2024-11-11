@@ -7,8 +7,8 @@ dm_draw(current_register)
 current_register$CodeS
 
 # comments (in German)
-current_register$CodeS$CodeS_de |> unique()
-current_register$CodeR$CodeR_de |> unique()
+S = current_register$CodeS$CodeS_de |> unique()
+R = current_register$CodeR$CodeR_de |> unique()
 current_register$application_comments$application_comment_de |> unique()
 current_register$obligations$code |> unique()
 
@@ -35,9 +35,10 @@ current_register$culture_forms
 
 
 # Code S to RDF
-X = as.data.frame(unique(current_register$CodeS[,4:6]))
+X = as.data.frame(unique(current_register$CodeS[,3:6]))
 for (i in 1:nrow(X)) {
-  cat(sprintf("\n:codeS%s a :CodeS ; \n\trdfs:label \"%s\"@de , \n\t\t\"%s\"@fr , \n\t\t\"%s\"@it .", i, X[i,1], X[i,2], X[i,3]))
+  cat(sprintf("\n:hazardLabelS%s a :hazardLabel ; \n\trdfs:label \"%s\"@de , \n\t\t\"%s\"@fr , \n\t\t\"%s\"@it", i, X[i,2], X[i,3], X[i,4]))
+  if(is.na(X[i,1]) | grepl("^\\s*$", X[i,1])) cat(".") else cat(sprintf(" ;\n\t:hasGHScode \"%s\" .", X[i,1]))
 }
 
 
