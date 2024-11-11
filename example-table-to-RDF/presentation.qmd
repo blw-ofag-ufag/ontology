@@ -1,0 +1,192 @@
+---
+title: How to get from a table to RDF (to linked data)
+format:
+  revealjs:
+    smaller: true
+    code-fold: true
+    code-overflow: wrap
+syntax-definitions: ["kdesrc-buildrc.xml"]
+---
+
+## We start with a table...
+
+| Productgroup            | Product                   | Code      |
+|:------------------------|---------------------------|-----------|
+| Insecticide             | Affirm                    | W-7363-1  |
+| Insecticide             | Blocker                   | W-7541    |
+| Fungicide               | Fezan                     | W-6589    |
+
+## Let's reshape to the SPO form
+
+```{.ttl}
+
+
+Affirm                    is a type of                Insecticide
+Affirm                    has registration code       W-7363-1
+Blocker                   is a type of                Insecticide
+Blocker                   has registration code       W-7541
+Fezan                     is a type of                Fungicide
+Fezan                     has registration code       W-6589
+```
+
+## Ensure uniqueness with URIs
+
+```{.ttl}
+
+
+http://ppp.ch/Affirm      http://ppp.ch/isATypeOf     http://ppp.ch/Insecticide .
+http://ppp.ch/Affirm      http://ppp.ch/hasCode       "W-7363-1" .
+http://ppp.ch/Blocker     http://ppp.ch/isATypeOf     http://ppp.ch/Insecticide .
+http://ppp.ch/Blocker     http://ppp.ch/hasCode       "W-7541" .
+http://ppp.ch/Fezan       http://ppp.ch/isATypeOf     http://ppp.ch/Fungicide .
+http://ppp.ch/Fezan       http://ppp.ch/hasCode       "W-6589" .
+```
+
+## Make it more legible
+
+```{.ttl}
+@prefix : <http://ppp.ch/> .
+
+:Affirm                   :isATypeOf                  :Insecticide .
+:Affirm                   :hasCode                    "W-7363-1" .
+:Blocker                  :isATypeOf                  :Insecticide .
+:Blocker                  :hasCode                    "W-7541" .
+:Fezan                    :isATypeOf                  :Fungicide .
+:Fezan                    :hasCode                    "W-6589" .
+```
+
+## Repeated subjects can be omitted
+
+```{.ttl}
+@prefix : <http://ppp.ch/> .
+
+:Affirm                   :isATypeOf                  :Insecticide ;
+                          :hasCode                    "W-7363-1" .
+:Blocker                  :isATypeOf                  :Insecticide ;
+                          :hasCode                    "W-7541" .
+:Fezan                    :isATypeOf                  :Fungicide ;
+                          :hasCode                    "W-6589" .
+```
+
+## Use existing schemas {auto-animate="true"}
+
+```{.ttl}
+@prefix :     <http://ppp.ch/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:Affirm                   rdf:type                    :Insecticide ;
+                          :hasCode                    "W-7363-1" .
+:Blocker                  rdf:type                    :Insecticide ;
+                          :hasCode                    "W-7541" .
+:Fezan                    rdf:type                    :Fungicide ;
+                          :hasCode                    "W-6589" .
+```
+
+## Replace `rdf:type` with `a` {auto-animate="true"}
+
+```{.ttl}
+@prefix :     <http://ppp.ch/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:Affirm                   a                           :Insecticide ;
+                          :hasCode                    "W-7363-1" .
+:Blocker                  a                           :Insecticide ;
+                          :hasCode                    "W-7541" .
+:Fezan                    a                           :Fungicide ;
+                          :hasCode                    "W-6589" .
+```
+
+## Make knowledge explicit {auto-animate="true"}
+
+```{.ttl}
+@prefix :     <http://ppp.ch/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Pesticide                rdfs:label                  "Pesticide"@en ;
+                          rdfs:comment                "Chemical used against pests."@en .
+:Insecticide              rdfs:subClassOf             :Pesticide ;
+                          rdfs:label                  "Insecticide"@en ;
+:Fungicide                rdfs:subClassOf             :Pesticide ;
+                          rdfs:label                  "Fungicide"@en ;
+                          owl:disjointWith            :Insecticide .
+:Affirm                   a                           :Insecticide ;
+                          :hasCode                    "W-7363-1" .
+:Blocker                  a                           :Insecticide ;
+                          :hasCode                    "W-7541" .
+:Fezan                    a                           :Fungicide ;
+                          :hasCode                    "W-6589" .
+```
+
+
+## Use OWL {auto-animate="true"}
+
+```{.ttl}
+@prefix :     <http://ppp.ch/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Pesticide                a                           owl:Class ;
+                          rdfs:label                  "Pesticide"@en ;
+                          rdfs:comment                "Chemical used against pests."@en .
+:hasCode                  a                           owl:DatatypeProperty ;
+                          rdfs:label                  "Federal registration code"@en ;
+                          rdfs:domain                 :Pesticide ;
+                          rdfs:range                  xsd:string .
+:Insecticide              rdfs:subClassOf             :Pesticide ;
+                          rdfs:label                  "Insecticide"@en ;
+:Fungicide                rdfs:subClassOf             :Pesticide ;
+                          rdfs:label                  "Fungicide"@en ;
+                          owl:disjointWith            :Insecticide .
+:Affirm                   a                           :Insecticide ;
+                          :hasCode                    "W-7363-1" .
+:Blocker                  a                           :Insecticide ;
+                          :hasCode                    "W-7541" .
+:Fezan                    a                           :Fungicide ;
+                          :hasCode                    "W-6589" .
+```
+
+## {auto-animate="true"}
+
+```{.ttl}
+@prefix :     <http://ppp.ch/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+:                         a                           owl:Ontology ;
+                          dc:title                    "A tiny example ontology"@en ;
+                          dc:description              "This is only an example."@en ;
+                          dc:creator                  "Damian Oswald" .
+:Pesticide                a                           owl:Class ;
+                          rdfs:label                  "Pesticide"@en ;
+                          rdfs:comment                "Chemical used against pests."@en .
+:hasCode                  a                           owl:DatatypeProperty ;
+                          rdfs:label                  "Federal registration code"@en ;
+                          rdfs:domain                 :Pesticide ;
+                          rdfs:range                  xsd:string .
+:Insecticide              rdfs:subClassOf             :Pesticide ;
+                          rdfs:label                  "Insecticide"@en ;
+:Fungicide                rdfs:subClassOf             :Pesticide ;
+                          rdfs:label                  "Fungicide"@en ;
+                          owl:disjointWith            :Insecticide .
+:Affirm                   a                           :Insecticide ;
+                          :hasCode                    "W-7363-1" .
+:Blocker                  a                           :Insecticide ;
+                          :hasCode                    "W-7541" .
+:Fezan                    a                           :Fungicide ;
+                          :hasCode                    "W-6589" .
+
+```
+
+
+
+
+
+
+
+
