@@ -377,14 +377,14 @@ wd:Q16521 a owl:Class ;
     rdfs:range wd:Q16521 .
 
 # Add a taxonomy for products (essentially a better version of https://www.psm.admin.ch/de/kategorien)
-:Pesticide a owl:Class ;
+agrovoc:c_5739 a owl:Class ;
     rdfs:label "Pesticide"@en, "Pestizid"@de, "Pesticide"@fr, "Pesticida"@it ;
     rdfs:comment "A substance used to kill, repel, or control pests that are considered harmful to plants."@en,
         "Eine Substanz, die verwendet wird, um Schädlinge zu töten, abzuwehren oder zu kontrollieren, die als schädlich für Pflanzen gelten."@de,
         "Une substance utilisée pour tuer, repousser ou contrôler les nuisibles considérés comme nuisibles aux plantes."@fr,
         "Una sostanza utilizzata per uccidere, respingere o controllare parassiti considerati dannosi per le piante."@it ;
     rdfs:subClassOf :Product .
-:Acaricide a owl:Class ;
+agrovoc:c_56 a owl:Class ;
     rdfs:label "Acaricide"@en, "Akarizid"@de, "Acaricide"@fr, "Acaricida"@it ;
     rdfs:comment "A pesticide that kills mites and ticks."@en,
         "Ein Pestizid, das Milben und Zecken tötet."@de,
@@ -398,21 +398,21 @@ wd:Q16521 a owl:Class ;
         "Une substance qui tue les bactéries."@fr,
         "Una sostanza che uccide i batteri."@it ;
     rdfs:subClassOf :Pesticide .
-:Fungicide a owl:Class ;
+agrovoc:c_3146 a owl:Class ;
     rdfs:label "Fungicide"@en, "Fungizid"@de, "Fongicide"@fr, "Fungicida"@it ;
     rdfs:comment "A chemical compound or biological organism used to kill or inhibit fungi or fungal spores."@en,
         "Eine chemische Verbindung oder ein biologischer Organismus, der verwendet wird, um Pilze oder Pilzsporen zu töten oder zu hemmen."@de,
         "Un composé chimique ou un organisme biologique utilisé pour tuer ou inhiber les champignons ou les spores fongiques."@fr,
         "Un composto chimico o un organismo biologico utilizzato per uccidere o inibire funghi o spore fungine."@it ;
     rdfs:subClassOf :Pesticide .
-:Herbicide a owl:Class ;
+agrovoc:c_3566 a owl:Class ;
     rdfs:label "Herbicide"@en, "Herbizid"@de, "Herbicide"@fr, "Erbicida"@it ;
     rdfs:comment "A substance that is toxic to plants and is used to destroy unwanted vegetation."@en,
         "Eine Substanz, die für Pflanzen giftig ist und verwendet wird, um unerwünschte Vegetation zu zerstören."@de,
         "Une substance toxique pour les plantes utilisée pour détruire la végétation indésirable."@fr,
         "Una sostanza tossica per le piante utilizzata per distruggere la vegetazione indesiderata."@it ;
     rdfs:subClassOf :Pesticide .
-:Insecticide a owl:Class ;
+agrovoc:c_3887 a owl:Class ;
     rdfs:label "Insecticide"@en, "Insektizid"@de, "Insecticide"@fr, "Insetticida"@it ;
     rdfs:comment "A substance used to kill insects."@en,
         "Eine Substanz, die verwendet wird, um Insekten zu töten."@de,
@@ -440,7 +440,7 @@ wd:Q16521 a owl:Class ;
         "Une substance utilisée pour tuer les mollusques comme les escargots et les limaces."@fr,
         "Una sostanza utilizzata per uccidere molluschi come lumache e chiocciole."@it ;
     rdfs:subClassOf :Pesticide .
-:Nematicide a owl:Class ;
+agrovoc:c_5109 a owl:Class ;
     rdfs:label "Nematicide"@en, "Nematizid"@de, "Nématicide"@fr, "Nematicida"@it ;
     rdfs:comment "A chemical pesticide used to kill parasitic nematodes."@en,
         "Ein chemisches Pestizid, das verwendet wird, um parasitäre Nematoden zu töten."@de,
