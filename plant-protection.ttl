@@ -232,12 +232,43 @@
     rdfs:domain :Product ;
     rdfs:range :hazardLabel .
 :hasObligation a owl:ObjectProperty ;
-    rdfs:label "has obligation"@en , 
-               "hat Auflage zur Verwendung"@de ,
-               "a obligation"@fr ,
-               "ha obbligo"@it ;
+    rdfs:label "has obligation"@en , "hat Auflage zur Verwendung"@de , "a obligation"@fr , "ha obbligo"@it ;
     rdfs:domain :AuthorizedUsage ;
     rdfs:range :Obligation .
+
+# Efficacy of a product on a crop on a pest (and its instances)
+:Efficacy a owl:Class ;
+    rdfs:label "Efficacy"@en , "Wirksamkeit"@de , "Efficacité"@fr , "Efficacia"@it ;
+    rdfs:comment "The ability of a product to effectively control or combat a pest on a crop."@en ,
+                 "Die Fähigkeit eines Produkts, einen Schädling auf einer Kulturpflanze wirksam zu bekämpfen."@de ,
+                 "La capacité d'un produit à lutter efficacement contre un ravageur sur une culture."@fr ,
+                 "La capacità di un prodotto di controllare o combattere efficacemente un parassita su una coltura."@it .
+:hasEfficacy a owl:Property ;
+    rdfs:label "has efficacy"@en , "hat Wirksamkeit"@de , "a efficacité"@fr , "ha efficacia"@it ;
+    rdfs:comment "Indicates the efficacy level associated with an authorized product usage."@en ,
+                 "Zeigt das Wirksamkeitsniveau eines zugelassenen Produkts an."@de ,
+                 "Indique le niveau d'efficacité associé à un usage autorisé d'un produit."@fr ,
+                 "Indica il livello di efficacia associato a un uso autorizzato di un prodotto."@it ;
+    rdfs:domain :AuthorizedUsage ;
+    rdfs:range :Efficacy .
+:Efficacy001 a :Efficacy ;
+    rdfs:label "Full effect"@en , "Vollwirkung"@de , "Effet complet"@fr , "Effetto completo"@it ;
+    rdfs:comment "The product generally provides effective control of the specified pest (disease, pest insect). Some older products may show reduced efficacy for certain pests."@en ,
+                 "Mit dem Produkt wird im Allgemeinen eine gute Bekämpfung des betreffenden Schaderregers (Krankheit, Schädling) erreicht. Bei älteren Produkten können bei einzelnen Schaderregern teilweise auch gewisse Wirkungsabnahmen beobachtet werden."@de ,
+                 "Le produit permet généralement un bon contrôle du ravageur spécifié (maladie, insecte nuisible). Certains produits plus anciens peuvent montrer une efficacité réduite pour certains ravageurs."@fr ,
+                 "Il prodotto fornisce generalmente un buon controllo del parassita specificato (malattia, insetto nocivo). Alcuni prodotti più vecchi possono mostrare un'efficacia ridotta per determinati parassiti."@it .
+:Efficacy002 a :Efficacy ;
+    rdfs:label "Partial effect"@en , "Teilwirkung"@de , "Effet partiel"@fr , "Effetto parziale"@it ;
+    rdfs:comment "The effect is not always strong but often sufficient, especially under moderate pest pressure. Reduced efficacy is often compensated by other benefits (e.g., low environmental impact or low risk to beneficial organisms). Efficacy of macro-organisms can vary significantly depending on temperature, humidity, crop, food availability, and other factors."@en ,
+                 "Die Wirkung ist nicht immer durchschlagend, oft aber genügend bis gut, insbesondere bei mässigem Befallsdruck. Die reduzierte Wirkung wird oft durch andere Vorteile (z. B. gutes Umweltverhalten oder geringe Nützlingsgefährdung) kompensiert. Die Wirksamkeit von Makroorganismen kann in Abhängigkeit von Temperatur, Feuchtigkeit, Kultur, Nahrungsangebot und anderen Faktoren stark schwanken."@de ,
+                 "L'effet n'est pas toujours percutant mais souvent suffisant, surtout sous une pression modérée des ravageurs. L'efficacité réduite est souvent compensée par d'autres avantages (par ex., faible impact environnemental ou faible risque pour les organismes bénéfiques). L'efficacité des macro-organismes peut varier considérablement en fonction de la température, de l'humidité, de la culture, de la disponibilité alimentaire et d'autres facteurs."@fr ,
+                 "L'effetto non è sempre forte, ma spesso sufficiente, specialmente in condizioni di moderata pressione dei parassiti. L'efficacia ridotta è spesso compensata da altri vantaggi (ad es., basso impatto ambientale o basso rischio per gli organismi benefici). L'efficacia dei macro-organismi può variare notevolmente in funzione della temperatura, dell'umidità, della coltura, della disponibilità di cibo e di altri fattori."@it .
+:Efficacy003 a :Efficacy ;
+    rdfs:label "Side effect"@en , "Nebenwirkung"@de , "Effet secondaire"@fr , "Effetto collaterale"@it ;
+    rdfs:comment "Effect on a pest that occurs alongside a pest targeted with full effect. The effect varies but is usually sufficient to good. This note aims to avoid the unnecessary addition of a second specific product against the corresponding pest."@en ,
+                 "Wirkung auf einen Schadorganismus, der gleichzeitig mit einem Schaderreger mit Vollwirkung auftritt und bei dessen Bekämpfung miterfasst wird. Die Wirkung ist unterschiedlich, meistens aber genügend bis gut. Mit diesem Hinweis soll vermieden werden, dass unnötigerweise ein zweites spezifisches Produkt gegen den entsprechenden Schaderreger zugesetzt wird."@de ,
+                 "Effet sur un ravageur qui survient en même temps qu'un ravageur ciblé avec un effet complet. L'effet varie, mais est généralement suffisant à bon. Cette note vise à éviter l'ajout inutile d'un deuxième produit spécifique contre le ravageur correspondant."@fr ,
+                 "Effetto su un parassita che si verifica insieme a un parassita mirato con effetto completo. L'effetto varia, ma è generalmente sufficiente o buono. Questa nota mira a evitare l'aggiunta non necessaria di un secondo prodotto specifico contro il parassita corrispondente."@it .
 
 # Obligations on PPP applications
 :Obligation a owl:Class ;
