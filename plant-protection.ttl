@@ -29,9 +29,10 @@
 # Products can be organized hierarchically.
 :Pesticide a owl:Class ;
     rdfs:subClassOf :Product .
-:BiologicalControlAgent a owl:Class ;
-    rdfs:subClassOf :Pesticide .
 :ChemicalPesticide a owl:Class ;
     rdfs:subClassOf :Pesticide .
+:BiologicalControlAgent a owl:Class ;
+    rdfs:subClassOf :Pesticide ;
+    owl:disjointWith :ChemicalPesticide .
 :PlantHealthPromoter a owl:Class ;
     rdfs:subClassOf :Product .
