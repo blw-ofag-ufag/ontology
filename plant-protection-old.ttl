@@ -243,7 +243,7 @@
                  "Die Fähigkeit eines Produkts, einen Schädling auf einer Kulturpflanze wirksam zu bekämpfen."@de ,
                  "La capacité d'un produit à lutter efficacement contre un ravageur sur une culture."@fr ,
                  "La capacità di un prodotto di controllare o combattere efficacemente un parassita su una coltura."@it .
-:hasEfficacy a owl:Property ;
+:hasEfficacy a owl:ObjectProperty ;
     rdfs:label "has efficacy"@en , "hat Wirksamkeit"@de , "a efficacité"@fr , "ha efficacia"@it ;
     rdfs:comment "Indicates the efficacy level associated with an authorized product usage."@en ,
                  "Zeigt das Wirksamkeitsniveau eines zugelassenen Produkts an."@de ,
@@ -444,7 +444,7 @@ agrovoc:c_3566 a owl:Class ;
         "Una sostanza tossica per le piante utilizzata per distruggere la vegetazione indesiderata."@it ;
     rdfs:subClassOf :Pesticide .
 agrovoc:c_3887 a owl:Class ;
-    rdfs:label "c_3887"@en, "Insektizid"@de, "c_3887"@fr, "Insetticida"@it ;
+    rdfs:label "Insecticide"@en, "Insektizid"@de, "Insecticide"@fr, "Insetticida"@it ;
     rdfs:comment "A substance used to kill insects."@en,
         "Eine Substanz, die verwendet wird, um Insekten zu töten."@de,
         "Une substance utilisée pour tuer les insectes."@fr,
@@ -456,14 +456,14 @@ agrovoc:c_3887 a owl:Class ;
         "Substanzen, die Insektenpheromone imitieren, um Insekten zum Einfangen oder Überwachen anzulocken."@de,
         "Substances qui imitent les phéromones d'insectes pour attirer les insectes pour la capture ou la surveillance."@fr,
         "Sostanze che imitano i feromoni degli insetti per attirare gli insetti per intrappolarli o monitorarli."@it ;
-    rdfs:subClassOf :c_3887 .
+    rdfs:subClassOf agrovoc:c_3887 .
 :InsecticideSoap a owl:Class ;
     rdfs:label "Soap Preparation"@en, "Seifenpräparat"@de, "Préparation savonneuse"@fr, "Preparato a base di sapone"@it ;
     rdfs:comment "Soap-based insecticides used to control soft-bodied insects."@en,
         "Seifenbasierte Insektizide zur Bekämpfung weichhäutiger Insekten."@de,
         "Insecticides à base de savon utilisés pour contrôler les insectes à corps mou."@fr,
         "Insetticidi a base di sapone utilizzati per controllare insetti a corpo molle."@it ;
-    rdfs:subClassOf :c_3887 .
+    rdfs:subClassOf agrovoc:c_3887 .
 :Molluscicide a owl:Class ;
     rdfs:label "Molluscicide"@en, "Molluskizid"@de, "Molluscicide"@fr, "Molluschicida"@it ;
     rdfs:comment "A substance used to kill mollusks such as snails and slugs."@en,
