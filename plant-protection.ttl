@@ -33,7 +33,7 @@
 
 # Products are sold by Companies
 :Company a owl:Class .
-:sells a owl:ObjectProperty ;
+:holdsPermissionToSell a owl:ObjectProperty ;
     rdfs:domain :Company ;
     rdfs:range :Product .
 
@@ -118,3 +118,13 @@
 :involves a owl:ObjectProperty ;
     rdfs:domain :Treatment ;
     rdfs:range :Product .
+
+# There are both restrictions and recommendations for the application of PPP
+:Guidance a owl:Class .
+:concerns a owl:ObjectProperty ;
+    rdfs:domain :Guidance ;
+    rdfs:range :Action.
+:BestPracticeRecommendations a owl:Class ;
+    rdfs:subClassOf :Guidance .
+:Condition a owl:Class ;
+    rdfs:subClassOf :Guidance .
