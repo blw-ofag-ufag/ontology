@@ -3,6 +3,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/Person> .
 
 # Ontology declaration
 : a owl:Ontology ;
@@ -133,3 +134,9 @@
     rdfs:subClassOf :Guidance .
 :Condition a owl:Class ;
     rdfs:subClassOf :Guidance .
+
+# Sometimes, we want to be able to express that a person knows about one thing or more in the ontology
+# Hence, we'll use the "thing" class; the general superclass of all OWL classes
+:knows a owl:ObjectProperty ;
+    rdfs:domain foaf:Person ;
+    rdfs:range owl:Thing .
