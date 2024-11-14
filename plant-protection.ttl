@@ -92,7 +92,9 @@
     rdfs:range :Substance .
 
 # In the case of plant protection, substances have four subclasses
-:ActiveIngredient rdfs:subClassOf :Substance .
+:ActiveSubstance rdfs:subClassOf :Substance ;
+    rdfs:label "Active substance"@en ;
+    rdfs:comment "Active substances are biologically active compounds which, in low concentrations, influence biochemical and physiological processes in plant, animal and human organisms quantitatively and/or qualitatively in the form of inhibition or activation. Source: https://www.scienceindustries.ch/_file/27381/201903-begriffsklaerung-final-en.pdf" .
 :AdditiveToDeclare rdfs:subClassOf :Substance .
 :Synergist rdfs:subClassOf :Substance .
 :Safener rdfs:subClassOf :Substance .
