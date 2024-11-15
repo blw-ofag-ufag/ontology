@@ -15,45 +15,54 @@
         "Diese Ontologie veranschaulicht den Wert einer umfassenden und gut strukturierten Ontologieentwicklung für das Bundesamt für Landwirtschaft (und allgemein den Schweizer Agrar- und Lebensmittelsektor). Durch die formale Modellierung der Komplexität des Pflanzenschutzes (mit Schwerpunkt auf zugelassenen Produkten) verbessert sie das Verständnis der aktuellen Regeln und ermöglicht deren effektive Kommunikation über IT-Dienste."@de,
         "Cette ontologie illustre la valeur d'un développement d'ontologie complet et bien structuré pour l'Office fédéral de l'agriculture (et plus largement le secteur agroalimentaire suisse). En capturant les complexités de la protection des cultures (avec un accent sur les produits enregistrés) dans un modèle formel, elle améliore la compréhension des règles actuelles et permet leur communication efficace via des services informatiques."@fr,
         "Questa ontologia esemplifica il valore di uno sviluppo ontologico completo e ben strutturato per l'Ufficio federale dell'agricoltura (e più in generale per il settore agroalimentare svizzero). Catturando le complessità della protezione delle colture (con un focus sui prodotti registrati) in un modello formale, migliora la comprensione delle regole attuali e ne consente una comunicazione efficace attraverso i servizi informatici."@it ;
-    owl:versionInfo "0.5" ;
+    owl:versionInfo "0.6" ;
     dc:creator "Damian Oswald" .
 
 # We start out with the definition of crops -- a core class when talking about agriculture!
 # (Note: We could also abstract more to include Animals, Humans etc., but then we leave the realm of plant protection...)
 :Crop a owl:Class ;
-    rdfs:label "Crop", "Kulturpflanze"@de .
+    rdfs:label "Crop"@en,
+        "Kulturpflanze"@de .
 
 # There are many things that might stress a plant
 :CropStressors a owl:Class ;
-    rdfs:label "Crop stressor"@en, "Schadverursacher"@de .
+    rdfs:label "Crop stressor"@en,
+        "Schadverursacher"@de .
 
 # ...some of them are biotic, others are abiotic.
 :BioticStressors a owl:Class ;
     rdfs:subClassOf :CropStressors ;
-    rdfs:label "Biotic crop stressor"@en, "Biotischer Schadverursacher"@de .
+    rdfs:label "Biotic crop stressor"@en,
+        "Biotischer Schadverursacher"@de .
 :AbioticStressors a owl:Class ;
     rdfs:subClassOf :CropStressors ;
     owl:disjointWith :BioticStressors ;
-    rdfs:label "Aiotic crop stressor"@en, "Abiotischer Schadverursacher"@de .
+    rdfs:label "Aiotic crop stressor"@en,
+        "Abiotischer Schadverursacher"@de .
 
 # Stressors negatively affect crops (they *damage* crops)
-:interactsWith a owl:ObjectProperty .
-    rdfs:label "interacts with"@en, "interagiert mit"@de ;
+:interactsWith a owl:ObjectProperty ;
+    rdfs:label "interacts with"@en,
+        "interagiert mit"@de ;
     rdfs:comment "General relationship for physical thingns that interact with something else. A animal <interactsWith> its food. A pesticide <interactsWith> the target organism."@en .
 :damages a owl:ObjectProperty ;
     rdfs:domain :CropStressors ;
     rdfs:range :Crop ;
     rdfs:subPropertyOf :interactsWith ;
-    rdfs:label "damages"@en, "beschädigt"@de .
+    rdfs:label "damages"@en,
+        "beschädigt"@de .
 :isDamagedBy a owl:ObjectProperty ;
     rdfs:domain :Crop ;
     rdfs:range :CropStressors ;
     rdfs:subPropertyOf :interactsWith ;
     owl:inverseOf :damages ;
-    rdfs:label "is damaged by"@en, "wird beschädigt durch"@de .
+    rdfs:label "is damaged by"@en,
+        "wird beschädigt durch"@de .
 
 # There is a general class of products
-:Product a owl:Class .
+:Product a owl:Class ;
+    rdfs:label "Product"@en,
+        "Produkt"@de .
 
 # Products are sold by Companies
 :Company a owl:Class .
