@@ -37,16 +37,18 @@
     rdfs:label "Aiotic crop stressor"@en, "Abiotischer Schadverursacher"@de .
 
 # Stressors negatively affect crops (they *damage* crops)
-:interaction a owl:ObjectProperty .
+:interactsWith a owl:ObjectProperty .
+    rdfs:label "interacts with"@en, "interagiert mit"@de ;
+    rdfs:comment "General relationship for physical thingns that interact with something else. A animal <interactsWith> its food. A pesticide <interactsWith> the target organism."@en .
 :damages a owl:ObjectProperty ;
     rdfs:domain :CropStressors ;
     rdfs:range :Crop ;
-    rdfs:subPropertyOf :interaction ;
+    rdfs:subPropertyOf :interactsWith ;
     rdfs:label "damages"@en, "beschädigt"@de .
 :isDamagedBy a owl:ObjectProperty ;
     rdfs:domain :Crop ;
     rdfs:range :CropStressors ;
-    rdfs:subPropertyOf :interaction ;
+    rdfs:subPropertyOf :interactsWith ;
     owl:inverseOf :damages ;
     rdfs:label "is damaged by"@en, "wird beschädigt durch"@de .
 
