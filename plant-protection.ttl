@@ -90,7 +90,11 @@
 
 # Some of those are chemical mixtures (others not)
 :ChemicalProduct a owl:Class ;
-    rdfs:subClassOf :Product ;
+    rdfs:subClassOf [
+        a owl:Restriction ;
+        owl:onProperty :contains ;
+        owl:someValuesFrom :Substance
+    ] ;
     rdfs:label "Chemical product"@en ,
         "Chemisches Produkt"@de ;
     rdfs:comment "Any product that can be reason" .
@@ -168,8 +172,7 @@
     rdfs:label "Chemical substance"@en ,
         "Chemische Substanz"@de .
 :contains a owl:ObjectProperty ;
-    rdfs:domain :ChemicalProduct ;
-    rdfs:range :Substance ;
+    # note that the domain/range are already declared on the :ChemicalProduct restriction
     rdfs:label "contains"@en ,
         "beinhaltet"@de .
 
