@@ -6,6 +6,7 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema> .
 
 # Ontology declaration
 : a owl:Ontology ;
@@ -63,6 +64,20 @@
 :Product a owl:Class ;
     rdfs:label "Product"@en,
         "Produkt"@de .
+# (products have a bunch of technical attributes)
+:isParallelImport a owl:DatatypeProperty ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:Boolean ;
+    rdfs:label "is a parallel import"@de ,
+        "ist ein Parallelimport"@de ;
+    rdfs:comment "A parallel import refers to the importation of pesticide products that are legally authorized in one country and are brought into another without the direct consent of the intellectual property holder, provided they meet the same composition and regulatory standards as a product already authorized in the importing country. In Switzerland, such imports require a general import permit and compliance with specific labeling, packaging, and usage regulations aligned with the Swiss-approved reference product. This system ensures product availability while maintaining safety, regulatory adherence, and respect for intellectual property rights."@en ,
+        "Ein Parallelimport bezeichnet den Import von Pflanzenschutzmitteln, die in einem Land rechtmässig zugelassen sind und ohne ausdrückliche Zustimmung des Rechteinhabers in ein anderes Land eingeführt werden, sofern sie in Zusammensetzung und Zulassungsanforderungen einem bereits im Einfuhrland zugelassenen Produkt entsprechen. In der Schweiz erfordert ein solcher Import eine Generaleinfuhrbewilligung sowie die Einhaltung spezifischer Vorschriften zu Kennzeichnung, Verpackung und Verwendung gemäss dem schweizerischen Referenzprodukt. Dieses System gewährleistet die Verfügbarkeit von Produkten und berücksichtigt gleichzeitig Sicherheits-, Zulassungs- und Schutzrechte des geistigen Eigentums."@de ;
+    rdfs:seeAlso <https://www.fedlex.admin.ch/eli/cc/2010/340/de#art_36> .
+:isNonprofessionallyAllowed a owl:DatatypeProperty ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:Boolean ;
+    rdfs:label "is non-professionally allowed"@de ,
+        "ist erlaubt für die nicht-berufliche Verwendung"@de .
 
 # Products are sold by Companies
 :Company a owl:Class ;
@@ -111,7 +126,7 @@
     rdfs:subPropertyOf :interactsWith ;
     rdfs:domain :CropProtectionProduct ;
     rdfs:range :CropStressor ;
-    rdfs:comment "manages"@en ,
+    rdfs:label "manages"@en ,
         "bekämpft"@de .
 :isManagedBy a owl:ObjectProperty;
     rdfs:subPropertyOf :interactsWith ;
@@ -128,7 +143,7 @@
 :causes a owl:ObjectProperty ;
     rdfs:domain :CropStressor ;
     rdfs:range :Damage ;
-    rdfs:comment "causes"@en ,
+    rdfs:label "causes"@en ,
         "verursacht"@de .
 :isCausedBy a owl:ObjectProperty ;
     rdfs:domain :Damage ;
@@ -139,14 +154,14 @@
 :affects a owl:ObjectProperty ;
     rdfs:domain :Damage ;
     rdfs:range :Crop ;
-    rdfs:comment "affects"@en ,
+    rdfs:label "affects"@en ,
         "betrifft"@de .
 :isAffectedBy a owl:ObjectProperty ;
     rdfs:domain :Crop ;
     rdfs:range :Damage ;
     owl:inverseOf :affects ;
     rdfs:label "is affected by"@en ,
-        "ist betroffen von" .
+        "ist betroffen von"@en .
 
 # Products are generally (with some exceptions) a mixture of (chemical) substances
 :Substance a owl:Class ;
@@ -227,7 +242,7 @@
     rdfs:domain :Damage ;
     rdfs:range :Action ;
     owl:inverseOf :mitigates ;
-    rdfs:comment "is mitigated by"@en ,
+    rdfs:label "is mitigated by"@en ,
         "wird vermindert durch"@de .
 
 # One very common action is the treatment of crops with plant protection products
@@ -302,20 +317,40 @@
     :enables :0000002 .
 
 :0000005 a :ChemicalCropProtectionProduct ;
-    rdfs:label "Airone" ;
+    rdfs:label "Airone" .
 
 :0000006 a :Company ;
     rdfs:label "Andermatt Biocontrol Suisse AG" ;
     :holdsPermissionToSell :0000005 .
 
 :0000007 a :Company ;
-    rdfs:label "Syngenta Agro AG" .
+    rdfs:label "Syngenta Agro AG" ;
+    :holdsPermissionToSell :0000011 ;
+    :holdsPermissionToSell :0000012 ;
+    :holdsPermissionToSell :0000013 ;
+    :holdsPermissionToSell :0000014 .
 
 :0000008 a :Company ;
     rdfs:label "Omya (Schweiz) AG" .
 
 :0000009 a :Company ;
-    rdfs:label "BASF Schweiz AG" .
+    rdfs:label "BASF Schweiz AG" ;
+    :holdsPermissionToSell :0000015.
 
 :0000010 a :Company ;
     rdfs:label "Bayer (Schweiz) AG" .
+
+:0000011 a :ChemicalCropProtectionProduct ;
+    rdfs:label "Amistar" .
+
+:0000012 a :ChemicalCropProtectionProduct ;
+    rdfs:label "Amphore Flex" .
+
+:0000013 a :ChemicalCropProtectionProduct ;
+    rdfs:label "Cupromaag Liquid" .
+
+:0000014 a :ChemicalCropProtectionProduct ;
+    rdfs:label "Hortosan" .
+
+:0000015 a :ChemicalCropProtectionProduct ;
+    rdfs:label "Orvego" .
