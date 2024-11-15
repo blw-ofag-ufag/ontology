@@ -37,10 +37,18 @@
     rdfs:label "Aiotic crop stressor"@en, "Abiotischer Schadverursacher"@de .
 
 # Stressors negatively affect crops (they *damage* crops)
+:interaction a owl:ObjectProperty .
 :damages a owl:ObjectProperty ;
     rdfs:domain :CropStressors ;
     rdfs:range :Crop ;
+    rdfs:subPropertyOf :interaction ;
     rdfs:label "damages"@en, "beschädigt"@de .
+:isDamagedBy a owl:ObjectProperty ;
+    rdfs:domain :Crop ;
+    rdfs:range :CropStressors ;
+    rdfs:subPropertyOf :interaction ;
+    owl:inverseOf :damages ;
+    rdfs:label "is damaged by"@en, "wird beschädigt durch"@de .
 
 # There is a general class of products
 :Product a owl:Class .
@@ -148,5 +156,4 @@
 # Sometimes, we want to be able to express that a person knows about one thing or more in the ontology
 # Hence, we'll use the "thing" class; the general superclass of all OWL classes
 :knows a owl:ObjectProperty ;
-    rdfs:domain foaf:Person ;
-    rdfs:range owl:Thing .
+    rdfs:domain foaf:Person .
