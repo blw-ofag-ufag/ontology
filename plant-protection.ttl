@@ -37,7 +37,7 @@
 :AbioticStressors a owl:Class ;
     rdfs:subClassOf :CropStressor ;
     owl:disjointWith :BioticStressors ;
-    rdfs:label "Aiotic crop stressor"@en,
+    rdfs:label "Abiotic crop stressor"@en ,
         "Abiotischer Schadverursacher"@de .
 
 # Stressors negatively affect crops (they *damage* crops)
@@ -154,40 +154,63 @@
         "Chemische Substanz"@de .
 :contains a owl:ObjectProperty ;
     rdfs:domain :ChemicalProduct ;
-    rdfs:range :Substance .
+    rdfs:range :Substance ;
+    rdfs:label "contains"@en ,
+        "beinhaltet"@de .
 
 # In the case of plant protection, substances have four subclasses
 :ActiveSubstance rdfs:subClassOf :Substance ;
-    rdfs:label "Active substance"@en ;
+    rdfs:label "Active substance"@en ,
+        "Aktivsubstanz" ;
     rdfs:comment "Active substances are biologically active compounds which, in low concentrations, influence biochemical and physiological processes in plant, animal and human organisms quantitatively and/or qualitatively in the form of inhibition or activation." ;
     rdfs:isDefinedBy <https://www.scienceindustries.ch/_file/27381/201903-begriffsklaerung-final-en.pdf> .
-:AdditiveToDeclare rdfs:subClassOf :Substance .
-:Synergist rdfs:subClassOf :Substance .
-:Safener rdfs:subClassOf :Substance .
+:AdditiveToDeclare rdfs:subClassOf :Substance ;
+    rdfs:label "Additives to declare"@en ,
+        "Zu deklarierende Additive"@de .
+:Synergist rdfs:subClassOf :Substance ;
+    rdfs:label "Synergist"@en ,
+        "Synergist"@de .
+:Safener rdfs:subClassOf :Substance ;
+    rdfs:label "Safener"@en ,
+        "Safener"@de .
 
 # Often, we want to tell more about the exact composition of substances, not just the *ingredients*
-:FormulationComponent a owl:Class .
+:FormulationComponent a owl:Class ;
+    rdfs:label "Formulation component"@en ,
+        "Formulierungskomponente"@de .
 :hasFormulationComponent a owl:ObjectProperty ;
     rdfs:domain :ChemicalProduct ;
-    rdfs:range :FormulationComponent .
-:hasComponentIngredient a owl:ObjectProperty ;
+    rdfs:range :FormulationComponent ;
+    rdfs:label "has formulation component"@en ,
+        "hat Formulierungskomponente"@de .
+:hasComponentSubstance a owl:ObjectProperty ;
     rdfs:domain :FormulationComponent ;
-    rdfs:range :Substance .
+    rdfs:range :Substance ;
+    rdfs:label "contains chemical Substance"@en ,
+        "beinhaltet chemische Substanz"@de .
 
 # Some environmental conditions enable crop damage to arise
-:EnvironmentalCondition a owl:Class .
+:EnvironmentalCondition a owl:Class ;
+    rdfs:label "Environmental condition"@en ,
+        "Umweltbedingung"@de .
 :enables a owl:ObjectProperty ;
     rdfs:domain :EnvironmentalCondition ;
-    rdfs:range :Damage .
+    rdfs:range :Damage ;
+    rdfs:label "enables"@en ,
+        "ermöglicht"@de .
 
 # The goal of crop protection products is to prevent damage on crops
 :limits a owl:ObjectProperty ;
     rdfs:domain :CropProtectionProduct ;
-    rdfs:range :Damage .
+    rdfs:range :Damage ;
+    rdfs:label "limits"@en ,
+        "schränkt ein"@de .
 :isLimitedBy a owl:ObjectProperty ;
     rdfs:domain :Damage ;
     rdfs:range :CropProtectionProduct ;
-    owl:inverseOf :limits .
+    owl:inverseOf :limits ;
+    rdfs:label "is limited by"@en ,
+        "wird eingeschränkt durch"@de .
 
 # There is a wide range of actions that can be taken to mitigate damages
 :Action a owl:Class ;
@@ -203,33 +226,58 @@
 :isMitigatedBy a owl:ObjectProperty ;
     rdfs:domain :Damage ;
     rdfs:range :Action ;
-    owl:inverseOf :mitigates .
+    owl:inverseOf :mitigates ;
+    rdfs:comment "is mitigated by"@en ,
+        "wird vermindert durch"@de .
 
 # One very common action is the treatment of crops with plant protection products
 :Treatment a owl:Class ;
-    rdfs:subClassOf :Action .
+    rdfs:subClassOf :Action ;
+    rdfs:label "Treatment"@en ,
+        "Behandlung"@de .
 :protects a owl:ObjectProperty ;
     rdfs:domain :Action ;
-    rdfs:range :Crop .
+    rdfs:range :Crop ;
+    rdfs:label "protects"@en ,
+        "schützt"@de .
 :isProtectedBy a owl:ObjectProperty ;
     rdfs:domain :Crop ;
     rdfs:range :Action ;
-    owl:inverseOf :protects .
+    owl:inverseOf :protects ;
+    rdfs:label "is protected by"@en ,
+        "wird geschützt durch"@de .
 :involves a owl:ObjectProperty ;
     rdfs:domain :Treatment ;
-    rdfs:range :Product .
+    rdfs:range :Product ;
+    rdfs:label "involves"@en ,
+        "involviert"@de .
 
 # There are both restrictions and recommendations for the application of PPP
-:Guidance a owl:Class .
+:Notice a owl:Class ;
+    rdfs:label "Notice"@en ,
+        "Hinweis"@de .
 :concerns a owl:ObjectProperty ;
-    rdfs:domain :Guidance ;
-    rdfs:range :Action.
+    rdfs:domain :Notice ;
+    rdfs:range :Action ;
+    rdfs:label "concerns"@en ,
+        "betrifft"@de .
 :BestPracticeRecommendations a owl:Class ;
-    rdfs:subClassOf :Guidance .
+    rdfs:subClassOf :Notice ;
+    rdfs:label "Recommendation"@en ,
+        "Empfehlung"@de .
 :Condition a owl:Class ;
-    rdfs:subClassOf :Guidance .
+    rdfs:subClassOf :Notice ;
+    rdfs:label "Condition"@en ,
+        "Vorschrift"@de .
 
 # Sometimes, we want to be able to express that a person knows about one thing or more in the ontology
 # Hence, we'll use the "thing" class; the general superclass of all OWL classes
 :knows a owl:ObjectProperty ;
-    rdfs:domain foaf:Person .
+    rdfs:domain foaf:Person ;
+    rdfs:label "knows"@en ,
+        "kennt"@de .
+
+# -----------------------------------------------------------------------------------------------------
+# EXAMPLE INSTANCES
+# -----------------------------------------------------------------------------------------------------
+
