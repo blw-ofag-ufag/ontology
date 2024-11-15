@@ -281,3 +281,41 @@
 # EXAMPLE INSTANCES
 # -----------------------------------------------------------------------------------------------------
 
+:0000001 a :BioticStressors ;
+    rdfs:label "Phytophtora infestans" ;
+    :causes :0000002 .
+
+:0000002 a :Damage ;
+    rdfs:label "Potato late blight"@en ,
+        "Kraut- und Knollenfäule der Kartoffel"@de ;
+    :isCausedBy :0000001 ;
+    :affects :0000003 .
+
+:0000003 a :Crop ;
+    rdfs:label "Potato"@en ,
+        "Kartoffel"@de ;
+    :isAffectedBy :0000002 .
+
+:0000004 a :EnvironmentalCondition ;
+    rdfs:label "Wetness"@en ,
+        "Nässe"@de ;
+    :enables :0000002 .
+
+:0000005 a :ChemicalCropProtectionProduct ;
+    rdfs:label "Airone" ;
+
+:0000006 a :Company ;
+    rdfs:label "Andermatt Biocontrol Suisse AG" ;
+    :holdsPermissionToSell :0000005 .
+
+:0000007 a :Company ;
+    rdfs:label "Syngenta Agro AG" .
+
+:0000008 a :Company ;
+    rdfs:label "Omya (Schweiz) AG" .
+
+:0000009 a :Company ;
+    rdfs:label "BASF Schweiz AG" .
+
+:0000010 a :Company ;
+    rdfs:label "Bayer (Schweiz) AG" .
