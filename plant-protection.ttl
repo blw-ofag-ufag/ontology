@@ -3,18 +3,16 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf: <http://xmlns.com/foaf/spec/> .
 
 # Ontology declaration
 : a owl:Ontology ;
     dc:title "A (demonstrative) ontology for crop protection in Switzerland"@en,
-        "Eine (demonstrative) Ontologie für den Pflanzenschutz in der Schweiz"@de,
-        "Une ontologie (démonstrative) pour la protection des cultures en Suisse"@fr,
-        "Un'ontologia (dimostrativa) per la protezione delle colture in Svizzera"@it ;
+        "Eine (demonstrative) Ontologie für den Pflanzenschutz in der Schweiz"@de ;
     dc:description "This ontology exemplifies the value of comprehensive and well-structured ontology development for the Swiss Federal Office for Agriculture (and more broadly the Swiss agri-food sector). By capturing the complexities of crop protection (with a focus on registered products) in a formal model, it enhances understanding of current rules and allows their effective communication via IT-services."@en,
-        "Diese Ontologie veranschaulicht den Wert einer umfassenden und gut strukturierten Ontologieentwicklung für das Bundesamt für Landwirtschaft (und allgemein den Schweizer Agrar- und Lebensmittelsektor). Durch die formale Modellierung der Komplexität des Pflanzenschutzes (mit Schwerpunkt auf zugelassenen Produkten) verbessert sie das Verständnis der aktuellen Regeln und ermöglicht deren effektive Kommunikation über IT-Dienste."@de,
-        "Cette ontologie illustre la valeur d'un développement d'ontologie complet et bien structuré pour l'Office fédéral de l'agriculture (et plus largement le secteur agroalimentaire suisse). En capturant les complexités de la protection des cultures (avec un accent sur les produits enregistrés) dans un modèle formel, elle améliore la compréhension des règles actuelles et permet leur communication efficace via des services informatiques."@fr,
-        "Questa ontologia esemplifica il valore di uno sviluppo ontologico completo e ben strutturato per l'Ufficio federale dell'agricoltura (e più in generale per il settore agroalimentare svizzero). Catturando le complessità della protezione delle colture (con un focus sui prodotti registrati) in un modello formale, migliora la comprensione delle regole attuali e ne consente una comunicazione efficace attraverso i servizi informatici."@it ;
+        "Diese Ontologie veranschaulicht den Wert einer umfassenden und gut strukturierten Ontologieentwicklung für das Bundesamt für Landwirtschaft (und allgemein den Schweizer Agrar- und Lebensmittelsektor). Durch die formale Modellierung der Komplexität des Pflanzenschutzes (mit Schwerpunkt auf zugelassenen Produkten) verbessert sie das Verständnis der aktuellen Regeln und ermöglicht deren effektive Kommunikation über IT-Dienste."@de ;
     owl:versionInfo "0.6" ;
     dc:creator "Damian Oswald" .
 
@@ -25,17 +23,19 @@
         "Kulturpflanze"@de .
 
 # There are many things that might stress a plant
-:CropStressors a owl:Class ;
+:CropStressor a owl:Class ;
     rdfs:label "Crop stressor"@en,
         "Schadverursacher"@de .
 
 # ...some of them are biotic, others are abiotic.
 :BioticStressors a owl:Class ;
-    rdfs:subClassOf :CropStressors ;
+    rdfs:subClassOf :CropStressor ;
+    rdfs:isDefinedBy wd:Q3500367 ;
+    rdfs:seeAlso <https://w.wiki/Byym> ;
     rdfs:label "Biotic crop stressor"@en,
         "Biotischer Schadverursacher"@de .
 :AbioticStressors a owl:Class ;
-    rdfs:subClassOf :CropStressors ;
+    rdfs:subClassOf :CropStressor ;
     owl:disjointWith :BioticStressors ;
     rdfs:label "Aiotic crop stressor"@en,
         "Abiotischer Schadverursacher"@de .
@@ -46,14 +46,14 @@
         "interagiert mit"@de ;
     rdfs:comment "General relationship for physical thingns that interact with something else. A animal <interactsWith> its food. A pesticide <interactsWith> the target organism."@en .
 :damages a owl:ObjectProperty ;
-    rdfs:domain :CropStressors ;
+    rdfs:domain :CropStressor ;
     rdfs:range :Crop ;
     rdfs:subPropertyOf :interactsWith ;
     rdfs:label "damages"@en,
         "beschädigt"@de .
 :isDamagedBy a owl:ObjectProperty ;
     rdfs:domain :Crop ;
-    rdfs:range :CropStressors ;
+    rdfs:range :CropStressor ;
     rdfs:subPropertyOf :interactsWith ;
     owl:inverseOf :damages ;
     rdfs:label "is damaged by"@en,
@@ -65,47 +65,93 @@
         "Produkt"@de .
 
 # Products are sold by Companies
-:Company a owl:Class .
+:Company a owl:Class ;
+    rdfs:label "Company"@en, "Firma"@de .
 :holdsPermissionToSell a owl:ObjectProperty ;
     rdfs:domain :Company ;
-    rdfs:range :Product .
+    rdfs:range :Product ;
+    rdfs:label "holds Permission to sell"@en ,
+        "hat Bewilligung zum Verkauf von"@de .
 
 # Some of those are chemical mixtures (others not)
 :ChemicalProduct a owl:Class ;
-    rdfs:subClassOf :Product .
+    rdfs:subClassOf :Product ;
+    rdfs:label "Chemical product"@en ,
+        "Chemisches Produkt"@de ;
+    rdfs:comment "Any product that can be reason" .
 
 # (Crop protection) products help to improve crop health
 :CropProtectionProduct a owl:Class ;
-    rdfs:subClassOf :Product .
+    rdfs:subClassOf :Product ;
+    rdfs:label "Crop protection product"@en,
+        "Pflanzenschutzmittel"@de .
 
 # Crop protection products can be organized hierarchically, or even polyhierarchically.
 :ChemicalCropProtectionProduct a owl:Class ;
     rdfs:subClassOf :CropProtectionProduct ;
-    rdfs:subClassOf :ChemicalProduct .
+    rdfs:subClassOf :ChemicalProduct ;
+    rdfs:label "Chemical crop protection product"@en,
+        "Chemisches Pflanzenschutzmittel"@de .
 :BiologicalControlAgent a owl:Class ;
     rdfs:subClassOf :CropProtectionProduct ;
-    owl:disjointWith :ChemicalCropProtectionProduct .
+    owl:disjointWith :ChemicalCropProtectionProduct ;
+    rdfs:label "Biological control agent"@en ,
+        "Organismus für die biologische Schädlingsbekämpfung"@de .
 :PlantHealthPromoter a owl:Class ;
-    rdfs:subClassOf :ChemicalProduct .
+    rdfs:subClassOf :ChemicalProduct ;
+    rdfs:label "Plant health promoter"@en ,
+        "Mittel zur Förderung der Pflanzengesundheit"@de .
 :Adjuvant a owl:Class ;
-    rdfs:subClassOf :ChemicalProduct .
+    rdfs:subClassOf :ChemicalProduct ;
+    rdfs:label "Adjuvant"@en,
+        "Adjuvant"@de .
 
 # Products help farmers manage crop stressors
 :manages a owl:ObjectProperty;
+    rdfs:subPropertyOf :interactsWith ;
     rdfs:domain :CropProtectionProduct ;
-    rdfs:range :CropStressors .
+    rdfs:range :CropStressor ;
+    rdfs:comment "manages"@en ,
+        "bekämpft"@de .
+:isManagedBy a owl:ObjectProperty;
+    rdfs:subPropertyOf :interactsWith ;
+    rdfs:domain :CropStressor ;
+    rdfs:range :CropProtectionProduct ;
+    owl:inverseOf :manages ;
+    rdfs:label "is managed by"@en ,
+        "wird bekämpft von"@de .
 
 # Ideally, we want to say something about the *act of infesting*...
-:Damage a owl:Class .
+:Damage a owl:Class ;
+    rdfs:label "Damage"@en ,
+        "Schaden"@de .
 :causes a owl:ObjectProperty ;
-    rdfs:domain :CropStressors ;
-    rdfs:range :Damage .
+    rdfs:domain :CropStressor ;
+    rdfs:range :Damage ;
+    rdfs:comment "causes"@en ,
+        "verursacht"@de .
+:isCausedBy a owl:ObjectProperty ;
+    rdfs:domain :Damage ;
+    rdfs:range :CropStressor ;
+    owl:inverseOf :causes ;
+    rdfs:label "is caused by"@en ,
+        "wird verursacht von"@de .
 :affects a owl:ObjectProperty ;
     rdfs:domain :Damage ;
-    rdfs:range :Crop .
+    rdfs:range :Crop ;
+    rdfs:comment "affects"@en ,
+        "betrifft"@de .
+:isAffectedBy a owl:ObjectProperty ;
+    rdfs:domain :Crop ;
+    rdfs:range :Damage ;
+    owl:inverseOf :affects ;
+    rdfs:label "is affected by"@en ,
+        "ist betroffen von" .
 
 # Products are generally (with some exceptions) a mixture of (chemical) substances
-:Substance a owl:Class .
+:Substance a owl:Class ;
+    rdfs:label "Chemical substance"@en ,
+        "Chemische Substanz"@de .
 :contains a owl:ObjectProperty ;
     rdfs:domain :ChemicalProduct ;
     rdfs:range :Substance .
@@ -113,7 +159,8 @@
 # In the case of plant protection, substances have four subclasses
 :ActiveSubstance rdfs:subClassOf :Substance ;
     rdfs:label "Active substance"@en ;
-    rdfs:comment "Active substances are biologically active compounds which, in low concentrations, influence biochemical and physiological processes in plant, animal and human organisms quantitatively and/or qualitatively in the form of inhibition or activation. Source: https://www.scienceindustries.ch/_file/27381/201903-begriffsklaerung-final-en.pdf" .
+    rdfs:comment "Active substances are biologically active compounds which, in low concentrations, influence biochemical and physiological processes in plant, animal and human organisms quantitatively and/or qualitatively in the form of inhibition or activation." ;
+    rdfs:isDefinedBy <https://www.scienceindustries.ch/_file/27381/201903-begriffsklaerung-final-en.pdf> .
 :AdditiveToDeclare rdfs:subClassOf :Substance .
 :Synergist rdfs:subClassOf :Substance .
 :Safener rdfs:subClassOf :Substance .
@@ -137,12 +184,26 @@
 :limits a owl:ObjectProperty ;
     rdfs:domain :CropProtectionProduct ;
     rdfs:range :Damage .
+:isLimitedBy a owl:ObjectProperty ;
+    rdfs:domain :Damage ;
+    rdfs:range :CropProtectionProduct ;
+    owl:inverseOf :limits .
 
 # There is a wide range of actions that can be taken to mitigate damages
-:Action a owl:Class .
+:Action a owl:Class ;
+    rdfs:label "Protective action"@en,
+        "Schutzmassnahme"@de ;
+    rdfs:comment "A specific action taken to mitigate damage done to crops." ;
+    skos:scopeNote "Only use this class when the action is specifically *not* a treatment; i.e. the application of crop protection proucts on crops."@en .
 :mitigates a owl:ObjectProperty ;
     rdfs:domain :Action ;
-    rdfs:range :Damage .
+    rdfs:range :Damage ;
+    rdfs:label "mitigates"@en ,
+        "mindert"@de .
+:isMitigatedBy a owl:ObjectProperty ;
+    rdfs:domain :Damage ;
+    rdfs:range :Action ;
+    owl:inverseOf :mitigates .
 
 # One very common action is the treatment of crops with plant protection products
 :Treatment a owl:Class ;
@@ -150,6 +211,10 @@
 :protects a owl:ObjectProperty ;
     rdfs:domain :Action ;
     rdfs:range :Crop .
+:isProtectedBy a owl:ObjectProperty ;
+    rdfs:domain :Crop ;
+    rdfs:range :Action ;
+    owl:inverseOf :protects .
 :involves a owl:ObjectProperty ;
     rdfs:domain :Treatment ;
     rdfs:range :Product .
