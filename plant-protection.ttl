@@ -90,6 +90,7 @@
 
 # Some of those are chemical mixtures (others not)
 :ChemicalProduct a owl:Class ;
+    rdfs:subClassOf :Product;
     rdfs:subClassOf [
         a owl:Restriction ;
         owl:onProperty :contains ;
