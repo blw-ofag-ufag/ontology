@@ -19,7 +19,8 @@ for index, row in df.iterrows():
     # Get the embedding for the obligation text
     response = client.embeddings.create(
         input=obligation,
-        model="text-embedding-3-small"
+        model="text-embedding-3-large",
+        dimensions=100
     )
     embedding = response.data[0].embedding
     
@@ -43,7 +44,7 @@ final_df = pd.concat([df_results[['id', 'obligation']], embedding_df], axis=1)
 
 # Write the final DataFrame to embeddings.csv
 final_df.to_csv(
-    '/home/damian.oswald@blw.admin.ch/ontology/SRPPP/embeddings.csv',
+    '/home/damian.oswald@blw.admin.ch/ontology/SRPPP/embeddings-100.csv',
     index=False,
     quoting=csv.QUOTE_ALL
 )

@@ -1,8 +1,79 @@
 ---
+title: Clustering der Auflagen zum Pflanzenschutz aus dem Schweizer Pflanzenschutzmittelverzeichnis
+author: Damian Oswald
+date: today
 format: html
+embed-resources: true
 ---
 
-Hello
+# Hintergrund
+
+Das [Pflanzenschutzmittelverzeichnis (PSMV)](https://www.psm.admin.ch/) des Bundesamts für Lebensmittelsicherheit und Veterinärwesen (BLV) ist eine umfassende Liste aller in der Schweiz zugelassenen Pflanzenschutzmittel. Es enthält detaillierte Informationen zu deren vorgesehenen Anwendungen, Anwendungseinschränkungen, Aufwandmengen, Gefahrenkennzeichnung und Anwendungsauflagen. Auch Parallelimporte und spezifische Anwendungsvorschriften sind aufgeführt. Die Datenbank wird regelmässig aktualisiert und steht sowohl online als auch in einer XML-Formatdatei zur Verfügung. Sie dient als zentrale Referenz für die Zulassung und den sicheren Einsatz von Pflanzenschutzmitteln in der Schweiz.
+
+Unter anderem enthält das Pflanzenschutzmittelverzeichnis sogenannte *Auflagen* zur Verwendung eines Produktes gegen einen spezifischen Schaderreger und auf einer spezifischen Kultur. Insgesamt gibt es im PSMV 27393 solche Auflagen, wobei sich einige Auflagen wortwörtlich wiederholen, sodass das PSMV schlussendlich 1419 einzigartige Auflagen enthält (Stand November 2024).
+
+In dieser kurzen Arbeit geht es darum, einen Überblick zu diesen 1419 einzigartige Auflagen zu schaffen und diese mithilfe künstlicher Intelligenz zu sortieren und gruppieren. Die Arbeit schafft damit eine Grundlage dafür, dass diesee Auflagen in eine strukturierte Form überführt werden können.
+
+# Prozess
+
+Um die Auflagen zu sortieren habe ich das [Embedding-Modell von OpenAI](https://platform.openai.com/docs/guides/embeddings) verwendet. Dieses kann über eine (bezahlte) API aufgerufen werden und wandelt einen Text in seine sogenannte *Embeddings* ein, also in einen Vektor (eine Menge an Zahlen).
+
+```{python}
+#| eval: false
+#| echo: false
+#| code-summary: "Python-Code für die Erstellung der *Embeddings* (Kopie von `embeddings.py`)"
+import pandas as pd
+from openai import OpenAI
+import csv
+
+client = OpenAI()
+df = pd.read_csv('~/obligations.csv')
+results = []
+
+for index, row in df.iterrows():
+    id = row['id']
+    obligation = row['obligation']
+    response = client.embeddings.create(
+        input=obligation,
+        model="text-embedding-3-small"
+    )
+    embedding = response.data[0].embedding
+    results.append({
+        'id': id,
+        'obligation': obligation,
+        'embedding': embedding
+    })
+    print(id)
+    
+df_results = pd.DataFrame(results)
+
+embedding_df = pd.DataFrame(df_results['embedding'].tolist())
+final_df = pd.concat([df_results[['id', 'obligation']], embedding_df], axis=1)
+final_df.to_csv(
+    '~/embeddings.csv',
+    index=False,
+    quoting=csv.QUOTE_ALL
+)
+```
+
+Das Python-Skript erzeugt aus den 1419 Auflagen ein CSV (`embeddings.csv`) welches sowohl die Auflagen als Text als auch die Werte der Embeddings enthält. Jede Auflage wurde in einen Vektor mit 1536 Elementen umgewandelt, daher ist das CSV entsprechend gross. Mit diesen Zahlen lässt sich nun weiter arbeiten.
+
+Die Grösse der Embeddings kann zu einem Problem werden, da wir jetzt mehr Dimensionen haben als eigentliche Beobachtungen (also die Anzahl Auflagen). Als erstes sehen wir uns daher an, wie viel Informationsgehalt in den 1536 Werten der Embeddings steckt. Dazu verwenden wir eine *Principal Component Analysis* und analysieren die kumulative Varianz der einzelnen Komponenten. In anderen Worten: Wir drehen die Zahlen der Embeddings so, dass uns die jeweils erste Zahl in jedem Vektor am meisten über dessen Inhalt verrät, der zweite am zweitmeisten etc.
+
+```{r}
+#| eval: false
+#| echo: false
+#| code-summary: "R-Code für die Analyse der PCA"
+data = read.csv("embeddings.csv")
+X = as.matrix(data[,-c(1:2)])
+PCA = prcomp(X)
+variance_explained = 100*cumsum(PCA$sdev^2)/sum(PCA$sdev^2)
+par(mar = c(4,4,0,0)+0.1)
+plot(variance_explained, log = "x", type = "l", lwd = 4, xlab = "Anzahl Komponenten", ylab = "Erklärte Varianz [%]", las = 1)
+abline(h = seq(0,100,10), v = c(1,5,10,50,100,500,1000), lwd = 0.5)
+```
+
+Die Analyse verrät uns, dass die Verwendung der 100 ersten Komponenten immer noch 80% der Varianz in den Auflagen erklärt.
 
 ```{=html}
 <div style="min-height:1105px" id="datawrapper-vis-lmd7u"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/lmd7u/embed.js" charset="utf-8" data-target="#datawrapper-vis-lmd7u"></script><noscript><img src="https://datawrapper.dwcdn.net/lmd7u/full.png" alt="" /></noscript></div>

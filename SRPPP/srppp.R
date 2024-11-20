@@ -55,19 +55,17 @@ UMAP = umap(X, n_neighbors = 50, n_components = 2, metric = "euclidean", verbose
 plot(UMAP, pch = 16, cex = 0.5)
 
 # hierarchical clustering
-HC = hclust(dist(PCA$x[,1:10]))
+HC = hclust(dist(PCA$x[,1:100]))
 plot(HC, labels = FALSE, hang = 0)
 k = 11
 plot(UMAP, pch = 16, col = viridis::viridis(k)[cutree(HC, k = k)])
 # heatmap(as.matrix(dist(X[,1:10])))
 
-GMM = Mclust(PCA$x[,1:30], modelNames = "VVV", G = 1:k)
+GMM = Mclust(PCA$x[,1:100], G = 1:15)
 #GMM = Mclust(UMAP, modelNames = "VVV", G = 1:k)
 plot(GMM, what = "BIC")
-plot(GMM, what = "uncertainty", dimens = 1:3, col = viridis::viridis(k))
+plot(GMM, what = "uncertainty", dimens = 1:3, col = viridis::viridis(GMM$G))
 plot(PCA$x[,1:2], pch = 16, col = viridis::viridis(GMM$G)[GMM$classification])
-GMM$parameters$mean
-GMM$G
 
 # export results
 write.csv(data.frame(
