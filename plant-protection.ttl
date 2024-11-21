@@ -179,8 +179,9 @@
 
 # In the case of plant protection, substances have four subclasses
 :ActiveSubstance rdfs:subClassOf :Substance ;
-    rdfs:label "Active substance"@en ,
+    skos:prefLabel "Active substance"@en ,
         "Aktivsubstanz" ;
+    skos:altLabel "Wirkstoff"@de ;
     rdfs:comment "Active substances are biologically active compounds which, in low concentrations, influence biochemical and physiological processes in plant, animal and human organisms quantitatively and/or qualitatively in the form of inhibition or activation." ;
     rdfs:isDefinedBy <https://www.scienceindustries.ch/_file/27381/201903-begriffsklaerung-final-en.pdf> .
 :AdditiveToDeclare rdfs:subClassOf :Substance ;
