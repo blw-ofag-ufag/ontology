@@ -21,7 +21,7 @@
 # (Note: We could also abstract more to include Animals, Humans etc., but then we leave the realm of plant protection...)
 :Crop a owl:Class ;
     rdfs:label "Crop"@en,
-        "Kulturpflanze"@de .
+        "Kultur"@de .
 
 # There are many things that might stress a plant
 :CropStressor a owl:Class ;
@@ -67,7 +67,7 @@
 # (products have a bunch of technical attributes)
 :isParallelImport a owl:DatatypeProperty ;
     rdfs:domain :Product ;
-    rdfs:range xsd:Boolean ;
+    rdfs:range rdfs:Literal ;
     rdfs:label "is a parallel import"@de ,
         "ist ein Parallelimport"@de ;
     rdfs:comment "A parallel import refers to the importation of pesticide products that are legally authorized in one country and are brought into another without the direct consent of the intellectual property holder, provided they meet the same composition and regulatory standards as a product already authorized in the importing country. In Switzerland, such imports require a general import permit and compliance with specific labeling, packaging, and usage regulations aligned with the Swiss-approved reference product. This system ensures product availability while maintaining safety, regulatory adherence, and respect for intellectual property rights."@en ,
@@ -75,7 +75,7 @@
     rdfs:seeAlso <https://www.fedlex.admin.ch/eli/cc/2010/340/de#art_36> .
 :isNonprofessionallyAllowed a owl:DatatypeProperty ;
     rdfs:domain :Product ;
-    rdfs:range xsd:Boolean ;
+    rdfs:range rdfs:Literal ;
     rdfs:label "is non-professionally allowed"@de ,
         "ist erlaubt für die nicht-berufliche Verwendung"@de .
 
@@ -98,7 +98,8 @@
     ] ;
     rdfs:label "Chemical product"@en ,
         "Chemisches Produkt"@de ;
-    rdfs:comment "Any product that can be reason" .
+    rdfs:comment "Any product that can be reasonably well described by its (chemical) ingredients."@en ,
+        "Jedes Produkt, das sich einigermassen gut durch seine (chemischen) Inhaltsstoffe beschreiben lässt."@de .
 
 # (Crop protection) products help to improve crop health
 :CropProtectionProduct a owl:Class ;
@@ -114,7 +115,7 @@
         "Chemisches Pflanzenschutzmittel"@de .
 :BiologicalControlAgent a owl:Class ;
     rdfs:subClassOf :CropProtectionProduct ;
-    owl:disjointWith :ChemicalCropProtectionProduct ;
+    owl:disjointWith :ChemicalProduct ;
     rdfs:label "Biological control agent"@en ,
         "Organismus für die biologische Schädlingsbekämpfung"@de .
 :PlantHealthPromoter a owl:Class ;
@@ -179,20 +180,40 @@
 
 # In the case of plant protection, substances have four subclasses
 :ActiveSubstance rdfs:subClassOf :Substance ;
-    skos:prefLabel "Active substance"@en ,
-        "Aktivsubstanz" ;
-    skos:altLabel "Wirkstoff"@de ;
-    rdfs:comment "Active substances are biologically active compounds which, in low concentrations, influence biochemical and physiological processes in plant, animal and human organisms quantitatively and/or qualitatively in the form of inhibition or activation." ;
+    rdfs:label "Active substance"@en ,
+        "Aktivsubstanz"@de ;
+    skos:altLabel "Active ingredient",
+        "Wirkstoff"@de ;
+    rdfs:comment "Active substances are biologically active compounds which, in low concentrations, influence biochemical and physiological processes in plant, animal and human organisms quantitatively and/or qualitatively in the form of inhibition or activation."@en ;
     rdfs:isDefinedBy <https://www.scienceindustries.ch/_file/27381/201903-begriffsklaerung-final-en.pdf> .
 :AdditiveToDeclare rdfs:subClassOf :Substance ;
     rdfs:label "Additives to declare"@en ,
-        "Zu deklarierende Additive"@de .
+        "Zu deklarierende Additive"@de ;
+    owl:disjointWith :ActiveSubstance .
 :Synergist rdfs:subClassOf :Substance ;
     rdfs:label "Synergist"@en ,
-        "Synergist"@de .
+        "Synergist"@de ;
+    owl:disjointWith :ActiveSubstance, :AdditiveToDeclare .
 :Safener rdfs:subClassOf :Substance ;
     rdfs:label "Safener"@en ,
-        "Safener"@de .
+        "Safener"@de ;
+    owl:disjointWith :ActiveSubstance, :AdditiveToDeclare, :Synergist .
+
+# Active substances produce metabolites
+:Metabolite a owl:Class ;
+    rdfs:label "Metabolite"@en ,
+        "Metabolit"@de .
+:isMetabolizedTo a owl:ObjectProperty ;
+    rdfs:label "is metabolized to"@en ,
+        "wird metabolisiert zu"@de ;
+    rdfs:domain :ActiveSubstance ;
+    rdfs:range :Metabolite .
+:isMetabolizedFrom a owl:ObjectProperty ;
+    rdfs:label "is metabolized from"@en ,
+        "wird metabolisiert aus"@de ;
+    rdfs:domain :Metabolite ;
+    rdfs:range :ActiveSubstance ;
+    owl:inverseOf :isMetabolizedTo .
 
 # Often, we want to tell more about the exact composition of substances, not just the *ingredients*
 :FormulationComponent a owl:Class ;
@@ -232,11 +253,12 @@
     rdfs:label "is limited by"@en ,
         "wird eingeschränkt durch"@de .
 
+
 # There is a wide range of actions that can be taken to mitigate damages
 :Action a owl:Class ;
     rdfs:label "Protective action"@en,
         "Schutzmassnahme"@de ;
-    rdfs:comment "A specific action taken to mitigate damage done to crops." ;
+    rdfs:comment "A specific action taken to mitigate damage done to crops."@en ;
     skos:scopeNote "Only use this class when the action is specifically *not* a treatment; i.e. the application of crop protection proucts on crops."@en .
 :mitigates a owl:ObjectProperty ;
     rdfs:domain :Action ;
@@ -297,6 +319,25 @@
     rdfs:label "knows"@en ,
         "kennt"@de .
 
+# Connect anything that *lives* to 
+wd:Q16521 a owl:Class ;
+    rdfs:label "Biological taxon"@en ,
+        "Biologisches Taxon"@de ;
+    rdfs:comment "Group of one or more organism(s), which a taxonomist adjudges to be a unit."@en ,
+        "Gruppe von einem oder mehreren Organismen, die ein Taxonom als Einheit betrachtet."@de .
+:relatesToBiologicalTaxon a owl:ObjectProperty ;
+    rdfs:label "relates to biological taxon"@en ,
+        "hängt zusammen mit biologischem Taxon" ;
+    rdfs:range wd:Q16521 .
+:BCArelatesTo a owl:ObjectProperty ;
+    rdfs:domain :BiologicalControlAgent ;
+    rdfs:range wd:Q16521 ;
+    rdfs:subPropertyOf :relatesToBiologicalTaxon ;
+    rdfs:label "belongs to"@en,
+        "belongs to"@de ;
+    rdfs:comment "A biological control agent belongs to a certain biological taxon."@en ,
+        "Ein Organismus für die biologische Schädlingsbekämpfung gehört zu einem bestimmten biologischen Taxon."@de .
+
 # -----------------------------------------------------------------------------------------------------
 # EXAMPLE INSTANCES
 # -----------------------------------------------------------------------------------------------------
@@ -322,7 +363,8 @@
     :enables :0000002 .
 
 :0000005 a :ChemicalCropProtectionProduct ;
-    rdfs:label "Airone" .
+    rdfs:label "Airone" ;
+    :limits :0000002 .
 
 :0000006 a :Company ;
     rdfs:label "Andermatt Biocontrol Suisse AG" ;
@@ -346,16 +388,25 @@
     rdfs:label "Bayer (Schweiz) AG" .
 
 :0000011 a :ChemicalCropProtectionProduct ;
-    rdfs:label "Amistar" .
+    rdfs:label "Amistar" ;
+    :limits :0000002 ;
+    :contains :0000016 .
 
 :0000012 a :ChemicalCropProtectionProduct ;
-    rdfs:label "Amphore Flex" .
+    rdfs:label "Amphore Flex" ;
+    :limits :0000002 .
 
 :0000013 a :ChemicalCropProtectionProduct ;
-    rdfs:label "Cupromaag Liquid" .
+    rdfs:label "Cupromaag Liquid" ;
+    :limits :0000002 .
 
 :0000014 a :ChemicalCropProtectionProduct ;
-    rdfs:label "Hortosan" .
+    rdfs:label "Hortosan" ;
+    :limits :0000002 .
 
 :0000015 a :ChemicalCropProtectionProduct ;
-    rdfs:label "Orvego" .
+    rdfs:label "Orvego" ;
+    :limits :0000002 .
+
+:0000016 a :Substance ;
+    rdfs:label "Azoxystrobin" .
