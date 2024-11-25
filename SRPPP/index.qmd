@@ -60,21 +60,27 @@ Das Python-Skript erzeugt aus den 1419 Auflagen ein CSV (`embeddings.csv`) welch
 
 Die Grösse der Embeddings kann zu einem Problem werden, da wir jetzt mehr Dimensionen haben als eigentliche Beobachtungen (also die Anzahl Auflagen). Als erstes sehen wir uns daher an, wie viel Informationsgehalt in den 1536 Werten der Embeddings steckt. Dazu verwenden wir eine *Principal Component Analysis* und analysieren die kumulative Varianz der einzelnen Komponenten. In anderen Worten: Wir drehen die Zahlen der Embeddings so, dass uns die jeweils erste Zahl in jedem Vektor am meisten über dessen Inhalt verrät, der zweite am zweitmeisten etc.
 
-```{r}
-#| eval: false
-#| echo: false
-#| code-summary: "R-Code für die Analyse der PCA"
-data = read.csv("embeddings.csv")
-X = as.matrix(data[,-c(1:2)])
-PCA = prcomp(X)
-variance_explained = 100*cumsum(PCA$sdev^2)/sum(PCA$sdev^2)
-par(mar = c(4,4,0,0)+0.1)
-plot(variance_explained, log = "x", type = "l", lwd = 4, xlab = "Anzahl Komponenten", ylab = "Erklärte Varianz [%]", las = 1)
-abline(h = seq(0,100,10), v = c(1,5,10,50,100,500,1000), lwd = 0.5)
+```{=html}
+<div style="min-height:520px" id="datawrapper-vis-gEBsq"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/gEBsq/embed.js" charset="utf-8" data-target="#datawrapper-vis-gEBsq"></script><noscript><img src="https://datawrapper.dwcdn.net/gEBsq/full.png" alt="" /></noscript></div>
 ```
 
 Die Analyse verrät uns, dass die Verwendung der 100 ersten Komponenten immer noch 80% der Varianz in den Auflagen erklärt.
 
+```{r}
+#| fig-width: 8
+#| fig-height: 8
+#| echo: false
+#| message: false
+invisible(library(mclust, verbose = FALSE))
+data = read.csv("embeddings-100.csv")
+X = as.matrix(data[,-c(1:2)])
+PCA = prcomp(X)
+GMM = Mclust(PCA$x[,1:40], G = 1:20, modelNames = c("VVE","VEI","VII","VVI","VVV"))
+plot(GMM, what = "uncertainty", dimens = 1:5, col = viridis::viridis(GMM$G))
+```
+
+Das R-Paket `mclust` wählt die Hyperparameter für das Gaussian Mixture Model (GMM) automatisch aus. In unserem Fall wurde das Modell ``r GMM$modelName`` (`r mclust:::mclustModelNames(GMM$modelName)$type`) mit `r GMM$G` Clustern automatisch ausgewählt.
+
 ```{=html}
-<div style="min-height:1105px" id="datawrapper-vis-lmd7u"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/lmd7u/embed.js" charset="utf-8" data-target="#datawrapper-vis-lmd7u"></script><noscript><img src="https://datawrapper.dwcdn.net/lmd7u/full.png" alt="" /></noscript></div>
+<div style="min-height:827px" id="datawrapper-vis-tR61B"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/tR61B/embed.js" charset="utf-8" data-target="#datawrapper-vis-tR61B"></script><noscript><img src="https://datawrapper.dwcdn.net/tR61B/full.png" alt="" /></noscript></div>
 ```
