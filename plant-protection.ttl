@@ -109,9 +109,14 @@
 
 # Crop protection products can be organized hierarchically, or even polyhierarchically.
 :ChemicalCropProtectionProduct a owl:Class ;
-    rdfs:subClassOf :CropProtectionProduct ;
-    rdfs:subClassOf :ChemicalProduct ;
-    rdfs:label "Chemical crop protection product"@en,
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf (
+            :CropProtectionProduct
+            :ChemicalProduct
+        )
+    ] ;
+    rdfs:label "Chemical crop protection product"@en ,
         "Chemisches Pflanzenschutzmittel"@de .
 :BiologicalControlAgent a owl:Class ;
     rdfs:subClassOf :CropProtectionProduct ;
