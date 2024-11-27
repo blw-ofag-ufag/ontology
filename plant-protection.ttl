@@ -312,10 +312,10 @@
     rdfs:subClassOf :Notice ;
     rdfs:label "Recommendation"@en ,
         "Empfehlung"@de .
-:Condition a owl:Class ;
+:Obligation a owl:Class ;
     rdfs:subClassOf :Notice ;
-    rdfs:label "Condition"@en ,
-        "Vorschrift"@de .
+    rdfs:label "Obligation"@en ,
+        "Auflage"@de .
 
 # Sometimes, we want to be able to express that a person knows about one thing or more in the ontology
 # Hence, we'll use the "thing" class; the general superclass of all OWL classes
