@@ -13,6 +13,7 @@ format:
     toc-depth: 1
     number-sections: true
     number-depth: 1
+    controls: true
 css: tts-style.css
 ---
 
@@ -28,21 +29,13 @@ css: tts-style.css
 
 ## {background-iframe="https://www.psm.admin.ch/de/suche" background-interactive=true}
 
-## Auflagen {.smaller}
-
-- SPe 8: Gefährlich für Bienen - Darf nur ausserhalb des Bienenfluges am Abend mit blühenden oder Honigtau aufweisenden Pflanzen in Kontakt kommen. Anwendung im geschlossenen Gewächshaus sofern keine Bestäuber zugegen sind.
-- Ansetzen der Spritzbrühe: Schutzhandschuhe tragen.
-- Bewilligt als geringfügige Verwendung nach Art. 35 PSMV (minor use).
-- Maximal 3 Behandlungen pro Kultur im Abstand von 7 Tagen.
-- (Maximal 2 Behandlungen pro Kultur im Abstand von 7 Tagen.)
-
 ## Was schreiben Auflagen alles vor?
 
 ```{=html}
 <iframe src="https://datawrapper.dwcdn.net/g4VJe/1/" width="100%", height="100%"></iframe>
 ```
 
-## Fazit {.incremental}
+## Schlussfolgerung
 
 - Viele Auflagen
 - Komplexe Zusammenhänge
@@ -63,12 +56,18 @@ Laut Tom Gruber ([1993](https://doi.org/10.1006/knac.1993.1008)) ist "eine Ontol
 
 ## Geht das auch einfacher? {background-iframe="https://blw-ofag-ufag.github.io/ontology/graph/ontology.html" background-interactive=true}
 
-## Was habe ich bisher modelliert? {.smaller}
+<!-- ## Was habe ich bisher modelliert? {.smaller} -->
 
-```ttl
-{{< include resources/plant-protection.ttl >}}
-```
+<!-- ```ttl -->
+<!-- {{< include resources/plant-protection.ttl >}} -->
+<!-- ``` -->
 
 ## {background-iframe="https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/plant-protection.ttl" background-interactive=true}
 
 # Wie weiter?
+
+## Fachexperten gesucht!
+
+- **Interne Fachexperten**, für die Begleitung die nächsten zwei Monate.
+- **Externe Fachexperten**, welche im Februar Zeit für ein kurzes Review mit Feedback haben. (Drei Personen, am besten von verschiedenen Organisationen.)
+

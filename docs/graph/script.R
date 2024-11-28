@@ -36,6 +36,6 @@ network <- visNetwork(
   background = "rgba(0, 0, 0, 0)"
 ) %>% 
   visOptions(highlightNearest = TRUE) %>%
-  visLayout(randomSeed = 1)
+  visLayout(randomSeed = 1234)
 saveWidget(network, file = "ontology.html", selfcontained = TRUE)
 
