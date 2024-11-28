@@ -9,7 +9,7 @@ nodes <- data.frame(
   title = unique(c(triples$Subject, triples$Object))
 )
 nodes$color = c("#fe8","#2af")[as.factor(nodes$group)]
-edges <- data.frame(from = triples$Subject, to = triples$Object, title = triples$Predicate, arrows = "to", label = rep(NA, 36))
+edges <- data.frame(from = triples$Subject, to = triples$Object, title = triples$Predicate, arrows = "to", label = rep(NA, nrow(triples)))
 network <- visNetwork(
   nodes, edges,
   height = "900px",
@@ -36,6 +36,6 @@ network <- visNetwork(
   background = "rgba(0, 0, 0, 0)"
 ) %>% 
   visOptions(highlightNearest = TRUE) %>%
-  visLayout(randomSeed = 123)
+  visLayout(randomSeed = 1)
 saveWidget(network, file = "ontology.html", selfcontained = TRUE)
 
