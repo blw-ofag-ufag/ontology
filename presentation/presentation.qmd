@@ -1,0 +1,91 @@
+---
+title: Austausch zum Aufbau einer Ontologie für den Schweizer Pflanzenschutz
+author: Damian Oswald
+date: today
+date-format: long
+lang: de
+format:
+  revealjs:
+    theme: default
+    incremental: true
+    margin: 0.05
+    toc: true
+    toc-depth: 1
+    number-sections: true
+    number-depth: 1
+css: tts-style.css
+---
+
+# Was ist der Hintergrund?
+
+## {background-image="resources/swiss-chard.png" background-color="black"}
+
+<br><br><br><br><br><br>
+
+- Ein Gemüsebauer in Graubünden baut für die Capuns-Herstellung [Mangold]{.underline} im [Freiland]{.underline} an.
+- Plötzlich wird die Kulture von [Raupen]{.underline} befallen.
+- Der Landwirt ist pflichtbewusst und möchte seinen Mangold [fachgerecht]{.underline} schützen.
+
+## {background-iframe="https://www.psm.admin.ch/de/suche" background-interactive=true}
+
+## Auflagen {.smaller}
+
+- SPe 8: Gefährlich für Bienen - Darf nur ausserhalb des Bienenfluges am Abend mit blühenden oder Honigtau aufweisenden Pflanzen in Kontakt kommen. Anwendung im geschlossenen Gewächshaus sofern keine Bestäuber zugegen sind.
+- Ansetzen der Spritzbrühe: Schutzhandschuhe tragen.
+- Bewilligt als geringfügige Verwendung nach Art. 35 PSMV (minor use).
+- Maximal 3 Behandlungen pro Kultur im Abstand von 7 Tagen.
+- (Maximal 2 Behandlungen pro Kultur im Abstand von 7 Tagen.)
+
+## Was schreiben Auflagen alles vor?
+
+```{=html}
+<iframe src="https://datawrapper.dwcdn.net/g4VJe/1/" width="100%", height="100%"></iframe>
+```
+
+## Fazit {.incremental}
+
+- Viele Auflagen
+- Komplexe Zusammenhänge
+- Externe Verweise
+
+# Wie kann eine Ontologie helfen?
+
+## Was ist eine Ontologie?
+
+Laut Tom Gruber ([1993](https://doi.org/10.1006/knac.1993.1008)) ist "eine Ontologie eine [formale]{.underline}[^formal], [explizite]{.underline}[^explicit] Spezifikation einer [gemeinsamen]{.underline}[^shared] [Konzeptualisierung]{.underline}[^conceptualization]".
+
+[^formal]: **Formal** bedeutet, dass die Ontologie in einer formalen Sprache mit definierten Regeln und formaler Semantik ausgedrückt wird, was eine maschinelle Verarbeitung ermöglicht.
+[^explicit]: **Explizit** heisst, dass alle Elemente und Beziehungen klar definiert und nicht *implizit* sind.
+[^shared]: **Gemeinsame** bedeutet, dass die Ontologie von einer Gemeinschaft geteilt und verwendet wird, um das einheitliche Verständnis eines Bereichs zu fördern.
+[^conceptualization]: **Konzeptualisierung** bezieht sich auf die abstrakte Modellierung der relevanten Konzepte und deren Beziehungen.
+
+## Geht das auch einfacher?
+
+```{r}
+library(visNetwork)
+triples <- read.csv("SOP.csv")
+nodes <- data.frame(
+  id = unique(c(triples$Subject, triples$Object)),
+  label = unique(c(triples$Subject, triples$Object)),
+  group = ifelse(unique(c(triples$Subject, triples$Object)) %in% triples$Subject, "Subject", "Object")
+)
+edges <- data.frame(
+  from = triples$Subject,
+  to = triples$Object,
+  label = triples$Predicate
+)
+visNetwork(nodes, edges) %>%
+  visEdges(arrows = "to") %>%
+  visOptions(highlightNearest = TRUE, nodesIdSelection = FALSE) %>%
+  visLayout(randomSeed = 42)
+```
+
+## Was habe ich bisher modelliert? {.smaller}
+
+```ttl
+{{< include resources/plant-protection.ttl >}}
+```
+
+## {background-iframe="https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/plant-protection.ttl" background-interactive=true}
+
+# Wie weiter?
