@@ -6,7 +6,7 @@ date-format: long
 lang: de
 format:
   revealjs:
-    theme: default
+    theme: simple
     incremental: true
     margin: 0.05
     toc: true
@@ -37,9 +37,9 @@ css: tts-style.css
 
 ## Schlussfolgerung
 
-- Viele Auflagen
-- Komplexe Zusammenhänge
-- Externe Verweise
+- Zur Anwendung einzelner Pflanzenschutzmittel gibt es **extrem viele Auflagen**.
+- Die Auflagen sind meist **unstrukturiert und implizit vernetzt**.
+- Landwirte, Forschung und Verwaltung würden von einer **besseren Strukturierung** vorhandenen Wissens profitieren.
 
 # Wie kann eine Ontologie helfen?
 
@@ -71,3 +71,10 @@ Laut Tom Gruber ([1993](https://doi.org/10.1006/knac.1993.1008)) ist "eine Ontol
 - **Interne Fachexperten**, für die Begleitung die nächsten zwei Monate.
 - **Externe Fachexperten**, welche im Februar Zeit für ein kurzes Review mit Feedback haben. (Drei Personen, am besten von verschiedenen Organisationen.)
 
+## Was wollen wir machen?
+
+- Struktuerierung der Auflagen.
+- Einfügen von (poly-)hierarchischen Beziehungen.
+- Verbindung mit Wirkstoffklassen.
+- Verbindung mit ökotoxikologischem Wissen.
+- ...
