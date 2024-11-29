@@ -18,44 +18,46 @@ nocite: "@*"
 
 # Was ist das Problem?
 
-## {background-image="resources/swiss-chard.png" background-color="black"}
+##  {background-image="resources/swiss-chard.png" background-color="black"}
 
 <br><br><br><br><br><br>
 
-- Ein Gemüsebauer in Graubünden baut für die Capuns-Herstellung [Mangold]{.underline} im [Freiland]{.underline} an.
-- Plötzlich wird die Kulture von [Raupen]{.underline} befallen.
-- Der Landwirt ist pflichtbewusst und möchte seinen Mangold [fachgerecht]{.underline} schützen.
+-   Ein Gemüsebauer in Graubünden baut für die Capuns-Herstellung [Mangold]{.underline} im [Freiland]{.underline} an.
+-   Plötzlich wird die Kulture von [Raupen]{.underline} befallen.
+-   Der Landwirt ist pflichtbewusst und möchte seinen Mangold [fachgerecht]{.underline} schützen.
 
-## {background-iframe="https://www.psm.admin.ch/de/suche" background-interactive=true}
+##  {background-iframe="https://www.psm.admin.ch/de/suche" background-interactive="true"}
 
 ## Was schreiben die Auflagen vor?
 
 ```{=html}
 <iframe src="https://datawrapper.dwcdn.net/g4VJe/1/" width="100%", height="100%"></iframe>
 ```
-
 ## Schlussfolgerung
 
-- Zur Anwendung einzelner Pflanzenschutzmittel gibt es **extrem viele Auflagen**.
-- Die Auflagen sind meist **unstrukturiert und implizit vernetzt**.
-- Landwirte, Forschung und Verwaltung würden von einer **besseren Strukturierung** vorhandenen Wissens profitieren.
+-   Zur Anwendung einzelner Pflanzenschutzmittel gibt es **extrem viele Auflagen**.
+-   Die Auflagen sind meist **unstrukturiert und implizit vernetzt**.
+-   Landwirte, Forschung und Verwaltung würden von einer **besseren Strukturierung** vorhandenen Wissens profitieren.
 
 # Wie kann eine Ontologie helfen?
 
 ## Was ist eine Ontologie?
 
-Laut @gruber1993translation ist "eine Ontologie eine [formale]{.underline}[^formal], [explizite]{.underline}[^explicit] Spezifikation einer [gemeinsamen]{.underline}[^shared] [Konzeptualisierung]{.underline}[^conceptualization]".
+Laut @gruber1993translation ist "eine Ontologie eine [formale]{.underline}[^1], [explizite]{.underline}[^2] Spezifikation einer [gemeinsamen]{.underline}[^3] [Konzeptualisierung]{.underline}[^4]".
 
-[^formal]: **Formal** bedeutet, dass die Ontologie in einer formalen Sprache mit definierten Regeln und formaler Semantik ausgedrückt wird, was eine maschinelle Verarbeitung ermöglicht.
-[^explicit]: **Explizit** heisst, dass alle Elemente und Beziehungen klar definiert und nicht *implizit* sind.
-[^shared]: **Gemeinsame** bedeutet, dass die Ontologie von einer Gemeinschaft geteilt und verwendet wird, um das einheitliche Verständnis eines Bereichs zu fördern.
-[^conceptualization]: **Konzeptualisierung** bezieht sich auf die abstrakte Modellierung der relevanten Konzepte und deren Beziehungen.
+[^1]: **Formal** bedeutet, dass die Ontologie in einer formalen Sprache mit definierten Regeln und formaler Semantik ausgedrückt wird, was eine maschinelle Verarbeitung ermöglicht.
 
-## Geht das auch einfacher? {background-iframe="https://blw-ofag-ufag.github.io/ontology/graph/index.html" background-interactive=true}
+[^2]: **Explizit** heisst, dass alle Elemente und Beziehungen klar definiert und nicht *implizit* sind.
 
-## {background-iframe="https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/docs/graph/ontology.ttl" background-interactive=true}
+[^3]: **Gemeinsame** bedeutet, dass die Ontologie von einer Gemeinschaft geteilt und verwendet wird, um das einheitliche Verständnis eines Bereichs zu fördern.
 
-## {background-iframe="https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/plant-protection.ttl" background-interactive=true}
+[^4]: **Konzeptualisierung** bezieht sich auf die abstrakte Modellierung der relevanten Konzepte und deren Beziehungen.
+
+## Geht das auch einfacher? {background-iframe="https://blw-ofag-ufag.github.io/ontology/graph/index.html" background-interactive="true"}
+
+##  {background-iframe="https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/docs/graph/ontology.ttl" background-interactive="true"}
+
+##  {background-iframe="https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/plant-protection.ttl" background-interactive="true"}
 
 # Wie könnt ihr uns helfen?
 
@@ -63,16 +65,15 @@ Laut @gruber1993translation ist "eine Ontologie eine [formale]{.underline}[^form
 
 Eine Ontologie repräsentiert *geteiltes* Wissen. Die Zusammenarbeit mit den Fachspezialisten ist daher unabdingbar. Wir suchen:
 
-- **Interne Fachexperten**, für die Begleitung der Ontologie-Entwicklung in den nächsten zwei Monaten.
-- **Externe Fachexperten**, welche im Februar Zeit für ein kurzes Review mit Feedback haben. (Drei Personen, am besten von verschiedenen Organisationen.)
+-   **Interne Fachexperten**, für die Begleitung der Ontologie-Entwicklung in den nächsten zwei Monaten.
+-   **Externe Fachexperten**, welche im Februar Zeit für ein kurzes Review mit Feedback haben. (Drei Personen, am besten von verschiedenen Organisationen.)
 
 ## Wobei brauchen wir Hilfe?
 
-- **Prüfung der Ontologie** auf fachliche Korrektheit.
-- **Dekomposition** der Auflagen im Pflanzenschutzmittelverzeichnis.
-- **Anreichern der vorhandenen Klassen** mit (polyhierarchischen) Taxonomien.
-- **Erweiterung der Ontologie** in bisher fehlende Fachgebiete (z.B. Ökotoxikologie).
-- **Verbindung mit externen Experten** für das Review.
+-   **Prüfung der Ontologie** auf fachliche Korrektheit.
+-   **Dekomposition** der Auflagen im Pflanzenschutzmittelverzeichnis.
+-   **Anreichern der vorhandenen Klassen** mit (polyhierarchischen) Taxonomien.
+-   **Erweiterung der Ontologie** in bisher fehlende Fachgebiete (z.B. Ökotoxikologie).
+-   **Verbindung mit externen Experten** für das Review.
 
 ## Literatur
-

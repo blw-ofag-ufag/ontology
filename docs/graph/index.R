@@ -55,7 +55,7 @@ network <- visNetwork(nodes,
                       edges,
                       height = "950px",
                       width = "100%") %>%
-  visNodes(shape = "box") %>%
+  visNodes(shape = "box", font = list(face = "Rubik")) %>%
   visInteraction(dragNodes = TRUE) %>%
   visLayout(randomSeed = 8) %>%
   visOptions(
