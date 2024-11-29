@@ -55,17 +55,17 @@ Laut Tom Gruber ([1993](https://doi.org/10.1006/knac.1993.1008)) ist "eine Ontol
 
 ## {background-iframe="https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/plant-protection.ttl" background-interactive=true}
 
-# Wie könnt ihr mir helfen?
+# Wie könnt ihr uns helfen?
 
 ## Fachexperten gesucht!
 
 - **Interne Fachexperten**, für die Begleitung der Ontologie-Entwicklung in den nächsten zwei Monaten.
 - **Externe Fachexperten**, welche im Februar Zeit für ein kurzes Review mit Feedback haben. (Drei Personen, am besten von verschiedenen Organisationen.)
 
-## Was wollen wir machen?
+## Wobei brauchen wir hilfe?
 
-- Struktuerierung der Auflagen.
-- Einfügen von (poly-)hierarchischen Beziehungen.
-- Verbindung mit Wirkstoffklassen.
-- Verbindung mit ökotoxikologischem Wissen.
-- ...
+- **(Semantische) Strukturierung bzw. Dekomposition** der Auflagen im Pflanzenschutzmittelverzeichnis.
+- **Anreichern der vorhandenen Klassen** mit (polyhierarchischen) Taxonomien. (Beispiel: Aktivsubstanzen können in Wirkstoffgruppen unterteilt werden, diese können unter umständen wiederum unterteilt werden.)
+- **Erweiterung der Ontologie** in bisher fehlende Fachgebiete (z.B. Ökotoxikologie).
+- **Prüfung der bestehenden Ontologie** auf fachliche Korrektheit.
+- **Kontaktaufnahme mit externen Experten** für das finale Review.
