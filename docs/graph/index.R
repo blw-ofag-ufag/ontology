@@ -20,9 +20,9 @@ nodes <- tribble(
   12,   "Wirkstoff",           600,  100
 )
 nodes$physics = FALSE
-nodes$color = "#678"
+nodes$color = "#2A9CD4"
 nodes$font.color = "#fff"
-nodes$font.size = 28
+nodes$font.size = 30
 
 # define relationships (edges)
 edges <- tribble(
@@ -42,11 +42,11 @@ edges <- tribble(
   11,       "beinhaltet",     12,    FALSE,
   7,        "ist ein",        12,    TRUE,
   6,        "ist ein",        12,    TRUE,
-  5,        "ist ein",        11,    TRUE,
+  5,        "ist ein",        12,    TRUE,
 )
 edges$arrows = "to"
-edges$color = "#abc"
-edges$font.color = "#789"
+edges$color = "#bbb"
+edges$font.color = "#888"
 edges$font.size = 24
 
 # Create the network visualization

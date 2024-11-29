@@ -1,0 +1,38 @@
+@prefix :     <http://ppp.ch/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+:                         a                           owl:Ontology ;
+                          dc:title                    "A tiny example ontology"@en ;
+                          dc:description              "This is only an example."@en ;
+                          dc:creator                  "Damian Oswald" .
+
+:Pesticide                a                           owl:Class ;
+                          rdfs:label                  "Pesticide"@en ;
+                          rdfs:comment                "Chemical used against pests."@en .
+
+:hasCode                  a                           owl:DatatypeProperty ;
+                          rdfs:label                  "Federal registration code"@en ;
+                          rdfs:domain                 :Pesticide ;
+                          rdfs:range                  xsd:string .
+
+:Insecticide              rdfs:subClassOf             :Pesticide ;
+                          rdfs:label                  "Insecticide"@en ;
+                          rdfs:comment                "A chemical that kills insects."@en .
+
+:Fungicide                rdfs:subClassOf             :Pesticide ;
+                          rdfs:label                  "Fungicide"@en ;
+                          rdfs:comment                "A chemical that kills fungi."@en ;
+                          owl:disjointWith            :Insecticide .
+
+:Affirm                   a                           :Insecticide ;
+                          :hasCode                    "W-7363-1" .
+
+:Blocker                  a                           :Insecticide ;
+                          :hasCode                    "W-7541" .
+
+:Fezan                    a                           :Fungicide ;
+                          :hasCode                    "W-6589" .
