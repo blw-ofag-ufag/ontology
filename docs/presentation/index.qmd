@@ -1,18 +1,16 @@
 ---
-title: Austausch zum Aufbau einer Ontologie für den Schweizer Pflanzenschutz
+title: Eine Ontologie für den Schweizer Pflanzenschutz
 author: Damian Oswald
 date: today
 date-format: long
 lang: de
 format:
   revealjs:
-    theme: [resources/custom.scss, simple]
+    theme: [resources/custom.scss]
     incremental: true
     margin: 0.05
     toc: true
     toc-depth: 1
-    number-sections: true
-    number-depth: 1
     controls: true
 ---
 
@@ -28,7 +26,7 @@ format:
 
 ## {background-iframe="https://www.psm.admin.ch/de/suche" background-interactive=true}
 
-## Was schreiben Auflagen alles vor?
+## Was schreiben die Auflagen vor?
 
 ```{=html}
 <iframe src="https://datawrapper.dwcdn.net/g4VJe/1/" width="100%", height="100%"></iframe>
@@ -57,11 +55,11 @@ Laut Tom Gruber ([1993](https://doi.org/10.1006/knac.1993.1008)) ist "eine Ontol
 
 ## {background-iframe="https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/plant-protection.ttl" background-interactive=true}
 
-# Wie weiter?
+# Wie könnt ihr mir helfen?
 
 ## Fachexperten gesucht!
 
-- **Interne Fachexperten**, für die Begleitung die nächsten zwei Monate.
+- **Interne Fachexperten**, für die Begleitung der Ontologie-Entwicklung in den nächsten zwei Monaten.
 - **Externe Fachexperten**, welche im Februar Zeit für ein kurzes Review mit Feedback haben. (Drei Personen, am besten von verschiedenen Organisationen.)
 
 ## Was wollen wir machen?
