@@ -53,7 +53,7 @@ edges$font.size = 24
 # Create the network visualization
 network <- visNetwork(nodes,
                       edges,
-                      height = "1000px",
+                      height = "950px",
                       width = "100%") %>%
   visNodes(shape = "box") %>%
   visInteraction(dragNodes = TRUE) %>%
