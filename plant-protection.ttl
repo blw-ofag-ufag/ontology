@@ -172,7 +172,7 @@
     rdfs:range :Damage ;
     owl:inverseOf :affects ;
     rdfs:label "is affected by"@en ,
-        "ist betroffen von"@en .
+        "ist betroffen von"@de .
 
 # Products are generally (with some exceptions) a mixture of (chemical) substances
 :Substance a owl:Class ;

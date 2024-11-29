@@ -62,10 +62,10 @@ Laut Tom Gruber ([1993](https://doi.org/10.1006/knac.1993.1008)) ist "eine Ontol
 - **Interne Fachexperten**, für die Begleitung der Ontologie-Entwicklung in den nächsten zwei Monaten.
 - **Externe Fachexperten**, welche im Februar Zeit für ein kurzes Review mit Feedback haben. (Drei Personen, am besten von verschiedenen Organisationen.)
 
-## Wobei brauchen wir hilfe?
+## Wobei brauchen wir Hilfe?
 
 - **(Semantische) Strukturierung bzw. Dekomposition** der Auflagen im Pflanzenschutzmittelverzeichnis.
-- **Anreichern der vorhandenen Klassen** mit (polyhierarchischen) Taxonomien. (Beispiel: Aktivsubstanzen können in Wirkstoffgruppen unterteilt werden, diese können unter umständen wiederum unterteilt werden.)
+- **Anreichern der vorhandenen Klassen** mit (polyhierarchischen) Taxonomien. (Beispiel: Aktivsubstanzen können in Wirkstoffgruppen unterteilt werden.)
 - **Erweiterung der Ontologie** in bisher fehlende Fachgebiete (z.B. Ökotoxikologie).
 - **Prüfung der bestehenden Ontologie** auf fachliche Korrektheit.
 - **Kontaktaufnahme mit externen Experten** für das finale Review.
