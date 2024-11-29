@@ -53,9 +53,7 @@ Laut Tom Gruber ([1993](https://doi.org/10.1006/knac.1993.1008)) ist "eine Ontol
 
 ## Geht das auch einfacher? {background-iframe="https://blw-ofag-ufag.github.io/ontology/graph/index.html" background-interactive=true}
 
-::: aside
-Link zur formalisierten Ontologie.
-:::
+## {background-iframe="https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/docs/graph/ontology.ttl" background-interactive=true}
 
 ## {background-iframe="https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/plant-protection.ttl" background-interactive=true}
 

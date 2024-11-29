@@ -7,20 +7,20 @@ library(tibble)
 nodes <- tribble(
   ~id,  ~label,                ~x,   ~y,
   1,    "Piretro Verde",       0,    600,
-  2,    "Coral Extra",         1000, 800,
-  3,    "Lumino",              700,  700,
-  4,    "Divo",                600,  300,
+  2,    "Coral Extra",         1100, 900,
+  3,    "Lumino",              900,  600,
+  4,    "Divo",                600,  350,
   5,    "Pyrethrine",          300,  200,
-  6,    "Difenoconazol",       1000, 500,
-  7,    "Fludioxonil",         1400, 450,
+  6,    "Difenoconazol",       1100, 450,
+  7,    "Fludioxonil",         1400, 350,
   8,    "Fungizid",            550,  550,
   9,    "Saatbeizmittel",      600,  900,
   10,   "Insektizid",          150,  900,
   11,   "Pflanzenschutzmittel",300,  700,
-  12,   "Wirkstoff",           600,  100
+  12,   "Wirkstoff",           600,  150
 )
 nodes$physics = FALSE
-nodes$color = "#2A9CD4"
+nodes$color = "#444"
 nodes$font.color = "#fff"
 nodes$font.size = 30
 
@@ -32,6 +32,7 @@ edges <- tribble(
   2,        "beinhaltet",     6,     FALSE,
   2,        "beinhaltet",     7,     FALSE,
   2,        "ist ein",        9,     TRUE,
+  2,        "ist ein",        8,     TRUE,
   3,        "beinhaltet",     6,     FALSE,
   3,        "ist ein",        8,     TRUE,
   4,        "beinhaltet",     6,     FALSE,
@@ -62,7 +63,7 @@ network <- visNetwork(nodes,
       enabled = TRUE,
       degree = 1,
       hover = TRUE,
-      hideColor = "rgba(200,200,200,0.5)"
+      hideColor = "rgba(200,200,200,0.4)"
     )
   )
 

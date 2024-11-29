@@ -1,38 +1,105 @@
-@prefix :     <http://ppp.ch/> .
-@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix : <https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/docs/graph/ontology.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dc: <http://purl.org/dc/terms/> .
 
-:                         a                           owl:Ontology ;
-                          dc:title                    "A tiny example ontology"@en ;
-                          dc:description              "This is only an example."@en ;
-                          dc:creator                  "Damian Oswald" .
+: a owl:Ontology ;
+    dc:title "A tiny example ontology for plant protection products and their active ingredients"@en ,
+        "Eine winzige Beispiels-Ontologie für Pflanzenschutzmittel und deren Wirkstoffe."@de ,
+        "Une petite ontologie d'exemple pour les produits phytosanitaires et leurs ingrédients actifs"@fr ;
+    dc:description "This is only an example."@en ,
+        "Dies ist nur ein Beispiel."@de ,
+        "Ceci est seulement un exemple."@fr ;
+    dc:created "2024-11-29";
+    dc:creator "Damian Oswald" ;
+    owl:versionInfo "0.6" .
 
-:Pesticide                a                           owl:Class ;
-                          rdfs:label                  "Pesticide"@en ;
-                          rdfs:comment                "Chemical used against pests."@en .
+:Pesticide a owl:Class ;
+    rdfs:label "Plant protection product"@en ,
+        "Pflanzenschutzmittel"@de ,
+        "Produit phytosanitaire"@fr ;
+    rdfs:comment "A plant protection product is a substance or mixture intended to prevent, destroy, repel, or mitigate any pest in plants."@en ;
+    rdfs:comment "Ein Pflanzenschutzmittel ist ein Stoff oder Gemisch, das dazu bestimmt ist, Schädlinge an Pflanzen zu verhindern, zu zerstören, abzuwehren oder zu mindern."@de ;
+    rdfs:comment "Un produit phytosanitaire est une substance ou un mélange destiné à prévenir, détruire, repousser ou atténuer tout parasite des plantes."@fr .
 
-:hasCode                  a                           owl:DatatypeProperty ;
-                          rdfs:label                  "Federal registration code"@en ;
-                          rdfs:domain                 :Pesticide ;
-                          rdfs:range                  xsd:string .
+:Insecticide a owl:Class ;
+    rdfs:subClassOf :Pesticide ;
+    rdfs:label "Insecticide"@en ,
+        "Insektizid"@de ,
+        "Insecticide"@fr ;
+    rdfs:comment "A chemical substance used to kill insects."@en ;
+    rdfs:comment "Eine chemische Substanz, die zur Tötung von Insekten verwendet wird."@de ;
+    rdfs:comment "Une substance chimique utilisée pour tuer les insectes."@fr .
 
-:Insecticide              rdfs:subClassOf             :Pesticide ;
-                          rdfs:label                  "Insecticide"@en ;
-                          rdfs:comment                "A chemical that kills insects."@en .
+:Fungicide a owl:Class ;
+    rdfs:subClassOf :Pesticide ;
+    rdfs:label "Fungicide"@en ,
+        "Fungizid"@de ,
+        "Fongicide"@fr ;
+    rdfs:comment "A chemical substance used to kill fungi."@en ;
+    rdfs:comment "Eine chemische Substanz, die zur Tötung von Pilzen verwendet wird."@de ;
+    rdfs:comment "Une substance chimique utilisée pour tuer les champignons."@fr ;
+    owl:disjointWith :Insecticide .
 
-:Fungicide                rdfs:subClassOf             :Pesticide ;
-                          rdfs:label                  "Fungicide"@en ;
-                          rdfs:comment                "A chemical that kills fungi."@en ;
-                          owl:disjointWith            :Insecticide .
+:Saatbeizmittel a owl:Class ;
+    rdfs:subClassOf :Pesticide ;
+    rdfs:label "Seed treatment product"@en ,
+        "Saatbeizmittel"@de ,
+        "Produit de traitement des semences"@fr ;
+    rdfs:comment "A chemical or biological preparation that coats seeds to protect them from pests, diseases, or environmental stress and to improve germination."@en ;
+    rdfs:comment "Ein chemisches oder biologisches Präparat, das Saatgut umhüllt, um es vor Schädlingen, Krankheiten oder Umweltstress zu schützen und die Keimfähigkeit zu verbessern."@de ;
+    rdfs:comment "Une préparation chimique ou biologique qui enrobe les semences pour les protéger des parasites, des maladies ou du stress environnemental et améliorer la germination."@fr .
 
-:Affirm                   a                           :Insecticide ;
-                          :hasCode                    "W-7363-1" .
+:Ingredient a owl:Class ;
+    rdfs:label "Active ingredient"@en ,
+        "Wirkstoff"@de ,
+        "Ingrédient actif"@fr ;
+    rdfs:comment "An active ingredient used in a pesticide to control pests."@en ;
+    rdfs:comment "Ein Wirkstoff, der in einem Pflanzenschutzmittel verwendet wird, um Schädlinge zu bekämpfen."@de ;
+    rdfs:comment "Un ingrédient actif utilisé dans un produit phytosanitaire pour lutter contre les parasites."@fr .
 
-:Blocker                  a                           :Insecticide ;
-                          :hasCode                    "W-7541" .
+:contains a owl:ObjectProperty ;
+    rdfs:label "contains"@en ,
+        "beinhaltet"@de ,
+        "contient"@fr ;
+    rdfs:comment "Indicates that a pesticide contains a specific active ingredient."@en ;
+    rdfs:comment "Gibt an, dass ein Pflanzenschutzmittel einen bestimmten Wirkstoff enthält."@de ;
+    rdfs:comment "Indique qu'un produit phytosanitaire contient un ingrédient actif spécifique."@fr ;
+    rdfs:domain :Pesticide ;
+    rdfs:range :Ingredient .
 
-:Fezan                    a                           :Fungicide ;
-                          :hasCode                    "W-6589" .
+:isContained a owl:ObjectProperty ;
+    rdfs:label "is contained in"@en ,
+        "ist enthalten in"@de ,
+        "est contenu dans"@fr ;
+    rdfs:comment "Indicates that an ingredient is contained in a pesticide."@en ;
+    rdfs:comment "Gibt an, dass ein Wirkstoff in einem Pflanzenschutzmittel enthalten ist."@de ;
+    rdfs:comment "Indique qu'un ingrédient est contenu dans un produit phytosanitaire."@fr ;
+    rdfs:domain :Ingredient ;
+    rdfs:range :Pesticide ;
+    owl:inverseOf :contains .
+
+:1 a :Fungicide ;
+    a :Pesticide ;
+    rdfs:label "Lumino" ;
+    :contains :2 .
+:2 a :Ingredient ;
+    rdfs:label "Difenoconazol" .
+:3 a :Fungicide ;
+    a :Pesticide ;
+    rdfs:label "Divo" ;
+    :contains :2 .
+:4 a :Saatbeizmittel ;
+    a :Fungicide ;
+    a :Pesticide ;
+    rdfs:label "Coral Extra" ;
+    :contains :2 ;
+    :contains :5 .
+:5 a :Ingredient ;
+    rdfs:label "Fludioxonil" .
+:6 a :Insecticide ;
+    a :Pesticide ;
+    :contains :7 ;
+    rdfs:label "Piretro Verde" .
+:7 a :Ingredient ;
+    rdfs:label "Pyrethrine" .
