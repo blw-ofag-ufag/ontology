@@ -12,6 +12,8 @@ format:
     toc: true
     toc-depth: 1
     controls: true
+bibliography: references.bib
+nocite: "@*"
 ---
 
 # Was ist das Problem?
@@ -42,7 +44,7 @@ format:
 
 ## Was ist eine Ontologie?
 
-Laut Tom Gruber ([1993](https://doi.org/10.1006/knac.1993.1008)) ist "eine Ontologie eine [formale]{.underline}[^formal], [explizite]{.underline}[^explicit] Spezifikation einer [gemeinsamen]{.underline}[^shared] [Konzeptualisierung]{.underline}[^conceptualization]".
+Laut @gruber1993translation ist "eine Ontologie eine [formale]{.underline}[^formal], [explizite]{.underline}[^explicit] Spezifikation einer [gemeinsamen]{.underline}[^shared] [Konzeptualisierung]{.underline}[^conceptualization]".
 
 [^formal]: **Formal** bedeutet, dass die Ontologie in einer formalen Sprache mit definierten Regeln und formaler Semantik ausgedrückt wird, was eine maschinelle Verarbeitung ermöglicht.
 [^explicit]: **Explizit** heisst, dass alle Elemente und Beziehungen klar definiert und nicht *implizit* sind.
@@ -59,13 +61,18 @@ Laut Tom Gruber ([1993](https://doi.org/10.1006/knac.1993.1008)) ist "eine Ontol
 
 ## Fachexperten gesucht!
 
+Eine Ontologie repräsentiert *geteiltes* Wissen. Die Zusammenarbeit mit den Fachspezialisten ist daher unabdingbar. Wir suchen:
+
 - **Interne Fachexperten**, für die Begleitung der Ontologie-Entwicklung in den nächsten zwei Monaten.
 - **Externe Fachexperten**, welche im Februar Zeit für ein kurzes Review mit Feedback haben. (Drei Personen, am besten von verschiedenen Organisationen.)
 
 ## Wobei brauchen wir Hilfe?
 
-- **(Semantische) Strukturierung bzw. Dekomposition** der Auflagen im Pflanzenschutzmittelverzeichnis.
-- **Anreichern der vorhandenen Klassen** mit (polyhierarchischen) Taxonomien. (Beispiel: Aktivsubstanzen können in Wirkstoffgruppen unterteilt werden.)
+- **Prüfung der Ontologie** auf fachliche Korrektheit.
+- **Dekomposition** der Auflagen im Pflanzenschutzmittelverzeichnis.
+- **Anreichern der vorhandenen Klassen** mit (polyhierarchischen) Taxonomien.
 - **Erweiterung der Ontologie** in bisher fehlende Fachgebiete (z.B. Ökotoxikologie).
-- **Prüfung der bestehenden Ontologie** auf fachliche Korrektheit.
-- **Kontaktaufnahme mit externen Experten** für das finale Review.
+- **Verbindung mit externen Experten** für das Review.
+
+## Literatur
+
