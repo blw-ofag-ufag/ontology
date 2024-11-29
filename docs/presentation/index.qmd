@@ -52,9 +52,7 @@ Laut Tom Gruber ([1993](https://doi.org/10.1006/knac.1993.1008)) ist "eine Ontol
 [^shared]: **Gemeinsame** bedeutet, dass die Ontologie von einer Gemeinschaft geteilt und verwendet wird, um das einheitliche Verständnis eines Bereichs zu fördern.
 [^conceptualization]: **Konzeptualisierung** bezieht sich auf die abstrakte Modellierung der relevanten Konzepte und deren Beziehungen.
 
-## Geht das auch einfacher? {background-iframe="https://blw-ofag-ufag.github.io/ontology/graph/instances.html" background-interactive=true}
-
-## Geht das auch einfacher? {background-iframe="https://blw-ofag-ufag.github.io/ontology/graph/ontology.html" background-interactive=true}
+## Geht das auch einfacher? {background-iframe="https://blw-ofag-ufag.github.io/ontology/graph/index.html" background-interactive=true}
 
 <!-- ## Was habe ich bisher modelliert? {.smaller} -->
 

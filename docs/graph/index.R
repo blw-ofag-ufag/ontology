@@ -5,23 +5,24 @@ library(tibble)
 
 # define what *things* exist (nodes)
 nodes <- tribble(
-  ~id,  ~label,
-  1,    "Piretro Verde",
-  2,    "Coral Extra",
-  3,    "Lumino",
-  4,    "Divo",
-  5,    "Pyrethrine",
-  6,    "Difenoconazol",
-  7,    "Fludioxonil",
-  8,    "Fungizid",
-  9,    "Saatbeizmittel",
-  10,   "Insektizid",
-  11,   "Pflanzenschutzmittel",
-  12,   "Wirkstoff",
+  ~id,  ~label,                ~x,   ~y,
+  1,    "Piretro Verde",       0,    600,
+  2,    "Coral Extra",         1000, 800,
+  3,    "Lumino",              700,  700,
+  4,    "Divo",                600,  300,
+  5,    "Pyrethrine",          300,  200,
+  6,    "Difenoconazol",       1000, 500,
+  7,    "Fludioxonil",         1400, 450,
+  8,    "Fungizid",            550,  550,
+  9,    "Saatbeizmittel",      600,  900,
+  10,   "Insektizid",          150,  900,
+  11,   "Pflanzenschutzmittel",300,  700,
+  12,   "Wirkstoff",           600,  100
 )
 nodes$physics = FALSE
-nodes$color = "#89b"
+nodes$color = "#678"
 nodes$font.color = "#fff"
+nodes$font.size = 28
 
 # define relationships (edges)
 edges <- tribble(
@@ -44,14 +45,15 @@ edges <- tribble(
   5,        "ist ein",        11,    TRUE,
 )
 edges$arrows = "to"
-edges$color = "#bcd"
+edges$color = "#abc"
+edges$font.color = "#789"
+edges$font.size = 24
 
 # Create the network visualization
 network <- visNetwork(nodes,
                       edges,
-                      height = "900px",
-                      width = "100%",
-                      background = "rgba(0, 0, 0, 0)") %>%
+                      height = "1080px",
+                      width = "100%") %>%
   visNodes(shape = "box") %>%
   visInteraction(dragNodes = TRUE) %>%
   visLayout(randomSeed = 8) %>%
@@ -60,11 +62,11 @@ network <- visNetwork(nodes,
       enabled = TRUE,
       degree = 1,
       hover = TRUE,
-      hideColor = "rgba(200,200,200,0.2)"
+      hideColor = "rgba(200,200,200,0.5)"
     )
   )
 
-# Display the network
+# Write a HTML file displaying the network
 saveWidget(network, file = "index.html", selfcontained = TRUE)
 
 
