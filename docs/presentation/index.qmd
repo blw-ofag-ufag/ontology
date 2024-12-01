@@ -7,6 +7,7 @@ lang: de
 format:
   revealjs:
     theme: [resources/custom.scss]
+    chalkboard: true
     incremental: true
     margin: 0.05
     toc: true
@@ -53,7 +54,7 @@ Laut @gruber1993translation ist "eine Ontologie eine [formale]{.underline}[^1], 
 
 [^4]: **Konzeptualisierung** bezieht sich auf die abstrakte Modellierung der relevanten Konzepte und deren Beziehungen.
 
-## Geht das auch einfacher? {background-iframe="https://blw-ofag-ufag.github.io/ontology/graph/index.html" background-interactive="true"}
+## Geht das auch einfacher? {chalkboard-buttons="true" background-iframe="https://blw-ofag-ufag.github.io/ontology/graph/index.html" background-interactive="true"}
 
 ##  {background-iframe="https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/docs/graph/ontology.ttl" background-interactive="true"}
 
