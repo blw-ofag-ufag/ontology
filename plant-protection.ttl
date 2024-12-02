@@ -6,7 +6,7 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Ontology declaration
 : a owl:Ontology ;
@@ -63,11 +63,36 @@
 # There is a general class of products
 :Product a owl:Class ;
     rdfs:label "Product"@en,
-        "Produkt"@de .
+        "Produkt"@de ;
+    owl:equivalentClass [
+        a owl:Restriction ;
+        owl:onProperty :isParallelImport ;
+        owl:onProperty :isNonprofessionallyAllowed ;
+        owl:cardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+    owl:equivalentClass [
+        a owl:Restriction ;
+        owl:onProperty :hasProductNumber ;
+        owl:cardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+    owl:equivalentClass [
+        a owl:Restriction ;
+        owl:onProperty :isParallelImport ;
+        owl:cardinality "1"^^xsd:nonNegativeInteger ;
+    ] .
+
+# a product can be chemically equivalent to another product
+:isChemicallyEquivalent a owl:ObjectProperty ;
+    rdfs:label "is chemically equivalent to"@en ,
+        "ist chemisch equivalentes mit"@de ;
+    rdfs:range :Product ;
+    rdfs:domain :Product ;
+    owl:symmetricProperty true .
+
 # (products have a bunch of technical attributes)
 :isParallelImport a owl:DatatypeProperty ;
     rdfs:domain :Product ;
-    rdfs:range rdfs:Literal ;
+    rdfs:range xsd:boolean ;
     rdfs:label "is a parallel import"@de ,
         "ist ein Parallelimport"@de ;
     rdfs:comment "A parallel import refers to the importation of pesticide products that are legally authorized in one country and are brought into another without the direct consent of the intellectual property holder, provided they meet the same composition and regulatory standards as a product already authorized in the importing country. In Switzerland, such imports require a general import permit and compliance with specific labeling, packaging, and usage regulations aligned with the Swiss-approved reference product. This system ensures product availability while maintaining safety, regulatory adherence, and respect for intellectual property rights."@en ,
@@ -75,9 +100,14 @@
     rdfs:seeAlso <https://www.fedlex.admin.ch/eli/cc/2010/340/de#art_36> .
 :isNonprofessionallyAllowed a owl:DatatypeProperty ;
     rdfs:domain :Product ;
-    rdfs:range rdfs:Literal ;
+    rdfs:range xsd:boolean ;
     rdfs:label "is non-professionally allowed"@de ,
         "ist erlaubt für die nicht-berufliche Verwendung"@de .
+:hasProductNumber a owl:DatatypeProperty ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:string ;
+    rdfs:label "has federal registration number"@en ,
+        "hat eidgenössische Zulassungsnummer"@de .
 
 # Products are sold by Companies
 :Company a owl:Class ;
