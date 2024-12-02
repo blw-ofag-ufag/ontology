@@ -1,7 +1,7 @@
-# load libraries
 library(visNetwork)
 library(htmlwidgets)
 library(tibble)
+library(htmltools)
 
 # define what *things* exist (nodes)
 nodes <- tribble(
@@ -67,10 +67,14 @@ network <- visNetwork(nodes,
     )
   )
 
-# Write a HTML file displaying the network
-saveWidget(network, file = "index.html", selfcontained = TRUE)
+# Add Google Font
+font_import <- tags$head(tags$link(
+  href = "https://fonts.googleapis.com/css2?family=Rubik&display=swap",
+  rel = "stylesheet"
+))
 
+# Append the font import
+final_network <- prependContent(network, font_import)
 
-
-
-
+# Save the widget
+saveWidget(final_network, file = "index.html", selfcontained = TRUE)
