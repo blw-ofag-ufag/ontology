@@ -398,12 +398,17 @@ wd:Q16521 a owl:Class ;
     :enables :0000002 .
 
 :0000005 a :ChemicalCropProtectionProduct ;
+    a :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
     rdfs:label "Airone" ;
     :limits :0000002 .
 
 :0000006 a :Company ;
     rdfs:label "Andermatt Biocontrol Suisse AG" ;
-    :holdsPermissionToSell :0000005 .
+    :holdsPermissionToSell :0000005 ;
+    :holdsPermissionToSell :0000024 ;
+    :holdsPermissionToSell :0000025 .
 
 :0000007 a :Company ;
     rdfs:label "Syngenta Agro AG" ;
@@ -424,6 +429,9 @@ wd:Q16521 a owl:Class ;
     rdfs:label "Bayer (Schweiz) AG" .
 
 :0000011 a :ChemicalCropProtectionProduct ;
+    a :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
     rdfs:label "Amistar" ;
     :hasRegistrationCode "W-5481" ;
     :limits :0000002 ;
@@ -431,18 +439,30 @@ wd:Q16521 a owl:Class ;
     :contains :0000016 .
 
 :0000012 a :ChemicalCropProtectionProduct ;
+    a :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
     rdfs:label "Amphore Flex" ;
     :limits :0000002 .
 
 :0000013 a :ChemicalCropProtectionProduct ;
+    a :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
     rdfs:label "Cupromaag Liquid" ;
     :limits :0000002 .
 
 :0000014 a :ChemicalCropProtectionProduct ;
+    a :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
     rdfs:label "Hortosan" ;
     :limits :0000002 .
 
 :0000015 a :ChemicalCropProtectionProduct ;
+    a :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
     rdfs:label "Orvego" ;
     :limits :0000002 .
 
@@ -450,30 +470,89 @@ wd:Q16521 a owl:Class ;
     rdfs:label "Azoxystrobin" .
 
 :0000017 a :ChemicalCropProtectionProduct ;
+    a :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
     rdfs:label "Amistar" ;
     :hasRegistrationCode "W-5481-2" ;
     :isNonprofessionallyAllowed true ;
+    :isParallelImport false ;
     :limits :0000002 ;
     :contains :0000016 .
 
 :0000018 a :ChemicalCropProtectionProduct ;
+    a :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
     rdfs:label "Amistar" ;
     :hasRegistrationCode "W-5481-4" ;
     :isNonprofessionallyAllowed true ;
+    :isParallelImport false ;
     :limits :0000002 ;
     :contains :0000016 .
 
 :0000019 a :ChemicalCropProtectionProduct ;
+    a :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
     rdfs:label "Amistar" ;
     :hasRegistrationCode "F-4876" ;
     :isNonprofessionallyAllowed true ;
-    :limits :0000002 ;
     :isParallelImport true ;
+    :limits :0000002 ;
     :contains :0000016 .
 
 :0000020 a :ChemicalCropProtectionProduct ;
+    a :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
     rdfs:label "Amistar" ;
     :hasRegistrationCode "I-4159" ;
-    :limits :0000002 ;
+    :isNonprofessionallyAllowed false ;
     :isParallelImport true ;
+    :limits :0000002 ;
     :contains :0000016 .
+
+:0000021 a :Company ;
+    rdfs:label "Syngenta France SAS" ;
+    :holdsPermissionToSell :0000019 .
+
+:0000022 a :Company ;
+    rdfs:label "Syngenta Italia S.P.A." ;
+    :holdsPermissionToSell :0000020 .
+
+:0000023 a :Company ;
+    rdfs:label "Stähler Suisse SA" ;
+    :holdsPermissionToSell :0000017 .
+
+:0000024 a :ChemicalCropProtectionProduct ;
+    a :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
+    :isChemicallyEquivalent :0000025 ;
+    rdfs:label "Airone" ;
+    :hasRegistrationCode "W-7035" ;
+    :isNonprofessionallyAllowed false ;
+    :isParallelImport false ;
+    :limits :0000002 ;
+    :contains :0000026 ;
+    :contains :0000027 .
+
+:0000025 a :ChemicalCropProtectionProduct ;
+    a :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
+    :isChemicallyEquivalent :0000024 ;
+    rdfs:label "Airone Garten" ;
+    :hasRegistrationCode "W-7035" ;
+    :isNonprofessionallyAllowed true ;
+    :isParallelImport false ;
+    :limits :0000002 ;
+    :contains :0000026 ;
+    :contains :0000027 .
+
+:0000026 a :Substance ;
+    rdfs:label "Kupfer (als Oxychlorid)" .
+
+:0000027 a :Substance ;
+    rdfs:label "Kupfer (als Hydroxid)" .
