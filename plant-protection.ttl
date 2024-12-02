@@ -72,7 +72,7 @@
     ] ;
     owl:equivalentClass [
         a owl:Restriction ;
-        owl:onProperty :hasProductNumber ;
+        owl:onProperty :hasRegistrationCode ;
         owl:cardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
     owl:equivalentClass [
@@ -103,7 +103,7 @@
     rdfs:range xsd:boolean ;
     rdfs:label "is non-professionally allowed"@de ,
         "ist erlaubt für die nicht-berufliche Verwendung"@de .
-:hasProductNumber a owl:DatatypeProperty ;
+:hasRegistrationCode a owl:DatatypeProperty ;
     rdfs:domain :Product ;
     rdfs:range xsd:string ;
     rdfs:label "has federal registration number"@en ,
@@ -413,7 +413,8 @@ wd:Q16521 a owl:Class ;
     :holdsPermissionToSell :0000014 .
 
 :0000008 a :Company ;
-    rdfs:label "Omya (Schweiz) AG" .
+    rdfs:label "Omya (Schweiz) AG" ;
+    :holdsPermissionToSell :0000018 .
 
 :0000009 a :Company ;
     rdfs:label "BASF Schweiz AG" ;
@@ -424,7 +425,9 @@ wd:Q16521 a owl:Class ;
 
 :0000011 a :ChemicalCropProtectionProduct ;
     rdfs:label "Amistar" ;
+    :hasRegistrationCode "W-5481" ;
     :limits :0000002 ;
+    :isNonprofessionallyAllowed true ;
     :contains :0000016 .
 
 :0000012 a :ChemicalCropProtectionProduct ;
@@ -445,3 +448,32 @@ wd:Q16521 a owl:Class ;
 
 :0000016 a :Substance ;
     rdfs:label "Azoxystrobin" .
+
+:0000017 a :ChemicalCropProtectionProduct ;
+    rdfs:label "Amistar" ;
+    :hasRegistrationCode "W-5481-2" ;
+    :isNonprofessionallyAllowed true ;
+    :limits :0000002 ;
+    :contains :0000016 .
+
+:0000018 a :ChemicalCropProtectionProduct ;
+    rdfs:label "Amistar" ;
+    :hasRegistrationCode "W-5481-4" ;
+    :isNonprofessionallyAllowed true ;
+    :limits :0000002 ;
+    :contains :0000016 .
+
+:0000019 a :ChemicalCropProtectionProduct ;
+    rdfs:label "Amistar" ;
+    :hasRegistrationCode "F-4876" ;
+    :isNonprofessionallyAllowed true ;
+    :limits :0000002 ;
+    :isParallelImport true ;
+    :contains :0000016 .
+
+:0000020 a :ChemicalCropProtectionProduct ;
+    rdfs:label "Amistar" ;
+    :hasRegistrationCode "I-4159" ;
+    :limits :0000002 ;
+    :isParallelImport true ;
+    :contains :0000016 .
