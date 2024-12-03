@@ -87,4 +87,20 @@ Eine Ontologie repräsentiert *geteiltes* Wissen. Die Zusammenarbeit mit den Fac
 
 ##  {background-image="resources/happy-farmer.jpg" background-color="black"}
 
+## Anhang 1: Link zur Mengenlehre {.smaller}
+
+| RDF                   | Name                     | Mathematical  |
+|:----------------------|:-------------------------|:-------------:|
+| `rdf:type`            | instance of              | $\in$         |
+| `rdfs:subClassOf`     | subset of                | $\subseteq$   |
+| `owl:unionOf`         | union of                 | $\cup$        |
+| `owl:intersectionOf`  | intersection of          | $\cap$        |
+| `owl:complementOf`    | complement of            | $\neg$        |
+| `owl:equivalentClass` | equivalent class         | $\equiv$      |
+| `owl:disjointWith`    | disjoint with            | $\perp$       |
+| `owl:someValuesFrom`  | existential restriction  | $\exists$     |
+| `owl:allValuesFrom`   | universal restriction    | $\forall$     |
+| `owl:differentFrom`   | different from           | $\neq$        |
+| `owl:inverseOf`       | inverse of               | $^{-1}$       |
+
 ## Literatur
