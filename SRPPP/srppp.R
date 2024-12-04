@@ -8,6 +8,29 @@ library(pheatmap)
 current_register <- srppp_dm()
 dm_draw(current_register)
 
+
+for (i in colnames(current_register$categories)) {
+  cat(sprintf("\n:%s a owl:DatatypeProperty ;\n\trdfs:domain :Category ;\n\trdfs:range xsd:string .", i))
+}
+
+current_register$products
+unique(current_register$categories[,-1])
+unique(current_register$formulation_codes[,-1])
+unique(current_register$danger_symbols[,-1])
+unique(current_register$CodeS[,-1])
+unique(current_register$CodeR[,-1])
+unique(current_register$CodeS[,-1])
+unique(current_register$signal_words[,-1])
+current_register$parallel_imports
+current_register$substances
+current_register$ingredients
+current_register$uses
+unique(current_register$application_comments[,-c(1,2)])
+unique(current_register$culture_forms[,-c(1,2)])
+unique(current_register$cultures[,-c(1,2)])
+unique(current_register$pests[,-c(1,2)])
+unique(current_register$obligations[,-c(1,2)])
+
 # comments (in German)
 S = current_register$CodeS$CodeS_de |> unique()
 R = current_register$CodeR$CodeR_de |> unique()

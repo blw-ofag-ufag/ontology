@@ -81,13 +81,35 @@
         owl:cardinality "1"^^xsd:nonNegativeInteger ;
     ] .
 
-# a product can be chemically equivalent to another product
-:isChemicallyEquivalent a owl:ObjectProperty ;
-    rdfs:label "is chemically equivalent to"@en ,
-        "ist chemisch equivalentes mit"@de ;
-    rdfs:range :Product ;
+# A product can be equivalent to another product (same product sold under different name)
+:isSameProductAs a owl:ObjectProperty ;
+    rdfs:label "is the same product as"@en ,
+               "ist dasselbe Produkt wie"@de ;
+    rdfs:comment "Indicates that two products are identical in functionality or composition but are sold under different names. Such two products also share the same federal admission number base."@en ,
+               "Zeigt an, dass zwei Produkte in Funktionalität oder Zusammensetzung identisch sind, aber unter verschiedenen Namen verkauft werden. Solche zwei Produkte teilen auch dieselbe Basis bei der eidgenössischen Zulassungsnummer."@de ;
     rdfs:domain :Product ;
-    owl:symmetricProperty true .
+    rdfs:range :Product .
+
+# Specialized property for Chemical Products
+:isChemicallyEquivalentTo a owl:ObjectProperty ;
+    rdfs:label "is chemically equivalent to"@en ,
+               "ist chemisch äquivalent zu"@de ;
+    rdfs:comment "Indicates that two chemical products are identical in composition but are sold under different names. This means the two chemical products share exactly the same formulation and substance composition. Such two products also share the same federal admission number base."@en ,
+               "Zeigt an, dass zwei chemische Produkte in der Zusammensetzung identisch sind, aber unter verschiedenen Namen verkauft werden. Das bedeutet, dass die beiden chemischen Produkte genau dieselbe Formulierung und Substanzzusammensetzung aufweisen. Solche zwei Produkte teilen auch dieselbe Basis bei der eidgenössischen Zulassungsnummer."@de ;
+    rdfs:domain :ChemicalProduct ;
+    rdfs:range :ChemicalProduct ;
+    rdfs:subPropertyOf :isSameProductAs .
+
+# Specialized property for Biological Control Agents
+:isSameBiologicalControlAgentAs a owl:ObjectProperty ;
+    rdfs:label "contains the same organism as"@en ,
+               "beinhaltet denselben Organismus wie"@de ;
+    rdfs:comment "Indicates that two products contain exactly the same biological control agent organism. Such two products also share the same federal admission number base."@en ,
+               "Zeigt an, dass zwei Produkte genau denselben biologischen Kontrollorganismus enthalten. Solche zwei Produkte teilen auch dieselbe Basis bei der eidgenössischen Zulassungsnummer."@de ;
+    rdfs:domain :BiologicalControlAgent ;
+    rdfs:range :BiologicalControlAgent ;
+    rdfs:subPropertyOf :isSameProductAs .
+
 
 # (products have a bunch of technical attributes)
 :isParallelImport a owl:DatatypeProperty ;
@@ -397,8 +419,8 @@ wd:Q16521 a owl:Class ;
         "Nässe"@de ;
     :enables :0000002 .
 
-:0000005 a :ChemicalCropProtectionProduct ;
-    a :Product ,
+:0000005 a :ChemicalCropProtectionProduct ,
+        :Product ,
         :ChemicalProduct ,
         :CropProtectionProduct ;
     rdfs:label "Airone" ;
@@ -408,18 +430,21 @@ wd:Q16521 a owl:Class ;
     rdfs:label "Andermatt Biocontrol Suisse AG" ;
     :holdsPermissionToSell :0000005 ;
     :holdsPermissionToSell :0000024 ;
-    :holdsPermissionToSell :0000025 .
+    :holdsPermissionToSell :0000025 ;
+    :holdsPermissionToSell :0000028 .
 
 :0000007 a :Company ;
     rdfs:label "Syngenta Agro AG" ;
     :holdsPermissionToSell :0000011 ;
     :holdsPermissionToSell :0000012 ;
     :holdsPermissionToSell :0000013 ;
-    :holdsPermissionToSell :0000014 .
+    :holdsPermissionToSell :0000014 ;
+    :holdsPermissionToSell :0000030 .
 
 :0000008 a :Company ;
     rdfs:label "Omya (Schweiz) AG" ;
-    :holdsPermissionToSell :0000018 .
+    :holdsPermissionToSell :0000018 ;
+    :holdsPermissionToSell :0000029 .
 
 :0000009 a :Company ;
     rdfs:label "BASF Schweiz AG" ;
@@ -428,8 +453,8 @@ wd:Q16521 a owl:Class ;
 :0000010 a :Company ;
     rdfs:label "Bayer (Schweiz) AG" .
 
-:0000011 a :ChemicalCropProtectionProduct ;
-    a :Product ,
+:0000011 a :ChemicalCropProtectionProduct ,
+        :Product ,
         :ChemicalProduct ,
         :CropProtectionProduct ;
     rdfs:label "Amistar" ;
@@ -438,29 +463,29 @@ wd:Q16521 a owl:Class ;
     :isNonprofessionallyAllowed true ;
     :contains :0000016 .
 
-:0000012 a :ChemicalCropProtectionProduct ;
-    a :Product ,
+:0000012 a :ChemicalCropProtectionProduct ,
+        :Product ,
         :ChemicalProduct ,
         :CropProtectionProduct ;
     rdfs:label "Amphore Flex" ;
     :limits :0000002 .
 
-:0000013 a :ChemicalCropProtectionProduct ;
-    a :Product ,
+:0000013 a :ChemicalCropProtectionProduct ,
+        :Product ,
         :ChemicalProduct ,
         :CropProtectionProduct ;
     rdfs:label "Cupromaag Liquid" ;
     :limits :0000002 .
 
-:0000014 a :ChemicalCropProtectionProduct ;
-    a :Product ,
+:0000014 a :ChemicalCropProtectionProduct ,
+        :Product ,
         :ChemicalProduct ,
         :CropProtectionProduct ;
     rdfs:label "Hortosan" ;
     :limits :0000002 .
 
-:0000015 a :ChemicalCropProtectionProduct ;
-    a :Product ,
+:0000015 a :ChemicalCropProtectionProduct ,
+        :Product ,
         :ChemicalProduct ,
         :CropProtectionProduct ;
     rdfs:label "Orvego" ;
@@ -469,8 +494,8 @@ wd:Q16521 a owl:Class ;
 :0000016 a :Substance ;
     rdfs:label "Azoxystrobin" .
 
-:0000017 a :ChemicalCropProtectionProduct ;
-    a :Product ,
+:0000017 a :ChemicalCropProtectionProduct ,
+        :Product ,
         :ChemicalProduct ,
         :CropProtectionProduct ;
     rdfs:label "Amistar" ;
@@ -480,8 +505,8 @@ wd:Q16521 a owl:Class ;
     :limits :0000002 ;
     :contains :0000016 .
 
-:0000018 a :ChemicalCropProtectionProduct ;
-    a :Product ,
+:0000018 a :ChemicalCropProtectionProduct ,
+        :Product ,
         :ChemicalProduct ,
         :CropProtectionProduct ;
     rdfs:label "Amistar" ;
@@ -491,8 +516,8 @@ wd:Q16521 a owl:Class ;
     :limits :0000002 ;
     :contains :0000016 .
 
-:0000019 a :ChemicalCropProtectionProduct ;
-    a :Product ,
+:0000019 a :ChemicalCropProtectionProduct ,
+        :Product ,
         :ChemicalProduct ,
         :CropProtectionProduct ;
     rdfs:label "Amistar" ;
@@ -502,8 +527,8 @@ wd:Q16521 a owl:Class ;
     :limits :0000002 ;
     :contains :0000016 .
 
-:0000020 a :ChemicalCropProtectionProduct ;
-    a :Product ,
+:0000020 a :ChemicalCropProtectionProduct ,
+        :Product ,
         :ChemicalProduct ,
         :CropProtectionProduct ;
     rdfs:label "Amistar" ;
@@ -525,11 +550,12 @@ wd:Q16521 a owl:Class ;
     rdfs:label "Stähler Suisse SA" ;
     :holdsPermissionToSell :0000017 .
 
-:0000024 a :ChemicalCropProtectionProduct ;
-    a :Product ,
+:0000024 a :ChemicalCropProtectionProduct ,
+        :Product ,
         :ChemicalProduct ,
         :CropProtectionProduct ;
-    :isChemicallyEquivalent :0000025 ;
+    :isSameProductAs :0000025 ;
+    :isChemicallyEquivalentTo :0000025 ;
     rdfs:label "Airone" ;
     :hasRegistrationCode "W-7035" ;
     :isNonprofessionallyAllowed false ;
@@ -538,13 +564,14 @@ wd:Q16521 a owl:Class ;
     :contains :0000026 ;
     :contains :0000027 .
 
-:0000025 a :ChemicalCropProtectionProduct ;
-    a :Product ,
+:0000025 a :ChemicalCropProtectionProduct ,
+        :Product ,
         :ChemicalProduct ,
         :CropProtectionProduct ;
-    :isChemicallyEquivalent :0000024 ;
+    :isSameProductAs :0000024 ;
+    :isChemicallyEquivalentTo
     rdfs:label "Airone Garten" ;
-    :hasRegistrationCode "W-7035" ;
+    :hasRegistrationCode "W-7443" ;
     :isNonprofessionallyAllowed true ;
     :isParallelImport false ;
     :limits :0000002 ;
@@ -556,3 +583,32 @@ wd:Q16521 a owl:Class ;
 
 :0000027 a :Substance ;
     rdfs:label "Kupfer (als Hydroxid)" .
+
+:0000028 a :BiologicalControlAgent ,
+        :Product ,
+        :CropProtectionProduct ;
+    rdfs:label "Adalia" ;
+    :hasRegistrationCode "W-5765" ;
+    :isNonprofessionallyAllowed true ;
+    :isParallelImport false ;
+    :BCArelatesTo wd:Q233024 .
+
+:0000029 a :BiologicalControlAgent ,
+        :Product ,
+        :CropProtectionProduct ;
+    rdfs:label "Adaline" ;
+    :hasRegistrationCode "W-7554" ;
+    :isNonprofessionallyAllowed true ;
+    :isParallelImport false ;
+    :BCArelatesTo wd:Q233024 .
+
+:0000030 a :BiologicalControlAgent ,
+        :Product ,
+        :CropProtectionProduct ;
+    rdfs:label "Maag Bio Marienkäfer gegen Blattläuse" ;
+    :hasRegistrationCode "W-7554" ;
+    :isNonprofessionallyAllowed true ;
+    :isParallelImport false ;
+    :BCArelatesTo wd:Q233024 .
+
+wd:Q233024 rdfs:label "Adalia bipunctata" .

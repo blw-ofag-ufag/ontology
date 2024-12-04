@@ -1,0 +1,88 @@
+@prefix : <https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/SRPPP.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology ;
+    dc:title "The data model of the SRPPP"@en.
+
+
+:Product a owl:Class .
+
+
+:Category a owl:Class .
+
+
+:FormulationCode a owl:Class .
+
+
+:DangerSymbol a owl:Class .
+
+
+:CodeS a owl:Class .
+
+
+:CodeR a owl:Class .
+
+
+:SignalWords a owl:Class .
+
+
+:ParallelImport a owl:Class .
+
+
+:Substance a owl:Class .
+
+
+:Ingredient a owl:Class .
+
+
+:Use a owl:Class .
+:useToProduct a owl:ObjectProperty ;
+    rdfs:domain :Use ;
+    rdfs:range :Product .
+
+:ApplicationComment a owl:Class .
+:ApplicationCommentToUse a owl:ObjectProperty ;
+    rdfs:domain :ApplicationComment ;
+    rdfs:range :Use .
+:ApplicationCommentToProduct a owl:ObjectProperty ;
+    rdfs:domain :ApplicationComment ;
+    rdfs:range :Product .
+
+:CultureForms a owl:Class .
+:CultureFormsToUse a owl:ObjectProperty ;
+    rdfs:domain :CultureForms ;
+    rdfs:range :Use .
+:CultureFormsToProduct a owl:ObjectProperty ;
+    rdfs:domain :CultureForms ;
+    rdfs:range :Product .
+
+:Culture a owl:Class .
+:cultureToUse a owl:ObjectProperty ;
+    rdfs:domain :Culture ;
+    rdfs:range :Use .
+:cultureToProduct a owl:ObjectProperty ;
+    rdfs:domain :Culture ;
+    rdfs:range :Product .
+
+:Pest a owl:Class .
+:pestToUse a owl:ObjectProperty ;
+    rdfs:domain :Pest ;
+    rdfs:range :Use .
+:pestToProduct a owl:ObjectProperty ;
+    rdfs:domain :Pest ;
+    rdfs:range :Product .
+
+:Obligation a owl:Class .
+:obligationToUse a owl:ObjectProperty ;
+    rdfs:domain :Use ;
+    rdfs:range :Obligation .
+:obligationToProduct a owl:ObjectProperty ;
+    rdfs:domain :Use ;
+    rdfs:range :Product .
