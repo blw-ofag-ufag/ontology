@@ -67,12 +67,12 @@
     owl:equivalentClass [
         a owl:Restriction ;
         owl:onProperty :isParallelImport ;
-        owl:onProperty :isNonprofessionallyAllowed ;
+        owl:onProperty :isNonProfessionallyAllowed ;
         owl:cardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
     owl:equivalentClass [
         a owl:Restriction ;
-        owl:onProperty :hasRegistrationCode ;
+        owl:onProperty :hasFederalRegistrationCode ;
         owl:cardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
     owl:equivalentClass [
@@ -85,31 +85,10 @@
 :isSameProductAs a owl:ObjectProperty ;
     rdfs:label "is the same product as"@en ,
                "ist dasselbe Produkt wie"@de ;
-    rdfs:comment "Indicates that two products are identical in functionality or composition but are sold under different names. Such two products also share the same federal admission number base."@en ,
-               "Zeigt an, dass zwei Produkte in Funktionalität oder Zusammensetzung identisch sind, aber unter verschiedenen Namen verkauft werden. Solche zwei Produkte teilen auch dieselbe Basis bei der eidgenössischen Zulassungsnummer."@de ;
+    rdfs:comment "Indicates that two products are identical in their chemical composition or the contained organism but are sold under different names. Such two products also share the same federal admission number base. For example, the products with admission numbers W-6761 and W-6761-1 have the same chemical composition."@en ,
+        "Gibt an, dass zwei Produkte in ihrer chemischen Zusammensetzung oder in ihrem Organismus identisch sind, aber unter verschiedenen Namen verkauft werden. Solche zwei Produkte haben auch die gleiche Basis der Bundeszulassungsnummer. Zum Beispiel haben die Produkte mit den Zulassungsnummern W-6761 und W-6761-1 die gleiche chemische Zusammensetzung."@de ;
     rdfs:domain :Product ;
     rdfs:range :Product .
-
-# Specialized property for Chemical Products
-:isChemicallyEquivalentTo a owl:ObjectProperty ;
-    rdfs:label "is chemically equivalent to"@en ,
-               "ist chemisch äquivalent zu"@de ;
-    rdfs:comment "Indicates that two chemical products are identical in composition but are sold under different names. This means the two chemical products share exactly the same formulation and substance composition. Such two products also share the same federal admission number base."@en ,
-               "Zeigt an, dass zwei chemische Produkte in der Zusammensetzung identisch sind, aber unter verschiedenen Namen verkauft werden. Das bedeutet, dass die beiden chemischen Produkte genau dieselbe Formulierung und Substanzzusammensetzung aufweisen. Solche zwei Produkte teilen auch dieselbe Basis bei der eidgenössischen Zulassungsnummer."@de ;
-    rdfs:domain :ChemicalProduct ;
-    rdfs:range :ChemicalProduct ;
-    rdfs:subPropertyOf :isSameProductAs .
-
-# Specialized property for Biological Control Agents
-:isSameBiologicalControlAgentAs a owl:ObjectProperty ;
-    rdfs:label "contains the same organism as"@en ,
-               "beinhaltet denselben Organismus wie"@de ;
-    rdfs:comment "Indicates that two products contain exactly the same biological control agent organism. Such two products also share the same federal admission number base."@en ,
-               "Zeigt an, dass zwei Produkte genau denselben biologischen Kontrollorganismus enthalten. Solche zwei Produkte teilen auch dieselbe Basis bei der eidgenössischen Zulassungsnummer."@de ;
-    rdfs:domain :BiologicalControlAgent ;
-    rdfs:range :BiologicalControlAgent ;
-    rdfs:subPropertyOf :isSameProductAs .
-
 
 # (products have a bunch of technical attributes)
 :isParallelImport a owl:DatatypeProperty ;
@@ -120,16 +99,36 @@
     rdfs:comment "A parallel import refers to the importation of pesticide products that are legally authorized in one country and are brought into another without the direct consent of the intellectual property holder, provided they meet the same composition and regulatory standards as a product already authorized in the importing country. In Switzerland, such imports require a general import permit and compliance with specific labeling, packaging, and usage regulations aligned with the Swiss-approved reference product. This system ensures product availability while maintaining safety, regulatory adherence, and respect for intellectual property rights."@en ,
         "Ein Parallelimport bezeichnet den Import von Pflanzenschutzmitteln, die in einem Land rechtmässig zugelassen sind und ohne ausdrückliche Zustimmung des Rechteinhabers in ein anderes Land eingeführt werden, sofern sie in Zusammensetzung und Zulassungsanforderungen einem bereits im Einfuhrland zugelassenen Produkt entsprechen. In der Schweiz erfordert ein solcher Import eine Generaleinfuhrbewilligung sowie die Einhaltung spezifischer Vorschriften zu Kennzeichnung, Verpackung und Verwendung gemäss dem schweizerischen Referenzprodukt. Dieses System gewährleistet die Verfügbarkeit von Produkten und berücksichtigt gleichzeitig Sicherheits-, Zulassungs- und Schutzrechte des geistigen Eigentums."@de ;
     rdfs:seeAlso <https://www.fedlex.admin.ch/eli/cc/2010/340/de#art_36> .
-:isNonprofessionallyAllowed a owl:DatatypeProperty ;
+:isNonProfessionallyAllowed a owl:DatatypeProperty ;
     rdfs:domain :Product ;
     rdfs:range xsd:boolean ;
     rdfs:label "is non-professionally allowed"@de ,
         "ist erlaubt für die nicht-berufliche Verwendung"@de .
-:hasRegistrationCode a owl:DatatypeProperty ;
+:hasFederalRegistrationCode a owl:DatatypeProperty ;
     rdfs:domain :Product ;
     rdfs:range xsd:string ;
     rdfs:label "has federal registration number"@en ,
-        "hat eidgenössische Zulassungsnummer"@de .
+        "hat eidgenössische Zulassungsnummer"@de ;
+    rdfs:comment "The federal registration number (W-Number) uniquely identifies a product registration. W-Numbers with a dash (e.g., 18-1, 18-2) represent equivalent products held by different legal entities, while W-Numbers without a dash (e.g., 18) represent the original registration."@en ,
+        "Die eidgenössische Zulassungsnummer (W-Nummer) identifiziert eine Produktregistrierung eindeutig. W-Nummern mit einem Bindestrich (z.B. 18-1, 18-2) stellen äquivalente Produkte dar, die von verschiedenen juristischen Personen gehalten werden, während W-Nummern ohne Bindestrich (z.B. 18) die ursprüngliche Registrierung darstellen."@de .
+:hasSoldoutDeadline a owl:DatatypeProperty ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:date ;
+    rdfs:label "has sold out deadline"@en, "hat eine Ausverkauft-Frist"@de ;
+    rdfs:comment "The date by which the product can no longer be sold, typically after the product registration has been revoked."@en, 
+        "Das Datum, an dem das Produkt nicht mehr verkauft werden darf, in der Regel nach der Widerrufung der Produktregistrierung."@de .
+:hasExhaustionDeadline a owl:DatatypeProperty ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:date ;
+    rdfs:label "has exhaustion deadline"@en, "hat ein Ablaufdatum der Nutzung"@de ;
+    rdfs:comment "The date by which the product must no longer be used, typically after the product registration has been revoked."@en,
+        "Das Datum, an dem das Produkt nicht mehr genutzt werden darf, in der Regel nach der Widerrufung der Produktregistrierung."@de .
+:isSalesPermission a owl:DatatypeProperty ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:boolean .
+:isTerminated a owl:DatatypeProperty ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:boolean .
 
 # Products are sold by Companies
 :Company a owl:Class ;
@@ -139,6 +138,12 @@
     rdfs:range :Product ;
     rdfs:label "holds Permission to sell"@en ,
         "hat Bewilligung zum Verkauf von"@de .
+:hasPermissionHolder a owl:ObjectProperty ;
+    rdfs:domain :Product ;
+    rdfs:range :Company ;
+    rdfs:label "has permission holder"@en ,
+        "hat Verkaufsbewilligungshalter"@de ;
+    owl:inverseOf :holdsPermissionToSell .
 
 # Some of those are chemical mixtures (others not)
 :ChemicalProduct a owl:Class ;
@@ -458,9 +463,9 @@ wd:Q16521 a owl:Class ;
         :ChemicalProduct ,
         :CropProtectionProduct ;
     rdfs:label "Amistar" ;
-    :hasRegistrationCode "W-5481" ;
+    :hasFederalRegistrationCode "W-5481" ;
     :limits :0000002 ;
-    :isNonprofessionallyAllowed true ;
+    :isNonProfessionallyAllowed true ;
     :contains :0000016 .
 
 :0000012 a :ChemicalCropProtectionProduct ,
@@ -499,8 +504,8 @@ wd:Q16521 a owl:Class ;
         :ChemicalProduct ,
         :CropProtectionProduct ;
     rdfs:label "Amistar" ;
-    :hasRegistrationCode "W-5481-2" ;
-    :isNonprofessionallyAllowed true ;
+    :hasFederalRegistrationCode "W-5481-2" ;
+    :isNonProfessionallyAllowed true ;
     :isParallelImport false ;
     :limits :0000002 ;
     :contains :0000016 .
@@ -510,8 +515,8 @@ wd:Q16521 a owl:Class ;
         :ChemicalProduct ,
         :CropProtectionProduct ;
     rdfs:label "Amistar" ;
-    :hasRegistrationCode "W-5481-4" ;
-    :isNonprofessionallyAllowed true ;
+    :hasFederalRegistrationCode "W-5481-4" ;
+    :isNonProfessionallyAllowed true ;
     :isParallelImport false ;
     :limits :0000002 ;
     :contains :0000016 .
@@ -521,8 +526,8 @@ wd:Q16521 a owl:Class ;
         :ChemicalProduct ,
         :CropProtectionProduct ;
     rdfs:label "Amistar" ;
-    :hasRegistrationCode "F-4876" ;
-    :isNonprofessionallyAllowed true ;
+    :hasFederalRegistrationCode "F-4876" ;
+    :isNonProfessionallyAllowed true ;
     :isParallelImport true ;
     :limits :0000002 ;
     :contains :0000016 .
@@ -532,8 +537,8 @@ wd:Q16521 a owl:Class ;
         :ChemicalProduct ,
         :CropProtectionProduct ;
     rdfs:label "Amistar" ;
-    :hasRegistrationCode "I-4159" ;
-    :isNonprofessionallyAllowed false ;
+    :hasFederalRegistrationCode "I-4159" ;
+    :isNonProfessionallyAllowed false ;
     :isParallelImport true ;
     :limits :0000002 ;
     :contains :0000016 .
@@ -555,10 +560,9 @@ wd:Q16521 a owl:Class ;
         :ChemicalProduct ,
         :CropProtectionProduct ;
     :isSameProductAs :0000025 ;
-    :isChemicallyEquivalentTo :0000025 ;
     rdfs:label "Airone" ;
-    :hasRegistrationCode "W-7035" ;
-    :isNonprofessionallyAllowed false ;
+    :hasFederalRegistrationCode "W-7035" ;
+    :isNonProfessionallyAllowed false ;
     :isParallelImport false ;
     :limits :0000002 ;
     :contains :0000026 ;
@@ -569,10 +573,9 @@ wd:Q16521 a owl:Class ;
         :ChemicalProduct ,
         :CropProtectionProduct ;
     :isSameProductAs :0000024 ;
-    :isChemicallyEquivalentTo
     rdfs:label "Airone Garten" ;
-    :hasRegistrationCode "W-7443" ;
-    :isNonprofessionallyAllowed true ;
+    :hasFederalRegistrationCode "W-7443" ;
+    :isNonProfessionallyAllowed true ;
     :isParallelImport false ;
     :limits :0000002 ;
     :contains :0000026 ;
@@ -588,8 +591,8 @@ wd:Q16521 a owl:Class ;
         :Product ,
         :CropProtectionProduct ;
     rdfs:label "Adalia" ;
-    :hasRegistrationCode "W-5765" ;
-    :isNonprofessionallyAllowed true ;
+    :hasFederalRegistrationCode "W-5765" ;
+    :isNonProfessionallyAllowed true ;
     :isParallelImport false ;
     :BCArelatesTo wd:Q233024 .
 
@@ -597,8 +600,8 @@ wd:Q16521 a owl:Class ;
         :Product ,
         :CropProtectionProduct ;
     rdfs:label "Adaline" ;
-    :hasRegistrationCode "W-7554" ;
-    :isNonprofessionallyAllowed true ;
+    :hasFederalRegistrationCode "W-7554" ;
+    :isNonProfessionallyAllowed true ;
     :isParallelImport false ;
     :BCArelatesTo wd:Q233024 .
 
@@ -606,8 +609,8 @@ wd:Q16521 a owl:Class ;
         :Product ,
         :CropProtectionProduct ;
     rdfs:label "Maag Bio Marienkäfer gegen Blattläuse" ;
-    :hasRegistrationCode "W-7554" ;
-    :isNonprofessionallyAllowed true ;
+    :hasFederalRegistrationCode "W-7554" ;
+    :isNonProfessionallyAllowed true ;
     :isParallelImport false ;
     :BCArelatesTo wd:Q233024 .
 
