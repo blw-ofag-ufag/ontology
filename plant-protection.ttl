@@ -34,7 +34,9 @@
     rdfs:isDefinedBy wd:Q3500367 ;
     rdfs:seeAlso <https://w.wiki/Byym> ;
     rdfs:label "Biotic crop stressor"@en,
-        "Biotischer Schadverursacher"@de .
+        "Biotischer Schadverursacher"@de ;
+    rdfs:comment "Biological harm to a crop."@en ,
+        "Biologische Schädigung einer Kulturpflanze."@de .
 :AbioticStressors a owl:Class ;
     rdfs:subClassOf :CropStressor ;
     owl:disjointWith :BioticStressors ;
@@ -43,13 +45,14 @@
     rdfs:label "Abiotic crop stressor"@en ,
         "Abiotischer Schadverursacher"@de ;
     rdfs:comment "Negative impact of non-living factors on the crop in a specific environment."@en ,
-        "Negative Auswirkungen nicht lebender Faktoren auf die landwirtschaftliche Kultur in einer bestimmten Umgebung."@de .
+        "Negative Auswirkungen nicht lebender Faktoren auf die Kulturpflanze in einer bestimmten Umgebung."@de .
 
 # Stressors negatively affect crops (they *damage* crops)
 :interactsWith a owl:ObjectProperty ;
     rdfs:label "interacts with"@en,
         "interagiert mit"@de ;
-    rdfs:comment "General relationship for physical thingns that interact with something else. A animal <interactsWith> its food. A pesticide <interactsWith> the target organism."@en .
+    rdfs:comment "General relationship for physical thingns that interact with something else. A animal *interacts with* its food. A pesticide *interacts with* the target organism."@en ,
+        "Allgemeine Beziehung für physische Dinge, die mit etwas anderem interagieren. Ein Tier *interagiert mit* seiner Nahrung. Ein Pestizid *interagiert mit* dem Zielorganismus."@de .
 :damages a owl:ObjectProperty ;
     rdfs:domain :CropStressor ;
     rdfs:range :Crop ;
@@ -107,7 +110,8 @@
     rdfs:domain :Product ;
     rdfs:range xsd:boolean ;
     rdfs:label "is non-professionally allowed"@de ,
-        "ist erlaubt für die nicht-berufliche Verwendung"@de .
+        "ist erlaubt für die nicht-berufliche Verwendung"@de ;
+    rdfs:seeAlso <https://www.fedlex.admin.ch/eli/cc/2010/340/de#art_64> .
 :hasFederalRegistrationCode a owl:DatatypeProperty ;
     rdfs:domain :Product ;
     rdfs:range xsd:string ;

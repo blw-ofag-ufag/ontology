@@ -69,7 +69,10 @@ products[products==""] <- NA
 categories = as.data.frame(current_register$categories)
 
 # function to assign classes given an ID
-
+f = function(id, categories) {
+  categories[categories[,"pNbr"]==id,"desc_pk"]
+}
+f(38, categories)
 
 # write triples
 for (i in 1:nrow(products)) {
