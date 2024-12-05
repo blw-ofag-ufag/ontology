@@ -38,8 +38,12 @@
 :AbioticStressors a owl:Class ;
     rdfs:subClassOf :CropStressor ;
     owl:disjointWith :BioticStressors ;
+    rdfs:isDefinedBy wd:Q4667893 ;
+    rdfs:seeAlso <https://w.wiki/CJnE> ;
     rdfs:label "Abiotic crop stressor"@en ,
-        "Abiotischer Schadverursacher"@de .
+        "Abiotischer Schadverursacher"@de ;
+    rdfs:comment "Negative impact of non-living factors on the crop in a specific environment."@en ,
+        "Negative Auswirkungen nicht lebender Faktoren auf die landwirtschaftliche Kultur in einer bestimmten Umgebung."@de .
 
 # Stressors negatively affect crops (they *damage* crops)
 :interactsWith a owl:ObjectProperty ;
