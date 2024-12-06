@@ -1,0 +1,211 @@
+:0000001 a :BioticStressors ;
+    rdfs:label "Phytophtora infestans" ;
+    :causes :0000002 .
+
+:0000002 a :Damage ;
+    rdfs:label "Potato late blight"@en ,
+        "Kraut- und Knollenfäule der Kartoffel"@de ;
+    :isCausedBy :0000001 ;
+    :affects :0000003 .
+
+:0000003 a :Crop ;
+    rdfs:label "Potato"@en ,
+        "Kartoffel"@de ;
+    :isAffectedBy :0000002 .
+
+:0000004 a :EnvironmentalCondition ;
+    rdfs:label "Wetness"@en ,
+        "Nässe"@de ;
+    :enables :0000002 .
+
+:0000005 a :ChemicalCropProtectionProduct ,
+        :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
+    rdfs:label "Airone" ;
+    :limits :0000002 .
+
+:0000006 a :Company ;
+    rdfs:label "Andermatt Biocontrol Suisse AG" ;
+    :holdsPermissionToSell :0000005 ;
+    :holdsPermissionToSell :0000024 ;
+    :holdsPermissionToSell :0000025 ;
+    :holdsPermissionToSell :0000028 .
+
+:0000007 a :Company ;
+    rdfs:label "Syngenta Agro AG" ;
+    :holdsPermissionToSell :0000011 ;
+    :holdsPermissionToSell :0000012 ;
+    :holdsPermissionToSell :0000013 ;
+    :holdsPermissionToSell :0000014 ;
+    :holdsPermissionToSell :0000030 .
+
+:0000008 a :Company ;
+    rdfs:label "Omya (Schweiz) AG" ;
+    :holdsPermissionToSell :0000018 ;
+    :holdsPermissionToSell :0000029 .
+
+:0000009 a :Company ;
+    rdfs:label "BASF Schweiz AG" ;
+    :holdsPermissionToSell :0000015.
+
+:0000010 a :Company ;
+    rdfs:label "Bayer (Schweiz) AG" .
+
+:0000011 a :ChemicalCropProtectionProduct ,
+        :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
+    rdfs:label "Amistar" ;
+    :hasFederalRegistrationCode "W-5481" ;
+    :limits :0000002 ;
+    :isNonProfessionallyAllowed true ;
+    :contains :0000016 .
+
+:0000012 a :ChemicalCropProtectionProduct ,
+        :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
+    rdfs:label "Amphore Flex" ;
+    :limits :0000002 .
+
+:0000013 a :ChemicalCropProtectionProduct ,
+        :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
+    rdfs:label "Cupromaag Liquid" ;
+    :limits :0000002 .
+
+:0000014 a :ChemicalCropProtectionProduct ,
+        :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
+    rdfs:label "Hortosan" ;
+    :limits :0000002 .
+
+:0000015 a :ChemicalCropProtectionProduct ,
+        :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
+    rdfs:label "Orvego" ;
+    :limits :0000002 .
+
+:0000016 a :Substance ;
+    rdfs:label "Azoxystrobin" .
+
+:0000017 a :ChemicalCropProtectionProduct ,
+        :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
+    rdfs:label "Amistar" ;
+    :hasFederalRegistrationCode "W-5481-2" ;
+    :isNonProfessionallyAllowed true ;
+    :isParallelImport false ;
+    :limits :0000002 ;
+    :contains :0000016 .
+
+:0000018 a :ChemicalCropProtectionProduct ,
+        :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
+    rdfs:label "Amistar" ;
+    :hasFederalRegistrationCode "W-5481-4" ;
+    :isNonProfessionallyAllowed true ;
+    :isParallelImport false ;
+    :limits :0000002 ;
+    :contains :0000016 .
+
+:0000019 a :ChemicalCropProtectionProduct ,
+        :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
+    rdfs:label "Amistar" ;
+    :hasFederalRegistrationCode "F-4876" ;
+    :isNonProfessionallyAllowed true ;
+    :isParallelImport true ;
+    :limits :0000002 ;
+    :contains :0000016 .
+
+:0000020 a :ChemicalCropProtectionProduct ,
+        :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
+    rdfs:label "Amistar" ;
+    :hasFederalRegistrationCode "I-4159" ;
+    :isNonProfessionallyAllowed false ;
+    :isParallelImport true ;
+    :limits :0000002 ;
+    :contains :0000016 .
+
+:0000021 a :Company ;
+    rdfs:label "Syngenta France SAS" ;
+    :holdsPermissionToSell :0000019 .
+
+:0000022 a :Company ;
+    rdfs:label "Syngenta Italia S.P.A." ;
+    :holdsPermissionToSell :0000020 .
+
+:0000023 a :Company ;
+    rdfs:label "Stähler Suisse SA" ;
+    :holdsPermissionToSell :0000017 .
+
+:0000024 a :ChemicalCropProtectionProduct ,
+        :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
+    :isSameProductAs :0000025 ;
+    rdfs:label "Airone" ;
+    :hasFederalRegistrationCode "W-7035" ;
+    :isNonProfessionallyAllowed false ;
+    :isParallelImport false ;
+    :limits :0000002 ;
+    :contains :0000026 ;
+    :contains :0000027 .
+
+:0000025 a :ChemicalCropProtectionProduct ,
+        :Product ,
+        :ChemicalProduct ,
+        :CropProtectionProduct ;
+    :isSameProductAs :0000024 ;
+    rdfs:label "Airone Garten" ;
+    :hasFederalRegistrationCode "W-7443" ;
+    :isNonProfessionallyAllowed true ;
+    :isParallelImport false ;
+    :limits :0000002 ;
+    :contains :0000026 ;
+    :contains :0000027 .
+
+:0000026 a :Substance ;
+    rdfs:label "Kupfer (als Oxychlorid)" .
+
+:0000027 a :Substance ;
+    rdfs:label "Kupfer (als Hydroxid)" .
+
+:0000028 a :BiologicalControlAgent ,
+        :Product ,
+        :CropProtectionProduct ;
+    rdfs:label "Adalia" ;
+    :hasFederalRegistrationCode "W-5765" ;
+    :isNonProfessionallyAllowed true ;
+    :isParallelImport false ;
+    :BCArelatesTo wd:Q233024 .
+
+:0000029 a :BiologicalControlAgent ,
+        :Product ,
+        :CropProtectionProduct ;
+    rdfs:label "Adaline" ;
+    :hasFederalRegistrationCode "W-7554" ;
+    :isNonProfessionallyAllowed true ;
+    :isParallelImport false ;
+    :BCArelatesTo wd:Q233024 .
+
+:0000030 a :BiologicalControlAgent ,
+        :Product ,
+        :CropProtectionProduct ;
+    rdfs:label "Maag Bio Marienkäfer gegen Blattläuse" ;
+    :hasFederalRegistrationCode "W-7554" ;
+    :isNonProfessionallyAllowed true ;
+    :isParallelImport false ;
+    :BCArelatesTo wd:Q233024 .
+
+wd:Q233024 rdfs:label "Adalia bipunctata" .
