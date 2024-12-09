@@ -193,13 +193,21 @@
     rdfs:label "has phone"@en, "hat Telefon"@de ;
     rdfs:domain :Company ;
     rdfs:range xsd:string ;
-    rdfs:comment "The phone number of the company."@en .
+    rdfs:comment "The phone number of the company, formatted as per RFC 3966."@en ;
+    rdfs:isDefinedBy <https://www.rfc-editor.org/rfc/rfc3966> .
 
 :hasFax a owl:DatatypeProperty ;
     rdfs:label "has fax"@en, "hat Fax"@de ;
     rdfs:domain :Company ;
     rdfs:range xsd:string ;
-    rdfs:comment "The fax number of the company."@en .
+    rdfs:comment "The fax number of the company, formatted as per RFC 3966."@en ;
+    rdfs:isDefinedBy <https://www.rfc-editor.org/rfc/rfc3966> .
+
+:hasEmail a owl:DatatypeProperty ;
+    rdfs:label "has email address"@en, "hat Emailadresse"@de ;
+    rdfs:domain :Company ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The email address of the company."@en .
 
 :locatedInCity a owl:ObjectProperty ;
     rdfs:label "located in city"@en, "befindet sich in Stadt"@de ;

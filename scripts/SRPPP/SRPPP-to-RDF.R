@@ -56,7 +56,8 @@ psmv_xml_url = "https://www.blv.admin.ch/dam/blv/de/dokumente/zulassung-pflanzen
 sink("ontology/data.ttl")
 
 # Define prefixes
-cat("@prefix : <https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/plant-protection.ttl#> .
+prefixes = "
+@prefix : <https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/plant-protection.ttl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -64,19 +65,14 @@ cat("@prefix : <https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/he
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n")
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+"
 
 # pre-process tables
 products = as.data.frame(current_register$products)
 products = products[order(products$pNbr),]
 products[products==""] <- NA
 categories = as.data.frame(current_register$categories)
-
-# function to assign classes given an ID
-f = function(id, categories) {
-  categories[categories[,"pNbr"]==id,"desc_pk"]
-}
-f(38, categories)
 
 # write triples
 for (i in 1:nrow(products)) {

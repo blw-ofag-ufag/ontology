@@ -27,6 +27,7 @@ WHERE {
   OPTIONAL { ?product :isParallelImport ?parallel . }
   OPTIONAL { ?product :isNonprofessionallyAllowed ?nonProfessional . }
 }
+LIMIT 10
 '
 
 # run SPARQL query
@@ -45,7 +46,7 @@ SELECT ?companyName (COUNT(DISTINCT ?product) AS ?productCount)
 WHERE {
   ?product a :Product .
   ?product :hasPermissionHolder ?company .
-  ?company rdfs:label ?companyName
+  ?company rdfs:label ?companyName .
 }
 GROUP BY ?company
 ORDER BY DESC(?productCount)  # Optional, orders by the number of products in descending order
@@ -53,3 +54,6 @@ ORDER BY DESC(?productCount)  # Optional, orders by the number of products in de
 
 # run SPARQL query
 rdf_query(RDF, SPARQL)
+
+
+

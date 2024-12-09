@@ -1,10 +1,19 @@
-# Load required libraries
+# ------------------------------------------------------------------
+# ADD LIBRARIES TO SEARCH PATH
+# ------------------------------------------------------------------
+
 library(httr)
 library(xml2)
+library(rdflib)
+library(dplyr)
+library(srppp)
 
 # ------------------------------------------------------------------
-# DOWNLOAD THE SWISS PLANT PROTECTION REGISTRY AS AN XML FIL
+# DOWNLOAD THE SWISS PLANT PROTECTION REGISTRY AS AN XML FILE
 # ------------------------------------------------------------------
+
+# Download registry using `srppp` package
+SRPPP <- srppp_dm()
 
 # Download and unzip the file
 zip_url <- "https://www.blv.admin.ch/dam/blv/de/dokumente/zulassung-pflanzenschutzmittel/pflanzenschutzmittelverzeichnis/daten-pflanzenschutzmittelverzeichnis.zip.download.zip/Daten%20Pflanzenschutzmittelverzeichnis.zip"
@@ -17,18 +26,82 @@ unzip(temp_zip, exdir = unzip_dir)
 xml_file_path <- file.path(unzip_dir, "PublicationData.xml")
 xml_data <- read_xml(xml_file_path)
 
-# Print XML structure
-print(xml_data)
-
 # ------------------------------------------------------------------
 # DEFINE GENERAL FUNCTIONS
 # ------------------------------------------------------------------
 
-# Function to construct IRIs
-construct_iri <- function(prefix, id) {
-  if (is.na(id)) return(NA)
-  paste0(prefix, "-", id)
+# Function to extract attributes and create a data frame
+nodeset_to_dataframe <- function(nodeset) {
+  data <- lapply(nodeset, function(node) {
+    attrs <- as.list(xml_attrs(node))
+    children <- xml_children(node)
+    children_data <- sapply(children, function(child) xml_text(child))
+    names(children_data) <- xml_name(children)
+    c(attrs, children_data)
+  })
+  df <- bind_rows(data)
+  return(df)
 }
+
+# Function to construct IRI
+IRI <- function(domain, id, prefix = "") {
+  paste0(prefix, ":", domain, "-", id)
+}
+
+# DOMAINS
+# 1: Products
+# 2: Companies
+# 3: Cities
+# 4: Countries
+
+# ------------------------------------------------------------------
+# WRITE NEW TURTLE FILE AND DEFINE PREFIXES
+# ------------------------------------------------------------------
+
+# create new file
+sink("ontology/data.ttl")
+cat("@prefix : <https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/plant-protection.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+")
+sink()
+
+# ------------------------------------------------------------------
+# WRITE PRODUCT INFORMATION
+# ------------------------------------------------------------------
+
+# open file
+sink("ontology/data.ttl", append = TRUE)
+
+# pre-process tables
+products = as.data.frame(SRPPP$products)
+products = products[order(products$pNbr),]
+products[products==""] <- NA
+
+# write triples
+for (i in 1:nrow(products)) {
+  sprintf("\n:1-W-%s a :Product ;", products[i,"wNbr"]) |> cat()
+  sprintf("\n    rdfs:label \"%s\"^^xsd:string ;", products[i,"name"]) |> cat()
+  sprintf("\n    :hasFederalRegistrationCode \"W-%s\"^^xsd:string ;", products[i,"wNbr"]) |> cat()
+  if(!is.na(products[i,"exhaustionDeadline"])) sprintf("\n    :hasExhaustionDeadline \"%s\"^^xsd:date ;", products[i,"exhaustionDeadline"]) |> cat()
+  if(!is.na(products[i,"soldoutDeadline"])) sprintf("\n    :hasSoldoutDeadline \"%s\"^^xsd:date ;", products[i,"soldoutDeadline"]) |> cat()
+  if(i>1) if(products[i,1]==products[i-1,1]) sprintf("\n    :isSameProductAs :1-W-%s ;", products[i-1,"wNbr"]) |> cat()
+  if(sum(products[,"pNbr"]==products[i,"pNbr"])>1) {
+    for (j in which(products[,"pNbr"]==products[i,"pNbr"])) {
+      if(i != j) sprintf("\n    :isSameProductAs :1-W-%s ;", products[j,"wNbr"]) |> cat()
+    }
+  }
+  cat("\n    :isParallelImport false ;")
+  sprintf("\n    :hasPermissionHolder :2-%s .", products[i,"permission_holder"]) |> cat()
+}
+
+sink()
 
 # ------------------------------------------------------------------
 # WRITE COMPANY (PERMISSION HOLDER) INFORMATION
@@ -36,45 +109,45 @@ construct_iri <- function(prefix, id) {
 
 # Extract company elements
 company <- xml_find_all(xml_data, "//PermissionHolder")
+COMPANY <- nodeset_to_dataframe(company)
 
-# Extract attributes and elements as vectors
-ids <- xml_attr(company, "primaryKey")
-names <- xml_text(xml_find_all(company, "Name"))
-additional_infos <- xml_text(xml_find_all(company, "AdditionalInformation"))
-streets <- xml_text(xml_find_all(company, "Street"))
-po_boxes <- xml_text(xml_find_all(company, "PostOfficeBox"))
+# Extract attributes that weren't written to the table
 city_ids <- xml_attr(xml_find_all(company, "City"), "primaryKey")
 country_ids <- xml_attr(xml_find_all(company, "Country"), "primaryKey")
-phones <- xml_text(xml_find_all(company, "Phone"))
 
-x = phone(phones, "CH")
-format(x, format = "RFC3966", clean = FALSE)
-
-faxes <- xml_text(xml_find_all(company, "Fax"))
-
-# Construct IRIs
-company_iris <- construct_iri("2", ids)
-city_iris <- construct_iri("3", city_ids)
-country_iris <- construct_iri("4", country_ids)
+# Format phone and fax according to RFC3966 and extract email addresses that were typed into phone or fax field...
+email_regex <- "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+email_from_phone <- ifelse(grepl(email_regex, COMPANY$Phone), tolower(COMPANY$Phone), NA)
+email_from_fax <- ifelse(grepl(email_regex, COMPANY$Fax), tolower(COMPANY$Fax), NA)
+phones <- COMPANY$Phone |> dialr::phone("CH") |> format(format = "RFC3966", clean = FALSE)
+faxes <- COMPANY$Fax |> dialr::phone("CH") |> format(format = "RFC3966", clean = FALSE)
 
 # Combine everything into RDF triples
-rdf_content <- paste0(
-  sprintf(":%s a :Company ;\n", construct_iri("2", ids)),
-  sprintf("    rdfs:label \"%s\" ;\n", names),
-  ifelse(nchar(additional_infos) > 0, sprintf("    rdfs:comment \"%s\" ;\n", additional_infos), ""),
-  ifelse(nchar(streets) > 0, sprintf("    :hasStreet \"%s\" ;\n", streets), ""),
-  ifelse(nchar(po_boxes) > 0, sprintf("    :hasPostOfficeBox \"%s\" ;\n", po_boxes), ""),
-  ifelse(!is.na(city_iris), sprintf("    :locatedInCity :%s ;\n", construct_iri("3", city_ids)), ""),
-  ifelse(!is.na(country_iris), sprintf("    :locatedInCountry :%s ;\n", construct_iri("4", country_ids)), ""),
-  ifelse(nchar(phones) > 0, sprintf("    :hasPhone \"%s\" ;\n", phones), ""),
-  ifelse(nchar(faxes) > 0, sprintf("    :hasFax \"%s\" ;\n", faxes), ""),
-  ".\n\n"
+company_rdf <- paste0(
+  sprintf("%s a :Company ;\n", IRI("2", COMPANY$primaryKey)),
+  sprintf("    rdfs:label \"%s\"^^xsd:string ;\n", COMPANY$Name),
+  ifelse(nchar(COMPANY$AdditionalInformation) > 0, sprintf("    rdfs:comment \"%s\"^^xsd:string ;\n", COMPANY$AdditionalInformation), ""),
+  ifelse(nchar(COMPANY$Street) > 0, sprintf("    :hasStreet \"%s\"^^xsd:string ;\n", COMPANY$Street), ""),
+  ifelse(nchar(COMPANY$PostOfficeBox) > 0, sprintf("    :hasPostOfficeBox \"%s\"^^xsd:string ;\n", COMPANY$PostOfficeBox), ""),
+  ifelse(!is.na(city_ids), sprintf("    :locatedInCity %s ;\n", IRI("3", city_ids)), ""),
+  ifelse(!is.na(country_ids), sprintf("    :locatedInCountry %s ;\n", IRI("4", country_ids)), ""),
+  ifelse(!is.na(phones), sprintf("    :hasPhone \"%s\"^^xsd:string ;\n", phones), ""),
+  ifelse(!is.na(faxes), sprintf("    :hasFax \"%s\"^^xsd:string ;\n", faxes), ""),
+  ".\n"
 )
 
-# Collapse all triples into one string
-rdf_content <- paste(rdf_content, collapse = "")
+# Collapse all triples into one string, remove unnecessary lines
+company_rdf <- gsub(";\n\\.", ".", paste(company_rdf, collapse = ""))
 
-# Output RDF content using cat
-sink("companies.ttl")
-cat(rdf_content)
+# open file
+sink("ontology/data.ttl", append = TRUE)
+
+cat(gsub(";\n\\.", ".", paste(company_rdf, collapse = "")))
+
+# add all the products a company sells
+for (i in 1:nrow(products)) {
+  sprintf("%s :holdsPermissionToSell %s .\n", IRI("2", products[i,"permission_holder"]), IRI("1-W", products[i,"wNbr"])) |> cat()
+}
+
 sink()
+
