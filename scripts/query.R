@@ -5,7 +5,7 @@ library(jsonld)
 # EXAMPLE 1 : READ THE ONTOLOGY FILE DIRECTLY ----------------------------------------------------------
 
 # set path to RDF file
-RDF = rdf_parse("/home/damian.oswald@blw.admin.ch/ontology/plant-protection.ttl")
+RDF = rdf_parse("ontology/test.ttl")
 
 # define SPARQL query
 SPARQL = '
@@ -41,10 +41,11 @@ RDF = rdf_parse("ontology/data.ttl")
 SPARQL = '
 PREFIX : <https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/plant-protection.ttl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT ?company (COUNT(DISTINCT ?product) AS ?productCount)
+SELECT ?companyName (COUNT(DISTINCT ?product) AS ?productCount)
 WHERE {
   ?product a :Product .
   ?product :hasPermissionHolder ?company .
+  ?company rdfs:label ?companyName
 }
 GROUP BY ?company
 ORDER BY DESC(?productCount)  # Optional, orders by the number of products in descending order

@@ -1,0 +1,1713 @@
+:2-11959 a :Company ;
+    rdfs:label "MR Personal und Service GmbH" ;
+    :hasStreet "Italienische Strasse 126" ;
+    :locatedInCity :3-14809 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "081 925 38 38 " ;
+.
+
+:2-11414 a :Company ;
+    rdfs:label "Bayer SAS" ;
+    :hasStreet "16, rue Jean-Marie Leclair - CS 90106" ;
+    :locatedInCity :3-5269 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-7048 a :Company ;
+    rdfs:label "Certis Europe BV" ;
+    :hasStreet "5 rue Galilée" ;
+    :locatedInCity :3-5606 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-10993 a :Company ;
+    rdfs:label "Regaber Holding AG" ;
+    rdfs:comment "c/o Partner AG" ;
+    :hasStreet "Industriestrasse 9" ;
+    :locatedInCity :3-3697 ;
+    :locatedInCountry :4-6161 ;
+.
+
+:2-11419 a :Company ;
+    rdfs:label "Cheminova Agro France S.A.S" ;
+    :hasStreet "19 Bd Eugène Duruelle" ;
+    :locatedInCity :3-5607 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-11416 a :Company ;
+    rdfs:label "Sharda Cropchem Ltd." ;
+    rdfs:comment "2nd floor, Prime Business Park" ;
+    :hasStreet "Dashrathlal Joshi Road, Vile Parle (West)" ;
+    :locatedInCity :3-5760 ;
+    :locatedInCountry :4-6174 ;
+.
+
+:2-10446 a :Company ;
+    rdfs:label "FMC Europe NV" ;
+    :hasStreet "Boulevard de la Plaine 9/3" ;
+    :locatedInCity :3-5144 ;
+    :locatedInCountry :4-6163 ;
+.
+
+:2-7070 a :Company ;
+    rdfs:label "DU PONT DE NEMOURS (FRANCE) S.A." ;
+    :hasStreet "137, Rue de l'université" ;
+    :locatedInCity :3-5622 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-10445 a :Company ;
+    rdfs:label "Hans Müller Gärtnerei AG" ;
+    :hasStreet "Oberfeldstr. 5" ;
+    :locatedInCity :3-4951 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "071/642 11 77" ;
+    :hasFax "oder Mobil 079 126 94 77 " ;
+.
+
+:2-10989 a :Company ;
+    rdfs:label "Seydoux Grains Sàrl" ;
+    :hasStreet "Le Ferrajoz 4" ;
+    :locatedInCity :3-1924 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "026 663 51 77" ;
+    :hasFax "026 663 51 32" ;
+.
+
+:2-10976 a :Company ;
+    rdfs:label "Irvita Plant Protection N.V." ;
+    :hasStreet "Kaya SFG (Jombi) Mensing 34 " ;
+    :locatedInCity :3-5680 ;
+    :locatedInCountry :4-6181 ;
+.
+
+:2-11401 a :Company ;
+    rdfs:label "Amstutz-Produkte AG" ;
+    :hasStreet "Luzernstrasse 11" ;
+    :locatedInCity :3-12781 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "041 448 14 41" ;
+    :hasFax "041 448 21 89" ;
+.
+
+:2-11400 a :Company ;
+    rdfs:label "Tilco-Alginure GmbH" ;
+    :hasStreet "Holländerkoppel 1a" ;
+    :locatedInCity :3-12765 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-10980 a :Company ;
+    rdfs:label "Nufarm Deutschland GmbH" ;
+    :hasStreet "Im MediaPark 4 d" ;
+    :locatedInCity :3-5751 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-11947 a :Company ;
+    rdfs:label "KRONI AG" ;
+    rdfs:comment "Mineralstoffe" ;
+    :hasStreet "Bafflesstrasse 5" ;
+    :locatedInCity :3-15392 ;
+    :locatedInCountry :4-6161 ;
+.
+
+:2-7056 a :Company ;
+    rdfs:label "COMPO Italia Srl" ;
+    :hasStreet "Via Marvonato 8" ;
+    :locatedInCity :3-5611 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-11441 a :Company ;
+    rdfs:label "ADAMA Agan Ltd" ;
+    rdfs:comment "Industrial Zone" ;
+    :hasStreet "P.O. Box 262" ;
+    :locatedInCity :3-5120 ;
+    :locatedInCountry :4-6175 ;
+.
+
+:2-7080 a :Company ;
+    rdfs:label "Eurofyto" ;
+    :hasStreet "Industrielaan 6 B" ;
+    :locatedInCity :3-5631 ;
+    :locatedInCountry :4-6163 ;
+.
+
+:2-11444 a :Company ;
+    rdfs:label "Life Scientific Ltd" ;
+    :hasStreet "Nova UCD, Belfield Innovation Park , UCD Belfield" ;
+    :locatedInCity :3-14977 ;
+    :locatedInCountry :4-6401 ;
+.
+
+:2-10489 a :Company ;
+    rdfs:label "W. Neudorff GmbH KG" ;
+    :hasStreet "Otto-Brenner-Str. 13-15" ;
+    :locatedInCity :3-5266 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-11447 a :Company ;
+    rdfs:label "Rotam Agrochemical Europe Ltd" ;
+    :hasStreet "Hamilton House, Mobledon Place" ;
+    :locatedInCity :3-5795 ;
+    :locatedInCountry :4-6188 ;
+.
+
+:2-10962 a :Company ;
+    rdfs:label "BASF Belgium S.A." ;
+    :hasStreet "Chaussée de la Hulpe 178" ;
+    :locatedInCity :3-5735 ;
+    :locatedInCountry :4-6163 ;
+.
+
+:2-11932 a :Company ;
+    rdfs:label "Sharda Cropchem Ltd." ;
+    rdfs:comment "Domnic Holm" ;
+    :hasStreet "29th Road, Bandra (West)" ;
+    :locatedInCity :3-5760 ;
+    :locatedInCountry :4-6174 ;
+.
+
+:2-11451 a :Company ;
+    rdfs:label "Cosaco GmbH" ;
+    :hasStreet "Singapurstrasse 1" ;
+    :locatedInCity :3-15341 ;
+    :locatedInCountry :4-6172 ;
+    :hasPhone "+49 40 2365 20 " ;
+.
+
+:2-11452 a :Company ;
+    rdfs:label "Belchim Crop Protection" ;
+    :hasStreet "Technologielann 7" ;
+    :locatedInCity :3-5514 ;
+    :locatedInCountry :4-6163 ;
+.
+
+:2-11453 a :Company ;
+    rdfs:label "Bayer CropScience N.V." ;
+    :hasStreet "J.E.Mommertslaan 14" ;
+    :locatedInCity :3-13012 ;
+    :locatedInCountry :4-6163 ;
+.
+
+:2-10965 a :Company ;
+    rdfs:label "Syngenta Crop Protection N.V." ;
+    :hasStreet "Humaniteitslaan 65" ;
+    :locatedInCity :3-5738 ;
+    :locatedInCountry :4-6163 ;
+.
+
+:2-11911 a :Company ;
+    rdfs:label "ICL Italia Treviso srl" ;
+    :hasStreet "Via Monterumici 8" ;
+    :locatedInCity :3-13233 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-7100 a :Company ;
+    rdfs:label "Helm AG" ;
+    :hasStreet "Nordkanalstrasse 28" ;
+    :locatedInCity :3-5546 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-11910 a :Company ;
+    rdfs:label "FMC Agro Austria GmbH" ;
+    :hasStreet "St. Peter Gürtel 8" ;
+    :locatedInCity :3-5209 ;
+    :locatedInCountry :4-6190 ;
+.
+
+:2-11909 a :Company ;
+    rdfs:label "SFP Europe SA" ;
+    :hasStreet "Spitalstrasse 5" ;
+    :locatedInCity :3-4461 ;
+    :locatedInCountry :4-6161 ;
+.
+
+:2-11908 a :Company ;
+    rdfs:label "Corteva Agriscience Germany GmbH" ;
+    :hasStreet "Riedenburger Str. 7" ;
+    :locatedInCity :3-5490 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-11907 a :Company ;
+    rdfs:label "UPL Benelux B.V." ;
+    :hasStreet "Claudius Prinsenlaan 144 a," ;
+    :locatedInCity :3-15217 ;
+    :locatedInCountry :4-6181 ;
+.
+
+:2-11906 a :Company ;
+    rdfs:label "Evergreen Garden Care Österreich GmbH" ;
+    :hasStreet "Franz-Brötzner-Straße 11-13" ;
+    :locatedInCity :3-15216 ;
+    :locatedInCountry :4-6190 ;
+.
+
+:2-11904 a :Company ;
+    rdfs:label "Ascenza Italia S.r.l." ;
+    :hasStreet "Via Varese 25/G" ;
+    :locatedInCity :3-15215 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-11434 a :Company ;
+    rdfs:label "BASF SE" ;
+    :hasStreet "Carl-Bosch-Strasse 38 " ;
+    :locatedInCity :3-5264 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-11438 a :Company ;
+    rdfs:label "Schneider Formulations Consulting" ;
+    :hasStreet "Moosackerweg 28" ;
+    :locatedInCity :3-12987 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "061 599 46 03" ;
+.
+
+:2-10392 a :Company ;
+    rdfs:label "Corteva Agriscience France S.A.S" ;
+    rdfs:comment " " ;
+    :hasStreet "82, Rue de Wittelsheim" ;
+    :locatedInCity :3-5154 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-12028 a :Company ;
+    rdfs:label "Kregliner Europe nv" ;
+    :hasStreet "Grote Mark" ;
+    :hasPostOfficeBox "7" ;
+    :locatedInCity :3-15836 ;
+    :locatedInCountry :4-6163 ;
+.
+
+:2-10388 a :Company ;
+    rdfs:label "Syngenta Agro AG" ;
+    :hasStreet "Schaffhauserstr. 101 " ;
+    :hasPostOfficeBox "Postfach " ;
+    :locatedInCity :3-3133 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "061 323 56 70 " ;
+    :hasFax " " ;
+.
+
+:2-11471 a :Company ;
+    rdfs:label "Luxembourg Pamol (Cyprus) LTD." ;
+    rdfs:comment "c/o Nandia Savvides Zannetou" ;
+    :hasStreet "3 Demetriou Vikella Street" ;
+    :locatedInCity :3-13074 ;
+    :locatedInCountry :4-13073 ;
+.
+
+:2-10918 a :Company ;
+    rdfs:label "UPL -United Phosphorous Ltd." ;
+    :hasStreet "Hall Lane, Rookery Bridge" ;
+    :locatedInCity :3-5557 ;
+    :locatedInCountry :4-6188 ;
+.
+
+:2-11467 a :Company ;
+    rdfs:label "DU PONT DE NEMOURS ITALIANA S.R.L." ;
+    :hasStreet "VIA PONTACCIO, 10" ;
+    :locatedInCity :3-13054 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-7127 a :Company ;
+    rdfs:label "Monsanto Agrar Deutschland GmbH" ;
+    :hasStreet "Vogelsanger Weg 91" ;
+    :locatedInCity :3-5664 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-7126 a :Company ;
+    rdfs:label "Milentus BV" ;
+    :locatedInCity :3-5663 ;
+    :locatedInCountry :4-6181 ;
+.
+
+:2-12015 a :Company ;
+    rdfs:label "Westland Schweiz GmbH " ;
+    :hasStreet "Rudolf-Maag-Strasse 5" ;
+    :locatedInCity :3-4439 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "079 557 99 44 " ;
+    :hasFax "Tel: 044 855 60 13" ;
+.
+
+:2-7151 a :Company ;
+    rdfs:label "Quene Plant Protection N.V." ;
+    :hasStreet "Kaya W.F.G. (Jombi) Mensing 34 P.O. Box 403" ;
+    :locatedInCity :3-5680 ;
+    :locatedInCountry :4-6181 ;
+.
+
+:2-11995 a :Company ;
+    rdfs:label "Agrimotion Deutschland Gmbh" ;
+    :hasStreet "Carl-Diem-Str. 3" ;
+    :locatedInCity :3-15622 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-7143 a :Company ;
+    rdfs:label "Phyto - Service" ;
+    :hasStreet "15, rue du Pont, Pontijou - RD 924" ;
+    :locatedInCity :3-5675 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-11997 a :Company ;
+    rdfs:label "You Solution" ;
+    :hasStreet "Nattermannallee 1" ;
+    :locatedInCity :3-5793 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-7162 a :Company ;
+    rdfs:label "Scam S.P.A." ;
+    :hasStreet "Via Bellaria 164" ;
+    :locatedInCity :3-5686 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-11968 a :Company ;
+    rdfs:label "UFA-Samen PROFI GRÜN" ;
+    rdfs:comment "fenaco Genossenschaft" ;
+    :hasStreet "In der Euelwies 34" ;
+    :locatedInCity :3-15488 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "0041 58 433 76 76 " ;
+    :hasFax "gerhard.busslinger@fenaco.com " ;
+.
+
+:2-10889 a :Company ;
+    rdfs:label "SAN Agrow Holding GmbH" ;
+    rdfs:comment "Industriestr. 20" ;
+    :hasStreet " " ;
+    :locatedInCity :3-14982 ;
+    :locatedInCountry :4-6190 ;
+    :hasPhone "+43 2782 8330 0 " ;
+.
+
+:2-10885 a :Company ;
+    rdfs:label "Agro-Stulln GmbH" ;
+    :hasStreet "Werksweg 2" ;
+    :locatedInCity :3-5527 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-11982 a :Company ;
+    rdfs:label "MycoSolutions AG" ;
+    :hasStreet "Lerchenfeldstrasse 3" ;
+    :locatedInCity :3-15518 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "071 244 62 62 " ;
+    :hasFax "nadine.brinkmann@mycosolutions.ch" ;
+.
+
+:2-10880 a :Company ;
+    rdfs:label "BASF Italia SpA" ;
+    :hasStreet "Via Marconato" ;
+    :locatedInCity :3-5155 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-11833 a :Company ;
+    rdfs:label "Nufarm SAS" ;
+    :hasStreet "11 rue du Débarcadère" ;
+    :locatedInCity :3-5163 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-10868 a :Company ;
+    rdfs:label "ISK Biosciences Europe N.V." ;
+    :hasStreet "Pegasus Park / De Kleetlaan 12B" ;
+    :locatedInCity :3-5870 ;
+    :locatedInCountry :4-6163 ;
+.
+
+:2-11829 a :Company ;
+    rdfs:label "Tessenderlo Groupe" ;
+    :hasStreet "rue du Trone 130" ;
+    :locatedInCity :3-5735 ;
+    :locatedInCountry :4-6163 ;
+.
+
+:2-10873 a :Company ;
+    rdfs:label "Belchim Crop Protection N.V." ;
+    :hasStreet "Neringstraat 15" ;
+    :locatedInCity :3-5514 ;
+    :locatedInCountry :4-6163 ;
+.
+
+:2-11831 a :Company ;
+    rdfs:label "Bayer CropScience S.r.l." ;
+    :hasStreet "Viale Certosa 130" ;
+    :locatedInCity :3-5280 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-10874 a :Company ;
+    rdfs:label "Corteva Agriscience Italia s.r.l" ;
+    :hasStreet "S.S. n° 11, Km 190,2" ;
+    :locatedInCity :3-5515 ;
+    :locatedInCountry :4-6176 ;
+    :hasPhone "+39 363 320 474" ;
+    :hasFax "+39 363 320 589" ;
+.
+
+:2-11830 a :Company ;
+    rdfs:label "Bayer CropScience Deutschland GmbH" ;
+    :hasStreet "Elisabeth-Selbert-Straße 4a " ;
+    :locatedInCity :3-5762 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-10876 a :Company ;
+    rdfs:label "WASGOM" ;
+    rdfs:comment "Walter Scheidegger" ;
+    :hasStreet "Wydimattstrasse 22" ;
+    :locatedInCity :3-5517 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "079 426 98 04 " ;
+.
+
+:2-11284 a :Company ;
+    rdfs:label "FytoFend S.A." ;
+    :hasStreet "Rue Georges Legrand 6" ;
+    :locatedInCity :3-12189 ;
+    :locatedInCountry :4-6163 ;
+.
+
+:2-10310 a :Company ;
+    rdfs:label "Amreco AG" ;
+    rdfs:comment "Postfach 109" ;
+    :locatedInCity :3-3195 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "032 621 69 70" ;
+    :hasFax "032 623 17 06" ;
+.
+
+:2-11275 a :Company ;
+    rdfs:label "ISK Biosciences Europe S.A." ;
+    rdfs:comment "Europe S.A." ;
+    :hasStreet "Olfener Str. 36" ;
+    :locatedInCity :3-12129 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-10859 a :Company ;
+    rdfs:label "808 Schweiz AG" ;
+    :hasStreet "Tichelrütistrasse 6" ;
+    :locatedInCity :3-13846 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "044 3210 20 05 " ;
+    :hasFax "Mobil 076 210 20 05 " ;
+.
+
+:2-11808 a :Company ;
+    rdfs:label "JT Agro Ltd" ;
+    :hasStreet "1 Bell Street, Maidenhead" ;
+    :locatedInCity :3-14620 ;
+    :locatedInCountry :4-14621 ;
+.
+
+:2-11810 a :Company ;
+    rdfs:label "Quimetal internacional" ;
+    :hasStreet "Calle Torneros 14" ;
+    :locatedInCity :3-5876 ;
+    :locatedInCountry :4-6169 ;
+.
+
+:2-11811 a :Company ;
+    rdfs:label "Maschinenring Graubünden" ;
+    rdfs:comment "MR Personal & Service GmbH" ;
+    :hasStreet "Italienische Strasse 126" ;
+    :locatedInCity :3-14809 ;
+    :locatedInCountry :4-6161 ;
+.
+
+:2-11807 a :Company ;
+    rdfs:label "Sumitomo Chemical Italia" ;
+    :hasStreet "Via Caldera 21" ;
+    :locatedInCity :3-5281 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-11324 a :Company ;
+    rdfs:label "Kanesho Soil Treatment SPRL/BVBA" ;
+    :hasStreet "Avenue de Tervueren 270" ;
+    :locatedInCity :3-5143 ;
+    :locatedInCountry :4-6163 ;
+.
+
+:2-11313 a :Company ;
+    rdfs:label "Oleon NV" ;
+    rdfs:comment "Haven 6677A" ;
+    :hasStreet "Assenedestraat 2" ;
+    :locatedInCity :3-12343 ;
+    :locatedInCountry :4-6163 ;
+.
+
+:2-10367 a :Company ;
+    rdfs:label "Biofa AG" ;
+    :hasStreet "Rudolf-Diesel-Strasse 2" ;
+    :locatedInCity :3-5294 ;
+    :locatedInCountry :4-6172 ;
+    :hasPhone "0049 7381 93 54 0" ;
+    :hasFax "0049 7381 93 54 54" ;
+.
+
+:2-10340 a :Company ;
+    rdfs:label "De Sangosse" ;
+    rdfs:comment "Relais régional en agrofourniture et services" ;
+    :hasStreet "Bonnel" ;
+    :hasPostOfficeBox "B P 5" ;
+    :locatedInCity :3-5338 ;
+    :locatedInCountry :4-6171 ;
+    :hasPhone "53 69 36 30" ;
+    :hasFax "53 66 30 65" ;
+.
+
+:2-11776 a :Company ;
+    rdfs:label "Mitsui Agriscience Int." ;
+    :hasStreet "Boulevard de la Woluwe 60" ;
+    :locatedInCity :3-14655 ;
+    :locatedInCountry :4-6163 ;
+.
+
+:2-11777 a :Company ;
+    rdfs:label "Helm Swiss GmbH" ;
+    :hasStreet "Bodmerstrasse 7" ;
+    :locatedInCity :3-12826 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "+49 173 356 9531 " ;
+.
+
+:2-11356 a :Company ;
+    rdfs:label "Belchim Crop Protection Switzerland GmbH" ;
+    :hasStreet "Hofackerstrasse 3a" ;
+    :locatedInCity :3-3081 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone " " ;
+.
+
+:2-11902 a :Company ;
+    rdfs:label "Agrifutur Srl, Alfaniello" ;
+    rdfs:comment "Succursale di Lugano" ;
+    :hasStreet "Via Greina 3" ;
+    :locatedInCity :3-3992 ;
+    :locatedInCountry :4-6161 ;
+.
+
+:2-11348 a :Company ;
+    rdfs:label "Cheminova Deutschland GmbH & Co. KG" ;
+    :hasStreet "Stader Elbstrasse 26-28" ;
+    :locatedInCity :3-5447 ;
+    :locatedInCountry :4-6172 ;
+    :hasPhone "+49 4141 9204 248" ;
+    :hasFax "+49 4141 9204 9248" ;
+.
+
+:2-11890 a :Company ;
+    rdfs:label "Agrostar SARL" ;
+    :hasStreet "Rte. D'Echternac 15" ;
+    :locatedInCity :3-15156 ;
+    :locatedInCountry :4-14597 ;
+.
+
+:2-10271 a :Company ;
+    rdfs:label "Diachem SPA" ;
+    :hasStreet "Via Tonale 15" ;
+    :locatedInCity :3-5115 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-10796 a :Company ;
+    rdfs:label "Arysta Lifescience" ;
+    :hasStreet "Route d'Artix" ;
+    :locatedInCity :3-5443 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-7009 a :Company ;
+    rdfs:label "Agrimix S.R.L." ;
+    :hasStreet "Via Campobello, 1" ;
+    :locatedInCity :3-12807 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-10297 a :Company ;
+    rdfs:label "BASF France" ;
+    :hasStreet "49, avenue Georges-Pompidou" ;
+    :locatedInCity :3-5254 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-11858 a :Company ;
+    rdfs:label "AGROLINE Bioprotect" ;
+    rdfs:comment "fenaco Genossenschaft" ;
+    :hasStreet "Nordring 4" ;
+    :locatedInCity :3-11408 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone " " ;
+.
+
+:2-11854 a :Company ;
+    rdfs:label "Ascenza Agro S.A." ;
+    :hasStreet "Avnida do Rio Tejo, Herdade das Praias" ;
+    :locatedInCity :3-12680 ;
+    :locatedInCountry :4-6341 ;
+.
+
+:2-7032 a :Company ;
+    rdfs:label "BASF Agro SAS" ;
+    :hasStreet "21, chemin de la Sauvegard" ;
+    :locatedInCity :3-5688 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-11842 a :Company ;
+    rdfs:label "Sharda Cropchem Espana S.L." ;
+    :hasStreet "Carril Condomina n°3" ;
+    :locatedInCity :3-14966 ;
+    :locatedInCountry :4-6169 ;
+.
+
+:2-10767 a :Company ;
+    rdfs:label "United Phosphorus Limited" ;
+    rdfs:comment "The Centre" ;
+    :hasStreet "Birchwood Park" ;
+    :locatedInCity :3-11769 ;
+    :locatedInCountry :4-6188 ;
+.
+
+:2-10281 a :Company ;
+    rdfs:label "BASF AG" ;
+    :hasPostOfficeBox "PF 120" ;
+    :locatedInCity :3-5257 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-11843 a :Company ;
+    rdfs:label "Pan Amenity Ltd" ;
+    :hasStreet "8 Cromwell Mews" ;
+    :hasPostOfficeBox "PE27 5HJ" ;
+    :locatedInCity :3-14970 ;
+    :locatedInCountry :4-13215 ;
+.
+
+:2-7034 a :Company ;
+    rdfs:label "Bayer Austria GmbH Geschäftsbereich für Pflanzenschutz" ;
+    :hasStreet "Lerchenfelder Gürtel 9-11" ;
+    :locatedInCity :3-5403 ;
+    :locatedInCountry :4-6190 ;
+.
+
+:2-11846 a :Company ;
+    rdfs:label "Life Scientific Ltd" ;
+    :hasStreet "Nova UCD Belfield Innovation Park , UCD Belfield" ;
+    :locatedInCity :3-14977 ;
+    :locatedInCountry :4-6401 ;
+.
+
+:2-10763 a :Company ;
+    rdfs:label "ISK Biosciences (Schweiz) GmbH" ;
+    rdfs:comment "c/o Hans Horlacher, Advokaturbüro" ;
+    :hasStreet "Archivstrasse 18" ;
+    :locatedInCity :3-15155 ;
+    :locatedInCountry :4-6161 ;
+    :hasFax "Florence.pineda@isk.be" ;
+.
+
+:2-10285 a :Company ;
+    rdfs:label "Koppert Deutschland GmbH " ;
+    rdfs:comment "Zweigniederlassung Sissach" ;
+    :hasStreet "Gewerbestrasse 12" ;
+    :locatedInCity :3-13478 ;
+    :locatedInCountry :4-6161 ;
+.
+
+:2-11235 a :Company ;
+    rdfs:label "Industrias Afrasa S.A" ;
+    :hasStreet "Pol. Ind. Fuente del Jarro, Ciudad de Sevilla, 53" ;
+    :locatedInCity :3-5808 ;
+    :locatedInCountry :4-6169 ;
+.
+
+:2-10038 a :Company ;
+    rdfs:label "Desinfecta AG" ;
+    :hasStreet "Bernapark 23" ;
+    :locatedInCity :3-2585 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "061 633 13 13 " ;
+    :hasFax " " ;
+.
+
+:2-10035 a :Company ;
+    rdfs:label "Coop Genossenschaft" ;
+    rdfs:comment "B+H HC 73 Gartenmat./Einrichtungen/Div." ;
+    :hasStreet "Industriestrasse 17" ;
+    :hasPostOfficeBox "Postfach" ;
+    :locatedInCity :3-14011 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "062 206 32 51 " ;
+.
+
+:2-10716 a :Company ;
+    rdfs:label "GLOBACHEM NV" ;
+    :hasStreet "Leeuwerweg 138" ;
+    :locatedInCity :3-5366 ;
+    :locatedInCountry :4-6163 ;
+    :hasPhone "+32 11 78 57 17" ;
+    :hasFax "+31 11 68 15 65" ;
+.
+
+:2-10717 a :Company ;
+    rdfs:label "Bayer CropScience GmbH" ;
+    rdfs:comment "Industriepark Höchst" ;
+    :locatedInCity :3-5199 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-11257 a :Company ;
+    rdfs:label "Linde Gas Schweiz AG" ;
+    :hasStreet "Industriepark 10" ;
+    :locatedInCity :3-11986 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "058 748 17 62  mobile 079 322 32 01 " ;
+.
+
+:2-10712 a :Company ;
+    rdfs:label "Stähler Suisse SA" ;
+    :hasStreet "Henzmannstrasse 17A" ;
+    :locatedInCity :3-3285 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "+41 62 746 80 05 / +41 62 746 80 00" ;
+    :hasFax "+41 62 746 80 08" ;
+.
+
+:2-11262 a :Company ;
+    rdfs:label "LKC Switzerland Ltd." ;
+    :hasStreet "Hauptstrasse 10" ;
+    :locatedInCity :3-12064 ;
+    :locatedInCountry :4-6161 ;
+    :hasFax "Chiara.Perazzolo@lkc-ltd.com" ;
+.
+
+:2-10023 a :Company ;
+    rdfs:label "Blaser Swisslube AG" ;
+    :hasStreet "Winterseistrasse" ;
+    :locatedInCity :3-2738 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "034 460 03 05 " ;
+    :hasFax " " ;
+.
+
+:2-10709 a :Company ;
+    rdfs:label "Bayer CropScience AG" ;
+    rdfs:comment "Produktionsstätte" ;
+    :locatedInCity :3-5200 ;
+    :locatedInCountry :4-6172 ;
+    :hasPhone "0049 69 305 3763" ;
+    :hasFax "0049 69 305 3826" ;
+.
+
+:2-10711 a :Company ;
+    rdfs:label "SIPCAM OXON S.p.A." ;
+    :hasStreet "Via Vittorio Veneto 81" ;
+    :locatedInCity :3-5353 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-10019 a :Company ;
+    rdfs:label "BASF Schweiz AG" ;
+    rdfs:comment "Customs & Foreign Trade " ;
+    :hasStreet "Klybeckstrasse 161" ;
+    :locatedInCity :3-13212 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "+41 61 636 28 44 " ;
+    :hasFax "stephan.schwarzmueller@basf.com" ;
+.
+
+:2-11209 a :Company ;
+    rdfs:label "Proplan Plant Protection Company S.L." ;
+    :hasStreet "Valle del Roncal 12-1 Pl Oficina N. 7" ;
+    :locatedInCity :3-11661 ;
+    :locatedInCountry :4-6169 ;
+.
+
+:2-11210 a :Company ;
+    rdfs:label "Nufarm Italia S.R.L." ;
+    :hasStreet "Viale Luigi Majno 17/A" ;
+    :locatedInCity :3-11662 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-10011 a :Company ;
+    rdfs:label "Andermatt Biocontrol Suisse AG" ;
+    :hasStreet "Stahlermatten 6" ;
+    :locatedInCity :3-3622 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "062 917 50 05" ;
+    :hasFax "062 917 50 06" ;
+.
+
+:2-10727 a :Company ;
+    rdfs:label "Bayer CropScience SA" ;
+    :hasStreet "16 rue Jean-Marie Leclair" ;
+    :hasPostOfficeBox "CP 106" ;
+    :locatedInCity :3-5267 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-11695 a :Company ;
+    rdfs:label "Azufrera y Fertilizantes Pallares, S.A." ;
+    :hasStreet "Av. Europa parcela 1-7, poligino de Costanti" ;
+    :locatedInCity :3-15075 ;
+    :locatedInCountry :4-6169 ;
+    :hasPhone "+34 977 524 650" ;
+    :hasFax "+34 977 524 651" ;
+.
+
+:2-11699 a :Company ;
+    rdfs:label "HMWC SARL" ;
+    :hasStreet "8 voie vallon" ;
+    :hasPostOfficeBox "10150 " ;
+    :locatedInCity :3-14219 ;
+    :locatedInCountry :4-6171 ;
+    :hasPhone "0033608893727" ;
+.
+
+:2-11696 a :Company ;
+    rdfs:label "OGET Innovations GmbH " ;
+    :hasStreet "Europapark 1" ;
+    :hasPostOfficeBox "8412" ;
+    :locatedInCity :3-5693 ;
+    :locatedInCountry :4-6190 ;
+.
+
+:2-10746 a :Company ;
+    rdfs:label "Andermatt Biogarten AG" ;
+    :hasStreet "Stahlermatten 6" ;
+    :locatedInCity :3-3622 ;
+    :locatedInCountry :4-6161 ;
+.
+
+:2-10745 a :Company ;
+    rdfs:label "Phyteurop S.A." ;
+    :hasStreet "53 rue Raspail" ;
+    :locatedInCity :3-5253 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-11706 a :Company ;
+    rdfs:label "I.B.G. S.R.L." ;
+    :hasStreet "Via B. Bosco 57/3" ;
+    :hasPostOfficeBox "16121 " ;
+    :locatedInCity :3-14225 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-11705 a :Company ;
+    rdfs:label "BASF SE" ;
+    :hasStreet "Speyerer Straße 2" ;
+    :hasPostOfficeBox "67117" ;
+    :locatedInCity :3-5257 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-10106 a :Company ;
+    rdfs:label "Hauri AG" ;
+    :hasStreet "Eichlistr. 9" ;
+    :locatedInCity :3-3470 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "062 896 12 65" ;
+    :hasFax "062 896 12 65" ;
+.
+
+:2-10635 a :Company ;
+    rdfs:label "Cheminova A/S" ;
+    :hasStreet "Thyboronvej 78" ;
+    :locatedInCity :3-5214 ;
+    :locatedInCountry :4-6168 ;
+.
+
+:2-10105 a :Company ;
+    rdfs:label "Hauert HBG Dünger AG" ;
+    :hasStreet "Dorfstrasse 12" ;
+    :locatedInCity :3-2675 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "032 389 10 10" ;
+    :hasFax "032 389 10 12" ;
+.
+
+:2-11712 a :Company ;
+    rdfs:label "Phoenix-Del S.R.L." ;
+    :hasStreet "Via Venezia, 9/A" ;
+    :hasPostOfficeBox "30131" ;
+    :locatedInCity :3-14233 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-10639 a :Company ;
+    rdfs:label "BASF Aktiengesellschaft" ;
+    :hasStreet "Carl Bosch Strasse 38" ;
+    :locatedInCity :3-5264 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-10096 a :Company ;
+    rdfs:label "Cemag Handels AG" ;
+    :hasStreet "Fellstrasse 1" ;
+    :locatedInCity :3-3440 ;
+    :locatedInCountry :4-6161 ;
+.
+
+:2-11169 a :Company ;
+    rdfs:label "CBC (Europe) Ltd" ;
+    :hasStreet "Via E.Majorana  2" ;
+    :locatedInCity :3-5899 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-11722 a :Company ;
+    rdfs:label "UPL Europe Ltd" ;
+    rdfs:comment "The Centre" ;
+    :hasStreet "Birchwood Park" ;
+    :locatedInCity :3-14251 ;
+    :locatedInCountry :4-6188 ;
+.
+
+:2-11168 a :Company ;
+    rdfs:label "Sharda Europe b.v.b.a." ;
+    :hasStreet "Heedstraat 58" ;
+    :locatedInCity :3-5580 ;
+    :locatedInCountry :4-6163 ;
+.
+
+:2-11733 a :Company ;
+    rdfs:label "FMC International Switzerland Sàrl" ;
+    :hasStreet "Chemin de Blandonnet 8" ;
+    :locatedInCity :3-1755 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "+49 4141 9204 248  Mobile +49 171 640 7850 " ;
+.
+
+:2-11734 a :Company ;
+    rdfs:label "Nissan Chemical Europe S.A.S." ;
+    :hasStreet "10A, rue de la Voie Lactée" ;
+    :locatedInCity :3-5813 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-10095 a :Company ;
+    rdfs:label "Bio-Agrar-Counsel GmbH" ;
+    :hasStreet "Rosenstrasse 2" ;
+    :locatedInCity :3-2898 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "033 827 02 83 " ;
+.
+
+:2-11730 a :Company ;
+    rdfs:label "agrostulln GmbH" ;
+    :hasStreet "Werksweg 2" ;
+    :locatedInCity :3-5527 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-10093 a :Company ;
+    rdfs:label "A. Ziegler AG" ;
+    :hasStreet "Rengglochstrasse 38" ;
+    :locatedInCity :3-11418 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "043 466 10 00" ;
+.
+
+:2-11190 a :Company ;
+    rdfs:label "Globachem NV" ;
+    rdfs:comment "Brustem Industriepark" ;
+    :hasStreet "Lichtenberglaan 2019" ;
+    :locatedInCity :3-5648 ;
+    :locatedInCountry :4-6163 ;
+.
+
+:2-11189 a :Company ;
+    rdfs:label "Nisso Chemical Europe GmbH" ;
+    :hasStreet "Berliner Allee 42" ;
+    :locatedInCity :3-5664 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-10087 a :Company ;
+    rdfs:label "Matox AG" ;
+    :hasStreet "Werkstrasse 39" ;
+    :hasPostOfficeBox "Postfach 61" ;
+    :locatedInCity :3-2668 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "032 387 70 70" ;
+    :hasFax "032 387 70 79" ;
+.
+
+:2-11738 a :Company ;
+    rdfs:label "Bayer AG" ;
+    :hasStreet "Kaiser-Wilhelm-Allee 1 " ;
+    :hasPostOfficeBox "51373 " ;
+    :locatedInCity :3-14459 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-10073 a :Company ;
+    rdfs:label "Schneiter Agro AG" ;
+    :hasStreet "Birren 30" ;
+    :locatedInCity :3-5791 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "056 201 45 45" ;
+.
+
+:2-10664 a :Company ;
+    rdfs:label "W. Neudorff GmbH KG" ;
+    :hasStreet "An der Mühle 3" ;
+    :locatedInCity :3-5187 ;
+    :locatedInCountry :4-6172 ;
+    :hasPhone "0049 5155 624-126" ;
+    :hasFax "0049 5155 624-7122" ;
+.
+
+:2-10079 a :Company ;
+    rdfs:label "Sintagro M. Eggen" ;
+    :hasStreet "Chasseralstrasse 1-3" ;
+    :locatedInCity :3-3296 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "062 398 57 57" ;
+    :hasFax "062 398 57 55" ;
+.
+
+:2-10065 a :Company ;
+    rdfs:label "Racroc AG" ;
+    :hasStreet "Industrie Birren 30" ;
+    :locatedInCity :3-5791 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "062 893 28 83" ;
+    :hasFax "062 893 28 84" ;
+.
+
+:2-11141 a :Company ;
+    rdfs:label "DuPont de Nemours (France) S.A." ;
+    rdfs:comment "Défense Plaza" ;
+    :hasStreet "23/25 rue Delarivière-Lefoullon, La Défense 9" ;
+    :locatedInCity :3-5571 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-11759 a :Company ;
+    rdfs:label "Gowan Crop Protection Ltd." ;
+    :hasStreet "Highlands House Reading Basingstoke Road, Spencers" ;
+    :locatedInCity :3-14620 ;
+    :locatedInCountry :4-14621 ;
+.
+
+:2-11757 a :Company ;
+    rdfs:label "Albaugh UK Limited" ;
+    :hasStreet "1 Northumberland Ave, Westminster" ;
+    :locatedInCity :3-14618 ;
+    :locatedInCountry :4-13215 ;
+.
+
+:2-10662 a :Company ;
+    rdfs:label "Bayer CropScience AG" ;
+    :hasStreet "Alfred-Nobel-Str. 50" ;
+    :locatedInCity :3-5458 ;
+    :locatedInCountry :4-6172 ;
+    :hasPhone "0049 2173 / 38 33 74" ;
+    :hasFax "0049 2173 / 38 37 35" ;
+.
+
+:2-10661 a :Company ;
+    rdfs:label "Bayer (Schweiz) AG" ;
+    :hasStreet "Peter-Merian-Strasse 84" ;
+    :hasPostOfficeBox " " ;
+    :locatedInCity :3-3053 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "031 869 16 66" ;
+    :hasFax "031 869 23 39" ;
+.
+
+:2-11753 a :Company ;
+    rdfs:label "Crop Chem Handelsgesellschaft GmbH" ;
+    :hasStreet "Bärweilerstrasse 55" ;
+    :locatedInCity :3-5817 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-10056 a :Company ;
+    rdfs:label "Méoc SA" ;
+    :hasStreet "Route du Léman 10" ;
+    :hasPostOfficeBox "C P 48" ;
+    :locatedInCity :3-2224 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "027 746 16 39" ;
+    :hasFax "027 746 33 24" ;
+.
+
+:2-10057 a :Company ;
+    rdfs:label "Migros-Genossenschafts-Bund" ;
+    :hasStreet "Limmatstrasse 152" ;
+    :hasPostOfficeBox "Postfach" ;
+    :locatedInCity :3-4366 ;
+    :locatedInCountry :4-6161 ;
+.
+
+:2-11762 a :Company ;
+    rdfs:label "ISK Biosciences Europe S.A. (B)" ;
+    :hasStreet "Tour Itt., Avenue Louise 480, boite 12" ;
+    :locatedInCity :3-5143 ;
+    :locatedInCountry :4-6163 ;
+.
+
+:2-10686 a :Company ;
+    rdfs:label "SCAE - Valent BioSciences Sàrl (Switzerland)" ;
+    :hasStreet "Rue de la Gare 36" ;
+    :locatedInCity :3-1791 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "+41 22 990 21 25" ;
+    :hasFax "+41 22 990 21 29" ;
+.
+
+:2-11761 a :Company ;
+    rdfs:label "Adama France SAS" ;
+    :hasStreet "33 Rue de Verdun" ;
+    :locatedInCity :3-14622 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-10050 a :Company ;
+    rdfs:label "Leu + Gygax AG" ;
+    :hasStreet "Fellstrasse 1" ;
+    :locatedInCity :3-3440 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "056 201 45 45" ;
+.
+
+:2-11158 a :Company ;
+    rdfs:label "UPL Switzerland AG" ;
+    :hasStreet "Blegi 3" ;
+    :locatedInCity :3-3717 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "+49(0) 172 7660 774" ;
+    :hasFax "Alexander.ruecker@upl-ltd.com" ;
+.
+
+:2-11773 a :Company ;
+    rdfs:label "Agrimotion S. A. " ;
+    :hasStreet "ul Bydgoskich Przemyslowcow 6" ;
+    :locatedInCity :3-14644 ;
+    :locatedInCountry :4-6182 ;
+.
+
+:2-10051 a :Company ;
+    rdfs:label "Läubli Feuerwerk AG" ;
+    :hasStreet "Mosenstrasse 32" ;
+    :locatedInCity :3-3691 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "041 917 17 10" ;
+    :hasFax "041 917 17 76" ;
+.
+
+:2-11770 a :Company ;
+    rdfs:label "ADAMA Italia srl" ;
+    :hasStreet "Via Zanica, 19" ;
+    :locatedInCity :3-14637 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-10679 a :Company ;
+    rdfs:label "Bayer CropScience S.A." ;
+    :hasStreet "14-20 Rue Pierre Baizet" ;
+    :locatedInCity :3-5267 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-10053 a :Company ;
+    rdfs:label "Arxada AG" ;
+    :hasStreet "Lonzastrasse 2" ;
+    :locatedInCity :3-2958 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "061 316 26 48 " ;
+    :hasFax "+41 79 817 44 70 " ;
+.
+
+:2-10054 a :Company ;
+    rdfs:label "Syngenta Agro AG " ;
+    :hasStreet "Schaffhauserstr. 101" ;
+    :hasPostOfficeBox "Postfach " ;
+    :locatedInCity :3-3133 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "+41 (0)61 323 56 70 " ;
+    :hasFax " " ;
+.
+
+:2-11528 a :Company ;
+    rdfs:label "IFR Associés SA" ;
+    :hasStreet "Rue du Mont-Blanc 9" ;
+    :hasPostOfficeBox " C.P. 1468" ;
+    :locatedInCity :3-13339 ;
+    :locatedInCountry :4-6161 ;
+.
+
+:2-11530 a :Company ;
+    rdfs:label "Dr. Knoell Consult Schweiz GmbH" ;
+    :hasStreet "Riehenstrasse 43" ;
+    :locatedInCity :3-3059 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "061 695 86 50    Mobile 078 625 63 40 " ;
+.
+
+:2-11522 a :Company ;
+    rdfs:label "Dormfresh Limited, Perth (UK)" ;
+    rdfs:comment "Zweigniederlassung Basel" ;
+    :hasStreet "Steinenschanze 6" ;
+    :locatedInCity :3-3052 ;
+    :locatedInCountry :4-6161 ;
+.
+
+:2-11524 a :Company ;
+    rdfs:label "AGFS Switzerland GmbH" ;
+    rdfs:comment "c/o Markus Aeschbacher, Bratschi AG" ;
+    :hasStreet "Bahnhofstrasse 70" ;
+    :locatedInCity :3-4349 ;
+    :locatedInCountry :4-6161 ;
+    :hasFax "femeapu@agrofresh.com" ;
+.
+
+:2-11119 a :Company ;
+    rdfs:label "Kreglinger International AG" ;
+    :hasStreet "Picassoplatz 8" ;
+    :locatedInCity :3-3053 ;
+    :locatedInCountry :4-6161 ;
+    :hasFax "alb@kreglinger.com" ;
+.
+
+:2-11116 a :Company ;
+    rdfs:label "Menora GmbH" ;
+    :hasStreet "Metahofgasse 30" ;
+    :locatedInCity :3-5852 ;
+    :locatedInCountry :4-6190 ;
+.
+
+:2-10570 a :Company ;
+    rdfs:label "Corteva Agriscience International Sàrl" ;
+    :hasStreet "Route de Suisse 160" ;
+    :locatedInCity :3-15015 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "+41 22 717 5868" ;
+.
+
+:2-11117 a :Company ;
+    rdfs:label "Taminco N.V." ;
+    :hasStreet "Pantserschipstraat 207" ;
+    :locatedInCity :3-5853 ;
+    :locatedInCountry :4-6163 ;
+.
+
+:2-11545 a :Company ;
+    rdfs:label "Certis Belchim B.V." ;
+    :hasStreet "Stadsplateau 16" ;
+    :locatedInCity :3-14796 ;
+    :locatedInCountry :4-6181 ;
+.
+
+:2-11123 a :Company ;
+    rdfs:label "Sharda Worldwide Export Private Ltd." ;
+    :hasStreet "Domnic Road 29th, Bandra West" ;
+    :locatedInCity :3-5858 ;
+    :locatedInCountry :4-6174 ;
+.
+
+:2-11121 a :Company ;
+    rdfs:label "Sharda Swiss Sàrl" ;
+    :hasStreet "Kochergasse 6" ;
+    :locatedInCity :3-2554 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "T +41 31 328 35 35 | M +41 78 843 8000 " ;
+    :hasFax "F +41 31 328 35 40" ;
+.
+
+:2-11131 a :Company ;
+    rdfs:label "Danstar Ferment AG" ;
+    :hasStreet "Poststrasse 30" ;
+    :locatedInCity :3-3696 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "+358 (0)50 543 5547" ;
+.
+
+:2-11074 a :Company ;
+    rdfs:label "Insektol AG Pest Control" ;
+    :hasStreet "Ueberlandstrasse 341" ;
+    :locatedInCity :3-4386 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "+41 44 322 20 20 " ;
+    :hasFax "+41 44 322 20 15" ;
+.
+
+:2-10128 a :Company ;
+    rdfs:label "Sofbey SA" ;
+    :hasStreet "Via San Martino 16 a" ;
+    :locatedInCity :3-3974 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "091 223 10 90" ;
+.
+
+:2-10595 a :Company ;
+    rdfs:label "Arysta LifeScience Ougrée Production sprl" ;
+    :hasStreet "Rue de Renory, 26/2" ;
+    :locatedInCity :3-5318 ;
+    :locatedInCountry :4-6163 ;
+    :hasPhone "0032 4 385 97 11" ;
+    :hasFax "0032 4 385 97 49" ;
+.
+
+:2-11080 a :Company ;
+    rdfs:label "Novozymes Switzerland AG" ;
+    :hasStreet "Gewerbestrasse 7A " ;
+    :locatedInCity :3-11408 ;
+    :locatedInCountry :4-6161 ;
+.
+
+:2-10606 a :Company ;
+    rdfs:label "COMPO Jardin AG" ;
+    :hasStreet "Hegenheimermattweg 65" ;
+    :locatedInCity :3-3076 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "061 486 20 23   - mobile 079 681 45 57 " ;
+    :hasFax "061 486 20 01" ;
+.
+
+:2-10141 a :Company ;
+    rdfs:label "AGROLINE Bioprotect" ;
+    rdfs:comment "fenaco Genossenschaft" ;
+    :hasStreet "Nordring 4" ;
+    :locatedInCity :3-11408 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "058 434 32 97" ;
+    :hasFax "vera.stoll@fenaco.com" ;
+.
+
+:2-10115 a :Company ;
+    rdfs:label "Medol" ;
+    :hasStreet "Pra Pury 7 d" ;
+    :locatedInCity :3-2687 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "058 220 36 70" ;
+    :hasFax " 058 220 36 71 " ;
+.
+
+:2-10125 a :Company ;
+    rdfs:label "Renovita Wilen GmbH" ;
+    :hasStreet "Weidstrasse 11" ;
+    :hasPostOfficeBox " " ;
+    :locatedInCity :3-5906 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "071 955 00 55" ;
+    :hasFax "Patrick.sauder@renovita.ch" ;
+.
+
+:2-11096 a :Company ;
+    rdfs:label "Bayer CropScience " ;
+    rdfs:comment "GB Pflanzenschutz" ;
+    :locatedInCity :3-5519 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-10127 a :Company ;
+    rdfs:label "Eric Schweizer AG" ;
+    :hasStreet "Maienstrasse 8" ;
+    :locatedInCity :3-5754 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "033 227 57 57" ;
+    :hasFax "033 227 57 58" ;
+.
+
+:2-10619 a :Company ;
+    rdfs:label "Isagro S.p.A." ;
+    :hasStreet "Via Caldera, 21" ;
+    :locatedInCity :3-5281 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-10618 a :Company ;
+    rdfs:label "Bayer S.p.A." ;
+    :hasStreet "Viale Certosa 126-130" ;
+    :locatedInCity :3-5280 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-11596 a :Company ;
+    rdfs:label "Douglas Switzerland GmbH" ;
+    :hasStreet "Zählerweg 6" ;
+    :locatedInCity :3-3696 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "041 726 82 00 " ;
+.
+
+:2-11044 a :Company ;
+    rdfs:label "Sumitomo Chemical Agro Europe SAS" ;
+    :hasStreet "10a, rue de la Voie Lactée" ;
+    :locatedInCity :3-5813 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-11594 a :Company ;
+    rdfs:label "ADAMA Deutschland GmbH" ;
+    :hasStreet "Edmund-Rumpler-Str. 6" ;
+    :locatedInCity :3-5832 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-10504 a :Company ;
+    rdfs:label "industrias químicas del vallés, s.a." ;
+    :hasStreet "Av. de Rafael Casanova, 81 Molle del Valles" ;
+    :locatedInCity :3-5572 ;
+    :locatedInCountry :4-6169 ;
+.
+
+:2-11049 a :Company ;
+    rdfs:label "ADAMA Agriculture Swiss AG" ;
+    :hasStreet "Spitalstrasse 5" ;
+    :locatedInCity :3-4461 ;
+    :locatedInCountry :4-6161 ;
+.
+
+:2-11613 a :Company ;
+    rdfs:label "Sipcam Italia S.P.A." ;
+    :hasStreet "Via Carroccio, 8" ;
+    :locatedInCity :3-13857 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-11612 a :Company ;
+    rdfs:label "Nichino Europ Co LTD" ;
+    :hasStreet "5 Pionee Court, Vision Park Histon" ;
+    :locatedInCity :3-13856 ;
+    :locatedInCountry :4-13215 ;
+.
+
+:2-11615 a :Company ;
+    rdfs:label "Du Pont De Nemours Italiana" ;
+    :hasStreet "Centro Direzionale Villa Fiorita - Via Piero Gobet" ;
+    :locatedInCity :3-13859 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-11614 a :Company ;
+    rdfs:label "Bayer SAS" ;
+    :hasStreet "14 Rue de la Pierre Follege " ;
+    :locatedInCity :3-13858 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-11609 a :Company ;
+    rdfs:label "Syngenta France SAS" ;
+    :hasStreet "12 Che de l'Hobit" ;
+    :locatedInCity :3-13854 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-11611 a :Company ;
+    rdfs:label "UPL Italia S.R.L." ;
+    :hasStreet "Via Terni 275" ;
+    :locatedInCity :3-13855 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-10213 a :Company ;
+    rdfs:label "Omya (Schweiz) AG" ;
+    :hasStreet "Baslerstrasse 42" ;
+    :locatedInCity :3-3272 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone " " ;
+    :hasFax " " ;
+.
+
+:2-11071 a :Company ;
+    rdfs:label "Agro Trade GMBH" ;
+    :hasStreet "Bärweiler Strasse 55" ;
+    :locatedInCity :3-5817 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-11605 a :Company ;
+    rdfs:label "Arysta LifeScience Germany GmbH" ;
+    :hasStreet "Elisabethstrasse 44" ;
+    :locatedInCity :3-13815 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-11601 a :Company ;
+    rdfs:label "Bernbeck LLP" ;
+    :hasStreet "26-28 Bedford Row" ;
+    :locatedInCity :3-13769 ;
+    :locatedInCountry :4-6188 ;
+.
+
+:2-11066 a :Company ;
+    rdfs:label "Valent Biosciences" ;
+    :hasStreet "PARC D'AFFAIRES DE CRECY 2, RUE CLAUDE CHAPPE" ;
+    :locatedInCity :3-5813 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-11065 a :Company ;
+    rdfs:label "Albaugh Europe Sàrl" ;
+    rdfs:comment "World Trade Center Lausanne" ;
+    :hasStreet "Avenue Gratta-Paille 2" ;
+    :locatedInCity :3-13390 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "+41 21 799 91 30" ;
+.
+
+:2-11629 a :Company ;
+    rdfs:label "Arysta Lifescience Benelux SPRL" ;
+    :hasStreet "Rue de Renory 26/1" ;
+    :locatedInCity :3-5318 ;
+    :locatedInCountry :4-6163 ;
+.
+
+:2-11009 a :Company ;
+    rdfs:label "Fine Agrochemicals Limited" ;
+    :hasStreet "3, The Bull Ring" ;
+    :hasPostOfficeBox "WR 2 5AA" ;
+    :locatedInCity :3-5774 ;
+    :locatedInCountry :4-6188 ;
+.
+
+:2-11622 a :Company ;
+    rdfs:label "Scam SPA" ;
+    :hasStreet "Corso Orbassano 368/18" ;
+    :locatedInCity :3-13863 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-11618 a :Company ;
+    rdfs:label "Cheminova Agro Italia S.R.L." ;
+    :hasStreet "Via F. lli Bronzetti, 32/38" ;
+    :locatedInCity :3-5436 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-11616 a :Company ;
+    rdfs:label "Monsanto Agrar Deutschland GmbH" ;
+    :hasStreet "Elisabeth- Selbert- Straße 4a" ;
+    :locatedInCity :3-5762 ;
+    :locatedInCountry :4-6172 ;
+    :hasPhone "+49 (0) 2173 2076 569" ;
+    :hasFax "+49 (0) 2173 2076 451" ;
+.
+
+:2-11617 a :Company ;
+    rdfs:label "Philagro France" ;
+    :hasStreet "VILCERY" ;
+    :locatedInCity :3-13860 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-11028 a :Company ;
+    rdfs:label "Rovagro SA" ;
+    :hasStreet "Route de Bettens 19" ;
+    :locatedInCity :3-5788 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "ricardo@rovagro.ch" ;
+    :hasFax "021 866 79 14" ;
+.
+
+:2-7179 a :Company ;
+    rdfs:label "Syngenta Agro GmbH" ;
+    :hasStreet "am Technologiepark 1 - 5" ;
+    :locatedInCity :3-5696 ;
+    :locatedInCountry :4-6172 ;
+.
+
+:2-11644 a :Company ;
+    rdfs:label "SBM Life Science SA" ;
+    rdfs:comment "c/o Fiduconsult Conseils & Gestion SA" ;
+    :hasStreet "Rue des Pilettes 3" ;
+    :locatedInCity :3-2081 ;
+    :locatedInCountry :4-6161 ;
+.
+
+:2-7180 a :Company ;
+    rdfs:label "Syngenta Agro GmbH" ;
+    :hasStreet "Anton-Baumgartner-Strasse 125" ;
+    :locatedInCity :3-5757 ;
+    :locatedInCountry :4-6190 ;
+.
+
+:2-7183 a :Company ;
+    rdfs:label "TBH Agrochemie GmbH" ;
+    :hasStreet "Grossfeiting 16a" ;
+    :locatedInCity :3-5693 ;
+    :locatedInCountry :4-6190 ;
+.
+
+:2-7182 a :Company ;
+    rdfs:label "Syngenta Italia S.P.A." ;
+    :hasStreet "Via Gallarate, 139" ;
+    :locatedInCity :3-5281 ;
+    :locatedInCountry :4-6176 ;
+.
+
+:2-10555 a :Company ;
+    rdfs:label "Cheminova Agro A/S" ;
+    :hasPostOfficeBox "P.O. Box 9" ;
+    :locatedInCity :3-5251 ;
+    :locatedInCountry :4-6168 ;
+    :hasPhone "0045 96 90 96 90" ;
+    :hasFax "0045 96 90 96 91" ;
+.
+
+:2-11037 a :Company ;
+    rdfs:label "GNS Consult AG" ;
+    :hasStreet "Konstanzerstrasse 19" ;
+    :locatedInCity :3-4518 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone "071 670 12 30  - direct call 076 516 12 30 " ;
+    :hasFax " clemens.schanne@gns-consult.com" ;
+.
+
+:2-11036 a :Company ;
+    rdfs:label "Nufarm Suisse Sàrl" ;
+    rdfs:comment "Business Centre" ;
+    :hasStreet "Chemin du Canal 5" ;
+    :locatedInCity :3-1791 ;
+    :locatedInCountry :4-6161 ;
+    :hasPhone " +43 732 6918 2773" ;
+    :hasFax " " ;
+.
+
+:2-7170 a :Company ;
+    rdfs:label "Societe financiere de Pontarlier" ;
+    :hasStreet "VILLA CELONY, 1175 MONTEE D'AVIGNON" ;
+    :locatedInCity :3-5691 ;
+    :locatedInCountry :4-6171 ;
+.
+
+:2-11633 a :Company ;
+    rdfs:label "Albaugh TKI d.o.o." ;
+    :hasStreet "Grajski trg 21" ;
+    :locatedInCity :3-12246 ;
+    :locatedInCountry :4-13901 ;
+.
+
+:2-7174 a :Company ;
+    rdfs:label "STAR Agro Handels GmbH" ;
+    :hasStreet "Europapark 1" ;
+    :locatedInCity :3-5693 ;
+    :locatedInCountry :4-6190 ;
+.
+

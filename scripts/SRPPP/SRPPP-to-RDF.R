@@ -1,9 +1,13 @@
+library(xml2)
 library(srppp)
 library(rdflib)
 
 # download current SRPPP register
 current_register <- srppp_dm()
 dm_draw(current_register)
+
+psmv_xml_url = "https://www.blv.admin.ch/dam/blv/de/dokumente/zulassung-pflanzenschutzmittel/pflanzenschutzmittelverzeichnis/daten-pflanzenschutzmittelverzeichnis.zip.download.zip/Daten%20Pflanzenschutzmittelverzeichnis.zip"
+
 
 # tabellen
 # current_register$products

@@ -162,7 +162,64 @@
     rdfs:range xsd:boolean .
 
 :Company a owl:Class ;
-    rdfs:label "Company"@en, "Firma"@de .
+    rdfs:label "Company"@en, "Firma"@de ;
+    rdfs:comment "A company or organization holding permissions or licenses."@en .
+
+:hasName a owl:DatatypeProperty ;
+    rdfs:label "has name"@en, "hat Name"@de ;
+    rdfs:domain :Company ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The name of the company."@en .
+
+:hasAdditionalInformation a owl:DatatypeProperty ;
+    rdfs:label "has additional information"@en, "hat zusätzliche Information"@de ;
+    rdfs:domain :Company ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Supplementary information about the company."@en .
+
+:hasStreet a owl:DatatypeProperty ;
+    rdfs:label "has street"@en, "hat Strasse"@de ;
+    rdfs:domain :Company ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The street address of the company."@en .
+
+:hasPostOfficeBox a owl:DatatypeProperty ;
+    rdfs:label "has post office box"@en, "hat Postfach"@de ;
+    rdfs:domain :Company ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The post office box of the company."@en .
+
+:hasPhone a owl:DatatypeProperty ;
+    rdfs:label "has phone"@en, "hat Telefon"@de ;
+    rdfs:domain :Company ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The phone number of the company."@en .
+
+:hasFax a owl:DatatypeProperty ;
+    rdfs:label "has fax"@en, "hat Fax"@de ;
+    rdfs:domain :Company ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The fax number of the company."@en .
+
+:locatedInCity a owl:ObjectProperty ;
+    rdfs:label "located in city"@en, "befindet sich in Stadt"@de ;
+    rdfs:domain :Company ;
+    rdfs:range :City ;
+    rdfs:comment "The city where the company is located."@en .
+
+:locatedInCountry a owl:ObjectProperty ;
+    rdfs:label "located in country"@en, "befindet sich in Land"@de ;
+    rdfs:domain :Company ;
+    rdfs:range :Country ;
+    rdfs:comment "The country where the company is located."@en .
+
+:City a owl:Class ;
+    rdfs:label "City"@en, "Stadt"@de ;
+    rdfs:comment "A city where a company is located."@en .
+
+:Country a owl:Class ;
+    rdfs:label "Country"@en, "Land"@de ;
+    rdfs:comment "A country where a company is located."@en .
 
 :holdsPermissionToSell a owl:ObjectProperty ;
     rdfs:domain :Company ;
