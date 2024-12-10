@@ -7,6 +7,7 @@ library(xml2)
 library(rdflib)
 library(dplyr)
 library(srppp)
+library(tidyr)
 
 # ------------------------------------------------------------------
 # DOWNLOAD THE SWISS PLANT PROTECTION REGISTRY AS AN XML FILE
@@ -43,9 +44,37 @@ nodeset_to_dataframe <- function(nodeset) {
   return(df)
 }
 
+# Function to extract data from each Detail node
+detail_to_df <- function(x) {
+  y <- lapply(x, function(detail) {
+    primaryKey <- xml_attr(detail, "primaryKey")
+    
+    descriptions <- xml_find_all(detail, ".//Description")
+    data <- lapply(descriptions, function(description) {
+      language <- xml_attr(description, "language")
+      city_name <- xml_attr(description, "value")
+      data.frame(
+        ID = primaryKey,
+        lang = language,
+        name = city_name,
+        stringsAsFactors = FALSE
+      )
+    })
+    do.call(rbind, data)
+  })
+  do.call(rbind, y)
+}
+
 # Function to construct IRI
 IRI <- function(domain, id, prefix = "") {
   paste0(prefix, ":", domain, "-", id)
+}
+
+# Function to construct a literal
+literal <- function(x, datatype = NULL, lang = NULL) {
+  d = if(!is.null(datatype)) paste0("^^xsd:", datatype) else ""
+  l = if(!is.null(lang)) paste0("@", lang) else ""
+  sprintf("\"%s\"%s%s", x, d, l)
 }
 
 # DOMAINS
@@ -97,6 +126,7 @@ for (i in 1:nrow(products)) {
       if(i != j) sprintf("\n    :isSameProductAs :1-W-%s ;", products[j,"wNbr"]) |> cat()
     }
   }
+  cat(sprintf("\n    :isNonProfessionallyAllowed %s ;", tolower(as.character(products[i,"pNbr"] %in% SRPPP$CodeS[SRPPP$CodeS$desc_pk==13876,"pNbr"]))))
   cat("\n    :isParallelImport false ;")
   sprintf("\n    :hasPermissionHolder :2-%s .", products[i,"permission_holder"]) |> cat()
 }
@@ -149,5 +179,45 @@ for (i in 1:nrow(products)) {
   sprintf("%s :holdsPermissionToSell %s .\n", IRI("2", products[i,"permission_holder"]), IRI("1-W", products[i,"wNbr"])) |> cat()
 }
 
+sink()
+
+# ------------------------------------------------------------------
+# WRITE COUNTRY INFORMATION
+# ------------------------------------------------------------------
+
+# Open file
+sink("ontology/data.ttl", append = TRUE)
+
+# Extract all city elements
+df = xml_find_all(xml_data, "//MetaData[@name='City']/Detail") %>%
+  detail_to_df() %>%
+  pivot_wider(names_from = lang, values_from = name) %>%
+  as.data.frame()
+rdf = paste0(
+  sprintf("%s a :City ;\n", IRI("3",df[,1])),
+  ifelse(df[,"de"]!="", sprintf("    rdfs:label %s ;\n", literal(df[,"de"],lang="de")), ""),
+  ifelse(df[,"fr"]!="", sprintf("    rdfs:label %s ;\n", literal(df[,"fr"],lang="fr")), ""),
+  ifelse(df[,"it"]!="", sprintf("    rdfs:label %s ;\n", literal(df[,"it"],lang="it")), ""),
+  ifelse(df[,"en"]!="", sprintf("    rdfs:label %s ;\n", literal(df[,"en"],lang="en")), ""),
+  ".\n"
+)
+cat(gsub(";\n\\.", ".", paste(rdf, collapse = "")))
+
+# Extract all country elements
+df = xml_find_all(xml_data, "//MetaData[@name='Country']/Detail") %>%
+  detail_to_df() %>%
+  pivot_wider(names_from = lang, values_from = name) %>%
+  as.data.frame()
+rdf = paste0(
+  sprintf("%s a :Country ;\n", IRI("4",df[,1])),
+  ifelse(df[,"de"]!="", sprintf("    rdfs:label %s ;\n", literal(df[,"de"],lang="de")), ""),
+  ifelse(df[,"fr"]!="", sprintf("    rdfs:label %s ;\n", literal(df[,"fr"],lang="fr")), ""),
+  ifelse(df[,"it"]!="", sprintf("    rdfs:label %s ;\n", literal(df[,"it"],lang="it")), ""),
+  ifelse(df[,"en"]!="", sprintf("    rdfs:label %s ;\n", literal(df[,"en"],lang="en")), ""),
+  ".\n"
+)
+cat(gsub(";\n\\.", ".", paste(rdf, collapse = "")))
+
+# close file
 sink()
 
