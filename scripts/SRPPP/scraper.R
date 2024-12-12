@@ -133,6 +133,10 @@ for (i in 1:nrow(products)) {
 
 sink()
 
+products = SRPPP$parallel_imports
+products = products[order(products$pNbr),]
+products[products==""] <- NA
+
 # ------------------------------------------------------------------
 # WRITE COMPANY (PERMISSION HOLDER) INFORMATION
 # ------------------------------------------------------------------
