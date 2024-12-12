@@ -57,6 +57,17 @@
     rdfs:comment "Negative impact of non-living factors on the crop in a specific environment."@en ,
         "Negative Auswirkungen nicht lebender Faktoren auf die Kulturpflanze in einer bestimmten Umgebung."@de .
 
+:nonTargetOrganism a owl:Class ;
+    rdfs:label "Non target organism"@en ,
+        "Nichtzielorganismus"@de ;
+    rdfs:comment "Any organism other than the one against which the pesticide is applied."@en .
+
+:causesCollateralDamageTo a owl:ObjectProperty ;
+    rdfs:domain :Product ;
+    rdfs:range :nonTargetOrganism ;
+    rdfs:label "causes collateral damage to"@en ,
+        "führt zu einem Kollateralschaden bei"@de .
+
 :interactsWith a owl:ObjectProperty ;
     rdfs:label "interacts with"@en,
         "interagiert mit"@de ;
