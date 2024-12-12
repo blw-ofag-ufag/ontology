@@ -14,7 +14,7 @@
         "Eine (demonstrative) Ontologie für den Pflanzenschutz in der Schweiz"@de ;
     dc:description "This ontology exemplifies the value of comprehensive and well-structured ontology development for the Swiss Federal Office for Agriculture (and more broadly the Swiss agri-food sector). By capturing the complexities of crop protection (with a focus on registered products) in a formal model, it enhances understanding of current rules and allows their effective communication via IT-services."@en,
         "Diese Ontologie veranschaulicht den Wert einer umfassenden und gut strukturierten Ontologieentwicklung für das Bundesamt für Landwirtschaft (und allgemein den Schweizer Agrar- und Lebensmittelsektor). Durch die formale Modellierung der Komplexität des Pflanzenschutzes (mit Schwerpunkt auf zugelassenen Produkten) verbessert sie das Verständnis der aktuellen Regeln und ermöglicht deren effektive Kommunikation über IT-Dienste."@de ;
-    owl:versionInfo "0.7" ;
+    owl:versionInfo "0.8" ;
     dc:creator "Damian Oswald" .
 
 :CropGroup a owl:Class ;
@@ -212,22 +212,12 @@
 :locatedInCity a owl:ObjectProperty ;
     rdfs:label "located in city"@en, "befindet sich in Stadt"@de ;
     rdfs:domain :Company ;
-    rdfs:range :City ;
     rdfs:comment "The city where the company is located."@en .
 
 :locatedInCountry a owl:ObjectProperty ;
     rdfs:label "located in country"@en, "befindet sich in Land"@de ;
     rdfs:domain :Company ;
-    rdfs:range :Country ;
     rdfs:comment "The country where the company is located."@en .
-
-:City a owl:Class ;
-    rdfs:label "City"@en, "Stadt"@de ;
-    rdfs:comment "A city where a company is located."@en .
-
-:Country a owl:Class ;
-    rdfs:label "Country"@en, "Land"@de ;
-    rdfs:comment "A country where a company is located."@en .
 
 :holdsPermissionToSell a owl:ObjectProperty ;
     rdfs:domain :Company ;
@@ -447,10 +437,6 @@ chebi:24431 a owl:Class ;
     rdfs:label "Safener"@en ,
         "Safener"@de ;
     owl:disjointWith :ActiveSubstance, :AdditiveToDeclare, :Synergist .
-
-:Metabolite a owl:Class ;
-    rdfs:label "Metabolite"@en ,
-        "Metabolit"@de .
 
 :isMetabolizedTo a owl:ObjectProperty ;
     rdfs:label "is metabolized to"@en ,
