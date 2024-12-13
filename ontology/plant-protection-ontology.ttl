@@ -614,6 +614,12 @@ wd:Q16521 a owl:Class ;
     rdfs:comment "Group of one or more organism(s), which a taxonomist adjudges to be a unit."@en ,
         "Gruppe von einem oder mehreren Organismen, die ein Taxonom als Einheit betrachtet."@de .
 
+wdt:P171 a owl:ObjectProperty ;
+    rdfs:label "has parent taxon"@en ,
+        "hat übergeordnetes Taxon"@de ;
+    rdfs:domain wd:Q16521 ;
+    rdfs:range wd:Q16521 .
+
 :isDefinedByBiologicalTaxon a owl:ObjectProperty ;
     rdfs:label "is defined by biological taxon"@en ,
         "ist definiert durch das biologische Taxon"@de ;
