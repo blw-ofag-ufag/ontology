@@ -177,7 +177,8 @@ wdt:P297 a owl:DatatypeProperty ;
     rdfs:comment "Identifier for a country in two-letter format per ISO 3166-1."@en ,
         "Zweibuchstabiger ISO-3166-1-Ländercode."@de ;
     rdfs:domain wd:Q6256 ;
-    rdfs:range xsd:string .
+    rdfs:range xsd:string ;
+    rdfs:isDefinedBy <https://www.iso.org/iso-3166-country-codes.html> .
 
 wdt:P298 a owl:DatatypeProperty ;
     rdfs:label "has ISO 3166-1 alpha-3 country code"@en ,
@@ -185,7 +186,8 @@ wdt:P298 a owl:DatatypeProperty ;
     rdfs:comment "Identifier for a country in two-letter format per ISO 3166-1."@en ,
         "Dreibuchstabiger ISO-3166-1-Ländercode."@de ;
     rdfs:domain wd:Q6256 ;
-    rdfs:range xsd:string .
+    rdfs:range xsd:string ;
+    rdfs:isDefinedBy <https://www.iso.org/iso-3166-country-codes.html> .
 
 :hasSoldoutDeadline a owl:DatatypeProperty ;
     rdfs:domain :Product ;
@@ -612,16 +614,30 @@ wd:Q16521 a owl:Class ;
     rdfs:comment "Group of one or more organism(s), which a taxonomist adjudges to be a unit."@en ,
         "Gruppe von einem oder mehreren Organismen, die ein Taxonom als Einheit betrachtet."@de .
 
-:relatesToBiologicalTaxon a owl:ObjectProperty ;
-    rdfs:label "relates to biological taxon"@en ,
-        "hängt zusammen mit biologischem Taxon" ;
+:isDefinedByBiologicalTaxon a owl:ObjectProperty ;
+    rdfs:label "is defined by biological taxon"@en ,
+        "ist definiert durch das biologische Taxon"@de ;
     rdfs:range wd:Q16521 .
 
-:BCArelatesTo a owl:ObjectProperty ;
+:BCAisDefinedByBiologicalTaxon a owl:ObjectProperty ;
     rdfs:domain :BiologicalControlAgent ;
     rdfs:range wd:Q16521 ;
-    rdfs:subPropertyOf :relatesToBiologicalTaxon ;
-    rdfs:label "belongs to"@en,
-        "belongs to"@de ;
+    rdfs:subPropertyOf :isDefinedByBiologicalTaxon ;
+    rdfs:label "is defined by biological taxon"@en ,
+        "ist definiert durch das biologische Taxon"@de ;
     rdfs:comment "A biological control agent belongs to a certain biological taxon."@en ,
         "Ein Organismus für die biologische Schädlingsbekämpfung gehört zu einem bestimmten biologischen Taxon."@de .
+
+:bioticStressorIsDefinedByBiologicalTaxon a owl:ObjectProperty ;
+    rdfs:subPropertyOf :isDefinedByBiologicalTaxon ;
+    rdfs:label "is defined by biological taxon"@en ,
+        "ist definiert durch das biologische Taxon"@de ;
+    rdfs:domain :BioticStressor ;
+    rdfs:range wd:Q16521 .
+
+:cropIsRelatedToBiologicalTaxon a owl:ObjectProperty ;
+    rdfs:subPropertyOf :isDefinedByBiologicalTaxon ;
+    rdfs:label "is related to biological taxon"@en ,
+        "hängt zusammen mit dem biologischen Taxon"@de ;
+    rdfs:domain :CropGroup ;
+    rdfs:range wd:Q16521 .

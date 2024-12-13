@@ -7,32 +7,29 @@ library(jsonld)
 # --------------------------------------------------------------------------------------------------------
 
 # set path to RDF file
-RDF = rdf_parse("ontology/data.ttl")
+RDF = rdf_parse("graph/plant-protection.ttl")
 
 # define SPARQL query
 SPARQL = '
-PREFIX : <https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/plant-protection.ttl#>
+PREFIX : <https://agriculture.ld.admin.ch/foag/plant-protection#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT ?productName ?code ?companyName ?countryName ?substanceName ?parallel ?nonProfessional
+SELECT ?productName ?code ?companyName ?UID ?nonProfessional ?parallel ?countryOfOrigin
 WHERE {
   ?product a :Product .
   ?product rdfs:label ?productName .
-  ?product :hasFederalRegistrationCode ?code .
+  ?product :hasFederalAdmissionNumber ?code .
   ?company :holdsPermissionToSell ?product .
   ?company rdfs:label ?companyName .
-  OPTIONAL { 
-    ?company :locatedInCountry ?country .
-    ?country rdfs:label ?countryName .
-    FILTER(LANG(?countryName)="en")
+  OPTIONAL {
+    ?company :hasUID ?UID .
   }
-  OPTIONAL { 
-    ?product :contains ?substance .
-    ?substance rdfs:label ?substanceName .
-  }
-  OPTIONAL { ?product :isParallelImport ?parallel . }
-  OPTIONAL { ?product :isNonProfessionallyAllowed ?nonProfessional . }
+  ?product :isParallelImport ?parallel .
+  ?product :isNonProfessionallyAllowed ?nonProfessional .
+  ?product :hasCountryOfOrigin ?country .
+  ?country rdfs:label ?countryOfOrigin
+  FILTER(LANG(?countryOfOrigin)="en")
 }
-LIMIT 10
+LIMIT 15
 '
 
 # run SPARQL query
@@ -42,14 +39,11 @@ rdf_query(RDF, SPARQL)
 # EXAMPLE 2 : READ THE DATA FILE -------------------------------------------------------------------------
 # --------------------------------------------------------------------------------------------------------
 
-# set path to RDF file
-RDF = rdf_parse("ontology/data.ttl")
-
 # define SPARQL query
 SPARQL = '
-PREFIX : <https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/plant-protection.ttl#>
+PREFIX : <https://agriculture.ld.admin.ch/foag/plant-protection#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT ?companyName (COUNT(DISTINCT ?product) AS ?productCount)
+SELECT ?companyName ?countryName (COUNT(DISTINCT ?product) AS ?productCount)
 WHERE {
   ?product a :Product .
   ?product :hasPermissionHolder ?company .
@@ -63,25 +57,28 @@ ORDER BY DESC(?productCount)
 '
 
 # run SPARQL query
-rdf_query(RDF, SPARQL)
+rdf_query(RDF, SPARQL) |> print(n = 20)
 
 # --------------------------------------------------------------------------------------------------------
 # EXAMPLE 3 : SAME AND SIMILAR PRODUCTS ------------------------------------------------------------------
 # --------------------------------------------------------------------------------------------------------
 
-# set path to RDF file
-RDF = rdf_parse("ontology/data.ttl")
-
 # define SPARQL query
 SPARQL = '
-PREFIX : <https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/plant-protection.ttl#>
+PREFIX : <https://agriculture.ld.admin.ch/foag/plant-protection#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT ?sameProductName ?companyName
+SELECT ?sameProductName ?federalAdmissionNumber ?countryOfOrigin ?companyName
 WHERE {
-  ?sameProduct :isSameProductAs :1-W-7573-2 .
+  ?sameProduct :isSameProductAs :1-W-5218 .
   ?sameProduct rdfs:label ?sameProductName .
+  ?sameProduct :hasFederalAdmissionNumber ?federalAdmissionNumber .
   ?sameProduct :hasPermissionHolder ?company .
   ?company rdfs:label ?companyName .
+  OPTIONAL {
+    ?sameProduct :hasCountryOfOrigin ?country .
+    ?country rdfs:label ?countryOfOrigin
+    FILTER(LANG(?countryOfOrigin)="en")
+  }
 }
 '
 

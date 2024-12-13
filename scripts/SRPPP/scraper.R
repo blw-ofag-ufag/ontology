@@ -10,37 +10,7 @@ library(srppp)
 library(tidyr)
 
 # ------------------------------------------------------------------
-# DOWNLOAD THE SWISS PLANT PROTECTION REGISTRY AS AN XML FILE
-# ------------------------------------------------------------------
-
-# Download registry using `srppp` package
-SRPPP <- srppp_dm()
-
-# Download and unzip the file
-zip_url <- "https://www.blv.admin.ch/dam/blv/de/dokumente/zulassung-pflanzenschutzmittel/pflanzenschutzmittelverzeichnis/daten-pflanzenschutzmittelverzeichnis.zip.download.zip/Daten%20Pflanzenschutzmittelverzeichnis.zip"
-temp_zip <- tempfile(fileext = ".zip")
-unzip_dir <- tempdir()
-download.file(zip_url, temp_zip, mode = "wb")
-unzip(temp_zip, exdir = unzip_dir)
-
-# Read the XML file
-xml_file_path <- file.path(unzip_dir, "PublicationData.xml")
-xml_data <- read_xml(xml_file_path)
-
-# Read mapping tables
-wikidata_mapping_countries = read.csv("mapping-tables/wikidata-mapping-countries.csv", row.names = 1)
-wikidata_mapping_cities = read.csv("mapping-tables/wikidata-mapping-countries.csv", row.names = 1)
-UID_mapping_companies = read.csv("mapping-tables/UID-mapping-companies.csv", row.names = 1)
-
-# Extract all city elements
-cities = xml_find_all(xml_data, "//MetaData[@name='City']/Detail") %>%
-  detail_to_df() %>%
-  as.data.frame() %>%
-  subset(subset = lang=="de", select = c(1,3))
-rownames(cities) = cities$ID
-
-# ------------------------------------------------------------------
-# DEFINE GENERAL FUNCTIONS
+# DEFINE HELPER FUNCTIONS
 # ------------------------------------------------------------------
 
 # Function to extract attributes and create a data frame
@@ -92,6 +62,36 @@ literal <- function(x, datatype = NULL, lang = NULL) {
 # DOMAINS
 # 1: Products
 # 2: Companies
+
+# ------------------------------------------------------------------
+# DOWNLOAD THE SWISS PLANT PROTECTION REGISTRY AS AN XML FILE
+# ------------------------------------------------------------------
+
+# Download registry using `srppp` package
+SRPPP <- srppp_dm()
+
+# Download and unzip the file
+zip_url <- "https://www.blv.admin.ch/dam/blv/de/dokumente/zulassung-pflanzenschutzmittel/pflanzenschutzmittelverzeichnis/daten-pflanzenschutzmittelverzeichnis.zip.download.zip/Daten%20Pflanzenschutzmittelverzeichnis.zip"
+temp_zip <- tempfile(fileext = ".zip")
+unzip_dir <- tempdir()
+download.file(zip_url, temp_zip, mode = "wb")
+unzip(temp_zip, exdir = unzip_dir)
+
+# Read the XML file
+xml_file_path <- file.path(unzip_dir, "PublicationData.xml")
+xml_data <- read_xml(xml_file_path)
+
+# Read mapping tables
+wikidata_mapping_countries = read.csv("mapping-tables/wikidata-mapping-countries.csv", row.names = 1)
+wikidata_mapping_cities = read.csv("mapping-tables/wikidata-mapping-countries.csv", row.names = 1)
+UID_mapping_companies = read.csv("mapping-tables/UID-mapping-companies.csv", row.names = 1)
+
+# Extract all city elements
+cities = xml_find_all(xml_data, "//MetaData[@name='City']/Detail") %>%
+  detail_to_df() %>%
+  as.data.frame() %>%
+  subset(subset = lang=="de", select = c(1,3))
+rownames(cities) = cities$ID
 
 # ------------------------------------------------------------------
 # WRITE PRODUCT INFORMATION
@@ -228,3 +228,19 @@ for (i in 1:nrow(companies)) {
 }
 
 sink()
+
+
+# ------------------------------------------------------------------
+# Write data about biological taxa
+# ------------------------------------------------------------------
+
+# Extract all city elements
+# pests = xml_find_all(xml_data, "//MetaData[@name='Pest']/Detail") %>%
+#   detail_to_df() %>%
+#   as.data.frame()
+# pests = pests %>% pivot_wider(names_from = lang, values_from = name) %>% subset(select = c("ID","de","en","lt"))
+# write.csv(data.frame(pests, Wikidata_IRI = ""), "mapping-tables/wikidata-mapping-biological-taxa.csv", row.names = FALSE)
+# 
+mapping_biological_taxa <- read.csv("mapping-tables/wikidata-mapping-biological-taxa.csv")
+as_tibble(mapping_biological_taxa)
+100*(1-sum(mapping_biological_taxa$Wikidata_IRI=="", na.rm = T)/nrow(mapping_biological_taxa))
