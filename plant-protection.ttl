@@ -4,6 +4,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix wd: <http://www.wikidata.org/entity/> .
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -100,7 +101,7 @@
     ] ;
     owl:equivalentClass [
         a owl:Restriction ;
-        owl:onProperty :hasFederalRegistrationCode ;
+        owl:onProperty :hasFederalAdmissionNumber ;
         owl:cardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
     owl:equivalentClass [
@@ -142,13 +143,49 @@
         "ist erlaubt für die nicht-berufliche Verwendung"@de ;
     rdfs:seeAlso <https://www.fedlex.admin.ch/eli/cc/2010/340/de#art_64> .
 
-:hasFederalRegistrationCode a owl:DatatypeProperty ;
+:hasFederalAdmissionNumber a owl:DatatypeProperty ;
     rdfs:domain :Product ;
     rdfs:range xsd:string ;
-    rdfs:label "has federal registration number"@en ,
+    rdfs:label "has federal admission number"@en ,
         "hat eidgenössische Zulassungsnummer"@de ;
-    rdfs:comment "The federal registration number (W-Number) uniquely identifies a product registration. W-Numbers with a dash (e.g., 18-1, 18-2) represent equivalent products held by different legal entities, while W-Numbers without a dash (e.g., 18) represent the original registration."@en ,
-        "Die eidgenössische Zulassungsnummer (W-Nummer) identifiziert eine Produktregistrierung eindeutig. W-Nummern mit einem Bindestrich (z.B. 18-1, 18-2) stellen äquivalente Produkte dar, die von verschiedenen juristischen Personen gehalten werden, während W-Nummern ohne Bindestrich (z.B. 18) die ursprüngliche Registrierung darstellen."@de .
+    rdfs:comment "The federal admission number uniquely identifies a product registration. It is either constructed as a W-Number in the case of federal admissions (e.g. W-18) or as a parallel import number with the country of origin starting letter in the code in the case of parallel imports (e.g. I-2789 for a parallel import from Italy). W-Numbers with a dash (e.g., W-18-1, W-18-2) represent equivalent products held by different legal entities, while W-Numbers without a dash (e.g., W-18) represent the original registration."@en .
+
+:ParallelImport a owl:Class ;
+    rdfs:subClassOf :Product ;
+    rdfs:label "Parallel import"@en ,
+        "Parallelimport"@de .
+
+:hasForeignAdmissionNumber a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "has foreign admission number"@en ,
+        "hat ausländische Zulassungsnummer"@de ;
+    rdfs:domain :ParallelImport .
+
+:hasCountryOfOrigin a owl:ObjectProperty ;
+    rdfs:label "has country of origin"@en ,
+        "hat Herkunftsland"@de ;
+    rdfs:domain :ParallelImport ;
+    rdfs:range wd:Q6256 .
+
+wd:Q6256 a owl:Class ;
+    rdfs:label "Country"@en ,
+        "Land"@de .
+
+wdt:P297 a owl:DatatypeProperty ;
+    rdfs:label "has ISO 3166-1 alpha-2 country code"@en ,
+        "hat ISO 3166-1 alpha-2 Ländercode"@de ;
+    rdfs:comment "Identifier for a country in two-letter format per ISO 3166-1."@en ,
+        "Zweibuchstabiger ISO-3166-1-Ländercode."@de ;
+    rdfs:domain wd:Q6256 ;
+    rdfs:range xsd:string .
+
+wdt:P298 a owl:DatatypeProperty ;
+    rdfs:label "has ISO 3166-1 alpha-3 country code"@en ,
+        "hat ISO 3166-1 alpha-3 Ländercode"@de ;
+    rdfs:comment "Identifier for a country in two-letter format per ISO 3166-1."@en ,
+        "Dreibuchstabiger ISO-3166-1-Ländercode."@de ;
+    rdfs:domain wd:Q6256 ;
+    rdfs:range xsd:string .
 
 :hasSoldoutDeadline a owl:DatatypeProperty ;
     rdfs:domain :Product ;
@@ -163,14 +200,6 @@
     rdfs:label "has exhaustion deadline"@en, "hat ein Ablaufdatum der Nutzung"@de ;
     rdfs:comment "The date by which the product must no longer be used, typically after the product registration has been revoked."@en,
         "Das Datum, an dem das Produkt nicht mehr genutzt werden darf, in der Regel nach der Widerrufung der Produktregistrierung."@de .
-
-:isSalesPermission a owl:DatatypeProperty ;
-    rdfs:domain :Product ;
-    rdfs:range xsd:boolean .
-
-:isTerminated a owl:DatatypeProperty ;
-    rdfs:domain :Product ;
-    rdfs:range xsd:boolean .
 
 :Company a owl:Class ;
     rdfs:label "Company"@en, "Firma"@de ;
@@ -220,15 +249,29 @@
     rdfs:range xsd:string ;
     rdfs:comment "The email address of the company."@en .
 
-:locatedInCity a owl:ObjectProperty ;
-    rdfs:label "located in city"@en, "befindet sich in Stadt"@de ;
+:hasUID a owl:DatatypeProperty ;
+    rdfs:label "has UID"@en,
+        "hat UID"@de ;
+    rdfs:comment "The UID (from German *Unternehmens-Identifikationsnummer*, translating to enterprise identification number) is a standardized identification number assigned to businesses and organizations in Switzerland. It is managed by the Swiss Federal Statistical Office (FSO) and serves as a unique identifier for enterprises across various administrative and economic registers. The UID simplifies interactions between businesses and public authorities by providing a consistent and centralized reference for identifying entities."@en ,
+        "Die UID (Unternehmens-Identifikationsnummer) ist eine standardisierte Identifikationsnummer, die Unternehmen und Organisationen in der Schweiz zugewiesen wird. Sie wird vom Schweizer Bundesamt für Statistik (BFS) verwaltet und dient als eindeutige Kennung für Unternehmen in verschiedenen Verwaltungs- und Wirtschaftsregistern. Die UID vereinfacht die Interaktion zwischen Unternehmen und Behörden, indem sie eine einheitliche und zentralisierte Referenz zur Identifizierung von Unternehmen bereitstellt."@de ;
     rdfs:domain :Company ;
-    rdfs:comment "The city where the company is located."@en .
+    rdfs:range xsd:string ;
+    rdfs:seeAlso <https://www.uid.admin.ch/> .
+
+:locatedInCity a owl:ObjectProperty ;
+    rdfs:label "located in city"@en,
+        "befindet sich in Stadt"@de ;
+    rdfs:domain :Company ;
+    rdfs:comment "The city where the company is located."@en,
+        "Die Stadt, in der sich das Unternehmen befindet."@de .
 
 :locatedInCountry a owl:ObjectProperty ;
-    rdfs:label "located in country"@en, "befindet sich in Land"@de ;
+    rdfs:label "located in country"@en ,
+        "befindet sich in Land"@de ;
     rdfs:domain :Company ;
-    rdfs:comment "The country where the company is located."@en .
+    rdfs:range wd:Q6256 ;
+    rdfs:comment "The country where the company is located."@en,
+        "Das Land, in dem sich das Unternehmen befindet."@de .
 
 :holdsPermissionToSell a owl:ObjectProperty ;
     rdfs:domain :Company ;
@@ -300,6 +343,13 @@
 :Damage a owl:Class ;
     rdfs:label "Damage"@en ,
         "Schaden"@de .
+
+:hasUpperDamageLimit a owl:DatatypeProperty ;
+    rdfs:domain :Damage ;
+    rdfs:range xsd:float ;
+    rdfs:label "upper damage limit"@en ,
+        "obere Schadenslimite"@de ;
+    rdfs:comment "Indicates the damage limit in percentage (0% -100%) that a crop stressor can reasonably cause."@en .
 
 :causes a owl:ObjectProperty ;
     rdfs:domain :CropStressor ;

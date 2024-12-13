@@ -84,31 +84,13 @@ literal <- function(x, datatype = NULL, lang = NULL) {
 # 4: Countries
 
 # ------------------------------------------------------------------
-# WRITE NEW TURTLE FILE AND DEFINE PREFIXES
-# ------------------------------------------------------------------
-
-# create new file
-sink("ontology/data.ttl")
-cat("@prefix : <https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/plant-protection.ttl#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/terms/> .
-@prefix wd: <http://www.wikidata.org/entity/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-")
-sink()
-
-# ------------------------------------------------------------------
 # WRITE PRODUCT INFORMATION
 # ------------------------------------------------------------------
 
 # open file
-sink("ontology/data.ttl", append = TRUE)
+sink("ontology/products.ttl", append = TRUE)
 
-# pre-process tables
+# pre-process product tables
 products = as.data.frame(SRPPP$products)
 products = products[order(products$pNbr),]
 products[products==""] <- NA
@@ -117,7 +99,7 @@ products[products==""] <- NA
 for (i in 1:nrow(products)) {
   sprintf("\n:1-W-%s a :Product ;", products[i,"wNbr"]) |> cat()
   sprintf("\n    rdfs:label \"%s\"^^xsd:string ;", products[i,"name"]) |> cat()
-  sprintf("\n    :hasFederalRegistrationCode \"W-%s\"^^xsd:string ;", products[i,"wNbr"]) |> cat()
+  sprintf("\n    :hasFederalAdmissionNumber \"W-%s\"^^xsd:string ;", products[i,"wNbr"]) |> cat()
   if(!is.na(products[i,"exhaustionDeadline"])) sprintf("\n    :hasExhaustionDeadline \"%s\"^^xsd:date ;", products[i,"exhaustionDeadline"]) |> cat()
   if(!is.na(products[i,"soldoutDeadline"])) sprintf("\n    :hasSoldoutDeadline \"%s\"^^xsd:date ;", products[i,"soldoutDeadline"]) |> cat()
   if(i>1) if(products[i,1]==products[i-1,1]) sprintf("\n    :isSameProductAs :1-W-%s ;", products[i-1,"wNbr"]) |> cat()
@@ -133,9 +115,28 @@ for (i in 1:nrow(products)) {
 
 sink()
 
-products = SRPPP$parallel_imports
+# pre-process parallel import tables
+products = as.data.frame(SRPPP$parallel_imports)
 products = products[order(products$pNbr),]
 products[products==""] <- NA
+
+# write triples
+for (i in 1:nrow(products)) {
+  sprintf("\n:1-%s a :Product ;", products[i,"id"]) |> cat()
+  sprintf("\n    rdfs:label \"%s\"^^xsd:string ;", products[i,"name"]) |> cat()
+  sprintf("\n    :hasFederalAdmissionNumber \"W-%s\"^^xsd:string ;", products[i,"wNbr"]) |> cat()
+  if(!is.na(products[i,"exhaustionDeadline"])) sprintf("\n    :hasExhaustionDeadline \"%s\"^^xsd:date ;", products[i,"exhaustionDeadline"]) |> cat()
+  if(!is.na(products[i,"soldoutDeadline"])) sprintf("\n    :hasSoldoutDeadline \"%s\"^^xsd:date ;", products[i,"soldoutDeadline"]) |> cat()
+  if(i>1) if(products[i,1]==products[i-1,1]) sprintf("\n    :isSameProductAs :1-W-%s ;", products[i-1,"wNbr"]) |> cat()
+  if(sum(products[,"pNbr"]==products[i,"pNbr"])>1) {
+    for (j in which(products[,"pNbr"]==products[i,"pNbr"])) {
+      if(i != j) sprintf("\n    :isSameProductAs :1-W-%s ;", products[j,"wNbr"]) |> cat()
+    }
+  }
+  cat(sprintf("\n    :isNonProfessionallyAllowed %s ;", tolower(as.character(products[i,"pNbr"] %in% SRPPP$CodeS[SRPPP$CodeS$desc_pk==13876,"pNbr"]))))
+  cat("\n    :isParallelImport false ;")
+  sprintf("\n    :hasPermissionHolder :2-%s .", products[i,"permission_holder"]) |> cat()
+}
 
 # ------------------------------------------------------------------
 # WRITE COMPANY (PERMISSION HOLDER) INFORMATION
