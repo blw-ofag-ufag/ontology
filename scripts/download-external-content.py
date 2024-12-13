@@ -29,7 +29,7 @@ headers = {"Accept": "application/sparql-results+xml"}  # Request XML format
 response = requests.get(url, headers=headers, params={"query": query})
 
 # Ensure the directory exists
-filename_xml = "ontology/countries.xml"
+filename_xml = "ontology/wikidata-countries.xml"
 os.makedirs(os.path.dirname(filename_xml), exist_ok=True)
 
 # Save raw results to XML file
@@ -88,7 +88,7 @@ def xml_to_ttl(input_file, output_file):
     print(f"Converted results saved as {output_file}")
 
 # Convert the XML to TTL
-filename_ttl = "ontology/countries.ttl"
+filename_ttl = "ontology/wikidata-countries.ttl"
 xml_to_ttl(filename_xml, filename_ttl)
 
 # Delete the XML file
