@@ -30,6 +30,7 @@ xml_data <- read_xml(xml_file_path)
 # Read mapping tables
 wikidata_mapping_countries = read.csv("mapping-tables/wikidata-mapping-countries.csv", row.names = 1)
 wikidata_mapping_cities = read.csv("mapping-tables/wikidata-mapping-countries.csv", row.names = 1)
+UID_mapping_companies = read.csv("mapping-tables/UID-mapping-companies.csv", row.names = 1)
 
 # Extract all city elements
 cities = xml_find_all(xml_data, "//MetaData[@name='City']/Detail") %>%
@@ -122,7 +123,7 @@ products$isNonProfessionallyAllowed = products[,"pNbr"] %in% unlist(SRPPP$CodeS[
 products = products[order(products$pNbr),]
 
 # open file
-sink("ontology/products.ttl")
+sink("data/products.ttl")
 
 cat("
 @prefix : <https://agriculture.ld.admin.ch/foag/plant-protection#> .
@@ -175,104 +176,55 @@ sink()
 # WRITE COMPANY (PERMISSION HOLDER) INFORMATION
 # ------------------------------------------------------------------
 
-# Extract company elements
-company <- xml_find_all(xml_data, "//PermissionHolder")
-COMPANY <- nodeset_to_dataframe(company)
+# extract company elements from XML file
+company_xml <- xml_find_all(xml_data, "//PermissionHolder")
 
-# Extract attributes that weren't written to the table
-COMPANY$City <- cities[xml_attr(xml_find_all(company, "City"), "primaryKey"),"name"]
-
-# Convert country IDs to wikidata IRI using mapping table
-COMPANY$Country <- wikidata_mapping_countries[xml_attr(xml_find_all(company, "Country"), "primaryKey"),]
+# create company table
+companies <- nodeset_to_dataframe(company_xml)
+companies$hasUID <- UID_mapping_companies[companies$primaryKey,"UID"]
+companies$locatedInCity <- cities[xml_attr(xml_find_all(company_xml, "City"), "primaryKey"),"name"]
+companies$locatedInCountry <- wikidata_mapping_countries[xml_attr(xml_find_all(company_xml, "Country"), "primaryKey"),]
 
 # Format phone and fax according to RFC3966 and extract email addresses that were typed into phone or fax field...
 email_regex <- "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
-email_from_phone <- ifelse(grepl(email_regex, COMPANY$Phone), tolower(COMPANY$Phone), NA)
-email_from_fax <- ifelse(grepl(email_regex, COMPANY$Fax), tolower(COMPANY$Fax), NA)
-phones <- COMPANY$Phone |> dialr::phone("CH") |> format(format = "RFC3966", clean = FALSE)
-faxes <- COMPANY$Fax |> dialr::phone("CH") |> format(format = "RFC3966", clean = FALSE)
+email_from_phone <- ifelse(grepl(email_regex, companies$Phone), tolower(companies$Phone), NA)
+email_from_fax <- ifelse(grepl(email_regex, companies$Fax), tolower(companies$Fax), NA)
+companies$hasEmailAddress <- ifelse(is.na(email_from_phone), email_from_fax, email_from_phone)
+companies$hasPhoneNumber <- companies$Phone |> dialr::phone("CH") |> format(format = "RFC3966", clean = FALSE)
+companies$hasFaxNumber <- companies$Fax |> dialr::phone("CH") |> format(format = "RFC3966", clean = FALSE)
 
-# Combine everything into RDF triples
-company_rdf <- paste0(
-  sprintf("%s a :Company ;\n", IRI("2", COMPANY$primaryKey)),
-  sprintf("    rdfs:label \"%s\"^^xsd:string ;\n", COMPANY$Name),
-  ifelse(nchar(COMPANY$AdditionalInformation) > 0, sprintf("    rdfs:comment \"%s\"^^xsd:string ;\n", COMPANY$AdditionalInformation), ""),
-  ifelse(nchar(COMPANY$Street) > 0, sprintf("    :hasStreet \"%s\"^^xsd:string ;\n", COMPANY$Street), ""),
-  ifelse(nchar(COMPANY$PostOfficeBox) > 0, sprintf("    :hasPostOfficeBox \"%s\"^^xsd:string ;\n", COMPANY$PostOfficeBox), ""),
-  ifelse(!is.na(city_ids), sprintf("    :locatedInCity %s ;\n", literal(COMPANY$City, datatype = "xsd:string")), ""),
-  ifelse(!is.na(country_ids), sprintf("    :locatedInCountry wd:%s ;\n", COMPANY$Country), ""),
-  ifelse(!is.na(phones), sprintf("    :hasPhone \"%s\"^^xsd:string ;\n", phones), ""),
-  ifelse(!is.na(faxes), sprintf("    :hasFax \"%s\"^^xsd:string ;\n", faxes), ""),
-  ".\n"
-)
+# rearrange and rename
+companies <- as.data.frame(companies)
+companies[companies==""] <- NA
+companies <- companies[,c("primaryKey","Name","hasUID","hasPhoneNumber","hasFaxNumber","hasEmailAddress","PostOfficeBox","AdditionalInformation","Street","locatedInCity","locatedInCountry")]
+colnames(companies) <- c("IRI","label","hasUID","hasPhoneNumber","hasFaxNumber","hasEmailAddress","PostOfficeBox","AdditionalInformation","hasStreet","locatedInCity","locatedInCountry")
 
-# Collapse all triples into one string, remove unnecessary lines
-company_rdf <- gsub(";\n\\.", ".", paste(company_rdf, collapse = ""))
+# write.csv(data.frame(companies[companies$locatedInCountry=="Q39",c(1,2,10)], UID = NA), "mapping-tables/UID-companies.csv", row.names = FALSE)
 
 # open file
-sink("ontology/data.ttl", append = TRUE)
+sink("data/companies.ttl")
 
-cat(gsub(";\n\\.", ".", paste(company_rdf, collapse = "")))
+cat("
+@prefix : <https://agriculture.ld.admin.ch/foag/plant-protection#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
-# add all the products a company sells
-for (i in 1:nrow(products)) {
-  sprintf("%s :holdsPermissionToSell %s .\n", IRI("2", products[i,"permission_holder"]), IRI("1-W", products[i,"wNbr"])) |> cat()
+")
+
+# loop over every company
+for (i in 1:nrow(companies)) {
+  sprintf("%s a :Company ;\n", IRI("2", companies[i,"IRI"])) |> cat()
+  sprintf("    rdfs:label %s ;\n", literal(companies[i,"label"])) |> cat()
+  for (x in c("hasUID","hasPhoneNumber","hasFaxNumber","hasEmailAddress","PostOfficeBox","AdditionalInformation","hasStreet","locatedInCity")) {
+    if(!is.na(companies[i,x])) sprintf("    :%s %s ;\n", x, literal(companies[i,x])) |> cat()
+  }
+  for (x in na.omit(products[products$hasPermissionHolder==companies[i,"IRI"],"hasFederalAdmissionNumber"])) {
+    sprintf("    :holdsPermissionToSell %s ;\n", IRI("1", x)) |> cat()
+  }
+  sprintf("    :locatedInCountry wd:%s .\n", companies[i,"locatedInCountry"]) |> cat()
+  cat("\n")
 }
 
 sink()
-
-# ------------------------------------------------------------------
-# WRITE COUNTRY INFORMATION
-# ------------------------------------------------------------------
-
-# Open file
-sink("ontology/data.ttl", append = TRUE)
-
-rdf = paste0(
-  sprintf("%s a :City ;\n", IRI("3",df[,1])),
-  ifelse(df[,"de"]!="", sprintf("    rdfs:label %s ;\n", literal(df[,"de"],lang="de")), ""),
-  ifelse(df[,"fr"]!="", sprintf("    rdfs:label %s ;\n", literal(df[,"fr"],lang="fr")), ""),
-  ifelse(df[,"it"]!="", sprintf("    rdfs:label %s ;\n", literal(df[,"it"],lang="it")), ""),
-  ifelse(df[,"en"]!="", sprintf("    rdfs:label %s ;\n", literal(df[,"en"],lang="en")), ""),
-  ".\n"
-)
-cat(gsub(";\n\\.", ".", paste(rdf, collapse = "")))
-
-# Extract all country elements
-df = xml_find_all(xml_data, "//MetaData[@name='Country']/Detail") %>%
-  detail_to_df() %>%
-  pivot_wider(names_from = lang, values_from = name) %>%
-  as.data.frame()
-rdf = paste0(
-  sprintf("%s a :Country ;\n", IRI("4",df[,1])),
-  ifelse(df[,"de"]!="", sprintf("    rdfs:label %s ;\n", literal(df[,"de"],lang="de")), ""),
-  ifelse(df[,"fr"]!="", sprintf("    rdfs:label %s ;\n", literal(df[,"fr"],lang="fr")), ""),
-  ifelse(df[,"it"]!="", sprintf("    rdfs:label %s ;\n", literal(df[,"it"],lang="it")), ""),
-  ifelse(df[,"en"]!="", sprintf("    rdfs:label %s ;\n", literal(df[,"en"],lang="en")), ""),
-  ".\n"
-)
-cat(gsub(";\n\\.", ".", paste(rdf, collapse = "")))
-
-# close file
-sink()
-
-write.csv(data.frame(df[,1:2], "wd_Q6256" = NA), "mapping-tables/countries.csv", row.names = FALSE)
-
-
-
-
-
-
-
-
-
-prefixes = "@prefix : <https://agriculture.ld.admin.ch/foag/plant-protection#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/terms/> .
-@prefix wd: <http://www.wikidata.org/entity/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-"

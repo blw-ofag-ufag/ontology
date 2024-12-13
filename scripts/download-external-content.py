@@ -88,7 +88,7 @@ def xml_to_ttl(input_file, output_file):
     print(f"Converted results saved as {output_file}")
 
 # Convert the XML to TTL
-filename_ttl = "ontology/wikidata-countries.ttl"
+filename_ttl = "data/wikidata-countries.ttl"
 xml_to_ttl(filename_xml, filename_ttl)
 
 # Delete the XML file

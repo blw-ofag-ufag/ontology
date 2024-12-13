@@ -212,10 +212,12 @@ wdt:P298 a owl:DatatypeProperty ;
     rdfs:comment "The name of the company."@en .
 
 :hasAdditionalInformation a owl:DatatypeProperty ;
-    rdfs:label "has additional information"@en, "hat zusätzliche Information"@de ;
+    rdfs:label "has additional information"@en,
+        "hat zusätzliche Information"@de ;
     rdfs:domain :Company ;
     rdfs:range xsd:string ;
-    rdfs:comment "Supplementary information about the company."@en .
+    rdfs:comment "Supplementary information about the company address."@en ,
+        "Zusatzinformationen zur Firmenadresse."@de .
 
 :hasStreet a owl:DatatypeProperty ;
     rdfs:label "has street"@en, "hat Strasse"@de ;
@@ -229,21 +231,21 @@ wdt:P298 a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     rdfs:comment "The post office box of the company."@en .
 
-:hasPhone a owl:DatatypeProperty ;
+:hasPhoneNumber a owl:DatatypeProperty ;
     rdfs:label "has phone"@en, "hat Telefon"@de ;
     rdfs:domain :Company ;
     rdfs:range xsd:string ;
     rdfs:comment "The phone number of the company, formatted as per RFC 3966."@en ;
     rdfs:isDefinedBy <https://www.rfc-editor.org/rfc/rfc3966> .
 
-:hasFax a owl:DatatypeProperty ;
+:hasFaxNumber a owl:DatatypeProperty ;
     rdfs:label "has fax"@en, "hat Fax"@de ;
     rdfs:domain :Company ;
     rdfs:range xsd:string ;
     rdfs:comment "The fax number of the company, formatted as per RFC 3966."@en ;
     rdfs:isDefinedBy <https://www.rfc-editor.org/rfc/rfc3966> .
 
-:hasEmail a owl:DatatypeProperty ;
+:hasEmailAddress a owl:DatatypeProperty ;
     rdfs:label "has email address"@en, "hat Emailadresse"@de ;
     rdfs:domain :Company ;
     rdfs:range xsd:string ;

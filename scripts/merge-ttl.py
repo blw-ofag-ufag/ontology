@@ -20,8 +20,9 @@ def merge_ttl_files(file_list, output_file):
 if __name__ == "__main__":
     file_list = [
         "ontology/plant-protection-ontology.ttl",
-        "ontology/products.ttl",
-        "ontology/wikidata-countries.ttl"
+        "data/products.ttl",
+        "data/companies.ttl",
+        "data/wikidata-countries.ttl"
     ]
     output_file = "graph/plant-protection.ttl"
     merge_ttl_files(file_list, output_file)
