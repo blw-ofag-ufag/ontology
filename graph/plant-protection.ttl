@@ -1387,12 +1387,19 @@ wd:Q986 a wd:Q6256 ;
     wdt:P297 "ER" ;
     wdt:P298 "ERI" .
 
+wdt:P171 a owl:ObjectProperty ;
+    rdfs:label "hat übergeordnetes Taxon"@de,
+        "has parent taxon"@en ;
+    rdfs:domain wd:Q16521 ;
+    rdfs:range wd:Q16521 .
+
 wdt:P297 a owl:DatatypeProperty ;
     rdfs:label "hat ISO 3166-1 alpha-2 Ländercode"@de,
         "has ISO 3166-1 alpha-2 country code"@en ;
     rdfs:comment "Zweibuchstabiger ISO-3166-1-Ländercode."@de,
         "Identifier for a country in two-letter format per ISO 3166-1."@en ;
     rdfs:domain wd:Q6256 ;
+    rdfs:isDefinedBy <https://www.iso.org/iso-3166-country-codes.html> ;
     rdfs:range xsd:string .
 
 wdt:P298 a owl:DatatypeProperty ;
@@ -1401,6 +1408,7 @@ wdt:P298 a owl:DatatypeProperty ;
     rdfs:comment "Dreibuchstabiger ISO-3166-1-Ländercode."@de,
         "Identifier for a country in two-letter format per ISO 3166-1."@en ;
     rdfs:domain wd:Q6256 ;
+    rdfs:isDefinedBy <https://www.iso.org/iso-3166-country-codes.html> ;
     rdfs:range xsd:string .
 
 : a owl:Ontology ;
@@ -1426,14 +1434,14 @@ wdt:P298 a owl:DatatypeProperty ;
         "Adjuvant"@en ;
     rdfs:subClassOf :ChemicalProduct .
 
-:BCArelatesTo a owl:ObjectProperty ;
-    rdfs:label "belongs to"@de,
-        "belongs to"@en ;
+:BCAisDefinedByBiologicalTaxon a owl:ObjectProperty ;
+    rdfs:label "ist definiert durch das biologische Taxon"@de,
+        "is defined by biological taxon"@en ;
     rdfs:comment "Ein Organismus für die biologische Schädlingsbekämpfung gehört zu einem bestimmten biologischen Taxon."@de,
         "A biological control agent belongs to a certain biological taxon."@en ;
     rdfs:domain :BiologicalControlAgent ;
     rdfs:range wd:Q16521 ;
-    rdfs:subPropertyOf :relatesToBiologicalTaxon .
+    rdfs:subPropertyOf :isDefinedByBiologicalTaxon .
 
 :BestPracticeRecommendations a owl:Class ;
     rdfs:label "Empfehlung"@de,
@@ -1463,6 +1471,13 @@ wdt:P298 a owl:DatatypeProperty ;
         :AdditiveToDeclare,
         :Synergist .
 
+:bioticStressorIsDefinedByBiologicalTaxon a owl:ObjectProperty ;
+    rdfs:label "ist definiert durch das biologische Taxon"@de,
+        "is defined by biological taxon"@en ;
+    rdfs:domain :BioticStressor ;
+    rdfs:range wd:Q16521 ;
+    rdfs:subPropertyOf :isDefinedByBiologicalTaxon .
+
 :causesCollateralDamageTo a owl:ObjectProperty ;
     rdfs:label "führt zu einem Kollateralschaden bei"@de,
         "causes collateral damage to"@en ;
@@ -1482,6 +1497,13 @@ wdt:P298 a owl:DatatypeProperty ;
         "concerns"@en ;
     rdfs:domain :Notice ;
     rdfs:range :Action .
+
+:cropIsRelatedToBiologicalTaxon a owl:ObjectProperty ;
+    rdfs:label "hängt zusammen mit dem biologischen Taxon"@de,
+        "is related to biological taxon"@en ;
+    rdfs:domain :CropGroup ;
+    rdfs:range wd:Q16521 ;
+    rdfs:subPropertyOf :isDefinedByBiologicalTaxon .
 
 :enables a owl:ObjectProperty ;
     rdfs:label "ermöglicht"@de,
@@ -7687,15 +7709,6 @@ wd:Q801 a wd:Q6256 ;
     rdfs:subClassOf :CropProtectionProduct ;
     owl:disjointWith :ChemicalProduct .
 
-:BioticStressor a owl:Class ;
-    rdfs:label "Biotischer Schadverursacher"@de,
-        "Biotic crop stressor"@en ;
-    rdfs:comment "Biologische Schädigung einer Kulturpflanze."@de,
-        "Biological harm to a crop."@en ;
-    rdfs:isDefinedBy wd:Q3500367 ;
-    rdfs:seeAlso <https://w.wiki/Byym> ;
-    rdfs:subClassOf :CropStressor .
-
 :EnvironmentalCondition a owl:Class ;
     rdfs:label "Umweltbedingung"@de,
         "Environmental condition"@en .
@@ -7828,17 +7841,6 @@ wd:Q801 a wd:Q6256 ;
         "protects"@en ;
     rdfs:domain :Action ;
     rdfs:range :CropGroup .
-
-:relatesToBiologicalTaxon a owl:ObjectProperty ;
-    rdfs:label "hängt zusammen mit biologischem Taxon",
-        "relates to biological taxon"@en ;
-    rdfs:range wd:Q16521 .
-
-wd:Q16521 a owl:Class ;
-    rdfs:label "Biologisches Taxon"@de,
-        "Biological taxon"@en ;
-    rdfs:comment "Gruppe von einem oder mehreren Organismen, die ein Taxonom als Einheit betrachtet."@de,
-        "Group of one or more organism(s), which a taxonomist adjudges to be a unit."@en .
 
 wd:Q27 a wd:Q6256 ;
     rdfs:label "Irland"@de,
@@ -11869,6 +11871,15 @@ wd:Q27 a wd:Q6256 ;
     rdfs:subClassOf :Substance ;
     owl:disjointWith :ActiveSubstance .
 
+:BioticStressor a owl:Class ;
+    rdfs:label "Biotischer Schadverursacher"@de,
+        "Biotic crop stressor"@en ;
+    rdfs:comment "Biologische Schädigung einer Kulturpflanze."@de,
+        "Biological harm to a crop."@en ;
+    rdfs:isDefinedBy wd:Q3500367 ;
+    rdfs:seeAlso <https://w.wiki/Byym> ;
+    rdfs:subClassOf :CropStressor .
+
 :Mixture a owl:Class ;
     rdfs:label "Chemisches Gemisch"@de,
         "Chemical mixture"@en ;
@@ -15210,6 +15221,11 @@ wd:Q668 a wd:Q6256 ;
 :Notice a owl:Class ;
     rdfs:label "Hinweis"@de,
         "Notice"@en .
+
+:isDefinedByBiologicalTaxon a owl:ObjectProperty ;
+    rdfs:label "ist definiert durch das biologische Taxon"@de,
+        "is defined by biological taxon"@en ;
+    rdfs:range wd:Q16521 .
 
 :1-A-3113 a :ParallelImport,
         :Product ;
@@ -20464,6 +20480,12 @@ wd:Q55 a wd:Q6256 ;
         :1-I-6779 ;
     :locatedInCity "Milano" ;
     :locatedInCountry wd:Q38 .
+
+wd:Q16521 a owl:Class ;
+    rdfs:label "Biologisches Taxon"@de,
+        "Biological taxon"@en ;
+    rdfs:comment "Gruppe von einem oder mehreren Organismen, die ein Taxonom als Einheit betrachtet."@de,
+        "Group of one or more organism(s), which a taxonomist adjudges to be a unit."@en .
 
 wd:Q29 a wd:Q6256 ;
     rdfs:label "Spanien"@de,
@@ -28813,10 +28835,6 @@ wd:Q145 a wd:Q6256 ;
     :locatedInCity "Ougrée" ;
     :locatedInCountry wd:Q31 .
 
-:CropGroup a owl:Class ;
-    rdfs:label "Landwirtschaftliche Kultur"@de,
-        "Crop group"@en .
-
 :Damage a owl:Class ;
     rdfs:label "Schaden"@de,
         "Damage"@en .
@@ -29947,6 +29965,10 @@ wd:Q145 a wd:Q6256 ;
         :1-F-6674 ;
     :locatedInCity "Ecully CEDEX" ;
     :locatedInCountry wd:Q142 .
+
+:CropGroup a owl:Class ;
+    rdfs:label "Landwirtschaftliche Kultur"@de,
+        "Crop group"@en .
 
 :2-10727 a :Company ;
     rdfs:label "Bayer CropScience SA" ;
