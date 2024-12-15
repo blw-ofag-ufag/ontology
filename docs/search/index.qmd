@@ -31,7 +31,8 @@ Type whatever you're searching for into the search field. When you hit <kbd>ENTE
 
 :::{.column-screen-inset}
 ```{=html}
-<br><br><br>
+<br>
+<div id="resultsInfo"></div>
 <div id="resultsTable"></div>
 ```
 :::

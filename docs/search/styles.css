@@ -46,8 +46,14 @@ body {
   width: 100%;
 }
 
-.entity-table th,
-.entity-table td {
+.entity-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  table-layout: fixed; /* Ensures fixed layout for width distribution */
+}
+
+.entity-table th, .entity-table td {
   border: 1px solid #ddd;
   padding: 8px;
 }
@@ -55,4 +61,16 @@ body {
 .entity-table th {
   background-color: #f2f2f2;
   text-align: left;
+}
+
+.name-iri-column {
+  width: 60%;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.types-column {
+  width: 40%;
+  word-wrap: break-word;
+  white-space: normal;
 }
