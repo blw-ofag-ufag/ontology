@@ -63,7 +63,6 @@ async function fetchFullEntities(query) {
             GROUP BY ?entity
         }
     }
-    LIMIT 20
   `;
   const endpointUrl = "https://lindas.admin.ch/query";
   const fullUrl = `${endpointUrl}?query=${encodeURIComponent(sparqlQuery)}&format=json`;
