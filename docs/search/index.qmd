@@ -1,0 +1,37 @@
+---
+title: Multi-Language LINDAS Entity Search
+format:
+    html:
+        include-in-header:
+          - text: |
+              <script src="./fetch-entities.js"></script>
+        theme: minty
+        css: styles.css 
+---
+
+Select your language of choice here (only labels of this language are searched by the query).
+
+```{=html}
+<div class="language-selector">
+    <label><input type="radio" name="language" value="de" checked> German </label>
+    <label><input type="radio" name="language" value="fr"> French </label>
+    <label><input type="radio" name="language" value="it"> Italian </label>
+    <label><input type="radio" name="language" value="en"> English </label>
+</div>
+```
+
+Type whatever you're searching for into the search field. When you hit <kbd>ENTER</kbd>, all results will be fetched.
+
+```{=html}
+<div class="search-container">
+    <input type="text" id="search" class="search-input" placeholder="Search for an entity in this field" />
+    <div id="suggestions" class="suggestions"></div>
+</div>
+```
+
+:::{.column-screen-inset}
+```{=html}
+<br><br><br>
+<div id="resultsTable"></div>
+```
+:::
