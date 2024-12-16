@@ -36,7 +36,7 @@ async function fetchEntities(query) {
       FILTER(LANG(?label) = "${language}") .
       FILTER(REGEX(?label, "${query}", "i")).
     }
-    LIMIT 5
+    LIMIT 3
   `;
   const endpointUrl = "https://lindas.admin.ch/query";
   const fullUrl = `${endpointUrl}?query=${encodeURIComponent(sparqlQuery)}&format=json`;
@@ -312,6 +312,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
-
-

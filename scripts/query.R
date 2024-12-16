@@ -54,6 +54,7 @@ WHERE {
 }
 GROUP BY ?companyName
 ORDER BY DESC(?productCount)
+LIMIT 20
 '
 
 # run SPARQL query
@@ -67,7 +68,7 @@ rdf_query(RDF, SPARQL) |> print(n = 20)
 SPARQL = '
 PREFIX : <https://agriculture.ld.admin.ch/foag/plant-protection#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT ?sameProductName ?federalAdmissionNumber ?countryOfOrigin ?companyName
+SELECT ?sameProductName ?federalAdmissionNumber ?countryOfOrigin ?companyName ?UID
 WHERE {
   ?sameProduct :isSameProductAs :1-W-5218 .
   ?sameProduct rdfs:label ?sameProductName .
@@ -76,8 +77,11 @@ WHERE {
   ?company rdfs:label ?companyName .
   OPTIONAL {
     ?sameProduct :hasCountryOfOrigin ?country .
-    ?country rdfs:label ?countryOfOrigin
+    ?country rdfs:label ?countryOfOrigin .
     FILTER(LANG(?countryOfOrigin)="en")
+  }
+  OPTIONAL {
+    ?company :hasUID ?UID .
   }
 }
 '
