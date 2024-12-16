@@ -1,0 +1,47 @@
+/*-- scss:defaults --*/
+
+$body-color: #000;
+$link-color: #2A9CD4;
+
+/* Add font family variables */
+$body-font: 'Rubik', sans-serif;
+$heading-font: 'Rubik', serif;
+
+/*-- scss:rules --*/
+
+/* Import Google Fonts (or use a similar source) */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+/* Set global font styles */
+body {
+  font-family: $body-font;
+  font-weight: 800;
+  color: $body-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+  font-weight: 800;
+}
+
+/* Style blockquotes */
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 0.5em;
+  font-family: $body-font; /* Optional: Use the body font for blockquotes */
+}
+
+
+.reveal .slides {
+  font-family: $body-font;
+}
+
+.reveal h1, 
+.reveal h2, 
+.reveal h3, 
+.reveal h4, 
+.reveal h5, 
+.reveal h6 {
+  font-family: $heading-font;
+}
+
