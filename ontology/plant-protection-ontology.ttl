@@ -298,6 +298,11 @@ wdt:P298 a owl:DatatypeProperty ;
     rdfs:comment "Any product that can be reasonably well described by its (chemical) ingredients."@en ,
         "Jedes Produkt, das sich einigermassen gut durch seine (chemischen) Inhaltsstoffe beschreiben lässt."@de .
 
+:StorageProtectors a owl:Class ;
+    rdfs:subClassOf :ChemicalProduct ;
+    rdfs:label "Storage protectors"@en ,
+        "Vorratsschutzmittel"@de .
+
 :Phytoregulator a owl:Class ;
     rdfs:subClassOf :ChemicalProduct ;
     rdfs:label "Phytoregulator"@en ,
@@ -329,16 +334,113 @@ wdt:P298 a owl:DatatypeProperty ;
     rdfs:label "Chemical crop protection product"@en ,
         "Chemisches Pflanzenschutzmittel"@de .
 
+:SeedDressing a owl:Class ;
+    rdfs:subClassOf :ChemicalCropProtectionProduct ;
+    rdfs:label "Seed dressing"@en ,
+        "Saatbeizmittel"@de .
+
+:Acaricide a owl:Class ;
+    rdfs:subClassOf :ChemicalCropProtectionProduct ;
+    rdfs:label "Acaricide"@en ,
+        "Akarizid"@de .
+
+:Fungicide a owl:Class ;
+    rdfs:subClassOf :ChemicalCropProtectionProduct ;
+    rdfs:label "Fungicide"@en ,
+        "Fungizid"@de .
+
+:Herbicide a owl:Class ;
+    rdfs:subClassOf :ChemicalCropProtectionProduct ;
+    rdfs:label "Herbicide"@en ,
+        "Herbizid"@de .
+
+:Insecticide a owl:Class ;
+    rdfs:subClassOf :ChemicalCropProtectionProduct ;
+    rdfs:label "Insecticide"@en ,
+        "Insektizid"@de .
+
+:Pheromone a owl:Class ;
+    rdfs:subClassOf :Insecticide ;
+    rdfs:label "Pheromone"@en ,
+        "Pheromon"@de ;
+    rdfs:comment "Pheromones (insect attractant) are ..."@en ,
+        "Pheromone (Insektenlockstoffe) sind..."@de .
+
+:SoapProduct a owl:Class ;
+    rdfs:subClassOf :Insecticide ;
+    rdfs:label "Soap product"@en ,
+        "Seifenpräparat"@de .
+
+:Nematicide a owl:Class ;
+    rdfs:subClassOf :ChemicalCropProtectionProduct ;
+    rdfs:label "Nematicide"@en ,
+        "Nematizid"@de .
+
+:Bactericide a owl:Class ;
+    rdfs:subClassOf :ChemicalCropProtectionProduct ;
+    rdfs:label "Bactericide"@en ,
+        "Bakterizid"@de .
+
+:Rodenticide a owl:Class ;
+    rdfs:subClassOf :ChemicalCropProtectionProduct ;
+    rdfs:label "Rodenticide"@en ,
+        "Rodentizid"@de .
+
+:Molluscicide a owl:Class ;
+    rdfs:subClassOf :ChemicalCropProtectionProduct ;
+    rdfs:label "Molluscicide"@en ,
+        "Molluskizid"@de .
+
+:Viricide a owl:Class ;
+    rdfs:subClassOf :ChemicalCropProtectionProduct ;
+    rdfs:label "Viricide"@en ,
+        "Virizid"@de .
+
 :BiologicalControlAgent a owl:Class ;
     rdfs:subClassOf :CropProtectionProduct ;
     owl:disjointWith :ChemicalProduct ;
     rdfs:label "Biological control agent"@en ,
         "Organismus für die biologische Schädlingsbekämpfung"@de .
 
-:PlantHealthPromoter a owl:Class ;
+:BCAFungi a owl:Class ;
+    rdfs:subClassOf :BiologicalControlAgent ;
+    rdfs:label "Fungal products"@en ,
+        "Pilzprodukte"@de .
+
+:BCABacteria a owl:Class ;
+    rdfs:subClassOf :BiologicalControlAgent ;
+    rdfs:label "Bacterial products"@en ,
+        "Bakterienprodukte"@de .
+
+:BCAInsectViruses a owl:Class ;
+    rdfs:subClassOf :BiologicalControlAgent ;
+    rdfs:label "Insect virus products"@en ,
+        "Insektenvirenprodukte"@de .
+
+:BCAMites a owl:Class ;
+    rdfs:subClassOf :BiologicalControlAgent ;
+    rdfs:label "Mite products"@en ,
+        "Milbenprodukte"@de .
+
+:BCAInsects a owl:Class ;
+    rdfs:subClassOf :BiologicalControlAgent ;
+    rdfs:label "Insect products"@en ,
+        "Insektenprodukte"@de .
+
+:BCANematodes a owl:Class ;
+    rdfs:subClassOf :BiologicalControlAgent ;
+    rdfs:label "Nematode products"@en ,
+        "Nematodenprodukte"@de .
+
+:BCAAgainstFungi a owl:Class ;
+    rdfs:subClassOf :BiologicalControlAgent ;
+    rdfs:label "Products against fungi"@en ,
+        "Produkte gegen Pilze"@de .
+
+:NaturalDefenseStimulator a owl:Class ;
     rdfs:subClassOf :ChemicalProduct ;
-    rdfs:label "Plant health promoter"@en ,
-        "Mittel zur Förderung der Pflanzengesundheit"@de .
+    rdfs:label "Stimulator of natural defenses"@en ,
+        "Stimulator der natürlichen Abwehrkräfte"@de .
 
 :manages a owl:ObjectProperty;
     rdfs:subPropertyOf :interactsWith ;

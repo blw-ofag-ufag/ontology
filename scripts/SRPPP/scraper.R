@@ -85,6 +85,7 @@ xml_data <- read_xml(xml_file_path)
 wikidata_mapping_countries = read.csv("mapping-tables/wikidata-mapping-countries.csv", row.names = 1)
 wikidata_mapping_cities = read.csv("mapping-tables/wikidata-mapping-countries.csv", row.names = 1)
 UID_mapping_companies = read.csv("mapping-tables/UID-mapping-companies.csv", row.names = 1)
+product_categories = read.csv("mapping-tables/product-categories.csv", row.names = 1)
 
 # Extract all city elements
 cities = xml_find_all(xml_data, "//MetaData[@name='City']/Detail") %>%
@@ -137,8 +138,12 @@ cat("
 # write triples
 for (i in 1:nrow(products)) {
   
+  # save categories as one string
+  c <- product_categories[as.character(unlist(SRPPP$categories[SRPPP$categories$pNbr==products[i,"pNbr"],2])),2] |>
+    strsplit(", ") |> unlist() |> unique() |> paste(collapse = ", ")
+  
   # define basic product information
-  sprintf("%s a :Product ;\n", IRI("1", products[i,"hasFederalAdmissionNumber"])) |> cat()
+  sprintf("%s a :Product, %s ;\n", IRI("1", products[i,"hasFederalAdmissionNumber"]), c) |> cat()
   sprintf("    :hasFederalAdmissionNumber %s ;\n", literal(products[i,"hasFederalAdmissionNumber"], datatype = "string")) |> cat()
   if(products[i,"isParallelImport"]) {
     sprintf("    a :ParallelImport ;\n") |> cat()
