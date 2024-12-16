@@ -2,7 +2,6 @@
 title: |
   *All Hands:*
   Texte analysieren mit K.I.
-author: Damian Oswald
 date: 2024-12-18
 date-format: long
 lang: de
