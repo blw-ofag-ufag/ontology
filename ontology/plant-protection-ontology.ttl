@@ -15,7 +15,7 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
         "Eine (demonstrative) Ontologie für den Pflanzenschutz in der Schweiz"@de ;
     dc:description "This ontology exemplifies the value of comprehensive and well-structured ontology development for the Swiss Federal Office for Agriculture (and more broadly the Swiss agri-food sector). By capturing the complexities of crop protection (with a focus on registered products) in a formal model, it enhances understanding of current rules and allows their effective communication via IT-services."@en,
         "Diese Ontologie veranschaulicht den Wert einer umfassenden und gut strukturierten Ontologieentwicklung für das Bundesamt für Landwirtschaft (und allgemein den Schweizer Agrar- und Lebensmittelsektor). Durch die formale Modellierung der Komplexität des Pflanzenschutzes (mit Schwerpunkt auf zugelassenen Produkten) verbessert sie das Verständnis der aktuellen Regeln und ermöglicht deren effektive Kommunikation über IT-Dienste."@de ;
-    owl:versionInfo "0.8" ;
+    owl:versionInfo "0.9" ;
     dc:creator "Damian Oswald" .
 
 :CropGroup a owl:Class ;
@@ -292,11 +292,26 @@ wdt:P298 a owl:DatatypeProperty ;
     owl:inverseOf :holdsPermissionToSell .
 
 :ChemicalProduct a owl:Class ;
-    rdfs:subClassOf :Product;
+    rdfs:subClassOf :Product ;
     rdfs:label "Chemical product"@en ,
         "Chemisches Produkt"@de ;
     rdfs:comment "Any product that can be reasonably well described by its (chemical) ingredients."@en ,
         "Jedes Produkt, das sich einigermassen gut durch seine (chemischen) Inhaltsstoffe beschreiben lässt."@de .
+
+:Phytoregulator a owl:Class ;
+    rdfs:subClassOf :ChemicalProduct ;
+    rdfs:label "Phytoregulator"@en ,
+        "Phytoregulator"@de .
+
+:Desinfectant a owl:Class ;
+    rdfs:subClassOf :ChemicalProduct ;
+    rdfs:label "Desinfectant"@en ,
+        "Desinfektionsmittel"@de .
+
+:AdhesionAgents a owl:Class ;
+    rdfs:subClassOf :ChemicalProduct ;
+    rdfs:label "Wetting and adhesion agents"@en ,
+        "Netz- und Haftmittel"@de .
 
 :CropProtectionProduct a owl:Class ;
     rdfs:subClassOf :Product ;
@@ -324,11 +339,6 @@ wdt:P298 a owl:DatatypeProperty ;
     rdfs:subClassOf :ChemicalProduct ;
     rdfs:label "Plant health promoter"@en ,
         "Mittel zur Förderung der Pflanzengesundheit"@de .
-
-:Adjuvant a owl:Class ;
-    rdfs:subClassOf :ChemicalProduct ;
-    rdfs:label "Adjuvant"@en,
-        "Adjuvant"@de .
 
 :manages a owl:ObjectProperty;
     rdfs:subPropertyOf :interactsWith ;
@@ -639,6 +649,13 @@ wdt:P171 a owl:ObjectProperty ;
     rdfs:label "is defined by biological taxon"@en ,
         "ist definiert durch das biologische Taxon"@de ;
     rdfs:domain :BioticStressor ;
+    rdfs:range wd:Q16521 .
+
+:NonTargetOrganismIsDefinedByBiologicalTaxon a owl:ObjectProperty ;
+    rdfs:subPropertyOf :isDefinedByBiologicalTaxon ;
+    rdfs:label "is defined by biological taxon"@en ,
+        "ist definiert durch das biologische Taxon"@de ;
+    rdfs:domain :nonTargetOrganism ;
     rdfs:range wd:Q16521 .
 
 :cropIsRelatedToBiologicalTaxon a owl:ObjectProperty ;
