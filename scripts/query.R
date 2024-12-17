@@ -45,7 +45,7 @@ PREFIX : <https://agriculture.ld.admin.ch/foag/plant-protection#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?companyName ?countryName (COUNT(DISTINCT ?product) AS ?productCount)
 WHERE {
-  ?product a :ChemicalCropProtectionProduct .
+  ?product a :Product .
   ?product :hasPermissionHolder ?company .
   ?company rdfs:label ?companyName .
   ?company :locatedInCountry ?country .

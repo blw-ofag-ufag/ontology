@@ -1,10 +1,4 @@
 ---
-title: |
-  *All Hands:*
-  Texte analysieren mit K.I.
-date: 2024-12-18
-date-format: long
-lang: de
 format:
   revealjs:
     theme: [resources/custom.scss]
@@ -15,13 +9,7 @@ format:
     controls: true
 ---
 
-##  {background-image="resources/swiss-chard.png" background-color="black"}
-
-<br><br><br><br><br><br>
-
--   Ein Gemüsebauer in Graubünden baut für die Capuns-Herstellung [Mangold]{.underline} im [Freiland]{.underline} an.
--   Plötzlich wird die Kulture von [Raupen]{.underline} befallen.
--   Der Landwirt ist pflichtbewusst und möchte seinen Mangold [fachgerecht]{.underline} schützen.
+##  {background-image="https://fal.media/files/kangaroo/C1hMxfKsHRKhaHESP_NWA_b34d0d2a660040138c18a0af89f0b6ca.jpg" background-color="black"}
 
 ## {background-iframe="https://www.psm.admin.ch/de/suche" background-interactive="true"}
 
@@ -31,4 +19,4 @@ format:
 <iframe src="https://datawrapper.dwcdn.net/g4VJe/1/" width="100%", height="100%"></iframe>
 ```
 
-##  {background-image="resources/happy-farmer.jpg" background-color="black"}
+##  {background-image="https://fal.media/files/tiger/H7fRFLzdMHkTXrKYSXGQx_c34c9626330443bb8eb125b6f67a0ff0.jpg" background-color="black"}
