@@ -249,3 +249,6 @@ sink()
 mapping_biological_taxa <- read.csv("mapping-tables/wikidata-mapping-biological-taxa.csv")
 as_tibble(mapping_biological_taxa)
 100*(1-sum(mapping_biological_taxa$Wikidata_IRI=="", na.rm = T)/nrow(mapping_biological_taxa))
+
+
+

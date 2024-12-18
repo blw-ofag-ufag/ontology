@@ -9,6 +9,7 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix schema: <https://schema.org/> .
 
 : a owl:Ontology ;
     dc:title "A (demonstrative) ontology for crop protection in Switzerland"@en,
@@ -95,18 +96,12 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
         "Produkt"@de ;
     owl:equivalentClass [
         a owl:Restriction ;
-        owl:onProperty :isParallelImport ;
         owl:onProperty :isNonProfessionallyAllowed ;
         owl:cardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
     owl:equivalentClass [
         a owl:Restriction ;
         owl:onProperty :hasFederalAdmissionNumber ;
-        owl:cardinality "1"^^xsd:nonNegativeInteger ;
-    ] ;
-    owl:equivalentClass [
-        a owl:Restriction ;
-        owl:onProperty :isParallelImport ;
         owl:cardinality "1"^^xsd:nonNegativeInteger ;
     ] .
 
@@ -122,19 +117,11 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 :isSimilarProductAs a owl:ObjectProperty ;
     rdfs:label "is a similar product as"@en ,
                "ist ein ähnliches Produkt wie"@de ;
-    rdfs:comment "Indicates that two products are similar in their function, although not identical in their chemical composition or their organism."@en ;
+    rdfs:comment "Indicates that two products are similar in their function, although not identical in their chemical composition or their organism."@en ,
+        "Gibt an, dass zwei Produkte in ihrer Funktion ähnlich sind, obwohl sie in ihrer chemischen Zusammensetzung oder ihrem Organismus nicht identisch sind."@de ;
     rdfs:domain :Product ;
     rdfs:range :Product ;
     a owl:SymmetricProperty .
-
-:isParallelImport a owl:DatatypeProperty ;
-    rdfs:domain :Product ;
-    rdfs:range xsd:boolean ;
-    rdfs:label "is a parallel import"@en ,
-        "ist ein Parallelimport"@de ;
-    rdfs:comment "A parallel import refers to the importation of pesticide products that are legally authorized in one country and are brought into another without the direct consent of the intellectual property holder, provided they meet the same composition and regulatory standards as a product already authorized in the importing country. In Switzerland, such imports require a general import permit and compliance with specific labeling, packaging, and usage regulations aligned with the Swiss-approved reference product. This system ensures product availability while maintaining safety, regulatory adherence, and respect for intellectual property rights."@en ,
-        "Ein Parallelimport bezeichnet den Import von Pflanzenschutzmitteln, die in einem Land rechtmässig zugelassen sind und ohne ausdrückliche Zustimmung des Rechteinhabers in ein anderes Land eingeführt werden, sofern sie in Zusammensetzung und Zulassungsanforderungen einem bereits im Einfuhrland zugelassenen Produkt entsprechen. In der Schweiz erfordert ein solcher Import eine Generaleinfuhrbewilligung sowie die Einhaltung spezifischer Vorschriften zu Kennzeichnung, Verpackung und Verwendung gemäss dem schweizerischen Referenzprodukt. Dieses System gewährleistet die Verfügbarkeit von Produkten und berücksichtigt gleichzeitig Sicherheits-, Zulassungs- und Schutzrechte des geistigen Eigentums."@de ;
-    rdfs:seeAlso <https://www.fedlex.admin.ch/eli/cc/2010/340/de#art_36> .
 
 :isNonProfessionallyAllowed a owl:DatatypeProperty ;
     rdfs:domain :Product ;
@@ -148,12 +135,16 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
     rdfs:range xsd:string ;
     rdfs:label "has federal admission number"@en ,
         "hat eidgenössische Zulassungsnummer"@de ;
-    rdfs:comment "The federal admission number uniquely identifies a product registration. It is either constructed as a W-Number in the case of federal admissions (e.g. W-18) or as a parallel import number with the country of origin starting letter in the code in the case of parallel imports (e.g. I-2789 for a parallel import from Italy). W-Numbers with a dash (e.g., W-18-1, W-18-2) represent equivalent products held by different legal entities, while W-Numbers without a dash (e.g., W-18) represent the original registration."@en .
+    rdfs:comment "The federal admission number uniquely identifies a product registration. It is either constructed as a W-Number in the case of federal admissions (e.g. W-18) or as a parallel import number with the country of origin starting letter in the code in the case of parallel imports (e.g. I-2789 for a parallel import from Italy). Numbers with a dash (e.g., W-18-1, W-18-2) represent equivalent products held by different legal entities, while numbers without a dash (e.g., W-18) represent the original registration."@en ,
+        "Die eidgenössische Zulassungsnummer identifiziert eine Produktregistrierung eindeutig. Sie ist entweder als W-Nummer im Fall von Bundeszulassungen (z. B. W-18) oder als Parallelimportnummer mit dem Anfangsbuchstaben des Ursprungslandes im Code im Fall von Parallelimporten (z. B. I-2789 für einen Parallelimport aus Italien) aufgebaut. Nummern mit einem Bindestrich (z. B. W-18-1, W-18-2) stehen für gleichwertige Produkte, die sich im Besitz verschiedener juristischer Personen befinden, während Nummern ohne Bindestrich (z. B. W-18) für die ursprüngliche Registrierung stehen."@de .
 
 :ParallelImport a owl:Class ;
     rdfs:subClassOf :Product ;
     rdfs:label "Parallel import"@en ,
-        "Parallelimport"@de .
+        "Parallelimport"@de ;
+    rdfs:comment "A parallel import refers to the importation of pesticide products that are legally authorized in one country and are brought into another without the direct consent of the intellectual property holder, provided they meet the same composition and regulatory standards as a product already authorized in the importing country. In Switzerland, such imports require a general import permit and compliance with specific labeling, packaging, and usage regulations aligned with the Swiss-approved reference product. This system ensures product availability while maintaining safety, regulatory adherence, and respect for intellectual property rights."@en ,
+        "Ein Parallelimport bezeichnet den Import von Pflanzenschutzmitteln, die in einem Land rechtmässig zugelassen sind und ohne ausdrückliche Zustimmung des Rechteinhabers in ein anderes Land eingeführt werden, sofern sie in Zusammensetzung und Zulassungsanforderungen einem bereits im Einfuhrland zugelassenen Produkt entsprechen. In der Schweiz erfordert ein solcher Import eine Generaleinfuhrbewilligung sowie die Einhaltung spezifischer Vorschriften zu Kennzeichnung, Verpackung und Verwendung gemäss dem schweizerischen Referenzprodukt. Dieses System gewährleistet die Verfügbarkeit von Produkten und berücksichtigt gleichzeitig Sicherheits-, Zulassungs- und Schutzrechte des geistigen Eigentums."@de ;
+    rdfs:seeAlso <https://www.fedlex.admin.ch/eli/cc/2010/340/de#art_36> .
 
 :hasForeignAdmissionNumber a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
@@ -165,29 +156,11 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
     rdfs:label "has country of origin"@en ,
         "hat Herkunftsland"@de ;
     rdfs:domain :Product ;
-    rdfs:range wd:Q6256 .
+    rdfs:range schema:Country .
 
-wd:Q6256 a owl:Class ;
+schema:Country a owl:Class ;
     rdfs:label "Country"@en ,
         "Land"@de .
-
-wdt:P297 a owl:DatatypeProperty ;
-    rdfs:label "has ISO 3166-1 alpha-2 country code"@en ,
-        "hat ISO 3166-1 alpha-2 Ländercode"@de ;
-    rdfs:comment "Identifier for a country in two-letter format per ISO 3166-1."@en ,
-        "Zweibuchstabiger ISO-3166-1-Ländercode."@de ;
-    rdfs:domain wd:Q6256 ;
-    rdfs:range xsd:string ;
-    rdfs:isDefinedBy <https://www.iso.org/iso-3166-country-codes.html> .
-
-wdt:P298 a owl:DatatypeProperty ;
-    rdfs:label "has ISO 3166-1 alpha-3 country code"@en ,
-        "hat ISO 3166-1 alpha-3 Ländercode"@de ;
-    rdfs:comment "Identifier for a country in two-letter format per ISO 3166-1."@en ,
-        "Dreibuchstabiger ISO-3166-1-Ländercode."@de ;
-    rdfs:domain wd:Q6256 ;
-    rdfs:range xsd:string ;
-    rdfs:isDefinedBy <https://www.iso.org/iso-3166-country-codes.html> .
 
 :hasSoldoutDeadline a owl:DatatypeProperty ;
     rdfs:domain :Product ;
@@ -203,90 +176,87 @@ wdt:P298 a owl:DatatypeProperty ;
     rdfs:comment "The date by which the product must no longer be used, typically after the product registration has been revoked."@en,
         "Das Datum, an dem das Produkt nicht mehr genutzt werden darf, in der Regel nach der Widerrufung der Produktregistrierung."@de .
 
-:Company a owl:Class ;
-    rdfs:label "Company"@en, "Firma"@de ;
-    rdfs:comment "A company or organization holding permissions or licenses."@en .
+schema:Organization a owl:Class ;
+    rdfs:label "Organization"@en,
+        "Organisation"@de .
 
-:hasName a owl:DatatypeProperty ;
-    rdfs:label "has name"@en, "hat Name"@de ;
-    rdfs:domain :Company ;
-    rdfs:range xsd:string ;
-    rdfs:comment "The name of the company."@en .
+schema:email a owl:DatatypeProperty ;
+    rdfs:label "has email address"@en ,
+        "hat Email-Adresse"@de ;
+    rdfs:domain schema:Organization ;
+    rdfs:range xsd:string .
 
-:hasAdditionalInformation a owl:DatatypeProperty ;
-    rdfs:label "has additional information"@en,
-        "hat zusätzliche Information"@de ;
-    rdfs:domain :Company ;
-    rdfs:range xsd:string ;
-    rdfs:comment "Supplementary information about the company address."@en ,
-        "Zusatzinformationen zur Firmenadresse."@de .
-
-:hasStreet a owl:DatatypeProperty ;
-    rdfs:label "has street"@en, "hat Strasse"@de ;
-    rdfs:domain :Company ;
-    rdfs:range xsd:string ;
-    rdfs:comment "The street address of the company."@en .
-
-:hasPostOfficeBox a owl:DatatypeProperty ;
-    rdfs:label "has post office box"@en, "hat Postfach"@de ;
-    rdfs:domain :Company ;
-    rdfs:range xsd:string ;
-    rdfs:comment "The post office box of the company."@en .
-
-:hasPhoneNumber a owl:DatatypeProperty ;
-    rdfs:label "has phone"@en, "hat Telefon"@de ;
-    rdfs:domain :Company ;
-    rdfs:range xsd:string ;
-    rdfs:comment "The phone number of the company, formatted as per RFC 3966."@en ;
-    rdfs:isDefinedBy <https://www.rfc-editor.org/rfc/rfc3966> .
-
-:hasFaxNumber a owl:DatatypeProperty ;
-    rdfs:label "has fax"@en, "hat Fax"@de ;
-    rdfs:domain :Company ;
+schema:faxNumber a owl:DatatypeProperty ;
+    rdfs:label "has fax number"@en ,
+        "hat Fax-Nummer"@de ;
+    rdfs:domain schema:Organization ;
     rdfs:range xsd:string ;
     rdfs:comment "The fax number of the company, formatted as per RFC 3966."@en ;
     rdfs:isDefinedBy <https://www.rfc-editor.org/rfc/rfc3966> .
 
-:hasEmailAddress a owl:DatatypeProperty ;
-    rdfs:label "has email address"@en, "hat Emailadresse"@de ;
-    rdfs:domain :Company ;
+schema:telephone a owl:DatatypeProperty ;
+    rdfs:label "has phone number"@en ,
+        "hat Telefonnummer"@de ;
+    rdfs:domain schema:Organization ;
     rdfs:range xsd:string ;
-    rdfs:comment "The email address of the company."@en .
+    rdfs:comment "The fax number of the company, formatted as per RFC 3966."@en ;
+    rdfs:isDefinedBy <https://www.rfc-editor.org/rfc/rfc3966> .
 
-:hasUID a owl:DatatypeProperty ;
-    rdfs:label "has UID"@en,
-        "hat UID"@de ;
-    rdfs:comment "The UID (from German *Unternehmens-Identifikationsnummer*, translating to enterprise identification number) is a standardized identification number assigned to businesses and organizations in Switzerland. It is managed by the Swiss Federal Statistical Office (FSO) and serves as a unique identifier for enterprises across various administrative and economic registers. The UID simplifies interactions between businesses and public authorities by providing a consistent and centralized reference for identifying entities."@en ,
-        "Die UID (Unternehmens-Identifikationsnummer) ist eine standardisierte Identifikationsnummer, die Unternehmen und Organisationen in der Schweiz zugewiesen wird. Sie wird vom Schweizer Bundesamt für Statistik (BFS) verwaltet und dient als eindeutige Kennung für Unternehmen in verschiedenen Verwaltungs- und Wirtschaftsregistern. Die UID vereinfacht die Interaktion zwischen Unternehmen und Behörden, indem sie eine einheitliche und zentralisierte Referenz zur Identifizierung von Unternehmen bereitstellt."@de ;
-    rdfs:domain :Company ;
-    rdfs:range xsd:string ;
-    rdfs:seeAlso <https://www.uid.admin.ch/> .
+schema:address a owl:ObjectProperty ;
+    rdfs:label "has address"@en ,
+        "hat Adresse"@de ;
+    rdfs:domain schema:Organization ;
+    rdfs:range schema:PostalAddress .
 
-:locatedInCity a owl:DatatypeProperty ;
-    rdfs:label "located in city"@en,
-        "befindet sich in Stadt"@de ;
-    rdfs:domain :Company ;
-    rdfs:range xsd:string ;
-    rdfs:comment "The city where the company is located."@en,
-        "Die Stadt, in der sich das Unternehmen befindet."@de .
+schema:PostalAddress a owl:Class ;
+    rdfs:label "Postal address"@en ,
+        "Postadresse"@de .
 
-:locatedInCountry a owl:ObjectProperty ;
-    rdfs:label "located in country"@en ,
+schema:postOfficeBoxNumber a owl:DatatypeProperty ;
+    rdfs:label "has post office box number"@en ,
+        "Postfachnummer"@de ;
+    rdfs:comment "The post office box number for PO box addresses."@en ,
+        "Die Postfachnummer für Postfachadressen."@de ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:string .
+
+schema:streetAddress a owl:DatatypeProperty ;
+    rdfs:label "has street address"@en ,
+        "hat Strassenaddresse"@de ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:string .
+
+schema:postalCode a owl:DatatypeProperty ;
+    rdfs:label "has postal code"@en ,
+        "hat Postleitzahl"@de ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:string .
+
+schema:addressLocality a owl:DatatypeProperty ;
+    rdfs:label "has postal locality"@en ,
+        "hat Ortschaft"@de .
+
+schema:addressCountry a owl:ObjectProperty ;
+    rdfs:label "is located in country"@en ,
         "befindet sich in Land"@de ;
-    rdfs:domain :Company ;
-    rdfs:range wd:Q6256 ;
-    rdfs:comment "The country where the company is located."@en,
-        "Das Land, in dem sich das Unternehmen befindet."@de .
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range schema:Country .
+
+schema:addressCountry a owl:ObjectProperty ;
+    rdfs:label "is located in country"@en ,
+        "befindet sich in Land"@de ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range schema:Country .
 
 :holdsPermissionToSell a owl:ObjectProperty ;
-    rdfs:domain :Company ;
+    rdfs:domain schema:Organization ;
     rdfs:range :Product ;
     rdfs:label "holds Permission to sell"@en ,
         "hat Bewilligung zum Verkauf von"@de .
 
 :hasPermissionHolder a owl:ObjectProperty ;
     rdfs:domain :Product ;
-    rdfs:range :Company ;
+    rdfs:range schema:Organization ;
     rdfs:label "has permission holder"@en ,
         "hat Verkaufsbewilligungshalter"@de ;
     owl:inverseOf :holdsPermissionToSell .
