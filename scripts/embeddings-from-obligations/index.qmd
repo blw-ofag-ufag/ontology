@@ -1,8 +1,12 @@
 ---
-title: Clustering der Auflagen zum Pflanzenschutz aus dem Schweizer Pflanzenschutzmittelverzeichnis
+title: Clustering von Pflanzenschutz-Auflagen aus dem Schweizer Pflanzenschutzmittelverzeichnis
+abstract: In diesem Beitrag zeige ich, wie künstliche Intelligenz mithilfe von Embeddings und Clustering unstrukturierte Auflagen aus dem Schweizer Pflanzenschutzmittelverzeichnis in greifbare Muster verwandelt.
 author: Damian Oswald
 date: today
-format: html
+lang: de
+format:
+  html:
+    number-sections: true
 embed-resources: true
 ---
 
@@ -10,7 +14,7 @@ embed-resources: true
 
 Das [Pflanzenschutzmittelverzeichnis (PSMV)](https://www.psm.admin.ch/) des Bundesamts für Lebensmittelsicherheit und Veterinärwesen (BLV) ist eine umfassende Liste aller in der Schweiz zugelassenen Pflanzenschutzmittel. Es enthält detaillierte Informationen zu deren vorgesehenen Anwendungen, Anwendungseinschränkungen, Aufwandmengen, Gefahrenkennzeichnung und Anwendungsauflagen. Auch Parallelimporte und spezifische Anwendungsvorschriften sind aufgeführt. Die Datenbank wird regelmässig aktualisiert und steht sowohl online als auch in einer XML-Formatdatei zur Verfügung. Sie dient als zentrale Referenz für die Zulassung und den sicheren Einsatz von Pflanzenschutzmitteln in der Schweiz.
 
-Unter anderem enthält das Pflanzenschutzmittelverzeichnis sogenannte *Auflagen* zur Verwendung eines Produktes gegen einen spezifischen Schaderreger und auf einer spezifischen Kultur. Insgesamt gibt es im PSMV 27393 solche Auflagen, wobei sich einige Auflagen wortwörtlich wiederholen, sodass das PSMV schlussendlich 1419 einzigartige Auflagen enthält (Stand November 2024).
+Unter anderem enthält das Pflanzenschutzmittelverzeichnis sogenannte *Auflagen* zur Verwendung eines Produktes gegen einen spezifischen Schaderreger und auf einer spezifischen Kultur. Insgesamt gibt es im PSMV 27393 solche Auflagen, wobei sich einige Auflagen wortwörtlich wiederholen, sodass das PSMV letztlich (Stand November 2024) auf 1419 einzigartige Auflagen kommt.
 
 :::{.column-page}
 ```{=html}
@@ -19,11 +23,13 @@ Unter anderem enthält das Pflanzenschutzmittelverzeichnis sogenannte *Auflagen*
 ```
 :::
 
-In dieser kurzen Arbeit geht es darum, einen Überblick zu diesen 1419 einzigartige Auflagen zu schaffen und diese mithilfe künstlicher Intelligenz zu sortieren und gruppieren. Die Arbeit schafft damit eine Grundlage dafür, dass diesee Auflagen in eine strukturierte Form überführt werden können.
+In dieser kurzen Arbeit soll ein Überblick über diese 1419 einzigartigen Auflagen geschaffen und diese mithilfe künstlicher Intelligenz sortiert und gruppiert werden. Dadurch entsteht eine Grundlage, um die Auflagen künftig in eine strukturierte Form zu überführen.
 
 # Prozess
 
-Um die Auflagen zu sortieren habe ich das [Embedding-Modell von OpenAI](https://platform.openai.com/docs/guides/embeddings) verwendet. Dieses kann über eine (bezahlte) API aufgerufen werden und wandelt einen Text in seine sogenannte *Embeddings* ein, also in einen Vektor (eine Menge an Zahlen).
+Um die Auflagen zu sortieren habe ich das [Embedding-Modell von OpenAI](https://platform.openai.com/docs/guides/embeddings) verwendet. Dieses kann über eine kostenpflichtige API aufgerufen werden und wandelt einen Text in seine sogenannte *Embeddings* ein, also in einen Vektor (eine Menge an Zahlen).
+
+Die Nutzung der OpenAI-API ist vergleichsweise kostengünstig: Für einen einzigen Franken lassen sich mit `text-embedding-3-large`, dem leistungsfähigsten Embedding-Modell von OpenAI, etwa 8'000 Seiten deutschsprachigen Textes einbetten.
 
 ```{python}
 #| eval: false
@@ -72,11 +78,12 @@ Die Grösse der Embeddings kann zu einem Problem werden, da wir jetzt mehr Dimen
 <br>
 ```
 
-Die Analyse verrät uns, dass die Verwendung der 100 ersten Komponenten immer noch 80% der Varianz in den Auflagen erklärt.
+Die Auswertung zeigt, dass bereits die ersten 40 Hauptkomponenten rund 80% der Varianz in den Auflagen erklären. Um die Dimensionalität auf ein handhabbares Mass zu reduzieren, nutzen wir daher ausschliesslich diese 40 Hauptkomponenten. Man kann sich das so vorstellen, dass jeder Text (bzw. jede Auflage) nun durch 40 Kennzahlen repräsentiert wird. Auf diese Kennzahlen wird anschliessend ein Clustering-Algorithmus angewendet. Konkret habe ich hierzu ein *Gaussian Mixture Model* eingesetzt.
 
 ```{r}
 #| fig-width: 8
 #| fig-height: 8
+#| fig-cap: Diese Grafik zeigt, wie die Cluster in einem mehrdimensionalen Raum identifiziert werden. Jeder Cluster wird als multivariate Gauss-Verteilung modelliert, die über ein bestimmtes Zentrum und eine eigene Varianz verfügt. Diese Eigenschaften werden durch Ellipsen visualisiert.
 #| echo: false
 #| message: false
 invisible(library(mclust, verbose = FALSE))
@@ -89,7 +96,23 @@ plot(GMM, what = "uncertainty", dimens = 1:5, col = viridis::viridis(GMM$G))
 
 Das R-Paket `mclust` wählt die Hyperparameter für das Gaussian Mixture Model (GMM) automatisch aus. In unserem Fall wurde das Modell ``r GMM$modelName`` (`r mclust:::mclustModelNames(GMM$modelName)$type`) mit `r GMM$G` Clustern automatisch ausgewählt.
 
+# Resultate
+
+Die folgende Grafik veranschaulicht die Resultate des Clustering-Verfahrens. Um die Vielzahl der Auflagen in zwei Dimensionen darzustellen, habe ich die UMAP-Methode angewandt, die jedoch ausschliesslich zur Visualisierung dient und keinen Einfluss auf die tatsächliche Cluster-Zuweisung hat.
+
 ```{=html}
 <div style="min-height:827px" id="datawrapper-vis-tR61B"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/tR61B/embed.js" charset="utf-8" data-target="#datawrapper-vis-tR61B"></script><noscript><img src="https://datawrapper.dwcdn.net/tR61B/full.png" alt="" /></noscript></div>
 <br>
 ```
+
+Betrachtet man die resultierenden Cluster, zeigt sich, dass semantisch ähnliche Auflagen in der Regel gemeinsam gruppiert wurden, und selbst thematisch ähnliche Cluster liegen meist nahe beieinander.
+
+Ausgehend von dieser Darstellung lassen sich die Cluster nun einzeln betrachten und benennen. So umfasst etwa Cluster A empfohlene Aufwandmengen und Referenzbrühevolumina für den Einsatz von Pflanzenschutzmitteln in spezifischen BBCH-Stadien verschiedener Kulturen, während Cluster C Themen rund um die Bienengefährlichkeit von Produkten beinhaltet.
+
+# Schlussfolgerung
+
+Die vorliegende Analyse verdeutlicht, dass das Schweizer Pflanzenschutzmittelverzeichnis über eine sehr hohe Anzahl an Auflagen verfügt, deren Inhalte sich häufig semantisch überschneiden und sich somit prinzipiell auf einfachere, strukturierte Parameter herunterbrechen lassen. Generell wäre es vermutlich ratsam, die Komplexität und die Fülle dieser Auflagen zu reduzieren.
+
+Durch den Einsatz von Künstlicher Intelligenz, speziell in Kombination mit Embeddings und Clustering-Verfahren, lassen sich selbst Tausende Seiten an unstrukturiertem Text effizient verarbeiten. Die vorgestellten Methoden können dabei helfen, komplexe Textbestände zu strukturieren, Muster inhaltlicher Ähnlichkeiten aufzudecken und diese systematisch zu kategorisieren. Visualisierungen unterstützen uns dabei beim erkennen von Mustern und auch beim Behalten der Kontrolle darüber, was die K.I. macht.
+
+Nicht zuletzt soll diese Arbeit verdeutlichen, dass die umfangreichen unstrukturierten Textmengen im BLW genauso als wertvolle Datenressourcen betrachtet werden können wie die Tabellen in AGIS oder HODUFLU. Künstliche Intelligenz bietet dabei völlig neue Möglichkeiten, um mit diesen Datenressourcen zu arbeiten.
