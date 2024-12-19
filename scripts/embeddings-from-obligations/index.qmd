@@ -12,6 +12,13 @@ Das [Pflanzenschutzmittelverzeichnis (PSMV)](https://www.psm.admin.ch/) des Bund
 
 Unter anderem enthält das Pflanzenschutzmittelverzeichnis sogenannte *Auflagen* zur Verwendung eines Produktes gegen einen spezifischen Schaderreger und auf einer spezifischen Kultur. Insgesamt gibt es im PSMV 27393 solche Auflagen, wobei sich einige Auflagen wortwörtlich wiederholen, sodass das PSMV schlussendlich 1419 einzigartige Auflagen enthält (Stand November 2024).
 
+:::{.column-page}
+```{=html}
+<div style="min-height:825px" id="datawrapper-vis-3kgxK"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/3kgxK/embed.js" charset="utf-8" data-target="#datawrapper-vis-3kgxK"></script><noscript><img src="https://datawrapper.dwcdn.net/3kgxK/full.png" alt="" /></noscript></div>
+<br>
+```
+:::
+
 In dieser kurzen Arbeit geht es darum, einen Überblick zu diesen 1419 einzigartige Auflagen zu schaffen und diese mithilfe künstlicher Intelligenz zu sortieren und gruppieren. Die Arbeit schafft damit eine Grundlage dafür, dass diesee Auflagen in eine strukturierte Form überführt werden können.
 
 # Prozess
@@ -62,6 +69,7 @@ Die Grösse der Embeddings kann zu einem Problem werden, da wir jetzt mehr Dimen
 
 ```{=html}
 <div style="min-height:520px" id="datawrapper-vis-gEBsq"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/gEBsq/embed.js" charset="utf-8" data-target="#datawrapper-vis-gEBsq"></script><noscript><img src="https://datawrapper.dwcdn.net/gEBsq/full.png" alt="" /></noscript></div>
+<br>
 ```
 
 Die Analyse verrät uns, dass die Verwendung der 100 ersten Komponenten immer noch 80% der Varianz in den Auflagen erklärt.
@@ -83,4 +91,5 @@ Das R-Paket `mclust` wählt die Hyperparameter für das Gaussian Mixture Model (
 
 ```{=html}
 <div style="min-height:827px" id="datawrapper-vis-tR61B"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/tR61B/embed.js" charset="utf-8" data-target="#datawrapper-vis-tR61B"></script><noscript><img src="https://datawrapper.dwcdn.net/tR61B/full.png" alt="" /></noscript></div>
+<br>
 ```
