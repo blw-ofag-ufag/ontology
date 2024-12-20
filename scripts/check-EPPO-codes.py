@@ -2,20 +2,21 @@ import requests
 import os
 import pandas as pd
 
-def query_wikidata_eppo_code(taxon_id):
+def query_wikidata_data(taxon_id):
     """
-    Query Wikidata to check if the given taxon ID has an EPPO code.
+    Query Wikidata to check if the given taxon ID has an EPPO code and a taxon name.
 
     Parameters:
         taxon_id (str): Wikidata ID of the taxon (e.g., "Q293311").
 
     Returns:
-        dict: EPPO code if available, otherwise None.
+        dict: Dictionary containing EPPO code and taxon name if available.
     """
-    # SPARQL query to check for EPPO code
+    # SPARQL query to check for EPPO code and taxon name
     sparql_query = f"""
-    SELECT ?eppo_code WHERE {{
-      wd:{taxon_id} wdt:P3031 ?eppo_code.
+    SELECT ?eppo_code ?taxon_name WHERE {{
+      OPTIONAL {{ wd:{taxon_id} wdt:P3031 ?eppo_code. }}
+      OPTIONAL {{ wd:{taxon_id} rdfs:label ?taxon_name FILTER (lang(?taxon_name) = "en"). }}
     }}
     """
 
@@ -26,7 +27,7 @@ def query_wikidata_eppo_code(taxon_id):
     response = requests.get(
         endpoint_url,
         params={"query": sparql_query, "format": "json"},
-        headers={"User-Agent": "PythonWikidataQuery/1.0 (your-email@example.com)"}
+        headers={"User-Agent": "Federal Office for Agriculture FOAG"}
     )
 
     # Check if the request was successful
@@ -37,11 +38,15 @@ def query_wikidata_eppo_code(taxon_id):
     data = response.json()
     results = data.get("results", {}).get("bindings", [])
 
-    # Extract and return EPPO code if available
+    # Extract and return EPPO code and taxon name if available
+    output = {"eppo_code": None, "taxon_name": None}
     if results:
-        return {"eppo_code": results[0]["eppo_code"]["value"]}
-    else:
-        return {"eppo_code": None}
+        for result in results:
+            if "eppo_code" in result:
+                output["eppo_code"] = result["eppo_code"]["value"]
+            if "taxon_name" in result:
+                output["taxon_name"] = result["taxon_name"]["value"]
+    return output
 
 if __name__ == "__main__":
     # Check if the file exists
@@ -64,8 +69,10 @@ if __name__ == "__main__":
 
         taxon_id = str(wikidata_iri).split("/")[-1]
         try:
-            result = query_wikidata_eppo_code(taxon_id)
+            result = query_wikidata_data(taxon_id)
             if result["eppo_code"] is None:
                 print(f"Missing EPPO code for taxon: {wikidata_iri}")
+            if result["taxon_name"] is None:
+                print(f"Missing taxon name for taxon: {wikidata_iri}")
         except Exception as e:
             print(f"Error querying taxon {taxon_id}: {e}")
