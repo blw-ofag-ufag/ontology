@@ -59,9 +59,13 @@ literal <- function(x, datatype = NULL, lang = NULL) {
   sprintf("\"%s\"%s%s", x, d, l)
 }
 
+# Function to mark up url
+URL <- function(x) sprintf("<%s>", x)
+
 # DOMAINS
-# 1: Products
-# 2: Companies
+# 1: Product
+# 2: Company
+# 3: Address
 
 # ------------------------------------------------------------------
 # DOWNLOAD THE SWISS PLANT PROTECTION REGISTRY AS AN XML FILE
@@ -82,10 +86,10 @@ xml_file_path <- file.path(unzip_dir, "PublicationData.xml")
 xml_data <- read_xml(xml_file_path)
 
 # Read mapping tables
-wikidata_mapping_countries = read.csv("mapping-tables/wikidata-mapping-countries.csv", row.names = 1)
-wikidata_mapping_cities = read.csv("mapping-tables/wikidata-mapping-countries.csv", row.names = 1)
-UID_mapping_companies = read.csv("mapping-tables/UID-mapping-companies.csv", row.names = 1)
-product_categories = read.csv("mapping-tables/product-categories.csv", row.names = 1)
+lindas_country = read.csv("mapping-tables/lindas-country.csv", row.names = 1)
+zefix_company = read.csv("mapping-tables/zefix-company.csv", row.names = 1)
+srppp_product_categories = read.csv("mapping-tables/srppp-product-categories.csv", row.names = 1)
+wikidata_taxon = read.csv("mapping-tables/wikidata-taxon.csv")
 
 # Extract all city elements
 cities = xml_find_all(xml_data, "//MetaData[@name='City']/Detail") %>%
@@ -93,6 +97,16 @@ cities = xml_find_all(xml_data, "//MetaData[@name='City']/Detail") %>%
   as.data.frame() %>%
   subset(subset = lang=="de", select = c(1,3))
 rownames(cities) = cities$ID
+
+library(xml2)
+library(dplyr)
+library(purrr)
+
+# Assuming xml_data is already loaded, for example:
+# xml_data <- read_xml("path_to_your_file.xml")
+
+# Find all Detail nodes within the City MetaData
+details <- xml_find_all(xml_data, ".//MetaData[@name='City']/Detail")
 
 # ------------------------------------------------------------------
 # WRITE PRODUCT INFORMATION
@@ -171,7 +185,11 @@ for (i in 1:nrow(products)) {
   }
   
   sprintf("    :hasCountryOfOrigin %s ;\n", products[i,"hasCountryOfOrigin"]) |> cat()
-  sprintf("    :hasPermissionHolder %s .\n", IRI("2", products[i,"hasPermissionHolder"])) |> cat()
+  
+  # reuse existing company from lindas zefix, if possible
+  zefix_iri = zefix_company[as.character(products[i,"hasPermissionHolder"]),"IRI"]
+  x = ifelse(!is.na(zefix_iri), sprintf("<%s>",zefix_iri), IRI("2", products[i,"hasPermissionHolder"]))
+  sprintf("    :hasPermissionHolder %s .\n", x) |> cat()
   cat("\n")
 }
 
@@ -181,14 +199,28 @@ sink()
 # WRITE COMPANY (PERMISSION HOLDER) INFORMATION
 # ------------------------------------------------------------------
 
+# first, create city table
+details <- xml_find_all(xml_data, ".//MetaData[@name='City']/Detail")
+city <- map_df(details, function(detail) {
+  city_id <- xml_attr(detail, "primaryKey")
+  german_desc <- xml_find_first(detail, ".//Description[@language='de']")
+  german_name <- if (!is.na(german_desc)) xml_attr(german_desc, "value") else NA_character_
+  code_node <- if (!is.na(german_desc)) xml_find_first(german_desc, "./Code") else NA
+  postal_code <- if (!is.na(code_node)) xml_attr(code_node, "value") else NA_character_
+  tibble(id = city_id, addressLocality = german_name, postalCode = postal_code)
+})
+cities = data.frame(city[,-1], row.names = city$id)
+
 # extract company elements from XML file
 company_xml <- xml_find_all(xml_data, "//PermissionHolder")
 
 # create company table
 companies <- nodeset_to_dataframe(company_xml)
 companies$hasUID <- UID_mapping_companies[companies$primaryKey,"UID"]
-companies$locatedInCity <- cities[xml_attr(xml_find_all(company_xml, "City"), "primaryKey"),"name"]
-companies$locatedInCountry <- wikidata_mapping_countries[xml_attr(xml_find_all(company_xml, "Country"), "primaryKey"),]
+companies$city_id	 <- xml_attr(xml_find_all(company_xml, "City"), "primaryKey")
+companies$addressLocality	 <- cities[companies$city_id,"addressLocality"]
+companies$postalCode	 <- cities[companies$city_id,"postalCode"]
+companies$locatedInCountry <- lindas_country[xml_attr(xml_find_all(company_xml, "Country"), "primaryKey"),]
 
 # Format phone and fax according to RFC3966 and extract email addresses that were typed into phone or fax field...
 email_regex <- "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
@@ -201,10 +233,11 @@ companies$hasFaxNumber <- companies$Fax |> dialr::phone("CH") |> format(format =
 # rearrange and rename
 companies <- as.data.frame(companies)
 companies[companies==""] <- NA
-companies <- companies[,c("primaryKey","Name","hasUID","hasPhoneNumber","hasFaxNumber","hasEmailAddress","PostOfficeBox","AdditionalInformation","Street","locatedInCity","locatedInCountry")]
-colnames(companies) <- c("IRI","label","hasUID","hasPhoneNumber","hasFaxNumber","hasEmailAddress","PostOfficeBox","AdditionalInformation","hasStreet","locatedInCity","locatedInCountry")
+companies <- companies[,c("primaryKey","Name","hasUID","hasPhoneNumber","hasFaxNumber","hasEmailAddress","PostOfficeBox","Street","postalCode","addressLocality","locatedInCountry")]
+colnames(companies) <- c("IRI","label","hasUID","telephone","faxNumber","email","postOfficeBoxNumber","streetAddress","postalCode","addressLocality","addressCountry")
 
-# write.csv(data.frame(companies[companies$locatedInCountry=="Q39",c(1,2,10)], UID = NA), "mapping-tables/UID-companies.csv", row.names = FALSE)
+# match zefix IRI
+companies$zefixIRI <- zefix_company[companies[,"IRI"],"IRI"]
 
 # open file
 sink("data/companies.ttl")
@@ -215,21 +248,46 @@ cat("
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix wd: <http://www.wikidata.org/entity/> .
+@prefix schema: <https://schema.org>
 
 ")
 
 # loop over every company
 for (i in 1:nrow(companies)) {
-  sprintf("%s a :Company ;\n", IRI("2", companies[i,"IRI"])) |> cat()
-  sprintf("    rdfs:label %s ;\n", literal(companies[i,"label"])) |> cat()
-  for (x in c("hasUID","hasPhoneNumber","hasFaxNumber","hasEmailAddress","PostOfficeBox","AdditionalInformation","hasStreet","locatedInCity")) {
-    if(!is.na(companies[i,x])) sprintf("    :%s %s ;\n", x, literal(companies[i,x])) |> cat()
+  
+  # we can re-use zefix companies, but only for the registered ones...
+  if(is.na(companies[i,"zefixIRI"])) {
+    
+    # define a new company IRI
+    x = IRI("2", companies[i,"IRI"])
+    
+    # set company (legal) name and contact info
+    sprintf("%s a schema:Organization .\n", x) |> cat()
+    sprintf("%s schema:name %s .\n", x, literal(companies[i,"label"])) |> cat()
+    sprintf("%s schema:legalName %s .\n", x, literal(companies[i,"label"])) |> cat()
+    for (property in c("email","telephone","faxNumber")) {
+      if(!is.na(companies[i,property])) sprintf("%s :%s %s .\n", x, property, literal(companies[i,property])) |> cat()
+    }
+    
+    # construct address IRI
+    a = IRI("3", companies[i,"IRI"])
+    sprintf("%s schema:address %s .\n", x, a) |> cat()
+    sprintf("%s a schema:PostalAddress .\n", a) |> cat()
+    for (property in c("postOfficeBoxNumber","streetAddress","postalCode","addressLocality")) {
+      if(!is.na(companies[i,property])) sprintf("%s :%s %s .\n", a, property, literal(companies[i,property])) |> cat()
+    }
+    sprintf("%s schema:addressCountry %s .\n", a, URL(companies[i,"addressCountry"])) |> cat()
+    for (p in na.omit(products[products$hasPermissionHolder==companies[i,"IRI"],"hasFederalAdmissionNumber"])) {
+      sprintf("%s :holdsPermissionToSell %s .\n", x, IRI("1", p)) |> cat()
+    }
+    
+  } else {
+    x = URL(paste(companies[i,"zefixIRI"],"address",sep="/"))
+    sprintf("%s schema:addressCountry %s .\n", x, URL(companies[i,"addressCountry"])) |> cat()
+    for (p in na.omit(products[products$hasPermissionHolder==companies[i,"IRI"],"hasFederalAdmissionNumber"])) {
+      sprintf("%s :holdsPermissionToSell %s .\n", x, IRI("1", p)) |> cat()
+    }
   }
-  for (x in na.omit(products[products$hasPermissionHolder==companies[i,"IRI"],"hasFederalAdmissionNumber"])) {
-    sprintf("    :holdsPermissionToSell %s ;\n", IRI("1", x)) |> cat()
-  }
-  sprintf("    :locatedInCountry wd:%s .\n", companies[i,"locatedInCountry"]) |> cat()
-  cat("\n")
 }
 
 sink()

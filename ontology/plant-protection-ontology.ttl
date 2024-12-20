@@ -180,6 +180,14 @@ schema:Organization a owl:Class ;
     rdfs:label "Organization"@en,
         "Organisation"@de .
 
+schema:legalName a owl:DatatypeProperty ;
+    rdfs:label "has legal name"@en ,
+        "hat legalen Namen"@de ;
+    rdfs:domain schema:Organization ;
+    rdfs:comment "The official name of the organization, e.g. the registered company name."@en ,
+        "Der offizielle Name der Organisation, z.B. der eingetragene Firmenname."@de ;
+    rdfs:range xsd:string .
+
 schema:email a owl:DatatypeProperty ;
     rdfs:label "has email address"@en ,
         "hat Email-Adresse"@de ;
