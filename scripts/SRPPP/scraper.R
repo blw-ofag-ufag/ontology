@@ -247,7 +247,10 @@ sink()
 # write.csv(data.frame(pests, Wikidata_IRI = ""), "mapping-tables/wikidata-mapping-biological-taxa.csv", row.names = FALSE)
 # 
 mapping_biological_taxa <- read.csv("mapping-tables/wikidata-mapping-biological-taxa.csv")
-as_tibble(mapping_biological_taxa)
-done = mapping_biological_taxa$Wikidata_IRI!="" | is.na(mapping_biological_taxa$Wikidata_IRI)
-mean(done) * 100
-which(!done)+1
+open = is.na(mapping_biological_taxa$Wikidata_IRI)
+as_tibble(mapping_biological_taxa)[open,] |> print(n = 100)
+mean(open) * 100
+which(!open)+1
+
+df = as_tibble(mapping_biological_taxa)
+write.csv(df[order(df$Wikidata_IRI),], "mapping-tables/wikidata-mapping-biological-taxa.csv", row.names = FALSE)
