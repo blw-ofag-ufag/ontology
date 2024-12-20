@@ -4,7 +4,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix wd: <http://www.wikidata.org/entity/> .
-@prefix schema: <https://schema.org>
+@prefix schema: <https://schema.org/> .
 
 <https://register.ld.admin.ch/zefix/company/926935/address> schema:addressCountry <https://ld.admin.ch/country/CHE> .
 <https://register.ld.admin.ch/zefix/company/926935/address> :holdsPermissionToSell :1-W-7528 .

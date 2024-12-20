@@ -248,7 +248,7 @@ cat("
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix wd: <http://www.wikidata.org/entity/> .
-@prefix schema: <https://schema.org>
+@prefix schema: <https://schema.org/> .
 
 ")
 
