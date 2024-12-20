@@ -239,18 +239,3 @@ sink()
 # Write data about biological taxa
 # ------------------------------------------------------------------
 
-# Extract all city elements
-# pests = xml_find_all(xml_data, "//MetaData[@name='Pest']/Detail") %>%
-#   detail_to_df() %>%
-#   as.data.frame()
-# pests = pests %>% pivot_wider(names_from = lang, values_from = name) %>% subset(select = c("ID","de","en","lt"))
-# write.csv(data.frame(pests, Wikidata_IRI = ""), "mapping-tables/wikidata-mapping-biological-taxa.csv", row.names = FALSE)
-# 
-mapping_biological_taxa <- read.csv("mapping-tables/wikidata-mapping-biological-taxa.csv")
-open = is.na(mapping_biological_taxa$Wikidata_IRI)
-as_tibble(mapping_biological_taxa)[open,] |> print(n = 100)
-mean(open) * 100
-which(!open)+1
-
-df = as_tibble(mapping_biological_taxa)
-write.csv(df[order(df$Wikidata_IRI),], "mapping-tables/wikidata-mapping-biological-taxa.csv", row.names = FALSE)
