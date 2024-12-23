@@ -68,6 +68,7 @@ URL <- function(x) sprintf("<%s>", x)
 # 1: Product
 # 2: Company
 # 3: Address
+# 4: Hazard Statements
 
 # ------------------------------------------------------------------
 # DOWNLOAD THE SWISS PLANT PROTECTION REGISTRY AS AN XML FILE
@@ -295,7 +296,28 @@ sink()
 # Write data about biological taxa
 # ------------------------------------------------------------------
 
+sink("data/hazard-statements.ttl")
+
+cat("
+@prefix : <https://agriculture.ld.admin.ch/foag/plant-protection#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+")
+
 CodeR = unique(SRPPP$CodeR[,-1])
+for (i in 1:nrow(CodeR)) {
+  sprintf("%s a :HazardStatement ;\n", IRI("4", CodeR[i,1])) |> cat()
+  if(!is.na(CodeR[i,2])) sprintf("  :hasHazardStatementCode %s ;\n", literal(CodeR[i,2], datatype = "string")) |> cat()
+  sprintf("  rdfs:label %s ,\n", literal(CodeR[i,3], lang = "de")) |> cat()
+  sprintf("    %s ,\n", literal(CodeR[i,4], lang = "fr")) |> cat()
+  sprintf("    %s ,\n", literal(CodeR[i,5], lang = "it")) |> cat()
+  sprintf("    %s .\n", literal(CodeR[i,6], lang = "en")) |> cat()
+  cat("\n")
+}
+
+sink()
 
 # ------------------------------------------------------------------
 # Write data about biological taxa
