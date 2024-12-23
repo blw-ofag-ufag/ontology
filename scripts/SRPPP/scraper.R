@@ -8,6 +8,8 @@ library(rdflib)
 library(dplyr)
 library(srppp)
 library(tidyr)
+library(purrr)
+library(jsonlite)
 
 # ------------------------------------------------------------------
 # DEFINE HELPER FUNCTIONS
@@ -97,10 +99,6 @@ cities = xml_find_all(xml_data, "//MetaData[@name='City']/Detail") %>%
   as.data.frame() %>%
   subset(subset = lang=="de", select = c(1,3))
 rownames(cities) = cities$ID
-
-library(xml2)
-library(dplyr)
-library(purrr)
 
 # Assuming xml_data is already loaded, for example:
 # xml_data <- read_xml("path_to_your_file.xml")
@@ -296,4 +294,47 @@ sink()
 # ------------------------------------------------------------------
 # Write data about biological taxa
 # ------------------------------------------------------------------
+
+CodeR = unique(SRPPP$CodeR[,-1])
+
+# ------------------------------------------------------------------
+# Write data about biological taxa
+# ------------------------------------------------------------------
+
+SRPPP$cultures
+SRPPP$culture_forms
+tree <- attr(SRPPP, "culture_tree")
+print(tree, limit = 2000, "culture_id")
+
+
+View(SRPPP$cultures)
+
+
+SRPPP$culture_forms$culture_form_de |> unique()
+SRPPP$uses
+
+unique(SRPPP$obligations[,-c(1,2)])
+
+SRPPP$application_comments
+
+
+
+
+# extract company elements from XML file
+culture_xml <- xml_find_all(xml_data, "//Culture")
+
+# create company table
+culture <- nodeset_to_dataframe(culture_xml)
+
+
+# Extract all city elements
+culture = xml_find_all(xml_data, "//MetaData[@name='Culture']/Detail") %>%
+  detail_to_df()
+
+
+culture_xml <- xml_find_all(xml_data, ".//MetaData[@name='Culture']/Detail")
+
+
+
+
 

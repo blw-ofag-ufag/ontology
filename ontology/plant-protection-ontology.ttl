@@ -105,6 +105,8 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
         owl:cardinality "1"^^xsd:nonNegativeInteger ;
     ] .
 
+:
+
 :isSameProductAs a owl:ObjectProperty ;
     rdfs:label "is the same product as"@en ,
                "ist dasselbe Produkt wie"@de ;
@@ -175,6 +177,32 @@ schema:Country a owl:Class ;
     rdfs:label "has exhaustion deadline"@en, "hat ein Ablaufdatum der Nutzung"@de ;
     rdfs:comment "The date by which the product must no longer be used, typically after the product registration has been revoked."@en,
         "Das Datum, an dem das Produkt nicht mehr genutzt werden darf, in der Regel nach der Widerrufung der Produktregistrierung."@de .
+
+:HazardStatements a owl:Class ;
+    rdfs:label "Hazard statements"@en ,
+               "Sicherheitshinweise für Gefahrstoffe"@de ;
+    rdfs:comment "H-statements (Hazard Statements) and the complementary EUH-statements are standardized descriptions of the specific dangers posed by chemical substances or mixtures, such as toxicity, flammability, or environmental harm. They are part of the Globally Harmonized System (GHS) and ensure clear, consistent communication of chemical hazards worldwide."@en ;
+    rdfs:comment "H-Sätze (Gefahrenhinweise) und die ergänzenden EUH-Sätze sind standardisierte Beschreibungen der spezifischen Gefahren, die von chemischen Stoffen oder Gemischen ausgehen, wie z. B. Toxizität, Entflammbarkeit oder Umweltschädlichkeit. Sie sind Teil des Global Harmonisierten Systems (GHS) und gewährleisten eine klare, einheitliche Kommunikation chemischer Gefahren weltweit."@de ;
+    rdfs:seeAlso <https://w.wiki/CVwr> .
+
+:hasHazardStatementCode a owl:DatatypeProperty ;
+    rdfs:label "has EU hazard statement code"@en ,
+        "hat EU-Code bezüglich Sicherheitshinweisen für Gefahrstoffe"@de ;
+    rdfs:domain :HazardStatements ;
+    rdfs:range xsd:string .
+
+:hasHazardStatement a owl:ObjectProperty ;
+    rdfs:label "has hazard statements"@en ,
+        "hat Sicherheitshinweis für Gefahrenstoff"@de ;
+    rdfs:domain :Product ;
+    rdfs:range :HazardStatements .
+
+:appliesToProduct a owl:ObjectProperty ;
+    rdfs:label "applies to product"@en ,
+        "bezieht sich auf das Produkt"@de ;
+    rdfs:domain :HazardStatements ;
+    rdfs:range :Product ;
+    owl:inverseOf :hasHazardStatement .
 
 schema:Organization a owl:Class ;
     rdfs:label "Organization"@en,
