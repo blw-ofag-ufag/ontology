@@ -482,7 +482,7 @@ wdt:P171 a owl:ObjectProperty ;
 :appliesToProduct a owl:ObjectProperty ;
     rdfs:label "bezieht sich auf das Produkt"@de,
         "applies to product"@en ;
-    rdfs:domain :HazardStatements ;
+    rdfs:domain :HazardStatement ;
     rdfs:range :Product ;
     owl:inverseOf :hasHazardStatement .
 
@@ -556,7 +556,7 @@ wdt:P171 a owl:ObjectProperty ;
 :hasHazardStatementCode a owl:DatatypeProperty ;
     rdfs:label "hat EU-Code bezüglich Sicherheitshinweisen für Gefahrstoffe"@de,
         "has EU hazard statement code"@en ;
-    rdfs:domain :HazardStatements ;
+    rdfs:domain :HazardStatement ;
     rdfs:range xsd:string .
 
 :hasPermissionHolder a owl:ObjectProperty ;
@@ -11728,7 +11728,7 @@ chebi:24431 a owl:Class ;
     rdfs:label "hat Sicherheitshinweis für Gefahrenstoff"@de,
         "has hazard statements"@en ;
     rdfs:domain :Product ;
-    rdfs:range :HazardStatements .
+    rdfs:range :HazardStatement .
 
 :hasParentCropGroup a owl:ObjectProperty ;
     rdfs:label "hat Übergruppe"@de,
@@ -45926,17 +45926,17 @@ wd:Q16521 a owl:Class ;
     schema:legalName "STAR Agro Handels GmbH" ;
     schema:name "STAR Agro Handels GmbH" .
 
+:Bactericide a owl:Class ;
+    rdfs:label "Bakterizid"@de,
+        "Bactericide"@en ;
+    rdfs:subClassOf :ChemicalCropProtectionProduct .
+
 :HazardStatement a owl:Class ;
     rdfs:label "Sicherheitshinweise für Gefahrstoffe"@de,
         "Hazard statements"@en ;
     rdfs:comment "H-Sätze (Gefahrenhinweise) und die ergänzenden EUH-Sätze sind standardisierte Beschreibungen der spezifischen Gefahren, die von chemischen Stoffen oder Gemischen ausgehen, wie z. B. Toxizität, Entflammbarkeit oder Umweltschädlichkeit. Sie sind Teil des Global Harmonisierten Systems (GHS) und gewährleisten eine klare, einheitliche Kommunikation chemischer Gefahren weltweit."@de,
         "H-statements (Hazard Statements) and the complementary EUH-statements are standardized descriptions of the specific dangers posed by chemical substances or mixtures, such as toxicity, flammability, or environmental harm. They are part of the Globally Harmonized System (GHS) and ensure clear, consistent communication of chemical hazards worldwide."@en ;
     rdfs:seeAlso <https://w.wiki/CVwr> .
-
-:Bactericide a owl:Class ;
-    rdfs:label "Bakterizid"@de,
-        "Bactericide"@en ;
-    rdfs:subClassOf :ChemicalCropProtectionProduct .
 
 :Molluscicide a owl:Class ;
     rdfs:label "Molluskizid"@de,

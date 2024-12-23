@@ -186,19 +186,19 @@ schema:Country a owl:Class ;
 :hasHazardStatementCode a owl:DatatypeProperty ;
     rdfs:label "has EU hazard statement code"@en ,
         "hat EU-Code bezüglich Sicherheitshinweisen für Gefahrstoffe"@de ;
-    rdfs:domain :HazardStatements ;
+    rdfs:domain :HazardStatement ;
     rdfs:range xsd:string .
 
 :hasHazardStatement a owl:ObjectProperty ;
     rdfs:label "has hazard statements"@en ,
         "hat Sicherheitshinweis für Gefahrenstoff"@de ;
     rdfs:domain :Product ;
-    rdfs:range :HazardStatements .
+    rdfs:range :HazardStatement .
 
 :appliesToProduct a owl:ObjectProperty ;
     rdfs:label "applies to product"@en ,
         "bezieht sich auf das Produkt"@de ;
-    rdfs:domain :HazardStatements ;
+    rdfs:domain :HazardStatement ;
     rdfs:range :Product ;
     owl:inverseOf :hasHazardStatement .
 
