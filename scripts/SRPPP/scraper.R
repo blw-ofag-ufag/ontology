@@ -101,9 +101,6 @@ cities = xml_find_all(xml_data, "//MetaData[@name='City']/Detail") %>%
   subset(subset = lang=="de", select = c(1,3))
 rownames(cities) = cities$ID
 
-# Assuming xml_data is already loaded, for example:
-# xml_data <- read_xml("path_to_your_file.xml")
-
 # Find all Detail nodes within the City MetaData
 details <- xml_find_all(xml_data, ".//MetaData[@name='City']/Detail")
 
@@ -215,7 +212,7 @@ company_xml <- xml_find_all(xml_data, "//PermissionHolder")
 
 # create company table
 companies <- nodeset_to_dataframe(company_xml)
-companies$hasUID <- UID_mapping_companies[companies$primaryKey,"UID"]
+companies$hasUID <- zefix_company[companies$primaryKey,"UID"]
 companies$city_id	 <- xml_attr(xml_find_all(company_xml, "City"), "primaryKey")
 companies$addressLocality	 <- cities[companies$city_id,"addressLocality"]
 companies$postalCode	 <- cities[companies$city_id,"postalCode"]
@@ -248,6 +245,7 @@ cat("
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix schema: <https://schema.org/> .
+@prefix zefix: <https://register.ld.admin.ch/zefix/company/> .
 
 ")
 
@@ -280,13 +278,16 @@ for (i in 1:nrow(companies)) {
       sprintf("%s :holdsPermissionToSell %s .\n", x, IRI("1", p)) |> cat()
     }
     
-  } else {
-    x = URL(paste(companies[i,"zefixIRI"],"address",sep="/"))
+  }
+  else {
+    EHRAID = gsub("https://register.ld.admin.ch/zefix/company/","",companies[i,"zefixIRI"])
+    x = paste("zefix", EHRAID, sep=":")
     sprintf("%s schema:addressCountry %s .\n", x, URL(companies[i,"addressCountry"])) |> cat()
     for (p in na.omit(products[products$hasPermissionHolder==companies[i,"IRI"],"hasFederalAdmissionNumber"])) {
       sprintf("%s :holdsPermissionToSell %s .\n", x, IRI("1", p)) |> cat()
     }
   }
+  cat("\n")
 }
 
 sink()
@@ -311,8 +312,8 @@ for (i in 1:nrow(CodeR)) {
   sprintf("%s a :HazardStatement ;\n", IRI("4", CodeR[i,1])) |> cat()
   if(!is.na(CodeR[i,2])) sprintf("  :hasHazardStatementCode %s ;\n", literal(CodeR[i,2], datatype = "string")) |> cat()
   sprintf("  rdfs:label %s ,\n", literal(CodeR[i,3], lang = "de")) |> cat()
-  sprintf("    %s ,\n", literal(CodeR[i,4], lang = "fr")) |> cat()
-  sprintf("    %s ,\n", literal(CodeR[i,5], lang = "it")) |> cat()
+  #sprintf("    %s ,\n", literal(CodeR[i,4], lang = "fr")) |> cat()
+  #sprintf("    %s ,\n", literal(CodeR[i,5], lang = "it")) |> cat()
   sprintf("    %s .\n", literal(CodeR[i,6], lang = "en")) |> cat()
   cat("\n")
 }
@@ -320,7 +321,7 @@ for (i in 1:nrow(CodeR)) {
 sink()
 
 # ------------------------------------------------------------------
-# Write data about biological taxa
+# Write data about crops
 # ------------------------------------------------------------------
 
 SRPPP$cultures

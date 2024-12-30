@@ -7,406 +7,290 @@
 :4-11473 a :HazardStatement ;
   :hasHazardStatementCode "EUH401"^^xsd:string ;
   rdfs:label "Zur Vermeidung von Risiken für Mensch und Umwelt die Gebrauchsanleitung einhalten."@de ,
-    "Respectez les instructions d'utilisation pour éviter les risques pour la santé humaine et l'environnement."@fr ,
-    "Per evitare rischi per la salute umana e per l'ambiente, seguire le istruzioni per l'uso."@it ,
     "To avoid risks to human health and the environment, comply with the instructions for use."@en .
 
 :4-7970 a :HazardStatement ;
   :hasHazardStatementCode "H302"^^xsd:string ;
   rdfs:label "Gesundheitsschädlich bei Verschlucken."@de ,
-    "Nocif en cas d'ingestion."@fr ,
-    "Nocivo se ingerito."@it ,
     "Harmful if swallowed."@en .
 
 :4-7973 a :HazardStatement ;
   :hasHazardStatementCode "H315"^^xsd:string ;
   rdfs:label "Verursacht Hautreizungen."@de ,
-    "Provoque une irritation cutanée."@fr ,
-    "Provoca irritazione cutanea."@it ,
     "Causes skin irritation."@en .
 
 :4-7974 a :HazardStatement ;
   :hasHazardStatementCode "H318"^^xsd:string ;
   rdfs:label "Verursacht schwere Augenschäden."@de ,
-    "Provoque des lésions oculaires graves."@fr ,
-    "Provoca gravi lesioni oculari."@it ,
     "Causes serious eye damage."@en .
 
 :4-11458 a :HazardStatement ;
   :hasHazardStatementCode "H411"^^xsd:string ;
   rdfs:label "Giftig für Wasserorganismen, mit langfristiger Wirkung."@de ,
-    "Toxique pour les organismes aquatiques, entraîne des effets néfastes à long terme."@fr ,
-    "Tossico per gli organismi acquatici con effetti di lunga durata."@it ,
     "Toxic to aquatic life with long lasting effects."@en .
 
 :4-11448 a :HazardStatement ;
   :hasHazardStatementCode "H319"^^xsd:string ;
   rdfs:label "Verursacht schwere Augenreizung."@de ,
-    "Provoque une sévère irritation des yeux."@fr ,
-    "Provoca grave irritazione oculare."@it ,
     "Causes serious eye irritation."@en .
 
 :4-11445 a :HazardStatement ;
   :hasHazardStatementCode "H304"^^xsd:string ;
   rdfs:label "Kann bei Verschlucken und Eindringen in die Atemwege tödlich sein."@de ,
-    "Peut être mortel en cas d'ingestion et de pénétration dans les voies respiratoires."@fr ,
-    "Può essere letale in caso di ingestione e di penetrazione nelle vie respiratorie."@it ,
     "May be fatal if swallowed and enters airways."@en .
 
 :4-11429 a :HazardStatement ;
   :hasHazardStatementCode "H317"^^xsd:string ;
   rdfs:label "Kann allergische Hautreaktionen verursachen."@de ,
-    "Peut provoquer une allergie cutanée."@fr ,
-    "Può provocare una reazione allergica cutanea."@it ,
     "May cause an allergic skin reaction."@en .
 
 :4-7987 a :HazardStatement ;
   :hasHazardStatementCode "H410"^^xsd:string ;
   rdfs:label "Sehr giftig für Wasserorganismen mit langfristiger Wirkung."@de ,
-    "Très toxique pour les organismes aquatiques, entraîne des effets néfastes à long terme."@fr ,
-    "Molto tossico per gli organismi acquatici con effetti di lunga durata."@it ,
     "Very toxic to aquatic life with long lasting effects."@en .
 
 :4-11469 a :HazardStatement ;
   :hasHazardStatementCode "EUH208"^^xsd:string ;
   rdfs:label "Enthält [Name des sensibilisierenden Stoffes]. Kann allergische Reaktionen hervorrufen."@de ,
-    "Contient [nom de la substance sensibilisante]. Peut produire une réaction allergique."@fr ,
-    "Contiene [denominazione della sostanza sensibilizzante]. Può provocare una reazione allergica."@it ,
     "Contains [name of sensitising substance]. May produce an allergic reaction."@en .
 
 :4-11444 a :HazardStatement ;
   :hasHazardStatementCode "H301"^^xsd:string ;
   rdfs:label "Giftig bei Verschlucken."@de ,
-    "Toxique en cas d'ingestion."@fr ,
-    "Tossico se ingerito."@it ,
     "Toxic if swallowed."@en .
 
 :4-7976 a :HazardStatement ;
   :hasHazardStatementCode "H332"^^xsd:string ;
   rdfs:label "Gesundheitsschädlich bei Einatmen."@de ,
-    "Nocif par inhalation."@fr ,
-    "Nocivo se inalato."@it ,
     "Harmful if inhaled."@en .
 
 :4-7958 a :HazardStatement ;
   :hasHazardStatementCode "H226"^^xsd:string ;
   rdfs:label "Flüssigkeit und Dampf entzündbar."@de ,
-    "Liquide et vapeurs inflammables."@fr ,
-    "Liquido e vapori infiammabili."@it ,
     "Flammable liquid and vapour."@en .
 
 :4-11453 a :HazardStatement ;
   :hasHazardStatementCode "H351"^^xsd:string ;
   rdfs:label "Kann vermutlich Krebs erzeugen."@de ,
-    "Susceptible de provoquer le cancer."@fr ,
-    "Sospettato di provocare il cancro."@it ,
     "Suspected of causing cancer."@en .
 
 :4-11457 a :HazardStatement ;
   :hasHazardStatementCode "H400"^^xsd:string ;
   rdfs:label "Sehr giftig für Wasserorganismen."@de ,
-    "Très toxique pour les organismes aquatiques."@fr ,
-    "Molto tossico per gli organismi acquatici."@it ,
     "Very toxic to aquatic life."@en .
 
 :4-7964 a :HazardStatement ;
   :hasHazardStatementCode "H272"^^xsd:string ;
   rdfs:label "Kann Brand verstärken; Oxidationsmittel."@de ,
-    "Peut aggraver un incendie; comburant."@fr ,
-    "Può aggravare un incendio; comburente."@it ,
     "May intensify fire; oxidiser."@en .
 
 :4-7983 a :HazardStatement ;
   :hasHazardStatementCode "H373"^^xsd:string ;
   rdfs:label "Kann die Organe schädigen bei längerer oder wiederholter Exposition."@de ,
-    "Risque présumé d'effets graves pour les organes à la suite d'expositions répétées ou d'une exposition prolongée."@fr ,
-    "Può provocare danni agli organi in caso di esposizione prolungata o ripetuta."@it ,
     "May cause damage to organs through prolonged or repeated exposure."@en .
 
 :4-11454 a :HazardStatement ;
   :hasHazardStatementCode "H361"^^xsd:string ;
   rdfs:label "Kann vermutlich die Fruchtbarkeit beeinträchtigen oder das Kind im Mutterleib schädigen."@de ,
-    "Susceptible de nuire à la fertilité ou au foetus."@fr ,
-    "Sospettato di nuocere alla fertilità o al feto."@it ,
     "Suspected of damaging fertility or the unborn child."@en .
 
 :4-11463 a :HazardStatement ;
   :hasHazardStatementCode "EUH029"^^xsd:string ;
   rdfs:label "Entwickelt bei Berührung mit Wasser giftige Gase."@de ,
-    "Au contact de l'eau, dégage des gaz toxiques."@fr ,
-    "A contatto con l'acqua libera un gas tossico."@it ,
     "Contact with water liberates toxic gas."@en .
 
 :4-11464 a :HazardStatement ;
   :hasHazardStatementCode "EUH032"^^xsd:string ;
   rdfs:label "Entwickelt bei Berührung mit Säure sehr giftige Gase."@de ,
-    "Au contact d'un acide, dégage un gaz très toxique."@fr ,
-    "A contatto con acidi libera gas molto tossici."@it ,
     "Contact with acids liberates very toxic gas."@en .
 
 :4-7962 a :HazardStatement ;
   :hasHazardStatementCode "H260"^^xsd:string ;
   rdfs:label "In Berührung mit Wasser entstehen entzündbare Gase, die sich spontan entzünden können."@de ,
-    "Dégage au contact de l'eau des gaz inflammables qui peuvent s'enflammer spontanément."@fr ,
-    "A contatto con l'acqua libera gas infiammabili che possono infiammarsi spontaneamente."@it ,
     "In contact with water releases flammable gases which may ignite spontaneously."@en .
 
 :4-7969 a :HazardStatement ;
   :hasHazardStatementCode "H300"^^xsd:string ;
   rdfs:label "Lebensgefahr bei Verschlucken."@de ,
-    "Mortel en cas d'ingestion."@fr ,
-    "Letale se ingerito."@it ,
     "Fatal if swallowed."@en .
 
 :4-11446 a :HazardStatement ;
   :hasHazardStatementCode "H311"^^xsd:string ;
   rdfs:label "Giftig bei Hautkontakt."@de ,
-    "Toxique par contact cutané."@fr ,
-    "Tossico per contatto con la pelle."@it ,
     "Toxic in contact with skin."@en .
 
 :4-7975 a :HazardStatement ;
   :hasHazardStatementCode "H330"^^xsd:string ;
   rdfs:label "Lebensgefahr bei Einatmen."@de ,
-    "Mortel par inhalation."@fr ,
-    "Letale se inalato."@it ,
     "Fatal if inhaled."@en .
 
 :4-12038 a :HazardStatement ;
   :hasHazardStatementCode "H300 + H330"^^xsd:string ;
   rdfs:label "Lebensgefahr bei Verschlucken oder Einatmen."@de ,
-    "Mortel par ingestion ou par inhalation."@fr ,
-    "Mortale se ingerito o inalato."@it ,
     "Fatal if swallowed or if inhaled."@en .
 
 :4-11436 a :HazardStatement ;
   :hasHazardStatementCode "H228"^^xsd:string ;
   rdfs:label "Entzündbarer Feststoff."@de ,
-    "Matière solide inflammable."@fr ,
-    "Solido infiammabile."@it ,
     "Flammable solid."@en .
 
 :4-7977 a :HazardStatement ;
   :hasHazardStatementCode "H335"^^xsd:string ;
   rdfs:label "Kann die Atemwege reizen."@de ,
-    "Peut irriter les voies respiratoires."@fr ,
-    "Può irritare le vie respiratorie."@it ,
     "May cause respiratory irritation."@en .
 
 :4-11875 a :HazardStatement ;
   :hasHazardStatementCode "H361d"^^xsd:string ;
   rdfs:label "Kann vermutlich das Kind im Mutterleib schädigen."@de ,
-    "Susceptible de nuire au foetus."@fr ,
-    "Sospettato di nuocere al feto."@it ,
     "Suspected of damaging the unborn child."@en .
 
 :4-7972 a :HazardStatement ;
   :hasHazardStatementCode "H312"^^xsd:string ;
   rdfs:label "Gesundheitsschädlich bei Hautkontakt."@de ,
-    "Nocif par contact cutané."@fr ,
-    "Nocivo per contatto con la pelle."@it ,
     "Harmful in contact with skin."@en .
 
 :4-7988 a :HazardStatement ;
   :hasHazardStatementCode "H412"^^xsd:string ;
   rdfs:label "Schädlich für Wasserorganismen, mit langfristiger Wirkung."@de ,
-    "Nocif pour les organismes aquatiques, entraîne des effets néfastes à long terme."@fr ,
-    "Nocivo per gli organismi acquatici con effetti di lunga durata."@it ,
     "Harmful to aquatic life with long lasting effects."@en .
 
 :4-7985 a :HazardStatement ;
   :hasHazardStatementCode "EUH066"^^xsd:string ;
   rdfs:label "Wiederholter Kontakt kann zu spröder oder rissiger Haut führen."@de ,
-    "L'exposition répétée peut provoquer dessèchement ou gerçures de la peau."@fr ,
-    "L'esposizione ripetuta può provocare secchezza o screpolature della pelle."@it ,
     "Repeated exposure may cause skin dryness or cracking."@en .
 
 :4-12045 a :HazardStatement ;
   :hasHazardStatementCode "H302 + H312"^^xsd:string ;
   rdfs:label "Gesundheitsschädlich bei Verschlucken oder Hautkontakt."@de ,
-    "Nocif en cas d¿ingestion ou de contact cutané."@fr ,
-    "Nocivo se ingerito o a contatto con la pelle."@it ,
     "Harmful if swallowed or in contact with skin."@en .
 
 :4-11451 a :HazardStatement ;
   :hasHazardStatementCode "H336"^^xsd:string ;
   rdfs:label "Kann Schläfrigkeit und Benommenheit verursachen."@de ,
-    "Peut provoquer somnolence ou vertiges."@fr ,
-    "Può provocare sonnolenza o vertigini."@it ,
     "May cause drowsiness or dizziness."@en .
 
 :4-12854 a :HazardStatement ;
   :hasHazardStatementCode "H361f"^^xsd:string ;
   rdfs:label "Kann vermutlich die Fruchtbarkeit beeinträchtigen."@de ,
-    "Susceptible de nuire à la fertilité."@fr ,
-    "Sospettato di nuocere alla fertilità."@it ,
     ""@en .
 
 :4-11452 a :HazardStatement ;
   :hasHazardStatementCode "H341"^^xsd:string ;
   rdfs:label "Kann vermutlich genetische Defekte verursachen."@de ,
-    "Susceptible d'induire des anomalies génétiques."@fr ,
-    "Sospettato di provocare alterazioni genetiche."@it ,
     "Suspected of causing genetic defects."@en .
 
 :4-11443 a :HazardStatement ;
   :hasHazardStatementCode "H290"^^xsd:string ;
   rdfs:label "Kann gegenüber Metallen korrosiv sein."@de ,
-    "Peut être corrosif pour les métaux."@fr ,
-    "Può essere corrosivo per i metalli."@it ,
     "May be corrosive to metals."@en .
 
 :4-12046 a :HazardStatement ;
   :hasHazardStatementCode "H302 + H332"^^xsd:string ;
   rdfs:label "Gesundheitsschädlich bei Verschlucken oder Einatmen."@de ,
-    "Nocif en cas d¿ingestion ou d¿inhalation."@fr ,
-    "Nocivo se ingerito o inalato."@it ,
     "Harmful if swallowed or if inhaled."@en .
 
 :4-12136 a :HazardStatement ;
   :hasHazardStatementCode "H361fd"^^xsd:string ;
   rdfs:label "Kann vermutlich die Fruchtbarkeit beeinträchtigen. Kann vermutlich das Kind im Mutterleib schädigen."@de ,
-    "Susceptible de nuire à la fertilité. Susceptible de nuire au foetus."@fr ,
-    "Sospettato di nuocere alla fertilità. Sospettato di nuocere al feto."@it ,
     "Suspected of damaging fertility. Suspected of damaging the unborn child."@en .
 
 :4-7986 a :HazardStatement ;
   :hasHazardStatementCode "EUH071"^^xsd:string ;
   rdfs:label "Wirkt ätzend auf die Atemwege."@de ,
-    "Corrosif pour les voies respiratoires."@fr ,
-    "Corrosivo per le vie respiratorie."@it ,
     "Corrosive to the respiratory tract."@en .
 
 :4-11447 a :HazardStatement ;
   :hasHazardStatementCode "H314"^^xsd:string ;
   rdfs:label "Verursacht schwere Verätzungen der Haut und schwere Augenschäden."@de ,
-    "Provoque des brûlures de la peau et des lésions oculaires graves."@fr ,
-    "Provoca gravi ustioni cutanee e gravi lesioni oculari."@it ,
     "Causes severe skin burns and eye damage."@en .
 
 :4-11456 a :HazardStatement ;
   :hasHazardStatementCode "H372"^^xsd:string ;
   rdfs:label "Schädigt die Organe bei längerer oder wiederholter Exposition."@de ,
-    "Risque avéré d'effets graves pour les organes à la suite d'expositions répétées ou d'une exposition prolongée."@fr ,
-    "Provoca danni agli organi in caso di esposizione prolungata o ripetuta."@it ,
     "Causes damage to organs through prolonged or repeated exposure."@en .
 
 :4-7981 a :HazardStatement ;
   :hasHazardStatementCode "H362"^^xsd:string ;
   rdfs:label "Kann Säuglinge über die Muttermilch schädigen."@de ,
-    "Peut être nocif pour les bébés nourris au lait maternel."@fr ,
-    "Può essere nocivo per i lattanti allattati al seno."@it ,
     "May cause harm to breast-fed children."@en .
 
 :4-7956 a :HazardStatement ;
   :hasHazardStatementCode "H222"^^xsd:string ;
   rdfs:label "Extrem entzündbares Aerosol."@de ,
-    "Aérosol extrêmement inflammable."@fr ,
-    "Aerosol altamente infiammabile."@it ,
     "Extremely flammable aerosol."@en .
 
 :4-12898 a :HazardStatement ;
   :hasHazardStatementCode "H229"^^xsd:string ;
   rdfs:label "Behälter steht unter Druck: Kann bei Erwärmung bersten."@de ,
-    "Récipient sous pression: peut éclater sous l'effet de la chaleur."@fr ,
-    "Contenitore pressurizzato: può esplodere se riscaldato."@it ,
     "Pressurised container: May burst if heated."@en .
 
 :4-11435 a :HazardStatement ;
   :hasHazardStatementCode "H225"^^xsd:string ;
   rdfs:label "Flüssigkeit und Dampf leicht entzündbar."@de ,
-    "Liquide et vapeurs très inflammables."@fr ,
-    "Liquido e vapori facilmente infiammabili."@it ,
     "Highly flammable liquid and vapour."@en .
 
 :4-11455 a :HazardStatement ;
   :hasHazardStatementCode "H370"^^xsd:string ;
   rdfs:label "Schädigt die Organe <oder alle betroffenen Organe nennen, sofern bekannt> <Expositionsweg angeben, sofern schlüssig belegt ist, dass diese Gefahr bei keinem anderen Expositionsweg besteht>."@de ,
-    "Risque avéré d'effets graves pour les organes <ou indiquer tous les organes affectés, s'ils sont connus> <indiquer la voie d'exposition s'il est formellement prouvé qu'aucune autre voie d'exposition ne conduit au même danger>."@fr ,
-    "Provoca danni agli organi <o indicare tutti gli organi interessati, se noti> <indicare la via di esposizione se è accertato che nessun'altra via di esposizione comporta il medesimo pericolo>."@it ,
     "Causes damage to organs <or state all organs affected, if known> <state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard>."@en .
 
 :4-12850 a :HazardStatement ;
   :hasHazardStatementCode "H360F"^^xsd:string ;
   rdfs:label "Kann die Fruchtbarkeit beeinträchtigen."@de ,
-    "Peut nuire à la fertilité."@fr ,
-    "Può nuocere alla fertilità."@it ,
     ""@en .
 
 :4-11459 a :HazardStatement ;
   :hasHazardStatementCode "H413"^^xsd:string ;
   rdfs:label "Kann für Wasserorganismen schädlich sein, mit langfristiger Wirkung."@de ,
-    "Peut être nocif à long terme pour les organismes aquatiques."@fr ,
-    "Può essere nocivo per gli organismi acquatici con effetti di lunga durata."@it ,
     "May cause long lasting harmful effects to aquatic life."@en .
 
 :4-11472 a :HazardStatement ;
   :hasHazardStatementCode "EUH210"^^xsd:string ;
   rdfs:label "Sicherheitsdatenblatt auf Anfrage erhältlich."@de ,
-    "Fiche de données de sécurité disponible sur demande."@fr ,
-    "Scheda dati di sicurezza disponibile su richiesta."@it ,
     "Safety data sheet available on request"@en .
 
 :4-15378 a :HazardStatement ;
   :hasHazardStatementCode "EUH211"^^xsd:string ;
   rdfs:label "Achtung! Beim Sprühen können gefährliche lungengängige Tröpfchen entstehen. Aerosol oder Nebel nicht einatmen."@de ,
-    "Attention! Des gouttelettes respirables dangereuses peuvent se former lors de la pulvérisation. Ne pas respirer les aérosols ni les brouillards."@fr ,
-    "Attenzione! In caso di vaporizzazione possono formarsi goccioline respirabili pericolose. Non respirare i vapori o le nebbie."@it ,
     "Warning! Hazardous respirable droplets may be formed when sprayed. Do not breathe spray or mist."@en .
 
 :4-12853 a :HazardStatement ;
   :hasHazardStatementCode "H360Df"^^xsd:string ;
   rdfs:label "Kann das Kind im Mutterleib schädigen. Kann vermutlich die Fruchtbarkeit beeinträchtigen."@de ,
-    "Peut nuire au foetus. Susceptible de nuire à la fertilité."@fr ,
-    "Può nuocere al feto. Sospettato di nuocere alla fertilità."@it ,
     ""@en .
 
 :4-7982 a :HazardStatement ;
   :hasHazardStatementCode "H371"^^xsd:string ;
   rdfs:label "Kann die Organe schädigen <oder alle betroffenen Organe nennen, sofern bekannt> <Expositionsweg angeben, sofern schlüssig belegt ist, dass diese Gefahr bei keinem anderen Expositionsweg besteht>."@de ,
-    "Risque présumé d'effets graves pour les organes <ou indiquer tous les organes affectés, s'ils sont connus> <indiquer la voie d'exposition s'il est formellement prouvé qu'aucune autre voie d'exposition ne conduit au même danger>."@fr ,
-    "Può provocare danni agli organi <o indicare tutti gli organi interessati, se noti> <indicare la via di esposizione se è accertato che nessun'altra via di esposizione comporta il medesimo pericolo>."@it ,
     "May cause damage to organs <or state all organs affected, if known> <state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard>."@en .
 
 :4-7984 a :HazardStatement ;
   :hasHazardStatementCode "EUH031"^^xsd:string ;
   rdfs:label "Entwickelt bei Berührung mit Säure giftige Gase."@de ,
-    "Au contact d'un acide, dégage un gaz toxique."@fr ,
-    "A contatto con acidi libera gas tossici."@it ,
     "Contact with acids liberates toxic gas."@en .
 
 :4-7971 a :HazardStatement ;
   :hasHazardStatementCode "H310"^^xsd:string ;
   rdfs:label "Lebensgefahr bei Hautkontakt."@de ,
-    "Mortel par contact cutané."@fr ,
-    "Letale per contatto con la pelle."@it ,
     "Fatal in contact with skin."@en .
 
 :4-11442 a :HazardStatement ;
   :hasHazardStatementCode "H280"^^xsd:string ;
   rdfs:label "Enthält Gas unter Druck; kann bei Erwärmung explodieren."@de ,
-    "Contient un gaz sous pression; peut exploser sous l'effet de la chaleur."@fr ,
-    "Contiene gas sotto pressione; può esplodere se riscaldato."@it ,
     "Contains gas under pressure; may explode if heated."@en .
 
 :4-11434 a :HazardStatement ;
   :hasHazardStatementCode "H223"^^xsd:string ;
   rdfs:label "Entzündbares Aerosol."@de ,
-    "Aérosol inflammable."@fr ,
-    "Aerosol infiammabile."@it ,
     "Flammable aerosol."@en .
 
 :4-11450 a :HazardStatement ;
   :hasHazardStatementCode "H334"^^xsd:string ;
   rdfs:label "Kann bei Einatmen Allergie, asthmaartige Symptome oder Atembeschwerden verursachen."@de ,
-    "Peut provoquer des symptômes allergiques ou d'asthme ou des difficultés respiratoires par"@fr ,
-    "Può provocare sintomi allergici o asmatici o difficoltà respiratorie se inalato."@it ,
     "May cause allergy or asthma symptoms or breathing difficulties if inhaled."@en .
 
 :4-11449 a :HazardStatement ;
   :hasHazardStatementCode "H331"^^xsd:string ;
   rdfs:label "Giftig bei Einatmen."@de ,
-    "Toxique par inhalation."@fr ,
-    "Tossico se inalato."@it ,
     "Toxic if inhaled."@en .
 
