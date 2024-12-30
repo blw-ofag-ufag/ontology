@@ -15,7 +15,8 @@ if __name__ == "__main__":
         "ontology/plant-protection-ontology.ttl",
         "data/products.ttl",
         "data/companies.ttl",
-        "data/hazard-statements.ttl"
+        "data/hazard-statements.ttl",
+        "data/crops.ttl"
     ]
     output_file = "graph/plant-protection.ttl"
     merge_ttl_files(file_list, output_file)

@@ -67,8 +67,9 @@ URL <- function(x) sprintf("<%s>", x)
 # DOMAINS
 # 1: Product
 # 2: Company
-# 3: Address
-# 4: Hazard Statements
+# 3: Address (of a company)
+# 4: Hazard statement
+# 5: Crop
 
 # ------------------------------------------------------------------
 # DOWNLOAD THE SWISS PLANT PROTECTION REGISTRY AS AN XML FILE
@@ -94,16 +95,6 @@ zefix_company = read.csv("mapping-tables/zefix-company.csv", row.names = 1)
 srppp_product_categories = read.csv("mapping-tables/srppp-product-categories.csv", row.names = 1)
 wikidata_taxon = read.csv("mapping-tables/wikidata-taxon.csv")
 
-# Extract all city elements
-cities = xml_find_all(xml_data, "//MetaData[@name='City']/Detail") %>%
-  detail_to_df() %>%
-  as.data.frame() %>%
-  subset(subset = lang=="de", select = c(1,3))
-rownames(cities) = cities$ID
-
-# Find all Detail nodes within the City MetaData
-details <- xml_find_all(xml_data, ".//MetaData[@name='City']/Detail")
-
 # ------------------------------------------------------------------
 # WRITE PRODUCT INFORMATION
 # ------------------------------------------------------------------
@@ -112,14 +103,14 @@ details <- xml_find_all(xml_data, ".//MetaData[@name='City']/Detail")
 swiss_products = SRPPP$products[,c("pNbr", "wNbr", "name", "exhaustionDeadline", "soldoutDeadline", "permission_holder")]
 colnames(swiss_products) = c("pNbr", "hasFederalAdmissionNumber", "label", "hasExhaustionDeadline", "hasSoldoutDeadline", "hasPermissionHolder")
 swiss_products$hasFederalAdmissionNumber = paste0("W-", swiss_products$hasFederalAdmissionNumber)
-swiss_products$hasCountryOfOrigin = "wd:Q39"
+swiss_products$hasCountryOfOrigin = "https://ld.admin.ch/country/CHE"
 swiss_products$hasForeignAdmissionNumber = NA
 swiss_products$isParallelImport = FALSE
 
 # pre-process parallel imports tables
 parallel_imports = SRPPP$parallel_imports[,c("pNbr", "id", "name", "exhaustionDeadline", "soldoutDeadline", "permission_holder", "producingCountryPrimaryKey", "admissionnumber")]
 colnames(parallel_imports) = colnames(swiss_products)
-parallel_imports$hasCountryOfOrigin = paste0("wd:", wikidata_mapping_countries[as.character(parallel_imports$hasCountryOfOrigin),])
+parallel_imports$hasCountryOfOrigin = lindas_country[as.character(parallel_imports$hasCountryOfOrigin),]
 parallel_imports$isParallelImport = TRUE
 
 # merge the two tables
@@ -141,7 +132,6 @@ cat("
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix wd: <http://www.wikidata.org/entity/> .
 
 ")
 
@@ -149,7 +139,7 @@ cat("
 for (i in 1:nrow(products)) {
   
   # save categories as one string
-  c <- product_categories[as.character(unlist(SRPPP$categories[SRPPP$categories$pNbr==products[i,"pNbr"],2])),2] |>
+  c <- srppp_product_categories[as.character(unlist(SRPPP$categories[SRPPP$categories$pNbr==products[i,"pNbr"],2])),2] |>
     strsplit(", ") |> unlist() |> unique() |> paste(collapse = ", ")
   
   # define basic product information
@@ -180,7 +170,7 @@ for (i in 1:nrow(products)) {
     }
   }
   
-  sprintf("    :hasCountryOfOrigin %s ;\n", products[i,"hasCountryOfOrigin"]) |> cat()
+  sprintf("    :hasCountryOfOrigin %s ;\n", URL(products[i,"hasCountryOfOrigin"])) |> cat()
   
   # reuse existing company from lindas zefix, if possible
   zefix_iri = zefix_company[as.character(products[i,"hasPermissionHolder"]),"IRI"]
@@ -196,8 +186,7 @@ sink()
 # ------------------------------------------------------------------
 
 # first, create city table
-details <- xml_find_all(xml_data, ".//MetaData[@name='City']/Detail")
-city <- map_df(details, function(detail) {
+cities <- map_df(xml_find_all(xml_data, ".//MetaData[@name='City']/Detail"), function(detail) {
   city_id <- xml_attr(detail, "primaryKey")
   german_desc <- xml_find_first(detail, ".//Description[@language='de']")
   german_name <- if (!is.na(german_desc)) xml_attr(german_desc, "value") else NA_character_
@@ -205,7 +194,7 @@ city <- map_df(details, function(detail) {
   postal_code <- if (!is.na(code_node)) xml_attr(code_node, "value") else NA_character_
   tibble(id = city_id, addressLocality = german_name, postalCode = postal_code)
 })
-cities = data.frame(city[,-1], row.names = city$id)
+cities = data.frame(cities[,-1], row.names = cities$id)
 
 # extract company elements from XML file
 company_xml <- xml_find_all(xml_data, "//PermissionHolder")
@@ -294,7 +283,7 @@ sink()
 
 
 # ------------------------------------------------------------------
-# Write data about biological taxa
+# Write data about hazard codes (Code R)
 # ------------------------------------------------------------------
 
 sink("data/hazard-statements.ttl")
@@ -309,13 +298,36 @@ cat("
 
 CodeR = unique(SRPPP$CodeR[,-1])
 for (i in 1:nrow(CodeR)) {
-  sprintf("%s a :HazardStatement ;\n", IRI("4", CodeR[i,1])) |> cat()
+  sprintf("%s a :HazardStatement, :CodeR ;\n", IRI("4", CodeR[i,1])) |> cat()
   if(!is.na(CodeR[i,2])) sprintf("  :hasHazardStatementCode %s ;\n", literal(CodeR[i,2], datatype = "string")) |> cat()
   sprintf("  rdfs:label %s ,\n", literal(CodeR[i,3], lang = "de")) |> cat()
   #sprintf("    %s ,\n", literal(CodeR[i,4], lang = "fr")) |> cat()
   #sprintf("    %s ,\n", literal(CodeR[i,5], lang = "it")) |> cat()
-  sprintf("    %s .\n", literal(CodeR[i,6], lang = "en")) |> cat()
-  cat("\n")
+  sprintf("    %s ;\n", literal(CodeR[i,6], lang = "en")) |> cat()
+  
+  J = products[products$pNbr %in% unlist(SRPPP$CodeR[SRPPP$CodeR$desc_pk==as.numeric(CodeR[i,1]),"pNbr"]),"hasFederalAdmissionNumber"]
+  for (j in J) {
+    sprintf("  :appliesToProduct %s ;\n", IRI("1",j)) |> cat()
+  }
+  
+  cat(".\n")
+}
+
+CodeS = unique(SRPPP$CodeS[,-1])
+for (i in 1:nrow(CodeS)) {
+  sprintf("%s a :HazardStatement, :CodeS ;\n", IRI("4", CodeS[i,1])) |> cat()
+  if(!is.na(CodeS[i,2]) & !grepl("^\\s*$", CodeS[i,2])) sprintf("  :hasHazardStatementCode %s ;\n", literal(CodeS[i,2], datatype = "string")) |> cat()
+  sprintf("  rdfs:label %s ;\n", literal(CodeS[i,3], lang = "de")) |> cat()
+  #sprintf("  rdfs:label %s ;\n", literal(CodeS[i,4], lang = "fr")) |> cat()
+  #sprintf("  rdfs:label %s ;\n", literal(CodeS[i,5], lang = "it")) |> cat()
+  if(!is.na(CodeS[i,6]) & !CodeS[i,6]=="") sprintf("  rdfs:label %s ;\n", literal(CodeS[i,6], lang = "en")) |> cat()
+  
+  J = products[products$pNbr %in% unlist(SRPPP$CodeS[SRPPP$CodeS$desc_pk==as.numeric(CodeS[i,1]),"pNbr"]),"hasFederalAdmissionNumber"]
+  for (j in J) {
+    sprintf("  :appliesToProduct %s ;\n", IRI("1",j)) |> cat()
+  }
+  
+  cat(".\n")
 }
 
 sink()
@@ -324,40 +336,37 @@ sink()
 # Write data about crops
 # ------------------------------------------------------------------
 
-SRPPP$cultures
-SRPPP$culture_forms
-tree <- attr(SRPPP, "culture_tree")
-print(tree, limit = 2000, "culture_id")
+sink("data/crops.ttl")
 
+cat("
+@prefix : <https://agriculture.ld.admin.ch/foag/plant-protection#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-View(SRPPP$cultures)
+")
 
+# Find all Detail nodes within the City MetaData
+crops <- xml_find_all(xml_data, ".//MetaData[@name='Culture']/Detail")
 
-SRPPP$culture_forms$culture_form_de |> unique()
-SRPPP$uses
+# loop over all crops
+for (i in 1:length(crops)) {
+  
+  # extract information from node
+  ID = xml_attr(crops[[i]], "primaryKey")
+  parent_ID = xml_find_all(crops[[i]], ".//Parent") |> xml_attr("primaryKey")
+  label_de = xml_find_all(crops[[i]], ".//Description[@language='de']") |> xml_attr("value")
+  label_en = xml_find_all(crops[[i]], ".//Description[@language='en']") |> xml_attr("value")
+  
+  # write information as RDF
+  sprintf("%s a :CropGroup ;\n", IRI("5", ID)) |> cat()
+  if(length(parent_ID)>0) sprintf("  :hasParentCropGroup %s ;\n", paste(IRI("5", parent_ID), collapse = ", ")) |> cat()
+  if(!is.na(label_en) & label_en!="") sprintf("  rdfs:label %s ;\n", literal(label_en, lang = "en")) |> cat()
+  if(!is.na(label_de)) sprintf("  rdfs:label %s .\n", literal(label_de, lang = "de")) |> cat()
+  cat("\n")
+}
 
-unique(SRPPP$obligations[,-c(1,2)])
-
-SRPPP$application_comments
-
-
-
-
-# extract company elements from XML file
-culture_xml <- xml_find_all(xml_data, "//Culture")
-
-# create company table
-culture <- nodeset_to_dataframe(culture_xml)
-
-
-# Extract all city elements
-culture = xml_find_all(xml_data, "//MetaData[@name='Culture']/Detail") %>%
-  detail_to_df()
-
-
-culture_xml <- xml_find_all(xml_data, ".//MetaData[@name='Culture']/Detail")
-
-
+sink()
 
 
 

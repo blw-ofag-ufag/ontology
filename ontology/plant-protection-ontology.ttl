@@ -183,9 +183,17 @@ schema:Country a owl:Class ;
         "H-Sätze (Gefahrenhinweise) und die ergänzenden EUH-Sätze sind standardisierte Beschreibungen der spezifischen Gefahren, die von chemischen Stoffen oder Gemischen ausgehen, wie z. B. Toxizität, Entflammbarkeit oder Umweltschädlichkeit. Sie sind Teil des Global Harmonisierten Systems (GHS) und gewährleisten eine klare, einheitliche Kommunikation chemischer Gefahren weltweit."@de ;
     rdfs:seeAlso <https://w.wiki/CVwr> .
 
+:CodeR a owl:Class ;
+    rdfs:subClassOf :HazardStatement ;
+    rdfs:label "R Code"@en , "R Code"@de .
+
+:CodeS a owl:Class ;
+    rdfs:subClassOf :HazardStatement ;
+    rdfs:label "S Code"@en , "S Code"@de .
+
 :hasHazardStatementCode a owl:DatatypeProperty ;
-    rdfs:label "has EU hazard statement code"@en ,
-        "hat EU-Code bezüglich Sicherheitshinweisen für Gefahrstoffe"@de ;
+    rdfs:label "has hazard statement code"@en ,
+        "hat Code bezüglich Sicherheitshinweisen für Gefahrstoffe"@de ;
     rdfs:domain :HazardStatement ;
     rdfs:range xsd:string .
 

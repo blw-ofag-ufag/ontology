@@ -1,0 +1,1275 @@
+
+@prefix : <https://agriculture.ld.admin.ch/foag/plant-protection#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:5-11393 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Sorghum"@de .
+
+:5-12628 a :CropGroup ;
+  rdfs:label "Rhodiola rosea"@en ;
+  rdfs:label "Rosenwurz"@de .
+
+:5-12629 a :CropGroup ;
+  rdfs:label "actaea racemosa"@en ;
+  rdfs:label "Traubensilberkerze"@de .
+
+:5-12630 a :CropGroup ;
+  rdfs:label "plantago lanceolata"@en ;
+  rdfs:label "Spitzwegerich"@de .
+
+:5-14799 a :CropGroup ;
+  rdfs:label "Eberesche"@de .
+
+:5-12626 a :CropGroup ;
+  rdfs:label "Marjoram"@en ;
+  rdfs:label "Majoran"@de .
+
+:5-12627 a :CropGroup ;
+  rdfs:label "Oregano"@en ;
+  rdfs:label "Oregano"@de .
+
+:5-14786 a :CropGroup ;
+  rdfs:label "Sanddorn"@de .
+
+:5-14787 a :CropGroup ;
+  rdfs:label "Schwarze Maulbeere"@de .
+
+:5-14801 a :CropGroup ;
+  rdfs:label "Gemeine Felsenbirne"@de .
+
+:5-15866 a :CropGroup ;
+  rdfs:label "Convolvulaceae"@en ;
+  rdfs:label "Windengewächse (Convolvulaceae)"@de .
+
+:5-14729 a :CropGroup ;
+  :hasParentCropGroup :5-12069 ;
+  rdfs:label "Hemp"@en ;
+  rdfs:label "Hanf"@de .
+
+:5-11984 a :CropGroup ;
+  rdfs:label "Anemone"@de .
+
+:5-11985 a :CropGroup ;
+  rdfs:label "Ranunkel"@de .
+
+:5-15269 a :CropGroup ;
+  rdfs:label "Kerbelrübe"@de .
+
+:5-10327 a :CropGroup ;
+  :hasParentCropGroup :5-10093 ;
+  rdfs:label "Löwenzahn"@de .
+
+:5-10326 a :CropGroup ;
+  :hasParentCropGroup :5-10325 ;
+  rdfs:label "Radicchio- und Cicorino-Typen"@de .
+
+:5-10325 a :CropGroup ;
+  :hasParentCropGroup :5-10093 ;
+  rdfs:label "Endivien und Blattzichorien"@de .
+
+:5-10323 a :CropGroup ;
+  :hasParentCropGroup :5-9944 ;
+  rdfs:label "Schnittsalat"@de .
+
+:5-10320 a :CropGroup ;
+  :hasParentCropGroup :5-10304 ;
+  rdfs:label "Kopfsalate"@de .
+
+:5-10335 a :CropGroup ;
+  :hasParentCropGroup :5-10027 ;
+  rdfs:label "Tomaten Spezialitäten"@de .
+
+:5-10333 a :CropGroup ;
+  :hasParentCropGroup :5-10027 ;
+  rdfs:label "Rispentomaten"@de .
+
+:5-10332 a :CropGroup ;
+  :hasParentCropGroup :5-10027 ;
+  rdfs:label "Cherrytomaten"@de .
+
+:5-10330 a :CropGroup ;
+  :hasParentCropGroup :5-9957 ;
+  rdfs:label "Puffbohne"@de .
+
+:5-10329 a :CropGroup ;
+  :hasParentCropGroup :5-10306 ;
+  rdfs:label "Schnittmangold"@de .
+
+:5-10328 a :CropGroup ;
+  :hasParentCropGroup :5-10306 ;
+  rdfs:label "Swiss chard "@en ;
+  rdfs:label "Krautstiel"@de .
+
+:5-11820 a :CropGroup ;
+  :hasParentCropGroup :5-10186 ;
+  rdfs:label "Ysop"@de .
+
+:5-10310 a :CropGroup ;
+  :hasParentCropGroup :5-10017 ;
+  rdfs:label "Kürbisse mit geniessbarer Schale"@de .
+
+:5-10311 a :CropGroup ;
+  :hasParentCropGroup :5-10186 ;
+  rdfs:label "Liebstöckel"@de .
+
+:5-10308 a :CropGroup ;
+  :hasParentCropGroup :5-10186 ;
+  rdfs:label "Salbei"@de .
+
+:5-10309 a :CropGroup ;
+  :hasParentCropGroup :5-10186 ;
+  rdfs:label "Bohnenkraut"@de .
+
+:5-11816 a :CropGroup ;
+  :hasParentCropGroup :5-10186 ;
+  rdfs:label "Kerbel"@de .
+
+:5-10306 a :CropGroup ;
+  :hasParentCropGroup :5-10068 ;
+  rdfs:label "Mangold"@de .
+
+:5-11817 a :CropGroup ;
+  :hasParentCropGroup :5-10186 ;
+  rdfs:label "Thymian"@de .
+
+:5-10307 a :CropGroup ;
+  :hasParentCropGroup :5-10186 ;
+  rdfs:label "Basilikum"@de .
+
+:5-10304 a :CropGroup ;
+  :hasParentCropGroup :5-10093 ;
+  rdfs:label "Lactuca-Salate"@de .
+
+:5-11819 a :CropGroup ;
+  :hasParentCropGroup :5-10186 ;
+  rdfs:label "Koriander"@de .
+
+:5-10305 a :CropGroup ;
+  :hasParentCropGroup :5-9962 ;
+  rdfs:label "Asia-Salate (Brassicaceae)"@de .
+
+:5-10318 a :CropGroup ;
+  :hasParentCropGroup :5-9962 ;
+  rdfs:label "Cima di Rapa"@de .
+
+:5-10319 a :CropGroup ;
+  :hasParentCropGroup :5-9962 ;
+  rdfs:label "Brunnenkresse"@de .
+
+:5-10316 a :CropGroup ;
+  :hasParentCropGroup :5-10020 ;
+  rdfs:label "Kopfkohle"@de .
+
+:5-10317 a :CropGroup ;
+  :hasParentCropGroup :5-10210 ;
+  rdfs:label "Stielmus"@de .
+
+:5-10314 a :CropGroup ;
+  :hasParentCropGroup :5-10284 ;
+  rdfs:label "Romanesco"@de .
+
+:5-10315 a :CropGroup ;
+  :hasParentCropGroup :5-10210 ;
+  rdfs:label "Pak-Choi"@de .
+
+:5-10312 a :CropGroup ;
+  :hasParentCropGroup :5-10186 ;
+  rdfs:label "Estragon"@de .
+
+:5-11321 a :CropGroup ;
+  :hasParentCropGroup :5-10052 ;
+  rdfs:label "Hartweizen"@de .
+
+:5-11325 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Klee zur Saatgutproduktion"@de .
+
+:5-11326 a :CropGroup ;
+  :hasParentCropGroup :5-10086 ;
+  rdfs:label "Kartoffeln zur Pflanzgutproduktion"@de .
+
+:5-10340 a :CropGroup ;
+  :hasParentCropGroup :5-10195 ;
+  rdfs:label "Lippenblütler (Labiatae)"@de .
+
+:5-10341 a :CropGroup ;
+  :hasParentCropGroup :5-10340 ;
+  rdfs:label "Stachys"@de .
+
+:5-10342 a :CropGroup ;
+  :hasParentCropGroup :5-10025 ;
+  rdfs:label "Portulak"@de .
+
+:5-10336 a :CropGroup ;
+  :hasParentCropGroup :5-10029 ;
+  rdfs:label "Gemüsepaprika"@de .
+
+:5-10337 a :CropGroup ;
+  :hasParentCropGroup :5-10031 ;
+  rdfs:label "Bundzwiebeln"@de .
+
+:5-10338 a :CropGroup ;
+  :hasParentCropGroup :5-10195 ;
+  rdfs:label "Spargelgewächse (Asparagaceae)"@de .
+
+:5-10339 a :CropGroup ;
+  :hasParentCropGroup :5-10195 ;
+  rdfs:label "Süssgräser (Poaceae)"@de .
+
+:5-10346 a :CropGroup ;
+  :hasParentCropGroup :5-10086 ;
+  rdfs:label "Speise- und Futterkartoffeln"@de .
+
+:5-9953 a :CropGroup ;
+  :hasParentCropGroup :5-10194 ;
+  rdfs:label "Reben"@de .
+
+:5-9952 a :CropGroup ;
+  :hasParentCropGroup :5-10190 ;
+  rdfs:label "Gehölze (ausserhalb Forst)"@de .
+
+:5-10258 a :CropGroup ;
+  :hasParentCropGroup :5-10016 ;
+  rdfs:label "Einlegegurken"@de .
+
+:5-9955 a :CropGroup ;
+  :hasParentCropGroup :5-10015, :5-12097 ;
+  rdfs:label "Nelken"@de .
+
+:5-10256 a :CropGroup ;
+  :hasParentCropGroup :5-12097 ;
+  rdfs:label "Zierkürbis"@de .
+
+:5-9954 a :CropGroup ;
+  :hasParentCropGroup :5-12465, :5-12464 ;
+  rdfs:label "Forstliche Pflanzgärten"@de .
+
+:5-9957 a :CropGroup ;
+  :hasParentCropGroup :5-10195 ;
+  rdfs:label "Hülsenfrüchtler (Fabaceae)"@de .
+
+:5-9956 a :CropGroup ;
+  :hasParentCropGroup :5-10202 ;
+  rdfs:label "Liegendes Rundholz im Wald und auf Lagerplätzen"@de .
+
+:5-10261 a :CropGroup ;
+  rdfs:label "Holzpaletten, Packholz, Stammholz"@de .
+
+:5-9959 a :CropGroup ;
+  :hasParentCropGroup :5-10192 ;
+  rdfs:label "Kernobst"@de .
+
+:5-10260 a :CropGroup ;
+  :hasParentCropGroup :5-10192 ;
+  rdfs:label "Hartschalenobst"@de .
+
+:5-10267 a :CropGroup ;
+  :hasParentCropGroup :5-10254 ;
+  rdfs:label "Grecian foxglove"@en ;
+  rdfs:label "Wolliger Fingerhut"@de .
+
+:5-9961 a :CropGroup ;
+  :hasParentCropGroup :5-10195 ;
+  rdfs:label "Korbblütler (Asteraceae)"@de .
+
+:5-10266 a :CropGroup ;
+  :hasParentCropGroup :5-10310 ;
+  rdfs:label "Rondini"@de .
+
+:5-9960 a :CropGroup ;
+  :hasParentCropGroup :5-10195 ;
+  rdfs:label "Knöterichgewächse (Polygonaceae)"@de .
+
+:5-9963 a :CropGroup ;
+  :hasParentCropGroup :5-10195 ;
+  rdfs:label "Liliengewächse (Liliaceae)"@de .
+
+:5-10264 a :CropGroup ;
+  :hasParentCropGroup :5-10017 ;
+  rdfs:label "Speisekürbisse (ungeniessbare Schale)"@de .
+
+:5-9962 a :CropGroup ;
+  :hasParentCropGroup :5-10195 ;
+  rdfs:label "Kreuzblütler (Brassicaceae)"@de .
+
+:5-10271 a :CropGroup ;
+  :hasParentCropGroup :5-10167, :5-10052 ;
+  rdfs:label "Emmer"@de .
+
+:5-9965 a :CropGroup ;
+  :hasParentCropGroup :5-10192 ;
+  rdfs:label "Steinobst"@de .
+
+:5-10270 a :CropGroup ;
+  :hasParentCropGroup :5-10186 ;
+  rdfs:label "Mint"@en ;
+  rdfs:label "Minze"@de .
+
+:5-9967 a :CropGroup ;
+  :hasParentCropGroup :5-10190 ;
+  rdfs:label "Zier- und Sportrasen"@de .
+
+:5-10268 a :CropGroup ;
+  rdfs:label "Melisse"@de .
+
+:5-9968 a :CropGroup ;
+  :hasParentCropGroup :5-10190 ;
+  rdfs:label "Stauden"@de .
+
+:5-10242 a :CropGroup ;
+  :hasParentCropGroup :5-10186 ;
+  rdfs:label "dill"@en ;
+  rdfs:label "Dill"@de .
+
+:5-9969 a :CropGroup ;
+  :hasParentCropGroup :5-10176 ;
+  rdfs:label "Sommerflor"@de .
+
+:5-10243 a :CropGroup ;
+  :hasParentCropGroup :5-10195 ;
+  rdfs:label "Valerian"@en ;
+  rdfs:label "Baldrian"@de .
+
+:5-14273 a :CropGroup ;
+  rdfs:label "chickpea"@en ;
+  rdfs:label "Kichererbse"@de .
+
+:5-9970 a :CropGroup ;
+  :hasParentCropGroup :5-9959 ;
+  rdfs:label "Apfel"@de .
+
+:5-9971 a :CropGroup ;
+  :hasParentCropGroup :5-9965 ;
+  rdfs:label "Aprikose"@de .
+
+:5-9972 a :CropGroup ;
+  :hasParentCropGroup :5-10296 ;
+  rdfs:label "Birne"@de .
+
+:5-9973 a :CropGroup ;
+  :hasParentCropGroup :5-10284 ;
+  rdfs:label "Blumenkohl"@de .
+
+:5-10244 a :CropGroup ;
+  :hasParentCropGroup :5-10186 ;
+  rdfs:label "caraway"@en ;
+  rdfs:label "Kümmel"@de .
+
+:5-9974 a :CropGroup ;
+  :hasParentCropGroup :5-10284 ;
+  rdfs:label "Broccoli"@de .
+
+:5-9975 a :CropGroup ;
+  :hasParentCropGroup :5-10297 ;
+  rdfs:label "Brombeere"@de .
+
+:5-10245 a :CropGroup ;
+  :hasParentCropGroup :5-9962 ;
+  rdfs:label "rocket"@en ;
+  rdfs:label "Rucola"@de .
+
+:5-9977 a :CropGroup ;
+  :hasParentCropGroup :5-10210 ;
+  rdfs:label "Chinakohl"@de .
+
+:5-11335 a :CropGroup ;
+  :hasParentCropGroup :5-12097 ;
+  rdfs:label "Liliengewächse (Zierpflanzen)"@de .
+
+:5-10251 a :CropGroup ;
+  rdfs:label "Baby-Leaf"@de .
+
+:5-10248 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Trockenreis"@de .
+
+:5-9978 a :CropGroup ;
+  :hasParentCropGroup :5-10193 ;
+  rdfs:label "Erdbeere"@de .
+
+:5-9979 a :CropGroup ;
+  :hasParentCropGroup :5-10193 ;
+  rdfs:label "Heidelbeere"@de .
+
+:5-9980 a :CropGroup ;
+  :hasParentCropGroup :5-10297 ;
+  rdfs:label "Himbeere"@de .
+
+:5-10254 a :CropGroup ;
+  rdfs:label "Medizinalkräuter"@de .
+
+:5-11877 a :CropGroup ;
+  rdfs:label "Brachland"@de .
+
+:5-9981 a :CropGroup ;
+  :hasParentCropGroup :5-9951 ;
+  rdfs:label "Karotten"@de .
+
+:5-10252 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Safflower"@en ;
+  rdfs:label "Färberdistel (Saflor)"@de .
+
+:5-11878 a :CropGroup ;
+  rdfs:label "Humusdeponie"@de .
+
+:5-9982 a :CropGroup ;
+  :hasParentCropGroup :5-9965 ;
+  rdfs:label "Kirsche"@de .
+
+:5-10253 a :CropGroup ;
+  :hasParentCropGroup :5-9951 ;
+  rdfs:label "Pastinake"@de .
+
+:5-9983 a :CropGroup ;
+  :hasParentCropGroup :5-9963 ;
+  rdfs:label "Knoblauch"@de .
+
+:5-10288 a :CropGroup ;
+  :hasParentCropGroup :5-10193 ;
+  rdfs:label "Mini-Kiwi"@de .
+
+:5-10290 a :CropGroup ;
+  :hasParentCropGroup :5-10111, :5-12096 ;
+  rdfs:label "Weihnachtsbäume"@de .
+
+:5-10293 a :CropGroup ;
+  :hasParentCropGroup :5-10128 ;
+  rdfs:label "Bohnen ohne Hülsen"@de .
+
+:5-10292 a :CropGroup ;
+  :hasParentCropGroup :5-10128 ;
+  rdfs:label "Bohnen mit Hülsen"@de .
+
+:5-10295 a :CropGroup ;
+  :hasParentCropGroup :5-10034 ;
+  rdfs:label "Erbsen mit Hülsen"@de .
+
+:5-10294 a :CropGroup ;
+  :hasParentCropGroup :5-10034 ;
+  rdfs:label "Erbsen ohne Hülsen"@de .
+
+:5-12689 a :CropGroup ;
+  :hasParentCropGroup :5-9957 ;
+  rdfs:label "Linse"@de .
+
+:5-10297 a :CropGroup ;
+  :hasParentCropGroup :5-10193 ;
+  rdfs:label "Rubus Arten"@de .
+
+:5-13238 a :CropGroup ;
+  rdfs:label "Lager- und Produktionsräume allg."@en ;
+  rdfs:label "Lager- und Produktionsräume allg."@de .
+
+:5-10296 a :CropGroup ;
+  :hasParentCropGroup :5-9959 ;
+  rdfs:label "Birne / Nashi"@de .
+
+:5-10299 a :CropGroup ;
+  :hasParentCropGroup :5-10298 ;
+  rdfs:label "Brassica rapa-Rüben"@de .
+
+:5-10298 a :CropGroup ;
+  :hasParentCropGroup :5-9962 ;
+  rdfs:label "Speisekohlrüben"@de .
+
+:5-13785 a :CropGroup ;
+  rdfs:label "Blaue Heckenkirsche"@de .
+
+:5-10300 a :CropGroup ;
+  :hasParentCropGroup :5-10298 ;
+  rdfs:label "Brassica napus-Rüben"@de .
+
+:5-13784 a :CropGroup ;
+  :hasParentCropGroup :5-10052 ;
+  rdfs:label "Weichweizen"@de .
+
+:5-10303 a :CropGroup ;
+  :hasParentCropGroup :5-10300 ;
+  rdfs:label "Bodenkohlrabi"@de .
+
+:5-10272 a :CropGroup ;
+  :hasParentCropGroup :5-9961 ;
+  rdfs:label "Cardy"@en ;
+  rdfs:label "Kardy"@de .
+
+:5-10274 a :CropGroup ;
+  :hasParentCropGroup :5-10186 ;
+  rdfs:label "Rosemary"@en ;
+  rdfs:label "Rosmarin"@de .
+
+:5-9942 a :CropGroup ;
+  rdfs:label "Pflanzen"@de .
+
+:5-10277 a :CropGroup ;
+  :hasParentCropGroup :5-10192 ;
+  rdfs:label "Olive"@en ;
+  rdfs:label "Olive"@de .
+
+:5-9943 a :CropGroup ;
+  :hasParentCropGroup :5-10167, :5-10083 ;
+  rdfs:label "Wintergerste"@de .
+
+:5-10279 a :CropGroup ;
+  :hasParentCropGroup :5-10203 ;
+  rdfs:label "Verarbeitungsräume"@de .
+
+:5-10280 a :CropGroup ;
+  :hasParentCropGroup :5-10203 ;
+  rdfs:label "Lagerräume"@de .
+
+:5-9946 a :CropGroup ;
+  :hasParentCropGroup :5-9951 ;
+  rdfs:label "Sellerie"@de .
+
+:5-10281 a :CropGroup ;
+  :hasParentCropGroup :5-9951 ;
+  rdfs:label "Turnip-rooted parsley"@en ;
+  rdfs:label "Wurzelpetersilie"@de .
+
+:5-9944 a :CropGroup ;
+  :hasParentCropGroup :5-10304 ;
+  rdfs:label "Blattsalate (Asteraceae)"@de .
+
+:5-9945 a :CropGroup ;
+  :hasParentCropGroup :5-10167, :5-10120 ;
+  rdfs:label "Winterroggen"@de .
+
+:5-10283 a :CropGroup ;
+  :hasParentCropGroup :5-9962 ;
+  rdfs:label "Barbarakraut"@de .
+
+:5-10284 a :CropGroup ;
+  :hasParentCropGroup :5-10020 ;
+  rdfs:label "Flowering brassica"@en ;
+  rdfs:label "Blumenkohle"@de .
+
+:5-9950 a :CropGroup ;
+  rdfs:label "Brache"@de .
+
+:5-9951 a :CropGroup ;
+  :hasParentCropGroup :5-10195 ;
+  rdfs:label "Doldenblütler (Apiaceae)"@de .
+
+:5-10285 a :CropGroup ;
+  :hasParentCropGroup :5-10026 ;
+  rdfs:label "cape gooseberry"@en ;
+  rdfs:label "Andenbeere"@de .
+
+:5-10286 a :CropGroup ;
+  :hasParentCropGroup :5-10026 ;
+  rdfs:label "pear melon"@en ;
+  rdfs:label "Pepino"@de .
+
+:5-9948 a :CropGroup ;
+  :hasParentCropGroup :5-10195 ;
+  rdfs:label "Baldriangewächse (Valerianaceae)"@de .
+
+:5-10047 a :CropGroup ;
+  :hasParentCropGroup :5-10020 ;
+  rdfs:label "Rosenkohl"@de .
+
+:5-10046 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Futter- und Zuckerrüben"@de .
+
+:5-10044 a :CropGroup ;
+  :hasParentCropGroup :5-9962 ;
+  rdfs:label "Kresse"@de .
+
+:5-10043 a :CropGroup ;
+  :hasParentCropGroup :5-10210 ;
+  rdfs:label "Federkohl"@de .
+
+:5-10042 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Chinaschilf"@de .
+
+:5-13832 a :CropGroup ;
+  rdfs:label "LURNO "@en ;
+  rdfs:label "Lorbeer"@de .
+
+:5-10040 a :CropGroup ;
+  :hasParentCropGroup :5-12097, :5-10021 ;
+  rdfs:label "Begonia"@de .
+
+:5-10039 a :CropGroup ;
+  :hasParentCropGroup :5-10190 ;
+  rdfs:label "Blumenknollen"@de .
+
+:5-10038 a :CropGroup ;
+  :hasParentCropGroup :5-10203 ;
+  rdfs:label "Lagerhallen, Mühlen, Silogebäude"@de .
+
+:5-10037 a :CropGroup ;
+  :hasParentCropGroup :5-9953 ;
+  rdfs:label "Jungreben"@de .
+
+:5-10035 a :CropGroup ;
+  :hasParentCropGroup :5-10127 ;
+  rdfs:label "Jostabeere"@de .
+
+:5-10034 a :CropGroup ;
+  :hasParentCropGroup :5-9957 ;
+  rdfs:label "Erbsen"@de .
+
+:5-10033 a :CropGroup ;
+  :hasParentCropGroup :5-10342 ;
+  rdfs:label "Gemüseportulak"@de .
+
+:5-10030 a :CropGroup ;
+  :hasParentCropGroup :5-9963 ;
+  rdfs:label "Lauch"@de .
+
+:5-10031 a :CropGroup ;
+  :hasParentCropGroup :5-9963 ;
+  rdfs:label "Zwiebeln"@de .
+
+:5-10028 a :CropGroup ;
+  :hasParentCropGroup :5-10026 ;
+  rdfs:label "Aubergine"@de .
+
+:5-10029 a :CropGroup ;
+  :hasParentCropGroup :5-10026 ;
+  rdfs:label "Paprika"@de .
+
+:5-10026 a :CropGroup ;
+  :hasParentCropGroup :5-10195 ;
+  rdfs:label "Nachtschattengewächse (Solanaceae)"@de .
+
+:5-10027 a :CropGroup ;
+  :hasParentCropGroup :5-10026 ;
+  rdfs:label "Tomaten"@de .
+
+:5-10025 a :CropGroup ;
+  :hasParentCropGroup :5-10195 ;
+  rdfs:label "Portulakgewächse (Portulacaceae)"@de .
+
+:5-10022 a :CropGroup ;
+  :hasParentCropGroup :5-10017 ;
+  rdfs:label "Wassermelonen"@de .
+
+:5-12891 a :CropGroup ;
+  rdfs:label "Erntegut"@de .
+
+:5-10020 a :CropGroup ;
+  :hasParentCropGroup :5-9962 ;
+  rdfs:label "Kohlarten"@de .
+
+:5-13362 a :CropGroup ;
+  rdfs:label "Goji berry, wolfberry"@en ;
+  rdfs:label "Gojibeere"@de .
+
+:5-10021 a :CropGroup ;
+  :hasParentCropGroup :5-10190 ;
+  rdfs:label "Topf- und Kontainerpflanzen"@de .
+
+:5-10018 a :CropGroup ;
+  :hasParentCropGroup :5-10310 ;
+  rdfs:label "Zucchetti"@de .
+
+:5-10019 a :CropGroup ;
+  :hasParentCropGroup :5-10017 ;
+  rdfs:label "Melonen"@de .
+
+:5-10016 a :CropGroup ;
+  :hasParentCropGroup :5-10017 ;
+  rdfs:label "Gurken"@de .
+
+:5-10017 a :CropGroup ;
+  :hasParentCropGroup :5-10195 ;
+  rdfs:label "Kürbisgewächse (Cucurbitaceae)"@de .
+
+:5-10008 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Raps"@de .
+
+:5-10011 a :CropGroup ;
+  :hasParentCropGroup :5-9965 ;
+  rdfs:label "Zwetschge / Pflaume"@de .
+
+:5-10010 a :CropGroup ;
+  :hasParentCropGroup :5-10339 ;
+  rdfs:label "Zuckermais"@de .
+
+:5-10005 a :CropGroup ;
+  :hasParentCropGroup :5-10338 ;
+  rdfs:label "Spargel"@de .
+
+:5-10004 a :CropGroup ;
+  :hasParentCropGroup :5-12097 ;
+  rdfs:label "Iris"@de .
+
+:5-10007 a :CropGroup ;
+  :hasParentCropGroup :5-10127 ;
+  rdfs:label "Stachelbeere"@de .
+
+:5-10006 a :CropGroup ;
+  :hasParentCropGroup :5-10068 ;
+  rdfs:label "Spinat"@de .
+
+:5-10001 a :CropGroup ;
+  :hasParentCropGroup :5-9963 ;
+  rdfs:label "Schalotten"@de .
+
+:5-10000 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Mais"@de .
+
+:5-10003 a :CropGroup ;
+  :hasParentCropGroup :5-10127 ;
+  rdfs:label "Schwarze Johannisbeere"@de .
+
+:5-10002 a :CropGroup ;
+  :hasParentCropGroup :5-10186 ;
+  rdfs:label "Schnittlauch"@de .
+
+:5-9996 a :CropGroup ;
+  :hasParentCropGroup :5-10068 ;
+  rdfs:label "Rande"@de .
+
+:5-9997 a :CropGroup ;
+  :hasParentCropGroup :5-9962 ;
+  rdfs:label "Rettich"@de .
+
+:5-9998 a :CropGroup ;
+  :hasParentCropGroup :5-9960 ;
+  rdfs:label "Rhabarber"@de .
+
+:5-9999 a :CropGroup ;
+  :hasParentCropGroup :5-10127 ;
+  rdfs:label "Rote Johannisbeere"@de .
+
+:5-9992 a :CropGroup ;
+  :hasParentCropGroup :5-9965 ;
+  rdfs:label "Pfirsich / Nektarine"@de .
+
+:5-9993 a :CropGroup ;
+  :hasParentCropGroup :5-10011 ;
+  rdfs:label "Pflaume"@de .
+
+:5-9994 a :CropGroup ;
+  :hasParentCropGroup :5-9959 ;
+  rdfs:label "Quitte"@de .
+
+:5-9995 a :CropGroup ;
+  :hasParentCropGroup :5-9962 ;
+  rdfs:label "Radies"@de .
+
+:5-9990 a :CropGroup ;
+  :hasParentCropGroup :5-9948 ;
+  rdfs:label "Nüsslisalat"@de .
+
+:5-9991 a :CropGroup ;
+  :hasParentCropGroup :5-10186 ;
+  rdfs:label "Petersilie"@de .
+
+:5-9984 a :CropGroup ;
+  :hasParentCropGroup :5-9951 ;
+  rdfs:label "Knollenfenchel"@de .
+
+:5-9985 a :CropGroup ;
+  :hasParentCropGroup :5-9946 ;
+  rdfs:label "Knollensellerie"@de .
+
+:5-9986 a :CropGroup ;
+  :hasParentCropGroup :5-10020 ;
+  rdfs:label "Kohlrabi"@de .
+
+:5-10104 a :CropGroup ;
+  :hasParentCropGroup :5-10190 ;
+  rdfs:label "Rosen"@de .
+
+:5-10111 a :CropGroup ;
+  :hasParentCropGroup :5-9952 ;
+  rdfs:label "Nadelgehölze (Koniferen)"@de .
+
+:5-10110 a :CropGroup ;
+  :hasParentCropGroup :5-10111, :5-12096 ;
+  rdfs:label "Blautanne"@de .
+
+:5-10109 a :CropGroup ;
+  :hasParentCropGroup :5-10108, :5-12096 ;
+  rdfs:label "Rosskastanie"@de .
+
+:5-10099 a :CropGroup ;
+  :hasParentCropGroup :5-10100 ;
+  rdfs:label "Azaleen"@de .
+
+:5-10098 a :CropGroup ;
+  :hasParentCropGroup :5-12097, :5-10021 ;
+  rdfs:label "Primeln"@de .
+
+:5-10097 a :CropGroup ;
+  :hasParentCropGroup :5-12097, :5-10021 ;
+  rdfs:label "Pelargonien"@de .
+
+:5-10096 a :CropGroup ;
+  :hasParentCropGroup :5-10015, :5-12097 ;
+  rdfs:label "Chrysantheme"@de .
+
+:5-10103 a :CropGroup ;
+  :hasParentCropGroup :5-10108, :5-12096 ;
+  rdfs:label "Kirschlorbeer"@de .
+
+:5-10101 a :CropGroup ;
+  :hasParentCropGroup :5-10190 ;
+  rdfs:label "Ziergehölze (ausserhalb Forst)"@de .
+
+:5-10100 a :CropGroup ;
+  :hasParentCropGroup :5-10108, :5-12096 ;
+  rdfs:label "Rhododendron"@de .
+
+:5-10090 a :CropGroup ;
+  :hasParentCropGroup :5-10015, :5-12097 ;
+  rdfs:label "Gladiole"@de .
+
+:5-10091 a :CropGroup ;
+  :hasParentCropGroup :5-10117 ;
+  rdfs:label "Walnuss"@de .
+
+:5-10088 a :CropGroup ;
+  :hasParentCropGroup :5-10046 ;
+  rdfs:label "Futterrübe"@de .
+
+:5-10089 a :CropGroup ;
+  :hasParentCropGroup :5-10046 ;
+  rdfs:label "Zuckerrübe"@de .
+
+:5-10094 a :CropGroup ;
+  :hasParentCropGroup :5-10167, :5-13784 ;
+  rdfs:label "Winterweizen"@de .
+
+:5-10095 a :CropGroup ;
+  :hasParentCropGroup :5-10190 ;
+  rdfs:label "Baumschule"@de .
+
+:5-14985 a :CropGroup ;
+  :hasParentCropGroup :5-10210 ;
+  rdfs:label "Markstammkohl"@de .
+
+:5-10093 a :CropGroup ;
+  :hasParentCropGroup :5-9961 ;
+  rdfs:label "Salate (Asteraceae)"@de .
+
+:5-10082 a :CropGroup ;
+  :hasParentCropGroup :5-10310 ;
+  rdfs:label "Patisson"@de .
+
+:5-10083 a :CropGroup ;
+  :hasParentCropGroup :5-10080 ;
+  rdfs:label "Gerste"@de .
+
+:5-10080 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Getreide"@de .
+
+:5-13905 a :CropGroup ;
+  :hasParentCropGroup :5-15866 ;
+  rdfs:label "Sweet potato"@en ;
+  rdfs:label "Süsskartoffel"@de .
+
+:5-10081 a :CropGroup ;
+  :hasParentCropGroup :5-10292 ;
+  rdfs:label "Stangenbohne"@de .
+
+:5-12829 a :CropGroup ;
+  :hasParentCropGroup :5-10193 ;
+  rdfs:label "Schwarze Apfelbeere"@de .
+
+:5-10086 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Kartoffeln"@de .
+
+:5-10084 a :CropGroup ;
+  :hasParentCropGroup :5-10029 ;
+  rdfs:label "Peperoni "@de .
+
+:5-10072 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Sojabohne"@de .
+
+:5-10075 a :CropGroup ;
+  :hasParentCropGroup :5-10031 ;
+  rdfs:label "Gemüsezwiebel"@de .
+
+:5-10074 a :CropGroup ;
+  :hasParentCropGroup :5-10292 ;
+  rdfs:label "Buschbohne"@de .
+
+:5-10078 a :CropGroup ;
+  :hasParentCropGroup :5-10031 ;
+  rdfs:label "Speisezwiebel"@de .
+
+:5-10065 a :CropGroup ;
+  :hasParentCropGroup :5-10325 ;
+  rdfs:label "Zuckerhut"@de .
+
+:5-10064 a :CropGroup ;
+  :hasParentCropGroup :5-9961 ;
+  rdfs:label "Topinambur"@de .
+
+:5-10067 a :CropGroup ;
+  :hasParentCropGroup :5-9946 ;
+  rdfs:label "Stangensellerie"@de .
+
+:5-10068 a :CropGroup ;
+  :hasParentCropGroup :5-10195 ;
+  rdfs:label "Gänsefussgewächse (Chenopodiaceae)"@de .
+
+:5-10071 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Tabak"@de .
+
+:5-10070 a :CropGroup ;
+  :hasParentCropGroup :5-10134, :5-12097 ;
+  rdfs:label "Hyazinthe"@de .
+
+:5-10056 a :CropGroup ;
+  :hasParentCropGroup :5-9961 ;
+  rdfs:label "Chicorée"@de .
+
+:5-10059 a :CropGroup ;
+  :hasParentCropGroup :5-10325 ;
+  rdfs:label "Endivien"@de .
+
+:5-10060 a :CropGroup ;
+  :hasParentCropGroup :5-10320 ;
+  rdfs:label "Kopfsalat"@de .
+
+:5-10063 a :CropGroup ;
+  :hasParentCropGroup :5-9961 ;
+  rdfs:label "Schwarzwurzel"@de .
+
+:5-10048 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Kenaf"@de .
+
+:5-10050 a :CropGroup ;
+  :hasParentCropGroup :5-12097, :5-10021 ;
+  rdfs:label "Cyclame"@de .
+
+:5-10051 a :CropGroup ;
+  :hasParentCropGroup :5-10195 ;
+  rdfs:label "Speisepilze"@de .
+
+:5-10052 a :CropGroup ;
+  :hasParentCropGroup :5-10080 ;
+  rdfs:label "Weizen"@de .
+
+:5-10053 a :CropGroup ;
+  :hasParentCropGroup :5-9961 ;
+  rdfs:label "Artischocken"@de .
+
+:5-13002 a :CropGroup ;
+  rdfs:label "leere Verarbeitungsräume"@de .
+
+:5-10167 a :CropGroup ;
+  :hasParentCropGroup :5-10080 ;
+  rdfs:label "Wintergetreide"@de .
+
+:5-13000 a :CropGroup ;
+  rdfs:label "leere Produktionsräume"@de .
+
+:5-10164 a :CropGroup ;
+  :hasParentCropGroup :5-10080 ;
+  rdfs:label "Sommergetreide"@de .
+
+:5-13001 a :CropGroup ;
+  rdfs:label "Tabak produzierende Betriebe"@de .
+
+:5-10162 a :CropGroup ;
+  :hasParentCropGroup :5-10039 ;
+  rdfs:label "Dahlien"@de .
+
+:5-10172 a :CropGroup ;
+  rdfs:label "allg. Ökologische Ausgleichsflächen (gemäss DZV)"@de .
+
+:5-12068 a :CropGroup ;
+  rdfs:label "Gemüsebau allg. "@de .
+
+:5-12069 a :CropGroup ;
+  rdfs:label "Feldbau allg. "@de .
+
+:5-12066 a :CropGroup ;
+  rdfs:label "Obstbau allg. "@de .
+
+:5-10171 a :CropGroup ;
+  :hasParentCropGroup :5-9946 ;
+  rdfs:label "Suppensellerie"@de .
+
+:5-12999 a :CropGroup ;
+  rdfs:label "leere Lagerräume"@de .
+
+:5-12067 a :CropGroup ;
+  rdfs:label "Beerenbau allg. "@de .
+
+:5-10151 a :CropGroup ;
+  :hasParentCropGroup :5-10135 ;
+  rdfs:label "Kleegrasmischung (Kunstwiese)"@de .
+
+:5-10150 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Luzerne"@de .
+
+:5-10147 a :CropGroup ;
+  :hasParentCropGroup :5-10015, :5-12097 ;
+  rdfs:label "Gerbera"@en ;
+  rdfs:label "Gerbera"@de .
+
+:5-10144 a :CropGroup ;
+  :hasParentCropGroup :5-10164, :5-10121 ;
+  rdfs:label "Sommerhafer"@de .
+
+:5-10159 a :CropGroup ;
+  :hasParentCropGroup :5-10195 ;
+  rdfs:label "Gewürz- und Medizinalkräuter"@de .
+
+:5-10158 a :CropGroup ;
+  :hasParentCropGroup :5-12097 ;
+  rdfs:label "Tulpe"@de .
+
+:5-10157 a :CropGroup ;
+  :hasParentCropGroup :5-10111 ;
+  rdfs:label "Fichte"@de .
+
+:5-13498 a :CropGroup ;
+  rdfs:label "Quinoa"@en ;
+  rdfs:label "Quinoa"@de .
+
+:5-10155 a :CropGroup ;
+  :hasParentCropGroup :5-10008 ;
+  rdfs:label "Winterraps"@de .
+
+:5-15872 a :CropGroup ;
+  rdfs:label "Rispenhirse "@de .
+
+:5-10152 a :CropGroup ;
+  :hasParentCropGroup :5-10108, :5-12096 ;
+  rdfs:label "Buchsbäume (Buxus)"@de .
+
+:5-10132 a :CropGroup ;
+  :hasParentCropGroup :5-10203 ;
+  rdfs:label "Einrichtungen und Geräte"@de .
+
+:5-10133 a :CropGroup ;
+  :hasParentCropGroup :5-10198 ;
+  rdfs:label "Frässaaten"@de .
+
+:5-10135 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Wiesen und Weiden"@de .
+
+:5-10128 a :CropGroup ;
+  :hasParentCropGroup :5-9957 ;
+  rdfs:label "Bohnen"@de .
+
+:5-10142 a :CropGroup ;
+  :hasParentCropGroup :5-10198 ;
+  rdfs:label "Mulchsaaten"@de .
+
+:5-10143 a :CropGroup ;
+  :hasParentCropGroup :5-10164, :5-10083 ;
+  rdfs:label "Sommergerste"@de .
+
+:5-10136 a :CropGroup ;
+  :hasParentCropGroup :5-10015, :5-12097 ;
+  rdfs:label "Blaudistel"@de .
+
+:5-10137 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Sonnenblume"@de .
+
+:5-10117 a :CropGroup ;
+  :hasParentCropGroup :5-10260 ;
+  rdfs:label "Nüsse"@de .
+
+:5-10116 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Ackerbohne"@de .
+
+:5-10119 a :CropGroup ;
+  :hasParentCropGroup :5-10080 ;
+  rdfs:label "Triticale"@de .
+
+:5-10118 a :CropGroup ;
+  :hasParentCropGroup :5-10164, :5-13784 ;
+  rdfs:label "Sommerweizen"@de .
+
+:5-14001 a :CropGroup ;
+  rdfs:label "rose hip"@en ;
+  rdfs:label "Hagebutten"@de .
+
+:5-12507 a :CropGroup ;
+  :hasParentCropGroup :5-10186 ;
+  rdfs:label "lat. Chamaemelum nobile"@en ;
+  rdfs:label "Römische Kamille"@de .
+
+:5-10115 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Hopfen"@de .
+
+:5-10114 a :CropGroup ;
+  :hasParentCropGroup :5-9953 ;
+  rdfs:label "Ertragsreben"@de .
+
+:5-10124 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Eiweisserbse"@de .
+
+:5-10127 a :CropGroup ;
+  :hasParentCropGroup :5-10193 ;
+  rdfs:label "Ribes Arten"@de .
+
+:5-10126 a :CropGroup ;
+  :hasParentCropGroup :5-10011 ;
+  rdfs:label "Zwetschge"@de .
+
+:5-10121 a :CropGroup ;
+  :hasParentCropGroup :5-10080 ;
+  rdfs:label "Hafer"@de .
+
+:5-10120 a :CropGroup ;
+  :hasParentCropGroup :5-10080 ;
+  rdfs:label "Roggen"@de .
+
+:5-10122 a :CropGroup ;
+  :hasParentCropGroup :5-10167, :5-10052 ;
+  rdfs:label "Korn (Dinkel)"@de .
+
+:5-14384 a :CropGroup ;
+  :hasParentCropGroup :5-10251 ;
+  rdfs:label "Baby-Leaf (Chenopodiaceae)"@de .
+
+:5-10227 a :CropGroup ;
+  :hasParentCropGroup :5-10172 ;
+  rdfs:label "Offene Ackerfläche"@de .
+
+:5-10225 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Lein"@de .
+
+:5-10230 a :CropGroup ;
+  rdfs:label "Grünfläche"@de .
+
+:5-10232 a :CropGroup ;
+  :hasParentCropGroup :5-10159 ;
+  rdfs:label "Saint-John's-wort"@en ;
+  rdfs:label "Johanniskraut"@de .
+
+:5-10238 a :CropGroup ;
+  rdfs:label "Mohn"@de .
+
+:5-10236 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Grasbestände zur Saatgutproduktion"@de .
+
+:5-10237 a :CropGroup ;
+  :hasParentCropGroup :5-9962 ;
+  rdfs:label "Meerrettich"@de .
+
+:5-10210 a :CropGroup ;
+  :hasParentCropGroup :5-10020 ;
+  rdfs:label "Blattkohle"@de .
+
+:5-12147 a :CropGroup ;
+  rdfs:label "Nichtkulturland allg."@de .
+
+:5-12465 a :CropGroup ;
+  rdfs:label "Forstwirtschaft allg."@de .
+
+:5-10218 a :CropGroup ;
+  :hasParentCropGroup :5-10193 ;
+  rdfs:label "Elder berry"@en ;
+  rdfs:label "Schwarzer Holunder"@de .
+
+:5-12464 a :CropGroup ;
+  :hasParentCropGroup :5-12465 ;
+  rdfs:label "Wald"@de .
+
+:5-14383 a :CropGroup ;
+  :hasParentCropGroup :5-10251 ;
+  rdfs:label "Baby-Leaf (Asteraceae)"@de .
+
+:5-14382 a :CropGroup ;
+  :hasParentCropGroup :5-10251 ;
+  rdfs:label "Baby-Leaf (Brassicaceae)"@de .
+
+:5-10192 a :CropGroup ;
+  rdfs:label "allg. Obstbau"@de .
+
+:5-10193 a :CropGroup ;
+  rdfs:label "allg. Beerenbau"@de .
+
+:5-10194 a :CropGroup ;
+  rdfs:label "allg. Weinbau"@de .
+
+:5-10195 a :CropGroup ;
+  rdfs:label "allg. Gemüsebau"@de .
+
+:5-10197 a :CropGroup ;
+  rdfs:label "allg. Feldbau"@de .
+
+:5-12970 a :CropGroup ;
+  rdfs:label "Gewürzfenchel"@de .
+
+:5-10198 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Anbautechnik"@de .
+
+:5-12096 a :CropGroup ;
+  :hasParentCropGroup :5-10190 ;
+  rdfs:label "Bäume und Sträucher (ausserhalb Forst)"@de .
+
+:5-12097 a :CropGroup ;
+  :hasParentCropGroup :5-10190 ;
+  rdfs:label "Blumenkulturen und Grünpflanzen"@de .
+
+:5-12098 a :CropGroup ;
+  rdfs:label "Blumenzwiebeln und Blumenknollen"@de .
+
+:5-10202 a :CropGroup ;
+  rdfs:label "allg. Forstwirtschaft"@de .
+
+:5-10203 a :CropGroup ;
+  :hasParentCropGroup :5-10201 ;
+  rdfs:label "Allgemein Vorratsschutz"@de .
+
+:5-14904 a :CropGroup ;
+  rdfs:label "cicely"@en ;
+  rdfs:label "Süssdolde"@de .
+
+:5-10176 a :CropGroup ;
+  :hasParentCropGroup :5-10190 ;
+  rdfs:label "Ein- und zweijährige Zierpflanzen"@de .
+
+:5-10179 a :CropGroup ;
+  :hasParentCropGroup :5-12147 ;
+  rdfs:label "Auf und an National- und Kantonsstrassen (gem. ChemRRV) "@de .
+
+:5-10178 a :CropGroup ;
+  :hasParentCropGroup :5-12147 ;
+  rdfs:label "Böschungen und Grünstreifen entlang von Verkehrswegen (gem. ChemRRV)"@de .
+
+:5-10180 a :CropGroup ;
+  :hasParentCropGroup :5-10167, :5-10119 ;
+  rdfs:label "Wintertriticale"@de .
+
+:5-10187 a :CropGroup ;
+  :hasParentCropGroup :5-10197 ;
+  rdfs:label "Lupinen"@de .
+
+:5-10186 a :CropGroup ;
+  :hasParentCropGroup :5-10195 ;
+  rdfs:label "Küchenkräuter"@de .
+
+:5-10188 a :CropGroup ;
+  :hasParentCropGroup :5-10017 ;
+  rdfs:label "Ölkürbisse"@de .
+
+:5-10190 a :CropGroup ;
+  rdfs:label "Zierpflanzen allg."@de .
+
