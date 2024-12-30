@@ -6,7 +6,7 @@
       "fr": ["Ravageurs des denrées stockées rampants"],
       "it": ["Parassiti delle scorte alimentari striscianti"],
       "en": ["Creeping storage pests"],
-      "lt": ["Insecta"]
+      "la": ["Insecta"]
     },
     "wikidata": ["Q1390"],
     "polyphyletic": true,
@@ -20,7 +20,7 @@
       "fr": ["Processionnaire du chêne"],
       "it": ["Processionaria della quercia"],
       "en": ["Oak processionary caterpillar"],
-      "lt": ["Thaumetopoea processionea"]
+      "la": ["Thaumetopoea processionea"]
     },
     "wikidata": ["Q261008"],
     "polyphyletic": false,
@@ -34,7 +34,7 @@
       "fr": ["Punaise verte ponctuée"],
       "it": ["Cimice verde"],
       "en": ["Oak processionary caterpillar"],
-      "lt": ["Nezara viridula"]
+      "la": ["Nezara viridula"]
     },
     "wikidata": ["Q600498"],
     "polyphyletic": false,
@@ -48,7 +48,7 @@
       "fr": ["Repousses de céréales"],
       "it": ["Ricacci di cereali"],
       "en": ["Volunteer cereals"],
-      "lt": ["Poaceae"]
+      "la": ["Poaceae"]
     },
     "wikidata": ["Q43238"],
     "polyphyletic": true,
@@ -62,7 +62,7 @@
       "fr": ["Teigne du poireau"],
       "it": ["Tignola del porro"],
       "en": ["Leek moth"],
-      "lt": ["Acrolepiopsis assectella"]
+      "la": ["Acrolepiopsis assectella"]
     },
     "wikidata": ["Q1032508"],
     "polyphyletic": false,
@@ -76,7 +76,7 @@
       "fr": ["Mouche de la carotte"],
       "it": ["Mosca della carota"],
       "en": ["Carrot fly"],
-      "lt": ["Psila rosae"]
+      "la": ["Psila rosae"]
     },
     "wikidata": ["Q10332580"],
     "polyphyletic": false,
@@ -90,7 +90,7 @@
       "fr": ["Septoriose des plantules"],
       "it": ["Septoriosi delle piantule"],
       "en": ["Septoria seedling blight"],
-      "lt": ["Parastagonospora nodorum", "Phaeosphaeria nodorum"]
+      "la": ["Parastagonospora nodorum", "Phaeosphaeria nodorum"]
     },
     "wikidata": ["Q103811471", "Q4314880"],
     "polyphyletic": true,
@@ -104,7 +104,7 @@
       "fr": ["septorioses foliaires"],
       "it": ["Septoriosi fogliare"],
       "en": ["Septoria leaf spot of wheat"],
-      "lt": ["Septoria tritici", "Mycosphaerella graminicola", "Phaeosphaeria nodorum", "Septoria nodorum"]
+      "la": ["Septoria tritici", "Mycosphaerella graminicola", "Phaeosphaeria nodorum", "Septoria nodorum"]
     },
     "wikidata": ["Q103817219", "Q138622", "Q4314880", "Q84855498"],
     "polyphyletic": true,
@@ -118,7 +118,7 @@
       "fr": ["taches pourpres ou alternariose des allium"],
       "it": ["Alternariosi"],
       "en": ["Purple blotch"],
-      "lt": ["Alternaria porri"]
+      "la": ["Alternaria porri"]
     },
     "wikidata": ["Q10406928"],
     "polyphyletic": false,
@@ -132,7 +132,7 @@
       "fr": ["Puceron de la spirée"],
       "it": ["Afide verde degli agrumi"],
       "en": ["Green citrus aphid"],
-      "lt": ["Aphis spiraecola"]
+      "la": ["Aphis spiraecola"]
     },
     "wikidata": ["Q10415221"],
     "polyphyletic": false,
@@ -146,7 +146,7 @@
       "fr": ["Cylindrosporiose du cerisier"],
       "it": ["Cilindrosporiosi del ciliegio"],
       "en": ["Leaf blight"],
-      "lt": ["Blumeriella jaapii"]
+      "la": ["Blumeriella jaapii"]
     },
     "wikidata": ["Q10431598"],
     "polyphyletic": false,
@@ -160,7 +160,7 @@
       "fr": ["Flétrissement de l'ombelle"],
       "it": ["Avvizzimento dei corimbi del sambuco"],
       "en": ["Umbel wilt"],
-      "lt": ["Boeremia sambuci-nigrae"]
+      "la": ["Boeremia sambuci-nigrae"]
     },
     "wikidata": ["Q10432033"],
     "polyphyletic": false,
@@ -174,7 +174,7 @@
       "fr": ["botrytis des feuilles de l'oignon"],
       "it": ["Botrite della cipolla (Botrytis squamosa)"],
       "en": [null],
-      "lt": ["Botryotinia squamosa"]
+      "la": ["Botryotinia squamosa"]
     },
     "wikidata": ["Q10433870"],
     "polyphyletic": false,
@@ -187,8 +187,8 @@
       "de": ["Zwiebelhalsfäule"],
       "fr": ["Botrytis allii"],
       "it": ["Marciume del colletto di cipolla"],
-      "en": [null],
-      "lt": ["Botrytis allii"]
+      "en": ["Neck rot of onion"],
+      "la": ["Botrytis allii"]
     },
     "wikidata": ["Q10433881"],
     "polyphyletic": false,
@@ -201,8 +201,8 @@
       "de": ["Braunfleckenkrankheit"],
       "fr": ["botrytis des vicia"],
       "it": ["Maculatura arancione"],
-      "en": [null],
-      "lt": ["Botrytis fabae"]
+      "en": ["Chocolate spot disease"],
+      "la": ["Botrytis fabae"]
     },
     "wikidata": ["Q10433893"],
     "polyphyletic": false,
@@ -216,7 +216,7 @@
       "fr": ["psylles du poirier"],
       "it": ["Psille del pero"],
       "en": [null],
-      "lt": ["Cacopsylla"]
+      "la": ["Cacopsylla"]
     },
     "wikidata": ["Q10439002"],
     "polyphyletic": true,
@@ -230,7 +230,7 @@
       "fr": ["psylle printanier du pommier"],
       "it": ["Psilla primaverile del melo"],
       "en": [null],
-      "lt": ["Cacopsylla mali"]
+      "la": ["Cacopsylla mali"]
     },
     "wikidata": ["Q10439063"],
     "polyphyletic": false,
@@ -244,7 +244,7 @@
       "fr": ["psylle du prunier"],
       "it": ["psilla del prugno"],
       "en": ["plum psylla"],
-      "lt": ["Cacopsylla pruni"]
+      "la": ["Cacopsylla pruni"]
     },
     "wikidata": ["Q10439091"],
     "polyphyletic": false,
@@ -258,7 +258,7 @@
       "fr": ["acariose de la vigne"],
       "it": ["Acariosi della vite"],
       "en": [null],
-      "lt": ["Calepitrimerus vitis"]
+      "la": ["Calepitrimerus vitis"]
     },
     "wikidata": ["Q10439574"],
     "polyphyletic": false,
@@ -272,7 +272,7 @@
       "fr": ["champignons pathogènes du sol (fonte ou toile des semis)"],
       "it": ["Malattie causate da funghi patogeni del suolo"],
       "en": [null],
-      "lt": ["Chalara", "Botrytis cinerea", "Fusarium", "Sclerotinia", "Pythium", "Rhizoctonia", "Penicillium"]
+      "la": ["Chalara", "Botrytis cinerea", "Fusarium", "Sclerotinia", "Pythium", "Rhizoctonia", "Penicillium"]
     },
     "wikidata": ["Q10448077", "Q1135851", "Q131672", "Q1969330", "Q2699011", "Q2716477", "Q843136"],
     "polyphyletic": true,
@@ -286,7 +286,7 @@
       "fr": ["noctuelle du chou"],
       "it": ["Nottua del cavolo"],
       "en": [null],
-      "lt": ["Mamestra brassicae"]
+      "la": ["Mamestra brassicae"]
     },
     "wikidata": ["Q1045638"],
     "polyphyletic": false,
@@ -300,7 +300,7 @@
       "fr": ["Anthracnose du lupin"],
       "it": ["Antracnosi del lupino"],
       "en": [null],
-      "lt": ["Colletotrichum lupini"]
+      "la": ["Colletotrichum lupini"]
     },
     "wikidata": ["Q10457059"],
     "polyphyletic": false,
@@ -314,7 +314,7 @@
       "fr": ["érinose de la vigne"],
       "it": ["Eriofide della vite"],
       "en": ["Erineum leaf mite"],
-      "lt": ["Colomerus vitis"]
+      "la": ["Colomerus vitis"]
     },
     "wikidata": ["Q10457178"],
     "polyphyletic": false,
@@ -328,7 +328,7 @@
       "fr": ["ériophyides gallicoles"],
       "it": ["Eriofidi gallicoli"],
       "en": [null],
-      "lt": ["Diptilomiopidae", "Phytoptidae", "Eriophyidae"]
+      "la": ["Diptilomiopidae", "Phytoptidae", "Eriophyidae"]
     },
     "wikidata": ["Q10473981", "Q18539312", "Q841786"],
     "polyphyletic": true,
@@ -342,7 +342,7 @@
       "fr": ["ériophyides libres"],
       "it": ["Eriofidi rugginosi"],
       "en": [null],
-      "lt": ["Diptilomiopidae", "Phytoptidae", "Eriophyidae"]
+      "la": ["Diptilomiopidae", "Phytoptidae", "Eriophyidae"]
     },
     "wikidata": ["Q10473981", "Q18539312", "Q841786"],
     "polyphyletic": true,
@@ -356,7 +356,7 @@
       "fr": ["anthracnose des espèces de Ribes"],
       "it": ["Seccume delle specie di ribes "],
       "en": ["leaf spot"],
-      "lt": ["Drepanopeziza ribis"]
+      "la": ["Drepanopeziza ribis"]
     },
     "wikidata": ["Q10476632"],
     "polyphyletic": false,
@@ -370,7 +370,7 @@
       "fr": ["taupes (fam.)"],
       "it": ["Talpidi (fam.)"],
       "en": [null],
-      "lt": ["Talpidae"]
+      "la": ["Talpidae"]
     },
     "wikidata": ["Q104825"],
     "polyphyletic": false,
@@ -384,7 +384,7 @@
       "fr": ["charbon des feuilles du chardon bleu"],
       "it": ["Necrosi fogliare del cardo azzurro"],
       "en": [null],
-      "lt": ["Entyloma eryngii"]
+      "la": ["Entyloma eryngii"]
     },
     "wikidata": ["Q10485035"],
     "polyphyletic": false,
@@ -398,7 +398,7 @@
       "fr": ["helminthosporioses"],
       "it": ["Elmintosporiosi"],
       "en": [null],
-      "lt": ["Exserohilum", "Bipolaris", "Curvularia", "Drechslera"]
+      "la": ["Exserohilum", "Bipolaris", "Curvularia", "Drechslera"]
     },
     "wikidata": ["Q10493219", "Q4915492", "Q5196111", "Q5306823"],
     "polyphyletic": true,
@@ -412,7 +412,7 @@
       "fr": ["pyrale du maïs"],
       "it": ["Piralide del mais"],
       "en": ["European corn borer"],
-      "lt": ["Ostrinia nubilalis"]
+      "la": ["Ostrinia nubilalis"]
     },
     "wikidata": ["Q1049481"],
     "polyphyletic": false,
@@ -426,7 +426,7 @@
       "fr": ["hyponomeutes"],
       "it": ["Tignole"],
       "en": [null],
-      "lt": ["Yponomeutidae"]
+      "la": ["Yponomeutidae"]
     },
     "wikidata": ["Q1049713"],
     "polyphyletic": false,
@@ -440,7 +440,7 @@
       "fr": ["moisissure des neiges"],
       "it": ["Muffa delle nevi "],
       "en": ["Snow mould"],
-      "lt": ["Microdochium nivale", "Microdochium majus", "Typhula incarnata", "Typhula ishikariensis"]
+      "la": ["Microdochium nivale", "Microdochium majus", "Typhula incarnata", "Typhula ishikariensis"]
     },
     "wikidata": ["Q104978214", "Q10584312", "Q7861358", "Q7861360"],
     "polyphyletic": true,
@@ -454,7 +454,7 @@
       "fr": ["fusarioses de l'épi"],
       "it": ["Fusariosi della spiga"],
       "en": [null],
-      "lt": ["Microdochium nivale", "Fusarium"]
+      "la": ["Microdochium nivale", "Fusarium"]
     },
     "wikidata": ["Q104978214", "Q131672"],
     "polyphyletic": true,
@@ -468,7 +468,7 @@
       "fr": ["Fusariose foliaire"],
       "it": ["Fusariosi fogliare"],
       "en": [null],
-      "lt": ["Microdochium nivale"]
+      "la": ["Microdochium nivale"]
     },
     "wikidata": ["Q104978214"],
     "polyphyletic": false,
@@ -482,7 +482,7 @@
       "fr": ["phoma du tournesol"],
       "it": ["Phoma del girasole"],
       "en": [null],
-      "lt": ["Plenodomus lindquistii", "Phoma macdonaldii"]
+      "la": ["Plenodomus lindquistii", "Phoma macdonaldii"]
     },
     "wikidata": ["Q104989334", "Q108190205"],
     "polyphyletic": true,
@@ -496,7 +496,7 @@
       "fr": ["teigne des crucifères (Plutella xylostella)"],
       "it": ["Tignola delle Crocifere"],
       "en": [null],
-      "lt": ["Plutella xylostella"]
+      "la": ["Plutella xylostella"]
     },
     "wikidata": ["Q1050343"],
     "polyphyletic": false,
@@ -510,7 +510,7 @@
       "fr": ["Colletotrichum sur fruits"],
       "it": ["Marciume dei frutti da Colletotrichum"],
       "en": [null],
-      "lt": ["Glomerella acutata"]
+      "la": ["Glomerella acutata"]
     },
     "wikidata": ["Q105054940"],
     "polyphyletic": false,
@@ -524,7 +524,7 @@
       "fr": ["helminthosporiose du riz"],
       "it": ["Elmintosporiosi del riso"],
       "en": ["Helminthosporium oryzae"],
-      "lt": ["Helminthosporium oryzae"]
+      "la": ["Helminthosporium oryzae"]
     },
     "wikidata": ["Q105055708"],
     "polyphyletic": false,
@@ -538,7 +538,7 @@
       "fr": ["mildiou des crucifères"],
       "it": ["Peronospora delle crucifere"],
       "en": [null],
-      "lt": ["Peronospora parasitica"]
+      "la": ["Peronospora parasitica"]
     },
     "wikidata": ["Q105060374"],
     "polyphyletic": false,
@@ -552,7 +552,7 @@
       "fr": ["chancre godronien"],
       "it": ["cancro del mirtillo"],
       "en": ["Godronia canker - canker of blueberry"],
-      "lt": ["Godronia cassandrae"]
+      "la": ["Godronia cassandrae"]
     },
     "wikidata": ["Q10506686"],
     "polyphyletic": false,
@@ -566,7 +566,7 @@
       "fr": ["oïdium du lin"],
       "it": ["Oidio del lino"],
       "en": [null],
-      "lt": ["Golovinomyces orontii"]
+      "la": ["Golovinomyces orontii"]
     },
     "wikidata": ["Q10507042"],
     "polyphyletic": false,
@@ -580,7 +580,7 @@
       "fr": ["oïdium des cucurbitacées"],
       "it": ["Oidio delle Cucurbitacee"],
       "en": ["Powdery mildew of cucurbits"],
-      "lt": ["Golovinomyces orontii", "Podosphaera xanthii"]
+      "la": ["Golovinomyces orontii", "Podosphaera xanthii"]
     },
     "wikidata": ["Q10507042", "Q7207076"],
     "polyphyletic": true,
@@ -594,7 +594,7 @@
       "fr": ["moniliose des fleurs et des rameaux"],
       "it": ["Monilia dei rami e dei fiori"],
       "en": ["blossom blight"],
-      "lt": ["Monilia laxa"]
+      "la": ["Monilia laxa"]
     },
     "wikidata": ["Q10588231"],
     "polyphyletic": false,
@@ -608,7 +608,7 @@
       "fr": ["pasmo du lin"],
       "it": ["Pasmo del lino"],
       "en": [null],
-      "lt": ["Mycosphaerella linicola"]
+      "la": ["Mycosphaerella linicola"]
     },
     "wikidata": ["Q10591378"],
     "polyphyletic": false,
@@ -622,7 +622,7 @@
       "fr": ["Nesidiocoris tenuis"],
       "it": ["Nesidiocoris tenuis"],
       "en": [null],
-      "lt": ["Nesidiocoris tenuis"]
+      "la": ["Nesidiocoris tenuis"]
     },
     "wikidata": ["Q10599388"],
     "polyphyletic": false,
@@ -636,7 +636,7 @@
       "fr": ["oïdium de la tomate"],
       "it": ["Oidio del pomodoro"],
       "en": [null],
-      "lt": ["Oidium neolycopersici", "Leveillula taurica"]
+      "la": ["Oidium neolycopersici", "Leveillula taurica"]
     },
     "wikidata": ["Q10608057", "Q6534980"],
     "polyphyletic": true,
@@ -650,7 +650,7 @@
       "fr": ["Ophiosphaerella herpotricha"],
       "it": ["Ophiosphaerella herpotricha"],
       "en": ["Spring dead spot"],
-      "lt": ["Ophiosphaerella herpotricha"]
+      "la": ["Ophiosphaerella herpotricha"]
     },
     "wikidata": ["Q10610673"],
     "polyphyletic": false,
@@ -664,7 +664,7 @@
       "fr": ["thrips des Dracaena"],
       "it": ["Tripide della Dracaena"],
       "en": [null],
-      "lt": ["Parthenothrips dracaenae"]
+      "la": ["Parthenothrips dracaenae"]
     },
     "wikidata": ["Q10621350"],
     "polyphyletic": false,
@@ -678,7 +678,7 @@
       "fr": ["ériophyde des framboises"],
       "it": ["eriofide del lampone"],
       "en": ["raspberry (leaf) mite"],
-      "lt": ["Phyllocoptes gracilis"]
+      "la": ["Phyllocoptes gracilis"]
     },
     "wikidata": ["Q10629909"],
     "polyphyletic": false,
@@ -692,7 +692,7 @@
       "fr": ["oïdium du fraisier"],
       "it": ["Oidio della fragola"],
       "en": [null],
-      "lt": ["Podosphaera aphanis"]
+      "la": ["Podosphaera aphanis"]
     },
     "wikidata": ["Q10635260"],
     "polyphyletic": false,
@@ -706,7 +706,7 @@
       "fr": ["oïdium des Rubus"],
       "it": ["Oidio delle verietà di rubus"],
       "en": ["powdery mildew"],
-      "lt": ["Podosphaera aphanis"]
+      "la": ["Podosphaera aphanis"]
     },
     "wikidata": ["Q10635260"],
     "polyphyletic": false,
@@ -720,7 +720,7 @@
       "fr": ["oïdium des Ribes"],
       "it": ["Oidio delle varietà di ribes"],
       "en": ["powdery mildew"],
-      "lt": ["Podosphaera mors-uvae"]
+      "la": ["Podosphaera mors-uvae"]
     },
     "wikidata": ["Q10635270"],
     "polyphyletic": false,
@@ -734,7 +734,7 @@
       "fr": ["oïdium des myrtilles"],
       "it": ["Oidio dei mirtilli"],
       "en": [null],
-      "lt": ["Podosphaera myrtillina"]
+      "la": ["Podosphaera myrtillina"]
     },
     "wikidata": ["Q10635271"],
     "polyphyletic": false,
@@ -748,7 +748,7 @@
       "fr": ["punaises des fruits"],
       "it": ["Cimici dei frutti"],
       "en": [null],
-      "lt": ["Psallus", "Calocoris", "Lygus"]
+      "la": ["Psallus", "Calocoris", "Lygus"]
     },
     "wikidata": ["Q10641403", "Q2934344", "Q3024203"],
     "polyphyletic": true,
@@ -762,7 +762,7 @@
       "fr": ["Psylle du buis"],
       "it": ["Psilla del bosso"],
       "en": [null],
-      "lt": ["Psylla buxi"]
+      "la": ["Psylla buxi"]
     },
     "wikidata": ["Q10645270"],
     "polyphyletic": false,
@@ -776,7 +776,7 @@
       "fr": ["rouilles des salades (Asteraceae) et de la chicorée witloof (chicorée-endive)"],
       "it": ["ruggini su insalate (Asteraceae) e su cicoria belga"],
       "en": [null],
-      "lt": ["Puccinia opizii", "Puccinia cichorii", "Puccinia dioicae"]
+      "la": ["Puccinia opizii", "Puccinia cichorii", "Puccinia dioicae"]
     },
     "wikidata": ["Q10646258", "Q21321918", "Q7258191"],
     "polyphyletic": true,
@@ -790,7 +790,7 @@
       "fr": ["grillures (PLS+RCC)"],
       "it": ["Bruciature fogliari (PLS + RCC)"],
       "en": [null],
-      "lt": ["Ramularia collo-cygni"]
+      "la": ["Ramularia collo-cygni"]
     },
     "wikidata": ["Q10649257"],
     "polyphyletic": false,
@@ -804,7 +804,7 @@
       "fr": ["rhynchosporiose du gazon"],
       "it": ["Rincosporiosi del tappeto erboso"],
       "en": [null],
-      "lt": ["Rhynchosporium orthosporum", "Rhynchosporium secalis"]
+      "la": ["Rhynchosporium orthosporum", "Rhynchosporium secalis"]
     },
     "wikidata": ["Q10654433", "Q7321729"],
     "polyphyletic": true,
@@ -818,7 +818,7 @@
       "fr": ["cochenille du caféier (Saissetia coffeae)"],
       "it": ["Cocciniglia emisferica delle piante ornamentali"],
       "en": [null],
-      "lt": ["Saissetia coffeae"]
+      "la": ["Saissetia coffeae"]
     },
     "wikidata": ["Q10660209"],
     "polyphyletic": false,
@@ -832,7 +832,7 @@
       "fr": ["septoriose du persil"],
       "it": ["Necrosi fogliare del prezzemolo"],
       "en": [null],
-      "lt": ["Septoria apiicola", "Septoria petroselini"]
+      "la": ["Septoria apiicola", "Septoria petroselini"]
     },
     "wikidata": ["Q10665919", "Q10666044"],
     "polyphyletic": true,
@@ -846,7 +846,7 @@
       "fr": ["septoriose du céleri"],
       "it": ["Septoriosi del sedano"],
       "en": ["leaf spot of celery"],
-      "lt": ["Septoria apiicola"]
+      "la": ["Septoria apiicola"]
     },
     "wikidata": ["Q10665919"],
     "polyphyletic": false,
@@ -860,7 +860,7 @@
       "fr": ["septoriose du chrysanthème"],
       "it": ["Necrosi fogliare del crisantemo"],
       "en": [null],
-      "lt": ["Septoria chrysanthemella"]
+      "la": ["Septoria chrysanthemella"]
     },
     "wikidata": ["Q10665947"],
     "polyphyletic": false,
@@ -874,7 +874,7 @@
       "fr": ["tavelure tardive des fruits à pépins"],
       "it": ["Ticchiolatura della frutta a granelli"],
       "en": [null],
-      "lt": ["Venturia inaequalis", "Venturia pirina"]
+      "la": ["Venturia inaequalis", "Venturia pirina"]
     },
     "wikidata": ["Q10675708", "Q84312977"],
     "polyphyletic": true,
@@ -888,7 +888,7 @@
       "fr": ["tavelure des arbres fruitiers à pépins"],
       "it": ["Ticchiolatura della frutta a granelli"],
       "en": ["scab"],
-      "lt": ["Venturia inaequalis", "Venturia nashicola", "Venturia pirina"]
+      "la": ["Venturia inaequalis", "Venturia nashicola", "Venturia pirina"]
     },
     "wikidata": ["Q10675708", "Q10714040", "Q84312977"],
     "polyphyletic": true,
@@ -902,7 +902,7 @@
       "fr": ["tavelure tardive des pommes"],
       "it": ["Ticchiolatura tardiva del melo"],
       "en": ["storage scab"],
-      "lt": ["Venturia inaequalis"]
+      "la": ["Venturia inaequalis"]
     },
     "wikidata": ["Q10675708"],
     "polyphyletic": false,
@@ -916,7 +916,7 @@
       "fr": ["pourriture sèche du glaïeul"],
       "it": ["Stromatinia gladioli"],
       "en": ["dry rot of gladiolus"],
-      "lt": ["Stromatinia gladioli"]
+      "la": ["Stromatinia gladioli"]
     },
     "wikidata": ["Q10681915"],
     "polyphyletic": false,
@@ -930,7 +930,7 @@
       "fr": ["rouille du prunier"],
       "it": ["Ruggine del susino"],
       "en": ["rust"],
-      "lt": ["Tranzschelia pruni-spinosae", "Tranzschelia discolor"]
+      "la": ["Tranzschelia pruni-spinosae", "Tranzschelia discolor"]
     },
     "wikidata": ["Q10701362", "Q7835510"],
     "polyphyletic": true,
@@ -944,7 +944,7 @@
       "fr": ["Trichoderma aggressivum"],
       "it": ["Trichoderma aggressivum"],
       "en": ["green mould disease of mushrooms (Trichoderma aggressivum)"],
-      "lt": ["Trichoderma aggressivum"]
+      "la": ["Trichoderma aggressivum"]
     },
     "wikidata": ["Q10702710"],
     "polyphyletic": false,
@@ -958,7 +958,7 @@
       "fr": ["psylle de la carotte"],
       "it": ["Psilla della carota"],
       "en": [null],
-      "lt": ["Trioza apicalis"]
+      "la": ["Trioza apicalis"]
     },
     "wikidata": ["Q10704098"],
     "polyphyletic": false,
@@ -972,7 +972,7 @@
       "fr": ["charbon couvert de l'orge"],
       "it": ["Carbone coperto dell'orzo"],
       "en": [null],
-      "lt": ["Ustilago hordei"]
+      "la": ["Ustilago hordei"]
     },
     "wikidata": ["Q10711324"],
     "polyphyletic": false,
@@ -986,7 +986,7 @@
       "fr": ["mineuse du chataignier"],
       "it": ["Minatrice dell'ippocastano"],
       "en": [null],
-      "lt": ["Cameraria ohridella"]
+      "la": ["Cameraria ohridella"]
     },
     "wikidata": ["Q1071848"],
     "polyphyletic": false,
@@ -1000,7 +1000,7 @@
       "fr": ["mildiou des ombellifères"],
       "it": ["Peronospora delle ombrellifere "],
       "en": [null],
-      "lt": ["Plasmopara crustosa"]
+      "la": ["Plasmopara crustosa"]
     },
     "wikidata": ["Q107461274"],
     "polyphyletic": false,
@@ -1014,7 +1014,7 @@
       "fr": ["Pied noir", "Anthracnose de l'épinard"],
       "it": ["Mal del piede", "Antracnosi dello spinacio"],
       "en": ["Anthracnose of spinach"],
-      "lt": ["Colletotrichum spinaciae"]
+      "la": ["Colletotrichum spinaciae"]
     },
     "wikidata": ["Q107582349"],
     "polyphyletic": false,
@@ -1028,7 +1028,7 @@
       "fr": ["Chute des feuilles due à Marssonina"],
       "it": ["Caduta delle foglie dovuta a Marssonina"],
       "en": ["Marssonina leafspot of apple"],
-      "lt": ["Diplocarpon coronariae"]
+      "la": ["Diplocarpon coronariae"]
     },
     "wikidata": ["Q107638616"],
     "polyphyletic": false,
@@ -1042,7 +1042,7 @@
       "fr": ["Cochylis"],
       "it": ["Tignola della vite"],
       "en": [null],
-      "lt": ["Eupoecilia ambiguella"]
+      "la": ["Eupoecilia ambiguella"]
     },
     "wikidata": ["Q1077812"],
     "polyphyletic": false,
@@ -1056,7 +1056,7 @@
       "fr": ["Vers de la grappe"],
       "it": ["Tignole della vite (Eupoecilia ambiguella, Lobesia botrana)"],
       "en": [null],
-      "lt": ["Eupoecilia ambiguella", "Lobesia botrana"]
+      "la": ["Eupoecilia ambiguella", "Lobesia botrana"]
     },
     "wikidata": ["Q1077812", "Q815051"],
     "polyphyletic": true,
@@ -1070,7 +1070,7 @@
       "fr": ["Oïdium du tabac"],
       "it": ["Oidio del tabacco"],
       "en": ["Powdery mildew of tobacco"],
-      "lt": ["Oidium tabaci", "Golovinomyces cichoracearum"]
+      "la": ["Oidium tabaci", "Golovinomyces cichoracearum"]
     },
     "wikidata": ["Q108117421", "Q2703884"],
     "polyphyletic": true,
@@ -1084,7 +1084,7 @@
       "fr": ["phomopsis du tournesol"],
       "it": ["Phomopsis del girasole"],
       "en": [null],
-      "lt": ["Phomopsis helianthi", "Diaporthe helianthi"]
+      "la": ["Phomopsis helianthi", "Diaporthe helianthi"]
     },
     "wikidata": ["Q108195922", "Q5271812"],
     "polyphyletic": true,
@@ -1098,7 +1098,7 @@
       "fr": ["Oïdium du Minikiwi (Phyllactinia actinidiae)"],
       "it": ["Oidio della Minikiwi (Phyllactinia actinidiae)"],
       "en": ["Powdery mildew on hardy kiwi"],
-      "lt": ["Phyllactinia actinidiae"]
+      "la": ["Phyllactinia actinidiae"]
     },
     "wikidata": ["Q108198395"],
     "polyphyletic": false,
@@ -1112,7 +1112,7 @@
       "fr": ["maladie de l'oeil de paon"],
       "it": ["Occhio di pavone"],
       "en": ["peacock spot of olive"],
-      "lt": ["Venturia oleaginea"]
+      "la": ["Venturia oleaginea"]
     },
     "wikidata": ["Q108471185"],
     "polyphyletic": false,
@@ -1126,7 +1126,7 @@
       "fr": ["cloque des azalées"],
       "it": ["Bolla dell'azalea"],
       "en": [null],
-      "lt": ["Exobasidium vaccinii var. japonicum"]
+      "la": ["Exobasidium vaccinii var. japonicum"]
     },
     "wikidata": ["Q108599739"],
     "polyphyletic": false,
@@ -1140,7 +1140,7 @@
       "fr": ["oïdium du cognassier"],
       "it": ["Oidio del cotogno"],
       "en": ["powedery mildew"],
-      "lt": ["Podosphaera clandestina var. cydoniae"]
+      "la": ["Podosphaera clandestina var. cydoniae"]
     },
     "wikidata": ["Q108687355"],
     "polyphyletic": false,
@@ -1154,7 +1154,7 @@
       "fr": ["bactérioses"],
       "it": ["Batteriosi"],
       "en": [null],
-      "lt": ["Bacteria"]
+      "la": ["Bacteria"]
     },
     "wikidata": ["Q10876"],
     "polyphyletic": true,
@@ -1168,7 +1168,7 @@
       "fr": ["contrôle des repousses de pommes de terre dans les cultures suivantes"],
       "it": ["Controllo dei ricacci di patate nelle colture successive"],
       "en": [null],
-      "lt": ["Solanum tuberosum"]
+      "la": ["Solanum tuberosum"]
     },
     "wikidata": ["Q10998"],
     "polyphyletic": false,
@@ -1182,7 +1182,7 @@
       "fr": ["taches angulaires"],
       "it": ["Maculature angolari"],
       "en": [null],
-      "lt": ["Pseudomonas syringae pv. lachrymans"]
+      "la": ["Pseudomonas syringae pv. lachrymans"]
     },
     "wikidata": ["Q110420353"],
     "polyphyletic": false,
@@ -1196,7 +1196,7 @@
       "fr": ["tordeuse orientale du pêcher (Laspeyresia molesta)"],
       "it": ["Tortrice orientale del pesco"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": ["Q1106356s"],
     "polyphyletic": false,
@@ -1210,7 +1210,7 @@
       "fr": ["oïdium du mûrier"],
       "it": ["Oidio del moro nero"],
       "en": [null],
-      "lt": ["Phyllactinia moricola"]
+      "la": ["Phyllactinia moricola"]
     },
     "wikidata": ["Q11113134"],
     "polyphyletic": false,
@@ -1224,7 +1224,7 @@
       "fr": ["liseron des champs"],
       "it": ["Vilucchio comune"],
       "en": [null],
-      "lt": ["Convolvulus arvensis"]
+      "la": ["Convolvulus arvensis"]
     },
     "wikidata": ["Q111346"],
     "polyphyletic": false,
@@ -1238,7 +1238,7 @@
       "fr": ["gale argentée de la pomme de terre"],
       "it": ["Tigna argentata della patata"],
       "en": [null],
-      "lt": ["Helminthosporium solani"]
+      "la": ["Helminthosporium solani"]
     },
     "wikidata": ["Q1117479"],
     "polyphyletic": false,
@@ -1252,7 +1252,7 @@
       "fr": ["rouilles des fines herbes"],
       "it": ["Ruggini su erbette da cucina"],
       "en": [null],
-      "lt": ["Pucciniales"]
+      "la": ["Pucciniales"]
     },
     "wikidata": ["Q1130524"],
     "polyphyletic": true,
@@ -1266,7 +1266,7 @@
       "fr": ["pourriture de la mouche des pommes (Botrytis cinerea)"],
       "it": ["Marciume (Botrytis cinerea)"],
       "en": ["eye rot"],
-      "lt": ["Botrytis cinerea"]
+      "la": ["Botrytis cinerea"]
     },
     "wikidata": ["Q1135851"],
     "polyphyletic": false,
@@ -1280,7 +1280,7 @@
       "fr": ["pourriture grise (Botrytis cinerea)"],
       "it": ["Marciume grigio (Botrytis cinerea)"],
       "en": [null],
-      "lt": ["Botrytis cinerea"]
+      "la": ["Botrytis cinerea"]
     },
     "wikidata": ["Q1135851"],
     "polyphyletic": false,
@@ -1294,7 +1294,7 @@
       "fr": ["Souchet comestible"],
       "it": ["Cipero dolce"],
       "en": ["Earth almond"],
-      "lt": ["Cyperus esculentus"]
+      "la": ["Cyperus esculentus"]
     },
     "wikidata": ["Q1165724"],
     "polyphyletic": false,
@@ -1308,7 +1308,7 @@
       "fr": ["apions du trèfle"],
       "it": ["Apioni dei capolini del trifoglio"],
       "en": [null],
-      "lt": ["Apion"]
+      "la": ["Apion"]
     },
     "wikidata": ["Q11832425"],
     "polyphyletic": true,
@@ -1322,7 +1322,7 @@
       "fr": ["criocère de l'asperge"],
       "it": ["Criocera dell'asparago"],
       "en": [null],
-      "lt": ["Crioceris asparagi"]
+      "la": ["Crioceris asparagi"]
     },
     "wikidata": ["Q1187084"],
     "polyphyletic": false,
@@ -1336,7 +1336,7 @@
       "fr": ["vrillette du pain"],
       "it": ["anobio del pane"],
       "en": ["Drugstore beetle", "Bread beetle"],
-      "lt": ["Stegobium paniceum"]
+      "la": ["Stegobium paniceum"]
     },
     "wikidata": ["Q11962"],
     "polyphyletic": false,
@@ -1350,7 +1350,7 @@
       "fr": ["otiorhynques"],
       "it": ["Oziorrinchi"],
       "en": [null],
-      "lt": ["Otiorhynchus"]
+      "la": ["Otiorhynchus"]
     },
     "wikidata": ["Q1210088"],
     "polyphyletic": true,
@@ -1364,7 +1364,7 @@
       "fr": ["mouche de la betterave"],
       "it": ["Mosca della barbabietola"],
       "en": [null],
-      "lt": ["Pegomya betae"]
+      "la": ["Pegomya betae"]
     },
     "wikidata": ["Q12145842"],
     "polyphyletic": false,
@@ -1378,7 +1378,7 @@
       "fr": ["dollar spot des graminées"],
       "it": ["Agente della macchia a forma di dollaro"],
       "en": ["dollar spot"],
-      "lt": ["Sclerotinia homoeocarpa"]
+      "la": ["Sclerotinia homoeocarpa"]
     },
     "wikidata": ["Q1235677"],
     "polyphyletic": false,
@@ -1392,7 +1392,7 @@
       "fr": ["scolytes"],
       "it": ["Scolitidi"],
       "en": [null],
-      "lt": ["Scolytidae"]
+      "la": ["Scolytidae"]
     },
     "wikidata": ["Q12379653"],
     "polyphyletic": true,
@@ -1406,7 +1406,7 @@
       "fr": ["Teigne de la betterave"],
       "it": ["tignola della barbabietola"],
       "en": ["beet moth"],
-      "lt": ["Scrobipalpa ocellatella"]
+      "la": ["Scrobipalpa ocellatella"]
     },
     "wikidata": ["Q1252923"],
     "polyphyletic": false,
@@ -1420,7 +1420,7 @@
       "fr": ["pyrale de la vigne"],
       "it": ["Tortrice della vite"],
       "en": [null],
-      "lt": ["Sparganothis pilleriana"]
+      "la": ["Sparganothis pilleriana"]
     },
     "wikidata": ["Q1259351"],
     "polyphyletic": false,
@@ -1434,7 +1434,7 @@
       "fr": ["tenthrèdes et hoplocampes"],
       "it": ["Tentredini"],
       "en": [null],
-      "lt": ["Tenthredinidae"]
+      "la": ["Tenthredinidae"]
     },
     "wikidata": ["Q1280932"],
     "polyphyletic": false,
@@ -1448,7 +1448,7 @@
       "fr": ["tenthrèdes"],
       "it": ["Tentredini"],
       "en": [null],
-      "lt": ["Tenthredinidae"]
+      "la": ["Tenthredinidae"]
     },
     "wikidata": ["Q1280932"],
     "polyphyletic": true,
@@ -1462,7 +1462,7 @@
       "fr": ["oïdium du rosier"],
       "it": ["Oidio delle rose"],
       "en": [null],
-      "lt": ["Podosphaera pannosa"]
+      "la": ["Podosphaera pannosa"]
     },
     "wikidata": ["Q1281116"],
     "polyphyletic": false,
@@ -1476,7 +1476,7 @@
       "fr": ["oïdium des arbres fruitiers à noyau"],
       "it": ["Oidio della frutta a nocciolo"],
       "en": [null],
-      "lt": ["Podosphaera pannosa", "Podosphaera tridactyla"]
+      "la": ["Podosphaera pannosa", "Podosphaera tridactyla"]
     },
     "wikidata": ["Q1281116", "Q7207073"],
     "polyphyletic": true,
@@ -1490,7 +1490,7 @@
       "fr": ["oïdium du pêcher"],
       "it": ["Oidio della pesca"],
       "en": ["mildew"],
-      "lt": ["Podosphaera pannosa"]
+      "la": ["Podosphaera pannosa"]
     },
     "wikidata": ["Q1281116"],
     "polyphyletic": false,
@@ -1504,7 +1504,7 @@
       "fr": ["criocères des céréales"],
       "it": ["Criocere dei cereali"],
       "en": ["cereal leaf beetle "],
-      "lt": ["Oulema melanopus", "Oulema gallaeciana"]
+      "la": ["Oulema melanopus", "Oulema gallaeciana"]
     },
     "wikidata": ["Q1301591", "Q143459"],
     "polyphyletic": true,
@@ -1517,8 +1517,8 @@
       "de": ["Schalenwickler"],
       "fr": ["tordeuses de la pelure"],
       "it": ["Tortrici ricamatrici"],
-      "en": [null],
-      "lt": ["Adoxophyes orana", "Archips podana", "Pandemis heparana"]
+      "en": ["Fruit tree tortrix moths"],
+      "la": ["Adoxophyes orana", "Archips podana", "Pandemis heparana"]
     },
     "wikidata": ["Q1301905", "Q136322", "Q898337"],
     "polyphyletic": true,
@@ -1531,8 +1531,8 @@
       "de": ["Tabakmottenschildlaus"],
       "fr": ["Aleurode du tabac"],
       "it": ["Aleurode delle solanacee"],
-      "en": [null],
-      "lt": ["Bemisia tabaci"]
+      "en": ["Tobacco whitefly"],
+      "la": ["Bemisia tabaci"]
     },
     "wikidata": ["Q1303946"],
     "polyphyletic": false,
@@ -1545,8 +1545,8 @@
       "de": ["Colletotrichum-Welke"],
       "fr": ["dartrose de la pomme de terre"],
       "it": ["\"Black dot\" della patata"],
-      "en": ["black dot disease of potato"],
-      "lt": ["Colletotrichum coccodes"]
+      "en": ["Black dot disease of potato"],
+      "la": ["Colletotrichum coccodes"]
     },
     "wikidata": ["Q1310150"],
     "polyphyletic": false,
@@ -1560,7 +1560,7 @@
       "fr": ["Pseudomonas"],
       "it": ["Pseudomonas"],
       "en": [null],
-      "lt": ["Pseudomonas"]
+      "la": ["Pseudomonas"]
     },
     "wikidata": ["Q131143"],
     "polyphyletic": true,
@@ -1574,7 +1574,7 @@
       "fr": ["dent-de-lion"],
       "it": ["Tarassaco"],
       "en": [null],
-      "lt": ["Taraxacum officinale"]
+      "la": ["Taraxacum officinale"]
     },
     "wikidata": ["Q131219"],
     "polyphyletic": false,
@@ -1588,7 +1588,7 @@
       "fr": ["bostryche des graines"],
       "it": ["Punteruolo dei cereali"],
       "en": [null],
-      "lt": ["Rhyzopertha dominica"]
+      "la": ["Rhyzopertha dominica"]
     },
     "wikidata": ["Q1312676"],
     "polyphyletic": false,
@@ -1602,7 +1602,7 @@
       "fr": ["rouille de la fève "],
       "it": ["Ruggine della fava "],
       "en": [null],
-      "lt": ["Uromyces viciae-fabae"]
+      "la": ["Uromyces viciae-fabae"]
     },
     "wikidata": ["Q1312778"],
     "polyphyletic": false,
@@ -1616,7 +1616,7 @@
       "fr": ["rouilles du pois"],
       "it": ["Ruggini del pisello"],
       "en": [null],
-      "lt": ["Uromyces viciae-fabae", "Uromyces pisi-sativi"]
+      "la": ["Uromyces viciae-fabae", "Uromyces pisi-sativi"]
     },
     "wikidata": ["Q1312778", "Q892348"],
     "polyphyletic": true,
@@ -1630,7 +1630,7 @@
       "fr": ["brûlure bactérienne du haricot"],
       "it": ["Antracnosi del fagiolo"],
       "en": [null],
-      "lt": ["Xanthomonas phaseoli pv. phaseoli"]
+      "la": ["Xanthomonas phaseoli pv. phaseoli"]
     },
     "wikidata": ["Q131469754"],
     "polyphyletic": false,
@@ -1644,7 +1644,7 @@
       "fr": ["rhizoctones des graminées"],
       "it": ["Rizottonie delle graminacee"],
       "en": [null],
-      "lt": ["Rhizoctonia cerealis", "Waitea circinata var. oryzae", "Rhizoctonia solani", "Rhizoctonia zeae"]
+      "la": ["Rhizoctonia cerealis", "Waitea circinata var. oryzae", "Rhizoctonia solani", "Rhizoctonia zeae"]
     },
     "wikidata": ["Q131471650", "Q131471662", "Q30906964", "Q84847330"],
     "polyphyletic": true,
@@ -1658,7 +1658,7 @@
       "fr": ["mildiou de l'épinard"],
       "it": ["Peronospora dello spinacio"],
       "en": [null],
-      "lt": ["Peronospora farinosa f. sp. spinaciae"]
+      "la": ["Peronospora farinosa f. sp. spinaciae"]
     },
     "wikidata": ["Q131497743"],
     "polyphyletic": true,
@@ -1672,7 +1672,7 @@
       "fr": ["chancre bactérien du cerisier"],
       "it": ["Batteriosi del ciliegio"],
       "en": ["bacterial canker"],
-      "lt": ["Pseudomonas syringae pv. morsprunorum"]
+      "la": ["Pseudomonas syringae pv. morsprunorum"]
     },
     "wikidata": ["Q131499414"],
     "polyphyletic": false,
@@ -1686,7 +1686,7 @@
       "fr": ["bactériose du noyer"],
       "it": ["Batteriosi del noce"],
       "en": [null],
-      "lt": ["Xanthomonas arboricola pv. juglandis"]
+      "la": ["Xanthomonas arboricola pv. juglandis"]
     },
     "wikidata": ["Q131506166"],
     "polyphyletic": false,
@@ -1700,7 +1700,7 @@
       "fr": ["noctuelles terricoles ou vers gris"],
       "it": ["Nottue terricole o vermi grigi"],
       "en": [null],
-      "lt": ["Agrotis", "Euxoa"]
+      "la": ["Agrotis", "Euxoa"]
     },
     "wikidata": ["Q1315870", "Q779695"],
     "polyphyletic": true,
@@ -1714,7 +1714,7 @@
       "fr": ["fontes des semis"],
       "it": ["Malattie parassitarie dei germogli"],
       "en": [null],
-      "lt": ["Fusarium", "Alternaria", "Phoma", "Pythium", "Rhizoctonia", "Rhizoctonia solani", "Pythium ultimum", "Ascochyta"]
+      "la": ["Fusarium", "Alternaria", "Phoma", "Pythium", "Rhizoctonia", "Rhizoctonia solani", "Pythium ultimum", "Ascochyta"]
     },
     "wikidata": ["Q131672", "Q133266", "Q2066891", "Q2699011", "Q2716477", "Q30906964", "Q7263907", "Q74663"],
     "polyphyletic": true,
@@ -1728,7 +1728,7 @@
       "fr": ["fusariose des plantules"],
       "it": ["Fusariosi delle piantine"],
       "en": [null],
-      "lt": ["Fusarium"]
+      "la": ["Fusarium"]
     },
     "wikidata": ["Q131672"],
     "polyphyletic": true,
@@ -1742,7 +1742,7 @@
       "fr": ["pourritures sèches des tubercules"],
       "it": ["Marciumi secchi dei tuberi"],
       "en": ["gangrene / dry rot"],
-      "lt": ["Fusarium", "Phoma"]
+      "la": ["Fusarium", "Phoma"]
     },
     "wikidata": ["Q131672", "Q2066891"],
     "polyphyletic": true,
@@ -1756,7 +1756,7 @@
       "fr": ["Fusarium spp."],
       "it": ["Fusarium spp."],
       "en": [null],
-      "lt": ["Fusarium"]
+      "la": ["Fusarium"]
     },
     "wikidata": ["Q131672"],
     "polyphyletic": true,
@@ -1770,7 +1770,7 @@
       "fr": ["mosaïque du pépino (PepMV)"],
       "it": ["Virus del mosaico del pepino (PepMV)"],
       "en": ["Pepino Mosaic Virus (PepMV)"],
-      "lt": ["Pepino mosaic virus"]
+      "la": ["Pepino mosaic virus"]
     },
     "wikidata": ["Q13217466"],
     "polyphyletic": false,
@@ -1784,7 +1784,7 @@
       "fr": ["alternarioses"],
       "it": ["Alternaria spp."],
       "en": [null],
-      "lt": ["Alternaria"]
+      "la": ["Alternaria"]
     },
     "wikidata": ["Q133266"],
     "polyphyletic": true,
@@ -1798,7 +1798,7 @@
       "fr": ["maladies fongiques des feuilles"],
       "it": ["Maculature fogliari"],
       "en": [null],
-      "lt": ["Alternaria", "Cercospora", "Septoria", "Gloeosporium", "Apiognomonia", "Ascochyta"]
+      "la": ["Alternaria", "Cercospora", "Septoria", "Gloeosporium", "Apiognomonia", "Ascochyta"]
     },
     "wikidata": ["Q133266", "Q2066868", "Q310475", "Q3772399", "Q4779847", "Q74663"],
     "polyphyletic": true,
@@ -1812,7 +1812,7 @@
       "fr": ["alternariose"],
       "it": ["Alternariosi delle solanacee"],
       "en": [null],
-      "lt": ["Alternaria"]
+      "la": ["Alternaria"]
     },
     "wikidata": ["Q133266"],
     "polyphyletic": true,
@@ -1826,7 +1826,7 @@
       "fr": ["altises du tabac"],
       "it": ["Lasioderma"],
       "en": [null],
-      "lt": ["Lasioderma serricorne"]
+      "la": ["Lasioderma serricorne"]
     },
     "wikidata": ["Q133538"],
     "polyphyletic": false,
@@ -1840,7 +1840,7 @@
       "fr": ["acarien jaune commun"],
       "it": ["Ragnetto giallo comune"],
       "en": [null],
-      "lt": ["Tetranychus urticae"]
+      "la": ["Tetranychus urticae"]
     },
     "wikidata": ["Q1335549"],
     "polyphyletic": false,
@@ -1854,7 +1854,7 @@
       "fr": ["drosophile du cerisier"],
       "it": ["Drosophila suzukii"],
       "en": [null],
-      "lt": ["Drosophila suzukii"]
+      "la": ["Drosophila suzukii"]
     },
     "wikidata": ["Q1336450"],
     "polyphyletic": false,
@@ -1868,7 +1868,7 @@
       "fr": ["petite tordeuse des fruits"],
       "it": ["Piccola tortrice dei frutti"],
       "en": [null],
-      "lt": ["Grapholita lobarzewskii"]
+      "la": ["Grapholita lobarzewskii"]
     },
     "wikidata": ["Q13375975"],
     "polyphyletic": false,
@@ -1882,7 +1882,7 @@
       "fr": ["cladosporiose"],
       "it": ["Ticchiolatura"],
       "en": [null],
-      "lt": ["Cladosporium"]
+      "la": ["Cladosporium"]
     },
     "wikidata": ["Q134055"],
     "polyphyletic": true,
@@ -1896,7 +1896,7 @@
       "fr": ["Botrytis spp."],
       "it": ["Botrytis spp."],
       "en": [null],
-      "lt": ["Botrytis"]
+      "la": ["Botrytis"]
     },
     "wikidata": ["Q134284"],
     "polyphyletic": true,
@@ -1910,7 +1910,7 @@
       "fr": ["anthonome du fraisier ou du framboisier"],
       "it": ["Antonomo delle fragole o dei lamponi"],
       "en": [null],
-      "lt": ["Anthonomus rubi"]
+      "la": ["Anthonomus rubi"]
     },
     "wikidata": ["Q1348959"],
     "polyphyletic": false,
@@ -1924,7 +1924,7 @@
       "fr": ["thrips de Californie"],
       "it": ["Tripide occidentale dei fiori (Frankliniella occidentalis)"],
       "en": ["Western Flower Thrips"],
-      "lt": ["Frankliniella occidentalis"]
+      "la": ["Frankliniella occidentalis"]
     },
     "wikidata": ["Q135374"],
     "polyphyletic": false,
@@ -1938,7 +1938,7 @@
       "fr": ["pucerons des racines"],
       "it": ["Afidi delle radici"],
       "en": ["Root aphids"],
-      "lt": ["Aphididae"]
+      "la": ["Aphididae"]
     },
     "wikidata": ["Q1354085"],
     "polyphyletic": true,
@@ -1952,7 +1952,7 @@
       "fr": ["Pucerons vecteurs de virus"],
       "it": ["Afidi vettori di virus"],
       "en": [null],
-      "lt": ["Aphididae"]
+      "la": ["Aphididae"]
     },
     "wikidata": ["Q1354085"],
     "polyphyletic": false,
@@ -1966,7 +1966,7 @@
       "fr": ["pucerons du feuillage"],
       "it": ["Afidi "],
       "en": [null],
-      "lt": ["Aphididae"]
+      "la": ["Aphididae"]
     },
     "wikidata": ["Q1354085"],
     "polyphyletic": true,
@@ -1980,7 +1980,7 @@
       "fr": ["puceron cendré du poirier"],
       "it": ["Afide sanguigno del pero"],
       "en": [null],
-      "lt": ["Dysaphis pyri"]
+      "la": ["Dysaphis pyri"]
     },
     "wikidata": ["Q13565566"],
     "polyphyletic": false,
@@ -1994,7 +1994,7 @@
       "fr": ["teigne de la farine"],
       "it": ["Tignola grigia delle provviste alimentari"],
       "en": [null],
-      "lt": ["Ephestia kuhniella"]
+      "la": ["Ephestia kuhniella"]
     },
     "wikidata": ["Q13608938"],
     "polyphyletic": false,
@@ -2008,7 +2008,7 @@
       "fr": ["rouille des espèces de Ribes"],
       "it": ["Ruggine delle specie di ribes"],
       "en": ["rust"],
-      "lt": ["Puccinia ribis", "Cronartium ribicola"]
+      "la": ["Puccinia ribis", "Cronartium ribicola"]
     },
     "wikidata": ["Q1369189", "Q2301438"],
     "polyphyletic": true,
@@ -2022,7 +2022,7 @@
       "fr": ["mouche mineuse des feuilles de colza"],
       "it": ["Mosca minatrice della colza"],
       "en": ["imported leaf miner"],
-      "lt": ["Scaptomyza flava"]
+      "la": ["Scaptomyza flava"]
     },
     "wikidata": ["Q13851757"],
     "polyphyletic": false,
@@ -2036,7 +2036,7 @@
       "fr": ["ravageurs des denrées stockées volants"],
       "it": ["parassiti delle scorte alimentari volanti"],
       "en": [null],
-      "lt": ["Insecta"]
+      "la": ["Insecta"]
     },
     "wikidata": ["Q1390"],
     "polyphyletic": true,
@@ -2050,7 +2050,7 @@
       "fr": ["ravageurs des denrées stockées"],
       "it": ["Parassiti delle scorte alimentari"],
       "en": [null],
-      "lt": ["Insecta"]
+      "la": ["Insecta"]
     },
     "wikidata": ["Q1390"],
     "polyphyletic": true,
@@ -2064,7 +2064,7 @@
       "fr": ["flétrissement fusarien"],
       "it": ["Avvizzimento da fusariosi"],
       "en": [null],
-      "lt": ["Fusarium oxysporum"]
+      "la": ["Fusarium oxysporum"]
     },
     "wikidata": ["Q139958"],
     "polyphyletic": false,
@@ -2078,7 +2078,7 @@
       "fr": ["pourriture rouge"],
       "it": ["Marciume rosso"],
       "en": [null],
-      "lt": ["Heterobasidion annosum"]
+      "la": ["Heterobasidion annosum"]
     },
     "wikidata": ["Q1411830"],
     "polyphyletic": false,
@@ -2092,7 +2092,7 @@
       "fr": ["rouille du poireau"],
       "it": ["Ruggine del porro "],
       "en": [null],
-      "lt": ["Puccinia porri", "Puccinia allii"]
+      "la": ["Puccinia porri", "Puccinia allii"]
     },
     "wikidata": ["Q1422236", "Q2116610"],
     "polyphyletic": true,
@@ -2106,7 +2106,7 @@
       "fr": ["mouches mineuses"],
       "it": ["Minatrici"],
       "en": [null],
-      "lt": ["Agromyzidae"]
+      "la": ["Agromyzidae"]
     },
     "wikidata": ["Q1422663"],
     "polyphyletic": false,
@@ -2120,7 +2120,7 @@
       "fr": ["cochenilles farineuses"],
       "it": ["Cocciniglie cotonose"],
       "en": [null],
-      "lt": ["Pseudococcidae"]
+      "la": ["Pseudococcidae"]
     },
     "wikidata": ["Q143569"],
     "polyphyletic": false,
@@ -2134,7 +2134,7 @@
       "fr": ["ver des framboises"],
       "it": ["Verme del lampone"],
       "en": ["raspberry beetle"],
-      "lt": ["Byturus tomentosus"]
+      "la": ["Byturus tomentosus"]
     },
     "wikidata": ["Q1447372"],
     "polyphyletic": false,
@@ -2148,7 +2148,7 @@
       "fr": ["oïdium des betteraves"],
       "it": ["Oidio delle barbabietole"],
       "en": [null],
-      "lt": ["Erysiphe betae"]
+      "la": ["Erysiphe betae"]
     },
     "wikidata": ["Q1453267"],
     "polyphyletic": false,
@@ -2162,7 +2162,7 @@
       "fr": ["liserons"],
       "it": ["Convolvulaceae"],
       "en": [null],
-      "lt": ["Convolvulaceae"]
+      "la": ["Convolvulaceae"]
     },
     "wikidata": ["Q145777"],
     "polyphyletic": false,
@@ -2176,7 +2176,7 @@
       "fr": ["renonculacées annuelles"],
       "it": ["Ranuncoli annuali"],
       "en": [null],
-      "lt": ["Ranunculaceae"]
+      "la": ["Ranunculaceae"]
     },
     "wikidata": ["Q145869"],
     "polyphyletic": true,
@@ -2190,7 +2190,7 @@
       "fr": ["renoncules vivaces"],
       "it": ["Ranuncoli pluriennali"],
       "en": [null],
-      "lt": ["Ranunculaceae"]
+      "la": ["Ranunculaceae"]
     },
     "wikidata": ["Q145869"],
     "polyphyletic": true,
@@ -2204,7 +2204,7 @@
       "fr": ["hanneton européen / hanneton de la Saint-Jean"],
       "it": ["Rizotrogo"],
       "en": [null],
-      "lt": ["Amphimallon majale", "Amphimallon solstitiale"]
+      "la": ["Amphimallon majale", "Amphimallon solstitiale"]
     },
     "wikidata": ["Q14594990", "Q768766"],
     "polyphyletic": true,
@@ -2218,7 +2218,7 @@
       "fr": ["renoncules"],
       "it": ["Specie di ranuncoli"],
       "en": [null],
-      "lt": ["Ranunculus"]
+      "la": ["Ranunculus"]
     },
     "wikidata": ["Q146130"],
     "polyphyletic": true,
@@ -2232,7 +2232,7 @@
       "fr": ["pseudococcus viburni"],
       "it": ["Pseudococcus viburni"],
       "en": [null],
-      "lt": ["Pseudococcus viburni"]
+      "la": ["Pseudococcus viburni"]
     },
     "wikidata": ["Q14621706"],
     "polyphyletic": false,
@@ -2246,7 +2246,7 @@
       "fr": ["oscinie"],
       "it": ["Mosca frit"],
       "en": [null],
-      "lt": ["Oscinella frit"]
+      "la": ["Oscinella frit"]
     },
     "wikidata": ["Q1465179"],
     "polyphyletic": false,
@@ -2260,7 +2260,7 @@
       "fr": ["stemphyliose"],
       "it": ["Stemphylium botryosum"],
       "en": ["Leaf blight"],
-      "lt": ["Stemphylium vesicarium", "Stemphylium botryosum"]
+      "la": ["Stemphylium vesicarium", "Stemphylium botryosum"]
     },
     "wikidata": ["Q146566", "Q7204611"],
     "polyphyletic": true,
@@ -2274,7 +2274,7 @@
       "fr": ["brûlure des feuilles de l'asperge"],
       "it": ["Bruciatura delle foglie dell'asparago"],
       "en": [null],
-      "lt": ["Stemphylium vesicarium"]
+      "la": ["Stemphylium vesicarium"]
     },
     "wikidata": ["Q146566"],
     "polyphyletic": false,
@@ -2288,7 +2288,7 @@
       "fr": ["phylloxéra de la vigne"],
       "it": ["Filossera della vite "],
       "en": ["grapevine leaf louse"],
-      "lt": ["Viteus vitifoliae"]
+      "la": ["Viteus vitifoliae"]
     },
     "wikidata": ["Q14705283"],
     "polyphyletic": false,
@@ -2302,7 +2302,7 @@
       "fr": ["espèces de bromes"],
       "it": ["Specie di bromo"],
       "en": [null],
-      "lt": ["Bromus"]
+      "la": ["Bromus"]
     },
     "wikidata": ["Q147621"],
     "polyphyletic": true,
@@ -2316,7 +2316,7 @@
       "fr": ["dicotylédones et monocotylédones"],
       "it": ["Dicotiledoni e monocotiledoni (malerbe)"],
       "en": [null],
-      "lt": ["Monocotyledoneae", "Dicotyledones"]
+      "la": ["Monocotyledoneae", "Dicotyledones"]
     },
     "wikidata": ["Q14847257", "Q8316"],
     "polyphyletic": true,
@@ -2330,7 +2330,7 @@
       "fr": ["dicotylédones annuelles"],
       "it": ["Dicotiledoni annuali (malerbe)"],
       "en": [null],
-      "lt": ["Monocotyledoneae"]
+      "la": ["Monocotyledoneae"]
     },
     "wikidata": ["Q14847257"],
     "polyphyletic": false,
@@ -2344,7 +2344,7 @@
       "fr": ["monocotylédones vivaces"],
       "it": ["Monocotiledoni perenni (malerbe)"],
       "en": [null],
-      "lt": ["Monocotyledoneae"]
+      "la": ["Monocotyledoneae"]
     },
     "wikidata": ["Q14847257"],
     "polyphyletic": false,
@@ -2358,7 +2358,7 @@
       "fr": ["monocotylédones annuelles"],
       "it": ["Monocotiledoni annuali (malerbe)."],
       "en": [null],
-      "lt": ["Monocotyledoneae"]
+      "la": ["Monocotyledoneae"]
     },
     "wikidata": ["Q14847257"],
     "polyphyletic": false,
@@ -2372,7 +2372,7 @@
       "fr": ["monocotylédones"],
       "it": ["Monocotiledoni (malerbe)"],
       "en": [null],
-      "lt": ["Monocotyledoneae"]
+      "la": ["Monocotyledoneae"]
     },
     "wikidata": ["Q14847257"],
     "polyphyletic": false,
@@ -2386,7 +2386,7 @@
       "fr": ["trèfle rampant, trèfle blanc"],
       "it": ["Trifoglio bianco"],
       "en": [null],
-      "lt": ["Trifolium repens"]
+      "la": ["Trifolium repens"]
     },
     "wikidata": ["Q148675"],
     "polyphyletic": false,
@@ -2400,7 +2400,7 @@
       "fr": ["mildiou de la pomme de terre"],
       "it": ["Peronospora della patata"],
       "en": [null],
-      "lt": ["Phytophthora infestans"]
+      "la": ["Phytophthora infestans"]
     },
     "wikidata": ["Q149072"],
     "polyphyletic": false,
@@ -2414,7 +2414,7 @@
       "fr": ["mildiou de l'aubergine"],
       "it": ["Peronospora della melanzana"],
       "en": [null],
-      "lt": ["Phytophthora infestans"]
+      "la": ["Phytophthora infestans"]
     },
     "wikidata": ["Q149072"],
     "polyphyletic": false,
@@ -2428,7 +2428,7 @@
       "fr": ["mildiou de la tomate"],
       "it": ["Peronospora del pomodoro"],
       "en": [null],
-      "lt": ["Phytophthora infestans"]
+      "la": ["Phytophthora infestans"]
     },
     "wikidata": ["Q149072"],
     "polyphyletic": false,
@@ -2442,7 +2442,7 @@
       "fr": ["rhizoctone"],
       "it": ["Rizottonia"],
       "en": [null],
-      "lt": ["Thanatephorus cucumeris", "Rhizoctonia solani"]
+      "la": ["Thanatephorus cucumeris", "Rhizoctonia solani"]
     },
     "wikidata": ["Q149125", "Q30906964"],
     "polyphyletic": true,
@@ -2456,7 +2456,7 @@
       "fr": ["mouche de la noix"],
       "it": ["Mosca della noce"],
       "en": [null],
-      "lt": ["Rhagoletis completa"]
+      "la": ["Rhagoletis completa"]
     },
     "wikidata": ["Q1493916"],
     "polyphyletic": false,
@@ -2470,7 +2470,7 @@
       "fr": ["gommose des Cucurbitacées"],
       "it": ["Cancro gommoso"],
       "en": [null],
-      "lt": ["Didymella bryoniae"]
+      "la": ["Didymella bryoniae"]
     },
     "wikidata": ["Q149490"],
     "polyphyletic": false,
@@ -2484,7 +2484,7 @@
       "fr": ["rouille jaune"],
       "it": ["Ruggine gialla"],
       "en": [null],
-      "lt": ["Puccinia striiformis"]
+      "la": ["Puccinia striiformis"]
     },
     "wikidata": ["Q1499415"],
     "polyphyletic": false,
@@ -2498,7 +2498,7 @@
       "fr": ["sitone du pois"],
       "it": ["Sitone del pisello"],
       "en": [null],
-      "lt": ["Sitona lineatus"]
+      "la": ["Sitona lineatus"]
     },
     "wikidata": ["Q1513447"],
     "polyphyletic": false,
@@ -2512,7 +2512,7 @@
       "fr": ["colchique d'automne"],
       "it": ["Colchico d'autunno"],
       "en": ["Autumn crocus"],
-      "lt": ["Colchicum autumnale"]
+      "la": ["Colchicum autumnale"]
     },
     "wikidata": ["Q152553"],
     "polyphyletic": false,
@@ -2526,7 +2526,7 @@
       "fr": ["puceron noir de la fève"],
       "it": ["Afide nero della fava"],
       "en": [null],
-      "lt": ["Aphis fabae"]
+      "la": ["Aphis fabae"]
     },
     "wikidata": ["Q1532970"],
     "polyphyletic": false,
@@ -2540,7 +2540,7 @@
       "fr": ["gros charançon de la tige du colza"],
       "it": ["Punteruolo degli steli della colza"],
       "en": [null],
-      "lt": ["Ceutorhynchus napi"]
+      "la": ["Ceutorhynchus napi"]
     },
     "wikidata": ["Q1548922"],
     "polyphyletic": false,
@@ -2554,7 +2554,7 @@
       "fr": ["ortie dioïque"],
       "it": ["Ortica dioica"],
       "en": [null],
-      "lt": ["Urtica dioica"]
+      "la": ["Urtica dioica"]
     },
     "wikidata": ["Q155909"],
     "polyphyletic": false,
@@ -2568,7 +2568,7 @@
       "fr": ["helminthosporiose de l'orge"],
       "it": ["Macchie reticolate dell'orzo"],
       "en": ["Net blotch of barley"],
-      "lt": ["Drechslera teres", "Pyrenophora teres"]
+      "la": ["Drechslera teres", "Pyrenophora teres"]
     },
     "wikidata": ["Q15633687", "Q7263460"],
     "polyphyletic": true,
@@ -2582,7 +2582,7 @@
       "fr": ["anthracnose de la fève"],
       "it": ["Antracnosi della fava"],
       "en": [null],
-      "lt": ["Ascochyta fabae"]
+      "la": ["Ascochyta fabae"]
     },
     "wikidata": ["Q15633887"],
     "polyphyletic": false,
@@ -2596,7 +2596,7 @@
       "fr": ["méligèthe des crucifères"],
       "it": ["Meligete della colza"],
       "en": [null],
-      "lt": ["Brassicogethes aeneus"]
+      "la": ["Brassicogethes aeneus"]
     },
     "wikidata": ["Q1564671"],
     "polyphyletic": false,
@@ -2610,7 +2610,7 @@
       "fr": ["doryphore"],
       "it": ["Dorifora della patata"],
       "en": [null],
-      "lt": ["Leptinotarsa decemlineata"]
+      "la": ["Leptinotarsa decemlineata"]
     },
     "wikidata": ["Q156954"],
     "polyphyletic": false,
@@ -2624,7 +2624,7 @@
       "fr": ["bugle rampante"],
       "it": ["Bugola"],
       "en": [null],
-      "lt": ["Ajuga reptans"]
+      "la": ["Ajuga reptans"]
     },
     "wikidata": ["Q157249"],
     "polyphyletic": false,
@@ -2638,7 +2638,7 @@
       "fr": ["rumex"],
       "it": ["Specie di romice"],
       "en": [null],
-      "lt": ["Rumex"]
+      "la": ["Rumex"]
     },
     "wikidata": ["Q157264"],
     "polyphyletic": true,
@@ -2652,7 +2652,7 @@
       "fr": ["véronique petit-chêne, fausse germandrée"],
       "it": ["Veronica comune"],
       "en": [null],
-      "lt": ["Veronica chamaedrys"]
+      "la": ["Veronica chamaedrys"]
     },
     "wikidata": ["Q157343"],
     "polyphyletic": false,
@@ -2666,7 +2666,7 @@
       "fr": ["plantain lancéolé"],
       "it": ["Piantaggine lanciuola"],
       "en": [null],
-      "lt": ["Plantago lanceolata"]
+      "la": ["Plantago lanceolata"]
     },
     "wikidata": ["Q157408"],
     "polyphyletic": false,
@@ -2680,7 +2680,7 @@
       "fr": ["vératre blanc"],
       "it": ["Veratro comune"],
       "en": [null],
-      "lt": ["Veratrum album"]
+      "la": ["Veratrum album"]
     },
     "wikidata": ["Q157547"],
     "polyphyletic": false,
@@ -2694,7 +2694,7 @@
       "fr": ["pâturin annuel"],
       "it": ["Poa annua"],
       "en": [null],
-      "lt": ["Poa annua"]
+      "la": ["Poa annua"]
     },
     "wikidata": ["Q157571"],
     "polyphyletic": false,
@@ -2708,7 +2708,7 @@
       "fr": ["sphingidés"],
       "it": ["Sfingi"],
       "en": [null],
-      "lt": ["Sphingidae"]
+      "la": ["Sphingidae"]
     },
     "wikidata": ["Q157683"],
     "polyphyletic": false,
@@ -2722,7 +2722,7 @@
       "fr": ["véronique filiforme"],
       "it": ["Veronica filiforme"],
       "en": [null],
-      "lt": ["Veronica filiformis"]
+      "la": ["Veronica filiformis"]
     },
     "wikidata": ["Q158321"],
     "polyphyletic": false,
@@ -2736,7 +2736,7 @@
       "fr": ["oxalis raide"],
       "it": ["Acetosella dei boschi"],
       "en": [null],
-      "lt": ["Oxalis stricta"]
+      "la": ["Oxalis stricta"]
     },
     "wikidata": ["Q158332"],
     "polyphyletic": false,
@@ -2750,7 +2750,7 @@
       "fr": ["vanesse de l'artichaut"],
       "it": ["Vanessa del cardo"],
       "en": [null],
-      "lt": ["Vanessa cardui"]
+      "la": ["Vanessa cardui"]
     },
     "wikidata": ["Q158603"],
     "polyphyletic": false,
@@ -2764,7 +2764,7 @@
       "fr": ["rumex des Alpes, rhubarbe des moines"],
       "it": ["Romice alpino"],
       "en": [null],
-      "lt": ["Rumex alpinus"]
+      "la": ["Rumex alpinus"]
     },
     "wikidata": ["Q159084"],
     "polyphyletic": false,
@@ -2778,7 +2778,7 @@
       "fr": ["mineuses"],
       "it": ["Minatrici"],
       "en": [null],
-      "lt": ["Lyonetiidae", "Gracillariidae"]
+      "la": ["Lyonetiidae", "Gracillariidae"]
     },
     "wikidata": ["Q1596502", "Q721100"],
     "polyphyletic": true,
@@ -2792,7 +2792,7 @@
       "fr": ["véronique à feuilles de serpolet"],
       "it": ["Veronica a foglie di serpillo"],
       "en": [null],
-      "lt": ["Veronica serpyllifolia"]
+      "la": ["Veronica serpyllifolia"]
     },
     "wikidata": ["Q159724"],
     "polyphyletic": false,
@@ -2806,7 +2806,7 @@
       "fr": ["maladie des taches noires du rosier"],
       "it": ["Ticchiolatura della rosa"],
       "en": ["black spot of roses / leaf blotch of roses"],
-      "lt": ["Diplocarpon rosae"]
+      "la": ["Diplocarpon rosae"]
     },
     "wikidata": ["Q1608118"],
     "polyphyletic": false,
@@ -2820,7 +2820,7 @@
       "fr": ["gaillet gratteron"],
       "it": ["Caglio asprello"],
       "en": [null],
-      "lt": ["Galium aparine"]
+      "la": ["Galium aparine"]
     },
     "wikidata": ["Q161581"],
     "polyphyletic": false,
@@ -2834,7 +2834,7 @@
       "fr": ["liseron des haies"],
       "it": ["Vilucchio bianco"],
       "en": [null],
-      "lt": ["Calystegia sepium"]
+      "la": ["Calystegia sepium"]
     },
     "wikidata": ["Q161704"],
     "polyphyletic": false,
@@ -2848,7 +2848,7 @@
       "fr": ["maladie des pochettes du prunier"],
       "it": ["Bozzacchioni del susino"],
       "en": ["pocket plums"],
-      "lt": ["Taphrina pruni"]
+      "la": ["Taphrina pruni"]
     },
     "wikidata": ["Q1621708"],
     "polyphyletic": false,
@@ -2862,7 +2862,7 @@
       "fr": ["lierre terrestre"],
       "it": ["Ellera terrestre comune"],
       "en": [null],
-      "lt": ["Glechoma hederacea"]
+      "la": ["Glechoma hederacea"]
     },
     "wikidata": ["Q162544"],
     "polyphyletic": false,
@@ -2876,7 +2876,7 @@
       "fr": ["lymantridés"],
       "it": ["Limantridi"],
       "en": [null],
-      "lt": ["Lymantriidae"]
+      "la": ["Lymantriidae"]
     },
     "wikidata": ["Q162734"],
     "polyphyletic": true,
@@ -2890,7 +2890,7 @@
       "fr": ["rumex à feuilles obtuses"],
       "it": ["Romice comune"],
       "en": [null],
-      "lt": ["Rumex obtusifolius"]
+      "la": ["Rumex obtusifolius"]
     },
     "wikidata": ["Q162800"],
     "polyphyletic": false,
@@ -2904,7 +2904,7 @@
       "fr": ["cochenilles lécanines"],
       "it": ["Cocciniglie del genere lecanio"],
       "en": [null],
-      "lt": ["Coccidae"]
+      "la": ["Coccidae"]
     },
     "wikidata": ["Q1632202"],
     "polyphyletic": true,
@@ -2918,7 +2918,7 @@
       "fr": ["altises de la betterave"],
       "it": ["Altiche della barbabietola"],
       "en": [null],
-      "lt": ["Chaetocnema concinna", "Chaetocnema tibialis"]
+      "la": ["Chaetocnema concinna", "Chaetocnema tibialis"]
     },
     "wikidata": ["Q1634711", "Q2222304"],
     "polyphyletic": true,
@@ -2932,7 +2932,7 @@
       "fr": ["carie ordinaire"],
       "it": ["Carie"],
       "en": [null],
-      "lt": ["Tilletia caries", "Tilletia laevis"]
+      "la": ["Tilletia caries", "Tilletia laevis"]
     },
     "wikidata": ["Q1634854", "Q7802813"],
     "polyphyletic": true,
@@ -2946,7 +2946,7 @@
       "fr": ["panic pied-de-coq"],
       "it": ["panico selvatico"],
       "en": ["cock's-foot"],
-      "lt": ["Echinochloa crus-galli"]
+      "la": ["Echinochloa crus-galli"]
     },
     "wikidata": ["Q163527"],
     "polyphyletic": false,
@@ -2960,7 +2960,7 @@
       "fr": ["chardons"],
       "it": ["Specie di cardi"],
       "en": [null],
-      "lt": ["Cirsium"]
+      "la": ["Cirsium"]
     },
     "wikidata": ["Q1638558"],
     "polyphyletic": true,
@@ -2974,7 +2974,7 @@
       "fr": ["cheimatobies"],
       "it": ["Falene"],
       "en": [null],
-      "lt": ["Operophtera brumata"]
+      "la": ["Operophtera brumata"]
     },
     "wikidata": ["Q164002"],
     "polyphyletic": false,
@@ -2988,7 +2988,7 @@
       "fr": ["agrostis jouet du vent"],
       "it": ["agrostide annuale (spica venti)"],
       "en": ["loose silky bent (windgrass)"],
-      "lt": ["Apera spica-venti"]
+      "la": ["Apera spica-venti"]
     },
     "wikidata": ["Q164230"],
     "polyphyletic": false,
@@ -3002,7 +3002,7 @@
       "fr": ["charançon de la tige du chou"],
       "it": ["Punteruolo degli steli di cavoli"],
       "en": [null],
-      "lt": ["Ceutorhynchus quadridens"]
+      "la": ["Ceutorhynchus quadridens"]
     },
     "wikidata": ["Q16536334"],
     "polyphyletic": false,
@@ -3016,7 +3016,7 @@
       "fr": ["charançon gallicole du chou"],
       "it": ["Punteruolo delle galle dei cavoli"],
       "en": [null],
-      "lt": ["Ceutorhynchus pleurostigma"]
+      "la": ["Ceutorhynchus pleurostigma"]
     },
     "wikidata": ["Q16537267"],
     "polyphyletic": false,
@@ -3030,7 +3030,7 @@
       "fr": ["tenthrède de la rave"],
       "it": ["Tentredine delle crocifere"],
       "en": [null],
-      "lt": ["Athalia rosae"]
+      "la": ["Athalia rosae"]
     },
     "wikidata": ["Q1680271"],
     "polyphyletic": false,
@@ -3044,7 +3044,7 @@
       "fr": ["millets"],
       "it": ["Tipi di miglio"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": ["Q16877024"],
     "polyphyletic": false,
@@ -3058,7 +3058,7 @@
       "fr": ["mouche de la cerise"],
       "it": ["Mosca della ciliegia"],
       "en": [null],
-      "lt": ["Rhagoletis cerasi"]
+      "la": ["Rhagoletis cerasi"]
     },
     "wikidata": ["Q1743610"],
     "polyphyletic": false,
@@ -3072,7 +3072,7 @@
       "fr": ["oïdiums des plantes ornementales"],
       "it": ["Oidio (diverse specie) su piante ornamentali"],
       "en": [null],
-      "lt": ["Erysiphaceae"]
+      "la": ["Erysiphaceae"]
     },
     "wikidata": ["Q1755354"],
     "polyphyletic": false,
@@ -3086,7 +3086,7 @@
       "fr": ["oïdiums des fines herbes"],
       "it": ["Oidio (diverse specie) su erbette da cucina"],
       "en": [null],
-      "lt": ["Erysiphaceae"]
+      "la": ["Erysiphaceae"]
     },
     "wikidata": ["Q1755354"],
     "polyphyletic": false,
@@ -3100,7 +3100,7 @@
       "fr": ["oïdiums des arbres feuillus"],
       "it": ["Oidio (diverse specie) su piante latifoglie"],
       "en": [null],
-      "lt": ["Erysiphaceae"]
+      "la": ["Erysiphaceae"]
     },
     "wikidata": ["Q1755354"],
     "polyphyletic": true,
@@ -3113,8 +3113,8 @@
       "de": ["Echter Mehltau der gemeinen Felsenbirne"],
       "fr": ["oïdium de l'amélavier commun"],
       "it": ["Oidio del pero corvino"],
-      "en": [null],
-      "lt": ["Erysiphaceae"]
+      "en": ["Powdery mildew of common serviceberry"],
+      "la": ["Erysiphaceae"]
     },
     "wikidata": ["Q1755354"],
     "polyphyletic": true,
@@ -3127,8 +3127,8 @@
       "de": ["Echter Mehltau des Sanddorns"],
       "fr": ["oïdium de l'argousier"],
       "it": ["Oidio del'olivello spinoso"],
-      "en": [null],
-      "lt": ["Erysiphaceae"]
+      "en": ["Powdery mildew of sea buckthorn"],
+      "la": ["Erysiphaceae"]
     },
     "wikidata": ["Q1755354"],
     "polyphyletic": true,
@@ -3141,8 +3141,8 @@
       "de": ["Echter Mehltau der Eberesche"],
       "fr": ["oïdium du sorbier des oiseleurs"],
       "it": ["Oidio del sorbo degli ucellatori"],
-      "en": [null],
-      "lt": ["Erysiphaceae"]
+      "en": ["Powdery mildew of rowan"],
+      "la": ["Erysiphaceae"]
     },
     "wikidata": ["Q1755354"],
     "polyphyletic": true,
@@ -3155,8 +3155,8 @@
       "de": ["Echter Mehltau der Schwarzen Apfelbeere"],
       "fr": ["oïdium de l'aronie noire"],
       "it": ["Oidio del aronia nera"],
-      "en": [null],
-      "lt": ["Erysiphaceae"]
+      "en": ["Powdery mildew of black chokeberry"],
+      "la": ["Erysiphaceae"]
     },
     "wikidata": ["Q1755354"],
     "polyphyletic": true,
@@ -3170,7 +3170,7 @@
       "fr": ["coître de la vigne"],
       "it": ["Marciume bianco dell'uva"],
       "en": ["white rot"],
-      "lt": ["Coniella diplodiella"]
+      "la": ["Coniella diplodiella"]
     },
     "wikidata": ["Q1765768"],
     "polyphyletic": false,
@@ -3184,7 +3184,7 @@
       "fr": ["Grand charançon du pin"],
       "it": ["Ilobio dell'abete"],
       "en": ["Large brown pine weevil"],
-      "lt": ["Hylobius abietis"]
+      "la": ["Hylobius abietis"]
     },
     "wikidata": ["Q176864"],
     "polyphyletic": false,
@@ -3197,13 +3197,13 @@
       "de": ["Kohldrehherzgallmücke"],
       "fr": ["cécidomyie du chou"],
       "it": ["Cecidomia del cavolo"],
-      "en": [null],
-      "lt": ["Contarinia nasturtii"]
+      "en": ["Cabbage gall midge"],
+      "la": ["Contarinia nasturtii"]
     },
     "wikidata": ["Q1778497"],
     "polyphyletic": false,
     "biotic": true,
-    "nonStressor": null
+    "nonStressor": false
   },
   {
     "id": 10579,
@@ -3211,44 +3211,41 @@
       "de": ["Kohlschotenrüssler"],
       "fr": ["charançon des siliques"],
       "it": ["Punteruolo delle silique delle crocifere"],
-      "en": [null],
-      "lt": ["Ceutorhynchus assimilis"]
+      "en": ["Cabbage seedpod weevil"],
+      "la": ["Ceutorhynchus assimilis"]
     },
     "wikidata": ["Q1778703"],
     "polyphyletic": false,
     "biotic": true,
-    "nonStressor": null
+    "nonStressor": false
   },
   {
     "id": 10570,
     "labels": {
       "de": ["Prozessionsspinner"],
-      "fr": ["chenilles processionnaires"],
+      "fr": ["Chenilles processionnaires"],
       "it": ["Taumatopea"],
-      "en": [null],
-      "lt": [
-        ["Thaumetopoeinae"],
-        ["Thaumetopoeidae"]
-      ]
+      "en": ["Processionary caterpillars"],
+      "la": ["Thaumetopoeidae"]
     },
     "wikidata": ["Q1892046"],
-    "polyphyletic": false,
+    "polyphyletic": true,
     "biotic": true,
-    "nonStressor": null
+    "nonStressor": false
   },
   {
     "id": 10388,
     "labels": {
       "de": ["Blattkäfer"],
-      "fr": ["chrysomélidés"],
+      "fr": ["Chrysomélidés"],
       "it": ["Crisomelidi"],
-      "en": [null],
-      "lt": ["Chrysomelidae"]
+      "en": ["Leaf beetles"],
+      "la": ["Chrysomelidae"]
     },
     "wikidata": ["Q193407"],
-    "polyphyletic": false,
+    "polyphyletic": true,
     "biotic": true,
-    "nonStressor": null
+    "nonStressor": false
   },
   {
     "id": 10701,
@@ -3257,7 +3254,7 @@
       "fr": ["sclérotiniose"],
       "it": ["Mal dello sclerozio"],
       "en": [null],
-      "lt": ["Sclerotinia"]
+      "la": ["Sclerotinia"]
     },
     "wikidata": ["Q1969330"],
     "polyphyletic": true,
@@ -3271,7 +3268,7 @@
       "fr": ["cochenille virgule"],
       "it": ["Cocciniglia virgola"],
       "en": [null],
-      "lt": ["Lepidosaphes ulmi"]
+      "la": ["Lepidosaphes ulmi"]
     },
     "wikidata": ["Q1972523"],
     "polyphyletic": false,
@@ -3285,7 +3282,7 @@
       "fr": ["thrips"],
       "it": ["Tripidi"],
       "en": [null],
-      "lt": ["Thripidae"]
+      "la": ["Thripidae"]
     },
     "wikidata": ["Q1977089"],
     "polyphyletic": true,
@@ -3299,7 +3296,7 @@
       "fr": ["cloque du pêcher"],
       "it": ["Bolla del pesco"],
       "en": [null],
-      "lt": ["Taphrina deformans"]
+      "la": ["Taphrina deformans"]
     },
     "wikidata": ["Q2022500"],
     "polyphyletic": false,
@@ -3313,7 +3310,7 @@
       "fr": ["cochenille farineuse du citronnier"],
       "it": ["Cocciniglia cotonosa"],
       "en": [null],
-      "lt": ["Planococcus citri"]
+      "la": ["Planococcus citri"]
     },
     "wikidata": ["Q206556"],
     "polyphyletic": false,
@@ -3327,7 +3324,7 @@
       "fr": ["cercosporiose et ramulariose"],
       "it": ["Cercosporiosi e ramulariosi"],
       "en": [null],
-      "lt": ["Cercospora", "Ramularia"]
+      "la": ["Cercospora", "Ramularia"]
     },
     "wikidata": ["Q2066868", "Q7290354"],
     "polyphyletic": true,
@@ -3341,7 +3338,7 @@
       "fr": ["Phoma"],
       "it": ["Phoma"],
       "en": ["Phoma"],
-      "lt": ["Phoma"]
+      "la": ["Phoma"]
     },
     "wikidata": ["Q2066891"],
     "polyphyletic": true,
@@ -3355,7 +3352,7 @@
       "fr": ["maladies liées au sol"],
       "it": ["Malattie legate al suolo"],
       "en": [null],
-      "lt": ["Phoma", "Phytophthora", "Plasmodiophora"]
+      "la": ["Phoma", "Phytophthora", "Plasmodiophora"]
     },
     "wikidata": ["Q2066891", "Q311294", "Q724130"],
     "polyphyletic": true,
@@ -3369,7 +3366,7 @@
       "fr": ["pied noir de la betterave"],
       "it": ["Mal del piede della barbabietola"],
       "en": [null],
-      "lt": ["Phoma", "Pythium", "Rhizoctonia", "Aphanomyces"]
+      "la": ["Phoma", "Pythium", "Rhizoctonia", "Aphanomyces"]
     },
     "wikidata": ["Q2066891", "Q2699011", "Q2716477", "Q2858202"],
     "polyphyletic": true,
@@ -3383,7 +3380,7 @@
       "fr": ["cladosporiose de la tomate"],
       "it": ["Ticchiolatura del pomodoro"],
       "en": ["leaf mould of tomato"],
-      "lt": ["Passalora fulva"]
+      "la": ["Passalora fulva"]
     },
     "wikidata": ["Q2084190"],
     "polyphyletic": false,
@@ -3397,7 +3394,7 @@
       "fr": ["septoriose de la tomate/aubergine"],
       "it": ["Septoriosi del pomodoro/della melanzana"],
       "en": [null],
-      "lt": ["Septoria lycopersici"]
+      "la": ["Septoria lycopersici"]
     },
     "wikidata": ["Q2084213"],
     "polyphyletic": false,
@@ -3411,7 +3408,7 @@
       "fr": ["séneçons toxiques (Senecio spp.)"],
       "it": ["Senecioni tossici (Senecio spp.) "],
       "en": [null],
-      "lt": ["Senecio"]
+      "la": ["Senecio"]
     },
     "wikidata": ["Q209596"],
     "polyphyletic": true,
@@ -3425,7 +3422,7 @@
       "fr": ["cochenilles"],
       "it": ["Cocciniglie"],
       "en": [null],
-      "lt": ["Coccoidea"]
+      "la": ["Coccoidea"]
     },
     "wikidata": ["Q209602"],
     "polyphyletic": true,
@@ -3439,7 +3436,7 @@
       "fr": ["tipule des prairies"],
       "it": ["zanzarone degli orti"],
       "en": ["common crane fly"],
-      "lt": ["Tipula paludosa"]
+      "la": ["Tipula paludosa"]
     },
     "wikidata": ["Q20976"],
     "polyphyletic": false,
@@ -3453,7 +3450,7 @@
       "fr": ["campagnol terrestre"],
       "it": ["Arvicola terrestre"],
       "en": [null],
-      "lt": ["Arvicola terrestris"]
+      "la": ["Arvicola terrestris"]
     },
     "wikidata": ["Q20980531"],
     "polyphyletic": false,
@@ -3467,7 +3464,7 @@
       "fr": ["rouille des Allium"],
       "it": ["Ruggine delle Agliacee (Puccinia allii)"],
       "en": [null],
-      "lt": ["Puccinia allii"]
+      "la": ["Puccinia allii"]
     },
     "wikidata": ["Q2116610"],
     "polyphyletic": false,
@@ -3481,7 +3478,7 @@
       "fr": ["tarsonème du fraisier"],
       "it": ["Tarsonemide della fragola"],
       "en": [null],
-      "lt": ["Phytonemus"]
+      "la": ["Phytonemus"]
     },
     "wikidata": ["Q21224679"],
     "polyphyletic": false,
@@ -3495,7 +3492,7 @@
       "fr": ["cochenilles diaspines"],
       "it": ["Cocciniglie ostreiformi"],
       "en": [null],
-      "lt": ["Quadraspidiotus"]
+      "la": ["Quadraspidiotus"]
     },
     "wikidata": ["Q21231860"],
     "polyphyletic": true,
@@ -3509,7 +3506,7 @@
       "fr": ["pyrale du buis"],
       "it": ["Piralide del bosso"],
       "en": ["Box-tree pyralid"],
-      "lt": ["Glyphodes perspectalis"]
+      "la": ["Glyphodes perspectalis"]
     },
     "wikidata": ["Q21267394"],
     "polyphyletic": false,
@@ -3523,7 +3520,7 @@
       "fr": ["rouille du persil"],
       "it": ["Ruggine del prezzemolo"],
       "en": [null],
-      "lt": ["Puccinia petroselini"]
+      "la": ["Puccinia petroselini"]
     },
     "wikidata": ["Q21315856"],
     "polyphyletic": false,
@@ -3537,7 +3534,7 @@
       "fr": ["fougère impériale"],
       "it": ["Felce maggiore"],
       "en": [null],
-      "lt": ["Pteridium aquilinum"]
+      "la": ["Pteridium aquilinum"]
     },
     "wikidata": ["Q213548"],
     "polyphyletic": false,
@@ -3551,7 +3548,7 @@
       "fr": ["chancre bactérien de la tomate"],
       "it": ["Avvizzimento batterico del pomodoro"],
       "en": [null],
-      "lt": ["Clavibacter michiganensis subsp. michiganensis"]
+      "la": ["Clavibacter michiganensis subsp. michiganensis"]
     },
     "wikidata": ["Q21383092"],
     "polyphyletic": false,
@@ -3565,7 +3562,7 @@
       "fr": ["Fonte des semis des crucifères"],
       "it": ["Phoma lingam"],
       "en": [null],
-      "lt": ["Plenodomus lingam"]
+      "la": ["Plenodomus lingam"]
     },
     "wikidata": ["Q21398152"],
     "polyphyletic": false,
@@ -3579,7 +3576,7 @@
       "fr": ["graisse du haricot"],
       "it": ["Grassume del fagiolo"],
       "en": [null],
-      "lt": ["Pseudomonas syringae pv. phaseolicola"]
+      "la": ["Pseudomonas syringae pv. phaseolicola"]
     },
     "wikidata": ["Q21399451"],
     "polyphyletic": false,
@@ -3593,7 +3590,7 @@
       "fr": ["flétrissement bactérien du poirier"],
       "it": ["Batteriosi del pero"],
       "en": [null],
-      "lt": ["Pseudomonas syringae pv. syringae"]
+      "la": ["Pseudomonas syringae pv. syringae"]
     },
     "wikidata": ["Q21399457"],
     "polyphyletic": false,
@@ -3607,7 +3604,7 @@
       "fr": ["moucheture bactérienne"],
       "it": ["Batteriosi "],
       "en": ["bacterial speck of tomato"],
-      "lt": ["Pseudomonas syringae pv. tomato"]
+      "la": ["Pseudomonas syringae pv. tomato"]
     },
     "wikidata": ["Q21399463"],
     "polyphyletic": false,
@@ -3621,7 +3618,7 @@
       "fr": ["charançon du blé"],
       "it": ["Punteruolo del grano"],
       "en": [null],
-      "lt": ["Sitophilus granarius"]
+      "la": ["Sitophilus granarius"]
     },
     "wikidata": ["Q217350"],
     "polyphyletic": false,
@@ -3635,7 +3632,7 @@
       "fr": ["vergerette du Canada"],
       "it": ["Saeppola canadese"],
       "en": [null],
-      "lt": ["Erigeron canadensis"]
+      "la": ["Erigeron canadensis"]
     },
     "wikidata": ["Q21874197"],
     "polyphyletic": false,
@@ -3649,7 +3646,7 @@
       "fr": ["charançon du riz"],
       "it": ["Punteruolo del riso"],
       "en": [null],
-      "lt": ["Sitophilus oryzae"]
+      "la": ["Sitophilus oryzae"]
     },
     "wikidata": ["Q219224"],
     "polyphyletic": false,
@@ -3663,7 +3660,7 @@
       "fr": ["Mouche de l'olive"],
       "it": ["Mosca dell'olivo"],
       "en": ["Olive fruit fly"],
-      "lt": ["Bactrocera oleae"]
+      "la": ["Bactrocera oleae"]
     },
     "wikidata": ["Q2207329"],
     "polyphyletic": false,
@@ -3677,7 +3674,7 @@
       "fr": ["nématodes cécidogènes des racines"],
       "it": ["Anguillula radicicola"],
       "en": [null],
-      "lt": ["Meloidogyne"]
+      "la": ["Meloidogyne"]
     },
     "wikidata": ["Q2215256"],
     "polyphyletic": true,
@@ -3691,7 +3688,7 @@
       "fr": ["mildiou du fraisier"],
       "it": ["Marciume delle fragole"],
       "en": ["fruit rot"],
-      "lt": ["Phytophthora cactorum"]
+      "la": ["Phytophthora cactorum"]
     },
     "wikidata": ["Q2230727"],
     "polyphyletic": false,
@@ -3705,7 +3702,7 @@
       "fr": ["coeur brun du fraisier"],
       "it": ["Fitoftora della fragola"],
       "en": ["rhizom rot"],
-      "lt": ["Phytophthora cactorum"]
+      "la": ["Phytophthora cactorum"]
     },
     "wikidata": ["Q2230727"],
     "polyphyletic": false,
@@ -3719,7 +3716,7 @@
       "fr": ["oïdium de la vigne"],
       "it": ["Oidio della vite"],
       "en": ["powedery mildew"],
-      "lt": ["Erysiphe necator"]
+      "la": ["Erysiphe necator"]
     },
     "wikidata": ["Q2267811"],
     "polyphyletic": false,
@@ -3733,7 +3730,7 @@
       "fr": ["oïdium du pommier/du poirier"],
       "it": ["Oidio della mela/pera"],
       "en": ["powdery mildew"],
-      "lt": ["Podosphaera leucotricha"]
+      "la": ["Podosphaera leucotricha"]
     },
     "wikidata": ["Q2315947"],
     "polyphyletic": false,
@@ -3747,7 +3744,7 @@
       "fr": ["atomaire de la betterave"],
       "it": ["Atomaria della barbabietola"],
       "en": [null],
-      "lt": ["Atomaria linearis"]
+      "la": ["Atomaria linearis"]
     },
     "wikidata": ["Q2332344"],
     "polyphyletic": false,
@@ -3761,7 +3758,7 @@
       "fr": ["abroutissement par le gibier"],
       "it": ["Brucatura da selvaggina"],
       "en": [null],
-      "lt": ["Cervidae"]
+      "la": ["Cervidae"]
     },
     "wikidata": ["Q23390"],
     "polyphyletic": true,
@@ -3775,7 +3772,7 @@
       "fr": ["contre la germination des oignons (bulbes)"],
       "it": ["Contro la germinazione delle cipolle"],
       "en": [null],
-      "lt": ["Allium cepa"]
+      "la": ["Allium cepa"]
     },
     "wikidata": ["Q23485"],
     "polyphyletic": false,
@@ -3789,7 +3786,7 @@
       "fr": ["rouille du haricot"],
       "it": ["Ruggine del fagiolo"],
       "en": [null],
-      "lt": ["Uromyces appendiculatus"]
+      "la": ["Uromyces appendiculatus"]
     },
     "wikidata": ["Q2377614"],
     "polyphyletic": false,
@@ -3803,7 +3800,7 @@
       "fr": ["Puceron vert du pommier"],
       "it": ["Afide verde del melo"],
       "en": ["Green apple aphid"],
-      "lt": ["Aphis pomi"]
+      "la": ["Aphis pomi"]
     },
     "wikidata": ["Q2382963"],
     "polyphyletic": false,
@@ -3817,7 +3814,7 @@
       "fr": ["thrips de l'oignon"],
       "it": ["Tripide della cipolla"],
       "en": ["Onion thrips"],
-      "lt": ["Thrips tabaci"]
+      "la": ["Thrips tabaci"]
     },
     "wikidata": ["Q2386245"],
     "polyphyletic": false,
@@ -3831,7 +3828,7 @@
       "fr": ["anthonome du pommier"],
       "it": ["Antonomo del melo"],
       "en": [null],
-      "lt": ["Anthonomus pomorum"]
+      "la": ["Anthonomus pomorum"]
     },
     "wikidata": ["Q240929"],
     "polyphyletic": false,
@@ -3845,7 +3842,7 @@
       "fr": ["cucujide des grains oléagineux"],
       "it": ["silvano dei mercati "],
       "en": ["merchant grain beetle"],
-      "lt": ["Oryzaephilus mercator"]
+      "la": ["Oryzaephilus mercator"]
     },
     "wikidata": ["Q2410490"],
     "polyphyletic": false,
@@ -3859,7 +3856,7 @@
       "fr": ["renouée des oiseaux"],
       "it": ["Poligono centinodia"],
       "en": [null],
-      "lt": ["Polygonum aviculare"]
+      "la": ["Polygonum aviculare"]
     },
     "wikidata": ["Q242573"],
     "polyphyletic": false,
@@ -3873,7 +3870,7 @@
       "fr": ["rouille brune"],
       "it": ["Ruggine bruna"],
       "en": ["Brown rust of wheat"],
-      "lt": ["Puccinia recondita"]
+      "la": ["Puccinia recondita"]
     },
     "wikidata": ["Q24268"],
     "polyphyletic": false,
@@ -3887,7 +3884,7 @@
       "fr": ["cicadelles"],
       "it": ["Cicaline nane"],
       "en": [null],
-      "lt": ["Cicadellidae"]
+      "la": ["Cicadellidae"]
     },
     "wikidata": ["Q244452"],
     "polyphyletic": false,
@@ -3901,7 +3898,7 @@
       "fr": ["criocère à douze points de l'asperge"],
       "it": ["Criocera a dodici punti"],
       "en": [null],
-      "lt": ["Crioceris duodecimpunctata"]
+      "la": ["Crioceris duodecimpunctata"]
     },
     "wikidata": ["Q245242"],
     "polyphyletic": false,
@@ -3915,7 +3912,7 @@
       "fr": ["pyrales"],
       "it": ["Piralidi"],
       "en": [null],
-      "lt": ["Pyralidae"]
+      "la": ["Pyralidae"]
     },
     "wikidata": ["Q248425"],
     "polyphyletic": true,
@@ -3929,7 +3926,7 @@
       "fr": ["mousses (bryophytes)"],
       "it": ["Muschi (Briofite)"],
       "en": [null],
-      "lt": ["Bryophyta"]
+      "la": ["Bryophyta"]
     },
     "wikidata": ["Q25347"],
     "polyphyletic": true,
@@ -3943,7 +3940,7 @@
       "fr": ["chardons annuels"],
       "it": ["Cardi annuali"],
       "en": [null],
-      "lt": ["Asteraceae"]
+      "la": ["Asteraceae"]
     },
     "wikidata": ["Q25400"],
     "polyphyletic": true,
@@ -3957,7 +3954,7 @@
       "fr": ["chardons vivaces"],
       "it": ["Cardi perenni"],
       "en": [null],
-      "lt": ["Asteraceae"]
+      "la": ["Asteraceae"]
     },
     "wikidata": ["Q25400"],
     "polyphyletic": true,
@@ -3971,7 +3968,7 @@
       "fr": ["chardons bisannuels"],
       "it": ["Cardi biennali"],
       "en": [null],
-      "lt": ["Asteraceae"]
+      "la": ["Asteraceae"]
     },
     "wikidata": ["Q25400"],
     "polyphyletic": true,
@@ -3985,7 +3982,7 @@
       "fr": ["puceron du melon et du cotonnier"],
       "it": ["Afide delle Malvacee e del cotone"],
       "en": [null],
-      "lt": ["Aphis gossypii"]
+      "la": ["Aphis gossypii"]
     },
     "wikidata": ["Q2557995"],
     "polyphyletic": false,
@@ -3999,7 +3996,7 @@
       "fr": ["Myriapode (Mille-pattes)"],
       "it": ["Miriapodi (Millepiedi)"],
       "en": ["millipede"],
-      "lt": ["Myriapoda"]
+      "la": ["Myriapoda"]
     },
     "wikidata": ["Q25823"],
     "polyphyletic": false,
@@ -4013,7 +4010,7 @@
       "fr": ["puceron des racines de la laitue"],
       "it": ["Afide radicicolo della lattuga"],
       "en": [null],
-      "lt": ["Pemphigus bursarius"]
+      "la": ["Pemphigus bursarius"]
     },
     "wikidata": ["Q2589115"],
     "polyphyletic": false,
@@ -4027,7 +4024,7 @@
       "fr": ["pâquerette"],
       "it": ["Pratolina comune"],
       "en": [null],
-      "lt": ["Bellis perennis"]
+      "la": ["Bellis perennis"]
     },
     "wikidata": ["Q26158"],
     "polyphyletic": false,
@@ -4041,7 +4038,7 @@
       "fr": ["gale commune "],
       "it": ["Scabbia comune"],
       "en": ["Common scab of potato"],
-      "lt": ["Streptomyces scabiei"]
+      "la": ["Streptomyces scabiei"]
     },
     "wikidata": ["Q26292479"],
     "polyphyletic": false,
@@ -4055,7 +4052,7 @@
       "fr": ["oseille des prés"],
       "it": ["Romice acetosa"],
       "en": [null],
-      "lt": ["Rumex acetosa"]
+      "la": ["Rumex acetosa"]
     },
     "wikidata": ["Q26297"],
     "polyphyletic": false,
@@ -4069,7 +4066,7 @@
       "fr": ["puceron cendré du chou"],
       "it": ["Afide ceroso del cavolo"],
       "en": [null],
-      "lt": ["Brevicoryne brassicae"]
+      "la": ["Brevicoryne brassicae"]
     },
     "wikidata": ["Q2634837"],
     "polyphyletic": false,
@@ -4083,7 +4080,7 @@
       "fr": ["pyriculariose du riz"],
       "it": ["Brusone del riso"],
       "en": [null],
-      "lt": ["Magnaporthe grisea", "Pyricularia oryzae"]
+      "la": ["Magnaporthe grisea", "Pyricularia oryzae"]
     },
     "wikidata": ["Q2697099", "Q80973031"],
     "polyphyletic": true,
@@ -4097,7 +4094,7 @@
       "fr": ["Pythium spp."],
       "it": ["Pythium spp."],
       "en": ["Pythium spp."],
-      "lt": ["Pythium"]
+      "la": ["Pythium"]
     },
     "wikidata": ["Q2699011"],
     "polyphyletic": true,
@@ -4111,7 +4108,7 @@
       "fr": ["pourriture des racines"],
       "it": ["Mal del piede"],
       "en": [null],
-      "lt": ["Pythium"]
+      "la": ["Pythium"]
     },
     "wikidata": ["Q2699011"],
     "polyphyletic": true,
@@ -4125,7 +4122,7 @@
       "fr": ["charbon nu du blé"],
       "it": ["Carbone del grano"],
       "en": [null],
-      "lt": ["Ustilago tritici"]
+      "la": ["Ustilago tritici"]
     },
     "wikidata": ["Q2708559"],
     "polyphyletic": false,
@@ -4139,7 +4136,7 @@
       "fr": ["pourriture des racines"],
       "it": ["Mal del piede (Fusarium culmorum)"],
       "en": [null],
-      "lt": ["Fusarium culmorum"]
+      "la": ["Fusarium culmorum"]
     },
     "wikidata": ["Q2712591"],
     "polyphyletic": false,
@@ -4153,7 +4150,7 @@
       "fr": ["buissons"],
       "it": ["Arbusti"],
       "en": [null],
-      "lt": ["Tracheophytes"]
+      "la": ["Tracheophytes"]
     },
     "wikidata": ["Q27133"],
     "polyphyletic": true,
@@ -4167,7 +4164,7 @@
       "fr": ["punaises"],
       "it": ["Cimici"],
       "en": [null],
-      "lt": ["Heteroptera"]
+      "la": ["Heteroptera"]
     },
     "wikidata": ["Q27191"],
     "polyphyletic": true,
@@ -4181,7 +4178,7 @@
       "fr": ["capselle bourse-à-pasteur"],
       "it": ["Borsa di pastore"],
       "en": [null],
-      "lt": ["Capsella bursa-pastoris"]
+      "la": ["Capsella bursa-pastoris"]
     },
     "wikidata": ["Q27264"],
     "polyphyletic": false,
@@ -4195,7 +4192,7 @@
       "fr": ["chiendent rampant"],
       "it": ["Gramigna"],
       "en": [null],
-      "lt": ["Elymus repens"]
+      "la": ["Elymus repens"]
     },
     "wikidata": ["Q276262"],
     "polyphyletic": false,
@@ -4209,7 +4206,7 @@
       "fr": ["hanneton commun"],
       "it": ["Maggiolino"],
       "en": ["May bug"],
-      "lt": ["Melolontha melolontha"]
+      "la": ["Melolontha melolontha"]
     },
     "wikidata": ["Q28175"],
     "polyphyletic": false,
@@ -4223,7 +4220,7 @@
       "fr": ["chenilles défoliatrices"],
       "it": ["Larve defogliatrici"],
       "en": [null],
-      "lt": ["Lepidoptera"]
+      "la": ["Lepidoptera"]
     },
     "wikidata": ["Q28319"],
     "polyphyletic": true,
@@ -4237,7 +4234,7 @@
       "fr": ["vers fil de fer"],
       "it": ["Elateridi"],
       "en": [null],
-      "lt": ["Elateridae"]
+      "la": ["Elateridae"]
     },
     "wikidata": ["Q28457"],
     "polyphyletic": false,
@@ -4251,7 +4248,7 @@
       "fr": ["anthracnose du haricot"],
       "it": ["Antracnosi del fagiolo"],
       "en": [null],
-      "lt": ["Colletotrichum lindemuthianum"]
+      "la": ["Colletotrichum lindemuthianum"]
     },
     "wikidata": ["Q2853020"],
     "polyphyletic": false,
@@ -4265,7 +4262,7 @@
       "fr": ["pourriture lenticellaire (pommier)"],
       "it": ["Marciume lenticellare delle mele"],
       "en": ["fruit rot"],
-      "lt": ["Neofabraea vagabunda", "Neofabraea malicorticis"]
+      "la": ["Neofabraea vagabunda", "Neofabraea malicorticis"]
     },
     "wikidata": ["Q28674074", "Q6992815"],
     "polyphyletic": true,
@@ -4279,7 +4276,7 @@
       "fr": ["puceron à taches vertes"],
       "it": ["Afide a macchie verdi della patata"],
       "en": [null],
-      "lt": ["Aulacorthum solani"]
+      "la": ["Aulacorthum solani"]
     },
     "wikidata": ["Q2871755"],
     "polyphyletic": false,
@@ -4293,7 +4290,7 @@
       "fr": ["helminthosporiose des céréales (DTR)"],
       "it": ["Pyrenophora tritici-repentis (DTR)"],
       "en": ["Tan/Yellow leaf spot of cereals"],
-      "lt": ["Pyrenophora tritici-repentis", "Drechslera tritici-repentis"]
+      "la": ["Pyrenophora tritici-repentis", "Drechslera tritici-repentis"]
     },
     "wikidata": ["Q289074", "Q84857640"],
     "polyphyletic": true,
@@ -4307,7 +4304,7 @@
       "fr": ["tordeuses"],
       "it": ["Tortrici"],
       "en": [null],
-      "lt": ["Tortricidae"]
+      "la": ["Tortricidae"]
     },
     "wikidata": ["Q28953"],
     "polyphyletic": false,
@@ -4321,7 +4318,7 @@
       "fr": ["tavelure des arbres et arbustres ornementaux"],
       "it": ["Ticchiolatura su alberi e arbusti ornamentali"],
       "en": [null],
-      "lt": ["Venturia", "Spilocaea"]
+      "la": ["Venturia", "Spilocaea"]
     },
     "wikidata": ["Q292074", "Q3966739"],
     "polyphyletic": true,
@@ -4335,7 +4332,7 @@
       "fr": ["rouille naine de l'orge"],
       "it": ["Ruggine nana dell'orzo "],
       "en": [null],
-      "lt": ["Puccinia hordei"]
+      "la": ["Puccinia hordei"]
     },
     "wikidata": ["Q292264"],
     "polyphyletic": false,
@@ -4349,7 +4346,7 @@
       "fr": ["limaces du genre Deroceras"],
       "it": ["Limacce del genere Deroceras"],
       "en": [null],
-      "lt": ["Deroceras"]
+      "la": ["Deroceras"]
     },
     "wikidata": ["Q293311"],
     "polyphyletic": true,
@@ -4363,7 +4360,7 @@
       "fr": ["Scaphoideus titanus"],
       "it": ["Scafoideo"],
       "en": ["Scaphoideus titanus"],
-      "lt": ["Scaphoideus titanus"]
+      "la": ["Scaphoideus titanus"]
     },
     "wikidata": ["Q2972256"],
     "polyphyletic": false,
@@ -4377,7 +4374,7 @@
       "fr": ["cicadelle verte de la vigne"],
       "it": ["Cicalina verde della vite"],
       "en": [null],
-      "lt": ["Empoasca vitis"]
+      "la": ["Empoasca vitis"]
     },
     "wikidata": ["Q2972260"],
     "polyphyletic": false,
@@ -4391,7 +4388,7 @@
       "fr": ["cylindrocladium-dépérissement des feuilles et rameaux"],
       "it": ["Cylindrocladium buxicola"],
       "en": [null],
-      "lt": ["Cylindrocladium buxicola"]
+      "la": ["Cylindrocladium buxicola"]
     },
     "wikidata": ["Q3008672"],
     "polyphyletic": false,
@@ -4405,7 +4402,7 @@
       "fr": ["alternariose de la carotte"],
       "it": ["Altenariosi delle carote"],
       "en": [null],
-      "lt": ["Alternaria radicina", "Alternaria dauci"]
+      "la": ["Alternaria radicina", "Alternaria dauci"]
     },
     "wikidata": ["Q3021774", "Q4736354"],
     "polyphyletic": true,
@@ -4419,7 +4416,7 @@
       "fr": ["rouilles des plantes ornementales "],
       "it": ["Ruggini su piante ornamentali"],
       "en": ["Chrysomyxa spp., Cronartium spp., Melampsora spp., Phragmidium spp., Puccinia spp., Uromyces spp."],
-      "lt": ["Puccinia", "Phragmidium", "Chrysomyxa", "Cronartium", "Melampsora", "Uromyces"]
+      "la": ["Puccinia", "Phragmidium", "Chrysomyxa", "Cronartium", "Melampsora", "Uromyces"]
     },
     "wikidata": ["Q305162", "Q369337", "Q5114870", "Q5187693", "Q635471", "Q892455"],
     "polyphyletic": true,
@@ -4433,7 +4430,7 @@
       "fr": ["Puccinia spp."],
       "it": ["Ruggine fogliare (Puccinia spp.)"],
       "en": [null],
-      "lt": ["Puccinia"]
+      "la": ["Puccinia"]
     },
     "wikidata": ["Q305162"],
     "polyphyletic": true,
@@ -4447,7 +4444,7 @@
       "fr": ["rouille des graminées"],
       "it": ["Ruggine delle graminacee"],
       "en": [null],
-      "lt": ["Puccinia", "Uromyces"]
+      "la": ["Puccinia", "Uromyces"]
     },
     "wikidata": ["Q305162", "Q892455"],
     "polyphyletic": true,
@@ -4461,7 +4458,7 @@
       "fr": ["Phytophthora cryptogea"],
       "it": ["Phytophthora cryptogea"],
       "en": ["Phytophthora cryptogea"],
-      "lt": ["Phytophthora cryptogea"]
+      "la": ["Phytophthora cryptogea"]
     },
     "wikidata": ["Q3061909"],
     "polyphyletic": false,
@@ -4475,7 +4472,7 @@
       "fr": ["rhizoctone de la laitue"],
       "it": ["Rizottonia della lattuga"],
       "en": [null],
-      "lt": ["Rhizoctonia solani"]
+      "la": ["Rhizoctonia solani"]
     },
     "wikidata": ["Q30906964"],
     "polyphyletic": false,
@@ -4489,7 +4486,7 @@
       "fr": ["rhizoctone"],
       "it": ["Rizottonia"],
       "en": [null],
-      "lt": ["Rhizoctonia solani"]
+      "la": ["Rhizoctonia solani"]
     },
     "wikidata": ["Q30906964"],
     "polyphyletic": false,
@@ -4503,7 +4500,7 @@
       "fr": ["Phytophthora spp."],
       "it": ["Phytophthora spp."],
       "en": ["Phytophthora spp."],
-      "lt": ["Phytophthora"]
+      "la": ["Phytophthora"]
     },
     "wikidata": ["Q311294"],
     "polyphyletic": true,
@@ -4517,7 +4514,7 @@
       "fr": ["hoplocampes"],
       "it": ["Tentredini"],
       "en": [null],
-      "lt": ["Hoplocampa"]
+      "la": ["Hoplocampa"]
     },
     "wikidata": ["Q3140391"],
     "polyphyletic": true,
@@ -4531,7 +4528,7 @@
       "fr": ["fil rouge du gazon"],
       "it": ["Filo rosso del tappeto erboso"],
       "en": [null],
-      "lt": ["Laetisaria fuciformis"]
+      "la": ["Laetisaria fuciformis"]
     },
     "wikidata": ["Q3216059"],
     "polyphyletic": false,
@@ -4545,7 +4542,7 @@
       "fr": ["dryoptéris"],
       "it": ["Felce maschio"],
       "en": [null],
-      "lt": ["Dryopteris filix-mas"]
+      "la": ["Dryopteris filix-mas"]
     },
     "wikidata": ["Q322994"],
     "polyphyletic": false,
@@ -4559,7 +4556,7 @@
       "fr": ["punaise marbrée"],
       "it": ["cimice marmorata asiatica"],
       "en": [null],
-      "lt": ["Halyomorpha halys"]
+      "la": ["Halyomorpha halys"]
     },
     "wikidata": ["Q3270185"],
     "polyphyletic": false,
@@ -4573,7 +4570,7 @@
       "fr": ["charançon du maïs"],
       "it": ["punteruolo del mais"],
       "en": ["maize weevil"],
-      "lt": ["Sitophilus zeamais"]
+      "la": ["Sitophilus zeamais"]
     },
     "wikidata": ["Q3272137"],
     "polyphyletic": false,
@@ -4587,7 +4584,7 @@
       "fr": ["puceron à strie verte de la pomme de terre (Macrosiphum euphorbiae)"],
       "it": ["Afide della patata"],
       "en": [null],
-      "lt": ["Macrosiphum euphorbiae"]
+      "la": ["Macrosiphum euphorbiae"]
     },
     "wikidata": ["Q3274988"],
     "polyphyletic": false,
@@ -4601,7 +4598,7 @@
       "fr": ["altises"],
       "it": ["Altiche"],
       "en": [null],
-      "lt": ["Halticinae"]
+      "la": ["Halticinae"]
     },
     "wikidata": ["Q33141702"],
     "polyphyletic": true,
@@ -4615,7 +4612,7 @@
       "fr": ["moniliose des fruits"],
       "it": ["Monilia dei frutti"],
       "en": ["brown rot"],
-      "lt": ["Monilia"]
+      "la": ["Monilia"]
     },
     "wikidata": ["Q3320779"],
     "polyphyletic": true,
@@ -4629,7 +4626,7 @@
       "fr": ["mouche de l'asperge"],
       "it": ["Mosca dell'asparago"],
       "en": [null],
-      "lt": ["Plioreocepta poeciloptera"]
+      "la": ["Plioreocepta poeciloptera"]
     },
     "wikidata": ["Q3325393"],
     "polyphyletic": false,
@@ -4643,7 +4640,7 @@
       "fr": ["boarmie des bourgeons sur vigne"],
       "it": ["Boarmia"],
       "en": [null],
-      "lt": ["Peribatodes rhomboidaria"]
+      "la": ["Peribatodes rhomboidaria"]
     },
     "wikidata": ["Q33472"],
     "polyphyletic": false,
@@ -4657,7 +4654,7 @@
       "fr": ["oïdium du pois"],
       "it": ["Oidio del pisello"],
       "en": [null],
-      "lt": ["Erysiphe pisi"]
+      "la": ["Erysiphe pisi"]
     },
     "wikidata": ["Q3359256"],
     "polyphyletic": false,
@@ -4671,7 +4668,7 @@
       "fr": ["oïdium des graminées"],
       "it": ["Oidio delle graminacee"],
       "en": [null],
-      "lt": ["Blumeria graminis"]
+      "la": ["Blumeria graminis"]
     },
     "wikidata": ["Q337796"],
     "polyphyletic": false,
@@ -4685,7 +4682,7 @@
       "fr": ["oïdium des céréales"],
       "it": ["Oidio dei cereali"],
       "en": ["Powdery mildew of cereals"],
-      "lt": ["Blumeria graminis"]
+      "la": ["Blumeria graminis"]
     },
     "wikidata": ["Q337796"],
     "polyphyletic": false,
@@ -4699,7 +4696,7 @@
       "fr": ["puceron cendré du pommier"],
       "it": ["Afide grigio - rosa del melo"],
       "en": [null],
-      "lt": ["Dysaphis plantaginea"]
+      "la": ["Dysaphis plantaginea"]
     },
     "wikidata": ["Q3410512"],
     "polyphyletic": false,
@@ -4713,7 +4710,7 @@
       "fr": ["chardon ou cirse des champs"],
       "it": ["Stoppione"],
       "en": [null],
-      "lt": ["Cirsium arvense"]
+      "la": ["Cirsium arvense"]
     },
     "wikidata": ["Q341600"],
     "polyphyletic": false,
@@ -4727,7 +4724,7 @@
       "fr": ["chlorops"],
       "it": ["Cloropo del grano"],
       "en": [null],
-      "lt": ["Chlorops pumilionis"]
+      "la": ["Chlorops pumilionis"]
     },
     "wikidata": ["Q3647385"],
     "polyphyletic": false,
@@ -4741,7 +4738,7 @@
       "fr": ["chancre du rosier"],
       "it": ["Cancri rameali da septoria"],
       "en": [null],
-      "lt": ["Coniothyrium"]
+      "la": ["Coniothyrium"]
     },
     "wikidata": ["Q3686995"],
     "polyphyletic": true,
@@ -4755,7 +4752,7 @@
       "fr": ["cochenilles diaspines"],
       "it": ["Cocciniglie diaspine"],
       "en": [null],
-      "lt": ["Diaspididae"]
+      "la": ["Diaspididae"]
     },
     "wikidata": ["Q373290"],
     "polyphyletic": true,
@@ -4769,7 +4766,7 @@
       "fr": ["anthracnose"],
       "it": ["Antracnosi "],
       "en": ["anthracnose"],
-      "lt": ["Glomerella cingulata"]
+      "la": ["Glomerella cingulata"]
     },
     "wikidata": ["Q3772404"],
     "polyphyletic": false,
@@ -4783,7 +4780,7 @@
       "fr": ["pourriture amère des cerises"],
       "it": ["Antracnosi del ciliegio"],
       "en": ["bitter rot"],
-      "lt": ["Glomerella cingulata"]
+      "la": ["Glomerella cingulata"]
     },
     "wikidata": ["Q3772404"],
     "polyphyletic": false,
@@ -4797,7 +4794,7 @@
       "fr": ["hanneton horticole"],
       "it": ["Carruga degli orti"],
       "en": [null],
-      "lt": ["Phyllopertha horticola"]
+      "la": ["Phyllopertha horticola"]
     },
     "wikidata": ["Q378023"],
     "polyphyletic": false,
@@ -4811,7 +4808,7 @@
       "fr": ["algues"],
       "it": ["Alghe"],
       "en": [null],
-      "lt": ["Algae"]
+      "la": ["Algae"]
     },
     "wikidata": ["Q37868"],
     "polyphyletic": false,
@@ -4825,7 +4822,7 @@
       "fr": ["mildiou du poivron"],
       "it": ["Peronospora del peperone "],
       "en": [null],
-      "lt": ["Peronospora tabacina"]
+      "la": ["Peronospora tabacina"]
     },
     "wikidata": ["Q3900047"],
     "polyphyletic": false,
@@ -4839,7 +4836,7 @@
       "fr": ["mildiou du tabac"],
       "it": ["Peronospora del tabacco"],
       "en": [null],
-      "lt": ["Peronospora tabacina"]
+      "la": ["Peronospora tabacina"]
     },
     "wikidata": ["Q3900047"],
     "polyphyletic": false,
@@ -4853,7 +4850,7 @@
       "fr": ["mildiou de l'oignon"],
       "it": ["Peronospora della cipolla"],
       "en": [null],
-      "lt": ["Peronospora destructor"]
+      "la": ["Peronospora destructor"]
     },
     "wikidata": ["Q3900048"],
     "polyphyletic": false,
@@ -4867,7 +4864,7 @@
       "fr": ["excoriose de la vigne"],
       "it": ["Escoriosi della vite"],
       "en": ["Phomopsis cane and leaf spot"],
-      "lt": ["Phomopsis viticola"]
+      "la": ["Phomopsis viticola"]
     },
     "wikidata": ["Q3901665"],
     "polyphyletic": false,
@@ -4881,7 +4878,7 @@
       "fr": ["mildiou du tournesol"],
       "it": ["Peronospora del girasole"],
       "en": [null],
-      "lt": ["Plasmopara halstedii"]
+      "la": ["Plasmopara halstedii"]
     },
     "wikidata": ["Q3906344"],
     "polyphyletic": false,
@@ -4895,7 +4892,7 @@
       "fr": ["mildiou des cucurbitacées"],
       "it": ["Peronospora delle Cucurbitacee"],
       "en": [null],
-      "lt": ["Pseudoperonospora cubensis"]
+      "la": ["Pseudoperonospora cubensis"]
     },
     "wikidata": ["Q3924916"],
     "polyphyletic": false,
@@ -4909,7 +4906,7 @@
       "fr": ["Pieridae"],
       "it": ["Cavolaie"],
       "en": [null],
-      "lt": ["Pieridae"]
+      "la": ["Pieridae"]
     },
     "wikidata": ["Q41559"],
     "polyphyletic": false,
@@ -4923,7 +4920,7 @@
       "fr": ["mouche du chou"],
       "it": ["Mosca del cavolo"],
       "en": [null],
-      "lt": ["Delia floralis", "Delia radicum"]
+      "la": ["Delia floralis", "Delia radicum"]
     },
     "wikidata": ["Q4260197", "Q761689"],
     "polyphyletic": true,
@@ -4937,7 +4934,7 @@
       "fr": ["septoriose de l'épi (S. nodorum)"],
       "it": ["Septoriosi della spiga (S. nodorum)"],
       "en": [null],
-      "lt": ["Phaeosphaeria nodorum", "Septoria nodorum"]
+      "la": ["Phaeosphaeria nodorum", "Septoria nodorum"]
     },
     "wikidata": ["Q4314880", "Q84855498"],
     "polyphyletic": true,
@@ -4951,7 +4948,7 @@
       "fr": ["Espèces de pâturin"],
       "it": ["Specie die poa"],
       "en": [null],
-      "lt": ["Poaceae"]
+      "la": ["Poaceae"]
     },
     "wikidata": ["Q43238"],
     "polyphyletic": true,
@@ -4965,7 +4962,7 @@
       "fr": ["répulsifs pour oiseaux (corneilles)"],
       "it": ["Repellente per uccelli (corvi)"],
       "en": [null],
-      "lt": ["Corvus"]
+      "la": ["Corvus"]
     },
     "wikidata": ["Q43365"],
     "polyphyletic": false,
@@ -4979,7 +4976,7 @@
       "fr": ["phytoptes"],
       "it": ["Eriofidi"],
       "en": [null],
-      "lt": ["Phytoptus"]
+      "la": ["Phytoptus"]
     },
     "wikidata": ["Q4356998"],
     "polyphyletic": true,
@@ -4993,7 +4990,7 @@
       "fr": ["phytopte du poirier"],
       "it": ["Eriofide del pero"],
       "en": [null],
-      "lt": ["Phytoptus"]
+      "la": ["Phytoptus"]
     },
     "wikidata": ["Q4356998"],
     "polyphyletic": false,
@@ -5007,7 +5004,7 @@
       "fr": ["tarsonèmes"],
       "it": ["Tarsonemidi"],
       "en": [null],
-      "lt": ["Tarsonemidae"]
+      "la": ["Tarsonemidae"]
     },
     "wikidata": ["Q4357993"],
     "polyphyletic": true,
@@ -5021,7 +5018,7 @@
       "fr": ["ériophyide des ronces"],
       "it": ["Eriofide delle more"],
       "en": [null],
-      "lt": ["Acalitus essigi"]
+      "la": ["Acalitus essigi"]
     },
     "wikidata": ["Q4358160"],
     "polyphyletic": false,
@@ -5035,7 +5032,7 @@
       "fr": ["carpocapse des pommes, poires et abricots"],
       "it": ["Carpocapsa delle mele"],
       "en": [null],
-      "lt": ["Cydia pomonella"]
+      "la": ["Cydia pomonella"]
     },
     "wikidata": ["Q45262"],
     "polyphyletic": false,
@@ -5049,7 +5046,7 @@
       "fr": ["phalènes"],
       "it": ["Falene"],
       "en": [null],
-      "lt": ["Geometridae"]
+      "la": ["Geometridae"]
     },
     "wikidata": ["Q45559"],
     "polyphyletic": true,
@@ -5063,7 +5060,7 @@
       "fr": ["noctuelles"],
       "it": ["Larve di nottue"],
       "en": [null],
-      "lt": ["Noctuidae"]
+      "la": ["Noctuidae"]
     },
     "wikidata": ["Q459180"],
     "polyphyletic": true,
@@ -5077,7 +5074,7 @@
       "fr": ["noctuelles (défoliatrices)"],
       "it": ["Nottue (defogliatrici)"],
       "en": [null],
-      "lt": ["Noctuidae"]
+      "la": ["Noctuidae"]
     },
     "wikidata": ["Q459180"],
     "polyphyletic": true,
@@ -5091,7 +5088,7 @@
       "fr": ["Tigne de la tomate"],
       "it": ["Tuta absoluta"],
       "en": ["Tuta absoluta"],
-      "lt": ["Tuta absoluta"]
+      "la": ["Tuta absoluta"]
     },
     "wikidata": ["Q46858"],
     "polyphyletic": false,
@@ -5105,7 +5102,7 @@
       "fr": ["rouille blanche de la scorsonère"],
       "it": ["Ruggine bianca della scorzonera"],
       "en": [null],
-      "lt": ["Albugo tragopogonis"]
+      "la": ["Albugo tragopogonis"]
     },
     "wikidata": ["Q4712742"],
     "polyphyletic": false,
@@ -5119,7 +5116,7 @@
       "fr": ["maladie des taches noires du chou"],
       "it": ["Maculatura anulare nera del cavolo"],
       "en": [null],
-      "lt": ["Alternaria brassicae"]
+      "la": ["Alternaria brassicae"]
     },
     "wikidata": ["Q4736348"],
     "polyphyletic": false,
@@ -5133,7 +5130,7 @@
       "fr": ["tipules"],
       "it": ["Tipulidi"],
       "en": [null],
-      "lt": ["Tipulidae"]
+      "la": ["Tipulidae"]
     },
     "wikidata": ["Q474636"],
     "polyphyletic": false,
@@ -5147,7 +5144,7 @@
       "fr": ["courtilière"],
       "it": ["Grillotalpa"],
       "en": [null],
-      "lt": ["Gryllotalpa gryllotalpa"]
+      "la": ["Gryllotalpa gryllotalpa"]
     },
     "wikidata": ["Q476326"],
     "polyphyletic": false,
@@ -5161,7 +5158,7 @@
       "fr": ["anthracnose du pois"],
       "it": ["Antracnosi del pisello"],
       "en": [null],
-      "lt": ["Ascochyta pisi", "Mycosphaerella pinodes", "Phoma pinodella"]
+      "la": ["Ascochyta pisi", "Mycosphaerella pinodes", "Phoma pinodella"]
     },
     "wikidata": ["Q4803966", "Q6947210", "Q7187129"],
     "polyphyletic": true,
@@ -5175,7 +5172,7 @@
       "fr": ["oïdium des astéracées"],
       "it": ["Oidio delle Asteracee"],
       "en": [null],
-      "lt": ["Erysiphe cichoracearum"]
+      "la": ["Erysiphe cichoracearum"]
     },
     "wikidata": ["Q48703112"],
     "polyphyletic": false,
@@ -5189,7 +5186,7 @@
       "fr": ["dépérissement des racines du framboisier"],
       "it": ["Marciume radicale del lampone"],
       "en": [null],
-      "lt": ["Phytophthora rubi"]
+      "la": ["Phytophthora rubi"]
     },
     "wikidata": ["Q48847073"],
     "polyphyletic": false,
@@ -5203,7 +5200,7 @@
       "fr": ["Botryosphaeria obtusa (Blackr ot)"],
       "it": ["Botryosphaeria obtusa (Black rot)"],
       "en": ["Black rot"],
-      "lt": ["Botryosphaeria obtusa"]
+      "la": ["Botryosphaeria obtusa"]
     },
     "wikidata": ["Q4948840"],
     "polyphyletic": false,
@@ -5217,7 +5214,7 @@
       "fr": ["cécidomyie des siliques du colza"],
       "it": ["Cecidomia delle silique delle crocifere"],
       "en": [null],
-      "lt": ["Dasineura brassicae"]
+      "la": ["Dasineura brassicae"]
     },
     "wikidata": ["Q4957943"],
     "polyphyletic": false,
@@ -5231,7 +5228,7 @@
       "fr": ["cladosporiose des oignons"],
       "it": ["Cladosporiosi degli ortaggi a bulbo"],
       "en": [null],
-      "lt": ["Cladosporium allii"]
+      "la": ["Cladosporium allii"]
     },
     "wikidata": ["Q49607119"],
     "polyphyletic": false,
@@ -5245,7 +5242,7 @@
       "fr": ["altise d'hiver du colza"],
       "it": ["Altica della colza"],
       "en": [null],
-      "lt": ["Psylliodes chrysocephala"]
+      "la": ["Psylliodes chrysocephala"]
     },
     "wikidata": ["Q50772526"],
     "polyphyletic": false,
@@ -5259,7 +5256,7 @@
       "fr": ["cladosporiose des cucurbitacées"],
       "it": ["Cladosporiosi delle cucurbitacee"],
       "en": ["scab of cucurbits"],
-      "lt": ["Cladosporium cucumerinum"]
+      "la": ["Cladosporium cucumerinum"]
     },
     "wikidata": ["Q5124960"],
     "polyphyletic": false,
@@ -5273,7 +5270,7 @@
       "fr": ["sésie tipuliforme"],
       "it": ["Sesia del ribes"],
       "en": [null],
-      "lt": ["Synanthedon tipuliformis"]
+      "la": ["Synanthedon tipuliformis"]
     },
     "wikidata": ["Q513255"],
     "polyphyletic": false,
@@ -5287,7 +5284,7 @@
       "fr": ["colletotrichum"],
       "it": ["Antracnosi"],
       "en": [null],
-      "lt": ["Colletotrichum acutatum"]
+      "la": ["Colletotrichum acutatum"]
     },
     "wikidata": ["Q5147068"],
     "polyphyletic": false,
@@ -5301,7 +5298,7 @@
       "fr": ["maladie des baies"],
       "it": ["Antracnosi dei piccoli frutti"],
       "en": [null],
-      "lt": ["Colletotrichum acutatum"]
+      "la": ["Colletotrichum acutatum"]
     },
     "wikidata": ["Q5147068"],
     "polyphyletic": false,
@@ -5315,7 +5312,7 @@
       "fr": ["Colletotrichum acutatum"],
       "it": ["Antracnosi dei piccoli frutti"],
       "en": [null],
-      "lt": ["Colletotrichum acutatum"]
+      "la": ["Colletotrichum acutatum"]
     },
     "wikidata": ["Q5147068"],
     "polyphyletic": false,
@@ -5329,7 +5326,7 @@
       "fr": ["anthracnose du fraisier"],
       "it": ["Antracnosi della fragola"],
       "en": ["anthracnose of strawberry"],
-      "lt": ["Colletotrichum acutatum", "Colletotrichum fragariae"]
+      "la": ["Colletotrichum acutatum", "Colletotrichum fragariae"]
     },
     "wikidata": ["Q5147068", "Q5147078"],
     "polyphyletic": true,
@@ -5343,7 +5340,7 @@
       "fr": ["anthracnose des cucurbitacées"],
       "it": ["Antracnosi delle cucurbitacee"],
       "en": ["anthracnose of cucurbits "],
-      "lt": ["Colletotrichum orbiculare"]
+      "la": ["Colletotrichum orbiculare"]
     },
     "wikidata": ["Q5147091"],
     "polyphyletic": false,
@@ -5357,7 +5354,7 @@
       "fr": ["prêles (Equisetaceae)"],
       "it": ["Equiseti"],
       "en": [null],
-      "lt": ["Equisetaceae"]
+      "la": ["Equisetaceae"]
     },
     "wikidata": ["Q517643"],
     "polyphyletic": false,
@@ -5371,7 +5368,7 @@
       "fr": ["cylindrosporiose des Brassica"],
       "it": ["Pyrenopeziza brassicae"],
       "en": [null],
-      "lt": ["Pyrenopeziza brassicae"]
+      "la": ["Pyrenopeziza brassicae"]
     },
     "wikidata": ["Q5226308"],
     "polyphyletic": false,
@@ -5385,7 +5382,7 @@
       "fr": ["maladies des rameaux du framboisier"],
       "it": ["Cancri del fusto del lampone"],
       "en": ["cane spot"],
-      "lt": ["Didymella applanata", "Leptosphaeria coniothyrium"]
+      "la": ["Didymella applanata", "Leptosphaeria coniothyrium"]
     },
     "wikidata": ["Q5274261", "Q6528392"],
     "polyphyletic": true,
@@ -5399,7 +5396,7 @@
       "fr": ["maladies des rameaux des ronces"],
       "it": ["Cancri del fusto della mora di rovo"],
       "en": ["cane spot"],
-      "lt": ["Didymella applanata", "Leptosphaeria coniothyrium", "Septocyta ruborum"]
+      "la": ["Didymella applanata", "Leptosphaeria coniothyrium", "Septocyta ruborum"]
     },
     "wikidata": ["Q5274261", "Q6528392", "Q7452330"],
     "polyphyletic": true,
@@ -5413,7 +5410,7 @@
       "fr": ["entomosporiose du cognassier"],
       "it": ["Entomosporiosi del cotogno"],
       "en": [null],
-      "lt": ["Diplocarpon mespili"]
+      "la": ["Diplocarpon mespili"]
     },
     "wikidata": ["Q5279832"],
     "polyphyletic": false,
@@ -5427,7 +5424,7 @@
       "fr": ["taches pourpres du fraisier"],
       "it": ["Vaiolatura rossa della fragola"],
       "en": [null],
-      "lt": ["Diplocarpon earlianum", "Mycosphaerella fragariae"]
+      "la": ["Diplocarpon earlianum", "Mycosphaerella fragariae"]
     },
     "wikidata": ["Q5279833", "Q6947195"],
     "polyphyletic": true,
@@ -5441,7 +5438,7 @@
       "fr": ["taches de feuilles"],
       "it": ["Elmintosporiosi"],
       "en": [null],
-      "lt": ["Drechslera"]
+      "la": ["Drechslera"]
     },
     "wikidata": ["Q5306823"],
     "polyphyletic": true,
@@ -5455,7 +5452,7 @@
       "fr": ["oïdiums sur mâche"],
       "it": ["Oidio (diverse specie) su valerianella "],
       "en": [null],
-      "lt": ["Erysiphe cruciferarum"]
+      "la": ["Erysiphe cruciferarum"]
     },
     "wikidata": ["Q5396383"],
     "polyphyletic": false,
@@ -5469,7 +5466,7 @@
       "fr": ["oïdium des crucifères"],
       "it": ["Oidio delle crocifere"],
       "en": ["powdery mildew of crucifers"],
-      "lt": ["Erysiphe cruciferarum"]
+      "la": ["Erysiphe cruciferarum"]
     },
     "wikidata": ["Q5396383"],
     "polyphyletic": false,
@@ -5483,7 +5480,7 @@
       "fr": ["oïdium de la carotte"],
       "it": ["Oidio delle carote"],
       "en": ["Powdery mildew"],
-      "lt": ["Erysiphe heraclei"]
+      "la": ["Erysiphe heraclei"]
     },
     "wikidata": ["Q5396389"],
     "polyphyletic": false,
@@ -5497,7 +5494,7 @@
       "fr": ["rouille grillagée du poirier"],
       "it": ["Ruggine del pero"],
       "en": [null],
-      "lt": ["Gymnosporangium fuscum"]
+      "la": ["Gymnosporangium fuscum"]
     },
     "wikidata": ["Q54365385"],
     "polyphyletic": false,
@@ -5511,7 +5508,7 @@
       "fr": ["maladie criblée des Prunus"],
       "it": ["Vaiolatura della frutta a nocciolo"],
       "en": ["shot-hole"],
-      "lt": ["Wilsonomyces carpophilus"]
+      "la": ["Wilsonomyces carpophilus"]
     },
     "wikidata": ["Q54371230"],
     "polyphyletic": false,
@@ -5525,7 +5522,7 @@
       "fr": ["Gaeumannomyces graminis var. avenae (gazon)"],
       "it": ["Mal del piede dei cereali var. avena (tappeto erboso)"],
       "en": [null],
-      "lt": ["Gaeumannomyces graminis var. avenae"]
+      "la": ["Gaeumannomyces graminis var. avenae"]
     },
     "wikidata": ["Q5516728"],
     "polyphyletic": false,
@@ -5539,7 +5536,7 @@
       "fr": ["dessèchement du feuillage des fraises"],
       "it": ["Septoriosi e marciume della fragola"],
       "en": [null],
-      "lt": ["Gnomonia fructicola"]
+      "la": ["Gnomonia fructicola"]
     },
     "wikidata": ["Q5574380"],
     "polyphyletic": false,
@@ -5553,7 +5550,7 @@
       "fr": ["pyrale des haricots"],
       "it": ["piralide delle leguminose"],
       "en": [null],
-      "lt": ["Etiella zinckenella"]
+      "la": ["Etiella zinckenella"]
     },
     "wikidata": ["Q557676"],
     "polyphyletic": false,
@@ -5567,7 +5564,7 @@
       "fr": ["brunissure du lin"],
       "it": ["Guignardia fulvida"],
       "en": [null],
-      "lt": ["Guignardia fulvida"]
+      "la": ["Guignardia fulvida"]
     },
     "wikidata": ["Q5615696"],
     "polyphyletic": false,
@@ -5581,7 +5578,7 @@
       "fr": ["lichens"],
       "it": ["Licheni"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": ["Q56811356"],
     "polyphyletic": true,
@@ -5595,7 +5592,7 @@
       "fr": ["sciarides, mouches du terreau"],
       "it": ["Sciaridi"],
       "en": [null],
-      "lt": ["Sciaridae"]
+      "la": ["Sciaridae"]
     },
     "wikidata": ["Q582991"],
     "polyphyletic": false,
@@ -5609,7 +5606,7 @@
       "fr": ["rougeot parasitaire de la vigne"],
       "it": ["Rossore parassitario"],
       "en": ["Rotbrenner"],
-      "lt": ["Pseudopeziza tracheiphila"]
+      "la": ["Pseudopeziza tracheiphila"]
     },
     "wikidata": ["Q59547823"],
     "polyphyletic": false,
@@ -5623,7 +5620,7 @@
       "fr": ["pourriture blanche des Allium"],
       "it": ["Marciume bianco della cipolla"],
       "en": [null],
-      "lt": ["Sclerotium cepivorum"]
+      "la": ["Sclerotium cepivorum"]
     },
     "wikidata": ["Q59578558"],
     "polyphyletic": false,
@@ -5637,7 +5634,7 @@
       "fr": ["coquette"],
       "it": ["rodilegno giallo"],
       "en": ["Leopard Moth (Zeuzera pyrina)"],
-      "lt": ["Zeuzera pyrina"]
+      "la": ["Zeuzera pyrina"]
     },
     "wikidata": ["Q598541"],
     "polyphyletic": false,
@@ -5651,7 +5648,7 @@
       "fr": ["ronces"],
       "it": ["Rovi"],
       "en": [null],
-      "lt": ["Rubus"]
+      "la": ["Rubus"]
     },
     "wikidata": ["Q602740"],
     "polyphyletic": true,
@@ -5665,7 +5662,7 @@
       "fr": ["Pourriture noire (black rot) de la vigne"],
       "it": ["Marciume nero"],
       "en": ["black-rot"],
-      "lt": ["Guignardia bidwellii"]
+      "la": ["Guignardia bidwellii"]
     },
     "wikidata": ["Q604793"],
     "polyphyletic": false,
@@ -5679,7 +5676,7 @@
       "fr": ["charbon nu de l'avoine"],
       "it": ["Carbone nudo dell'avena"],
       "en": [null],
-      "lt": ["Ustilago avenae"]
+      "la": ["Ustilago avenae"]
     },
     "wikidata": ["Q612789"],
     "polyphyletic": false,
@@ -5693,7 +5690,7 @@
       "fr": ["sésie du pommier"],
       "it": ["Sesia del melo"],
       "en": [null],
-      "lt": ["Synanthedon myopaeformis"]
+      "la": ["Synanthedon myopaeformis"]
     },
     "wikidata": ["Q618307"],
     "polyphyletic": false,
@@ -5707,7 +5704,7 @@
       "fr": ["puceron lanigère du pommier"],
       "it": ["Afide lanigero del melo"],
       "en": [null],
-      "lt": ["Eriosoma lanigerum"]
+      "la": ["Eriosoma lanigerum"]
     },
     "wikidata": ["Q618315"],
     "polyphyletic": false,
@@ -5721,7 +5718,7 @@
       "fr": ["mildiou de l'artichaut"],
       "it": ["Peronospora del carciofo"],
       "en": ["Artichoke Downy Mildew"],
-      "lt": ["Bremia lactucae"]
+      "la": ["Bremia lactucae"]
     },
     "wikidata": ["Q621790"],
     "polyphyletic": false,
@@ -5735,7 +5732,7 @@
       "fr": ["mildiou de la laitue"],
       "it": ["Peronospora della lattuga"],
       "en": [null],
-      "lt": ["Bremia lactucae"]
+      "la": ["Bremia lactucae"]
     },
     "wikidata": ["Q621790"],
     "polyphyletic": false,
@@ -5749,7 +5746,7 @@
       "fr": ["mildious des fines herbes"],
       "it": ["Peronospora (diverse specie)  su erbette da cucina"],
       "en": [null],
-      "lt": ["Peronosporales"]
+      "la": ["Peronosporales"]
     },
     "wikidata": ["Q621829"],
     "polyphyletic": false,
@@ -5763,7 +5760,7 @@
       "fr": ["mildious des plantes ornementales"],
       "it": ["Peronospora (diverse specie)  su piante ornamentali"],
       "en": [null],
-      "lt": ["Peronosporales"]
+      "la": ["Peronosporales"]
     },
     "wikidata": ["Q621829"],
     "polyphyletic": false,
@@ -5777,7 +5774,7 @@
       "fr": ["mildious de la camomille"],
       "it": ["Peronospora della camomilla "],
       "en": [null],
-      "lt": ["Peronosporales"]
+      "la": ["Peronosporales"]
     },
     "wikidata": ["Q621829"],
     "polyphyletic": false,
@@ -5791,7 +5788,7 @@
       "fr": ["mildiou de la vigne"],
       "it": ["Peronospora della vite"],
       "en": ["downy mildiou"],
-      "lt": ["Plasmopara viticola"]
+      "la": ["Plasmopara viticola"]
     },
     "wikidata": ["Q622010"],
     "polyphyletic": false,
@@ -5805,7 +5802,7 @@
       "fr": ["rouille blanche"],
       "it": ["Ruggine bianca"],
       "en": [null],
-      "lt": ["Albugo candida"]
+      "la": ["Albugo candida"]
     },
     "wikidata": ["Q625190"],
     "polyphyletic": false,
@@ -5819,7 +5816,7 @@
       "fr": ["pourriture molle "],
       "it": ["Marciume molle"],
       "en": [null],
-      "lt": ["Erwinia carotovora subsp. carotovora"]
+      "la": ["Erwinia carotovora subsp. carotovora"]
     },
     "wikidata": ["Q63123831"],
     "polyphyletic": true,
@@ -5833,7 +5830,7 @@
       "fr": ["acarien rouge"],
       "it": ["Ragnetto rosso"],
       "en": [null],
-      "lt": ["Panonychus ulmi"]
+      "la": ["Panonychus ulmi"]
     },
     "wikidata": ["Q640085"],
     "polyphyletic": false,
@@ -5847,7 +5844,7 @@
       "fr": ["Rouilles des ronces"],
       "it": ["Ruggini delle more"],
       "en": ["Rusts of blackberry"],
-      "lt": ["Kuehneola uredinis", "Phragmidium violaceum"]
+      "la": ["Kuehneola uredinis", "Phragmidium violaceum"]
     },
     "wikidata": ["Q6441858", "Q7188040"],
     "polyphyletic": true,
@@ -5861,7 +5858,7 @@
       "fr": ["nécrose du collet du colza"],
       "it": ["Marciume da phoma delle crocifere"],
       "en": ["Phoma leaf spot"],
-      "lt": ["Leptosphaeria maculans", "Phoma lingam"]
+      "la": ["Leptosphaeria maculans", "Phoma lingam"]
     },
     "wikidata": ["Q6528396", "Q84841011"],
     "polyphyletic": true,
@@ -5875,7 +5872,7 @@
       "fr": ["Oïdium des solanacées."],
       "it": ["Oidio delle solanceae"],
       "en": [null],
-      "lt": ["Leveillula taurica"]
+      "la": ["Leveillula taurica"]
     },
     "wikidata": ["Q6534980"],
     "polyphyletic": false,
@@ -5889,7 +5886,7 @@
       "fr": ["oïdium de l'aubergine"],
       "it": ["Oidio della melanzana"],
       "en": [null],
-      "lt": ["Leveillula taurica"]
+      "la": ["Leveillula taurica"]
     },
     "wikidata": ["Q6534980"],
     "polyphyletic": false,
@@ -5903,7 +5900,7 @@
       "fr": ["charbon nu de l'orge"],
       "it": ["Carbone nudo dell'orzo"],
       "en": [null],
-      "lt": ["Ustilago nuda"]
+      "la": ["Ustilago nuda"]
     },
     "wikidata": ["Q6676009"],
     "polyphyletic": false,
@@ -5917,7 +5914,7 @@
       "fr": ["puceron vert du pêcher"],
       "it": ["Afide verde del pesco"],
       "en": [null],
-      "lt": ["Myzus persicae"]
+      "la": ["Myzus persicae"]
     },
     "wikidata": ["Q668208"],
     "polyphyletic": false,
@@ -5931,7 +5928,7 @@
       "fr": ["taches d'été"],
       "it": ["Macchie estive"],
       "en": [null],
-      "lt": ["Magnaporthe poae"]
+      "la": ["Magnaporthe poae"]
     },
     "wikidata": ["Q6731294"],
     "polyphyletic": false,
@@ -5945,7 +5942,7 @@
       "fr": ["Oïdium des baies de Goji"],
       "it": ["Oidio delle bacche di Goji "],
       "en": [null],
-      "lt": ["Arthrocladiella mougeotii"]
+      "la": ["Arthrocladiella mougeotii"]
     },
     "wikidata": ["Q6741484"],
     "polyphyletic": false,
@@ -5959,7 +5956,7 @@
       "fr": ["acariens tétranyques"],
       "it": ["Ragnetti"],
       "en": ["spider mites"],
-      "lt": ["Tetranychidae"]
+      "la": ["Tetranychidae"]
     },
     "wikidata": ["Q676204"],
     "polyphyletic": true,
@@ -5973,7 +5970,7 @@
       "fr": ["ambroisie à feuilles d'armoise (Ambrosia artemisiifolia)"],
       "it": ["Ambrosia "],
       "en": [null],
-      "lt": ["Ambrosia artemisiifolia"]
+      "la": ["Ambrosia artemisiifolia"]
     },
     "wikidata": ["Q682164"],
     "polyphyletic": false,
@@ -5987,7 +5984,7 @@
       "fr": ["dépérissement des bourgeons du sapin bleu"],
       "it": ["Disseccamento delle gemme del abete del Colorado"],
       "en": [null],
-      "lt": ["Gemmamyces piceae"]
+      "la": ["Gemmamyces piceae"]
     },
     "wikidata": ["Q70483904"],
     "polyphyletic": false,
@@ -6001,7 +5998,7 @@
       "fr": ["acariens prédateurs"],
       "it": ["Acari predatori"],
       "en": [null],
-      "lt": ["Parasitus"]
+      "la": ["Parasitus"]
     },
     "wikidata": ["Q7135959"],
     "polyphyletic": true,
@@ -6015,7 +6012,7 @@
       "fr": ["mildiou des ronces"],
       "it": ["Peronospora della mora"],
       "en": [null],
-      "lt": ["Peronospora sparsa"]
+      "la": ["Peronospora sparsa"]
     },
     "wikidata": ["Q7169462"],
     "polyphyletic": false,
@@ -6029,7 +6026,7 @@
       "fr": ["mildiou du rosier"],
       "it": ["Peronospora della rosa"],
       "en": [null],
-      "lt": ["Peronospora sparsa"]
+      "la": ["Peronospora sparsa"]
     },
     "wikidata": ["Q7169462"],
     "polyphyletic": false,
@@ -6043,7 +6040,7 @@
       "fr": ["mildiou de la lentille"],
       "it": ["Peronospora della lenticchia"],
       "en": [null],
-      "lt": ["Peronospora trifoliorum"]
+      "la": ["Peronospora trifoliorum"]
     },
     "wikidata": ["Q7169463"],
     "polyphyletic": false,
@@ -6057,7 +6054,7 @@
       "fr": ["mildiou de la mache"],
       "it": ["Peronospora della valerianella"],
       "en": [null],
-      "lt": ["Peronospora valerianellae"]
+      "la": ["Peronospora valerianellae"]
     },
     "wikidata": ["Q7169465"],
     "polyphyletic": false,
@@ -6071,7 +6068,7 @@
       "fr": ["mildiou du pois"],
       "it": ["Peronospora del pisello"],
       "en": [null],
-      "lt": ["Peronospora viciae"]
+      "la": ["Peronospora viciae"]
     },
     "wikidata": ["Q7169466"],
     "polyphyletic": false,
@@ -6085,7 +6082,7 @@
       "fr": ["mildiou du haricot"],
       "it": ["Peronospora del fagiolo"],
       "en": [null],
-      "lt": ["Peronospora viciae", "Phytophthora phaseoli"]
+      "la": ["Peronospora viciae", "Phytophthora phaseoli"]
     },
     "wikidata": ["Q7169466", "Q7189827"],
     "polyphyletic": true,
@@ -6099,7 +6096,7 @@
       "fr": ["mildiou de la fève"],
       "it": ["Peronospora della fava"],
       "en": [null],
-      "lt": ["Peronospora viciae"]
+      "la": ["Peronospora viciae"]
     },
     "wikidata": ["Q7169466"],
     "polyphyletic": false,
@@ -6113,7 +6110,7 @@
       "fr": ["mort lin"],
       "it": ["phoma linicola"],
       "en": ["foot rot of flax"],
-      "lt": ["Phoma exigua var. linicola"]
+      "la": ["Phoma exigua var. linicola"]
     },
     "wikidata": ["Q7187117"],
     "polyphyletic": false,
@@ -6127,7 +6124,7 @@
       "fr": ["rouille du rosier"],
       "it": ["Ruggine della rosa"],
       "en": [null],
-      "lt": ["Phragmidium mucronatum"]
+      "la": ["Phragmidium mucronatum"]
     },
     "wikidata": ["Q7188038"],
     "polyphyletic": false,
@@ -6141,7 +6138,7 @@
       "fr": ["rouille des framboisiers"],
       "it": ["Ruggine del lampone"],
       "en": [null],
-      "lt": ["Phragmidium rubi-idaei"]
+      "la": ["Phragmidium rubi-idaei"]
     },
     "wikidata": ["Q7188039"],
     "polyphyletic": false,
@@ -6155,7 +6152,7 @@
       "fr": ["maladie de la suie des pommes et des poires"],
       "it": ["Macchie nere delle mele e delle pere"],
       "en": [null],
-      "lt": ["Phyllachora pomigena"]
+      "la": ["Phyllachora pomigena"]
     },
     "wikidata": ["Q7188488"],
     "polyphyletic": false,
@@ -6169,7 +6166,7 @@
       "fr": ["racines rouges du fraisier"],
       "it": ["Marciume radicale della fragola"],
       "en": ["red core"],
-      "lt": ["Phytophthora fragariae"]
+      "la": ["Phytophthora fragariae"]
     },
     "wikidata": ["Q7189817"],
     "polyphyletic": false,
@@ -6183,7 +6180,7 @@
       "fr": ["moisissure noire des feuilles du poireau"],
       "it": ["Pleospora herbarum"],
       "en": [null],
-      "lt": ["Pleospora herbarum"]
+      "la": ["Pleospora herbarum"]
     },
     "wikidata": ["Q7204607"],
     "polyphyletic": false,
@@ -6197,7 +6194,7 @@
       "fr": ["oïdium du houblon"],
       "it": ["Oidio del luppolo"],
       "en": [null],
-      "lt": ["Podosphaera macularis"]
+      "la": ["Podosphaera macularis"]
     },
     "wikidata": ["Q7207071"],
     "polyphyletic": false,
@@ -6211,7 +6208,7 @@
       "fr": ["oïdium de l'abricotier"],
       "it": ["Oidio dell'albicocca"],
       "en": ["powdery mildew"],
-      "lt": ["Podosphaera tridactyla"]
+      "la": ["Podosphaera tridactyla"]
     },
     "wikidata": ["Q7207073"],
     "polyphyletic": false,
@@ -6225,7 +6222,7 @@
       "fr": ["véroniques"],
       "it": ["Varietà di veronica"],
       "en": [null],
-      "lt": ["Veronica"]
+      "la": ["Veronica"]
     },
     "wikidata": ["Q7216874"],
     "polyphyletic": true,
@@ -6239,7 +6236,7 @@
       "fr": ["véroniques annuelles"],
       "it": ["Varietà annuali di veronica"],
       "en": [null],
-      "lt": ["Veronica"]
+      "la": ["Veronica"]
     },
     "wikidata": ["Q7216874"],
     "polyphyletic": false,
@@ -6253,7 +6250,7 @@
       "fr": ["véroniques vivaces"],
       "it": ["Varietà pluriennali di veronica"],
       "en": [null],
-      "lt": ["Veronica"]
+      "la": ["Veronica"]
     },
     "wikidata": ["Q7216874"],
     "polyphyletic": true,
@@ -6267,7 +6264,7 @@
       "fr": ["mildiou du houblon"],
       "it": ["Peronospora del luppolo"],
       "en": [null],
-      "lt": ["Pseudoperonospora humuli"]
+      "la": ["Pseudoperonospora humuli"]
     },
     "wikidata": ["Q7255252"],
     "polyphyletic": false,
@@ -6281,7 +6278,7 @@
       "fr": ["rouille de l'asperge"],
       "it": ["Ruggine dell'asparago"],
       "en": [null],
-      "lt": ["Puccinia asparagi"]
+      "la": ["Puccinia asparagi"]
     },
     "wikidata": ["Q7258185"],
     "polyphyletic": false,
@@ -6295,7 +6292,7 @@
       "fr": ["brûlure des bourgeons des rhododendrons"],
       "it": ["Disseccamento dei bottoni fiorali del rododendro"],
       "en": [null],
-      "lt": ["Pycnostysanus azaleae"]
+      "la": ["Pycnostysanus azaleae"]
     },
     "wikidata": ["Q7262937"],
     "polyphyletic": false,
@@ -6309,7 +6306,7 @@
       "fr": ["maladie striée de l'orge"],
       "it": ["Striatura bruna dell'orzo"],
       "en": [null],
-      "lt": ["Pyrenophora graminea", "Pyrenophora graminea"]
+      "la": ["Pyrenophora graminea", "Pyrenophora graminea"]
     },
     "wikidata": ["Q7263462", "Q7263462"],
     "polyphyletic": true,
@@ -6323,7 +6320,7 @@
       "fr": ["Pythium ultimum"],
       "it": ["Pythium ultimum"],
       "en": ["Pythium ultimum"],
-      "lt": ["Pythium ultimum"]
+      "la": ["Pythium ultimum"]
     },
     "wikidata": ["Q7263907"],
     "polyphyletic": false,
@@ -6337,7 +6334,7 @@
       "fr": ["rhynchosporiose"],
       "it": ["Rincosporiosi"],
       "en": ["Leaf blotch (= scald) of cereals"],
-      "lt": ["Rhynchosporium secalis"]
+      "la": ["Rhynchosporium secalis"]
     },
     "wikidata": ["Q7321729"],
     "polyphyletic": false,
@@ -6351,7 +6348,7 @@
       "fr": ["anthracnose de la lentille"],
       "it": ["Antracnosi della lenticchia"],
       "en": [null],
-      "lt": ["Ascochyta"]
+      "la": ["Ascochyta"]
     },
     "wikidata": ["Q74663"],
     "polyphyletic": true,
@@ -6365,7 +6362,7 @@
       "fr": ["carpocapse des prunes"],
       "it": ["Tortrice delle susine"],
       "en": [null],
-      "lt": ["Grapholita funebrana"]
+      "la": ["Grapholita funebrana"]
     },
     "wikidata": ["Q74842"],
     "polyphyletic": false,
@@ -6379,7 +6376,7 @@
       "fr": ["lymexylons"],
       "it": ["Limexilonidi"],
       "en": [null],
-      "lt": ["Lymexylidae"]
+      "la": ["Lymexylidae"]
     },
     "wikidata": ["Q749983"],
     "polyphyletic": false,
@@ -6393,7 +6390,7 @@
       "fr": ["piétin-verse des céréales"],
       "it": ["Mal del piede dei cereali"],
       "en": [null],
-      "lt": ["Oculimacula yallundae", "Pseudocercosporella herpotrichoides"]
+      "la": ["Oculimacula yallundae", "Pseudocercosporella herpotrichoides"]
     },
     "wikidata": ["Q7684552", "Q80822823"],
     "polyphyletic": true,
@@ -6407,7 +6404,7 @@
       "fr": ["Piétin-verse du blé"],
       "it": ["Mal del piede dei cereali"],
       "en": ["Foot rot of cereals"],
-      "lt": ["Oculimacula yallundae"]
+      "la": ["Oculimacula yallundae"]
     },
     "wikidata": ["Q7684552"],
     "polyphyletic": false,
@@ -6421,7 +6418,7 @@
       "fr": ["cécidomyies"],
       "it": ["Cecidomie"],
       "en": [null],
-      "lt": ["Cecidomyiidae"]
+      "la": ["Cecidomyiidae"]
     },
     "wikidata": ["Q768519"],
     "polyphyletic": false,
@@ -6435,7 +6432,7 @@
       "fr": ["pyrale des fruits secs"],
       "it": ["Tignola fasciata"],
       "en": [null],
-      "lt": ["Plodia interpunctella"]
+      "la": ["Plodia interpunctella"]
     },
     "wikidata": ["Q779383"],
     "polyphyletic": false,
@@ -6449,7 +6446,7 @@
       "fr": ["silvain"],
       "it": ["Silvano surinamense"],
       "en": [null],
-      "lt": ["Oryzaephilus surinamensis"]
+      "la": ["Oryzaephilus surinamensis"]
     },
     "wikidata": ["Q779905"],
     "polyphyletic": false,
@@ -6463,7 +6460,7 @@
       "fr": ["carie naine"],
       "it": ["Carie nana"],
       "en": [null],
-      "lt": ["Tilletia controversa"]
+      "la": ["Tilletia controversa"]
     },
     "wikidata": ["Q7802811"],
     "polyphyletic": false,
@@ -6477,7 +6474,7 @@
       "fr": ["Cochenille australienne "],
       "it": ["Cocciniglia cotonosa solcata"],
       "en": [null],
-      "lt": ["Icerya purchasi"]
+      "la": ["Icerya purchasi"]
     },
     "wikidata": ["Q783121"],
     "polyphyletic": false,
@@ -6491,7 +6488,7 @@
       "fr": ["rouille des betteraves"],
       "it": ["Ruggine delle barbabietole"],
       "en": [null],
-      "lt": ["Uromyces beticola"]
+      "la": ["Uromyces beticola"]
     },
     "wikidata": ["Q7900893"],
     "polyphyletic": false,
@@ -6505,7 +6502,7 @@
       "fr": ["petite mineuse ou teigne du pêcher"],
       "it": ["tignola del pesco"],
       "en": ["peach twig borer"],
-      "lt": ["Anarsia lineatella"]
+      "la": ["Anarsia lineatella"]
     },
     "wikidata": ["Q790159"],
     "polyphyletic": false,
@@ -6519,7 +6516,7 @@
       "fr": ["tavelure noire du pêcher"],
       "it": ["Ticchiolatura del pesco"],
       "en": ["scab"],
-      "lt": ["Venturia carpophila"]
+      "la": ["Venturia carpophila"]
     },
     "wikidata": ["Q7920446"],
     "polyphyletic": false,
@@ -6533,7 +6530,7 @@
       "fr": ["typographe"],
       "it": ["Tipografo"],
       "en": [null],
-      "lt": ["Ips typographus"]
+      "la": ["Ips typographus"]
     },
     "wikidata": ["Q794323"],
     "polyphyletic": false,
@@ -6547,7 +6544,7 @@
       "fr": ["taches annulaires du chou"],
       "it": ["Maculatura anulare del cavolo "],
       "en": [null],
-      "lt": ["Mycosphaerella brassicicola"]
+      "la": ["Mycosphaerella brassicicola"]
     },
     "wikidata": ["Q7990362"],
     "polyphyletic": false,
@@ -6561,7 +6558,7 @@
       "fr": ["taches angulaires du fraisier"],
       "it": ["Maculature angolari della fragola"],
       "en": [null],
-      "lt": ["Xanthomonas fragariae"]
+      "la": ["Xanthomonas fragariae"]
     },
     "wikidata": ["Q8043054"],
     "polyphyletic": false,
@@ -6575,7 +6572,7 @@
       "fr": ["nervures noires du chou"],
       "it": ["Nervazione nera delle Crocifere"],
       "en": [null],
-      "lt": ["Xanthomonas campestris pv. campestris"]
+      "la": ["Xanthomonas campestris pv. campestris"]
     },
     "wikidata": ["Q8043055"],
     "polyphyletic": false,
@@ -6589,7 +6586,7 @@
       "fr": ["cladosporiose de l'épinard"],
       "it": ["Ticchiolatura dello spinacio"],
       "en": [null],
-      "lt": ["Cladosporium variabile"]
+      "la": ["Cladosporium variabile"]
     },
     "wikidata": ["Q80819881"],
     "polyphyletic": false,
@@ -6603,7 +6600,7 @@
       "fr": ["hétérosporiose de l'oeillet"],
       "it": ["Vaiolo del garofano"],
       "en": [null],
-      "lt": ["Mycosphaerella dianthi"]
+      "la": ["Mycosphaerella dianthi"]
     },
     "wikidata": ["Q80820723"],
     "polyphyletic": false,
@@ -6617,7 +6614,7 @@
       "fr": ["anthracnose du gazon"],
       "it": ["Colletotrichum graminicola"],
       "en": [null],
-      "lt": ["Colletotrichum graminicola"]
+      "la": ["Colletotrichum graminicola"]
     },
     "wikidata": ["Q80936789"],
     "polyphyletic": false,
@@ -6631,7 +6628,7 @@
       "fr": ["Ver de la capsule"],
       "it": ["Elotide del cotone"],
       "en": ["Cotton Bollworm"],
-      "lt": ["Helicoverpa armigera"]
+      "la": ["Helicoverpa armigera"]
     },
     "wikidata": ["Q811652"],
     "polyphyletic": false,
@@ -6645,7 +6642,7 @@
       "fr": ["eudémis"],
       "it": ["Tignoletta dell'uva"],
       "en": [null],
-      "lt": ["Lobesia botrana"]
+      "la": ["Lobesia botrana"]
     },
     "wikidata": ["Q815051"],
     "polyphyletic": false,
@@ -6659,7 +6656,7 @@
       "fr": ["mouches blanches"],
       "it": ["Aleurodidi"],
       "en": [null],
-      "lt": ["Aleyrodidae"]
+      "la": ["Aleyrodidae"]
     },
     "wikidata": ["Q815617"],
     "polyphyletic": true,
@@ -6673,7 +6670,7 @@
       "fr": ["dicotylédones"],
       "it": ["Dicotiledoni (malerbe)"],
       "en": [null],
-      "lt": ["Dicotyledones"]
+      "la": ["Dicotyledones"]
     },
     "wikidata": ["Q8316"],
     "polyphyletic": false,
@@ -6687,7 +6684,7 @@
       "fr": ["dicotylédones vivaces"],
       "it": ["Dicotiledoni pluriennali (malerbe)"],
       "en": [null],
-      "lt": ["Dicotyledones"]
+      "la": ["Dicotyledones"]
     },
     "wikidata": ["Q8316"],
     "polyphyletic": false,
@@ -6701,7 +6698,7 @@
       "fr": ["tordeuse du pois"],
       "it": ["Tortrice del pisello"],
       "en": [null],
-      "lt": ["Cydia nigricana"]
+      "la": ["Cydia nigricana"]
     },
     "wikidata": ["Q848100"],
     "polyphyletic": false,
@@ -6715,7 +6712,7 @@
       "fr": ["cladosporiose de l'oignon"],
       "it": ["Ticchiolatura della cipolla"],
       "en": [null],
-      "lt": ["Cladosporium allii-cepae"]
+      "la": ["Cladosporium allii-cepae"]
     },
     "wikidata": ["Q84826165"],
     "polyphyletic": false,
@@ -6729,7 +6726,7 @@
       "fr": ["anthracnose de la laitue"],
       "it": ["Marciume della lattuga"],
       "en": [null],
-      "lt": ["Marssonina panattoniana"]
+      "la": ["Marssonina panattoniana"]
     },
     "wikidata": ["Q84832098"],
     "polyphyletic": false,
@@ -6743,7 +6740,7 @@
       "fr": ["anthracnose du noyer"],
       "it": ["Antracnosi del noce"],
       "en": [null],
-      "lt": ["Gnomonia leptostyla"]
+      "la": ["Gnomonia leptostyla"]
     },
     "wikidata": ["Q84833084"],
     "polyphyletic": false,
@@ -6757,7 +6754,7 @@
       "fr": ["mirides"],
       "it": ["Miridi"],
       "en": [null],
-      "lt": ["Miridae"]
+      "la": ["Miridae"]
     },
     "wikidata": ["Q864705"],
     "polyphyletic": true,
@@ -6771,7 +6768,7 @@
       "fr": ["feu bactérien"],
       "it": ["Fuoco batterico"],
       "en": [null],
-      "lt": ["Erwinia amylovora"]
+      "la": ["Erwinia amylovora"]
     },
     "wikidata": ["Q866091"],
     "polyphyletic": false,
@@ -6785,7 +6782,7 @@
       "fr": ["phytophthora du poireau"],
       "it": ["Peronospora del porro"],
       "en": [null],
-      "lt": ["Phytophthora porri"]
+      "la": ["Phytophthora porri"]
     },
     "wikidata": ["Q87273622"],
     "polyphyletic": false,
@@ -6799,7 +6796,7 @@
       "fr": ["phytophthora de l'oignon"],
       "it": ["Peronospora delle cipolle"],
       "en": [null],
-      "lt": ["Phytophthora porri"]
+      "la": ["Phytophthora porri"]
     },
     "wikidata": ["Q87273622"],
     "polyphyletic": false,
@@ -6813,7 +6810,7 @@
       "fr": ["Renouée du Japon"],
       "it": ["Poligono del Giappone"],
       "en": [null],
-      "lt": ["Fallopia japonica"]
+      "la": ["Fallopia japonica"]
     },
     "wikidata": ["Q899672"],
     "polyphyletic": false,
@@ -6827,7 +6824,7 @@
       "fr": ["limaces du genre Arion"],
       "it": ["Limacce del genere Arion"],
       "en": [null],
-      "lt": ["Arionidae"]
+      "la": ["Arionidae"]
     },
     "wikidata": ["Q915669"],
     "polyphyletic": false,
@@ -6841,7 +6838,7 @@
       "fr": ["teigne du cacao sur tabac"],
       "it": ["Tignola del cacao e del tabacco"],
       "en": [null],
-      "lt": ["Ephestia elutella"]
+      "la": ["Ephestia elutella"]
     },
     "wikidata": ["Q928458"],
     "polyphyletic": false,
@@ -6855,7 +6852,7 @@
       "fr": ["teigne des aliments (pyrale du cacao/du tabac)"],
       "it": ["tignola del tabacco/del cacao"],
       "en": ["Tobacco moth"],
-      "lt": ["Ephestia elutella"]
+      "la": ["Ephestia elutella"]
     },
     "wikidata": ["Q928458"],
     "polyphyletic": false,
@@ -6869,7 +6866,7 @@
       "fr": ["puceron noir du cerisier"],
       "it": ["Afide nerastro del ciliegio"],
       "en": [null],
-      "lt": ["Myzus cerasi"]
+      "la": ["Myzus cerasi"]
     },
     "wikidata": ["Q998226"],
     "polyphyletic": false,
@@ -6883,7 +6880,7 @@
       "fr": ["maintien de l'efficacité"],
       "it": ["Assicurazione dell'efficacia"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -6897,7 +6894,7 @@
       "fr": ["Chute précoce"],
       "it": ["Caduta precoce"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -6911,7 +6908,7 @@
       "fr": ["maladies de conservation"],
       "it": ["Deperimento di ortofrutticoli in deposito"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -6925,7 +6922,7 @@
       "fr": ["traitement du tronc contre les rejets"],
       "it": ["Trattamento della ceppaia contro i ricacci"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -6939,7 +6936,7 @@
       "fr": ["frayure"],
       "it": ["Fregone"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -6953,7 +6950,7 @@
       "fr": ["augmentation du pouvoir mouillant et adhésif"],
       "it": ["Aumento del potere umidificante e adesivante"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -6967,7 +6964,7 @@
       "fr": ["cicatrisation des plaies"],
       "it": ["Cicatrizzazione "],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -6981,7 +6978,7 @@
       "fr": ["blessures dues à des causes mécaniques"],
       "it": ["Danni meccanici"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -6995,7 +6992,7 @@
       "fr": ["inhibition de la germination"],
       "it": ["Inibizione della germinazione"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -7009,7 +7006,7 @@
       "fr": ["pour favoriser la formation des branches fruitières des jeunes arbres"],
       "it": ["Formazione di ramo fruttifero su alberi giovani "],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -7023,7 +7020,7 @@
       "fr": ["contre le rougissement précoce"],
       "it": ["Contro l'arrossamento"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -7037,7 +7034,7 @@
       "fr": ["inhibition de la croissance des organes aériens"],
       "it": ["Inibizione della crescita longitudinale"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -7051,7 +7048,7 @@
       "fr": ["augmentation de la résistance à la verse"],
       "it": ["Aumento della stabilità"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -7065,7 +7062,7 @@
       "fr": ["amélioration de la nouaison  (formation de fruits parthénocarpiques)"],
       "it": ["Miglioramento dell'allegagione (formazione di frutti partenocarpici)"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -7079,7 +7076,7 @@
       "fr": ["levée de la dormance des bourgeons, stimulation de la croissance"],
       "it": ["Interruzione della dormienza delle gemme, stimolo della crescita longitudinale"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -7093,7 +7090,7 @@
       "fr": ["éclaircissage des fleurs et fruits"],
       "it": ["Diradamento dei fiori e dei frutticini"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -7107,7 +7104,7 @@
       "fr": ["rupture de l'alternance (pommier)"],
       "it": ["Interruzione dell'alternanza (melo)"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -7121,7 +7118,7 @@
       "fr": ["accélération et synchronisation de la maturité des fruits"],
       "it": ["Accellerazione e sincronizzazione della maturità dei frutti"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -7135,7 +7132,7 @@
       "fr": ["Ravageurs de quarantaine"],
       "it": ["Organismi animali di quarantena"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -7149,7 +7146,7 @@
       "fr": ["éclaircissage des fruits"],
       "it": ["Diradamento dei frutticini"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -7163,7 +7160,7 @@
       "fr": ["grillures (PLS)"],
       "it": ["Bruciature fogliari (PLS)"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -7177,7 +7174,7 @@
       "fr": ["Diminution de la roussissure et des crevasses de croissance sur fruits "],
       "it": ["Riduzione della rugginosità della frutta e delle fratture di crescita"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -7191,7 +7188,7 @@
       "fr": ["retard de la maturité"],
       "it": ["Ritardo della maturazione"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -7205,12 +7202,12 @@
       "fr": ["mauvaises herbes à feuilles larges"],
       "it": ["Malerbe a foglia larga"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
-    "polyphyletic": null,
-    "biotic": null,
-    "nonStressor": null
+    "polyphyletic": true,
+    "biotic": true,
+    "nonStressor": false
   },
   {
     "id": 11103,
@@ -7219,12 +7216,12 @@
       "fr": ["maladies du sol et transmises par les semences"],
       "it": ["Malattie trasmesse dal suolo e dalle sementi"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
-    "polyphyletic": null,
-    "biotic": null,
-    "nonStressor": null
+    "polyphyletic": true,
+    "biotic": true,
+    "nonStressor": false
   },
   {
     "id": 11042,
@@ -7233,12 +7230,12 @@
       "fr": ["optimisation du triage"],
       "it": ["Ottimizzazione della cernita"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
     "biotic": null,
-    "nonStressor": null
+    "nonStressor": true
   },
   {
     "id": 11014,
@@ -7247,12 +7244,12 @@
       "fr": ["Maladies de stockage"],
       "it": ["Malattie da stoccaggio"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": true,
     "biotic": true,
-    "nonStressor": null
+    "nonStressor": false
   },
   {
     "id": 12631,
@@ -7261,12 +7258,12 @@
       "fr": ["Élongation de la rafle et décompactage des grappes de raisin"],
       "it": ["Allentamento del grapplo d'uva"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
     "biotic": null,
-    "nonStressor": null
+    "nonStressor": false
   },
   {
     "id": 13677,
@@ -7274,13 +7271,13 @@
       "de": ["Hemmung des Triebwachstums"],
       "fr": ["Inhibition de la croissance des rameaux"],
       "it": ["Inibizione della crescita dei polloni"],
-      "en": [null],
-      "lt": [null]
+      "en": ["Inhibition of shoot growth"],
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
     "biotic": null,
-    "nonStressor": null
+    "nonStressor": false
   },
   {
     "id": 11264,
@@ -7289,7 +7286,7 @@
       "fr": ["Inhibition des pousses latérales "],
       "it": ["Inibizione dei germogli laterali"],
       "en": [null],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
@@ -7302,13 +7299,13 @@
       "de": ["Minierende Raupen"],
       "fr": ["Chenilles mineuses"],
       "it": ["Bruchi minatori"],
-      "en": [null],
-      "lt": [null]
+      "en": ["Leaf-mining caterpillars"],
+      "la": [null]
     },
     "wikidata": [null],
-    "polyphyletic": null,
-    "biotic": null,
-    "nonStressor": null
+    "polyphyletic": true,
+    "biotic": true,
+    "nonStressor": false
   },
   {
     "id": 10673,
@@ -7317,12 +7314,12 @@
       "fr": ["Dessiccation, défanage"],
       "it": ["Disseccamento, essiccamento"],
       "en": ["Desiccation"],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
     "biotic": null,
-    "nonStressor": null
+    "nonStressor": true
   },
   {
     "id": 10585,
@@ -7331,12 +7328,12 @@
       "fr": ["Désinfection"],
       "it": ["Disinfezione"],
       "en": ["Disinfection"],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
-    "biotic": false,
-    "nonStressor": null
+    "biotic": null,
+    "nonStressor": true
   },
   {
     "id": 12434,
@@ -7345,11 +7342,11 @@
       "fr": ["Élimination des rejets"],
       "it": ["Eliminazione dei ricacci"],
       "en": ["Removal of suckers"],
-      "lt": [null]
+      "la": [null]
     },
     "wikidata": [null],
     "polyphyletic": null,
-    "biotic": false,
-    "nonStressor": null
+    "biotic": null,
+    "nonStressor": true
   }
-] 
+]

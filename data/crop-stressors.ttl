@@ -102,12 +102,14 @@
 :6-11016 a :CropStressor ;
   a :BioticStressor ;
   rdfs:label "Zwiebelhalsfäule"@de ;
+  rdfs:label "Neck rot of onion"@en ;
   :bioticStressorIsDefinedByBiologicalTaxon wd:Q10433881 ;
 .
 
 :6-11037 a :CropStressor ;
   a :BioticStressor ;
   rdfs:label "Braunfleckenkrankheit"@de ;
+  rdfs:label "Chocolate spot disease"@en ;
   :bioticStressorIsDefinedByBiologicalTaxon wd:Q10433893 ;
 .
 
@@ -739,6 +741,7 @@
 :6-10736 a :CropStressor ;
   a :BioticStressor ;
   rdfs:label "Schalenwickler"@de ;
+  rdfs:label "Fruit tree tortrix moths"@en ;
   :bioticStressorIsDefinedByBiologicalTaxon wd:Q1301905 ;
   :bioticStressorIsDefinedByBiologicalTaxon wd:Q136322 ;
   :bioticStressorIsDefinedByBiologicalTaxon wd:Q898337 ;
@@ -747,13 +750,14 @@
 :6-10417 a :CropStressor ;
   a :BioticStressor ;
   rdfs:label "Tabakmottenschildlaus"@de ;
+  rdfs:label "Tobacco whitefly"@en ;
   :bioticStressorIsDefinedByBiologicalTaxon wd:Q1303946 ;
 .
 
 :6-12145 a :CropStressor ;
   a :BioticStressor ;
   rdfs:label "Colletotrichum-Welke"@de ;
-  rdfs:label "black dot disease of potato"@en ;
+  rdfs:label "Black dot disease of potato"@en ;
   :bioticStressorIsDefinedByBiologicalTaxon wd:Q1310150 ;
 .
 
@@ -1470,24 +1474,28 @@
 :6-15003 a :CropStressor ;
   a :BioticStressor ;
   rdfs:label "Echter Mehltau der gemeinen Felsenbirne"@de ;
+  rdfs:label "Powdery mildew of common serviceberry"@en ;
   :bioticStressorIsDefinedByBiologicalTaxon wd:Q1755354 ;
 .
 
 :6-15002 a :CropStressor ;
   a :BioticStressor ;
   rdfs:label "Echter Mehltau des Sanddorns"@de ;
+  rdfs:label "Powdery mildew of sea buckthorn"@en ;
   :bioticStressorIsDefinedByBiologicalTaxon wd:Q1755354 ;
 .
 
 :6-15001 a :CropStressor ;
   a :BioticStressor ;
   rdfs:label "Echter Mehltau der Eberesche"@de ;
+  rdfs:label "Powdery mildew of rowan"@en ;
   :bioticStressorIsDefinedByBiologicalTaxon wd:Q1755354 ;
 .
 
 :6-15000 a :CropStressor ;
   a :BioticStressor ;
   rdfs:label "Echter Mehltau der Schwarzen Apfelbeere"@de ;
+  rdfs:label "Powdery mildew of black chokeberry"@en ;
   :bioticStressorIsDefinedByBiologicalTaxon wd:Q1755354 ;
 .
 
@@ -1508,24 +1516,28 @@
 :6-10464 a :CropStressor ;
   a :BioticStressor ;
   rdfs:label "Kohldrehherzgallmücke"@de ;
+  rdfs:label "Cabbage gall midge"@en ;
   :bioticStressorIsDefinedByBiologicalTaxon wd:Q1778497 ;
 .
 
 :6-10579 a :CropStressor ;
   a :BioticStressor ;
   rdfs:label "Kohlschotenrüssler"@de ;
+  rdfs:label "Cabbage seedpod weevil"@en ;
   :bioticStressorIsDefinedByBiologicalTaxon wd:Q1778703 ;
 .
 
 :6-10570 a :CropStressor ;
   a :BioticStressor ;
   rdfs:label "Prozessionsspinner"@de ;
+  rdfs:label "Processionary caterpillars"@en ;
   :bioticStressorIsDefinedByBiologicalTaxon wd:Q1892046 ;
 .
 
 :6-10388 a :CropStressor ;
   a :BioticStressor ;
   rdfs:label "Blattkäfer"@de ;
+  rdfs:label "Leaf beetles"@en ;
   :bioticStressorIsDefinedByBiologicalTaxon wd:Q193407 ;
 .
 
@@ -3265,10 +3277,12 @@
 .
 
 :6-11131 a :CropStressor ;
+  a :BioticStressor ;
   rdfs:label "Breitblättrige Unkräuter"@de ;
 .
 
 :6-11103 a :CropStressor ;
+  a :BioticStressor ;
   rdfs:label "Samen- und bodenbürtige Krankheiten"@de ;
 .
 
@@ -3287,6 +3301,7 @@
 
 :6-13677 a :CropStressor ;
   rdfs:label "Hemmung des Triebwachstums"@de ;
+  rdfs:label "Inhibition of shoot growth"@en ;
 .
 
 :6-11264 a :CropStressor ;
@@ -3294,7 +3309,9 @@
 .
 
 :6-12329 a :CropStressor ;
+  a :BioticStressor ;
   rdfs:label "Minierende Raupen"@de ;
+  rdfs:label "Leaf-mining caterpillars"@en ;
 .
 
 :6-10673 a :CropStressor ;
@@ -3303,13 +3320,11 @@
 .
 
 :6-10585 a :CropStressor ;
-  a :AbioticStressor ;
   rdfs:label "Desinfektion"@de ;
   rdfs:label "Disinfection"@en ;
 .
 
 :6-12434 a :CropStressor ;
-  a :AbioticStressor ;
   rdfs:label "Abbrennen von Stockausschlägen"@de ;
   rdfs:label "Removal of suckers"@en ;
 .
