@@ -16,7 +16,8 @@ if __name__ == "__main__":
         "data/products.ttl",
         "data/companies.ttl",
         "data/hazard-statements.ttl",
-        "data/crops.ttl"
+        "data/crops.ttl",
+        "data/crop-stressors.ttl"
     ]
     output_file = "graph/plant-protection.ttl"
     merge_ttl_files(file_list, output_file)

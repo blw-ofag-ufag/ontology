@@ -70,6 +70,7 @@ URL <- function(x) sprintf("<%s>", x)
 # 3: Address (of a company)
 # 4: Hazard statement
 # 5: Crop
+# 6: Pest
 
 # ------------------------------------------------------------------
 # DOWNLOAD THE SWISS PLANT PROTECTION REGISTRY AS AN XML FILE
@@ -346,7 +347,7 @@ cat("
 
 ")
 
-# Find all Detail nodes within the City MetaData
+# Find all Detail nodes within the Culture MetaData
 crops <- xml_find_all(xml_data, ".//MetaData[@name='Culture']/Detail")
 
 # loop over all crops
@@ -369,4 +370,53 @@ for (i in 1:length(crops)) {
 sink()
 
 
+# ------------------------------------------------------------------
+# Write data about pests
+# ------------------------------------------------------------------
+
+# Read JSON file with data
+stressors = jsonlite::read_json("mapping-tables/crop-stressors.json")
+
+# Quality check: Is there a pest missing in the JSON file?
+pests = xml_find_all(xml_data, ".//MetaData[@name='Pest']/Detail")
+a = pests |> xml_attr("primaryKey")
+b = sapply(stressors, function(x) x["id"]) |> unlist() |> unname() |> as.character()
+if(all(a%in%b)) cat("Congrats, the JSON is (still) complete!") else cat("The JSON is missing a few items:\n\n", as.character(pests[which(!a%in%b)]))
+
+
+sink("data/crop-stressors.ttl")
+
+cat("
+@prefix : <https://agriculture.ld.admin.ch/foag/plant-protection#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+
+")
+
+# Write RDF data
+for (i in 1:length(stressors)) {
+  
+  iri = IRI("6", stressors[[i]]$id)
+  de = unlist(stressors[[i]]$labels$de)
+  en = unlist(stressors[[i]]$labels$en)
+  taxa = unlist(stressors[[i]]$wikidata)
+  biotic = stressors[[i]]$biotic
+  
+  sprintf("%s a :CropStressor ;\n", iri) |> cat()
+  if(is.null(biotic)) cat("") else {
+    if(biotic) sprintf("  a :BioticStressor ;\n") |> cat() else sprintf("  a :AbioticStressor ;\n") |> cat()
+  }
+  if(length(de)>0) sprintf("  rdfs:label %s ;\n", literal(de[[1]], lang = "de")) |> cat()
+  if(length(en)>0) sprintf("  rdfs:label %s ;\n", literal(en[[1]], lang = "en")) |> cat()
+  if(length(taxa)>0) {
+    for (taxon in taxa) {
+      sprintf("  :bioticStressorIsDefinedByBiologicalTaxon wd:%s ;\n", taxon) |> cat()
+    }
+  }
+  cat(".\n\n")
+}
+
+sink()
 
