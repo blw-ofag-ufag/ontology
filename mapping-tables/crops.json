@@ -1,0 +1,6442 @@
+[
+  {
+    "srppp-id": 11393,
+    "label": {
+      "de": ["Sorghum", "Mohrenhirse", "Sorghumhirse", "Besenkorn", "Dari"],
+      "fr": ["Sorgho commun", "Mil commun"],
+      "it": ["Sorgo", "Grano di scopa"],
+      "en": ["Sorghum", "Great millet", "Broomcorn", "Guinea corn", "Durra", "Imphee", "Jowar", "Milo"],
+      "la": ["Sorghum bicolor"]
+    },
+    "comment": {
+      "de": "Sorghum ist eine vielseitige Getreidepflanze, die vor allem in warmen Klimazonen angebaut wird.",
+      "fr": "Le sorgho est une céréale polyvalente cultivée principalement dans les climats chauds.",
+      "it": "Il sorgo è un cereale versatile coltivato principalmente in climi caldi.",
+      "en": "Sorghum is a versatile cereal crop primarily grown in warm climates."
+    },
+    "wikidata-iri": ["Q332062"],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },  
+  {
+    "srppp-id": 12628,
+    "label": {
+      "de": ["Rosenwurz"],
+      "fr": ["Orpin rose", "Racine d'or"],
+      "it": ["Rhodiola rosea", "Radice d'oro"],
+      "en": ["Rhodiola rosea", "Golden root", "Rose root"],
+      "la": ["Rhodiola rosea"]
+    },
+    "comment": {
+      "de": "Rosenwurz ist eine Heilpflanze, die in kalten Regionen wächst und zur Stressbewältigung eingesetzt wird.",
+      "fr": "L'orpin rose est une plante médicinale utilisée pour ses propriétés adaptogènes dans les climats froids.",
+      "it": "La Rhodiola rosea è una pianta medicinale che cresce in regioni fredde ed è nota per i suoi effetti adattogeni.",
+      "en": "Rhodiola rosea is a medicinal plant known for its adaptogenic properties, thriving in cold regions."
+    },
+    "wikidata-iri": ["Q161665"],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10562]
+  },
+  {
+    "srppp-id": 12629,
+    "label": {
+      "de": ["Traubensilberkerze", "Schwarze Schlangenwurzel"],
+      "fr": ["Actée à grappes", "Cimicaire à grappes"],
+      "it": ["Actaea racemosa"],
+      "en": ["Black cohosh", "Black bugbane", "Black snakeroot", "Fairy candle"],
+      "la": ["Actaea racemosa"]
+    },
+    "comment": {
+      "de": "Die Traubensilberkerze ist eine mehrjährige Pflanze, die in Nordamerika beheimatet ist und traditionell zur Linderung von Wechseljahresbeschwerden verwendet wird.",
+      "fr": "L'actée à grappes est une plante vivace originaire d'Amérique du Nord, traditionnellement utilisée pour soulager les symptômes de la ménopause.",
+      "it": "L'Actaea racemosa è una pianta perenne originaria del Nord America, utilizzata tradizionalmente per alleviare i sintomi della menopausa.",
+      "en": "Black cohosh is a perennial plant native to North America, traditionally used to alleviate menopausal symptoms."
+    },
+    "wikidata-iri": ["Q682257"],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10563]
+  },  
+  {
+    "srppp-id": 12630,
+    "label": {
+        "de": ["Spitzwegerich"],
+        "fr": ["Plantain lancéolé"],
+        "it": ["Piantaggine lanciuola"],
+        "en": ["Plantago lanceolata"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 14799,
+    "label": {
+        "de": ["Eberesche"],
+        "fr": ["Sorbier des oiseleurs"],
+        "it": ["Sorbo degli ucellatori"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 12626,
+    "label": {
+        "de": ["Majoran"],
+        "fr": ["Marjolaine"],
+        "it": ["Maggiorana "],
+        "en": ["Marjoram"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 12627,
+    "label": {
+      "de": ["Oregano", "Dost", "Wilder Majoran"],
+      "fr": ["Origan", "Marjolaine sauvage"],
+      "it": ["Origano", "Origano comune"],
+      "en": ["Oregano", "Wild marjoram"],
+      "la": ["Origanum vulgare"]
+    },
+    "comment": {
+      "de": "Oregano, auch bekannt als Wilder Majoran, ist ein aromatisches Kraut, das häufig in der mediterranen Küche verwendet wird.",
+      "fr": "L'origan, également appelé marjolaine sauvage, est une herbe aromatique couramment utilisée dans la cuisine méditerranéenne.",
+      "it": "L'origano, noto anche come origano comune, è un'erba aromatica ampiamente utilizzata nella cucina mediterranea.",
+      "en": "Oregano, also known as wild marjoram, is an aromatic herb commonly used in Mediterranean cuisine."
+    },
+    "wikidata-iri": ["Q134283"],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10564]
+  },
+  {
+    "srppp-id": 14786,
+    "label": {
+        "de": ["Sanddorn"],
+        "fr": ["Argousier"],
+        "it": ["Olivello spinoso"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 14787,
+    "label": {
+        "de": ["Schwarze Maulbeere"],
+        "fr": ["Mûrier noir"],
+        "it": ["Moro nero"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 14801,
+    "label": {
+        "de": ["Gemeine Felsenbirne"],
+        "fr": ["Amélavier commun"],
+        "it": ["Pero corvino"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 15866,
+    "label": {
+        "de": ["Windengewächse (Convolvulaceae)"],
+        "fr": ["Convolvulacées (Convolvulaceae)"],
+        "it": ["Convolvulaceae"],
+        "en": ["Convolvulaceae"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 14729,
+    "label": {
+      "de": ["Hanf", "Nutzhanf"],
+      "fr": ["Chanvre", "Chanvre industriel"],
+      "it": ["Canapa", "Canapa industriale"],
+      "en": ["Hemp", "Industrial hemp"],
+      "la": ["Cannabis sativa"]
+    },
+    "comment": {
+      "de": "Hanf ist eine vielseitige Pflanze, die für industrielle und konsumierbare Zwecke angebaut wird.",
+      "fr": "Le chanvre est une plante polyvalente cultivée pour des usages industriels et de consommation.",
+      "it": "La canapa è una pianta versatile coltivata per scopi industriali e di consumo.",
+      "en": "Hemp is a versatile plant cultivated for industrial and consumable purposes."
+    },
+    "wikidata-iri": ["Q26726"],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [12069]
+  },
+  {
+    "srppp-id": 11984,
+    "label": {
+        "de": ["Anemone"],
+        "fr": ["Anémone"],
+        "it": ["Anemone"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 11985,
+    "label": {
+        "de": ["Ranunkel"],
+        "fr": ["Ranunculus"],
+        "it": ["Ranuncolo"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 15269,
+    "label": {
+        "de": ["Kerbelrübe"],
+        "fr": ["Cerfeuil tubéreux"],
+        "it": ["Cerfoglio bulboso"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10327,
+    "label": {
+        "de": ["Löwenzahn"],
+        "fr": ["Dent-de-lion"],
+        "it": ["Dente di leone"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10093]
+  },
+  {
+    "srppp-id": 10326,
+    "label": {
+        "de": ["Radicchio- und Cicorino-Typen"],
+        "fr": ["Types de radicchio/trévises et cicorino"],
+        "it": ["Tipi di radicchio e cicorino"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10325]
+  },
+  {
+    "srppp-id": 10325,
+    "label": {
+        "de": ["Endivien und Blattzichorien"],
+        "fr": ["Chicorée pommée et chicorée à feuilles"],
+        "it": ["Indivia e cicoria da foglia"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10093]
+  },
+  {
+    "srppp-id": 10323,
+    "label": {
+        "de": ["Schnittsalat"],
+        "fr": ["Laitue à tondre"],
+        "it": ["Lattuga da taglio"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9944]
+  },
+  {
+    "srppp-id": 10320,
+    "label": {
+        "de": ["Kopfsalate"],
+        "fr": ["Laitues pommées"],
+        "it": ["Insalate cappuccio"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10304]
+  },
+  {
+    "srppp-id": 10335,
+    "label": {
+        "de": ["Tomaten Spezialitäten"],
+        "fr": ["Tomates, spécialités"],
+        "it": ["Varietà particolari di pomodoro"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10027]
+  },
+  {
+    "srppp-id": 10333,
+    "label": {
+        "de": ["Rispentomaten"],
+        "fr": ["Tomate à grappe"],
+        "it": ["Pomodoro ramato"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10027]
+  },
+  {
+    "srppp-id": 10332,
+    "label": {
+        "de": ["Cherrytomaten"],
+        "fr": ["Tomate-cerise"],
+        "it": ["Pomodoro ciliegia"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10027]
+  },
+  {
+    "srppp-id": 10330,
+    "label": {
+        "de": ["Puffbohne"],
+        "fr": ["Fève"],
+        "it": ["Fave"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9957]
+  },
+  {
+    "srppp-id": 10329,
+    "label": {
+        "de": ["Schnittmangold"],
+        "fr": ["Bette à tondre"],
+        "it": ["Bietola da taglio"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10306]
+  },
+  {
+    "srppp-id": 10328,
+    "label": {
+        "de": ["Krautstiel"],
+        "fr": ["Bette à côte"],
+        "it": ["Costa"],
+        "en": ["Swiss chard "],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10306]
+  },
+  {
+    "srppp-id": 11820,
+    "label": {
+        "de": ["Ysop"],
+        "fr": ["Hysope"],
+        "it": ["Issopo"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10186]
+  },
+  {
+    "srppp-id": 10310,
+    "label": {
+        "de": ["Kürbisse mit geniessbarer Schale"],
+        "fr": ["Courges à peau comestible"],
+        "it": ["Zucche con buccia commestibile"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10017]
+  },
+  {
+    "srppp-id": 10311,
+    "label": {
+        "de": ["Liebstöckel"],
+        "fr": ["Livèche"],
+        "it": ["Levistico"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10186]
+  },
+  {
+    "srppp-id": 10308,
+    "label": {
+        "de": ["Salbei"],
+        "fr": ["Sauge"],
+        "it": ["Salvia"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10186]
+  },
+  {
+    "srppp-id": 10309,
+    "label": {
+        "de": ["Bohnenkraut"],
+        "fr": ["Sarriette"],
+        "it": ["Santoreggia"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10186]
+  },
+  {
+    "srppp-id": 11816,
+    "label": {
+        "de": ["Kerbel"],
+        "fr": ["Cerfeuil"],
+        "it": ["Cerfoglio"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10186]
+  },
+  {
+    "srppp-id": 10306,
+    "label": {
+        "de": ["Mangold"],
+        "fr": ["Bette"],
+        "it": ["Bietola"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10068]
+  },
+  {
+    "srppp-id": 11817,
+    "label": {
+        "de": ["Thymian"],
+        "fr": ["Thym"],
+        "it": ["Timo"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10186]
+  },
+  {
+    "srppp-id": 10307,
+    "label": {
+        "de": ["Basilikum"],
+        "fr": ["Basilic"],
+        "it": ["Basilico"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10186]
+  },
+  {
+    "srppp-id": 10304,
+    "label": {
+        "de": ["Lactuca-Salate"],
+        "fr": ["Salades lactuca"],
+        "it": ["Insalate del genere Lactuca"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10093]
+  },
+  {
+    "srppp-id": 11819,
+    "label": {
+        "de": ["Koriander"],
+        "fr": ["Coriandre"],
+        "it": ["Coriandolo"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10186]
+  },
+  {
+    "srppp-id": 10305,
+    "label": {
+        "de": ["Asia-Salate (Brassicaceae)"],
+        "fr": ["Salades Asia (Brassicaceae)"],
+        "it": ["Insalate asiatiche (Brassicacee)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9962]
+  },
+  {
+    "srppp-id": 10318,
+    "label": {
+        "de": ["Cima di Rapa"],
+        "fr": ["Cima di rapa"],
+        "it": ["Cima di rapa"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9962]
+  },
+  {
+    "srppp-id": 10319,
+    "label": {
+        "de": ["Brunnenkresse"],
+        "fr": ["Cresson de fontaine"],
+        "it": ["Crescione acquatico"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9962]
+  },
+  {
+    "srppp-id": 10316,
+    "label": {
+        "de": ["Kopfkohle"],
+        "fr": ["Choux pommés"],
+        "it": ["Cavoli a testa"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10020]
+  },
+  {
+    "srppp-id": 10317,
+    "label": {
+        "de": ["Stielmus"],
+        "fr": ["Navet à tondre"],
+        "it": ["Cavoli / rape da taglio"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10210]
+  },
+  {
+    "srppp-id": 10314,
+    "label": {
+        "de": ["Romanesco"],
+        "fr": ["Romanesco"],
+        "it": ["Romanesco"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10284]
+  },
+  {
+    "srppp-id": 10315,
+    "label": {
+        "de": ["Pak-Choi"],
+        "fr": ["Pakchoi"],
+        "it": ["Pak-Choi"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10210]
+  },
+  {
+    "srppp-id": 10312,
+    "label": {
+        "de": ["Estragon"],
+        "fr": ["Estragon"],
+        "it": ["Dragoncello"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10186]
+  },
+  {
+    "srppp-id": 11321,
+    "label": {
+        "de": ["Hartweizen"],
+        "fr": ["Blé dur"],
+        "it": ["Grano duro"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10052]
+  },
+  {
+    "srppp-id": 11325,
+    "label": {
+        "de": ["Klee zur Saatgutproduktion"],
+        "fr": ["Trèfles pour la production de semences"],
+        "it": ["Trifoglio per la produzione di sementi"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 11326,
+    "label": {
+        "de": ["Kartoffeln zur Pflanzgutproduktion"],
+        "fr": ["Pommes de terre pour la production de plants"],
+        "it": ["Patate per la produzione di tuberi-seme"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10086]
+  },
+  {
+    "srppp-id": 10340,
+    "label": {
+        "de": ["Lippenblütler (Labiatae)"],
+        "fr": ["Lamiacées (Labiatae)"],
+        "it": ["Lamiacee (Labiatae)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10195]
+  },
+  {
+    "srppp-id": 10341,
+    "label": {
+        "de": ["Stachys"],
+        "fr": ["Crosnes du japon"],
+        "it": ["Tuberina"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10340]
+  },
+  {
+    "srppp-id": 10342,
+    "label": {
+        "de": ["Portulak"],
+        "fr": ["Pourpier"],
+        "it": ["Portulaca"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10025]
+  },
+  {
+    "srppp-id": 10336,
+    "label": {
+        "de": ["Gemüsepaprika"],
+        "fr": ["Poivron doux"],
+        "it": ["Peperone dolce"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10029]
+  },
+  {
+    "srppp-id": 10337,
+    "label": {
+        "de": ["Bundzwiebeln"],
+        "fr": ["Oignons en botte"],
+        "it": ["Cipollotti a mazzi"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10031]
+  },
+  {
+    "srppp-id": 10338,
+    "label": {
+        "de": ["Spargelgewächse (Asparagaceae)"],
+        "fr": ["Asparagacées (Asparagaceae)"],
+        "it": ["Asparagacee (Asparagaceae)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10195]
+  },
+  {
+    "srppp-id": 10339,
+    "label": {
+        "de": ["Süssgräser (Poaceae)"],
+        "fr": ["Poacées (Gramineae)"],
+        "it": ["Poacee (Graminaceae)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10195]
+  },
+  {
+    "srppp-id": 10346,
+    "label": {
+        "de": ["Speise- und Futterkartoffeln"],
+        "fr": ["Pommes de terre de consommation et fourragère"],
+        "it": ["Patate da tavola e da foraggio"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10086]
+  },
+  {
+    "srppp-id": 9953,
+    "label": {
+        "de": ["Reben"],
+        "fr": ["Vigne"],
+        "it": ["Vite"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10194]
+  },
+  {
+    "srppp-id": 9952,
+    "label": {
+        "de": ["Gehölze (ausserhalb Forst)"],
+        "fr": ["Plantes ligneuses (hors forêt)"],
+        "it": ["Boschetti (al di fuori del bosco)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10190]
+  },
+  {
+    "srppp-id": 10258,
+    "label": {
+        "de": ["Einlegegurken"],
+        "fr": ["Cornichons"],
+        "it": ["Cetrioli per conserva"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10016]
+  },
+  {
+    "srppp-id": 9955,
+    "label": {
+        "de": ["Nelken"],
+        "fr": ["Oeillet"],
+        "it": ["Garofani"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10015, 12097]
+  },
+  {
+    "srppp-id": 10256,
+    "label": {
+        "de": ["Zierkürbis"],
+        "fr": ["Courge d'ornement"],
+        "it": ["Zucca ornamentale"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [12097]
+  },
+  {
+    "srppp-id": 9954,
+    "label": {
+        "de": ["Forstliche Pflanzgärten"],
+        "fr": ["Pépinières forestières"],
+        "it": ["Vivai forestali"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [12465, 12464]
+  },
+  {
+    "srppp-id": 9957,
+    "label": {
+        "de": ["Hülsenfrüchtler (Fabaceae)"],
+        "fr": ["Fabacées (légumineuses)"],
+        "it": ["Fabacee (Leguminose)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10195]
+  },
+  {
+    "srppp-id": 9956,
+    "label": {
+        "de": ["Liegendes Rundholz im Wald und auf Lagerplätzen"],
+        "fr": ["Grumes en forêt et sur les places de stockage"],
+        "it": ["Tronchi abbattuti nella foresta e presso piazzali di deposito"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10202]
+  },
+  {
+    "srppp-id": 10261,
+    "label": {
+        "de": ["Holzpaletten, Packholz, Stammholz"],
+        "fr": ["Palette en bois, bois d'emballage, bois en général"],
+        "it": ["Palette in legno, legno da imballaggio, legno non lavorato"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 9959,
+    "label": {
+        "de": ["Kernobst"],
+        "fr": ["Fruits à pépins"],
+        "it": ["Frutta a granelli"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10192]
+  },
+  {
+    "srppp-id": 10260,
+    "label": {
+        "de": ["Hartschalenobst"],
+        "fr": ["Noix en général"],
+        "it": ["Frutta con guscio"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10192]
+  },
+  {
+    "srppp-id": 10267,
+    "label": {
+        "de": ["Wolliger Fingerhut"],
+        "fr": ["Digitale lanifère"],
+        "it": ["Digitale lanata"],
+        "en": ["Grecian foxglove"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10254]
+  },
+  {
+    "srppp-id": 9961,
+    "label": {
+        "de": ["Korbblütler (Asteraceae)"],
+        "fr": ["Composées (Asteracea)"],
+        "it": ["Composite (Asteracee)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10195]
+  },
+  {
+    "srppp-id": 10266,
+    "label": {
+        "de": ["Rondini"],
+        "fr": ["Rondini"],
+        "it": ["Rondini"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10310]
+  },
+  {
+    "srppp-id": 9960,
+    "label": {
+        "de": ["Knöterichgewächse (Polygonaceae)"],
+        "fr": ["Polygonacées"],
+        "it": ["Poligonacee"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10195]
+  },
+  {
+    "srppp-id": 9963,
+    "label": {
+        "de": ["Liliengewächse (Liliaceae)"],
+        "fr": ["Liliacées"],
+        "it": ["Liliacee"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10195]
+  },
+  {
+    "srppp-id": 10264,
+    "label": {
+        "de": ["Speisekürbisse (ungeniessbare Schale)"],
+        "fr": ["Courges (écorce non comestible)"],
+        "it": ["Zucche (buccia non commestibile)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10017]
+  },
+  {
+    "srppp-id": 9962,
+    "label": {
+        "de": ["Kreuzblütler (Brassicaceae)"],
+        "fr": ["Crucifères (Brassicaceae)"],
+        "it": ["Crocifere (Brassicacee)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10195]
+  },
+  {
+    "srppp-id": 10271,
+    "label": {
+        "de": ["Emmer"],
+        "fr": ["Amidonnier"],
+        "it": ["Farro"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10167, 10052]
+  },
+  {
+    "srppp-id": 9965,
+    "label": {
+        "de": ["Steinobst"],
+        "fr": ["Fruits à noyaux"],
+        "it": ["Frutta a nocciolo"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10192]
+  },
+  {
+    "srppp-id": 10270,
+    "label": {
+        "de": ["Minze"],
+        "fr": ["Menthe"],
+        "it": ["Menta"],
+        "en": ["Mint"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10186]
+  },
+  {
+    "srppp-id": 9967,
+    "label": {
+        "de": ["Zier- und Sportrasen"],
+        "fr": ["Gazon d'ornement et terrains de sport"],
+        "it": ["Tappeti erbosi e terreni sportivi"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10190]
+  },
+  {
+    "srppp-id": 10268,
+    "label": {
+        "de": ["Melisse"],
+        "fr": ["Mélisse"],
+        "it": ["Melissa"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 9968,
+    "label": {
+        "de": ["Stauden"],
+        "fr": ["Plantes vivaces"],
+        "it": ["Arbusti"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10190]
+  },
+  {
+    "srppp-id": 10242,
+    "label": {
+        "de": ["Dill"],
+        "fr": ["Aneth"],
+        "it": ["Aneto"],
+        "en": ["Dill"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10186]
+  },
+  {
+    "srppp-id": 9969,
+    "label": {
+        "de": ["Sommerflor"],
+        "fr": ["Fleurs estivales"],
+        "it": ["Fiori estivi"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10176]
+  },
+  {
+    "srppp-id": 10243,
+    "label": {
+        "de": ["Baldrian"],
+        "fr": ["Valériane"],
+        "it": ["Valeriana"],
+        "en": ["Valerian"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10195]
+  },
+  {
+    "srppp-id": 14273,
+    "label": {
+        "de": ["Kichererbse"],
+        "fr": ["Pois chiche"],
+        "it": ["Cece"],
+        "en": ["Chickpea"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 9970,
+    "label": {
+        "de": ["Apfel"],
+        "fr": ["Pommier"],
+        "it": ["Melo"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9959]
+  },
+  {
+    "srppp-id": 9971,
+    "label": {
+        "de": ["Aprikose"],
+        "fr": ["Abricotier"],
+        "it": ["Albicocco"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9965]
+  },
+  {
+    "srppp-id": 9972,
+    "label": {
+        "de": ["Birne"],
+        "fr": ["Poirier"],
+        "it": ["Pero"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10296]
+  },
+  {
+    "srppp-id": 9973,
+    "label": {
+        "de": ["Blumenkohl"],
+        "fr": ["Chou-fleur"],
+        "it": ["Cavolfiore"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10284]
+  },
+  {
+    "srppp-id": 10244,
+    "label": {
+        "de": ["Kümmel"],
+        "fr": ["Carvi"],
+        "it": ["Carvi"],
+        "en": ["Caraway"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10186]
+  },
+  {
+    "srppp-id": 9974,
+    "label": {
+        "de": ["Broccoli"],
+        "fr": ["Brocoli"],
+        "it": ["Broccoli"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10284]
+  },
+  {
+    "srppp-id": 9975,
+    "label": {
+        "de": ["Brombeere"],
+        "fr": ["Mûre"],
+        "it": ["Mora"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10297]
+  },
+  {
+    "srppp-id": 10245,
+    "label": {
+        "de": ["Rucola"],
+        "fr": ["Roquette"],
+        "it": ["Rucola"],
+        "en": ["Rocket"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9962]
+  },
+  {
+    "srppp-id": 9977,
+    "label": {
+        "de": ["Chinakohl"],
+        "fr": ["Chou de Chine"],
+        "it": ["Cavolo cinese"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10210]
+  },
+  {
+    "srppp-id": 11335,
+    "label": {
+        "de": ["Liliengewächse (Zierpflanzen)"],
+        "fr": ["Liliacées (plantes ornementales)"],
+        "it": ["Liliacee (pianti ornamentali)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [12097]
+  },
+  {
+    "srppp-id": 10251,
+    "label": {
+        "de": ["Baby-Leaf"],
+        "fr": ["Baby-Leaf"],
+        "it": ["Baby-Leaf"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10248,
+    "label": {
+        "de": ["Trockenreis"],
+        "fr": ["Riz semis sur terrain sec"],
+        "it": ["Riso seminato su terreno asciutto"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 9978,
+    "label": {
+        "de": ["Erdbeere"],
+        "fr": ["Fraise"],
+        "it": ["Fragola"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10193]
+  },
+  {
+    "srppp-id": 9979,
+    "label": {
+        "de": ["Heidelbeere"],
+        "fr": ["Myrtille"],
+        "it": ["Mirtillo"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10193]
+  },
+  {
+    "srppp-id": 9980,
+    "label": {
+        "de": ["Himbeere"],
+        "fr": ["Framboise"],
+        "it": ["Lampone"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10297]
+  },
+  {
+    "srppp-id": 10254,
+    "label": {
+        "de": ["Medizinalkräuter"],
+        "fr": ["Plantes médicinales"],
+        "it": ["Erbe medicinali"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 11877,
+    "label": {
+        "de": ["Brachland"],
+        "fr": ["Friche"],
+        "it": ["Terreno incolto"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 9981,
+    "label": {
+        "de": ["Karotten"],
+        "fr": ["Carotte"],
+        "it": ["Carote"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9951]
+  },
+  {
+    "srppp-id": 10252,
+    "label": {
+        "de": ["Färberdistel (Saflor)"],
+        "fr": ["Carthame"],
+        "it": ["Cartamo"],
+        "en": ["Safflower"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 11878,
+    "label": {
+        "de": ["Humusdeponie"],
+        "fr": ["Dépôt de terre végétale"],
+        "it": ["Deposito di terreno vegetale"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 9982,
+    "label": {
+        "de": ["Kirsche"],
+        "fr": ["Cerisier"],
+        "it": ["Ciliegio"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9965]
+  },
+  {
+    "srppp-id": 10253,
+    "label": {
+        "de": ["Pastinake"],
+        "fr": ["Panais"],
+        "it": ["Pastinaca"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9951]
+  },
+  {
+    "srppp-id": 9983,
+    "label": {
+        "de": ["Knoblauch"],
+        "fr": ["Ail"],
+        "it": ["Aglio"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9963]
+  },
+  {
+    "srppp-id": 10288,
+    "label": {
+        "de": ["Mini-Kiwi"],
+        "fr": ["Mini-Kiwi (Kiwaï)"],
+        "it": ["Mini-Kiwi"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10193]
+  },
+  {
+    "srppp-id": 10290,
+    "label": {
+        "de": ["Weihnachtsbäume"],
+        "fr": ["Arbres de Noël"],
+        "it": ["Alberi di Natale"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10111, 12096]
+  },
+  {
+    "srppp-id": 10293,
+    "label": {
+        "de": ["Bohnen ohne Hülsen"],
+        "fr": ["Haricots écossés"],
+        "it": ["Fagioli senza baccello"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10128]
+  },
+  {
+    "srppp-id": 10292,
+    "label": {
+        "de": ["Bohnen mit Hülsen"],
+        "fr": ["Haricots non écossés"],
+        "it": ["Fagioli con baccello"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10128]
+  },
+  {
+    "srppp-id": 10295,
+    "label": {
+        "de": ["Erbsen mit Hülsen"],
+        "fr": ["Pois non écossés"],
+        "it": ["Piselli con baccello"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10034]
+  },
+  {
+    "srppp-id": 10294,
+    "label": {
+        "de": ["Erbsen ohne Hülsen"],
+        "fr": ["Pois écossés"],
+        "it": ["Piselli senza baccello"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10034]
+  },
+  {
+    "srppp-id": 12689,
+    "label": {
+        "de": ["Linse"],
+        "fr": ["Lentille"],
+        "it": ["Lenticchia"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9957]
+  },
+  {
+    "srppp-id": 10297,
+    "label": {
+        "de": ["Rubus Arten"],
+        "fr": ["Espèces de Rubus"],
+        "it": ["Specie di rubus"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10193]
+  },
+  {
+    "srppp-id": 13238,
+    "label": {
+        "de": ["Lager- und Produktionsräume allgemein"],
+        "fr": ["Lager- und Produktionsräume allgemein"],
+        "it": ["Lager- und Produktionsräume allgemein"],
+        "en": ["Lager- und Produktionsräume allgemein"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10296,
+    "label": {
+        "de": ["Birne / Nashi"],
+        "fr": ["Poirier / nashi"],
+        "it": ["Pero / Nashi"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9959]
+  },
+  {
+    "srppp-id": 10299,
+    "label": {
+        "de": ["Brassica rapa-Rüben"],
+        "fr": ["Rave de Brassica rapa "],
+        "it": ["Rapa di Brassica rapa "],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10298]
+  },
+  {
+    "srppp-id": 10298,
+    "label": {
+        "de": ["Speisekohlrüben"],
+        "fr": ["Rave de Brassica rapa et B. napus"],
+        "it": ["Rapa di Brassica rapa e B. napus"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9962]
+  },
+  {
+    "srppp-id": 13785,
+    "label": {
+        "de": ["Blaue Heckenkirsche"],
+        "fr": ["Camérisier bleu"],
+        "it": ["Caprifoglio turchino"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10300,
+    "label": {
+        "de": ["Brassica napus-Rüben"],
+        "fr": ["Rave de Brassica napus"],
+        "it": ["Rapa di Brassica napus"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10298]
+  },
+  {
+    "srppp-id": 13784,
+    "label": {
+        "de": ["Weichweizen"],
+        "fr": ["Blé tendre"],
+        "it": ["Grano tenero"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10052]
+  },
+  {
+    "srppp-id": 10303,
+    "label": {
+        "de": ["Bodenkohlrabi"],
+        "fr": ["Rutabaga"],
+        "it": ["Cavolo navone"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10300]
+  },
+  {
+    "srppp-id": 10272,
+    "label": {
+        "de": ["Kardy"],
+        "fr": ["Cardon"],
+        "it": ["Cardo"],
+        "en": ["Cardy"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9961]
+  },
+  {
+    "srppp-id": 10274,
+    "label": {
+        "de": ["Rosmarin"],
+        "fr": ["Romarin"],
+        "it": ["Rosmarino"],
+        "en": ["Rosemary"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10186]
+  },
+  {
+    "srppp-id": 9942,
+    "label": {
+        "de": ["Pflanzen"],
+        "fr": ["Plantes"],
+        "it": ["Piante"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10277,
+    "label": {
+        "de": ["Olive"],
+        "fr": ["Olivier"],
+        "it": ["Olivo"],
+        "en": ["Olive"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10192]
+  },
+  {
+    "srppp-id": 9943,
+    "label": {
+        "de": ["Wintergerste"],
+        "fr": ["Orge d'automne"],
+        "it": ["Orzo autunnale"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10167, 10083]
+  },
+  {
+    "srppp-id": 10279,
+    "label": {
+        "de": ["Verarbeitungsräume"],
+        "fr": ["Locaux de transformation"],
+        "it": ["Locali per la lavorazione"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10203]
+  },
+  {
+    "srppp-id": 10280,
+    "label": {
+        "de": ["Lagerräume"],
+        "fr": ["Entrepôts"],
+        "it": ["Depositi"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10203]
+  },
+  {
+    "srppp-id": 9946,
+    "label": {
+        "de": ["Sellerie"],
+        "fr": ["Céleri"],
+        "it": ["Sedano "],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9951]
+  },
+  {
+    "srppp-id": 10281,
+    "label": {
+        "de": ["Wurzelpetersilie"],
+        "fr": ["Persil à grosse racine"],
+        "it": ["Prezzemolo tuberoso"],
+        "en": ["Turnip-rooted parsley"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9951]
+  },
+  {
+    "srppp-id": 9944,
+    "label": {
+        "de": ["Blattsalate (Asteraceae)"],
+        "fr": ["Laitues à tondre (Asteraceae)"],
+        "it": ["Insalate a foglie (Asteracee)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10304]
+  },
+  {
+    "srppp-id": 9945,
+    "label": {
+        "de": ["Winterroggen"],
+        "fr": ["Seigle d'automne"],
+        "it": ["Segale autunnale"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10167, 10120]
+  },
+  {
+    "srppp-id": 10283,
+    "label": {
+        "de": ["Barbarakraut"],
+        "fr": ["Barbarée du printemps"],
+        "it": ["Erba di Santa Barbara vernale"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9962]
+  },
+  {
+    "srppp-id": 10284,
+    "label": {
+        "de": ["Blumenkohle"],
+        "fr": ["Choux (développement de l'inflorescence)"],
+        "it": ["Cavoli a infiorescenza"],
+        "en": ["Flowering brassica"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10020]
+  },
+  {
+    "srppp-id": 9950,
+    "label": {
+        "de": ["Brache"],
+        "fr": ["Jachère"],
+        "it": ["Maggese"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 9951,
+    "label": {
+        "de": ["Doldenblütler (Apiaceae)"],
+        "fr": ["Ombellifères (Apiaceae)"],
+        "it": ["Ombrellifere (Apiacee)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10195]
+  },
+  {
+    "srppp-id": 10285,
+    "label": {
+        "de": ["Andenbeere"],
+        "fr": ["Coqueret du Pérou"],
+        "it": ["Alchechengio"],
+        "en": ["Cape gooseberry"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10026]
+  },
+  {
+    "srppp-id": 10286,
+    "label": {
+        "de": ["Pepino"],
+        "fr": ["Poire melon"],
+        "it": ["Pepino"],
+        "en": ["Pear melon"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10026]
+  },
+  {
+    "srppp-id": 9948,
+    "label": {
+        "de": ["Baldriangewächse (Valerianaceae)"],
+        "fr": ["Valérianacées"],
+        "it": ["Valerianacee"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10195]
+  },
+  {
+    "srppp-id": 10047,
+    "label": {
+        "de": ["Rosenkohl"],
+        "fr": ["Chou de Bruxelles"],
+        "it": ["Cavoli di Bruxelles"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10020]
+  },
+  {
+    "srppp-id": 10046,
+    "label": {
+        "de": ["Futter- und Zuckerrüben"],
+        "fr": ["Betteraves à sucre et fourragère"],
+        "it": ["Barbabietole da foraggio e da zucchero"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 10044,
+    "label": {
+        "de": ["Kresse"],
+        "fr": ["Cresson de jardin"],
+        "it": ["Crescione"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9962]
+  },
+  {
+    "srppp-id": 10043,
+    "label": {
+        "de": ["Federkohl"],
+        "fr": ["Chou frisé non pommé"],
+        "it": ["Cavolo piuma"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10210]
+  },
+  {
+    "srppp-id": 10042,
+    "label": {
+        "de": ["Chinaschilf"],
+        "fr": ["Roseau de Chine"],
+        "it": ["Miscanto "],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 13832,
+    "label": {
+        "de": ["Lorbeer"],
+        "fr": ["Laurier"],
+        "it": ["Alloro "],
+        "en": ["LURNO "],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10040,
+    "label": {
+        "de": ["Begonia"],
+        "fr": ["Bégonia"],
+        "it": ["Begonia"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [12097, 10021]
+  },
+  {
+    "srppp-id": 10039,
+    "label": {
+        "de": ["Blumenknollen"],
+        "fr": ["Tubercules de fleurs"],
+        "it": ["Radici tuberose floreali"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10190]
+  },
+  {
+    "srppp-id": 10038,
+    "label": {
+        "de": ["Lagerhallen, Mühlen, Silogebäude"],
+        "fr": ["Entrepôts, moulins, silos"],
+        "it": ["Depositi, mulini, sili"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10203]
+  },
+  {
+    "srppp-id": 10037,
+    "label": {
+        "de": ["Jungreben"],
+        "fr": ["Jeune vigne"],
+        "it": ["Ceppi giovani"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9953]
+  },
+  {
+    "srppp-id": 10035,
+    "label": {
+        "de": ["Jostabeere"],
+        "fr": ["Josta"],
+        "it": ["Josta"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10127]
+  },
+  {
+    "srppp-id": 10034,
+    "label": {
+        "de": ["Erbsen"],
+        "fr": ["Pois"],
+        "it": ["Piselli"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9957]
+  },
+  {
+    "srppp-id": 10033,
+    "label": {
+        "de": ["Gemüseportulak"],
+        "fr": ["Pourpier commun"],
+        "it": ["Portulaca estiva"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10342]
+  },
+  {
+    "srppp-id": 10030,
+    "label": {
+        "de": ["Lauch"],
+        "fr": ["Poireau"],
+        "it": ["Porro"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9963]
+  },
+  {
+    "srppp-id": 10031,
+    "label": {
+        "de": ["Zwiebeln"],
+        "fr": ["Oignon"],
+        "it": ["Cipolle"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9963]
+  },
+  {
+    "srppp-id": 10028,
+    "label": {
+        "de": ["Aubergine"],
+        "fr": ["Aubergine"],
+        "it": ["Melanzana"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10026]
+  },
+  {
+    "srppp-id": 10029,
+    "label": {
+        "de": ["Paprika"],
+        "fr": ["Poivron"],
+        "it": ["Peperone"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10026]
+  },
+  {
+    "srppp-id": 10026,
+    "label": {
+        "de": ["Nachtschattengewächse (Solanaceae)"],
+        "fr": ["Solanacées"],
+        "it": ["Solanacee"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10195]
+  },
+  {
+    "srppp-id": 10027,
+    "label": {
+        "de": ["Tomaten"],
+        "fr": ["Tomate"],
+        "it": ["Pomodori"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10026]
+  },
+  {
+    "srppp-id": 10025,
+    "label": {
+        "de": ["Portulakgewächse (Portulacaceae)"],
+        "fr": ["Portulacacées (Portulacaceae)"],
+        "it": ["Portulacee (Portulacaceae)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10195]
+  },
+  {
+    "srppp-id": 10022,
+    "label": {
+        "de": ["Wassermelonen"],
+        "fr": ["Pastèque"],
+        "it": ["Angurie"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10017]
+  },
+  {
+    "srppp-id": 12891,
+    "label": {
+        "de": ["Erntegut"],
+        "fr": ["Denrée stockée"],
+        "it": ["Raccolto stoccato"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10020,
+    "label": {
+        "de": ["Kohlarten"],
+        "fr": ["Choux"],
+        "it": ["Specie di cavoli"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9962]
+  },
+  {
+    "srppp-id": 13362,
+    "label": {
+        "de": ["Gojibeere"],
+        "fr": ["Baies de Goji"],
+        "it": ["Bacche di Goji"],
+        "en": ["Goji berry, wolfberry"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10021,
+    "label": {
+        "de": ["Topf- und Kontainerpflanzen"],
+        "fr": ["Plantes en pot et en container"],
+        "it": ["Pianta in vaso e in container"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10190]
+  },
+  {
+    "srppp-id": 10018,
+    "label": {
+        "de": ["Zucchetti"],
+        "fr": ["Courgette"],
+        "it": ["Zucchine"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10310]
+  },
+  {
+    "srppp-id": 10019,
+    "label": {
+        "de": ["Melonen"],
+        "fr": ["Melons"],
+        "it": ["Meloni"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10017]
+  },
+  {
+    "srppp-id": 10016,
+    "label": {
+        "de": ["Gurken"],
+        "fr": ["Concombre"],
+        "it": ["Cetrioli"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10017]
+  },
+  {
+    "srppp-id": 10017,
+    "label": {
+        "de": ["Kürbisgewächse (Cucurbitaceae)"],
+        "fr": ["Cucurbitacées"],
+        "it": ["Cucurbitacee"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10195]
+  },
+  {
+    "srppp-id": 10008,
+    "label": {
+        "de": ["Raps"],
+        "fr": ["Colza"],
+        "it": ["Colza"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 10011,
+    "label": {
+        "de": ["Zwetschge / Pflaume"],
+        "fr": ["Prunier (pruneau/prune)"],
+        "it": ["Prugno/Susino  "],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9965]
+  },
+  {
+    "srppp-id": 10010,
+    "label": {
+        "de": ["Zuckermais"],
+        "fr": ["Maïs sucré"],
+        "it": ["Mais dolce"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10339]
+  },
+  {
+    "srppp-id": 10005,
+    "label": {
+        "de": ["Spargel"],
+        "fr": ["Asperge"],
+        "it": ["Asparagi"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10338]
+  },
+  {
+    "srppp-id": 10004,
+    "label": {
+        "de": ["Iris"],
+        "fr": ["Iris"],
+        "it": ["Iris"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [12097]
+  },
+  {
+    "srppp-id": 10007,
+    "label": {
+        "de": ["Stachelbeere"],
+        "fr": ["Groseilles à maquereau"],
+        "it": ["Uva spina"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10127]
+  },
+  {
+    "srppp-id": 10006,
+    "label": {
+        "de": ["Spinat"],
+        "fr": ["Épinard"],
+        "it": ["Spinaci"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10068]
+  },
+  {
+    "srppp-id": 10001,
+    "label": {
+        "de": ["Schalotten"],
+        "fr": ["Échalote"],
+        "it": ["Scalogni"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9963]
+  },
+  {
+    "srppp-id": 10000,
+    "label": {
+        "de": ["Mais"],
+        "fr": ["Maïs"],
+        "it": ["Mais"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 10003,
+    "label": {
+        "de": ["Schwarze Johannisbeere"],
+        "fr": ["Cassis"],
+        "it": ["Ribes nero"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10127]
+  },
+  {
+    "srppp-id": 10002,
+    "label": {
+        "de": ["Schnittlauch"],
+        "fr": ["Ciboulette"],
+        "it": ["Erba cipollina"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10186]
+  },
+  {
+    "srppp-id": 9996,
+    "label": {
+        "de": ["Rande"],
+        "fr": ["Betterave à salade"],
+        "it": ["Barbabietola"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10068]
+  },
+  {
+    "srppp-id": 9997,
+    "label": {
+        "de": ["Rettich"],
+        "fr": ["Radis long"],
+        "it": ["Ramolaccio"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9962]
+  },
+  {
+    "srppp-id": 9998,
+    "label": {
+        "de": ["Rhabarber"],
+        "fr": ["Rhubarbe"],
+        "it": ["Rabarbaro"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9960]
+  },
+  {
+    "srppp-id": 9999,
+    "label": {
+        "de": ["Rote Johannisbeere"],
+        "fr": ["Groseilles à grappes"],
+        "it": ["Ribes rosso"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10127]
+  },
+  {
+    "srppp-id": 9992,
+    "label": {
+        "de": ["Pfirsich / Nektarine"],
+        "fr": ["Pêcher / nectarine"],
+        "it": ["Pesco/pesco noce"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9965]
+  },
+  {
+    "srppp-id": 9993,
+    "label": {
+        "de": ["Pflaume"],
+        "fr": ["Prunier (prune)"],
+        "it": ["Prugnolo"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10011]
+  },
+  {
+    "srppp-id": 9994,
+    "label": {
+        "de": ["Quitte"],
+        "fr": ["Cognassier"],
+        "it": ["Cotogno"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9959]
+  },
+  {
+    "srppp-id": 9995,
+    "label": {
+        "de": ["Radies"],
+        "fr": ["Radis de tous les mois"],
+        "it": ["Ravanello"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9962]
+  },
+  {
+    "srppp-id": 9990,
+    "label": {
+        "de": ["Nüsslisalat"],
+        "fr": ["Mâche, rampon"],
+        "it": ["Valerianella"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9948]
+  },
+  {
+    "srppp-id": 9991,
+    "label": {
+        "de": ["Petersilie"],
+        "fr": ["Persil"],
+        "it": ["Prezzemolo"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10186]
+  },
+  {
+    "srppp-id": 9984,
+    "label": {
+        "de": ["Knollenfenchel"],
+        "fr": ["Fenouil bulbeux"],
+        "it": ["Finocchio dolce"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9951]
+  },
+  {
+    "srppp-id": 9985,
+    "label": {
+        "de": ["Knollensellerie"],
+        "fr": ["Céleri-pomme"],
+        "it": ["Sedano rapa"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9946]
+  },
+  {
+    "srppp-id": 9986,
+    "label": {
+        "de": ["Kohlrabi"],
+        "fr": ["Colrave"],
+        "it": ["Cavolo rapa"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10020]
+  },
+  {
+    "srppp-id": 10104,
+    "label": {
+        "de": ["Rosen"],
+        "fr": ["Rosier"],
+        "it": ["Rose"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10190]
+  },
+  {
+    "srppp-id": 10111,
+    "label": {
+        "de": ["Nadelgehölze (Koniferen)"],
+        "fr": ["Conifères"],
+        "it": ["Conifere"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9952]
+  },
+  {
+    "srppp-id": 10110,
+    "label": {
+        "de": ["Blautanne"],
+        "fr": ["Sapin bleu"],
+        "it": ["Abete del Colorado"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10111, 12096]
+  },
+  {
+    "srppp-id": 10109,
+    "label": {
+        "de": ["Rosskastanie"],
+        "fr": ["Marronnier d'Inde"],
+        "it": ["Ippocastano"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10108, 12096]
+  },
+  {
+    "srppp-id": 10099,
+    "label": {
+        "de": ["Azaleen"],
+        "fr": ["Azalée"],
+        "it": ["Azalee"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10100]
+  },
+  {
+    "srppp-id": 10098,
+    "label": {
+        "de": ["Primeln"],
+        "fr": ["Primevères"],
+        "it": ["Primule"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [12097, 10021]
+  },
+  {
+    "srppp-id": 10097,
+    "label": {
+        "de": ["Pelargonien"],
+        "fr": ["Géranium"],
+        "it": ["Geranio"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [12097, 10021]
+  },
+  {
+    "srppp-id": 10096,
+    "label": {
+        "de": ["Chrysantheme"],
+        "fr": ["Chrysanthème"],
+        "it": ["Crisantemo"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10015, 12097]
+  },
+  {
+    "srppp-id": 10103,
+    "label": {
+        "de": ["Kirschlorbeer"],
+        "fr": ["Laurier-cerise"],
+        "it": ["Lauro ceraso"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10108, 12096]
+  },
+  {
+    "srppp-id": 10101,
+    "label": {
+        "de": ["Ziergehölze (ausserhalb Forst)"],
+        "fr": ["Arbustes d'ornement (hors forêt)"],
+        "it": ["Arbusti ornamentali (al di fuori della foresta)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10190]
+  },
+  {
+    "srppp-id": 10100,
+    "label": {
+        "de": ["Rhododendron"],
+        "fr": ["Rhododendron"],
+        "it": ["Rododendro"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10108, 12096]
+  },
+  {
+    "srppp-id": 10090,
+    "label": {
+        "de": ["Gladiole"],
+        "fr": ["Glaïeul"],
+        "it": ["Gladiolo"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10015, 12097]
+  },
+  {
+    "srppp-id": 10091,
+    "label": {
+        "de": ["Walnuss"],
+        "fr": ["Noyer"],
+        "it": ["Noce comune"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10117]
+  },
+  {
+    "srppp-id": 10088,
+    "label": {
+        "de": ["Futterrübe"],
+        "fr": ["Betterave fourragère"],
+        "it": ["Barbabietola da foraggio"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10046]
+  },
+  {
+    "srppp-id": 10089,
+    "label": {
+        "de": ["Zuckerrübe"],
+        "fr": ["Betterave à sucre"],
+        "it": ["Barbabietola da zucchero"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10046]
+  },
+  {
+    "srppp-id": 10094,
+    "label": {
+        "de": ["Winterweizen"],
+        "fr": ["Blé d'automne"],
+        "it": ["Frumento autunnale"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10167, 13784]
+  },
+  {
+    "srppp-id": 10095,
+    "label": {
+        "de": ["Baumschule"],
+        "fr": ["Pépinière"],
+        "it": ["Vivaio"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10190]
+  },
+  {
+    "srppp-id": 14985,
+    "label": {
+        "de": ["Markstammkohl"],
+        "fr": ["Chou moellier"],
+        "it": ["Cavolo fustoso"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10210]
+  },
+  {
+    "srppp-id": 10093,
+    "label": {
+        "de": ["Salate (Asteraceae)"],
+        "fr": ["Salades (Asteraceae)"],
+        "it": ["Insalate (Asteracee)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9961]
+  },
+  {
+    "srppp-id": 10082,
+    "label": {
+        "de": ["Patisson"],
+        "fr": ["Pâtisson"],
+        "it": ["Patisson"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10310]
+  },
+  {
+    "srppp-id": 10083,
+    "label": {
+        "de": ["Gerste"],
+        "fr": ["Orge"],
+        "it": ["Orzo"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10080]
+  },
+  {
+    "srppp-id": 10080,
+    "label": {
+        "de": ["Getreide"],
+        "fr": ["Céréales"],
+        "it": ["Cereali"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 13905,
+    "label": {
+        "de": ["Süsskartoffel"],
+        "fr": ["Patate douce"],
+        "it": ["Patata dolce"],
+        "en": ["Sweet potato"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [15866]
+  },
+  {
+    "srppp-id": 10081,
+    "label": {
+        "de": ["Stangenbohne"],
+        "fr": ["Haricot à rames"],
+        "it": ["Fagiolo rampicante"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10292]
+  },
+  {
+    "srppp-id": 12829,
+    "label": {
+        "de": ["Schwarze Apfelbeere"],
+        "fr": ["Aronie noire"],
+        "it": ["Aronia nera"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10193]
+  },
+  {
+    "srppp-id": 10086,
+    "label": {
+        "de": ["Kartoffeln"],
+        "fr": ["Pommes de terre"],
+        "it": ["Patate"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 10084,
+    "label": {
+        "de": ["Peperoni "],
+        "fr": ["Poivron"],
+        "it": ["Peperone"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10029]
+  },
+  {
+    "srppp-id": 10072,
+    "label": {
+        "de": ["Sojabohne"],
+        "fr": ["Soja"],
+        "it": ["Soia "],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 10075,
+    "label": {
+        "de": ["Gemüsezwiebel"],
+        "fr": ["Oignon potager"],
+        "it": ["Cipolle dolci"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10031]
+  },
+  {
+    "srppp-id": 10074,
+    "label": {
+        "de": ["Buschbohne"],
+        "fr": ["Haricot nain"],
+        "it": ["Fagiolo nano"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10292]
+  },
+  {
+    "srppp-id": 10078,
+    "label": {
+        "de": ["Speisezwiebel"],
+        "fr": ["Oignon (condiment)"],
+        "it": ["Cipolle da tavola"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10031]
+  },
+  {
+    "srppp-id": 10065,
+    "label": {
+        "de": ["Zuckerhut"],
+        "fr": ["Chicorée pain de sucre"],
+        "it": ["Cicoria pan di zucchero"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10325]
+  },
+  {
+    "srppp-id": 10064,
+    "label": {
+        "de": ["Topinambur"],
+        "fr": ["Topinambour"],
+        "it": ["Topinambur"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9961]
+  },
+  {
+    "srppp-id": 10067,
+    "label": {
+        "de": ["Stangensellerie"],
+        "fr": ["Céleri-branche"],
+        "it": ["Sedano da coste"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9946]
+  },
+  {
+    "srppp-id": 10068,
+    "label": {
+        "de": ["Gänsefussgewächse (Chenopodiaceae)"],
+        "fr": ["Chénopodiacées"],
+        "it": ["Chenopodiacee"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10195]
+  },
+  {
+    "srppp-id": 10071,
+    "label": {
+        "de": ["Tabak"],
+        "fr": ["Tabac"],
+        "it": ["Tabacco"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 10070,
+    "label": {
+        "de": ["Hyazinthe"],
+        "fr": ["Jacinthe"],
+        "it": ["Giacinto"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10134, 12097]
+  },
+  {
+    "srppp-id": 10056,
+    "label": {
+        "de": ["Chicorée"],
+        "fr": ["Chicorée witloof (chicorée-endive)"],
+        "it": ["Cicoria belga"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9961]
+  },
+  {
+    "srppp-id": 10059,
+    "label": {
+        "de": ["Endivien"],
+        "fr": ["Chicorée scarole, chicorée frisée"],
+        "it": ["Indivia"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10325]
+  },
+  {
+    "srppp-id": 10060,
+    "label": {
+        "de": ["Kopfsalat"],
+        "fr": ["Laitue pommée"],
+        "it": ["Lattuga cappuccio"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10320]
+  },
+  {
+    "srppp-id": 10063,
+    "label": {
+        "de": ["Schwarzwurzel"],
+        "fr": ["Scorsonère"],
+        "it": ["Scorzonera"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9961]
+  },
+  {
+    "srppp-id": 10048,
+    "label": {
+        "de": ["Kenaf"],
+        "fr": ["Kenaf"],
+        "it": ["Kenaf"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 10050,
+    "label": {
+        "de": ["Cyclame"],
+        "fr": ["Cyclamen"],
+        "it": ["Ciclamino"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [12097, 10021]
+  },
+  {
+    "srppp-id": 10051,
+    "label": {
+        "de": ["Speisepilze"],
+        "fr": ["Champignons comestibles"],
+        "it": ["Funghi commestibili"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10195]
+  },
+  {
+    "srppp-id": 10052,
+    "label": {
+        "de": ["Weizen"],
+        "fr": ["Blé"],
+        "it": ["Frumento"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10080]
+  },
+  {
+    "srppp-id": 10053,
+    "label": {
+        "de": ["Artischocken"],
+        "fr": ["Artichaut"],
+        "it": ["Carciofi"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9961]
+  },
+  {
+    "srppp-id": 13002,
+    "label": {
+        "de": ["Leere Verarbeitungsräume"],
+        "fr": ["Locaux de transformation vides"],
+        "it": ["Locali per la lavorazione vuoti"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10167,
+    "label": {
+        "de": ["Wintergetreide"],
+        "fr": ["Céréales d'automne"],
+        "it": ["Cereali autunnali"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10080]
+  },
+  {
+    "srppp-id": 13000,
+    "label": {
+        "de": ["Leere Produktionsräume"],
+        "fr": ["Locaux de production vides"],
+        "it": ["Locali di produzione vuoti"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10164,
+    "label": {
+        "de": ["Sommergetreide"],
+        "fr": ["Céréales de printemps"],
+        "it": ["Cereali primaverili"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10080]
+  },
+  {
+    "srppp-id": 13001,
+    "label": {
+        "de": ["Tabak produzierende Betriebe"],
+        "fr": ["Les exploitations tabacoles"],
+        "it": ["Aziende produttrici di tabacco"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10162,
+    "label": {
+        "de": ["Dahlien"],
+        "fr": ["Dahlia"],
+        "it": ["Dalie"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10039]
+  },
+  {
+    "srppp-id": 10172,
+    "label": {
+        "de": ["Allg. Ökologische Ausgleichsflächen (gemäss DZV)"],
+        "fr": ["Domaine surfaces de compensation écologique (selon OPD)"],
+        "it": ["Superfici di compensazione ecologica in generale (conformemente OPD)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 12068,
+    "label": {
+        "de": ["Gemüsebau allgemein "],
+        "fr": ["Culture maraîchère en général"],
+        "it": ["Orticoltura in generale"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 12069,
+    "label": {
+        "de": ["Feldbau allgemein "],
+        "fr": ["Grande culture en général"],
+        "it": ["Campicoltura in generale"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 12066,
+    "label": {
+        "de": ["Obstbau allgemein "],
+        "fr": ["Arboriculture en général"],
+        "it": ["Frutticoltura in generale"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10171,
+    "label": {
+        "de": ["Suppensellerie"],
+        "fr": ["Céleri-pomme pour bouillon"],
+        "it": ["Sedano da condimento"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9946]
+  },
+  {
+    "srppp-id": 12999,
+    "label": {
+        "de": ["Leere Lagerräume"],
+        "fr": ["Êntrepôts vides"],
+        "it": ["Locali di stoccaggio vuoti"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 12067,
+    "label": {
+        "de": ["Beerenbau allgemein "],
+        "fr": ["Culture des baies en général"],
+        "it": ["Coltivazione di bacche in generale"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10151,
+    "label": {
+        "de": ["Kleegrasmischung (Kunstwiese)"],
+        "fr": ["Mélange trèfles-graminées (prairie arificielle)"],
+        "it": ["Miscela trifoglio-graminacee (prati artificiali)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10135]
+  },
+  {
+    "srppp-id": 10150,
+    "label": {
+        "de": ["Luzerne"],
+        "fr": ["Luzerne"],
+        "it": ["Erba medica"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 10147,
+    "label": {
+        "de": ["Gerbera"],
+        "fr": ["Gerbera"],
+        "it": ["Gerbera"],
+        "en": ["Gerbera"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10015, 12097]
+  },
+  {
+    "srppp-id": 10144,
+    "label": {
+        "de": ["Sommerhafer"],
+        "fr": ["Avoine de printemps"],
+        "it": ["Avena primaverile"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10164, 10121]
+  },
+  {
+    "srppp-id": 10159,
+    "label": {
+        "de": ["Gewürz- und Medizinalkräuter"],
+        "fr": ["Herbes aromatiques et médicinales"],
+        "it": ["Erbe aromatiche e medicinali"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10195]
+  },
+  {
+    "srppp-id": 10158,
+    "label": {
+        "de": ["Tulpe"],
+        "fr": ["Tulipe"],
+        "it": ["Tulipano"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [12097]
+  },
+  {
+    "srppp-id": 10157,
+    "label": {
+        "de": ["Fichte"],
+        "fr": ["Épicéa"],
+        "it": ["Abete rosso"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10111]
+  },
+  {
+    "srppp-id": 13498,
+    "label": {
+        "de": ["Quinoa"],
+        "fr": ["Quinoa"],
+        "it": ["Quinoa"],
+        "en": ["Quinoa"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10155,
+    "label": {
+        "de": ["Winterraps"],
+        "fr": ["Colza d'automne"],
+        "it": ["Colza autunnale"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10008]
+  },
+  {
+    "srppp-id": 15872,
+    "label": {
+        "de": ["Rispenhirse "],
+        "fr": ["Millet"],
+        "it": ["Miglio "],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10152,
+    "label": {
+        "de": ["Buchsbäume (Buxus)"],
+        "fr": ["Buis (Buxus)"],
+        "it": ["Bosso (Buxus)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10108, 12096]
+  },
+  {
+    "srppp-id": 10132,
+    "label": {
+        "de": ["Einrichtungen und Geräte"],
+        "fr": ["Installations et outils"],
+        "it": ["Installazioni e apparecchi"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10203]
+  },
+  {
+    "srppp-id": 10133,
+    "label": {
+        "de": ["Frässaaten"],
+        "fr": ["Semis après travail superficiel"],
+        "it": ["Semine dopo la fresatura"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10198]
+  },
+  {
+    "srppp-id": 10135,
+    "label": {
+        "de": ["Wiesen und Weiden"],
+        "fr": ["Prairies et pâturages"],
+        "it": ["Prati e pascoli"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 10128,
+    "label": {
+        "de": ["Bohnen"],
+        "fr": ["Haricots"],
+        "it": ["Fagioli"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9957]
+  },
+  {
+    "srppp-id": 10142,
+    "label": {
+        "de": ["Mulchsaaten"],
+        "fr": ["Semis sous litière"],
+        "it": ["Semine a lattiera"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10198]
+  },
+  {
+    "srppp-id": 10143,
+    "label": {
+        "de": ["Sommergerste"],
+        "fr": ["Orge de printemps"],
+        "it": ["Orzo primaverile"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10164, 10083]
+  },
+  {
+    "srppp-id": 10136,
+    "label": {
+        "de": ["Blaudistel"],
+        "fr": ["Chardon bleu"],
+        "it": ["Cardo azzurro"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10015, 12097]
+  },
+  {
+    "srppp-id": 10137,
+    "label": {
+        "de": ["Sonnenblume"],
+        "fr": ["Tournesol"],
+        "it": ["Girasole"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 10117,
+    "label": {
+        "de": ["Nüsse"],
+        "fr": ["Noix"],
+        "it": ["Noci"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10260]
+  },
+  {
+    "srppp-id": 10116,
+    "label": {
+        "de": ["Ackerbohne"],
+        "fr": ["Féverole"],
+        "it": ["Fava"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 10119,
+    "label": {
+        "de": ["Triticale"],
+        "fr": ["Triticale"],
+        "it": ["Triticale"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10080]
+  },
+  {
+    "srppp-id": 10118,
+    "label": {
+        "de": ["Sommerweizen"],
+        "fr": ["Blé de printemps"],
+        "it": ["Frumento primaverile"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10164, 13784]
+  },
+  {
+    "srppp-id": 14001,
+    "label": {
+        "de": ["Hagebutten"],
+        "fr": ["Cynorhodon"],
+        "it": ["Rosa canina"],
+        "en": ["Rose hip"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 12507,
+    "label": {
+        "de": ["Römische Kamille"],
+        "fr": ["Camomille romaine"],
+        "it": ["Camomilla romana"],
+        "en": ["Lat. Chamaemelum nobile"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10186]
+  },
+  {
+    "srppp-id": 10115,
+    "label": {
+        "de": ["Hopfen"],
+        "fr": ["Houblon"],
+        "it": ["Luppolo"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 10114,
+    "label": {
+        "de": ["Ertragsreben"],
+        "fr": ["Vigne en production"],
+        "it": ["Vite in produzione"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9953]
+  },
+  {
+    "srppp-id": 10124,
+    "label": {
+        "de": ["Eiweisserbse"],
+        "fr": ["Pois protéagineux"],
+        "it": ["Pisello proteico"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 10127,
+    "label": {
+        "de": ["Ribes Arten"],
+        "fr": ["Espèces de Ribes"],
+        "it": ["Specie di ribes"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10193]
+  },
+  {
+    "srppp-id": 10126,
+    "label": {
+        "de": ["Zwetschge"],
+        "fr": ["Prunier (pruneau)"],
+        "it": ["Prugno"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10011]
+  },
+  {
+    "srppp-id": 10121,
+    "label": {
+        "de": ["Hafer"],
+        "fr": ["Avoine"],
+        "it": ["Avena"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10080]
+  },
+  {
+    "srppp-id": 10120,
+    "label": {
+        "de": ["Roggen"],
+        "fr": ["Seigle"],
+        "it": ["Segale"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10080]
+  },
+  {
+    "srppp-id": 10122,
+    "label": {
+        "de": ["Korn (Dinkel)"],
+        "fr": ["Épeautre"],
+        "it": ["Spelta"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10167, 10052]
+  },
+  {
+    "srppp-id": 14384,
+    "label": {
+        "de": ["Baby-Leaf (Chenopodiaceae)"],
+        "fr": ["Baby-Leaf (Chenopodiaceae)"],
+        "it": ["Baby-Leaf (Chenopodiaceae)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10251]
+  },
+  {
+    "srppp-id": 10227,
+    "label": {
+        "de": ["Offene Ackerfläche"],
+        "fr": ["Terres ouvertes"],
+        "it": ["Superficie coltiva aperta"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10172]
+  },
+  {
+    "srppp-id": 10225,
+    "label": {
+        "de": ["Lein"],
+        "fr": ["Lin"],
+        "it": ["Lino"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 10230,
+    "label": {
+        "de": ["Grünfläche"],
+        "fr": ["Surfaces herbagères"],
+        "it": ["Superficie inerbita"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10232,
+    "label": {
+        "de": ["Johanniskraut"],
+        "fr": ["Millepertuis"],
+        "it": ["Iperico"],
+        "en": ["Saint-John's-wort"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10159]
+  },
+  {
+    "srppp-id": 10238,
+    "label": {
+        "de": ["Mohn"],
+        "fr": ["Pavot"],
+        "it": ["Papavero"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10236,
+    "label": {
+        "de": ["Grasbestände zur Saatgutproduktion"],
+        "fr": ["Graminées pour la production de semences"],
+        "it": ["Graminacee per la produzione di sementi"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 10237,
+    "label": {
+        "de": ["Meerrettich"],
+        "fr": ["Raifort"],
+        "it": ["Rafano rusticana / Ramolaccio"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [9962]
+  },
+  {
+    "srppp-id": 10210,
+    "label": {
+        "de": ["Blattkohle"],
+        "fr": ["Choux à feuilles"],
+        "it": ["Cavoli fogliacei"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10020]
+  },
+  {
+    "srppp-id": 12147,
+    "label": {
+        "de": ["Nichtkulturland allgemein"],
+        "fr": ["Domaine non agricole en général"],
+        "it": ["Superfici non coltive in generale"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 12465,
+    "label": {
+        "de": ["Forstwirtschaft allgemein"],
+        "fr": ["Sylviculture en général"],
+        "it": ["Selvicoltura in generale"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10218,
+    "label": {
+        "de": ["Schwarzer Holunder"],
+        "fr": ["Grand sureau"],
+        "it": ["Sambuco nero"],
+        "en": ["Elder berry"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10193]
+  },
+  {
+    "srppp-id": 12464,
+    "label": {
+        "de": ["Wald"],
+        "fr": ["Forêt"],
+        "it": ["Bosco"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [12465]
+  },
+  {
+    "srppp-id": 14383,
+    "label": {
+        "de": ["Baby-Leaf (Asteraceae)"],
+        "fr": ["Baby-Leaf (Asteraceae)"],
+        "it": ["Baby-Leaf (Asteraceae)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10251]
+  },
+  {
+    "srppp-id": 14382,
+    "label": {
+        "de": ["Baby-Leaf (Brassicaceae)"],
+        "fr": ["Baby-Leaf (Brassicaceae)"],
+        "it": ["Baby-Leaf (Brassicaceae)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10251]
+  },
+  {
+    "srppp-id": 10192,
+    "label": {
+        "de": ["Allg. Obstbau"],
+        "fr": ["Domaine app. arboriculture"],
+        "it": [null],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10193,
+    "label": {
+        "de": ["Allg. Beerenbau"],
+        "fr": ["Domaine app. baies"],
+        "it": [null],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10194,
+    "label": {
+        "de": ["Allg. Weinbau"],
+        "fr": ["Domaine app. vignes"],
+        "it": [null],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10195,
+    "label": {
+        "de": ["Allg. Gemüsebau"],
+        "fr": ["Domaine app. maraîchère"],
+        "it": [null],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10197,
+    "label": {
+        "de": ["Allg. Feldbau"],
+        "fr": ["Domaine app. grande culture"],
+        "it": [null],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 12970,
+    "label": {
+        "de": ["Gewürzfenchel"],
+        "fr": ["Fenouil aromatique"],
+        "it": ["Finocchio aromatico"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10198,
+    "label": {
+        "de": ["Anbautechnik"],
+        "fr": ["Techniques culturales"],
+        "it": ["Tecnica di coltivazione"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 12096,
+    "label": {
+        "de": ["Bäume und Sträucher (ausserhalb Forst)"],
+        "fr": ["Arbres et arbustes (hors fôret)"],
+        "it": ["Alberi e arbusti (al di fuori della foresta)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10190]
+  },
+  {
+    "srppp-id": 12097,
+    "label": {
+        "de": ["Blumenkulturen und Grünpflanzen"],
+        "fr": ["Cultures florales et plantes vertes"],
+        "it": ["Colture da fiore e piante verdi"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10190]
+  },
+  {
+    "srppp-id": 12098,
+    "label": {
+        "de": ["Blumenzwiebeln und Blumenknollen"],
+        "fr": ["Bulbes ornementaux"],
+        "it": ["Bulbi ornamentali"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10202,
+    "label": {
+        "de": ["Allg. Forstwirtschaft"],
+        "fr": ["Domaine app. sylviculture"],
+        "it": [null],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10203,
+    "label": {
+        "de": ["Allgemein Vorratsschutz"],
+        "fr": ["Protection des récoltes"],
+        "it": ["Protezione delle scorte (in generale)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10201]
+  },
+  {
+    "srppp-id": 14904,
+    "label": {
+        "de": ["Süssdolde"],
+        "fr": ["Cerfeuil musqué"],
+        "it": ["Finocchiella"],
+        "en": ["Cicely"],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  },
+  {
+    "srppp-id": 10176,
+    "label": {
+        "de": ["Ein- und zweijährige Zierpflanzen"],
+        "fr": ["Plantes ornementales annuelles et bisannuelles"],
+        "it": ["Piante ornamentali annuali e biennali"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [10190]
+  },
+  {
+    "srppp-id": 10179,
+    "label": {
+        "de": ["Auf und an National- und Kantonsstrassen (gem. ChemRRV)"],
+        "fr": ["Le long des routes nationales et cantonales  (selon ORRChim)"],
+        "it": ["Lungo le strade nazionali e cantonali (conformemente ORRPChim)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": "noncrop",
+    "srppp-parent-id": [12147]
+  },
+  {
+    "srppp-id": 10178,
+    "label": {
+        "de": ["Böschungen und Grünstreifen entlang von Verkehrswegen (gem. ChemRRV)"],
+        "fr": ["Talus et bandes vertes le long des voies de communication (selon ORRChim)"],
+        "it": ["Scarpate e strisce verdi lungo le vie di comunicazione (conformemente ORRPChim)"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": "noncrop",
+    "srppp-parent-id": [12147]
+  },
+  {
+    "srppp-id": 10180,
+    "label": {
+        "de": ["Wintertriticale"],
+        "fr": ["Triticale d'automne"],
+        "it": ["Triticale autunnale"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": "crop",
+    "srppp-parent-id": [10167, 10119]
+  },
+  {
+    "srppp-id": 10187,
+    "label": {
+        "de": ["Lupinen"],
+        "fr": ["Lupin"],
+        "it": ["Lupini"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": "crop",
+    "srppp-parent-id": [10197]
+  },
+  {
+    "srppp-id": 10186,
+    "label": {
+        "de": ["Küchenkräuter"],
+        "fr": ["Fines herbes"],
+        "it": ["Erbette da cucina"],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": "crop",
+    "srppp-parent-id": [10195]
+  },
+  {
+    "srppp-id": 10188,
+    "label": {
+      "de": ["Ölkürbisse", "Steirischer Ölkürbis"],
+      "fr": ["Courges oléagineuses", "Courge oléagineuse"],
+      "it": ["Zucca da olio", "Zucca da olio"],
+      "en": ["Oil pumpkins", "Oil pumpkin", "Styrian oil pumpkin"],
+      "la": ["Cucurbita pepo var. styriaca"]
+    },
+    "comment": {
+      "de": "Ölkürbisse sind spezielle Kürbissorten, die für die Produktion von Kürbiskernöl angebaut werden.",
+      "fr": "Les courges oléagineuses sont des variétés spéciales de courges cultivées pour la production d'huile de pépins de courge.",
+      "it": "Le zucche da olio sono varietà speciali di zucche coltivate per la produzione di olio di semi di zucca.",
+      "en": "Oil pumpkins are special varieties of pumpkins cultivated for the production of pumpkin seed oil."
+    },
+    "wikidata-iri": ["Q99701217"],
+    "polyphyletic": null,
+    "type": "crop",
+    "srppp-parent-id": [10017]
+  },
+  {
+    "srppp-id": 10190,
+    "label": {
+        "de": ["Zierpflanzen allgemein"],
+        "fr": ["Culture ornementale en général"],
+        "it": ["Coltivazione piante ornam. in generale "],
+        "en": [null],
+        "la": [null]
+    },
+    "comment": {
+        "de": null,
+        "fr": null,
+        "it": null,
+        "en": null
+    },
+    "wikidata-iri": [null],
+    "polyphyletic": null,
+    "type": null,
+    "srppp-parent-id": [null]
+  }
+]

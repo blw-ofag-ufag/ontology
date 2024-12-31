@@ -64,6 +64,12 @@ literal <- function(x, datatype = NULL, lang = NULL) {
 # Function to mark up url
 URL <- function(x) sprintf("<%s>", x)
 
+# Fuction to `cat` a triple (or return it...)
+triple <- function(subject, predicate, object, return = FALSE) {
+  x = sprintf("%s %s %s .\n", subject, predicate, object)
+  if(return) return(x) else cat(x)
+}
+
 # DOMAINS
 # 1: Product
 # 2: Company
@@ -337,38 +343,42 @@ sink()
 # Write data about crops
 # ------------------------------------------------------------------
 
-sink("data/crops.ttl")
+# Find all Detail nodes within the Culture MetaData
+crops_xml <- xml_find_all(xml_data, ".//MetaData[@name='Culture']/Detail")
 
+# Read JSON file about crops
+crops <- jsonlite::read_json("mapping-tables/crops.json")
+crops <- lapply(crops, function(x) {
+  for (i in c("wikidata-iri", "srppp-parent-id")) x[[i]] <- unlist(x[[i]])
+  x$label <- lapply(x$label, unlist)
+  return(x)
+})
+
+# See if any crops are *not* in JSON file (if FALSE, add the crop with additional info)
+all(xml_attr(crops_xml, "primaryKey") %in% unlist(lapply(crops, function(x) x[["srppp-id"]])))
+
+# Write Turtle file
+sink("data/crops.ttl")
 cat("
 @prefix : <https://agriculture.ld.admin.ch/foag/plant-protection#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
 
 ")
-
-# Find all Detail nodes within the Culture MetaData
-crops <- xml_find_all(xml_data, ".//MetaData[@name='Culture']/Detail")
-
-# loop over all crops
-for (i in 1:length(crops)) {
-  
-  # extract information from node
-  ID = xml_attr(crops[[i]], "primaryKey")
-  parent_ID = xml_find_all(crops[[i]], ".//Parent") |> xml_attr("primaryKey")
-  label_de = xml_find_all(crops[[i]], ".//Description[@language='de']") |> xml_attr("value")
-  label_en = xml_find_all(crops[[i]], ".//Description[@language='en']") |> xml_attr("value")
-  
-  # write information as RDF
-  sprintf("%s a :CropGroup ;\n", IRI("5", ID)) |> cat()
-  if(length(parent_ID)>0) sprintf("  :hasParentCropGroup %s ;\n", paste(IRI("5", parent_ID), collapse = ", ")) |> cat()
-  if(!is.na(label_en) & label_en!="") sprintf("  rdfs:label %s ;\n", literal(label_en, lang = "en")) |> cat()
-  if(!is.na(label_de)) sprintf("  rdfs:label %s .\n", literal(label_de, lang = "de")) |> cat()
-  cat("\n")
+for (x in crops) {
+  iri = IRI("5", x[["srppp-id"]])
+  triple(iri, "a", ":CropGroup")
+  for (i in c("de", "en")) triple(iri,"rdfs:label",literal(x[["label"]][[i]][1],lang=i))
+  for (i in c("de", "en")) triple(iri,"rdfs:comment",literal(x[["comment"]][[i]][1],lang=i))
+  if(!is.null(x[["srppp-parent-id"]])) for(i in x[["srppp-parent-id"]]) {
+    triple(iri,":hasParentCropGroup",IRI("5", i))
+    triple(IRI("5", i),":hasChildCropGroup",iri)
+  }
+  if(!is.null(x[["wikidata-iri"]])) for(i in x[["wikidata-iri"]]) triple(iri,":cropIsRelatedToBiologicalTaxon",paste0("wd:",i))
 }
-
 sink()
-
 
 # ------------------------------------------------------------------
 # Write data about pests

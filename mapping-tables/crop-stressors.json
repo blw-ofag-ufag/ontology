@@ -1,7 +1,7 @@
 [
   {
     "srppp-id": 12924,
-    "labels": {
+    "label": {
       "de": ["Vorratsschädlinge kriechend"],
       "fr": ["Ravageurs des denrées stockées rampants"],
       "it": ["Parassiti delle scorte alimentari striscianti"],
@@ -15,7 +15,7 @@
   },
   {
     "srppp-id": 11242,
-    "labels": {
+    "label": {
       "de": ["Eichenprozessionsspinner"],
       "fr": ["Processionnaire du chêne"],
       "it": ["Processionaria della quercia"],
@@ -29,7 +29,7 @@
   },
   {
     "srppp-id": 15868,
-    "labels": {
+    "label": {
       "de": ["Grüne Reiswanze"],
       "fr": ["Punaise verte ponctuée"],
       "it": ["Cimice verde"],
@@ -43,7 +43,7 @@
   },
   {
     "srppp-id": 10868,
-    "labels": {
+    "label": {
       "de": ["Ausfallgetreide"],
       "fr": ["Repousses de céréales"],
       "it": ["Ricacci di cereali"],
@@ -57,7 +57,7 @@
   },
   {
     "srppp-id": 10459,
-    "labels": {
+    "label": {
       "de": ["Lauchmotte"],
       "fr": ["Teigne du poireau"],
       "it": ["Tignola del porro"],
@@ -71,7 +71,7 @@
   },
   {
     "srppp-id": 10470,
-    "labels": {
+    "label": {
       "de": ["Möhrenfliege"],
       "fr": ["Mouche de la carotte"],
       "it": ["Mosca della carota"],
@@ -85,7 +85,7 @@
   },
   {
     "srppp-id": 12349,
-    "labels": {
+    "label": {
       "de": ["Septoria-Keimlingsbefall"],
       "fr": ["Septoriose des plantules"],
       "it": ["Septoriosi delle piantule"],
@@ -99,7 +99,7 @@
   },
   {
     "srppp-id": 10984,
-    "labels": {
+    "label": {
       "de": ["Septoria-Blattdürre"],
       "fr": ["Septorioses foliaires"],
       "it": ["Septoriosi fogliare"],
@@ -113,7 +113,7 @@
   },
   {
     "srppp-id": 10888,
-    "labels": {
+    "label": {
       "de": ["Alternaria-Purpurfleckenkrankheit"],
       "fr": ["Taches pourpres ou alternariose des allium"],
       "it": ["Alternariosi"],
@@ -127,7 +127,7 @@
   },
   {
     "srppp-id": 11211,
-    "labels": {
+    "label": {
       "de": ["Grüne Zitrusblattlaus"],
       "fr": ["Puceron de la spirée"],
       "it": ["Afide verde degli agrumi"],
@@ -141,7 +141,7 @@
   },
   {
     "srppp-id": 10487,
-    "labels": {
+    "label": {
       "de": ["Sprühfleckenkrankheit der Kirsche"],
       "fr": ["Cylindrosporiose du cerisier"],
       "it": ["Cilindrosporiosi del ciliegio"],
@@ -155,7 +155,7 @@
   },
   {
     "srppp-id": 11124,
-    "labels": {
+    "label": {
       "de": ["Doldenwelke"],
       "fr": ["Flétrissement de l'ombelle"],
       "it": ["Avvizzimento dei corimbi del sambuco"],
@@ -169,7 +169,7 @@
   },
   {
     "srppp-id": 10841,
-    "labels": {
+    "label": {
       "de": ["Blattbotrytis der Zwiebel"],
       "fr": ["Botrytis des feuilles de l'oignon"],
       "it": ["Botrite della cipolla"],
@@ -183,7 +183,7 @@
   },
   {
     "srppp-id": 11016,
-    "labels": {
+    "label": {
       "de": ["Zwiebelhalsfäule"],
       "fr": ["Botrytis allii"],
       "it": ["Marciume del colletto di cipolla"],
@@ -197,7 +197,7 @@
   },
   {
     "srppp-id": 11037,
-    "labels": {
+    "label": {
       "de": ["Braunfleckenkrankheit"],
       "fr": ["Botrytis des vicia"],
       "it": ["Maculatura arancione"],
@@ -211,7 +211,7 @@
   },
   {
     "srppp-id": 10848,
-    "labels": {
+    "label": {
       "de": ["Birnblattsauger"],
       "fr": ["Psylles du poirier"],
       "it": ["Psille del pero"],
@@ -225,7 +225,7 @@
   },
   {
     "srppp-id": 10716,
-    "labels": {
+    "label": {
       "de": ["Frühlingsapfelblattsauger"],
       "fr": ["Psylle printanier du pommier"],
       "it": ["Psilla primaverile del melo"],
@@ -239,7 +239,7 @@
   },
   {
     "srppp-id": 13493,
-    "labels": {
+    "label": {
       "de": ["Pflaumenblattsauger"],
       "fr": ["Psylle du prunier"],
       "it": ["Psilla del prugno"],
@@ -253,7 +253,7 @@
   },
   {
     "srppp-id": 10683,
-    "labels": {
+    "label": {
       "de": ["Kräuselmilbe"],
       "fr": ["Acariose de la vigne"],
       "it": ["Acariosi della vite"],
@@ -267,7 +267,7 @@
   },
   {
     "srppp-id": 10575,
-    "labels": {
+    "label": {
       "de": ["Krankheiten durch pathogene Bodenpilze"],
       "fr": ["Champignons pathogènes du sol (fonte ou toile des semis)"],
       "it": ["Malattie causate da funghi patogeni del suolo"],
@@ -281,7 +281,7 @@
   },
   {
     "srppp-id": 10420,
-    "labels": {
+    "label": {
       "de": ["Kohleule"],
       "fr": ["Noctuelle du chou"],
       "it": ["Nottua del cavolo"],
@@ -295,7 +295,7 @@
   },
   {
     "srppp-id": 13852,
-    "labels": {
+    "label": {
       "de": ["Anthraknose der Lupine"],
       "fr": ["Anthracnose du lupin"],
       "it": ["Antracnosi del lupino"],
@@ -309,7 +309,7 @@
   },
   {
     "srppp-id": 10684,
-    "labels": {
+    "label": {
       "de": ["Pockenmilbe der Reben"],
       "fr": ["Érinose de la vigne"],
       "it": ["Eriofide della vite"],
@@ -323,7 +323,7 @@
   },
   {
     "srppp-id": 12547,
-    "labels": {
+    "label": {
       "de": ["Gallmilben"],
       "fr": ["Ériophyides gallicoles"],
       "it": ["Eriofidi gallicoli"],
@@ -337,7 +337,7 @@
   },
   {
     "srppp-id": 10680,
-    "labels": {
+    "label": {
       "de": ["Rostmilben"],
       "fr": ["Ériophyides libres"],
       "it": ["Eriofidi rugginosi"],
@@ -351,7 +351,7 @@
   },
   {
     "srppp-id": 10504,
-    "labels": {
+    "label": {
       "de": ["Blattfallkrankheit der Ribes-Arten"],
       "fr": ["Anthracnose des espèces de Ribes"],
       "it": ["Seccume delle specie di ribes"],
@@ -365,7 +365,7 @@
   },
   {
     "srppp-id": 10571,
-    "labels": {
+    "label": {
       "de": ["Maulwürfe (Fam.)"],
       "fr": ["Taupes (fam.)"],
       "it": ["Talpidi (fam.)"],
@@ -379,7 +379,7 @@
   },
   {
     "srppp-id": 10858,
-    "labels": {
+    "label": {
       "de": ["Blattfleckenkrankheit der Blaudisteln"],
       "fr": ["Charbon des feuilles du chardon bleu"],
       "it": ["Necrosi fogliare del cardo azzurro"],
@@ -393,7 +393,7 @@
   },
   {
     "srppp-id": 11029,
-    "labels": {
+    "label": {
       "de": ["Helminthosporium-Krankheiten"],
       "fr": ["Helminthosporioses"],
       "it": ["Elmintosporiosi"],
@@ -407,7 +407,7 @@
   },
   {
     "srppp-id": 10721,
-    "labels": {
+    "label": {
       "de": ["Maiszünsler"],
       "fr": ["Pyrale du maïs"],
       "it": ["Piralide del mais"],
@@ -421,7 +421,7 @@
   },
   {
     "srppp-id": 10746,
-    "labels": {
+    "label": {
       "de": ["Gespinstmotten"],
       "fr": ["Hyponomeutes"],
       "it": ["Tignole"],
@@ -435,7 +435,7 @@
   },
   {
     "srppp-id": 10995,
-    "labels": {
+    "label": {
       "de": ["Schneeschimmel"],
       "fr": ["Moisissure des neiges"],
       "it": ["Muffa delle nevi"],
@@ -449,7 +449,7 @@
   },
   {
     "srppp-id": 10565,
-    "labels": {
+    "label": {
       "de": ["Ährenfusariosen"],
       "fr": ["Fusarioses de l'épi"],
       "it": ["Fusariosi della spiga"],
@@ -463,7 +463,7 @@
   },
   {
     "srppp-id": 13549,
-    "labels": {
+    "label": {
       "de": ["Blattfusarium"],
       "fr": ["Fusariose foliaire"],
       "it": ["Fusariosi fogliare"],
@@ -477,7 +477,7 @@
   },
   {
     "srppp-id": 12354,
-    "labels": {
+    "label": {
       "de": ["Phoma der Sonnenblume"],
       "fr": ["Phoma du tournesol"],
       "it": ["Phoma del girasole"],
@@ -491,7 +491,7 @@
   },
   {
     "srppp-id": 10458,
-    "labels": {
+    "label": {
       "de": ["Kohlschabe"],
       "fr": ["Teigne des crucifères (Plutella xylostella)"],
       "it": ["Tignola delle Crocifere"],
@@ -505,7 +505,7 @@
   },
   {
     "srppp-id": 11721,
-    "labels": {
+    "label": {
       "de": ["Colletotrichum-Fruchtfäule"],
       "fr": ["Colletotrichum sur fruits"],
       "it": ["Marciume dei frutti da Colletotrichum"],
@@ -519,7 +519,7 @@
   },
   {
     "srppp-id": 11178,
-    "labels": {
+    "label": {
       "de": ["Braunfleckigkeit des Reises"],
       "fr": ["Helminthosporiose du riz"],
       "it": ["Elmintosporiosi del riso"],
@@ -533,7 +533,7 @@
   },
   {
     "srppp-id": 11204,
-    "labels": {
+    "label": {
       "de": ["Falscher Mehltau der Kreuzblütengewächse"],
       "fr": ["Mildiou des crucifères"],
       "it": ["Peronospora delle crucifere"],
@@ -547,7 +547,7 @@
   },
   {
     "srppp-id": 14259,
-    "labels": {
+    "label": {
       "de": ["Godronia-Triebsterben"],
       "fr": ["Chancre godronien"],
       "it": ["Cancro del mirtillo"],
@@ -561,7 +561,7 @@
   },
   {
     "srppp-id": 12353,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau des Leins"],
       "fr": ["Oïdium du lin"],
       "it": ["Oidio del lino"],
@@ -575,7 +575,7 @@
   },
   {
     "srppp-id": 10536,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Kürbisgewächse"],
       "fr": ["Oïdium des cucurbitacées"],
       "it": ["Oidio delle Cucurbitacee"],
@@ -589,7 +589,7 @@
   },
   {
     "srppp-id": 10481,
-    "labels": {
+    "label": {
       "de": ["Blüten- und Zweigdürre"],
       "fr": ["Moniliose des fleurs et des rameaux"],
       "it": ["Monilia dei rami e dei fiori"],
@@ -603,7 +603,7 @@
   },
   {
     "srppp-id": 12352,
-    "labels": {
+    "label": {
       "de": ["Pasmokrankheit"],
       "fr": ["Pasmo du lin"],
       "it": ["Pasmo del lino"],
@@ -617,7 +617,7 @@
   },
   {
     "srppp-id": 15588,
-    "labels": {
+    "label": {
       "de": ["Nesidiocoris tenuis"],
       "fr": ["Nesidiocoris tenuis"],
       "it": ["Nesidiocoris tenuis"],
@@ -631,7 +631,7 @@
   },
   {
     "srppp-id": 11089,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Tomate"],
       "fr": ["Oïdium de la tomate"],
       "it": ["Oidio del pomodoro"],
@@ -645,7 +645,7 @@
   },
   {
     "srppp-id": 10990,
-    "labels": {
+    "label": {
       "de": ["Ophiosphaerella herpotricha"],
       "fr": ["Ophiosphaerella herpotricha"],
       "it": ["Ophiosphaerella herpotricha"],
@@ -659,7 +659,7 @@
   },
   {
     "srppp-id": 10935,
-    "labels": {
+    "label": {
       "de": ["Palmenthrips"],
       "fr": ["Thrips des Dracaena"],
       "it": ["Tripide della Dracaena"],
@@ -673,7 +673,7 @@
   },
   {
     "srppp-id": 11247,
-    "labels": {
+    "label": {
       "de": ["Himbeerblattmilbe"],
       "fr": ["Ériophyde des framboises"],
       "it": ["Eriofide del lampone"],
@@ -687,7 +687,7 @@
   },
   {
     "srppp-id": 10493,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Erdbeere"],
       "fr": ["Oïdium du fraisier"],
       "it": ["Oidio della fragola"],
@@ -701,7 +701,7 @@
   },
   {
     "srppp-id": 13360,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Rubus-Arten"],
       "fr": ["Oïdium des Rubus"],
       "it": ["Oidio delle verietà di rubus"],
@@ -715,7 +715,7 @@
   },
   {
     "srppp-id": 10505,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Ribes-Arten"],
       "fr": ["Oïdium des Ribes"],
       "it": ["Oidio delle varietà di ribes"],
@@ -729,7 +729,7 @@
   },
   {
     "srppp-id": 11091,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Heidelbeere"],
       "fr": ["Oïdium des myrtilles"],
       "it": ["Oidio dei mirtilli"],
@@ -743,7 +743,7 @@
   },
   {
     "srppp-id": 10725,
-    "labels": {
+    "label": {
       "de": ["Fruchtwanzen"],
       "fr": ["Punaises des fruits"],
       "it": ["Cimici dei frutti"],
@@ -757,7 +757,7 @@
   },
   {
     "srppp-id": 14147,
-    "labels": {
+    "label": {
       "de": ["Buchsbaumblattfloh"],
       "fr": ["Psylle du buis"],
       "it": ["Psilla del bosso"],
@@ -771,7 +771,7 @@
   },
   {
     "srppp-id": 12668,
-    "labels": {
+    "label": {
       "de": ["Rostpilze auf  Salate (Asteraceae) und Chicorée"],
       "fr": ["Rouilles des salades (Asteraceae) et de la chicorée witloof (chicorée-endive)"],
       "it": ["Ruggini su insalate (Asteraceae) e su cicoria belga"],
@@ -785,7 +785,7 @@
   },
   {
     "srppp-id": 11138,
-    "labels": {
+    "label": {
       "de": ["Sprenkelnekrosen (PLS+RCC)"],
       "fr": ["Grillures (PLS+RCC)"],
       "it": ["Bruciature fogliari (PLS + RCC)"],
@@ -799,7 +799,7 @@
   },
   {
     "srppp-id": 11034,
-    "labels": {
+    "label": {
       "de": ["Rhynchosporium-Blattflecken des Rasens"],
       "fr": ["Rhynchosporiose du gazon"],
       "it": ["Rincosporiosi del tappeto erboso"],
@@ -813,7 +813,7 @@
   },
   {
     "srppp-id": 10937,
-    "labels": {
+    "label": {
       "de": ["Saissetia coffeae"],
       "fr": ["Cochenille du caféier (Saissetia coffeae)"],
       "it": ["Cocciniglia emisferica delle piante ornamentali"],
@@ -827,7 +827,7 @@
   },
   {
     "srppp-id": 10980,
-    "labels": {
+    "label": {
       "de": ["Septoria-Blattfleckenkrankheit der Petersilie"],
       "fr": ["Septoriose du persil"],
       "it": ["Necrosi fogliare del prezzemolo"],
@@ -841,7 +841,7 @@
   },
   {
     "srppp-id": 10531,
-    "labels": {
+    "label": {
       "de": ["Septoria-Blattfleckenkrankheit des Selleries"],
       "fr": ["Septoriose du céleri"],
       "it": ["Septoriosi del sedano"],
@@ -855,7 +855,7 @@
   },
   {
     "srppp-id": 10584,
-    "labels": {
+    "label": {
       "de": ["Blattfleckenkrankheit der Chrysantheme"],
       "fr": ["Septoriose du chrysanthème"],
       "it": ["Necrosi fogliare del crisantemo"],
@@ -869,7 +869,7 @@
   },
   {
     "srppp-id": 11048,
-    "labels": {
+    "label": {
       "de": ["Lagerschorf des Kernobstes"],
       "fr": ["Tavelure tardive des fruits à pépins"],
       "it": ["Ticchiolatura della frutta a granelli"],
@@ -883,7 +883,7 @@
   },
   {
     "srppp-id": 10366,
-    "labels": {
+    "label": {
       "de": ["Schorf des Kernobstes"],
       "fr": ["Tavelure des arbres fruitiers à pépins"],
       "it": ["Ticchiolatura della frutta a granelli"],
@@ -897,7 +897,7 @@
   },
   {
     "srppp-id": 10667,
-    "labels": {
+    "label": {
       "de": ["Lagerschorf des Apfels"],
       "fr": ["Tavelure tardive des pommes"],
       "it": ["Ticchiolatura tardiva del melo"],
@@ -911,7 +911,7 @@
   },
   {
     "srppp-id": 11263,
-    "labels": {
+    "label": {
       "de": ["Trockenfäule der Gladiole"],
       "fr": ["Pourriture sèche du glaïeul"],
       "it": ["Stromatinia gladioli"],
@@ -925,7 +925,7 @@
   },
   {
     "srppp-id": 10488,
-    "labels": {
+    "label": {
       "de": ["Rost der Zwetschge"],
       "fr": ["Rouille du prunier"],
       "it": ["Ruggine del susino"],
@@ -939,7 +939,7 @@
   },
   {
     "srppp-id": 14737,
-    "labels": {
+    "label": {
       "de": ["Trichoderma aggressivum"],
       "fr": ["Trichoderma aggressivum"],
       "it": ["Trichoderma aggressivum"],
@@ -953,7 +953,7 @@
   },
   {
     "srppp-id": 10416,
-    "labels": {
+    "label": {
       "de": ["Möhrenblattfloh"],
       "fr": ["Psylle de la carotte"],
       "it": ["Psilla della carota"],
@@ -967,7 +967,7 @@
   },
   {
     "srppp-id": 10550,
-    "labels": {
+    "label": {
       "de": ["Gedeckter Brand der Gerste"],
       "fr": ["Charbon couvert de l'orge"],
       "it": ["Carbone coperto dell'orzo"],
@@ -981,7 +981,7 @@
   },
   {
     "srppp-id": 11129,
-    "labels": {
+    "label": {
       "de": ["Kastanienminiermotte"],
       "fr": ["Mineuse du chataignier"],
       "it": ["Minatrice dell'ippocastano"],
@@ -995,7 +995,7 @@
   },
   {
     "srppp-id": 11217,
-    "labels": {
+    "label": {
       "de": ["Falscher Mehltau der Doldenblütler"],
       "fr": ["Mildiou des ombellifères"],
       "it": ["Peronospora delle ombrellifere"],
@@ -1009,7 +1009,7 @@
   },
   {
     "srppp-id": 13479,
-    "labels": {
+    "label": {
       "de": ["Colletotrichum-Wurzelbrand", "Colletotrichum-Blattflecken des Spinats"],
       "fr": ["Pied noir", "Anthracnose de l'épinard"],
       "it": ["Mal del piede", "Antracnosi dello spinacio"],
@@ -1023,7 +1023,7 @@
   },
   {
     "srppp-id": 15567,
-    "labels": {
+    "label": {
       "de": ["Marssonina- Blattfallkrankheit"],
       "fr": ["Chute des feuilles due à Marssonina"],
       "it": ["Caduta delle foglie dovuta a Marssonina"],
@@ -1037,7 +1037,7 @@
   },
   {
     "srppp-id": 10740,
-    "labels": {
+    "label": {
       "de": ["Einbindiger Traubenwickler"],
       "fr": ["Cochylis"],
       "it": ["Tignola della vite"],
@@ -1051,7 +1051,7 @@
   },
   {
     "srppp-id": 10739,
-    "labels": {
+    "label": {
       "de": ["Traubenwickler"],
       "fr": ["Vers de la grappe"],
       "it": ["Tignole della vite (Eupoecilia ambiguella, Lobesia botrana)"],
@@ -1065,7 +1065,7 @@
   },
   {
     "srppp-id": 11214,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau des Tabaks"],
       "fr": ["Oïdium du tabac"],
       "it": ["Oidio del tabacco"],
@@ -1079,7 +1079,7 @@
   },
   {
     "srppp-id": 11116,
-    "labels": {
+    "label": {
       "de": ["Phomopsis der Sonnenblume"],
       "fr": ["Phomopsis du tournesol"],
       "it": ["Phomopsis del girasole"],
@@ -1093,7 +1093,7 @@
   },
   {
     "srppp-id": 13361,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Mini-Kiwi"],
       "fr": ["Oïdium du Minikiwi (Phyllactinia actinidiae)"],
       "it": ["Oidio della Minikiwi (Phyllactinia actinidiae)"],
@@ -1107,7 +1107,7 @@
   },
   {
     "srppp-id": 11260,
-    "labels": {
+    "label": {
       "de": ["Pfauenaugenkrankheit"],
       "fr": ["Maladie de l'oeil de paon"],
       "it": ["Occhio di pavone"],
@@ -1121,7 +1121,7 @@
   },
   {
     "srppp-id": 10589,
-    "labels": {
+    "label": {
       "de": ["Ohrläppchenkrankheit der Azaleen"],
       "fr": ["Cloque des azalées"],
       "it": ["Bolla dell'azalea"],
@@ -1135,7 +1135,7 @@
   },
   {
     "srppp-id": 10671,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Quitte"],
       "fr": ["Oïdium du cognassier"],
       "it": ["Oidio del cotogno"],
@@ -1149,7 +1149,7 @@
   },
   {
     "srppp-id": 10762,
-    "labels": {
+    "label": {
       "de": ["Bakteriosen"],
       "fr": ["Bactérioses"],
       "it": ["Batteriosi"],
@@ -1163,7 +1163,7 @@
   },
   {
     "srppp-id": 11238,
-    "labels": {
+    "label": {
       "de": ["Kontrolle der Durchwuchskartoffel in Nachfolgekulturen"],
       "fr": ["Contrôle des repousses de pommes de terre dans les cultures suivantes"],
       "it": ["Controllo dei ricacci di patate nelle colture successive"],
@@ -1177,7 +1177,7 @@
   },
   {
     "srppp-id": 10519,
-    "labels": {
+    "label": {
       "de": ["Eckige Blattfleckenkrankheit"],
       "fr": ["Taches angulaires"],
       "it": ["Maculature angolari"],
@@ -1191,7 +1191,7 @@
   },
   {
     "srppp-id": 10745,
-    "labels": {
+    "label": {
       "de": ["Pfirsichwickler"],
       "fr": ["Tordeuse orientale du pêcher"],
       "it": ["Tortrice orientale del pesco"],
@@ -1205,7 +1205,7 @@
   },
   {
     "srppp-id": 14999,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau des Maulbeerbaums"],
       "fr": ["Oïdium du mûrier"],
       "it": ["Oidio del moro nero"],
@@ -1219,7 +1219,7 @@
   },
   {
     "srppp-id": 10640,
-    "labels": {
+    "label": {
       "de": ["Ackerwinde"],
       "fr": ["Liseron des champs"],
       "it": ["Vilucchio comune"],
@@ -1233,7 +1233,7 @@
   },
   {
     "srppp-id": 10731,
-    "labels": {
+    "label": {
       "de": ["Silberschorf"],
       "fr": ["Gale argentée de la pomme de terre"],
       "it": ["Tigna argentata della patata"],
@@ -1247,7 +1247,7 @@
   },
   {
     "srppp-id": 14795,
-    "labels": {
+    "label": {
       "de": ["Rostpilze der Küchenkräuter"],
       "fr": ["Rouilles des fines herbes"],
       "it": ["Ruggini su erbette da cucina"],
@@ -1261,7 +1261,7 @@
   },
   {
     "srppp-id": 10479,
-    "labels": {
+    "label": {
       "de": ["Kelchfäule (Botrytis cinerea)"],
       "fr": ["Pourriture de la mouche des pommes (Botrytis cinerea)"],
       "it": ["Marciume (Botrytis cinerea)"],
@@ -1275,7 +1275,7 @@
   },
   {
     "srppp-id": 10373,
-    "labels": {
+    "label": {
       "de": ["Graufäule (Botrytis cinerea)"],
       "fr": ["Pourriture grise (Botrytis cinerea)"],
       "it": ["Marciume grigio (Botrytis cinerea)"],
@@ -1289,7 +1289,7 @@
   },
   {
     "srppp-id": 12681,
-    "labels": {
+    "label": {
       "de": ["Erdmandelgras"],
       "fr": ["Souchet comestible"],
       "it": ["Cipero dolce"],
@@ -1303,7 +1303,7 @@
   },
   {
     "srppp-id": 10448,
-    "labels": {
+    "label": {
       "de": ["Kleespitzmäuschen"],
       "fr": ["Apions du trèfle"],
       "it": ["Apioni dei capolini del trifoglio"],
@@ -1317,7 +1317,7 @@
   },
   {
     "srppp-id": 10460,
-    "labels": {
+    "label": {
       "de": ["Spargelhähnchen"],
       "fr": ["Criocère de l'asperge"],
       "it": ["Criocera dell'asparago"],
@@ -1331,7 +1331,7 @@
   },
   {
     "srppp-id": 11169,
-    "labels": {
+    "label": {
       "de": ["Brotkäfer"],
       "fr": ["Vrillette du pain"],
       "it": ["Anobio del pane"],
@@ -1345,7 +1345,7 @@
   },
   {
     "srppp-id": 10696,
-    "labels": {
+    "label": {
       "de": ["Dickmaulrüssler"],
       "fr": ["Otiorhynques"],
       "it": ["Oziorrinchi"],
@@ -1359,7 +1359,7 @@
   },
   {
     "srppp-id": 10469,
-    "labels": {
+    "label": {
       "de": ["Rübenfliege"],
       "fr": ["Mouche de la betterave"],
       "it": ["Mosca della barbabietola"],
@@ -1373,7 +1373,7 @@
   },
   {
     "srppp-id": 10871,
-    "labels": {
+    "label": {
       "de": ["Talerfleckenkrankheit (Dollarfleckenkrankheit)"],
       "fr": ["Dollar spot des graminées"],
       "it": ["Agente della macchia a forma di dollaro"],
@@ -1387,7 +1387,7 @@
   },
   {
     "srppp-id": 10699,
-    "labels": {
+    "label": {
       "de": ["Borkenkäfer"],
       "fr": ["Scolytes"],
       "it": ["Scolitidi"],
@@ -1401,7 +1401,7 @@
   },
   {
     "srppp-id": 12669,
-    "labels": {
+    "label": {
       "de": ["Rübenmotte"],
       "fr": ["Teigne de la betterave"],
       "it": ["Tignola della barbabietola"],
@@ -1415,7 +1415,7 @@
   },
   {
     "srppp-id": 10742,
-    "labels": {
+    "label": {
       "de": ["Springwurm"],
       "fr": ["Pyrale de la vigne"],
       "it": ["Tortrice della vite"],
@@ -1429,7 +1429,7 @@
   },
   {
     "srppp-id": 10784,
-    "labels": {
+    "label": {
       "de": ["Blatt- und Sägewespen"],
       "fr": ["Tenthrèdes et hoplocampes"],
       "it": ["Tentredini"],
@@ -1443,7 +1443,7 @@
   },
   {
     "srppp-id": 10452,
-    "labels": {
+    "label": {
       "de": ["Blattwespen"],
       "fr": ["Tenthrèdes"],
       "it": ["Tentredini"],
@@ -1457,7 +1457,7 @@
   },
   {
     "srppp-id": 10837,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Rosen"],
       "fr": ["Oïdium du rosier"],
       "it": ["Oidio delle rose"],
@@ -1471,7 +1471,7 @@
   },
   {
     "srppp-id": 11088,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau des Steinobstes"],
       "fr": ["Oïdium des arbres fruitiers à noyau"],
       "it": ["Oidio della frutta a nocciolo"],
@@ -1485,7 +1485,7 @@
   },
   {
     "srppp-id": 10490,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau des Pfirsichs"],
       "fr": ["Oïdium du pêcher"],
       "it": ["Oidio della pesca"],
@@ -1499,7 +1499,7 @@
   },
   {
     "srppp-id": 10499,
-    "labels": {
+    "label": {
       "de": ["Getreidehähnchen"],
       "fr": ["Criocères des céréales"],
       "it": ["Criocere dei cereali"],
@@ -1513,7 +1513,7 @@
   },
   {
     "srppp-id": 10736,
-    "labels": {
+    "label": {
       "de": ["Schalenwickler"],
       "fr": ["Tordeuses de la pelure"],
       "it": ["Tortrici ricamatrici"],
@@ -1527,7 +1527,7 @@
   },
   {
     "srppp-id": 10417,
-    "labels": {
+    "label": {
       "de": ["Tabakmottenschildlaus"],
       "fr": ["Aleurode du tabac"],
       "it": ["Aleurode delle solanacee"],
@@ -1541,7 +1541,7 @@
   },
   {
     "srppp-id": 12145,
-    "labels": {
+    "label": {
       "de": ["Colletotrichum-Welke"],
       "fr": ["Dartrose de la pomme de terre"],
       "it": ["\"Black dot\" della patata"],
@@ -1555,7 +1555,7 @@
   },
   {
     "srppp-id": 11193,
-    "labels": {
+    "label": {
       "de": ["Pseudomonas"],
       "fr": ["Pseudomonas"],
       "it": ["Pseudomonas"],
@@ -1569,7 +1569,7 @@
   },
   {
     "srppp-id": 10647,
-    "labels": {
+    "label": {
       "de": ["Löwenzahn"],
       "fr": ["Dent-de-lion"],
       "it": ["Tarassaco"],
@@ -1583,7 +1583,7 @@
   },
   {
     "srppp-id": 10993,
-    "labels": {
+    "label": {
       "de": ["Getreidekapuziner"],
       "fr": ["Bostryche des graines"],
       "it": ["Punteruolo dei cereali"],
@@ -1597,7 +1597,7 @@
   },
   {
     "srppp-id": 11320,
-    "labels": {
+    "label": {
       "de": ["Rost der Ackerbohne"],
       "fr": ["Rouille de la fève"],
       "it": ["Ruggine della fava"],
@@ -1611,7 +1611,7 @@
   },
   {
     "srppp-id": 11319,
-    "labels": {
+    "label": {
       "de": ["Rost der Erbse"],
       "fr": ["Rouilles du pois"],
       "it": ["Ruggini del pisello"],
@@ -1625,7 +1625,7 @@
   },
   {
     "srppp-id": 10951,
-    "labels": {
+    "label": {
       "de": ["Bohnenbrand"],
       "fr": ["Brûlure bactérienne du haricot"],
       "it": ["Antracnosi del fagiolo"],
@@ -1639,7 +1639,7 @@
   },
   {
     "srppp-id": 12477,
-    "labels": {
+    "label": {
       "de": ["Rhizoctonia-Krankheiten des Rasens"],
       "fr": ["Rhizoctones des graminées"],
       "it": ["Rizottonie delle graminacee"],
@@ -1653,7 +1653,7 @@
   },
   {
     "srppp-id": 11094,
-    "labels": {
+    "label": {
       "de": ["Falscher Mehltau des Spinats"],
       "fr": ["Mildiou de l'épinard"],
       "it": ["Peronospora dello spinacio"],
@@ -1667,7 +1667,7 @@
   },
   {
     "srppp-id": 10485,
-    "labels": {
+    "label": {
       "de": ["Bakterienbrand der Kirsche"],
       "fr": ["Chancre bactérien du cerisier"],
       "it": ["Batteriosi del ciliegio"],
@@ -1681,7 +1681,7 @@
   },
   {
     "srppp-id": 12482,
-    "labels": {
+    "label": {
       "de": ["Bakteriose der Walnuss"],
       "fr": ["Bactériose du noyer"],
       "it": ["Batteriosi del noce"],
@@ -1695,7 +1695,7 @@
   },
   {
     "srppp-id": 10759,
-    "labels": {
+    "label": {
       "de": ["Erdraupen"],
       "fr": ["Noctuelles terricoles ou vers gris"],
       "it": ["Nottue terricole o vermi grigi"],
@@ -1709,7 +1709,7 @@
   },
   {
     "srppp-id": 10905,
-    "labels": {
+    "label": {
       "de": ["Keimlingskrankheiten"],
       "fr": ["Fontes des semis"],
       "it": ["Malattie parassitarie dei germogli"],
@@ -1723,7 +1723,7 @@
   },
   {
     "srppp-id": 13018,
-    "labels": {
+    "label": {
       "de": ["Fusarium Keimlingsbefall"],
       "fr": ["Fusariose des plantules"],
       "it": ["Fusariosi delle piantine"],
@@ -1737,7 +1737,7 @@
   },
   {
     "srppp-id": 12138,
-    "labels": {
+    "label": {
       "de": ["Knollentrockenfäulen"],
       "fr": ["Pourritures sèches des tubercules"],
       "it": ["Marciumi secchi dei tuberi"],
@@ -1751,7 +1751,7 @@
   },
   {
     "srppp-id": 11011,
-    "labels": {
+    "label": {
       "de": ["Fusarium spp."],
       "fr": ["Fusarium spp."],
       "it": ["Fusarium spp."],
@@ -1765,7 +1765,7 @@
   },
   {
     "srppp-id": 13140,
-    "labels": {
+    "label": {
       "de": ["Pepinomosaikvirus (PepMV)"],
       "fr": ["Mosaïque du pépino (PepMV)"],
       "it": ["Virus del mosaico del pepino (PepMV)"],
@@ -1779,7 +1779,7 @@
   },
   {
     "srppp-id": 10349,
-    "labels": {
+    "label": {
       "de": ["Alternaria spp."],
       "fr": ["Alternarioses"],
       "it": ["Alternaria spp."],
@@ -1793,7 +1793,7 @@
   },
   {
     "srppp-id": 10574,
-    "labels": {
+    "label": {
       "de": ["Blattfleckenpilze"],
       "fr": ["Maladies fongiques des feuilles"],
       "it": ["Maculature fogliari"],
@@ -1807,7 +1807,7 @@
   },
   {
     "srppp-id": 10540,
-    "labels": {
+    "label": {
       "de": ["Alternaria-Dürrfleckenkrankheit"],
       "fr": ["Alternariose"],
       "it": ["Alternariosi delle solanacee"],
@@ -1821,7 +1821,7 @@
   },
   {
     "srppp-id": 10970,
-    "labels": {
+    "label": {
       "de": ["Tabakkäfer"],
       "fr": ["Altises du tabac"],
       "it": ["Lasioderma"],
@@ -1835,7 +1835,7 @@
   },
   {
     "srppp-id": 10383,
-    "labels": {
+    "label": {
       "de": ["Gemeine Spinnmilbe"],
       "fr": ["Acarien jaune commun"],
       "it": ["Ragnetto giallo comune"],
@@ -1849,7 +1849,7 @@
   },
   {
     "srppp-id": 11476,
-    "labels": {
+    "label": {
       "de": ["Kirschessigfliege"],
       "fr": ["Drosophile du cerisier"],
       "it": ["Drosophila suzukii"],
@@ -1863,7 +1863,7 @@
   },
   {
     "srppp-id": 10733,
-    "labels": {
+    "label": {
       "de": ["Kleiner Fruchtwickler"],
       "fr": ["Petite tordeuse des fruits"],
       "it": ["Piccola tortrice dei frutti"],
@@ -1877,7 +1877,7 @@
   },
   {
     "srppp-id": 10939,
-    "labels": {
+    "label": {
       "de": ["Samtfleckenkrankheit"],
       "fr": ["Cladosporiose"],
       "it": ["Ticchiolatura"],
@@ -1891,7 +1891,7 @@
   },
   {
     "srppp-id": 10533,
-    "labels": {
+    "label": {
       "de": ["Botrytis spp."],
       "fr": ["Botrytis spp."],
       "it": ["Botrytis spp."],
@@ -1905,7 +1905,7 @@
   },
   {
     "srppp-id": 10697,
-    "labels": {
+    "label": {
       "de": ["Erdbeer- oder Himbeerblütenstecher"],
       "fr": ["Anthonome du fraisier ou du framboisier"],
       "it": ["Antonomo delle fragole o dei lamponi"],
@@ -1919,7 +1919,7 @@
   },
   {
     "srppp-id": 10376,
-    "labels": {
+    "label": {
       "de": ["Kalifornischer Blütenthrips"],
       "fr": ["Thrips de Californie"],
       "it": ["Tripide occidentale dei fiori (Frankliniella occidentalis)"],
@@ -1933,7 +1933,7 @@
   },
   {
     "srppp-id": 15263,
-    "labels": {
+    "label": {
       "de": ["Wurzelläuse"],
       "fr": ["Pucerons des racines"],
       "it": ["Afidi delle radici"],
@@ -1947,7 +1947,7 @@
   },
   {
     "srppp-id": 11159,
-    "labels": {
+    "label": {
       "de": ["Virusübertragende Blattläuse"],
       "fr": ["Pucerons vecteurs de virus"],
       "it": ["Afidi vettori di virus"],
@@ -1961,7 +1961,7 @@
   },
   {
     "srppp-id": 10398,
-    "labels": {
+    "label": {
       "de": ["Blattläuse (Röhrenläuse)"],
       "fr": ["Pucerons du feuillage"],
       "it": ["Afidi"],
@@ -1975,7 +1975,7 @@
   },
   {
     "srppp-id": 10705,
-    "labels": {
+    "label": {
       "de": ["Mehlige Birnblattlaus"],
       "fr": ["Puceron cendré du poirier"],
       "it": ["Afide sanguigno del pero"],
@@ -1989,7 +1989,7 @@
   },
   {
     "srppp-id": 10917,
-    "labels": {
+    "label": {
       "de": ["Mehlmotte"],
       "fr": ["Teigne de la farine"],
       "it": ["Tignola grigia delle provviste alimentari"],
@@ -2003,7 +2003,7 @@
   },
   {
     "srppp-id": 10503,
-    "labels": {
+    "label": {
       "de": ["Roste der Ribes-Arten"],
       "fr": ["Rouille des espèces de Ribes"],
       "it": ["Ruggine delle specie di ribes"],
@@ -2017,7 +2017,7 @@
   },
   {
     "srppp-id": 11256,
-    "labels": {
+    "label": {
       "de": ["Rapsminierfliege"],
       "fr": ["Mouche mineuse des feuilles de colza"],
       "it": ["Mosca minatrice della colza"],
@@ -2031,7 +2031,7 @@
   },
   {
     "srppp-id": 12923,
-    "labels": {
+    "label": {
       "de": ["Vorratsschädlinge fliegend"],
       "fr": ["Ravageurs des denrées stockées volants"],
       "it": ["Parassiti delle scorte alimentari volanti"],
@@ -2045,7 +2045,7 @@
   },
   {
     "srppp-id": 10510,
-    "labels": {
+    "label": {
       "de": ["Vorratsschädlinge"],
       "fr": ["Ravageurs des denrées stockées"],
       "it": ["Parassiti delle scorte alimentari"],
@@ -2059,7 +2059,7 @@
   },
   {
     "srppp-id": 14878,
-    "labels": {
+    "label": {
       "de": ["Fusarium Welke"],
       "fr": ["Flétrissement fusarien"],
       "it": ["Avvizzimento da fusariosi"],
@@ -2073,7 +2073,7 @@
   },
   {
     "srppp-id": 10906,
-    "labels": {
+    "label": {
       "de": ["Rotfäule"],
       "fr": ["Pourriture rouge"],
       "it": ["Marciume rosso"],
@@ -2087,7 +2087,7 @@
   },
   {
     "srppp-id": 10894,
-    "labels": {
+    "label": {
       "de": ["Lauchrost"],
       "fr": ["Rouille du poireau"],
       "it": ["Ruggine del porro"],
@@ -2101,7 +2101,7 @@
   },
   {
     "srppp-id": 10430,
-    "labels": {
+    "label": {
       "de": ["Minierfliegen"],
       "fr": ["Mouches mineuses"],
       "it": ["Minatrici"],
@@ -2115,7 +2115,7 @@
   },
   {
     "srppp-id": 10405,
-    "labels": {
+    "label": {
       "de": ["Wollläuse (Schmierläuse)"],
       "fr": ["Cochenilles farineuses"],
       "it": ["Cocciniglie cotonose"],
@@ -2129,7 +2129,7 @@
   },
   {
     "srppp-id": 10698,
-    "labels": {
+    "label": {
       "de": ["Himbeerkäfer"],
       "fr": ["Ver des framboises"],
       "it": ["Verme del lampone"],
@@ -2143,7 +2143,7 @@
   },
   {
     "srppp-id": 11087,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Rüben"],
       "fr": ["Oïdium des betteraves"],
       "it": ["Oidio delle barbabietole"],
@@ -2157,7 +2157,7 @@
   },
   {
     "srppp-id": 10974,
-    "labels": {
+    "label": {
       "de": ["Winden"],
       "fr": ["Liserons"],
       "it": ["Convolvulaceae"],
@@ -2171,7 +2171,7 @@
   },
   {
     "srppp-id": 10940,
-    "labels": {
+    "label": {
       "de": ["Einjährige Hahnenfussgewächse"],
       "fr": ["Renonculacées annuelles"],
       "it": ["Ranuncoli annuali"],
@@ -2185,7 +2185,7 @@
   },
   {
     "srppp-id": 10941,
-    "labels": {
+    "label": {
       "de": ["Mehrjährige Hahnenfussgewächse"],
       "fr": ["Renoncules vivaces"],
       "it": ["Ranuncoli pluriennali"],
@@ -2199,7 +2199,7 @@
   },
   {
     "srppp-id": 11956,
-    "labels": {
+    "label": {
       "de": ["Junikäfer"],
       "fr": ["Hanneton européen / hanneton de la Saint-Jean"],
       "it": ["Rizotrogo"],
@@ -2213,7 +2213,7 @@
   },
   {
     "srppp-id": 10972,
-    "labels": {
+    "label": {
       "de": ["Hahnenfuss-Arten"],
       "fr": ["Renoncules"],
       "it": ["Specie di ranuncoli"],
@@ -2227,7 +2227,7 @@
   },
   {
     "srppp-id": 10959,
-    "labels": {
+    "label": {
       "de": ["Pseudococcus viburni"],
       "fr": ["Pseudococcus viburni"],
       "it": ["Pseudococcus viburni"],
@@ -2241,7 +2241,7 @@
   },
   {
     "srppp-id": 10580,
-    "labels": {
+    "label": {
       "de": ["Fritfliege"],
       "fr": ["Oscinie"],
       "it": ["Mosca frit"],
@@ -2255,7 +2255,7 @@
   },
   {
     "srppp-id": 13821,
-    "labels": {
+    "label": {
       "de": ["Laubkrankheit (Stemphylium botryosum)"],
       "fr": ["Stemphyliose"],
       "it": ["Stemphylium botryosum"],
@@ -2269,7 +2269,7 @@
   },
   {
     "srppp-id": 10539,
-    "labels": {
+    "label": {
       "de": ["Blattschwärze der Spargel"],
       "fr": ["Brûlure des feuilles de l'asperge"],
       "it": ["Bruciatura delle foglie dell'asparago"],
@@ -2283,7 +2283,7 @@
   },
   {
     "srppp-id": 10720,
-    "labels": {
+    "label": {
       "de": ["Reblaus"],
       "fr": ["Phylloxéra de la vigne"],
       "it": ["Filossera della vite"],
@@ -2297,7 +2297,7 @@
   },
   {
     "srppp-id": 11062,
-    "labels": {
+    "label": {
       "de": ["Trespenarten"],
       "fr": ["Espèces de bromes"],
       "it": ["Specie di bromo"],
@@ -2311,7 +2311,7 @@
   },
   {
     "srppp-id": 10850,
-    "labels": {
+    "label": {
       "de": ["Dicotyledonen (Unkräuter) und Monocotyledonen (Ungräser)"],
       "fr": ["Dicotylédones et monocotylédones"],
       "it": ["Dicotiledoni e monocotiledoni (malerbe)"],
@@ -2325,7 +2325,7 @@
   },
   {
     "srppp-id": 10855,
-    "labels": {
+    "label": {
       "de": ["Einjährige Dicotyledonen (Unkräuter)"],
       "fr": ["Dicotylédones annuelles"],
       "it": ["Dicotiledoni annuali (malerbe)"],
@@ -2339,7 +2339,7 @@
   },
   {
     "srppp-id": 10774,
-    "labels": {
+    "label": {
       "de": ["Mehrjährige Monocotyledonen (Ungräser)"],
       "fr": ["Monocotylédones vivaces"],
       "it": ["Monocotiledoni perenni (malerbe)"],
@@ -2353,7 +2353,7 @@
   },
   {
     "srppp-id": 10474,
-    "labels": {
+    "label": {
       "de": ["Einjährige Monocotyledonen (Ungräser)"],
       "fr": ["Monocotylédones annuelles"],
       "it": ["Monocotiledoni annuali (malerbe)."],
@@ -2367,7 +2367,7 @@
   },
   {
     "srppp-id": 10351,
-    "labels": {
+    "label": {
       "de": ["Monocotyledonen (Ungräser)"],
       "fr": ["Monocotylédones"],
       "it": ["Monocotiledoni (malerbe)"],
@@ -2381,7 +2381,7 @@
   },
   {
     "srppp-id": 10648,
-    "labels": {
+    "label": {
       "de": ["Weissklee"],
       "fr": ["Trèfle rampant, trèfle blanc"],
       "it": ["Trifoglio bianco"],
@@ -2395,7 +2395,7 @@
   },
   {
     "srppp-id": 11013,
-    "labels": {
+    "label": {
       "de": ["Kraut- und Knollenfäule"],
       "fr": ["Mildiou de la pomme de terre"],
       "it": ["Peronospora della patata"],
@@ -2409,7 +2409,7 @@
   },
   {
     "srppp-id": 12409,
-    "labels": {
+    "label": {
       "de": ["Falscher Mehltau der Aubergine"],
       "fr": ["Mildiou de l'aubergine"],
       "it": ["Peronospora della melanzana"],
@@ -2423,7 +2423,7 @@
   },
   {
     "srppp-id": 10569,
-    "labels": {
+    "label": {
       "de": ["Kraut- und Fruchtfäule"],
       "fr": ["Mildiou de la tomate"],
       "it": ["Peronospora del pomodoro"],
@@ -2437,7 +2437,7 @@
   },
   {
     "srppp-id": 10555,
-    "labels": {
+    "label": {
       "de": ["Rhizoctonia-solani-Krankheit"],
       "fr": ["Rhizoctone"],
       "it": ["Rizottonia"],
@@ -2451,7 +2451,7 @@
   },
   {
     "srppp-id": 11310,
-    "labels": {
+    "label": {
       "de": ["Walnussfruchtfliege"],
       "fr": ["Mouche de la noix"],
       "it": ["Mosca della noce"],
@@ -2465,7 +2465,7 @@
   },
   {
     "srppp-id": 10930,
-    "labels": {
+    "label": {
       "de": ["Gummistengelkrankheit"],
       "fr": ["Gommose des Cucurbitacées"],
       "it": ["Cancro gommoso"],
@@ -2479,7 +2479,7 @@
   },
   {
     "srppp-id": 10562,
-    "labels": {
+    "label": {
       "de": ["Gelbrost"],
       "fr": ["Rouille jaune"],
       "it": ["Ruggine gialla"],
@@ -2493,7 +2493,7 @@
   },
   {
     "srppp-id": 10463,
-    "labels": {
+    "label": {
       "de": ["Erbsenblattrandkäfer"],
       "fr": ["Sitone du pois"],
       "it": ["Sitone del pisello"],
@@ -2507,7 +2507,7 @@
   },
   {
     "srppp-id": 11127,
-    "labels": {
+    "label": {
       "de": ["Herbstzeitlose"],
       "fr": ["Colchique d'automne"],
       "it": ["Colchico d'autunno"],
@@ -2521,7 +2521,7 @@
   },
   {
     "srppp-id": 10413,
-    "labels": {
+    "label": {
       "de": ["Schwarze Bohnenlaus = Schwarze Rübenblattlaus"],
       "fr": ["Puceron noir de la fève"],
       "it": ["Afide nero della fava"],
@@ -2535,7 +2535,7 @@
   },
   {
     "srppp-id": 11008,
-    "labels": {
+    "label": {
       "de": ["Rapsstengelrüssler"],
       "fr": ["Gros charançon de la tige du colza"],
       "it": ["Punteruolo degli steli della colza"],
@@ -2549,7 +2549,7 @@
   },
   {
     "srppp-id": 10649,
-    "labels": {
+    "label": {
       "de": ["Grosse Brennnessel"],
       "fr": ["Ortie dioïque"],
       "it": ["Ortica dioica"],
@@ -2563,7 +2563,7 @@
   },
   {
     "srppp-id": 10566,
-    "labels": {
+    "label": {
       "de": ["Netzfleckenkrankheit der Gerste"],
       "fr": ["Helminthosporiose de l'orge"],
       "it": ["Macchie reticolate dell'orzo"],
@@ -2577,7 +2577,7 @@
   },
   {
     "srppp-id": 15474,
-    "labels": {
+    "label": {
       "de": ["Brennfleckenkrankheit der Ackerbohne"],
       "fr": ["Anthracnose de la fève"],
       "it": ["Antracnosi della fava"],
@@ -2591,7 +2591,7 @@
   },
   {
     "srppp-id": 10678,
-    "labels": {
+    "label": {
       "de": ["Rapsglanzkäfer"],
       "fr": ["Méligèthe des crucifères"],
       "it": ["Meligete della colza"],
@@ -2605,7 +2605,7 @@
   },
   {
     "srppp-id": 10390,
-    "labels": {
+    "label": {
       "de": ["Kartoffelkäfer"],
       "fr": ["Doryphore"],
       "it": ["Dorifora della patata"],
@@ -2619,7 +2619,7 @@
   },
   {
     "srppp-id": 10634,
-    "labels": {
+    "label": {
       "de": ["Kriechender Günsel"],
       "fr": ["Bugle rampante"],
       "it": ["Bugola"],
@@ -2633,7 +2633,7 @@
   },
   {
     "srppp-id": 10864,
-    "labels": {
+    "label": {
       "de": ["Rumex-Arten"],
       "fr": ["Rumex"],
       "it": ["Specie di romice"],
@@ -2647,7 +2647,7 @@
   },
   {
     "srppp-id": 10650,
-    "labels": {
+    "label": {
       "de": ["Gamanderehrenpreis"],
       "fr": ["Véronique petit-chêne, fausse germandrée"],
       "it": ["Veronica comune"],
@@ -2661,7 +2661,7 @@
   },
   {
     "srppp-id": 10643,
-    "labels": {
+    "label": {
       "de": ["Spitzwegerich"],
       "fr": ["Plantain lancéolé"],
       "it": ["Piantaggine lanciuola"],
@@ -2675,7 +2675,7 @@
   },
   {
     "srppp-id": 10931,
-    "labels": {
+    "label": {
       "de": ["Weisser Germer"],
       "fr": ["Vératre blanc"],
       "it": ["Veratro comune"],
@@ -2689,7 +2689,7 @@
   },
   {
     "srppp-id": 10659,
-    "labels": {
+    "label": {
       "de": ["Einjähriges Rispengras"],
       "fr": ["Pâturin annuel"],
       "it": ["Poa annua"],
@@ -2703,7 +2703,7 @@
   },
   {
     "srppp-id": 11995,
-    "labels": {
+    "label": {
       "de": ["Schwärmer"],
       "fr": ["Sphingidés"],
       "it": ["Sfingi"],
@@ -2717,7 +2717,7 @@
   },
   {
     "srppp-id": 10651,
-    "labels": {
+    "label": {
       "de": ["Faden-Ehrenpreis"],
       "fr": ["Véronique filiforme"],
       "it": ["Veronica filiforme"],
@@ -2731,7 +2731,7 @@
   },
   {
     "srppp-id": 10620,
-    "labels": {
+    "label": {
       "de": ["Steifer Sauerklee"],
       "fr": ["Oxalis raide"],
       "it": ["Acetosella dei boschi"],
@@ -2745,7 +2745,7 @@
   },
   {
     "srppp-id": 11003,
-    "labels": {
+    "label": {
       "de": ["Distelfalter"],
       "fr": ["Vanesse de l'artichaut"],
       "it": ["Vanessa del cardo"],
@@ -2759,7 +2759,7 @@
   },
   {
     "srppp-id": 10912,
-    "labels": {
+    "label": {
       "de": ["Alpenampfer"],
       "fr": ["Rumex des Alpes, rhubarbe des moines"],
       "it": ["Romice alpino"],
@@ -2773,7 +2773,7 @@
   },
   {
     "srppp-id": 10426,
-    "labels": {
+    "label": {
       "de": ["Miniermotten"],
       "fr": ["Mineuses"],
       "it": ["Minatrici"],
@@ -2787,7 +2787,7 @@
   },
   {
     "srppp-id": 10652,
-    "labels": {
+    "label": {
       "de": ["Quendelblättriger Ehrenpreis"],
       "fr": ["Véronique à feuilles de serpolet"],
       "it": ["Veronica a foglie di serpillo"],
@@ -2801,7 +2801,7 @@
   },
   {
     "srppp-id": 10593,
-    "labels": {
+    "label": {
       "de": ["Sternrusstau der Rosen"],
       "fr": ["Maladie des taches noires du rosier"],
       "it": ["Ticchiolatura della rosa"],
@@ -2815,7 +2815,7 @@
   },
   {
     "srppp-id": 10614,
-    "labels": {
+    "label": {
       "de": ["Klettenlabkraut"],
       "fr": ["Gaillet gratteron"],
       "it": ["Caglio asprello"],
@@ -2829,7 +2829,7 @@
   },
   {
     "srppp-id": 10636,
-    "labels": {
+    "label": {
       "de": ["Zaunwinde"],
       "fr": ["Liseron des haies"],
       "it": ["Vilucchio bianco"],
@@ -2843,7 +2843,7 @@
   },
   {
     "srppp-id": 10492,
-    "labels": {
+    "label": {
       "de": ["Narren- oder Taschenkrankheit der Zwetschge"],
       "fr": ["Maladie des pochettes du prunier"],
       "it": ["Bozzacchioni del susino"],
@@ -2857,7 +2857,7 @@
   },
   {
     "srppp-id": 10641,
-    "labels": {
+    "label": {
       "de": ["Gundelrebe"],
       "fr": ["Lierre terrestre"],
       "it": ["Ellera terrestre comune"],
@@ -2871,7 +2871,7 @@
   },
   {
     "srppp-id": 10427,
-    "labels": {
+    "label": {
       "de": ["Trägspinner"],
       "fr": ["Lymantridés"],
       "it": ["Limantridi"],
@@ -2885,7 +2885,7 @@
   },
   {
     "srppp-id": 10645,
-    "labels": {
+    "label": {
       "de": ["Stumpfblättriger Ampfer (Blacken)"],
       "fr": ["Rumex à feuilles obtuses"],
       "it": ["Romice comune"],
@@ -2899,7 +2899,7 @@
   },
   {
     "srppp-id": 10404,
-    "labels": {
+    "label": {
       "de": ["Napfschildläuse"],
       "fr": ["Cochenilles lécanines"],
       "it": ["Cocciniglie del genere lecanio"],
@@ -2913,7 +2913,7 @@
   },
   {
     "srppp-id": 10389,
-    "labels": {
+    "label": {
       "de": ["Rübenerdflöhe"],
       "fr": ["Altises de la betterave"],
       "it": ["Altiche della barbabietola"],
@@ -2927,7 +2927,7 @@
   },
   {
     "srppp-id": 10545,
-    "labels": {
+    "label": {
       "de": ["Stinkbrand"],
       "fr": ["Carie ordinaire"],
       "it": ["Carie"],
@@ -2941,7 +2941,7 @@
   },
   {
     "srppp-id": 11192,
-    "labels": {
+    "label": {
       "de": ["Hühnerhirse"],
       "fr": ["Panic pied-de-coq"],
       "it": ["Panico selvatico"],
@@ -2955,7 +2955,7 @@
   },
   {
     "srppp-id": 10975,
-    "labels": {
+    "label": {
       "de": ["Distelarten"],
       "fr": ["Chardons"],
       "it": ["Specie di cardi"],
@@ -2969,7 +2969,7 @@
   },
   {
     "srppp-id": 10755,
-    "labels": {
+    "label": {
       "de": ["Frostspanner"],
       "fr": ["Cheimatobies"],
       "it": ["Falene"],
@@ -2983,7 +2983,7 @@
   },
   {
     "srppp-id": 10657,
-    "labels": {
+    "label": {
       "de": ["Gemeiner Windhalm"],
       "fr": ["Agrostis jouet du vent"],
       "it": ["Agrostide annuale (spica venti)"],
@@ -2997,7 +2997,7 @@
   },
   {
     "srppp-id": 10445,
-    "labels": {
+    "label": {
       "de": ["Gefleckter Kohltriebrüssler"],
       "fr": ["Charançon de la tige du chou"],
       "it": ["Punteruolo degli steli di cavoli"],
@@ -3011,7 +3011,7 @@
   },
   {
     "srppp-id": 10447,
-    "labels": {
+    "label": {
       "de": ["Kohlgallenrüssler"],
       "fr": ["Charançon gallicole du chou"],
       "it": ["Punteruolo delle galle dei cavoli"],
@@ -3025,7 +3025,7 @@
   },
   {
     "srppp-id": 11007,
-    "labels": {
+    "label": {
       "de": ["Rapsblattwespe"],
       "fr": ["Tenthrède de la rave"],
       "it": ["Tentredine delle crocifere"],
@@ -3039,7 +3039,7 @@
   },
   {
     "srppp-id": 10859,
-    "labels": {
+    "label": {
       "de": ["Hirsen"],
       "fr": ["Millets"],
       "it": ["Tipi di miglio"],
@@ -3053,7 +3053,7 @@
   },
   {
     "srppp-id": 10690,
-    "labels": {
+    "label": {
       "de": ["Kirschenfliege"],
       "fr": ["Mouche de la cerise"],
       "it": ["Mosca della ciliegia"],
@@ -3067,7 +3067,7 @@
   },
   {
     "srppp-id": 11210,
-    "labels": {
+    "label": {
       "de": ["Echte Mehltaupilze der Zierpflanzen"],
       "fr": ["Oïdiums des plantes ornementales"],
       "it": ["Oidio (diverse specie) su piante ornamentali"],
@@ -3081,7 +3081,7 @@
   },
   {
     "srppp-id": 11223,
-    "labels": {
+    "label": {
       "de": ["Echte Mehltaupilze der Küchenkräuter"],
       "fr": ["Oïdiums des fines herbes"],
       "it": ["Oidio (diverse specie) su erbette da cucina"],
@@ -3095,7 +3095,7 @@
   },
   {
     "srppp-id": 12339,
-    "labels": {
+    "label": {
       "de": ["Echte Mehltaupilze der Laubbäume"],
       "fr": ["Oïdiums des arbres feuillus"],
       "it": ["Oidio (diverse specie) su piante latifoglie"],
@@ -3109,7 +3109,7 @@
   },
   {
     "srppp-id": 15003,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der gemeinen Felsenbirne"],
       "fr": ["Oïdium de l'amélavier commun"],
       "it": ["Oidio del pero corvino"],
@@ -3123,7 +3123,7 @@
   },
   {
     "srppp-id": 15002,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau des Sanddorns"],
       "fr": ["Oïdium de l'argousier"],
       "it": ["Oidio del'olivello spinoso"],
@@ -3137,7 +3137,7 @@
   },
   {
     "srppp-id": 15001,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Eberesche"],
       "fr": ["Oïdium du sorbier des oiseleurs"],
       "it": ["Oidio del sorbo degli ucellatori"],
@@ -3151,7 +3151,7 @@
   },
   {
     "srppp-id": 15000,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Schwarzen Apfelbeere"],
       "fr": ["Oïdium de l'aronie noire"],
       "it": ["Oidio del aronia nera"],
@@ -3165,7 +3165,7 @@
   },
   {
     "srppp-id": 10509,
-    "labels": {
+    "label": {
       "de": ["Weissfäule der Rebe"],
       "fr": ["Coître de la vigne"],
       "it": ["Marciume bianco dell'uva"],
@@ -3179,7 +3179,7 @@
   },
   {
     "srppp-id": 11243,
-    "labels": {
+    "label": {
       "de": ["Grosser Brauner Nadelholzrüssler"],
       "fr": ["Grand charançon du pin"],
       "it": ["Ilobio dell'abete"],
@@ -3193,7 +3193,7 @@
   },
   {
     "srppp-id": 10464,
-    "labels": {
+    "label": {
       "de": ["Kohldrehherzgallmücke"],
       "fr": ["Cécidomyie du chou"],
       "it": ["Cecidomia del cavolo"],
@@ -3207,7 +3207,7 @@
   },
   {
     "srppp-id": 10579,
-    "labels": {
+    "label": {
       "de": ["Kohlschotenrüssler"],
       "fr": ["Charançon des siliques"],
       "it": ["Punteruolo delle silique delle crocifere"],
@@ -3221,7 +3221,7 @@
   },
   {
     "srppp-id": 10570,
-    "labels": {
+    "label": {
       "de": ["Prozessionsspinner"],
       "fr": ["Chenilles processionnaires"],
       "it": ["Taumatopea"],
@@ -3235,7 +3235,7 @@
   },
   {
     "srppp-id": 10388,
-    "labels": {
+    "label": {
       "de": ["Blattkäfer"],
       "fr": ["Chrysomélidés"],
       "it": ["Crisomelidi"],
@@ -3249,7 +3249,7 @@
   },
   {
     "srppp-id": 10701,
-    "labels": {
+    "label": {
       "de": ["Sclerotinia-Fäule"],
       "fr": ["Sclérotiniose"],
       "it": ["Mal dello sclerozio"],
@@ -3263,7 +3263,7 @@
   },
   {
     "srppp-id": 10714,
-    "labels": {
+    "label": {
       "de": ["Gemeine Kommaschildlaus"],
       "fr": ["Cochenille virgule"],
       "it": ["Cocciniglia virgola"],
@@ -3277,7 +3277,7 @@
   },
   {
     "srppp-id": 10375,
-    "labels": {
+    "label": {
       "de": ["Thripse"],
       "fr": ["Thrips"],
       "it": ["Tripidi"],
@@ -3291,7 +3291,7 @@
   },
   {
     "srppp-id": 10489,
-    "labels": {
+    "label": {
       "de": ["Kräuselkrankheit des Pfirsichs"],
       "fr": ["Cloque du pêcher"],
       "it": ["Bolla del pesco"],
@@ -3305,7 +3305,7 @@
   },
   {
     "srppp-id": 10901,
-    "labels": {
+    "label": {
       "de": ["Zitrusschmierlaus"],
       "fr": ["Cochenille farineuse du citronnier"],
       "it": ["Cocciniglia cotonosa"],
@@ -3319,7 +3319,7 @@
   },
   {
     "srppp-id": 10535,
-    "labels": {
+    "label": {
       "de": ["Cercospora- und Ramularia-Blattfleckenkrankheiten"],
       "fr": ["Cercosporiose et ramulariose"],
       "it": ["Cercosporiosi e ramulariosi"],
@@ -3333,7 +3333,7 @@
   },
   {
     "srppp-id": 11176,
-    "labels": {
+    "label": {
       "de": ["Phoma"],
       "fr": ["Phoma"],
       "it": ["Phoma"],
@@ -3347,7 +3347,7 @@
   },
   {
     "srppp-id": 11024,
-    "labels": {
+    "label": {
       "de": ["Bodenbürtige Krankheiten"],
       "fr": ["Maladies liées au sol"],
       "it": ["Malattie legate al suolo"],
@@ -3361,7 +3361,7 @@
   },
   {
     "srppp-id": 10559,
-    "labels": {
+    "label": {
       "de": ["Wurzelbrand der Zuckerrübe"],
       "fr": ["Pied noir de la betterave"],
       "it": ["Mal del piede della barbabietola"],
@@ -3375,7 +3375,7 @@
   },
   {
     "srppp-id": 10532,
-    "labels": {
+    "label": {
       "de": ["Samtfleckenkrankheit der Tomate"],
       "fr": ["Cladosporiose de la tomate"],
       "it": ["Ticchiolatura del pomodoro"],
@@ -3389,7 +3389,7 @@
   },
   {
     "srppp-id": 10538,
-    "labels": {
+    "label": {
       "de": ["Septoria-Blattfleckenkrankheit der Tomate/Aubergine"],
       "fr": ["Septoriose de la tomate/aubergine"],
       "it": ["Septoriosi del pomodoro/della melanzana"],
@@ -3403,7 +3403,7 @@
   },
   {
     "srppp-id": 11157,
-    "labels": {
+    "label": {
       "de": ["Giftige Kreuzkräuter (Senecio spp.)"],
       "fr": ["Séneçons toxiques (Senecio spp.)"],
       "it": ["Senecioni tossici (Senecio spp.)"],
@@ -3417,7 +3417,7 @@
   },
   {
     "srppp-id": 10403,
-    "labels": {
+    "label": {
       "de": ["Schildläuse"],
       "fr": ["Cochenilles"],
       "it": ["Cocciniglie"],
@@ -3431,7 +3431,7 @@
   },
   {
     "srppp-id": 11257,
-    "labels": {
+    "label": {
       "de": ["Wiesenschnake"],
       "fr": ["Tipule des prairies"],
       "it": ["Zanzarone degli orti"],
@@ -3445,7 +3445,7 @@
   },
   {
     "srppp-id": 10779,
-    "labels": {
+    "label": {
       "de": ["Wühl- oder Schermaus"],
       "fr": ["Campagnol terrestre"],
       "it": ["Arvicola terrestre"],
@@ -3459,7 +3459,7 @@
   },
   {
     "srppp-id": 10890,
-    "labels": {
+    "label": {
       "de": ["Rost auf Zwiebel-Arten"],
       "fr": ["Rouille des Allium"],
       "it": ["Ruggine delle Agliacee (Puccinia allii)"],
@@ -3473,7 +3473,7 @@
   },
   {
     "srppp-id": 10686,
-    "labels": {
+    "label": {
       "de": ["Erdbeermilbe"],
       "fr": ["Tarsonème du fraisier"],
       "it": ["Tarsonemide della fragola"],
@@ -3487,7 +3487,7 @@
   },
   {
     "srppp-id": 10834,
-    "labels": {
+    "label": {
       "de": ["Austernschildläuse"],
       "fr": ["Cochenilles diaspines"],
       "it": ["Cocciniglie ostreiformi"],
@@ -3501,7 +3501,7 @@
   },
   {
     "srppp-id": 11240,
-    "labels": {
+    "label": {
       "de": ["Buchsbaum-Zünsler"],
       "fr": ["Pyrale du buis"],
       "it": ["Piralide del bosso"],
@@ -3515,7 +3515,7 @@
   },
   {
     "srppp-id": 15703,
-    "labels": {
+    "label": {
       "de": ["Rost der Petersilie"],
       "fr": ["Rouille du persil"],
       "it": ["Ruggine del prezzemolo"],
@@ -3529,7 +3529,7 @@
   },
   {
     "srppp-id": 10900,
-    "labels": {
+    "label": {
       "de": ["Adlerfarn"],
       "fr": ["Fougère impériale"],
       "it": ["Felce maggiore"],
@@ -3543,7 +3543,7 @@
   },
   {
     "srppp-id": 10952,
-    "labels": {
+    "label": {
       "de": ["Bakterielle Tomatenwelke"],
       "fr": ["Chancre bactérien de la tomate"],
       "it": ["Avvizzimento batterico del pomodoro"],
@@ -3557,7 +3557,7 @@
   },
   {
     "srppp-id": 11196,
-    "labels": {
+    "label": {
       "de": ["Umfallkrankheit des Kohls"],
       "fr": ["Fonte des semis des crucifères"],
       "it": ["Phoma lingam"],
@@ -3571,7 +3571,7 @@
   },
   {
     "srppp-id": 10517,
-    "labels": {
+    "label": {
       "de": ["Fettfleckenkrankheit"],
       "fr": ["Graisse du haricot"],
       "it": ["Grassume del fagiolo"],
@@ -3585,7 +3585,7 @@
   },
   {
     "srppp-id": 10985,
-    "labels": {
+    "label": {
       "de": ["Birnenblütenbrand"],
       "fr": ["Flétrissement bactérien du poirier"],
       "it": ["Batteriosi del pero"],
@@ -3599,7 +3599,7 @@
   },
   {
     "srppp-id": 10367,
-    "labels": {
+    "label": {
       "de": ["Bakterielle Fleckenkrankheit"],
       "fr": ["Moucheture bactérienne"],
       "it": ["Batteriosi"],
@@ -3613,7 +3613,7 @@
   },
   {
     "srppp-id": 10722,
-    "labels": {
+    "label": {
       "de": ["Kornkäfer"],
       "fr": ["Charançon du blé"],
       "it": ["Punteruolo del grano"],
@@ -3627,7 +3627,7 @@
   },
   {
     "srppp-id": 10609,
-    "labels": {
+    "label": {
       "de": ["Kanadisches Berufkraut"],
       "fr": ["Vergerette du Canada"],
       "it": ["Saeppola canadese"],
@@ -3641,7 +3641,7 @@
   },
   {
     "srppp-id": 10704,
-    "labels": {
+    "label": {
       "de": ["Reiskäfer"],
       "fr": ["Charançon du riz"],
       "it": ["Punteruolo del riso"],
@@ -3655,7 +3655,7 @@
   },
   {
     "srppp-id": 11226,
-    "labels": {
+    "label": {
       "de": ["Olivenfliege"],
       "fr": ["Mouche de l'olive"],
       "it": ["Mosca dell'olivo"],
@@ -3669,7 +3669,7 @@
   },
   {
     "srppp-id": 10360,
-    "labels": {
+    "label": {
       "de": ["Wurzelgallennematoden"],
       "fr": ["Nématodes cécidogènes des racines"],
       "it": ["Anguillula radicicola"],
@@ -3683,7 +3683,7 @@
   },
   {
     "srppp-id": 10496,
-    "labels": {
+    "label": {
       "de": ["Lederfäule der Erdbeeren"],
       "fr": ["Mildiou du fraisier"],
       "it": ["Marciume delle fragole"],
@@ -3697,7 +3697,7 @@
   },
   {
     "srppp-id": 10498,
-    "labels": {
+    "label": {
       "de": ["Rhizomfäule der Erdbeeren"],
       "fr": ["Coeur brun du fraisier"],
       "it": ["Fitoftora della fragola"],
@@ -3711,7 +3711,7 @@
   },
   {
     "srppp-id": 10507,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Rebe"],
       "fr": ["Oïdium de la vigne"],
       "it": ["Oidio della vite"],
@@ -3725,7 +3725,7 @@
   },
   {
     "srppp-id": 10472,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau des Apfels/der Birne"],
       "fr": ["Oïdium du pommier/du poirier"],
       "it": ["Oidio della mela/pera"],
@@ -3739,7 +3739,7 @@
   },
   {
     "srppp-id": 10757,
-    "labels": {
+    "label": {
       "de": ["Moosknopfkäfer"],
       "fr": ["Atomaire de la betterave"],
       "it": ["Atomaria della barbabietola"],
@@ -3753,7 +3753,7 @@
   },
   {
     "srppp-id": 10919,
-    "labels": {
+    "label": {
       "de": ["Wildverbiss"],
       "fr": ["Abroutissement par le gibier"],
       "it": ["Brucatura da selvaggina"],
@@ -3767,7 +3767,7 @@
   },
   {
     "srppp-id": 10882,
-    "labels": {
+    "label": {
       "de": ["Gegen das Durchtreiben der Zwiebeln"],
       "fr": ["Contre la germination des oignons (bulbes)"],
       "it": ["Contro la germinazione delle cipolle"],
@@ -3781,7 +3781,7 @@
   },
   {
     "srppp-id": 10518,
-    "labels": {
+    "label": {
       "de": ["Rost der Bohne"],
       "fr": ["Rouille du haricot"],
       "it": ["Ruggine del fagiolo"],
@@ -3795,7 +3795,7 @@
   },
   {
     "srppp-id": 11212,
-    "labels": {
+    "label": {
       "de": ["Grüne Apfelblattlaus"],
       "fr": ["Puceron vert du pommier"],
       "it": ["Afide verde del melo"],
@@ -3809,7 +3809,7 @@
   },
   {
     "srppp-id": 10377,
-    "labels": {
+    "label": {
       "de": ["Zwiebelthrips"],
       "fr": ["Thrips de l'oignon"],
       "it": ["Tripide della cipolla"],
@@ -3823,7 +3823,7 @@
   },
   {
     "srppp-id": 10693,
-    "labels": {
+    "label": {
       "de": ["Apfelblütenstecher"],
       "fr": ["Anthonome du pommier"],
       "it": ["Antonomo del melo"],
@@ -3837,7 +3837,7 @@
   },
   {
     "srppp-id": 11171,
-    "labels": {
+    "label": {
       "de": ["Erdnussplattkäfer"],
       "fr": ["Cucujide des grains oléagineux"],
       "it": ["Silvano dei mercati"],
@@ -3851,7 +3851,7 @@
   },
   {
     "srppp-id": 10622,
-    "labels": {
+    "label": {
       "de": ["Vogelknöterich"],
       "fr": ["Renouée des oiseaux"],
       "it": ["Poligono centinodia"],
@@ -3865,7 +3865,7 @@
   },
   {
     "srppp-id": 10563,
-    "labels": {
+    "label": {
       "de": ["Braunrost"],
       "fr": ["Rouille brune"],
       "it": ["Ruggine bruna"],
@@ -3879,7 +3879,7 @@
   },
   {
     "srppp-id": 10765,
-    "labels": {
+    "label": {
       "de": ["Zwergzikaden"],
       "fr": ["Cicadelles"],
       "it": ["Cicaline nane"],
@@ -3893,7 +3893,7 @@
   },
   {
     "srppp-id": 10461,
-    "labels": {
+    "label": {
       "de": ["Spargelkäfer"],
       "fr": ["Criocère à douze points de l'asperge"],
       "it": ["Criocera a dodici punti"],
@@ -3907,7 +3907,7 @@
   },
   {
     "srppp-id": 10385,
-    "labels": {
+    "label": {
       "de": ["Zünsler"],
       "fr": ["Pyrales"],
       "it": ["Piralidi"],
@@ -3921,7 +3921,7 @@
   },
   {
     "srppp-id": 10738,
-    "labels": {
+    "label": {
       "de": ["Moose (Bryophyta)"],
       "fr": ["Mousses (bryophytes)"],
       "it": ["Muschi (Briofite)"],
@@ -3935,7 +3935,7 @@
   },
   {
     "srppp-id": 10932,
-    "labels": {
+    "label": {
       "de": ["Einjährige Disteln"],
       "fr": ["Chardons annuels"],
       "it": ["Cardi annuali"],
@@ -3949,7 +3949,7 @@
   },
   {
     "srppp-id": 10933,
-    "labels": {
+    "label": {
       "de": ["Mehrjährige Disteln"],
       "fr": ["Chardons vivaces"],
       "it": ["Cardi perenni"],
@@ -3963,7 +3963,7 @@
   },
   {
     "srppp-id": 10934,
-    "labels": {
+    "label": {
       "de": ["Zweijährige Disteln"],
       "fr": ["Chardons bisannuels"],
       "it": ["Cardi biennali"],
@@ -3977,7 +3977,7 @@
   },
   {
     "srppp-id": 10412,
-    "labels": {
+    "label": {
       "de": ["Grüne Gurkenblattlaus"],
       "fr": ["Puceron du melon et du cotonnier"],
       "it": ["Afide delle Malvacee e del cotone"],
@@ -3991,7 +3991,7 @@
   },
   {
     "srppp-id": 11205,
-    "labels": {
+    "label": {
       "de": ["Tausendfüsser"],
       "fr": ["Myriapode (Mille-pattes)"],
       "it": ["Miriapodi (Millepiedi)"],
@@ -4005,7 +4005,7 @@
   },
   {
     "srppp-id": 10415,
-    "labels": {
+    "label": {
       "de": ["Salatwurzellaus"],
       "fr": ["Puceron des racines de la laitue"],
       "it": ["Afide radicicolo della lattuga"],
@@ -4019,7 +4019,7 @@
   },
   {
     "srppp-id": 10635,
-    "labels": {
+    "label": {
       "de": ["Gänseblümchen"],
       "fr": ["Pâquerette"],
       "it": ["Pratolina comune"],
@@ -4033,7 +4033,7 @@
   },
   {
     "srppp-id": 12406,
-    "labels": {
+    "label": {
       "de": ["Netzschorf"],
       "fr": ["Gale commune"],
       "it": ["Scabbia comune"],
@@ -4047,7 +4047,7 @@
   },
   {
     "srppp-id": 10644,
-    "labels": {
+    "label": {
       "de": ["Grosser Ampfer"],
       "fr": ["Oseille des prés"],
       "it": ["Romice acetosa"],
@@ -4061,7 +4061,7 @@
   },
   {
     "srppp-id": 10414,
-    "labels": {
+    "label": {
       "de": ["Mehlige Kohlblattlaus"],
       "fr": ["Puceron cendré du chou"],
       "it": ["Afide ceroso del cavolo"],
@@ -4075,7 +4075,7 @@
   },
   {
     "srppp-id": 11187,
-    "labels": {
+    "label": {
       "de": ["Reisbräune"],
       "fr": ["Pyriculariose du riz"],
       "it": ["Brusone del riso"],
@@ -4089,7 +4089,7 @@
   },
   {
     "srppp-id": 11004,
-    "labels": {
+    "label": {
       "de": ["Pythium spp."],
       "fr": ["Pythium spp."],
       "it": ["Pythium spp."],
@@ -4103,7 +4103,7 @@
   },
   {
     "srppp-id": 11095,
-    "labels": {
+    "label": {
       "de": ["Wurzelfäulen"],
       "fr": ["Pourriture des racines"],
       "it": ["Mal del piede"],
@@ -4117,7 +4117,7 @@
   },
   {
     "srppp-id": 10546,
-    "labels": {
+    "label": {
       "de": ["Flugbrand des Weizens"],
       "fr": ["Charbon nu du blé"],
       "it": ["Carbone del grano"],
@@ -4131,7 +4131,7 @@
   },
   {
     "srppp-id": 10948,
-    "labels": {
+    "label": {
       "de": ["Fusarium culmorum"],
       "fr": ["Pourriture des racines"],
       "it": ["Mal del piede (Fusarium culmorum)"],
@@ -4145,7 +4145,7 @@
   },
   {
     "srppp-id": 10865,
-    "labels": {
+    "label": {
       "de": ["Sträucher"],
       "fr": ["Buissons"],
       "it": ["Arbusti"],
@@ -4159,7 +4159,7 @@
   },
   {
     "srppp-id": 10396,
-    "labels": {
+    "label": {
       "de": ["Wanzen"],
       "fr": ["Punaises"],
       "it": ["Cimici"],
@@ -4173,7 +4173,7 @@
   },
   {
     "srppp-id": 10605,
-    "labels": {
+    "label": {
       "de": ["Hirtentäschelkraut"],
       "fr": ["Capselle bourse-à-pasteur"],
       "it": ["Borsa di pastore"],
@@ -4187,7 +4187,7 @@
   },
   {
     "srppp-id": 10653,
-    "labels": {
+    "label": {
       "de": ["Gemeine Quecke"],
       "fr": ["Chiendent rampant"],
       "it": ["Gramigna"],
@@ -4201,7 +4201,7 @@
   },
   {
     "srppp-id": 10391,
-    "labels": {
+    "label": {
       "de": ["Maikäfer"],
       "fr": ["Hanneton commun"],
       "it": ["Maggiolino"],
@@ -4215,7 +4215,7 @@
   },
   {
     "srppp-id": 10910,
-    "labels": {
+    "label": {
       "de": ["Blattfressende Raupen"],
       "fr": ["Chenilles défoliatrices"],
       "it": ["Larve defogliatrici"],
@@ -4229,7 +4229,7 @@
   },
   {
     "srppp-id": 10442,
-    "labels": {
+    "label": {
       "de": ["Drahtwürmer"],
       "fr": ["Vers fil de fer"],
       "it": ["Elateridi"],
@@ -4243,7 +4243,7 @@
   },
   {
     "srppp-id": 10516,
-    "labels": {
+    "label": {
       "de": ["Brennfleckenkrankheit der Bohne"],
       "fr": ["Anthracnose du haricot"],
       "it": ["Antracnosi del fagiolo"],
@@ -4257,7 +4257,7 @@
   },
   {
     "srppp-id": 10668,
-    "labels": {
+    "label": {
       "de": ["Lentizellenfäulnis des Apfels"],
       "fr": ["Pourriture lenticellaire (pommier)"],
       "it": ["Marciume lenticellare delle mele"],
@@ -4271,7 +4271,7 @@
   },
   {
     "srppp-id": 11001,
-    "labels": {
+    "label": {
       "de": ["Grünfleckige Kartoffelblattlaus"],
       "fr": ["Puceron à taches vertes"],
       "it": ["Afide a macchie verdi della patata"],
@@ -4285,7 +4285,7 @@
   },
   {
     "srppp-id": 10897,
-    "labels": {
+    "label": {
       "de": ["DTR-Blattfleckenkrankheit"],
       "fr": ["Helminthosporiose des céréales (DTR)"],
       "it": ["Pyrenophora tritici-repentis (DTR)"],
@@ -4299,7 +4299,7 @@
   },
   {
     "srppp-id": 10760,
-    "labels": {
+    "label": {
       "de": ["Wickler"],
       "fr": ["Tordeuses"],
       "it": ["Tortrici"],
@@ -4313,7 +4313,7 @@
   },
   {
     "srppp-id": 11707,
-    "labels": {
+    "label": {
       "de": ["Schorf der Ziergehölze"],
       "fr": ["Tavelure des arbres et arbustres ornementaux"],
       "it": ["Ticchiolatura su alberi e arbusti ornamentali"],
@@ -4327,7 +4327,7 @@
   },
   {
     "srppp-id": 12355,
-    "labels": {
+    "label": {
       "de": ["Zwergrost der Gerste"],
       "fr": ["Rouille naine de l'orge"],
       "it": ["Ruggine nana dell'orzo"],
@@ -4341,7 +4341,7 @@
   },
   {
     "srppp-id": 10825,
-    "labels": {
+    "label": {
       "de": ["Ackerschnecken/Deroceras Arten"],
       "fr": ["Limaces du genre Deroceras"],
       "it": ["Limacce del genere Deroceras"],
@@ -4355,7 +4355,7 @@
   },
   {
     "srppp-id": 11158,
-    "labels": {
+    "label": {
       "de": ["Rebzikade (Scaphoideus titanus)"],
       "fr": ["Scaphoideus titanus"],
       "it": ["Scafoideo"],
@@ -4369,7 +4369,7 @@
   },
   {
     "srppp-id": 10723,
-    "labels": {
+    "label": {
       "de": ["Grüne Rebzikade"],
       "fr": ["Cicadelle verte de la vigne"],
       "it": ["Cicalina verde della vite"],
@@ -4383,7 +4383,7 @@
   },
   {
     "srppp-id": 12474,
-    "labels": {
+    "label": {
       "de": ["Cylindrocladium-Trieb- und Blattsterben"],
       "fr": ["Cylindrocladium-dépérissement des feuilles et rameaux"],
       "it": ["Cylindrocladium buxicola"],
@@ -4397,7 +4397,7 @@
   },
   {
     "srppp-id": 10523,
-    "labels": {
+    "label": {
       "de": ["Alternaria-Möhrenschwärze"],
       "fr": ["Alternariose de la carotte"],
       "it": ["Altenariosi delle carote"],
@@ -4411,7 +4411,7 @@
   },
   {
     "srppp-id": 11251,
-    "labels": {
+    "label": {
       "de": ["Rostpilze der Zierpflanzen"],
       "fr": ["Rouilles des plantes ornementales"],
       "it": ["Ruggini su piante ornamentali"],
@@ -4425,7 +4425,7 @@
   },
   {
     "srppp-id": 11027,
-    "labels": {
+    "label": {
       "de": ["Puccinia spp."],
       "fr": ["Puccinia spp."],
       "it": ["Ruggine fogliare (Puccinia spp.)"],
@@ -4439,7 +4439,7 @@
   },
   {
     "srppp-id": 12476,
-    "labels": {
+    "label": {
       "de": ["Rost der Gräser"],
       "fr": ["Rouille des graminées"],
       "it": ["Ruggine delle graminacee"],
@@ -4453,7 +4453,7 @@
   },
   {
     "srppp-id": 11177,
-    "labels": {
+    "label": {
       "de": ["Phytophthora cryptogea"],
       "fr": ["Phytophthora cryptogea"],
       "it": ["Phytophthora cryptogea"],
@@ -4467,7 +4467,7 @@
   },
   {
     "srppp-id": 11096,
-    "labels": {
+    "label": {
       "de": ["Rhizoctonia-Fäule des Salats"],
       "fr": ["Rhizoctone de la laitue"],
       "it": ["Rizottonia della lattuga"],
@@ -4481,7 +4481,7 @@
   },
   {
     "srppp-id": 15705,
-    "labels": {
+    "label": {
       "de": ["Rhizoctonia-Fäule"],
       "fr": ["Rhizoctone"],
       "it": ["Rizottonia"],
@@ -4495,7 +4495,7 @@
   },
   {
     "srppp-id": 10702,
-    "labels": {
+    "label": {
       "de": ["Phytophthora spp."],
       "fr": ["Phytophthora spp."],
       "it": ["Phytophthora spp."],
@@ -4509,7 +4509,7 @@
   },
   {
     "srppp-id": 10703,
-    "labels": {
+    "label": {
       "de": ["Sägewespen"],
       "fr": ["Hoplocampes"],
       "it": ["Tentredini"],
@@ -4523,7 +4523,7 @@
   },
   {
     "srppp-id": 10679,
-    "labels": {
+    "label": {
       "de": ["Rotfadenkrankheit des Rasens"],
       "fr": ["Fil rouge du gazon"],
       "it": ["Filo rosso del tappeto erboso"],
@@ -4537,7 +4537,7 @@
   },
   {
     "srppp-id": 10956,
-    "labels": {
+    "label": {
       "de": ["Wurmfarn"],
       "fr": ["Dryoptéris"],
       "it": ["Felce maschio"],
@@ -4551,7 +4551,7 @@
   },
   {
     "srppp-id": 15310,
-    "labels": {
+    "label": {
       "de": ["Marmorierte Baumwanze"],
       "fr": ["Punaise marbrée"],
       "it": ["Cimice marmorata asiatica"],
@@ -4565,7 +4565,7 @@
   },
   {
     "srppp-id": 11183,
-    "labels": {
+    "label": {
       "de": ["Maiskäfer"],
       "fr": ["Charançon du maïs"],
       "it": ["Punteruolo del mais"],
@@ -4579,7 +4579,7 @@
   },
   {
     "srppp-id": 10856,
-    "labels": {
+    "label": {
       "de": ["Grünstreifige Kartoffelblattlaus"],
       "fr": ["Puceron à strie verte de la pomme de terre (Macrosiphum euphorbiae)"],
       "it": ["Afide della patata"],
@@ -4593,7 +4593,7 @@
   },
   {
     "srppp-id": 10397,
-    "labels": {
+    "label": {
       "de": ["Erdflöhe"],
       "fr": ["Altises"],
       "it": ["Altiche"],
@@ -4607,7 +4607,7 @@
   },
   {
     "srppp-id": 10669,
-    "labels": {
+    "label": {
       "de": ["Fruchtmonilia"],
       "fr": ["Moniliose des fruits"],
       "it": ["Monilia dei frutti"],
@@ -4621,7 +4621,7 @@
   },
   {
     "srppp-id": 10466,
-    "labels": {
+    "label": {
       "de": ["Spargelfliege"],
       "fr": ["Mouche de l'asperge"],
       "it": ["Mosca dell'asparago"],
@@ -4635,7 +4635,7 @@
   },
   {
     "srppp-id": 10756,
-    "labels": {
+    "label": {
       "de": ["Rhombenspanner"],
       "fr": ["Boarmie des bourgeons sur vigne"],
       "it": ["Boarmia"],
@@ -4649,7 +4649,7 @@
   },
   {
     "srppp-id": 14377,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Erbse"],
       "fr": ["Oïdium du pois"],
       "it": ["Oidio del pisello"],
@@ -4663,7 +4663,7 @@
   },
   {
     "srppp-id": 11229,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Gräser"],
       "fr": ["Oïdium des graminées"],
       "it": ["Oidio delle graminacee"],
@@ -4677,7 +4677,7 @@
   },
   {
     "srppp-id": 10561,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau des Getreides"],
       "fr": ["Oïdium des céréales"],
       "it": ["Oidio dei cereali"],
@@ -4691,7 +4691,7 @@
   },
   {
     "srppp-id": 10706,
-    "labels": {
+    "label": {
       "de": ["Mehlige Apfelblattlaus"],
       "fr": ["Puceron cendré du pommier"],
       "it": ["Afide grigio - rosa del melo"],
@@ -4705,7 +4705,7 @@
   },
   {
     "srppp-id": 10638,
-    "labels": {
+    "label": {
       "de": ["Ackerkratzdistel"],
       "fr": ["Chardon ou cirse des champs"],
       "it": ["Stoppione"],
@@ -4719,7 +4719,7 @@
   },
   {
     "srppp-id": 10478,
-    "labels": {
+    "label": {
       "de": ["Gelbe Getreidehalmfliege"],
       "fr": ["Chlorops"],
       "it": ["Cloropo del grano"],
@@ -4733,7 +4733,7 @@
   },
   {
     "srppp-id": 10839,
-    "labels": {
+    "label": {
       "de": ["Rindenbrandkrankheit der Rosen"],
       "fr": ["Chancre du rosier"],
       "it": ["Cancri rameali da septoria"],
@@ -4747,7 +4747,7 @@
   },
   {
     "srppp-id": 10406,
-    "labels": {
+    "label": {
       "de": ["Deckelschildläuse"],
       "fr": ["Cochenilles diaspines"],
       "it": ["Cocciniglie diaspine"],
@@ -4761,7 +4761,7 @@
   },
   {
     "srppp-id": 10891,
-    "labels": {
+    "label": {
       "de": ["Anthraknose"],
       "fr": ["Anthracnose"],
       "it": ["Antracnosi"],
@@ -4775,7 +4775,7 @@
   },
   {
     "srppp-id": 10486,
-    "labels": {
+    "label": {
       "de": ["Bitterfäule der Kirsche"],
       "fr": ["Pourriture amère des cerises"],
       "it": ["Antracnosi del ciliegio"],
@@ -4789,7 +4789,7 @@
   },
   {
     "srppp-id": 11023,
-    "labels": {
+    "label": {
       "de": ["Gartenlaubkäfer"],
       "fr": ["Hanneton horticole"],
       "it": ["Carruga degli orti"],
@@ -4803,7 +4803,7 @@
   },
   {
     "srppp-id": 10763,
-    "labels": {
+    "label": {
       "de": ["Algen"],
       "fr": ["Algues"],
       "it": ["Alghe"],
@@ -4817,7 +4817,7 @@
   },
   {
     "srppp-id": 12408,
-    "labels": {
+    "label": {
       "de": ["Falscher Mehltau der Paprika"],
       "fr": ["Mildiou du poivron"],
       "it": ["Peronospora del peperone"],
@@ -4831,7 +4831,7 @@
   },
   {
     "srppp-id": 10572,
-    "labels": {
+    "label": {
       "de": ["Blauschimmel des Tabaks"],
       "fr": ["Mildiou du tabac"],
       "it": ["Peronospora del tabacco"],
@@ -4845,7 +4845,7 @@
   },
   {
     "srppp-id": 10369,
-    "labels": {
+    "label": {
       "de": ["Falscher Mehltau der Zwiebel"],
       "fr": ["Mildiou de l'oignon"],
       "it": ["Peronospora della cipolla"],
@@ -4859,7 +4859,7 @@
   },
   {
     "srppp-id": 10511,
-    "labels": {
+    "label": {
       "de": ["Schwarzfleckenkrankheit der Rebe"],
       "fr": ["Excoriose de la vigne"],
       "it": ["Escoriosi della vite"],
@@ -4873,7 +4873,7 @@
   },
   {
     "srppp-id": 11093,
-    "labels": {
+    "label": {
       "de": ["Falscher Mehltau der Sonnenblume"],
       "fr": ["Mildiou du tournesol"],
       "it": ["Peronospora del girasole"],
@@ -4887,7 +4887,7 @@
   },
   {
     "srppp-id": 10521,
-    "labels": {
+    "label": {
       "de": ["Falscher Mehltau der Kürbisgewächse"],
       "fr": ["Mildiou des cucurbitacées"],
       "it": ["Peronospora delle Cucurbitacee"],
@@ -4901,7 +4901,7 @@
   },
   {
     "srppp-id": 10429,
-    "labels": {
+    "label": {
       "de": ["Weisslinge"],
       "fr": ["Pieridae"],
       "it": ["Cavolaie"],
@@ -4915,7 +4915,7 @@
   },
   {
     "srppp-id": 10465,
-    "labels": {
+    "label": {
       "de": ["Kohlfliege"],
       "fr": ["Mouche du chou"],
       "it": ["Mosca del cavolo"],
@@ -4929,7 +4929,7 @@
   },
   {
     "srppp-id": 11047,
-    "labels": {
+    "label": {
       "de": ["Septoria-Spelzenbräune (S. nodorum)"],
       "fr": ["Septoriose de l'épi (S. nodorum)"],
       "it": ["Septoriosi della spiga (S. nodorum)"],
@@ -4943,7 +4943,7 @@
   },
   {
     "srppp-id": 14294,
-    "labels": {
+    "label": {
       "de": ["Rispenarten"],
       "fr": ["Espèces de pâturin"],
       "it": ["Specie die poa"],
@@ -4957,7 +4957,7 @@
   },
   {
     "srppp-id": 11203,
-    "labels": {
+    "label": {
       "de": ["Vogelrepellent (Krähen)"],
       "fr": ["Répulsifs pour oiseaux (corneilles)"],
       "it": ["Repellente per uccelli (corvi)"],
@@ -4971,7 +4971,7 @@
   },
   {
     "srppp-id": 10785,
-    "labels": {
+    "label": {
       "de": ["Gallmilben"],
       "fr": ["Phytoptes"],
       "it": ["Eriofidi"],
@@ -4985,7 +4985,7 @@
   },
   {
     "srppp-id": 10681,
-    "labels": {
+    "label": {
       "de": ["Birnenpockenmilbe"],
       "fr": ["Phytopte du poirier"],
       "it": ["Eriofide del pero"],
@@ -4999,7 +4999,7 @@
   },
   {
     "srppp-id": 10381,
-    "labels": {
+    "label": {
       "de": ["Weichhautmilben"],
       "fr": ["Tarsonèmes"],
       "it": ["Tarsonemidi"],
@@ -5013,7 +5013,7 @@
   },
   {
     "srppp-id": 10685,
-    "labels": {
+    "label": {
       "de": ["Brombeermilbe"],
       "fr": ["Ériophyide des ronces"],
       "it": ["Eriofide delle more"],
@@ -5027,7 +5027,7 @@
   },
   {
     "srppp-id": 10730,
-    "labels": {
+    "label": {
       "de": ["Apfelwickler"],
       "fr": ["Carpocapse des pommes, poires et abricots"],
       "it": ["Carpocapsa delle mele"],
@@ -5041,7 +5041,7 @@
   },
   {
     "srppp-id": 10423,
-    "labels": {
+    "label": {
       "de": ["Spanner"],
       "fr": ["Phalènes"],
       "it": ["Falene"],
@@ -5055,7 +5055,7 @@
   },
   {
     "srppp-id": 10421,
-    "labels": {
+    "label": {
       "de": ["Eulenraupen"],
       "fr": ["Noctuelles"],
       "it": ["Larve di nottue"],
@@ -5069,7 +5069,7 @@
   },
   {
     "srppp-id": 12340,
-    "labels": {
+    "label": {
       "de": ["Eulenraupen (blattfressend)"],
       "fr": ["Noctuelles (défoliatrices)"],
       "it": ["Nottue (defogliatrici)"],
@@ -5083,7 +5083,7 @@
   },
   {
     "srppp-id": 11245,
-    "labels": {
+    "label": {
       "de": ["Tomatenminiermotte"],
       "fr": ["Tigne de la tomate"],
       "it": ["Tuta absoluta"],
@@ -5097,7 +5097,7 @@
   },
   {
     "srppp-id": 10537,
-    "labels": {
+    "label": {
       "de": ["Weisser Rost der Schwarzwurzel"],
       "fr": ["Rouille blanche de la scorsonère"],
       "it": ["Ruggine bianca della scorzonera"],
@@ -5111,7 +5111,7 @@
   },
   {
     "srppp-id": 10528,
-    "labels": {
+    "label": {
       "de": ["Alternaria-Kohlschwärze"],
       "fr": ["Maladie des taches noires du chou"],
       "it": ["Maculatura anulare nera del cavolo"],
@@ -5125,7 +5125,7 @@
   },
   {
     "srppp-id": 10436,
-    "labels": {
+    "label": {
       "de": ["Erdschnaken"],
       "fr": ["Tipules"],
       "it": ["Tipulidi"],
@@ -5139,7 +5139,7 @@
   },
   {
     "srppp-id": 10450,
-    "labels": {
+    "label": {
       "de": ["Maulwurfsgrille"],
       "fr": ["Courtilière"],
       "it": ["Grillotalpa"],
@@ -5153,7 +5153,7 @@
   },
   {
     "srppp-id": 12350,
-    "labels": {
+    "label": {
       "de": ["Brennfleckenkrankheit der Erbse"],
       "fr": ["Anthracnose du pois"],
       "it": ["Antracnosi del pisello"],
@@ -5167,7 +5167,7 @@
   },
   {
     "srppp-id": 11090,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Asteraceen"],
       "fr": ["Oïdium des astéracées"],
       "it": ["Oidio delle Asteracee"],
@@ -5181,7 +5181,7 @@
   },
   {
     "srppp-id": 10502,
-    "labels": {
+    "label": {
       "de": ["Wurzelsterben der Himbeere"],
       "fr": ["Dépérissement des racines du framboisier"],
       "it": ["Marciume radicale del lampone"],
@@ -5195,7 +5195,7 @@
   },
   {
     "srppp-id": 11188,
-    "labels": {
+    "label": {
       "de": ["Botryosphaeria obtusa (Black rot)"],
       "fr": ["Botryosphaeria obtusa (Blackr ot)"],
       "it": ["Botryosphaeria obtusa (Black rot)"],
@@ -5209,7 +5209,7 @@
   },
   {
     "srppp-id": 10425,
-    "labels": {
+    "label": {
       "de": ["Kohlschotengallmücke"],
       "fr": ["Cécidomyie des siliques du colza"],
       "it": ["Cecidomia delle silique delle crocifere"],
@@ -5223,7 +5223,7 @@
   },
   {
     "srppp-id": 10943,
-    "labels": {
+    "label": {
       "de": ["Samtfleckenkrankheit der Zwiebelgewächse"],
       "fr": ["Cladosporiose des oignons"],
       "it": ["Cladosporiosi degli ortaggi a bulbo"],
@@ -5237,7 +5237,7 @@
   },
   {
     "srppp-id": 10554,
-    "labels": {
+    "label": {
       "de": ["Rapserdfloh"],
       "fr": ["Altise d'hiver du colza"],
       "it": ["Altica della colza"],
@@ -5251,7 +5251,7 @@
   },
   {
     "srppp-id": 11111,
-    "labels": {
+    "label": {
       "de": ["Krätze der Kürbisgewächse"],
       "fr": ["Cladosporiose des cucurbitacées"],
       "it": ["Cladosporiosi delle cucurbitacee"],
@@ -5265,7 +5265,7 @@
   },
   {
     "srppp-id": 11077,
-    "labels": {
+    "label": {
       "de": ["Johannisbeerglasflügler"],
       "fr": ["Sésie tipuliforme"],
       "it": ["Sesia del ribes"],
@@ -5279,7 +5279,7 @@
   },
   {
     "srppp-id": 11006,
-    "labels": {
+    "label": {
       "de": ["Mondscheinigkeit"],
       "fr": ["Colletotrichum"],
       "it": ["Antracnosi"],
@@ -5293,7 +5293,7 @@
   },
   {
     "srppp-id": 11125,
-    "labels": {
+    "label": {
       "de": ["Beerenkrankheit"],
       "fr": ["Maladie des baies"],
       "it": ["Antracnosi dei piccoli frutti"],
@@ -5307,7 +5307,7 @@
   },
   {
     "srppp-id": 11064,
-    "labels": {
+    "label": {
       "de": ["Zweig- und Beerenkrankheit"],
       "fr": ["Colletotrichum acutatum"],
       "it": ["Antracnosi dei piccoli frutti"],
@@ -5321,7 +5321,7 @@
   },
   {
     "srppp-id": 12759,
-    "labels": {
+    "label": {
       "de": ["Anthraknose der Erdbeere"],
       "fr": ["Anthracnose du fraisier"],
       "it": ["Antracnosi della fragola"],
@@ -5335,7 +5335,7 @@
   },
   {
     "srppp-id": 11262,
-    "labels": {
+    "label": {
       "de": ["Anthraknose der Kürbisgewächse"],
       "fr": ["Anthracnose des cucurbitacées"],
       "it": ["Antracnosi delle cucurbitacee"],
@@ -5349,7 +5349,7 @@
   },
   {
     "srppp-id": 10862,
-    "labels": {
+    "label": {
       "de": ["Schachtelhalme (Equisetaceae)"],
       "fr": ["Prêles (Equisetaceae)"],
       "it": ["Equiseti"],
@@ -5363,7 +5363,7 @@
   },
   {
     "srppp-id": 10886,
-    "labels": {
+    "label": {
       "de": ["Weissfleckigkeit des Kohls"],
       "fr": ["Cylindrosporiose des Brassica"],
       "it": ["Pyrenopeziza brassicae"],
@@ -5377,7 +5377,7 @@
   },
   {
     "srppp-id": 10662,
-    "labels": {
+    "label": {
       "de": ["Rutenkrankheiten der Himbeere"],
       "fr": ["Maladies des rameaux du framboisier"],
       "it": ["Cancri del fusto del lampone"],
@@ -5391,7 +5391,7 @@
   },
   {
     "srppp-id": 10501,
-    "labels": {
+    "label": {
       "de": ["Rutenkrankheiten der Brombeere"],
       "fr": ["Maladies des rameaux des ronces"],
       "it": ["Cancri del fusto della mora di rovo"],
@@ -5405,7 +5405,7 @@
   },
   {
     "srppp-id": 10477,
-    "labels": {
+    "label": {
       "de": ["Blattbräune der Quitte"],
       "fr": ["Entomosporiose du cognassier"],
       "it": ["Entomosporiosi del cotogno"],
@@ -5419,7 +5419,7 @@
   },
   {
     "srppp-id": 10495,
-    "labels": {
+    "label": {
       "de": ["Blattfleckenkrankheiten der Erdbeere"],
       "fr": ["Taches pourpres du fraisier"],
       "it": ["Vaiolatura rossa della fragola"],
@@ -5433,7 +5433,7 @@
   },
   {
     "srppp-id": 10988,
-    "labels": {
+    "label": {
       "de": ["Blattfleckenkrankheit"],
       "fr": ["Taches de feuilles"],
       "it": ["Elmintosporiosi"],
@@ -5447,7 +5447,7 @@
   },
   {
     "srppp-id": 11252,
-    "labels": {
+    "label": {
       "de": ["Echte Mehltaupilze auf Nüsslisalat"],
       "fr": ["Oïdiums sur mâche"],
       "it": ["Oidio (diverse specie) su valerianella"],
@@ -5461,7 +5461,7 @@
   },
   {
     "srppp-id": 11186,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Kreuzblütler"],
       "fr": ["Oïdium des crucifères"],
       "it": ["Oidio delle crocifere"],
@@ -5475,7 +5475,7 @@
   },
   {
     "srppp-id": 11190,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Möhre"],
       "fr": ["Oïdium de la carotte"],
       "it": ["Oidio delle carote"],
@@ -5489,7 +5489,7 @@
   },
   {
     "srppp-id": 10982,
-    "labels": {
+    "label": {
       "de": ["Birnengitterrost"],
       "fr": ["Rouille grillagée du poirier"],
       "it": ["Ruggine del pero"],
@@ -5503,7 +5503,7 @@
   },
   {
     "srppp-id": 10483,
-    "labels": {
+    "label": {
       "de": ["Schrotschuss"],
       "fr": ["Maladie criblée des Prunus"],
       "it": ["Vaiolatura della frutta a nocciolo"],
@@ -5517,7 +5517,7 @@
   },
   {
     "srppp-id": 10992,
-    "labels": {
+    "label": {
       "de": ["Gaeumannomyces graminis var. avenae (Rasen)"],
       "fr": ["Gaeumannomyces graminis var. avenae (gazon)"],
       "it": ["Mal del piede dei cereali var. avena (tappeto erboso)"],
@@ -5531,7 +5531,7 @@
   },
   {
     "srppp-id": 10998,
-    "labels": {
+    "label": {
       "de": ["Blattflecken und Fruchtfäule der Erdbeere"],
       "fr": ["Dessèchement du feuillage des fraises"],
       "it": ["Septoriosi e marciume della fragola"],
@@ -5545,7 +5545,7 @@
   },
   {
     "srppp-id": 12334,
-    "labels": {
+    "label": {
       "de": ["Leguminosenzünsler"],
       "fr": ["Pyrale des haricots"],
       "it": ["Piralide delle leguminose"],
@@ -5559,7 +5559,7 @@
   },
   {
     "srppp-id": 12351,
-    "labels": {
+    "label": {
       "de": ["Stängelbräune des Leins"],
       "fr": ["Brunissure du lin"],
       "it": ["Guignardia fulvida"],
@@ -5573,7 +5573,7 @@
   },
   {
     "srppp-id": 10743,
-    "labels": {
+    "label": {
       "de": ["Flechten"],
       "fr": ["Lichens"],
       "it": ["Licheni"],
@@ -5587,7 +5587,7 @@
   },
   {
     "srppp-id": 10434,
-    "labels": {
+    "label": {
       "de": ["Trauermücken"],
       "fr": ["Sciarides, mouches du terreau"],
       "it": ["Sciaridi"],
@@ -5601,7 +5601,7 @@
   },
   {
     "srppp-id": 10508,
-    "labels": {
+    "label": {
       "de": ["Rotbrenner"],
       "fr": ["Rougeot parasitaire de la vigne"],
       "it": ["Rossore parassitario"],
@@ -5615,7 +5615,7 @@
   },
   {
     "srppp-id": 10534,
-    "labels": {
+    "label": {
       "de": ["Mehlkrankheit der Zwiebel"],
       "fr": ["Pourriture blanche des Allium"],
       "it": ["Marciume bianco della cipolla"],
@@ -5629,7 +5629,7 @@
   },
   {
     "srppp-id": 11144,
-    "labels": {
+    "label": {
       "de": ["Blausieb"],
       "fr": ["Coquette"],
       "it": ["Rodilegno giallo"],
@@ -5643,7 +5643,7 @@
   },
   {
     "srppp-id": 10966,
-    "labels": {
+    "label": {
       "de": ["Brombeersträucher"],
       "fr": ["Ronces"],
       "it": ["Rovi"],
@@ -5657,7 +5657,7 @@
   },
   {
     "srppp-id": 10513,
-    "labels": {
+    "label": {
       "de": ["Schwarzfäule der Rebe"],
       "fr": ["Pourriture noire (black rot) de la vigne"],
       "it": ["Marciume nero"],
@@ -5671,7 +5671,7 @@
   },
   {
     "srppp-id": 10556,
-    "labels": {
+    "label": {
       "de": ["Flugbrand des Hafers"],
       "fr": ["Charbon nu de l'avoine"],
       "it": ["Carbone nudo dell'avena"],
@@ -5685,7 +5685,7 @@
   },
   {
     "srppp-id": 11015,
-    "labels": {
+    "label": {
       "de": ["Apfelbaumglasflügler"],
       "fr": ["Sésie du pommier"],
       "it": ["Sesia del melo"],
@@ -5699,7 +5699,7 @@
   },
   {
     "srppp-id": 10455,
-    "labels": {
+    "label": {
       "de": ["Blutlaus"],
       "fr": ["Puceron lanigère du pommier"],
       "it": ["Afide lanigero del melo"],
@@ -5713,7 +5713,7 @@
   },
   {
     "srppp-id": 12169,
-    "labels": {
+    "label": {
       "de": ["Falscher Mehltau der Artischocke"],
       "fr": ["Mildiou de l'artichaut"],
       "it": ["Peronospora del carciofo"],
@@ -5727,7 +5727,7 @@
   },
   {
     "srppp-id": 10524,
-    "labels": {
+    "label": {
       "de": ["Falscher Mehltau des Salats"],
       "fr": ["Mildiou de la laitue"],
       "it": ["Peronospora della lattuga"],
@@ -5741,7 +5741,7 @@
   },
   {
     "srppp-id": 11221,
-    "labels": {
+    "label": {
       "de": ["Falsche Mehltaupilze der Küchenkräuter"],
       "fr": ["Mildious des fines herbes"],
       "it": ["Peronospora (diverse specie)  su erbette da cucina"],
@@ -5755,7 +5755,7 @@
   },
   {
     "srppp-id": 11222,
-    "labels": {
+    "label": {
       "de": ["Falsche Mehltaupilze der Zierpflanzen"],
       "fr": ["Mildious des plantes ornementales"],
       "it": ["Peronospora (diverse specie)  su piante ornamentali"],
@@ -5769,7 +5769,7 @@
   },
   {
     "srppp-id": 12711,
-    "labels": {
+    "label": {
       "de": ["Falsche Mehltaupilze der Kamille"],
       "fr": ["Mildious de la camomille"],
       "it": ["Peronospora della camomilla"],
@@ -5783,7 +5783,7 @@
   },
   {
     "srppp-id": 10506,
-    "labels": {
+    "label": {
       "de": ["Falscher Mehltau der Rebe"],
       "fr": ["Mildiou de la vigne"],
       "it": ["Peronospora della vite"],
@@ -5797,7 +5797,7 @@
   },
   {
     "srppp-id": 11063,
-    "labels": {
+    "label": {
       "de": ["Weisser Rost"],
       "fr": ["Rouille blanche"],
       "it": ["Ruggine bianca"],
@@ -5811,7 +5811,7 @@
   },
   {
     "srppp-id": 11194,
-    "labels": {
+    "label": {
       "de": ["Bakterienweichfäule"],
       "fr": ["Pourriture molle"],
       "it": ["Marciume molle"],
@@ -5825,7 +5825,7 @@
   },
   {
     "srppp-id": 10384,
-    "labels": {
+    "label": {
       "de": ["Rote Spinne"],
       "fr": ["Acarien rouge"],
       "it": ["Ragnetto rosso"],
@@ -5839,7 +5839,7 @@
   },
   {
     "srppp-id": 11206,
-    "labels": {
+    "label": {
       "de": ["Roste der Brombeere"],
       "fr": ["Rouilles des ronces"],
       "it": ["Ruggini delle more"],
@@ -5853,7 +5853,7 @@
   },
   {
     "srppp-id": 10887,
-    "labels": {
+    "label": {
       "de": ["Wurzelhals- und Stengelfäule"],
       "fr": ["Nécrose du collet du colza"],
       "it": ["Marciume da phoma delle crocifere"],
@@ -5867,7 +5867,7 @@
   },
   {
     "srppp-id": 11209,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Solanaceae"],
       "fr": ["Oïdium des solanacées."],
       "it": ["Oidio delle solanceae"],
@@ -5881,7 +5881,7 @@
   },
   {
     "srppp-id": 11225,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Aubergine"],
       "fr": ["Oïdium de l'aubergine"],
       "it": ["Oidio della melanzana"],
@@ -5895,7 +5895,7 @@
   },
   {
     "srppp-id": 10549,
-    "labels": {
+    "label": {
       "de": ["Flugbrand der Gerste"],
       "fr": ["Charbon nu de l'orge"],
       "it": ["Carbone nudo dell'orzo"],
@@ -5909,7 +5909,7 @@
   },
   {
     "srppp-id": 10708,
-    "labels": {
+    "label": {
       "de": ["Grüne Pfirsichblattlaus"],
       "fr": ["Puceron vert du pêcher"],
       "it": ["Afide verde del pesco"],
@@ -5923,7 +5923,7 @@
   },
   {
     "srppp-id": 10991,
-    "labels": {
+    "label": {
       "de": ["Sommerflecken"],
       "fr": ["Taches d'été"],
       "it": ["Macchie estive"],
@@ -5937,7 +5937,7 @@
   },
   {
     "srppp-id": 13704,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Gojibeeren"],
       "fr": ["Oïdium des baies de Goji"],
       "it": ["Oidio delle bacche di Goji"],
@@ -5951,7 +5951,7 @@
   },
   {
     "srppp-id": 10379,
-    "labels": {
+    "label": {
       "de": ["Spinnmilben"],
       "fr": ["Acariens tétranyques"],
       "it": ["Ragnetti"],
@@ -5965,7 +5965,7 @@
   },
   {
     "srppp-id": 11160,
-    "labels": {
+    "label": {
       "de": ["Aufrechtes Traubenkraut"],
       "fr": ["Ambroisie à feuilles d'armoise"],
       "it": ["Ambrosia"],
@@ -5979,7 +5979,7 @@
   },
   {
     "srppp-id": 10597,
-    "labels": {
+    "label": {
       "de": ["Knospensterben der Blautanne"],
       "fr": ["Dépérissement des bourgeons du sapin bleu"],
       "it": ["Disseccamento delle gemme del abete del Colorado"],
@@ -5993,7 +5993,7 @@
   },
   {
     "srppp-id": 12484,
-    "labels": {
+    "label": {
       "de": ["Raubmilben"],
       "fr": ["Acariens prédateurs"],
       "it": ["Acari predatori"],
@@ -6007,7 +6007,7 @@
   },
   {
     "srppp-id": 10981,
-    "labels": {
+    "label": {
       "de": ["Falscher Mehltau der Brombeere"],
       "fr": ["Mildiou des ronces"],
       "it": ["Peronospora della mora"],
@@ -6021,7 +6021,7 @@
   },
   {
     "srppp-id": 10838,
-    "labels": {
+    "label": {
       "de": ["Falscher Mehltau der Rosen"],
       "fr": ["Mildiou du rosier"],
       "it": ["Peronospora della rosa"],
@@ -6035,7 +6035,7 @@
   },
   {
     "srppp-id": 13449,
-    "labels": {
+    "label": {
       "de": ["Falscher Mehltau der Linse"],
       "fr": ["Mildiou de la lentille"],
       "it": ["Peronospora della lenticchia"],
@@ -6049,7 +6049,7 @@
   },
   {
     "srppp-id": 11218,
-    "labels": {
+    "label": {
       "de": ["Falscher Mehltau des Nüsslisalats"],
       "fr": ["Mildiou de la mache"],
       "it": ["Peronospora della valerianella"],
@@ -6063,7 +6063,7 @@
   },
   {
     "srppp-id": 11215,
-    "labels": {
+    "label": {
       "de": ["Falscher Mehltau der Erbse"],
       "fr": ["Mildiou du pois"],
       "it": ["Peronospora del pisello"],
@@ -6077,7 +6077,7 @@
   },
   {
     "srppp-id": 11216,
-    "labels": {
+    "label": {
       "de": ["Falscher Mehltau der Bohne"],
       "fr": ["Mildiou du haricot"],
       "it": ["Peronospora del fagiolo"],
@@ -6091,7 +6091,7 @@
   },
   {
     "srppp-id": 15475,
-    "labels": {
+    "label": {
       "de": ["Falscher Mehltau der Ackerbohne"],
       "fr": ["Mildiou de la fève"],
       "it": ["Peronospora della fava"],
@@ -6105,7 +6105,7 @@
   },
   {
     "srppp-id": 14770,
-    "labels": {
+    "label": {
       "de": ["Fussfäule des Leins"],
       "fr": ["Mort lin"],
       "it": ["Phoma linicola"],
@@ -6119,7 +6119,7 @@
   },
   {
     "srppp-id": 10836,
-    "labels": {
+    "label": {
       "de": ["Rost der Rose"],
       "fr": ["Rouille du rosier"],
       "it": ["Ruggine della rosa"],
@@ -6133,7 +6133,7 @@
   },
   {
     "srppp-id": 11017,
-    "labels": {
+    "label": {
       "de": ["Rost der Himbeere"],
       "fr": ["Rouille des framboisiers"],
       "it": ["Ruggine del lampone"],
@@ -6147,7 +6147,7 @@
   },
   {
     "srppp-id": 10983,
-    "labels": {
+    "label": {
       "de": ["Regenfleckenkrankheit der Äpfel und Birnen"],
       "fr": ["Maladie de la suie des pommes et des poires"],
       "it": ["Macchie nere delle mele e delle pere"],
@@ -6161,7 +6161,7 @@
   },
   {
     "srppp-id": 10497,
-    "labels": {
+    "label": {
       "de": ["Rote Wurzelfäule der Erdbeeren"],
       "fr": ["Racines rouges du fraisier"],
       "it": ["Marciume radicale della fragola"],
@@ -6175,7 +6175,7 @@
   },
   {
     "srppp-id": 11208,
-    "labels": {
+    "label": {
       "de": ["Blattfleckenkrankheit des Lauches"],
       "fr": ["Moisissure noire des feuilles du poireau"],
       "it": ["Pleospora herbarum"],
@@ -6189,7 +6189,7 @@
   },
   {
     "srppp-id": 10599,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau des Hopfens"],
       "fr": ["Oïdium du houblon"],
       "it": ["Oidio del luppolo"],
@@ -6203,7 +6203,7 @@
   },
   {
     "srppp-id": 10491,
-    "labels": {
+    "label": {
       "de": ["Echter Mehltau der Aprikose"],
       "fr": ["Oïdium de l'abricotier"],
       "it": ["Oidio dell'albicocca"],
@@ -6217,7 +6217,7 @@
   },
   {
     "srppp-id": 10976,
-    "labels": {
+    "label": {
       "de": ["Ehrenpreis-Arten"],
       "fr": ["Véroniques"],
       "it": ["Varietà di veronica"],
@@ -6231,7 +6231,7 @@
   },
   {
     "srppp-id": 10863,
-    "labels": {
+    "label": {
       "de": ["Einjährige Ehrenpreis-Arten"],
       "fr": ["Véroniques annuelles"],
       "it": ["Varietà annuali di veronica"],
@@ -6245,7 +6245,7 @@
   },
   {
     "srppp-id": 10770,
-    "labels": {
+    "label": {
       "de": ["Mehrjährige Ehrenpreis-Arten"],
       "fr": ["Véroniques vivaces"],
       "it": ["Varietà pluriennali di veronica"],
@@ -6259,7 +6259,7 @@
   },
   {
     "srppp-id": 10786,
-    "labels": {
+    "label": {
       "de": ["Falscher Mehltau des Hopfens"],
       "fr": ["Mildiou du houblon"],
       "it": ["Peronospora del luppolo"],
@@ -6273,7 +6273,7 @@
   },
   {
     "srppp-id": 11002,
-    "labels": {
+    "label": {
       "de": ["Spargelrost"],
       "fr": ["Rouille de l'asperge"],
       "it": ["Ruggine dell'asparago"],
@@ -6287,7 +6287,7 @@
   },
   {
     "srppp-id": 10590,
-    "labels": {
+    "label": {
       "de": ["Knospensterben an Rhododendron"],
       "fr": ["Brûlure des bourgeons des rhododendrons"],
       "it": ["Disseccamento dei bottoni fiorali del rododendro"],
@@ -6301,7 +6301,7 @@
   },
   {
     "srppp-id": 10551,
-    "labels": {
+    "label": {
       "de": ["Streifenkrankheit der Gerste"],
       "fr": ["Maladie striée de l'orge"],
       "it": ["Striatura bruna dell'orzo"],
@@ -6315,7 +6315,7 @@
   },
   {
     "srppp-id": 11120,
-    "labels": {
+    "label": {
       "de": ["Pythium ultimum"],
       "fr": ["Pythium ultimum"],
       "it": ["Pythium ultimum"],
@@ -6329,7 +6329,7 @@
   },
   {
     "srppp-id": 10567,
-    "labels": {
+    "label": {
       "de": ["Rhynchosporium-Blattfleckenkrankheit"],
       "fr": ["Rhynchosporiose"],
       "it": ["Rincosporiosi"],
@@ -6343,7 +6343,7 @@
   },
   {
     "srppp-id": 13448,
-    "labels": {
+    "label": {
       "de": ["Brennfleckenkrankheit der Linse"],
       "fr": ["Anthracnose de la lentille"],
       "it": ["Antracnosi della lenticchia"],
@@ -6357,7 +6357,7 @@
   },
   {
     "srppp-id": 10744,
-    "labels": {
+    "label": {
       "de": ["Pflaumenwickler"],
       "fr": ["Carpocapse des prunes"],
       "it": ["Tortrice delle susine"],
@@ -6371,7 +6371,7 @@
   },
   {
     "srppp-id": 10883,
-    "labels": {
+    "label": {
       "de": ["Werftkäfer"],
       "fr": ["Lymexylons"],
       "it": ["Limexilonidi"],
@@ -6385,7 +6385,7 @@
   },
   {
     "srppp-id": 11185,
-    "labels": {
+    "label": {
       "de": ["Halmbruchkrankheit des Getreides"],
       "fr": ["Piétin-verse des céréales"],
       "it": ["Mal del piede dei cereali"],
@@ -6399,7 +6399,7 @@
   },
   {
     "srppp-id": 10560,
-    "labels": {
+    "label": {
       "de": ["Halmbruchkrankheit des Weizens"],
       "fr": ["Piétin-verse du blé"],
       "it": ["Mal del piede dei cereali"],
@@ -6413,7 +6413,7 @@
   },
   {
     "srppp-id": 10435,
-    "labels": {
+    "label": {
       "de": ["Gallmücken"],
       "fr": ["Cécidomyies"],
       "it": ["Cecidomie"],
@@ -6427,7 +6427,7 @@
   },
   {
     "srppp-id": 10754,
-    "labels": {
+    "label": {
       "de": ["Dörrobstmotte"],
       "fr": ["Pyrale des fruits secs"],
       "it": ["Tignola fasciata"],
@@ -6441,7 +6441,7 @@
   },
   {
     "srppp-id": 10660,
-    "labels": {
+    "label": {
       "de": ["Getreideplattkäfer"],
       "fr": ["Silvain"],
       "it": ["Silvano surinamense"],
@@ -6455,7 +6455,7 @@
   },
   {
     "srppp-id": 10544,
-    "labels": {
+    "label": {
       "de": ["Zwergbrand"],
       "fr": ["Carie naine"],
       "it": ["Carie nana"],
@@ -6469,7 +6469,7 @@
   },
   {
     "srppp-id": 15445,
-    "labels": {
+    "label": {
       "de": ["Australische Wollschildlaus"],
       "fr": ["Cochenille australienne"],
       "it": ["Cocciniglia cotonosa solcata"],
@@ -6483,7 +6483,7 @@
   },
   {
     "srppp-id": 10927,
-    "labels": {
+    "label": {
       "de": ["Rost der Rüben"],
       "fr": ["Rouille des betteraves"],
       "it": ["Ruggine delle barbabietole"],
@@ -6497,7 +6497,7 @@
   },
   {
     "srppp-id": 11684,
-    "labels": {
+    "label": {
       "de": ["Pfirsichmotte"],
       "fr": ["Petite mineuse ou teigne du pêcher"],
       "it": ["Tignola del pesco"],
@@ -6511,7 +6511,7 @@
   },
   {
     "srppp-id": 10482,
-    "labels": {
+    "label": {
       "de": ["Schorf des Pfirsichs"],
       "fr": ["Tavelure noire du pêcher"],
       "it": ["Ticchiolatura del pesco"],
@@ -6525,7 +6525,7 @@
   },
   {
     "srppp-id": 10806,
-    "labels": {
+    "label": {
       "de": ["Buchdrucker"],
       "fr": ["Typographe"],
       "it": ["Tipografo"],
@@ -6539,7 +6539,7 @@
   },
   {
     "srppp-id": 10885,
-    "labels": {
+    "label": {
       "de": ["Ringflecken des Kohls"],
       "fr": ["Taches annulaires du chou"],
       "it": ["Maculatura anulare del cavolo"],
@@ -6553,7 +6553,7 @@
   },
   {
     "srppp-id": 11265,
-    "labels": {
+    "label": {
       "de": ["Eckige Blattfleckenkrankheit der Erdbeere"],
       "fr": ["Taches angulaires du fraisier"],
       "it": ["Maculature angolari della fragola"],
@@ -6567,7 +6567,7 @@
   },
   {
     "srppp-id": 10950,
-    "labels": {
+    "label": {
       "de": ["Adernschwärze"],
       "fr": ["Nervures noires du chou"],
       "it": ["Nervazione nera delle Crocifere"],
@@ -6581,7 +6581,7 @@
   },
   {
     "srppp-id": 11060,
-    "labels": {
+    "label": {
       "de": ["Papierfleckenkrankheit des Spinats"],
       "fr": ["Cladosporiose de l'épinard"],
       "it": ["Ticchiolatura dello spinacio"],
@@ -6595,7 +6595,7 @@
   },
   {
     "srppp-id": 10594,
-    "labels": {
+    "label": {
       "de": ["Nelkenschwärze"],
       "fr": ["Hétérosporiose de l'oeillet"],
       "it": ["Vaiolo del garofano"],
@@ -6609,7 +6609,7 @@
   },
   {
     "srppp-id": 10986,
-    "labels": {
+    "label": {
       "de": ["Rasenanthracnose"],
       "fr": ["Anthracnose du gazon"],
       "it": ["Colletotrichum graminicola"],
@@ -6623,7 +6623,7 @@
   },
   {
     "srppp-id": 11233,
-    "labels": {
+    "label": {
       "de": ["Baumwollkapselwurm"],
       "fr": ["Ver de la capsule"],
       "it": ["Elotide del cotone"],
@@ -6637,7 +6637,7 @@
   },
   {
     "srppp-id": 10741,
-    "labels": {
+    "label": {
       "de": ["Bekreuzter Traubenwickler"],
       "fr": ["Eudémis"],
       "it": ["Tignoletta dell'uva"],
@@ -6651,7 +6651,7 @@
   },
   {
     "srppp-id": 10410,
-    "labels": {
+    "label": {
       "de": ["Weisse Fliegen (Mottenschildläuse)"],
       "fr": ["Mouches blanches"],
       "it": ["Aleurodidi"],
@@ -6665,7 +6665,7 @@
   },
   {
     "srppp-id": 10853,
-    "labels": {
+    "label": {
       "de": ["Dicotyledonen (Unkräuter)"],
       "fr": ["Dicotylédones"],
       "it": ["Dicotiledoni (malerbe)"],
@@ -6679,7 +6679,7 @@
   },
   {
     "srppp-id": 10854,
-    "labels": {
+    "label": {
       "de": ["Mehrjährige Dicotyledonen (Unkräuter)"],
       "fr": ["Dicotylédones vivaces"],
       "it": ["Dicotiledoni pluriennali (malerbe)"],
@@ -6693,7 +6693,7 @@
   },
   {
     "srppp-id": 11022,
-    "labels": {
+    "label": {
       "de": ["Erbsenwickler"],
       "fr": ["Tordeuse du pois"],
       "it": ["Tortrice del pisello"],
@@ -6707,7 +6707,7 @@
   },
   {
     "srppp-id": 10889,
-    "labels": {
+    "label": {
       "de": ["Cladosporium-Blattflecken der Zwiebel"],
       "fr": ["Cladosporiose de l'oignon"],
       "it": ["Ticchiolatura della cipolla"],
@@ -6721,7 +6721,7 @@
   },
   {
     "srppp-id": 10530,
-    "labels": {
+    "label": {
       "de": ["Marssonina-Blattfleckenkrankheit (Salate)"],
       "fr": ["Anthracnose de la laitue"],
       "it": ["Marciume della lattuga"],
@@ -6735,7 +6735,7 @@
   },
   {
     "srppp-id": 12483,
-    "labels": {
+    "label": {
       "de": ["Blattfleckenkrankheit der Walnuss"],
       "fr": ["Anthracnose du noyer"],
       "it": ["Antracnosi del noce"],
@@ -6749,7 +6749,7 @@
   },
   {
     "srppp-id": 10451,
-    "labels": {
+    "label": {
       "de": ["Blindwanzen"],
       "fr": ["Mirides"],
       "it": ["Miridi"],
@@ -6763,7 +6763,7 @@
   },
   {
     "srppp-id": 10965,
-    "labels": {
+    "label": {
       "de": ["Feuerbrand"],
       "fr": ["Feu bactérien"],
       "it": ["Fuoco batterico"],
@@ -6777,7 +6777,7 @@
   },
   {
     "srppp-id": 11220,
-    "labels": {
+    "label": {
       "de": ["Papierfleckenkrankheit des Lauchs"],
       "fr": ["Phytophthora du poireau"],
       "it": ["Peronospora del porro"],
@@ -6791,7 +6791,7 @@
   },
   {
     "srppp-id": 11197,
-    "labels": {
+    "label": {
       "de": ["Papierfleckenkrankheit der Zwiebel"],
       "fr": ["Phytophthora de l'oignon"],
       "it": ["Peronospora delle cipolle"],
@@ -6805,7 +6805,7 @@
   },
   {
     "srppp-id": 11239,
-    "labels": {
+    "label": {
       "de": ["Japanischer Knöterich"],
       "fr": ["Renouée du Japon"],
       "it": ["Poligono del Giappone"],
@@ -6819,7 +6819,7 @@
   },
   {
     "srppp-id": 10823,
-    "labels": {
+    "label": {
       "de": ["Wegschnecken/Arion Arten"],
       "fr": ["Limaces du genre Arion"],
       "it": ["Limacce del genere Arion"],
@@ -6833,7 +6833,7 @@
   },
   {
     "srppp-id": 10979,
-    "labels": {
+    "label": {
       "de": ["Speichermotte", "Heumotte", "Tabakmotte", "Kakaomotte"],
       "fr": ["Teigne des aliments", "Pyrale du cacao", "Pyrale du tabac"],
       "it": ["Tignola del tabacco", "Tignola del cacao"],
@@ -6847,7 +6847,7 @@
   },
   {
     "srppp-id": 11168,
-    "labels": {
+    "label": {
       "de": ["Speichermotte", "Heumotte", "Tabakmotte", "Kakaomotte"],
       "fr": ["Teigne des aliments", "Pyrale du cacao", "Pyrale du tabac"],
       "it": ["Tignola del tabacco", "Tignola del cacao"],
@@ -6861,7 +6861,7 @@
   },
   {
     "srppp-id": 10707,
-    "labels": {
+    "label": {
       "de": ["Schwarze Kirschenblattlaus"],
       "fr": ["Puceron noir du cerisier"],
       "it": ["Afide nerastro del ciliegio"],
@@ -6875,7 +6875,7 @@
   },
   {
     "srppp-id": 11005,
-    "labels": {
+    "label": {
       "de": ["Wirkungssicherung"],
       "fr": ["Maintien de l'efficacité"],
       "it": ["Assicurazione dell'efficacia"],
@@ -6889,7 +6889,7 @@
   },
   {
     "srppp-id": 10977,
-    "labels": {
+    "label": {
       "de": ["Vorzeitiger Fruchtfall"],
       "fr": ["Chute précoce"],
       "it": ["Caduta precoce"],
@@ -6903,7 +6903,7 @@
   },
   {
     "srppp-id": 10968,
-    "labels": {
+    "label": {
       "de": ["Lagerfäulen"],
       "fr": ["Maladies de conservation"],
       "it": ["Deperimento di ortofrutticoli in deposito"],
@@ -6917,7 +6917,7 @@
   },
   {
     "srppp-id": 10967,
-    "labels": {
+    "label": {
       "de": ["Strunkbehandlung gegen Stockausschläge"],
       "fr": ["Traitement du tronc contre les rejets"],
       "it": ["Trattamento della ceppaia contro i ricacci"],
@@ -6931,7 +6931,7 @@
   },
   {
     "srppp-id": 10925,
-    "labels": {
+    "label": {
       "de": ["Fegen und Verbiss (durch Wild)"],
       "fr": ["Frayure et broutage (par le cerf)"],
       "it": ["Spazzare e sfogliare (per gioco)"],
@@ -6945,7 +6945,7 @@
   },
   {
     "srppp-id": 10898,
-    "labels": {
+    "label": {
       "de": ["Erhöhung des Netz- und Haftvermögens"],
       "fr": ["Augmentation du pouvoir mouillant et adhésif"],
       "it": ["Aumento del potere umidificante e adesivante"],
@@ -6959,7 +6959,7 @@
   },
   {
     "srppp-id": 10873,
-    "labels": {
+    "label": {
       "de": ["Wundverschluss"],
       "fr": ["Cicatrisation des plaies"],
       "it": ["Cicatrizzazione"],
@@ -6973,7 +6973,7 @@
   },
   {
     "srppp-id": 10875,
-    "labels": {
+    "label": {
       "de": ["Mechanische Verletzungen"],
       "fr": ["Blessures dues à des causes mécaniques"],
       "it": ["Danni meccanici"],
@@ -6987,7 +6987,7 @@
   },
   {
     "srppp-id": 10861,
-    "labels": {
+    "label": {
       "de": ["Keimhemmung"],
       "fr": ["Inhibition de la germination"],
       "it": ["Inibizione della germinazione"],
@@ -7001,7 +7001,7 @@
   },
   {
     "srppp-id": 10804,
-    "labels": {
+    "label": {
       "de": ["Bildung von Fruchtholz an nichttragenden Jungbäumen"],
       "fr": ["Pour favoriser la formation des branches fruitières des jeunes arbres"],
       "it": ["Formazione di ramo fruttifero su alberi giovani"],
@@ -7015,7 +7015,7 @@
   },
   {
     "srppp-id": 10800,
-    "labels": {
+    "label": {
       "de": ["Rötel bei der Kirsche (Fruchtverfärbung)"],
       "fr": ["Rougissement précoce des cerises"],
       "it": ["Arrossamento precoce delle ciliegie"],
@@ -7029,7 +7029,7 @@
   },
   {
     "srppp-id": 10803,
-    "labels": {
+    "label": {
       "de": ["Hemmung des Längenwachstums (Stauchen)"],
       "fr": ["Inhibition de la croissance des organes aériens"],
       "it": ["Inibizione della crescita longitudinale"],
@@ -7043,7 +7043,7 @@
   },
   {
     "srppp-id": 10802,
-    "labels": {
+    "label": {
       "de": ["Erhöhung der Standfestigkeit"],
       "fr": ["Augmentation de la résistance à la verse"],
       "it": ["Aumento della stabilità"],
@@ -7057,7 +7057,7 @@
   },
   {
     "srppp-id": 10809,
-    "labels": {
+    "label": {
       "de": ["Verbesserung des Fruchtansatzes (Bildung von parthenokarpen Früchten)"],
       "fr": ["Amélioration de la nouaison  (formation de fruits parthénocarpiques)"],
       "it": ["Miglioramento dell'allegagione (formazione di frutti partenocarpici)"],
@@ -7071,7 +7071,7 @@
   },
   {
     "srppp-id": 10810,
-    "labels": {
+    "label": {
       "de": ["Brechung der Knospenruhe, Förderung des Längenwachstums"],
       "fr": ["Levée de la dormance des bourgeons, stimulation de la croissance"],
       "it": ["Interruzione della dormienza delle gemme, stimolo della crescita longitudinale"],
@@ -7085,7 +7085,7 @@
   },
   {
     "srppp-id": 10798,
-    "labels": {
+    "label": {
       "de": ["Blüten- und Fruchtausdünnung"],
       "fr": ["Éclaircissage des fleurs et fruits"],
       "it": ["Diradamento dei fiori e dei frutticini"],
@@ -7099,7 +7099,7 @@
   },
   {
     "srppp-id": 10799,
-    "labels": {
+    "label": {
       "de": ["Brechung der Alternanz (Apfelbaum)"],
       "fr": ["Rupture de l'alternance (pommier)"],
       "it": ["Interruzione dell'alternanza (melo)"],
@@ -7113,7 +7113,7 @@
   },
   {
     "srppp-id": 11227,
-    "labels": {
+    "label": {
       "de": ["Beschleunigung und Synchronisierung der Fruchtreife"],
       "fr": ["Accélération et synchronisation de la maturité des fruits"],
       "it": ["Accellerazione e sincronizzazione della maturità dei frutti"],
@@ -7127,7 +7127,7 @@
   },
   {
     "srppp-id": 11191,
-    "labels": {
+    "label": {
       "de": ["Quarantäneschädlinge"],
       "fr": ["Ravageurs de quarantaine"],
       "it": ["Organismi animali di quarantena"],
@@ -7141,7 +7141,7 @@
   },
   {
     "srppp-id": 11151,
-    "labels": {
+    "label": {
       "de": ["Fruchtausdünnung"],
       "fr": ["Éclaircissage des fruits"],
       "it": ["Diradamento dei frutticini"],
@@ -7155,7 +7155,7 @@
   },
   {
     "srppp-id": 11139,
-    "labels": {
+    "label": {
       "de": ["Physiologische Sprenkelnekrosen"],
       "fr": ["Grillures"],
       "it": ["Bruciature fogliari"],
@@ -7169,7 +7169,7 @@
   },
   {
     "srppp-id": 13946,
-    "labels": {
+    "label": {
       "de": ["Minderung von Fruchtberostung und Wachstumsrissen"],
       "fr": ["Diminution de la roussissure et des crevasses de croissance sur fruits"],
       "it": ["Riduzione della rugginosità della frutta e delle fratture di crescita"],
@@ -7183,7 +7183,7 @@
   },
   {
     "srppp-id": 11162,
-    "labels": {
+    "label": {
       "de": ["Reifeverzögerung"],
       "fr": ["Retard de la maturité"],
       "it": ["Ritardo della maturazione"],
@@ -7197,7 +7197,7 @@
   },
   {
     "srppp-id": 11131,
-    "labels": {
+    "label": {
       "de": ["Breitblättrige Unkräuter"],
       "fr": ["Mauvaises herbes à feuilles larges"],
       "it": ["Malerbe a foglia larga"],
@@ -7211,7 +7211,7 @@
   },
   {
     "srppp-id": 11103,
-    "labels": {
+    "label": {
       "de": ["Samen- und bodenbürtige Krankheiten"],
       "fr": ["Maladies du sol et transmises par les semences"],
       "it": ["Malattie trasmesse dal suolo e dalle sementi"],
@@ -7225,7 +7225,7 @@
   },
   {
     "srppp-id": 11042,
-    "labels": {
+    "label": {
       "de": ["Optimierung der Sortierung"],
       "fr": ["Optimisation du triage"],
       "it": ["Ottimizzazione della cernita"],
@@ -7239,7 +7239,7 @@
   },
   {
     "srppp-id": 11014,
-    "labels": {
+    "label": {
       "de": ["Lagerkrankheiten"],
       "fr": ["Maladies de stockage"],
       "it": ["Malattie da stoccaggio"],
@@ -7253,7 +7253,7 @@
   },
   {
     "srppp-id": 12631,
-    "labels": {
+    "label": {
       "de": ["Lockerung des Traubenstielgerüsts"],
       "fr": ["Élongation de la rafle et décompactage des grappes de raisin"],
       "it": ["Allentamento del grapplo d'uva"],
@@ -7267,7 +7267,7 @@
   },
   {
     "srppp-id": 13677,
-    "labels": {
+    "label": {
       "de": ["Hemmung des Triebwachstums"],
       "fr": ["Inhibition de la croissance des rameaux"],
       "it": ["Inibizione della crescita dei polloni"],
@@ -7281,7 +7281,7 @@
   },
   {
     "srppp-id": 11264,
-    "labels": {
+    "label": {
       "de": ["Seitentriebhemmung"],
       "fr": ["Inhibition des pousses latérales"],
       "it": ["Inibizione dei germogli laterali"],
@@ -7295,7 +7295,7 @@
   },
   {
     "srppp-id": 12329,
-    "labels": {
+    "label": {
       "de": ["Minierende Raupen"],
       "fr": ["Chenilles mineuses"],
       "it": ["Bruchi minatori"],
@@ -7309,7 +7309,7 @@
   },
   {
     "srppp-id": 10673,
-    "labels": {
+    "label": {
       "de": ["Desikkation, Abbrennen"],
       "fr": ["Dessiccation, défanage"],
       "it": ["Disseccamento, essiccamento"],
@@ -7323,7 +7323,7 @@
   },
   {
     "srppp-id": 10585,
-    "labels": {
+    "label": {
       "de": ["Desinfektion"],
       "fr": ["Désinfection"],
       "it": ["Disinfezione"],
@@ -7337,7 +7337,7 @@
   },
   {
     "srppp-id": 12434,
-    "labels": {
+    "label": {
       "de": ["Stockausschläge"],
       "fr": ["Rejets"],
       "it": ["Ricacci"],
