@@ -16,7 +16,7 @@
     },
     "wikidata-iri": ["Q332062"],
     "polyphyletic": null,
-    "type": null,
+    "type": "crop",
     "srppp-parent-id": [10197]
   },  
   {
@@ -36,7 +36,7 @@
     },
     "wikidata-iri": ["Q161665"],
     "polyphyletic": null,
-    "type": null,
+    "type": "crop",
     "srppp-parent-id": [10562]
   },
   {
@@ -56,7 +56,7 @@
     },
     "wikidata-iri": ["Q682257"],
     "polyphyletic": null,
-    "type": null,
+    "type": "crop",
     "srppp-parent-id": [10563]
   },  
   {
@@ -76,7 +76,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "crop",
     "srppp-parent-id": [null]
   },
   {
@@ -3456,7 +3456,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "crop",
     "srppp-parent-id": [10339]
   },
   {
@@ -3536,7 +3536,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "crop",
     "srppp-parent-id": [10068]
   },
   {
@@ -3556,7 +3556,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "crop",
     "srppp-parent-id": [9963]
   },
   {
@@ -3616,7 +3616,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "crop",
     "srppp-parent-id": [10186]
   },
   {
