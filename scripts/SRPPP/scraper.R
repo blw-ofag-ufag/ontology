@@ -417,12 +417,12 @@ for (i in 1:length(stressors)) {
   de = unlist(stressors[[i]]$labels$de)
   en = unlist(stressors[[i]]$labels$en)
   taxa = unlist(stressors[[i]]["wikidata-iri"])
-  biotic = stressors[[i]]$biotic
+  type = stressors[[i]][["type"]]
   
   sprintf("%s a :CropStressor ;\n", iri) |> cat()
-  if(is.null(biotic)) cat("") else {
-    if(biotic) sprintf("  a :BioticStressor ;\n") |> cat() else sprintf("  a :AbioticStressor ;\n") |> cat()
-  }
+  if(is.null(type)) cat("")
+  else if(type=="biotic") sprintf("  a :BioticStressor ;\n") |> cat()
+  else if(type=="abiotic") sprintf("  a :AbioticStressor ;\n") |> cat()
   if(length(de)>0) sprintf("  rdfs:label %s ;\n", literal(de[[1]], lang = "de")) |> cat()
   if(length(en)>0) sprintf("  rdfs:label %s ;\n", literal(en[[1]], lang = "en")) |> cat()
   if(length(taxa)>0) {

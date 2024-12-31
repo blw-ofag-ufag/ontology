@@ -15961,7 +15961,7 @@ ns1:6-10360 a ns1:BioticStressor,
 ns1:6-10366 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Schorf des Kernobstes"@de,
-        "scab"@en ;
+        "Scab"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q10675708>,
         <https://www.wikidata.org/wiki/Q10714040>,
         <https://www.wikidata.org/wiki/Q84312977> .
@@ -15969,7 +15969,7 @@ ns1:6-10366 a ns1:BioticStressor,
 ns1:6-10367 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Bakterielle Fleckenkrankheit"@de,
-        "bacterial speck of tomato"@en ;
+        "Bacterial speck of tomato"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q21399463> .
 
 ns1:6-10369 a ns1:BioticStressor,
@@ -16002,7 +16002,7 @@ ns1:6-10377 a ns1:BioticStressor,
 ns1:6-10379 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Spinnmilben"@de,
-        "spider mites"@en ;
+        "Spider mites"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q676204> .
 
 ns1:6-10381 a ns1:BioticStressor,
@@ -16273,7 +16273,7 @@ ns1:6-10470 a ns1:BioticStressor,
 ns1:6-10472 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Echter Mehltau des Apfels/der Birne"@de,
-        "powdery mildew"@en ;
+        "Powdery mildew"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q2315947> .
 
 ns1:6-10474 a ns1:BioticStressor,
@@ -16294,37 +16294,37 @@ ns1:6-10478 a ns1:BioticStressor,
 ns1:6-10479 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Kelchfäule (Botrytis cinerea)"@de,
-        "eye rot"@en ;
+        "Eye rot"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q1135851> .
 
 ns1:6-10481 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Blüten- und Zweigdürre"@de,
-        "blossom blight"@en ;
+        "Blossom blight"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q10588231> .
 
 ns1:6-10482 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Schorf des Pfirsichs"@de,
-        "scab"@en ;
+        "Scab"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q7920446> .
 
 ns1:6-10483 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Schrotschuss"@de,
-        "shot-hole"@en ;
+        "Shot-hole"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q54371230> .
 
 ns1:6-10485 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Bakterienbrand der Kirsche"@de,
-        "bacterial canker"@en ;
+        "Bacterial canker"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q131499414> .
 
 ns1:6-10486 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Bitterfäule der Kirsche"@de,
-        "bitter rot"@en ;
+        "Bitter rot"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q3772404> .
 
 ns1:6-10487 a ns1:BioticStressor,
@@ -16336,7 +16336,7 @@ ns1:6-10487 a ns1:BioticStressor,
 ns1:6-10488 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Rost der Zwetschge"@de,
-        "rust"@en ;
+        "Rust"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q10701362>,
         <https://www.wikidata.org/wiki/Q7835510> .
 
@@ -16348,19 +16348,19 @@ ns1:6-10489 a ns1:BioticStressor,
 ns1:6-10490 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Echter Mehltau des Pfirsichs"@de,
-        "mildew"@en ;
+        "Mildew"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q1281116> .
 
 ns1:6-10491 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Echter Mehltau der Aprikose"@de,
-        "powdery mildew"@en ;
+        "Powdery mildew"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q7207073> .
 
 ns1:6-10492 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Narren- oder Taschenkrankheit der Zwetschge"@de,
-        "pocket plums"@en ;
+        "Pocket plums"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q1621708> .
 
 ns1:6-10493 a ns1:BioticStressor,
@@ -16377,32 +16377,32 @@ ns1:6-10495 a ns1:BioticStressor,
 ns1:6-10496 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Lederfäule der Erdbeeren"@de,
-        "fruit rot"@en ;
+        "Fruit rot"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q2230727> .
 
 ns1:6-10497 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Rote Wurzelfäule der Erdbeeren"@de,
-        "red core"@en ;
+        "Red core"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q7189817> .
 
 ns1:6-10498 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Rhizomfäule der Erdbeeren"@de,
-        "rhizom rot"@en ;
+        "Rhizom rot"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q2230727> .
 
 ns1:6-10499 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Getreidehähnchen"@de,
-        "cereal leaf beetle "@en ;
+        "Cereal leaf beetle"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q1301591>,
         <https://www.wikidata.org/wiki/Q143459> .
 
 ns1:6-10501 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Rutenkrankheiten der Brombeere"@de,
-        "cane spot"@en ;
+        "Cane spot"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q5274261>,
         <https://www.wikidata.org/wiki/Q6528392>,
         <https://www.wikidata.org/wiki/Q7452330> .
@@ -16415,32 +16415,32 @@ ns1:6-10502 a ns1:BioticStressor,
 ns1:6-10503 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Roste der Ribes-Arten"@de,
-        "rust"@en ;
+        "Rust"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q1369189>,
         <https://www.wikidata.org/wiki/Q2301438> .
 
 ns1:6-10504 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Blattfallkrankheit der Ribes-Arten"@de,
-        "leaf spot"@en ;
+        "Leaf spot"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q10476632> .
 
 ns1:6-10505 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Echter Mehltau der Ribes-Arten"@de,
-        "powdery mildew"@en ;
+        "Powdery mildew"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q10635270> .
 
 ns1:6-10506 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Falscher Mehltau der Rebe"@de,
-        "downy mildiou"@en ;
+        "Downy mildiou"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q622010> .
 
 ns1:6-10507 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Echter Mehltau der Rebe"@de,
-        "powedery mildew"@en ;
+        "Powedery mildew"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q2267811> .
 
 ns1:6-10508 a ns1:BioticStressor,
@@ -16452,7 +16452,7 @@ ns1:6-10508 a ns1:BioticStressor,
 ns1:6-10509 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Weissfäule der Rebe"@de,
-        "white rot"@en ;
+        "White rot"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q1765768> .
 
 ns1:6-10510 a ns1:BioticStressor,
@@ -16469,7 +16469,7 @@ ns1:6-10511 a ns1:BioticStressor,
 ns1:6-10513 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Schwarzfäule der Rebe"@de,
-        "black-rot"@en ;
+        "Black-rot"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q604793> .
 
 ns1:6-10516 a ns1:BioticStressor,
@@ -16521,13 +16521,13 @@ ns1:6-10530 a ns1:BioticStressor,
 ns1:6-10531 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Septoria-Blattfleckenkrankheit des Selleries"@de,
-        "leaf spot of celery"@en ;
+        "Leaf spot of celery"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q10665919> .
 
 ns1:6-10532 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Samtfleckenkrankheit der Tomate"@de,
-        "leaf mould of tomato"@en ;
+        "Leaf mould of tomato"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q2084190> .
 
 ns1:6-10533 a ns1:BioticStressor,
@@ -16746,7 +16746,7 @@ ns1:6-10590 a ns1:BioticStressor,
 ns1:6-10593 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Sternrusstau der Rosen"@de,
-        "black spot of roses / leaf blotch of roses"@en ;
+        "Black spot of roses / leaf blotch of roses"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q1608118> .
 
 ns1:6-10594 a ns1:BioticStressor,
@@ -16872,7 +16872,7 @@ ns1:6-10653 a ns1:BioticStressor,
 ns1:6-10657 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Gemeiner Windhalm"@de,
-        "loose silky bent (windgrass)"@en ;
+        "Loose silky bent (windgrass)"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q164230> .
 
 ns1:6-10659 a ns1:BioticStressor,
@@ -16888,33 +16888,33 @@ ns1:6-10660 a ns1:BioticStressor,
 ns1:6-10662 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Rutenkrankheiten der Himbeere"@de,
-        "cane spot"@en ;
+        "Cane spot"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q5274261>,
         <https://www.wikidata.org/wiki/Q6528392> .
 
 ns1:6-10667 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Lagerschorf des Apfels"@de,
-        "storage scab"@en ;
+        "Storage scab"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q10675708> .
 
 ns1:6-10668 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Lentizellenfäulnis des Apfels"@de,
-        "fruit rot"@en ;
+        "Fruit rot"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q28674074>,
         <https://www.wikidata.org/wiki/Q6992815> .
 
 ns1:6-10669 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Fruchtmonilia"@de,
-        "brown rot"@en ;
+        "Brown rot"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q3320779> .
 
 ns1:6-10671 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Echter Mehltau der Quitte"@de,
-        "powedery mildew"@en ;
+        "Powedery mildew"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q108687355> .
 
 ns1:6-10673 a ns1:CropStressor ;
@@ -16988,7 +16988,7 @@ ns1:6-10697 a ns1:BioticStressor,
 ns1:6-10698 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Himbeerkäfer"@de,
-        "raspberry beetle"@en ;
+        "Raspberry beetle"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q1447372> .
 
 ns1:6-10699 a ns1:BioticStressor,
@@ -17051,7 +17051,7 @@ ns1:6-10716 a ns1:BioticStressor,
 ns1:6-10720 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Reblaus"@de,
-        "grapevine leaf louse"@en ;
+        "Grapevine leaf louse"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q14705283> .
 
 ns1:6-10721 a ns1:BioticStressor,
@@ -17128,8 +17128,9 @@ ns1:6-10742 a ns1:BioticStressor,
 
 ns1:6-10743 a ns1:BioticStressor,
         ns1:CropStressor ;
-    rdfs:label "Flechten"@de ;
-    ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q56811356> .
+    rdfs:label "Flechten"@de,
+        "Lichen"@en ;
+    ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q43142> .
 
 ns1:6-10744 a ns1:BioticStressor,
         ns1:CropStressor ;
@@ -17139,7 +17140,7 @@ ns1:6-10744 a ns1:BioticStressor,
 ns1:6-10745 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Pfirsichwickler"@de ;
-    ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q1106356s> .
+    ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q1106356> .
 
 ns1:6-10746 a ns1:BioticStressor,
         ns1:CropStressor ;
@@ -17228,8 +17229,10 @@ ns1:6-10798 a ns1:CropStressor ;
 ns1:6-10799 a ns1:CropStressor ;
     rdfs:label "Brechung der Alternanz (Apfelbaum)"@de .
 
-ns1:6-10800 a ns1:CropStressor ;
-    rdfs:label "Gegen Rötel"@de .
+ns1:6-10800 a ns1:AbioticStressor,
+        ns1:CropStressor ;
+    rdfs:label "Rötel bei der Kirsche (Fruchtverfärbung)"@de,
+        "Premature reddening of cherries"@en .
 
 ns1:6-10802 a ns1:CropStressor ;
     rdfs:label "Erhöhung der Standfestigkeit"@de .
@@ -17331,8 +17334,9 @@ ns1:6-10858 a ns1:BioticStressor,
 
 ns1:6-10859 a ns1:BioticStressor,
         ns1:CropStressor ;
-    rdfs:label "Hirsen"@de ;
-    ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q16877024> .
+    rdfs:label "Hirsen"@de,
+        "Millets"@en ;
+    ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q163527> .
 
 ns1:6-10861 a ns1:CropStressor ;
     rdfs:label "Keimhemmung"@de .
@@ -17366,13 +17370,14 @@ ns1:6-10868 a ns1:BioticStressor,
 ns1:6-10871 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Talerfleckenkrankheit (Dollarfleckenkrankheit)"@de,
-        "dollar spot"@en ;
+        "Dollar spot"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q1235677> .
 
 ns1:6-10873 a ns1:CropStressor ;
     rdfs:label "Wundverschluss"@de .
 
-ns1:6-10875 a ns1:CropStressor ;
+ns1:6-10875 a ns1:AbioticStressor,
+        ns1:CropStressor ;
     rdfs:label "Mechanische Verletzungen"@de .
 
 ns1:6-10882 a ns1:BioticStressor,
@@ -17421,7 +17426,7 @@ ns1:6-10890 a ns1:BioticStressor,
 ns1:6-10891 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Anthraknose"@de,
-        "anthracnose"@en ;
+        "Anthracnose"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q3772404> .
 
 ns1:6-10894 a ns1:BioticStressor,
@@ -17487,8 +17492,11 @@ ns1:6-10919 a ns1:BioticStressor,
     rdfs:label "Wildverbiss"@de ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q23390> .
 
-ns1:6-10925 a ns1:CropStressor ;
-    rdfs:label "Fegen"@de .
+ns1:6-10925 a ns1:BioticStressor,
+        ns1:CropStressor ;
+    rdfs:label "Fegen und Verbiss (durch Wild)"@de,
+        "Browsing and fraying (by deer)"@en ;
+    ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q23390> .
 
 ns1:6-10927 a ns1:BioticStressor,
         ns1:CropStressor ;
@@ -17593,7 +17601,8 @@ ns1:6-10966 a ns1:BioticStressor,
 ns1:6-10967 a ns1:CropStressor ;
     rdfs:label "Strunkbehandlung gegen Stockausschläge"@de .
 
-ns1:6-10968 a ns1:CropStressor ;
+ns1:6-10968 a ns1:BioticStressor,
+        ns1:CropStressor ;
     rdfs:label "Lagerfäulen"@de .
 
 ns1:6-10970 a ns1:BioticStressor,
@@ -17626,7 +17635,8 @@ ns1:6-10977 a ns1:CropStressor ;
 
 ns1:6-10979 a ns1:BioticStressor,
         ns1:CropStressor ;
-    rdfs:label "Tabakmotte"@de ;
+    rdfs:label "Speichermotte"@de,
+        "Tobacco moth"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q928458> .
 
 ns1:6-10980 a ns1:BioticStressor,
@@ -17740,7 +17750,8 @@ ns1:6-11006 a ns1:BioticStressor,
 
 ns1:6-11007 a ns1:BioticStressor,
         ns1:CropStressor ;
-    rdfs:label "Rapsblattwespe"@de ;
+    rdfs:label "Rapsblattwespe"@de,
+        "Turnip sawfly"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q1680271> .
 
 ns1:6-11008 a ns1:BioticStressor,
@@ -17760,7 +17771,8 @@ ns1:6-11013 a ns1:BioticStressor,
 
 ns1:6-11014 a ns1:BioticStressor,
         ns1:CropStressor ;
-    rdfs:label "Lagerkrankheiten"@de .
+    rdfs:label "Lagerkrankheiten"@de,
+        "Storage pests"@en .
 
 ns1:6-11015 a ns1:BioticStressor,
         ns1:CropStressor ;
@@ -17914,7 +17926,7 @@ ns1:6-11103 a ns1:BioticStressor,
 ns1:6-11111 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Krätze der Kürbisgewächse"@de,
-        "scab of cucurbits"@en ;
+        "Scab of cucurbits"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q5124960> .
 
 ns1:6-11116 a ns1:BioticStressor,
@@ -17960,8 +17972,10 @@ ns1:6-11138 a ns1:BioticStressor,
     rdfs:label "Sprenkelnekrosen (PLS+RCC)"@de ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q10649257> .
 
-ns1:6-11139 a ns1:CropStressor ;
-    rdfs:label "Sprenkelnekrosen (PLS)"@de .
+ns1:6-11139 a ns1:AbioticStressor,
+        ns1:CropStressor ;
+    rdfs:label "Physiologische Sprenkelnekrosen"@de,
+        "Physiological leaf spots"@en .
 
 ns1:6-11144 a ns1:BioticStressor,
         ns1:CropStressor ;
@@ -17990,7 +18004,7 @@ ns1:6-11159 a ns1:BioticStressor,
 
 ns1:6-11160 a ns1:BioticStressor,
         ns1:CropStressor ;
-    rdfs:label "Aufrechtes Traubenkraut (Ambrosia artemisiifolia)"@de ;
+    rdfs:label "Aufrechtes Traubenkraut"@de ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q682164> .
 
 ns1:6-11162 a ns1:CropStressor ;
@@ -18011,7 +18025,7 @@ ns1:6-11169 a ns1:BioticStressor,
 ns1:6-11171 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Erdnussplattkäfer"@de,
-        "merchant grain beetle"@en ;
+        "Merchant grain beetle"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q2410490> .
 
 ns1:6-11176 a ns1:BioticStressor,
@@ -18035,7 +18049,7 @@ ns1:6-11178 a ns1:BioticStressor,
 ns1:6-11183 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Maiskäfer"@de,
-        "maize weevil"@en ;
+        "Maize weevil"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q3272137> .
 
 ns1:6-11185 a ns1:BioticStressor,
@@ -18047,7 +18061,7 @@ ns1:6-11185 a ns1:BioticStressor,
 ns1:6-11186 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Echter Mehltau der Kreuzblütler"@de,
-        "powdery mildew of crucifers"@en ;
+        "Powdery mildew of crucifers"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q5396383> .
 
 ns1:6-11187 a ns1:BioticStressor,
@@ -18068,13 +18082,14 @@ ns1:6-11190 a ns1:BioticStressor,
         "Powdery mildew"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q5396389> .
 
-ns1:6-11191 a ns1:CropStressor ;
+ns1:6-11191 a ns1:BioticStressor,
+        ns1:CropStressor ;
     rdfs:label "Quarantäneschädlinge"@de .
 
 ns1:6-11192 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Hühnerhirse"@de,
-        "cock's-foot"@en ;
+        "Cock's-foot"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q163527> .
 
 ns1:6-11193 a ns1:BioticStressor,
@@ -18110,7 +18125,7 @@ ns1:6-11204 a ns1:BioticStressor,
 ns1:6-11205 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Tausendfüsser"@de,
-        "millipede"@en ;
+        "Millipede"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q25823> .
 
 ns1:6-11206 a ns1:BioticStressor,
@@ -18257,12 +18272,12 @@ ns1:6-11245 a ns1:BioticStressor,
 ns1:6-11247 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Himbeerblattmilbe"@de,
-        "raspberry (leaf) mite"@en ;
+        "Raspberry (leaf) mite"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q10629909> .
 
 ns1:6-11251 a ns1:BioticStressor,
         ns1:CropStressor ;
-    rdfs:label "Rostpilze der Zierpflanzen "@de,
+    rdfs:label "Rostpilze der Zierpflanzen"@de,
         "Chrysomyxa spp., Cronartium spp., Melampsora spp., Phragmidium spp., Puccinia spp., Uromyces spp."@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q305162>,
         <https://www.wikidata.org/wiki/Q369337>,
@@ -18279,31 +18294,31 @@ ns1:6-11252 a ns1:BioticStressor,
 ns1:6-11256 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Rapsminierfliege"@de,
-        "imported leaf miner"@en ;
+        "Imported leaf miner"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q13851757> .
 
 ns1:6-11257 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Wiesenschnake"@de,
-        "common crane fly"@en ;
+        "Common crane fly"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q20976> .
 
 ns1:6-11260 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Pfauenaugenkrankheit"@de,
-        "peacock spot of olive"@en ;
+        "Peacock spot of olive"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q108471185> .
 
 ns1:6-11262 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Anthraknose der Kürbisgewächse"@de,
-        "anthracnose of cucurbits "@en ;
+        "Anthracnose of cucurbits"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q5147091> .
 
 ns1:6-11263 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Trockenfäule der Gladiole"@de,
-        "dry rot of gladiolus"@en ;
+        "Dry rot of gladiolus"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q10681915> .
 
 ns1:6-11264 a ns1:CropStressor ;
@@ -18338,7 +18353,7 @@ ns1:6-11476 a ns1:BioticStressor,
 ns1:6-11684 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Pfirsichmotte"@de,
-        "peach twig borer"@en ;
+        "Peach twig borer"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q790159> .
 
 ns1:6-11707 a ns1:BioticStressor,
@@ -18366,7 +18381,7 @@ ns1:6-11995 a ns1:BioticStressor,
 ns1:6-12138 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Knollentrockenfäulen"@de,
-        "gangrene / dry rot"@en ;
+        "Gangrene / dry rot"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q131672>,
         <https://www.wikidata.org/wiki/Q2066891> .
 
@@ -18385,7 +18400,10 @@ ns1:6-12169 a ns1:BioticStressor,
 ns1:6-12329 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Minierende Raupen"@de,
-        "Leaf-mining caterpillars"@en .
+        "Leaf-mining caterpillars"@en ;
+    ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q1071848>,
+        <https://www.wikidata.org/wiki/Q46858>,
+        <https://www.wikidata.org/wiki/Q793503> .
 
 ns1:6-12334 a ns1:BioticStressor,
         ns1:CropStressor ;
@@ -18394,7 +18412,7 @@ ns1:6-12334 a ns1:BioticStressor,
 
 ns1:6-12339 a ns1:BioticStressor,
         ns1:CropStressor ;
-    rdfs:label "Echte Mehltaupilze der Laubbäume "@de ;
+    rdfs:label "Echte Mehltaupilze der Laubbäume"@de ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q1755354> .
 
 ns1:6-12340 a ns1:BioticStressor,
@@ -18458,9 +18476,10 @@ ns1:6-12409 a ns1:BioticStressor,
     rdfs:label "Falscher Mehltau der Aubergine"@de ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q149072> .
 
-ns1:6-12434 a ns1:CropStressor ;
-    rdfs:label "Abbrennen von Stockausschlägen"@de,
-        "Removal of suckers"@en .
+ns1:6-12434 a ns1:BioticStressor,
+        ns1:CropStressor ;
+    rdfs:label "Stockausschläge"@de,
+        "Stem suckers"@en .
 
 ns1:6-12474 a ns1:BioticStressor,
         ns1:CropStressor ;
@@ -18516,7 +18535,7 @@ ns1:6-12668 a ns1:BioticStressor,
 ns1:6-12669 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Rübenmotte"@de,
-        "beet moth"@en ;
+        "Beet moth"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q1252923> .
 
 ns1:6-12681 a ns1:BioticStressor,
@@ -18533,7 +18552,7 @@ ns1:6-12711 a ns1:BioticStressor,
 ns1:6-12759 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Anthraknose der Erdbeere"@de,
-        "anthracnose of strawberry"@en ;
+        "Anthracnose of strawberry"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q5147068>,
         <https://www.wikidata.org/wiki/Q5147078> .
 
@@ -18562,7 +18581,7 @@ ns1:6-13140 a ns1:BioticStressor,
 ns1:6-13360 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Echter Mehltau der Rubus-Arten"@de,
-        "powdery mildew"@en ;
+        "Powdery mildew"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q10635260> .
 
 ns1:6-13361 a ns1:BioticStressor,
@@ -18590,7 +18609,7 @@ ns1:6-13479 a ns1:BioticStressor,
 ns1:6-13493 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Pflaumenblattsauger"@de,
-        "plum psylla"@en ;
+        "Plum psylla"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q10439091> .
 
 ns1:6-13549 a ns1:BioticStressor,
@@ -18647,13 +18666,13 @@ ns1:6-14377 a ns1:BioticStressor,
 ns1:6-14737 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Trichoderma aggressivum"@de,
-        "green mould disease of mushrooms (Trichoderma aggressivum)"@en ;
+        "Green mould disease of mushrooms"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q10702710> .
 
 ns1:6-14770 a ns1:BioticStressor,
         ns1:CropStressor ;
     rdfs:label "Fussfäule des Leins"@de,
-        "foot rot of flax"@en ;
+        "Foot rot of flax"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q7187117> .
 
 ns1:6-14795 a ns1:BioticStressor,
@@ -18668,7 +18687,7 @@ ns1:6-14878 a ns1:BioticStressor,
 
 ns1:6-14999 a ns1:BioticStressor,
         ns1:CropStressor ;
-    rdfs:label "Echter Mehltau des Maulbeerbaums "@de ;
+    rdfs:label "Echter Mehltau des Maulbeerbaums"@de ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q11113134> .
 
 ns1:6-15000 a ns1:BioticStressor,
@@ -18708,7 +18727,7 @@ ns1:6-15310 a ns1:BioticStressor,
 
 ns1:6-15445 a ns1:BioticStressor,
         ns1:CropStressor ;
-    rdfs:label "Australische Wollschildlaus "@de ;
+    rdfs:label "Australische Wollschildlaus"@de ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q783121> .
 
 ns1:6-15474 a ns1:BioticStressor,
@@ -18747,16 +18766,6 @@ ns1:6-15868 a ns1:BioticStressor,
     rdfs:label "Grüne Reiswanze"@de,
         "Oak processionary caterpillar"@en ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q600498> .
-
-ns1:AbioticStressor a owl:Class ;
-    rdfs:label "Abiotischer Schadverursacher"@de,
-        "Abiotic crop stressor"@en ;
-    rdfs:comment "Negative Auswirkungen nicht lebender Faktoren auf die Kulturpflanze in einer bestimmten Umgebung."@de,
-        "Negative impact of non-living factors on the crop in a specific environment."@en ;
-    rdfs:isDefinedBy <http://www.wikidata.org/entity/Q4667893> ;
-    rdfs:seeAlso <https://w.wiki/CJnE> ;
-    rdfs:subClassOf ns1:CropStressor ;
-    owl:disjointWith ns1:BioticStressor .
 
 ns1:BCAisDefinedByBiologicalTaxon a owl:ObjectProperty ;
     rdfs:label "ist definiert durch das biologische Taxon"@de,
@@ -23042,6 +23051,16 @@ ns1:5-9946 a ns1:CropGroup ;
 ns1:5-9959 a ns1:CropGroup ;
     rdfs:label "Kernobst"@de ;
     ns1:hasParentCropGroup ns1:5-10192 .
+
+ns1:AbioticStressor a owl:Class ;
+    rdfs:label "Abiotischer Schadverursacher"@de,
+        "Abiotic crop stressor"@en ;
+    rdfs:comment "Negative Auswirkungen nicht lebender Faktoren auf die Kulturpflanze in einer bestimmten Umgebung."@de,
+        "Negative impact of non-living factors on the crop in a specific environment."@en ;
+    rdfs:isDefinedBy <http://www.wikidata.org/entity/Q4667893> ;
+    rdfs:seeAlso <https://w.wiki/CJnE> ;
+    rdfs:subClassOf ns1:CropStressor ;
+    owl:disjointWith ns1:BioticStressor .
 
 ns1:ActiveSubstance rdfs:label "Aktivsubstanz"@de,
         "Active substance"@en ;
