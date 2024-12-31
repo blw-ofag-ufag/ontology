@@ -40,7 +40,7 @@ h1 {
     border: 2px solid #1db954;
     border-radius: 25px;
     outline: none;
-    box-shadow: 0 4px 10px rgba(0, 255, 128, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     background-color: #2a2a2a;
     color: #fff;
 }
@@ -53,7 +53,7 @@ table {
     background-color: #1e1e1e;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0, 255, 128, 0.15);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 th, td {
@@ -75,8 +75,93 @@ th:hover {
     color: #000;
 }
 
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);  /* Lightens by 5% */
+}
+
 /* Column Widths */
-th:nth-child(1) { width: 20%; }
-th:nth-child(2) { width: 30%; }
-th:nth-child(3) { width: 40%; }
+th:nth-child(1) { width: 15%; }
+th:nth-child(2) { width: 25%; }
+th:nth-child(3) { width: 50%; }
 th:nth-child(4) { width: 10%; }
+
+.header {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start;  /* Align to the left */
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between; /* Title and Lang switcher on same line */
+    width: 100%;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* Space between label and select */
+}
+
+#subtitle {
+    margin-top: 10px;  /* Space between top row and subtitle */
+    font-size: 1.2rem;
+    color: #bbb;
+}
+
+a {
+    color: #1db954;  /* Spotify green or the green used for buttons */
+    text-decoration: none;  /* Remove underline */
+    font-weight: 500;  /* Slightly bold */
+}
+
+a:hover {
+    text-decoration: underline;  /* Underline on hover */
+    color: #1ee670;  /* Lighter green on hover */
+}
+
+/* Language Dropdown Styling */
+.language-switcher select {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: 2px solid #1db954;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    width: 200px;  /* Doubled width */
+}
+
+/* Dropdown Hover and Focus */
+.language-switcher select:hover,
+.language-switcher select:focus {
+    border-color: #1ee670;
+}
+
+/* Dropdown Arrow (Custom) */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+}
+
+.language-switcher::after {
+    content: '▼';
+    font-size: 0.8rem;
+    color: #1db954;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
