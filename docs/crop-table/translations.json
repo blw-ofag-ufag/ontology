@@ -1,0 +1,31 @@
+{
+    "de": {
+      "title": "🌱 Kulturen Tabelle",
+      "subtitle": "Liste der Kulturen und Kommentare",
+      "search": "🔍 Suche nach Namen...",
+      "columns": ["SRPPP-ID", "Name", "Kommentare", "Typ"],
+      "language_label": "🌐 Sprache:"
+    },
+    "fr": {
+      "title": "🌱 Tableau des Cultures",
+      "subtitle": "Liste des cultures et des commentaires",
+      "search": "🔍 Rechercher par nom...",
+      "columns": ["ID SRPPP", "Nom", "Commentaires", "Type"],
+      "language_label": "🌐 Langue:"
+    },
+    "it": {
+      "title": "🌱 Tabella delle Colture",
+      "subtitle": "Elenco delle colture e dei commenti",
+      "search": "🔍 Cerca per nome...",
+      "columns": ["SRPPP-ID", "Nome", "Commenti", "Tipo"],
+      "language_label": "🌐 Lingua:"
+    },
+    "en": {
+      "title": "🌱 Crops Table",
+      "subtitle": "List of crops and comments",
+      "search": "🔍 Search by name...",
+      "columns": ["SRPPP-ID", "Name", "Comments", "Type"],
+      "language_label": "🌐 Language:"
+    }
+  }
+  
