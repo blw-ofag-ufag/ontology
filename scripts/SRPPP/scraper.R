@@ -375,15 +375,30 @@ sink()
 # ------------------------------------------------------------------
 
 # Read JSON file with data
-stressors = jsonlite::read_json("mapping-tables/crop-stressors.json")
+stressors = jsonlite::read_json("mapping-tables/crop-stressors.json", simplifyVector = FALSE)
 
-# Quality check: Is there a pest missing in the JSON file?
+# Convert nested arrays to vectors
+stressors <- lapply(stressors, function(x) {
+  for (i in c("wikidata-iri", "identical")) x[[i]] <- unlist(x[[i]])
+  x$labels <- lapply(x$labels, unlist)
+  return(x)
+})
+
+# Quality check 1: Is there a pest missing in the JSON file?
 pests = xml_find_all(xml_data, ".//MetaData[@name='Pest']/Detail")
 a = pests |> xml_attr("primaryKey")
-b = sapply(stressors, function(x) x["id"]) |> unlist() |> unname() |> as.character()
+b = sapply(stressors, function(x) x["srppp-id"]) |> unlist() |> unname() |> as.character()
 if(all(a%in%b)) cat("Congrats, the JSON is (still) complete!") else cat("The JSON is missing a few items:\n\n", as.character(pests[which(!a%in%b)]))
 
+# Quality check 2: Is every item with a latin name also biotic?
+for (i in 1:length(stressors)) {
+  if(stressors[[i]][["srppp-id"]] %in% c(10743,10968,11191,11131,11103,11014,12434)) next # skip these, they are exceptions...
+  a <- length(stressors[[i]][["labels"]][["la"]])>0
+  b <- stressors[[i]][["type"]]=="biotic"
+  if(a&!b | !a&b) cat("\nID =",stressors[[i]][["srppp-id"]])
+}
 
+# Write Turtle file
 sink("data/crop-stressors.ttl")
 
 cat("
@@ -398,10 +413,10 @@ cat("
 # Write RDF data
 for (i in 1:length(stressors)) {
   
-  iri = IRI("6", stressors[[i]]$id)
+  iri = IRI("6", stressors[[i]]["srppp-id"])
   de = unlist(stressors[[i]]$labels$de)
   en = unlist(stressors[[i]]$labels$en)
-  taxa = unlist(stressors[[i]]$wikidata)
+  taxa = unlist(stressors[[i]]["wikidata-iri"])
   biotic = stressors[[i]]$biotic
   
   sprintf("%s a :CropStressor ;\n", iri) |> cat()
@@ -419,4 +434,3 @@ for (i in 1:length(stressors)) {
 }
 
 sink()
-

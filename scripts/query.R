@@ -13,21 +13,12 @@ RDF = rdf_parse("graph/plant-protection.ttl")
 SPARQL = '
 PREFIX : <https://agriculture.ld.admin.ch/foag/plant-protection#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT ?productName ?code ?companyName ?UID ?nonProfessional ?parallel ?countryOfOrigin
+SELECT ?productName ?code ?nonProfessional
 WHERE {
   ?product a :Product .
   ?product rdfs:label ?productName .
   ?product :hasFederalAdmissionNumber ?code .
-  ?company :holdsPermissionToSell ?product .
-  ?company rdfs:label ?companyName .
-  OPTIONAL {
-    ?company :hasUID ?UID .
-  }
-  ?product :isParallelImport ?parallel .
   ?product :isNonProfessionallyAllowed ?nonProfessional .
-  ?product :hasCountryOfOrigin ?country .
-  ?country rdfs:label ?countryOfOrigin
-  FILTER(LANG(?countryOfOrigin)="en")
 }
 LIMIT 15
 '
@@ -43,16 +34,12 @@ rdf_query(RDF, SPARQL)
 SPARQL = '
 PREFIX : <https://agriculture.ld.admin.ch/foag/plant-protection#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT ?companyName ?countryName (COUNT(DISTINCT ?product) AS ?productCount)
+SELECT ?company (COUNT(DISTINCT ?product) AS ?productCount)
 WHERE {
   ?product a :Product .
   ?product :hasPermissionHolder ?company .
-  ?company rdfs:label ?companyName .
-  ?company :locatedInCountry ?country .
-  ?country rdfs:label ?countryName .
-  FILTER(LANG(?countryName)="en")
 }
-GROUP BY ?companyName
+GROUP BY ?company
 ORDER BY DESC(?productCount)
 '
 
@@ -67,21 +54,14 @@ rdf_query(RDF, SPARQL) |> print(n = 20)
 SPARQL = '
 PREFIX : <https://agriculture.ld.admin.ch/foag/plant-protection#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT ?sameProductName ?federalAdmissionNumber ?countryOfOrigin ?companyName ?UID
+SELECT ?cropName ?parentCropName
 WHERE {
-  ?sameProduct :isSameProductAs :1-W-5218 .
-  ?sameProduct rdfs:label ?sameProductName .
-  ?sameProduct :hasFederalAdmissionNumber ?federalAdmissionNumber .
-  ?sameProduct :hasPermissionHolder ?company .
-  ?company rdfs:label ?companyName .
-  OPTIONAL {
-    ?sameProduct :hasCountryOfOrigin ?country .
-    ?country rdfs:label ?countryOfOrigin .
-    FILTER(LANG(?countryOfOrigin)="en")
-  }
-  OPTIONAL {
-    ?company :hasUID ?UID .
-  }
+  ?crop a :CropGroup .
+  ?crop rdfs:label ?cropName .
+  FILTER(LANG(?cropName)="de")
+  ?crop :hasParentCropGroup ?parentCrop .
+  ?parentCrop rdfs:label ?parentCropName .
+  FILTER(LANG(?parentCropName)="de")
 }
 '
 

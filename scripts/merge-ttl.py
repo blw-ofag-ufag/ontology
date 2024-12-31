@@ -5,8 +5,18 @@ def merge_ttl_files(file_list, output_file):
     merged_graph = Graph()
     for file_path in file_list:
         if file_path.endswith(".ttl"):
-            print(f"Reading file: {file_path}")
-            merged_graph.parse(file_path, format="turtle")
+            print(f"Processing file: {file_path}")
+            graph = Graph()
+            graph.parse(file_path, format="turtle")
+            
+            # Overwrite the original file with the reformatted content
+            graph.serialize(destination=file_path, format="turtle")
+            print(f"Reformatted file: {file_path}")
+            
+            # Merge into the main graph
+            merged_graph += graph
+    
+    # Serialize the merged graph
     print(f"Writing merged graph to: {output_file}")
     merged_graph.serialize(destination=output_file, format="turtle")
 
