@@ -5425,8 +5425,8 @@
         "de": ["Sonnenblume"],
         "fr": ["Tournesol"],
         "it": ["Girasole"],
-        "en": [null],
-        "la": [null]
+        "en": ["Common sunflower"],
+        "la": ["Helianthus annuus"]
     },
     "comment": {
         "de": null,
@@ -5434,7 +5434,7 @@
         "it": null,
         "en": null
     },
-    "wikidata-iri": [null],
+    "wikidata-iri": ["Q171497"],
     "polyphyletic": null,
     "type": null,
     "srppp-parent-id": [10197]
@@ -5445,7 +5445,7 @@
         "de": ["Nüsse"],
         "fr": ["Noix"],
         "it": ["Noci"],
-        "en": [null],
+        "en": ["Nut crops"],
         "la": [null]
     },
     "comment": {
@@ -5455,7 +5455,7 @@
         "en": null
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": true,
     "type": null,
     "srppp-parent-id": [10260]
   },
@@ -5465,8 +5465,8 @@
         "de": ["Ackerbohne"],
         "fr": ["Féverole"],
         "it": ["Fava"],
-        "en": [null],
-        "la": [null]
+        "en": ["Fava bean", "Faba bean", "Field bean", "Bell bean", "Tic bean", "Horse bean", "Vicia faba"],
+        "la": ["Vicia faba"]
     },
     "comment": {
         "de": null,
@@ -5474,8 +5474,8 @@
         "it": null,
         "en": null
     },
-    "wikidata-iri": [null],
-    "polyphyletic": null,
+    "wikidata-iri": ["Q131342"],
+    "polyphyletic": false,
     "type": null,
     "srppp-parent-id": [10197]
   },
@@ -5485,7 +5485,7 @@
         "de": ["Triticale"],
         "fr": ["Triticale"],
         "it": ["Triticale"],
-        "en": [null],
+        "en": ["Triticale"],
         "la": [null]
     },
     "comment": {
@@ -5505,7 +5505,7 @@
         "de": ["Sommerweizen"],
         "fr": ["Blé de printemps"],
         "it": ["Frumento primaverile"],
-        "en": [null],
+        "en": ["Summer wheat"],
         "la": [null]
     },
     "comment": {
@@ -5545,8 +5545,8 @@
         "de": ["Römische Kamille"],
         "fr": ["Camomille romaine"],
         "it": ["Camomilla romana"],
-        "en": ["Lat. Chamaemelum nobile"],
-        "la": [null]
+        "en": ["Roman chamomile", "garden dog-fennel"],
+        "la": ["Chamaemelum nobile"]
     },
     "comment": {
         "de": null,
@@ -5554,7 +5554,7 @@
         "it": null,
         "en": null
     },
-    "wikidata-iri": [null],
+    "wikidata-iri": ["Q5723577"],
     "polyphyletic": null,
     "type": null,
     "srppp-parent-id": [10186]
@@ -5565,8 +5565,8 @@
         "de": ["Hopfen"],
         "fr": ["Houblon"],
         "it": ["Luppolo"],
-        "en": [null],
-        "la": [null]
+        "en": ["Hop", "Common hop"],
+        "la": ["Humulus lupulus"]
     },
     "comment": {
         "de": null,
@@ -5574,7 +5574,7 @@
         "it": null,
         "en": null
     },
-    "wikidata-iri": [null],
+    "wikidata-iri": ["Q104212"],
     "polyphyletic": null,
     "type": null,
     "srppp-parent-id": [10197]
@@ -5645,8 +5645,8 @@
         "de": ["Zwetschge"],
         "fr": ["Prunier (pruneau)"],
         "it": ["Prugno"],
-        "en": [null],
-        "la": [null]
+        "en": ["Prune plum"],
+        "la": ["Prunus domestica subsp. domestica"]
     },
     "comment": {
         "de": null,
@@ -5654,7 +5654,7 @@
         "it": null,
         "en": null
     },
-    "wikidata-iri": [null],
+    "wikidata-iri": ["Q13223298"],
     "polyphyletic": null,
     "type": null,
     "srppp-parent-id": [10011]
@@ -5864,7 +5864,7 @@
     "label": {
         "de": ["Meerrettich"],
         "fr": ["Raifort"],
-        "it": ["Rafano rusticana / Ramolaccio"],
+        "it": ["Rafano rusticana", "Ramolaccio"],
         "en": [null],
         "la": [null]
     },
@@ -6145,7 +6145,7 @@
         "de": ["Anbautechnik"],
         "fr": ["Techniques culturales"],
         "it": ["Tecnica di coltivazione"],
-        "en": [null],
+        "en": ["Cultivation technique"],
         "la": [null]
     },
     "comment": {
@@ -6156,7 +6156,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "noncrop",
     "srppp-parent-id": [10197]
   },
   {
@@ -6165,7 +6165,7 @@
         "de": ["Bäume und Sträucher (ausserhalb Forst)"],
         "fr": ["Arbres et arbustes (hors fôret)"],
         "it": ["Alberi e arbusti (al di fuori della foresta)"],
-        "en": [null],
+        "en": ["Trees and shrubs (outside forestry)"],
         "la": [null]
     },
     "comment": {
@@ -6185,7 +6185,7 @@
         "de": ["Blumenkulturen und Grünpflanzen"],
         "fr": ["Cultures florales et plantes vertes"],
         "it": ["Colture da fiore e piante verdi"],
-        "en": [null],
+        "en": ["Floral and green plant cultures"],
         "la": [null]
     },
     "comment": {
@@ -6236,7 +6236,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "noncrop",
     "srppp-parent-id": [null]
   },
   {
@@ -6256,17 +6256,17 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "noncrop",
     "srppp-parent-id": [10201]
   },
   {
     "srppp-id": 14904,
     "label": {
-        "de": ["Süssdolde"],
+        "de": ["Süssdolde", "Myrrhenkerbel", "Süsskerbel", "Spanischer Kerbel", "Aniskerbel"],
         "fr": ["Cerfeuil musqué"],
         "it": ["Finocchiella"],
-        "en": ["Cicely"],
-        "la": [null]
+        "en": ["Cicely", "Sweet cicely", "Myrrh"],
+        "la": ["Myrrhis odorata"]
     },
     "comment": {
         "de": null,
@@ -6274,9 +6274,9 @@
         "it": null,
         "en": null
     },
-    "wikidata-iri": [null],
-    "polyphyletic": null,
-    "type": null,
+    "wikidata-iri": ["Q1137175"],
+    "polyphyletic": false,
+    "type": "crop",
     "srppp-parent-id": [null]
   },
   {
@@ -6285,7 +6285,7 @@
         "de": ["Ein- und zweijährige Zierpflanzen"],
         "fr": ["Plantes ornementales annuelles et bisannuelles"],
         "it": ["Piante ornamentali annuali e biennali"],
-        "en": [null],
+        "en": ["Annual and biennial ornamental plants"],
         "la": [null]
     },
     "comment": {
@@ -6295,8 +6295,8 @@
         "en": null
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
-    "type": null,
+    "polyphyletic": true,
+    "type": "crop",
     "srppp-parent-id": [10190]
   },
   {
@@ -6305,7 +6305,7 @@
         "de": ["Auf und an National- und Kantonsstrassen (gem. ChemRRV)"],
         "fr": ["Le long des routes nationales et cantonales  (selon ORRChim)"],
         "it": ["Lungo le strade nazionali e cantonali (conformemente ORRPChim)"],
-        "en": [null],
+        "en": ["On and along national and cantonal roads (in accordance with the ORRChem)"],
         "la": [null]
     },
     "comment": {
@@ -6325,7 +6325,7 @@
         "de": ["Böschungen und Grünstreifen entlang von Verkehrswegen (gem. ChemRRV)"],
         "fr": ["Talus et bandes vertes le long des voies de communication (selon ORRChim)"],
         "it": ["Scarpate e strisce verdi lungo le vie di comunicazione (conformemente ORRPChim)"],
-        "en": [null],
+        "en": ["Embankments and grass verges along transportation routes (as per ChemRRV)"],
         "la": [null]
     },
     "comment": {
@@ -6345,7 +6345,7 @@
         "de": ["Wintertriticale"],
         "fr": ["Triticale d'automne"],
         "it": ["Triticale autunnale"],
-        "en": [null],
+        "en": ["Winter triticale"],
         "la": [null]
     },
     "comment": {
@@ -6365,7 +6365,7 @@
         "de": ["Lupinen"],
         "fr": ["Lupin"],
         "it": ["Lupini"],
-        "en": [null],
+        "en": ["Lupines"],
         "la": [null]
     },
     "comment": {
@@ -6385,7 +6385,7 @@
         "de": ["Küchenkräuter"],
         "fr": ["Fines herbes"],
         "it": ["Erbette da cucina"],
-        "en": [null],
+        "en": ["Kitchen herbs", "Culinary herbs"],
         "la": [null]
     },
     "comment": {
@@ -6395,7 +6395,7 @@
         "en": null
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "crop",
     "srppp-parent-id": [10195]
   },

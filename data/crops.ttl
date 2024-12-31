@@ -105,7 +105,8 @@
 
 :5-14904 a :CropGroup ;
     rdfs:label "Süssdolde"@de,
-        "Cicely"@en .
+        "Cicely"@en ;
+    :cropIsRelatedToBiologicalTaxon wd:Q1137175 .
 
 :5-15269 a :CropGroup ;
     rdfs:label "Kerbelrübe"@de .
@@ -312,11 +313,15 @@
     :hasParentCropGroup :5-9953 .
 
 :5-10115 a :CropGroup ;
-    rdfs:label "Hopfen"@de ;
+    rdfs:label "Hopfen"@de,
+        "Hop"@en ;
+    :cropIsRelatedToBiologicalTaxon wd:Q104212 ;
     :hasParentCropGroup :5-10197 .
 
 :5-10116 a :CropGroup ;
-    rdfs:label "Ackerbohne"@de ;
+    rdfs:label "Ackerbohne"@de,
+        "Fava bean"@en ;
+    :cropIsRelatedToBiologicalTaxon wd:Q131342 ;
     :hasParentCropGroup :5-10197 .
 
 :5-10124 a :CropGroup ;
@@ -324,7 +329,9 @@
     :hasParentCropGroup :5-10197 .
 
 :5-10126 a :CropGroup ;
-    rdfs:label "Zwetschge"@de ;
+    rdfs:label "Zwetschge"@de,
+        "Prune plum"@en ;
+    :cropIsRelatedToBiologicalTaxon wd:Q13223298 ;
     :hasParentCropGroup :5-10011 .
 
 :5-10132 a :CropGroup ;
@@ -338,7 +345,9 @@
 :5-10134 :hasChildCropGroup :5-10070 .
 
 :5-10137 a :CropGroup ;
-    rdfs:label "Sonnenblume"@de ;
+    rdfs:label "Sonnenblume"@de,
+        "Common sunflower"@en ;
+    :cropIsRelatedToBiologicalTaxon wd:Q171497 ;
     :hasParentCropGroup :5-10197 .
 
 :5-10142 a :CropGroup ;
@@ -378,15 +387,18 @@
     :hasChildCropGroup :5-10227 .
 
 :5-10178 a :CropGroup ;
-    rdfs:label "Böschungen und Grünstreifen entlang von Verkehrswegen (gem. ChemRRV)"@de ;
+    rdfs:label "Böschungen und Grünstreifen entlang von Verkehrswegen (gem. ChemRRV)"@de,
+        "Embankments and grass verges along transportation routes (as per ChemRRV)"@en ;
     :hasParentCropGroup :5-12147 .
 
 :5-10179 a :CropGroup ;
-    rdfs:label "Auf und an National- und Kantonsstrassen (gem. ChemRRV)"@de ;
+    rdfs:label "Auf und an National- und Kantonsstrassen (gem. ChemRRV)"@de,
+        "On and along national and cantonal roads (in accordance with the ORRChem)"@en ;
     :hasParentCropGroup :5-12147 .
 
 :5-10187 a :CropGroup ;
-    rdfs:label "Lupinen"@de ;
+    rdfs:label "Lupinen"@de,
+        "Lupines"@en ;
     :hasParentCropGroup :5-10197 .
 
 :5-10188 a :CropGroup ;
@@ -715,7 +727,8 @@
 
 :5-12507 a :CropGroup ;
     rdfs:label "Römische Kamille"@de,
-        "Lat. Chamaemelum nobile"@en ;
+        "Roman chamomile"@en ;
+    :cropIsRelatedToBiologicalTaxon wd:Q5723577 ;
     :hasParentCropGroup :5-10186 .
 
 :5-12627 a :CropGroup ;
@@ -980,17 +993,20 @@
         :5-12096 .
 
 :5-10117 a :CropGroup ;
-    rdfs:label "Nüsse"@de ;
+    rdfs:label "Nüsse"@de,
+        "Nut crops"@en ;
     :hasChildCropGroup :5-10091 ;
     :hasParentCropGroup :5-10260 .
 
 :5-10118 a :CropGroup ;
-    rdfs:label "Sommerweizen"@de ;
+    rdfs:label "Sommerweizen"@de,
+        "Summer wheat"@en ;
     :hasParentCropGroup :5-10164,
         :5-13784 .
 
 :5-10119 a :CropGroup ;
-    rdfs:label "Triticale"@de ;
+    rdfs:label "Triticale"@de,
+        "Triticale"@en ;
     :hasChildCropGroup :5-10180 ;
     :hasParentCropGroup :5-10080 .
 
@@ -1046,12 +1062,14 @@
     :hasParentCropGroup :5-10195 .
 
 :5-10176 a :CropGroup ;
-    rdfs:label "Ein- und zweijährige Zierpflanzen"@de ;
+    rdfs:label "Ein- und zweijährige Zierpflanzen"@de,
+        "Annual and biennial ornamental plants"@en ;
     :hasChildCropGroup :5-9969 ;
     :hasParentCropGroup :5-10190 .
 
 :5-10180 a :CropGroup ;
-    rdfs:label "Wintertriticale"@de ;
+    rdfs:label "Wintertriticale"@de,
+        "Winter triticale"@en ;
     :hasParentCropGroup :5-10119,
         :5-10167 .
 
@@ -1209,7 +1227,8 @@
     :hasParentCropGroup :5-9957 .
 
 :5-10198 a :CropGroup ;
-    rdfs:label "Anbautechnik"@de ;
+    rdfs:label "Anbautechnik"@de,
+        "Cultivation technique"@en ;
     :hasChildCropGroup :5-10133,
         :5-10142 ;
     :hasParentCropGroup :5-10197 .
@@ -1481,7 +1500,8 @@
         :5-9979 .
 
 :5-12096 a :CropGroup ;
-    rdfs:label "Bäume und Sträucher (ausserhalb Forst)"@de ;
+    rdfs:label "Bäume und Sträucher (ausserhalb Forst)"@de,
+        "Trees and shrubs (outside forestry)"@en ;
     :hasChildCropGroup :5-10100,
         :5-10103,
         :5-10109,
@@ -1541,7 +1561,8 @@
     :hasParentCropGroup :5-10195 .
 
 :5-12097 a :CropGroup ;
-    rdfs:label "Blumenkulturen und Grünpflanzen"@de ;
+    rdfs:label "Blumenkulturen und Grünpflanzen"@de,
+        "Floral and green plant cultures"@en ;
     :hasChildCropGroup :5-10004,
         :5-10040,
         :5-10050,
@@ -1559,7 +1580,8 @@
     :hasParentCropGroup :5-10190 .
 
 :5-10186 a :CropGroup ;
-    rdfs:label "Küchenkräuter"@de ;
+    rdfs:label "Küchenkräuter"@de,
+        "Kitchen herbs"@en ;
     :hasChildCropGroup :5-10002,
         :5-10242,
         :5-10244,

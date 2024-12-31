@@ -15076,7 +15076,8 @@ ns1:5-14801 a ns1:CropGroup ;
 
 ns1:5-14904 a ns1:CropGroup ;
     rdfs:label "Süssdolde"@de,
-        "Cicely"@en .
+        "Cicely"@en ;
+    ns1:cropIsRelatedToBiologicalTaxon <https://www.wikidata.org/wiki/Q1137175> .
 
 ns1:5-15269 a ns1:CropGroup ;
     rdfs:label "Kerbelrübe"@de .
@@ -19793,11 +19794,15 @@ ns1:5-10114 a ns1:CropGroup ;
     ns1:hasParentCropGroup ns1:5-9953 .
 
 ns1:5-10115 a ns1:CropGroup ;
-    rdfs:label "Hopfen"@de ;
+    rdfs:label "Hopfen"@de,
+        "Hop"@en ;
+    ns1:cropIsRelatedToBiologicalTaxon <https://www.wikidata.org/wiki/Q104212> ;
     ns1:hasParentCropGroup ns1:5-10197 .
 
 ns1:5-10116 a ns1:CropGroup ;
-    rdfs:label "Ackerbohne"@de ;
+    rdfs:label "Ackerbohne"@de,
+        "Fava bean"@en ;
+    ns1:cropIsRelatedToBiologicalTaxon <https://www.wikidata.org/wiki/Q131342> ;
     ns1:hasParentCropGroup ns1:5-10197 .
 
 ns1:5-10124 a ns1:CropGroup ;
@@ -19805,7 +19810,9 @@ ns1:5-10124 a ns1:CropGroup ;
     ns1:hasParentCropGroup ns1:5-10197 .
 
 ns1:5-10126 a ns1:CropGroup ;
-    rdfs:label "Zwetschge"@de ;
+    rdfs:label "Zwetschge"@de,
+        "Prune plum"@en ;
+    ns1:cropIsRelatedToBiologicalTaxon <https://www.wikidata.org/wiki/Q13223298> ;
     ns1:hasParentCropGroup ns1:5-10011 .
 
 ns1:5-10132 a ns1:CropGroup ;
@@ -19819,7 +19826,9 @@ ns1:5-10133 a ns1:CropGroup ;
 ns1:5-10134 ns1:hasChildCropGroup ns1:5-10070 .
 
 ns1:5-10137 a ns1:CropGroup ;
-    rdfs:label "Sonnenblume"@de ;
+    rdfs:label "Sonnenblume"@de,
+        "Common sunflower"@en ;
+    ns1:cropIsRelatedToBiologicalTaxon <https://www.wikidata.org/wiki/Q171497> ;
     ns1:hasParentCropGroup ns1:5-10197 .
 
 ns1:5-10142 a ns1:CropGroup ;
@@ -19859,15 +19868,18 @@ ns1:5-10172 a ns1:CropGroup ;
     ns1:hasChildCropGroup ns1:5-10227 .
 
 ns1:5-10178 a ns1:CropGroup ;
-    rdfs:label "Böschungen und Grünstreifen entlang von Verkehrswegen (gem. ChemRRV)"@de ;
+    rdfs:label "Böschungen und Grünstreifen entlang von Verkehrswegen (gem. ChemRRV)"@de,
+        "Embankments and grass verges along transportation routes (as per ChemRRV)"@en ;
     ns1:hasParentCropGroup ns1:5-12147 .
 
 ns1:5-10179 a ns1:CropGroup ;
-    rdfs:label "Auf und an National- und Kantonsstrassen (gem. ChemRRV)"@de ;
+    rdfs:label "Auf und an National- und Kantonsstrassen (gem. ChemRRV)"@de,
+        "On and along national and cantonal roads (in accordance with the ORRChem)"@en ;
     ns1:hasParentCropGroup ns1:5-12147 .
 
 ns1:5-10187 a ns1:CropGroup ;
-    rdfs:label "Lupinen"@de ;
+    rdfs:label "Lupinen"@de,
+        "Lupines"@en ;
     ns1:hasParentCropGroup ns1:5-10197 .
 
 ns1:5-10188 a ns1:CropGroup ;
@@ -20196,7 +20208,8 @@ ns1:5-12069 a ns1:CropGroup ;
 
 ns1:5-12507 a ns1:CropGroup ;
     rdfs:label "Römische Kamille"@de,
-        "Lat. Chamaemelum nobile"@en ;
+        "Roman chamomile"@en ;
+    ns1:cropIsRelatedToBiologicalTaxon <https://www.wikidata.org/wiki/Q5723577> ;
     ns1:hasParentCropGroup ns1:5-10186 .
 
 ns1:5-12627 a ns1:CropGroup ;
@@ -22221,17 +22234,20 @@ ns1:5-10110 a ns1:CropGroup ;
         ns1:5-12096 .
 
 ns1:5-10117 a ns1:CropGroup ;
-    rdfs:label "Nüsse"@de ;
+    rdfs:label "Nüsse"@de,
+        "Nut crops"@en ;
     ns1:hasChildCropGroup ns1:5-10091 ;
     ns1:hasParentCropGroup ns1:5-10260 .
 
 ns1:5-10118 a ns1:CropGroup ;
-    rdfs:label "Sommerweizen"@de ;
+    rdfs:label "Sommerweizen"@de,
+        "Summer wheat"@en ;
     ns1:hasParentCropGroup ns1:5-10164,
         ns1:5-13784 .
 
 ns1:5-10119 a ns1:CropGroup ;
-    rdfs:label "Triticale"@de ;
+    rdfs:label "Triticale"@de,
+        "Triticale"@en ;
     ns1:hasChildCropGroup ns1:5-10180 ;
     ns1:hasParentCropGroup ns1:5-10080 .
 
@@ -22287,12 +22303,14 @@ ns1:5-10159 a ns1:CropGroup ;
     ns1:hasParentCropGroup ns1:5-10195 .
 
 ns1:5-10176 a ns1:CropGroup ;
-    rdfs:label "Ein- und zweijährige Zierpflanzen"@de ;
+    rdfs:label "Ein- und zweijährige Zierpflanzen"@de,
+        "Annual and biennial ornamental plants"@en ;
     ns1:hasChildCropGroup ns1:5-9969 ;
     ns1:hasParentCropGroup ns1:5-10190 .
 
 ns1:5-10180 a ns1:CropGroup ;
-    rdfs:label "Wintertriticale"@de ;
+    rdfs:label "Wintertriticale"@de,
+        "Winter triticale"@en ;
     ns1:hasParentCropGroup ns1:5-10119,
         ns1:5-10167 .
 
@@ -23055,7 +23073,8 @@ ns1:5-10128 a ns1:CropGroup ;
     ns1:hasParentCropGroup ns1:5-9957 .
 
 ns1:5-10198 a ns1:CropGroup ;
-    rdfs:label "Anbautechnik"@de ;
+    rdfs:label "Anbautechnik"@de,
+        "Cultivation technique"@en ;
     ns1:hasChildCropGroup ns1:5-10133,
         ns1:5-10142 ;
     ns1:hasParentCropGroup ns1:5-10197 .
@@ -30390,7 +30409,8 @@ ns1:5-10193 a ns1:CropGroup ;
         ns1:5-9979 .
 
 ns1:5-12096 a ns1:CropGroup ;
-    rdfs:label "Bäume und Sträucher (ausserhalb Forst)"@de ;
+    rdfs:label "Bäume und Sträucher (ausserhalb Forst)"@de,
+        "Trees and shrubs (outside forestry)"@en ;
     ns1:hasChildCropGroup ns1:5-10100,
         ns1:5-10103,
         ns1:5-10109,
@@ -56073,7 +56093,8 @@ ns1:2-11833 a schema:Organization ;
     schema:name "Nufarm SAS" .
 
 ns1:5-12097 a ns1:CropGroup ;
-    rdfs:label "Blumenkulturen und Grünpflanzen"@de ;
+    rdfs:label "Blumenkulturen und Grünpflanzen"@de,
+        "Floral and green plant cultures"@en ;
     ns1:hasChildCropGroup ns1:5-10004,
         ns1:5-10040,
         ns1:5-10050,
@@ -58481,7 +58502,8 @@ ns1:2-10281 a schema:Organization ;
     schema:name "BASF AG" .
 
 ns1:5-10186 a ns1:CropGroup ;
-    rdfs:label "Küchenkräuter"@de ;
+    rdfs:label "Küchenkräuter"@de,
+        "Kitchen herbs"@en ;
     ns1:hasChildCropGroup ns1:5-10002,
         ns1:5-10242,
         ns1:5-10244,
