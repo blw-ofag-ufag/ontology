@@ -4,31 +4,22 @@ body {
     color: #fff;
     margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
+    flex-direction: column;  /* Stack elements vertically */
+    align-items: center;     /* Center horizontally */
+    min-height: 100vh;       /* Full height to prevent scrolling issues */
     padding: 20px;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
     max-width: 1000px;
     margin-bottom: 20px;
+    text-align: left;        /* Align header to the left */
 }
 
 h1 {
     margin: 0;
     font-size: 2.5rem;
-}
-
-.language-switcher {
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 #searchInput {
@@ -80,10 +71,14 @@ tbody tr:hover {
 }
 
 /* Column Widths */
-th:nth-child(1) { width: 15%; }
+th:nth-child(1) { width: 10%; }
 th:nth-child(2) { width: 25%; }
-th:nth-child(3) { width: 50%; }
-th:nth-child(4) { width: 10%; }
+th:nth-child(3) { width: 55%; }
+th:nth-child(4),
+td:nth-child(4) {
+    text-align: center;
+    width: 10%;
+}
 
 .header {
     display: flex;
@@ -106,12 +101,6 @@ h1 {
     font-size: 2.5rem;
 }
 
-.language-switcher {
-    display: flex;
-    align-items: center;
-    gap: 10px;  /* Space between label and select */
-}
-
 #subtitle {
     margin-top: 10px;  /* Space between top row and subtitle */
     font-size: 1.2rem;
@@ -127,6 +116,12 @@ a {
 a:hover {
     text-decoration: underline;  /* Underline on hover */
     color: #1ee670;  /* Lighter green on hover */
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 /* Language Dropdown Styling */

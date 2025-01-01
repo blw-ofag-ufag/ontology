@@ -1,35 +1,34 @@
 // Embedded translations (instead of fetching from a JSON file)
 const translations = {
     "de": {
-        "title": "🌱 Kulturentabelle",
+        "title": "Kulturentabelle",
         "subtitle": "Hier findest du die Liste der Kulturen des Bundesamtes für Landwirtschaft BLW. Diese Liste ist <i>fast</i> komplett. Das tatsächliche File mit den Daten liegt auf <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.",
-        "search": "🔍 Durchsuche nach Name, Kommentar etc.",
+        "search": "Durchsuche nach Name, Kommentar etc.",
         "columns": ["ID", "Name", "Kommentare", "Typ"],
         "language_label": ""
     },
     "fr": {
-        "title": "🌱 Tableau des Cultures",
+        "title": "Tableau des Cultures",
         "subtitle": "Voici la liste des cultures de l'Office fédéral de l'agriculture OFAG. Cette liste est <i>presque</i> complète. Le fichier réel avec les données est disponible sur <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.",
-        "search": "🔍 Rechercher par nom, commentaire, etc.",
+        "search": "Rechercher par nom, commentaire, etc.",
         "columns": ["ID", "Nom", "Commentaires", "Type"],
         "language_label": ""
     },
     "it": {
-        "title": "🌱 Tabella delle Colture",
+        "title": "Tabella delle Colture",
         "subtitle": "Qui trovi l'elenco delle colture dell'Ufficio federale dell'agricoltura UFAG. Questo elenco è <i>quasi</i> completo. Il file effettivo con i dati si trova su <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.",
-        "search": "🔍 Cerca per nome, commento, ecc.",
+        "search": "Cerca per nome, commento, ecc.",
         "columns": ["ID", "Nome", "Commenti", "Tipo"],
         "language_label": ""
     },
     "en": {
-        "title": "🌱 Crops Table",
+        "title": "Crops Table",
         "subtitle": "Here you can find the list of crops from the Federal Office for Agriculture FOAG. This list is <i>almost</i> complete. The actual file with data is available on <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.",
-        "search": "🔍 Search by name, comment, etc.",
+        "search": "Search by name, comment, etc.",
         "columns": ["ID", "Name", "Comments", "Type"],
         "language_label": ""
     }
 };
-
 
 // Detect language from URL or default to 'de'
 const urlParams = new URLSearchParams(window.location.search);
@@ -82,7 +81,14 @@ function fetchData() {
 
                 const typeCell = document.createElement('td');
                 const type = item.type || '';
-                typeCell.textContent = type === 'crop' ? '🌱' : type === 'noncrop' ? '🚧' : '';
+                typeCell.textContent =
+                    type === 'arable' ? '🌾'  :
+                    type === 'medical' ? '🌿'  :
+                    type === 'vegetable' ? '🥬' :
+                    type === 'fruit' ? '🍎' :
+                    type === 'ornamental' ? '🌺' :
+                    type === 'noncrop' ? '🏭' :
+                    '';
                 row.appendChild(typeCell);
 
                 tableBody.appendChild(row);
