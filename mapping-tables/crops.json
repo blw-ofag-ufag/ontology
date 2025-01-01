@@ -1136,7 +1136,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "viticulture",
     "srppp-parent-id": [10194]
   },
   {
@@ -1276,7 +1276,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "noncrop",
     "srppp-parent-id": [10202]
   },
   {
@@ -1816,7 +1816,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "berry",
     "srppp-parent-id": [10297]
   },
   {
@@ -1936,7 +1936,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "berry",
     "srppp-parent-id": [10193]
   },
   {
@@ -1956,7 +1956,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "berry",
     "srppp-parent-id": [10193]
   },
   {
@@ -1976,7 +1976,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "berry",
     "srppp-parent-id": [10297]
   },
   {
@@ -3016,7 +3016,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "viticulture",
     "srppp-parent-id": [9953]
   },
   {
@@ -3416,7 +3416,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "arable",
     "srppp-parent-id": [10197]
   },
   {
@@ -3496,7 +3496,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "medical",
     "srppp-parent-id": [12097]
   },
   {
@@ -3516,7 +3516,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "berry",
     "srppp-parent-id": [10127]
   },
   {
@@ -3596,7 +3596,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "berry",
     "srppp-parent-id": [10127]
   },
   {
@@ -3636,7 +3636,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [10068]
   },
   {
@@ -3656,7 +3656,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [9962]
   },
   {
@@ -3676,7 +3676,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [9960]
   },
   {
@@ -3696,7 +3696,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "berry",
     "srppp-parent-id": [10127]
   },
   {
@@ -3716,7 +3716,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "fruit",
     "srppp-parent-id": [9965]
   },
   {
@@ -3736,7 +3736,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "fruit",
     "srppp-parent-id": [10011]
   },
   {
@@ -3756,7 +3756,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "fruit",
     "srppp-parent-id": [9959]
   },
   {
@@ -3796,7 +3796,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [9948]
   },
   {
@@ -4216,7 +4216,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "forestry",
     "srppp-parent-id": [10190]
   },
   {
@@ -5056,7 +5056,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "berry",
     "srppp-parent-id": [null]
   },
   {
@@ -5236,7 +5236,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "arable",
     "srppp-parent-id": [10008]
   },
   {
@@ -5596,7 +5596,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "viticulture",
     "srppp-parent-id": [9953]
   },
   {
@@ -5936,7 +5936,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "forestry",
     "srppp-parent-id": [null]
   },
   {
@@ -5976,7 +5976,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "forestry",
     "srppp-parent-id": [12465]
   },
   {
@@ -6076,7 +6076,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "viticulture",
     "srppp-parent-id": [null]
   },
   {
