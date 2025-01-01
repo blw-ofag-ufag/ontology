@@ -1696,7 +1696,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "fruit",
     "srppp-parent-id": [9959]
   },
   {
@@ -1736,7 +1736,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "fruit",
     "srppp-parent-id": [10296]
   },
   {
@@ -2336,7 +2336,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "fruit",
     "srppp-parent-id": [9959]
   },
   {
@@ -3436,7 +3436,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "fruit",
     "srppp-parent-id": [9965]
   },
   {
