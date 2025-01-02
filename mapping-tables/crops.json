@@ -62,62 +62,62 @@
   {
     "srppp-id": 12630,
     "label": {
-        "de": ["Spitzwegerich"],
-        "fr": ["Plantain lancéolé"],
-        "it": ["Piantaggine lanciuola"],
-        "en": ["Plantago lanceolata"],
-        "la": [null]
+      "de": ["Spitzwegerich", "Spiesskraut"],
+      "fr": ["Plantain lancéolé", "Plantain étroit"],
+      "it": ["Piantaggine lanciuola", "Piantaggine lanceolata"],
+      "en": ["Ribwort plantain", "Narrowleaf plantain", "English plantain"],
+      "la": ["Plantago lanceolata"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Der Spitzwegerich ist eine mehrjährige Pflanze, die häufig an Strassenrändern und in Wiesen zu finden ist und traditionell in der Kräutermedizin verwendet wird.",
+      "fr": "Le plantain lancéolé est une plante vivace courante le long des routes et dans les prairies, utilisée traditionnellement en phytothérapie.",
+      "it": "La piantaggine lanciuola è una pianta perenne comune lungo le strade e nei prati, tradizionalmente utilizzata nella fitoterapia.",
+      "en": "Ribwort plantain is a perennial plant commonly found along roadsides and in meadows, traditionally used in herbal medicine."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "medical",
-    "srppp-parent-id": [null]
+    "srppp-parent-id": [10565]
   },
   {
     "srppp-id": 14799,
     "label": {
-        "de": ["Eberesche"],
-        "fr": ["Sorbier des oiseleurs"],
-        "it": ["Sorbo degli ucellatori"],
-        "en": [null],
-        "la": [null]
+      "de": ["Eberesche", "Vogelbeere", "Drosselbeere"],
+      "fr": ["Sorbier des oiseleurs", "Sorbier"],
+      "it": ["Sorbo degli uccellatori", "Sorbo"],
+      "en": ["Rowan", "Mountain ash"],
+      "la": ["Sorbus aucuparia"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Eberesche ist ein laubabwerfender Baum, bekannt für seine leuchtend roten Beeren, die eine wichtige Nahrungsquelle für Vögel darstellen.",
+      "fr": "Le sorbier des oiseleurs est un arbre à feuilles caduques, réputé pour ses baies rouges vives, constituant une source de nourriture essentielle pour les oiseaux.",
+      "it": "Il sorbo degli uccellatori è un albero deciduo, noto per le sue bacche rosse brillanti, che rappresentano una fonte di cibo importante per gli uccelli.",
+      "en": "The rowan is a deciduous tree known for its bright red berries, which are a crucial food source for birds."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": null,
-    "srppp-parent-id": [null]
+    "srppp-parent-id": [10566]
   },
   {
     "srppp-id": 12626,
     "label": {
-        "de": ["Majoran"],
-        "fr": ["Marjolaine"],
-        "it": ["Maggiorana "],
-        "en": ["Marjoram"],
-        "la": [null]
+      "de": ["Majoran", "Wilder Majoran"],
+      "fr": ["Marjolaine", "Marjolaine vivace"],
+      "it": ["Maggiorana", "Maggiorana comune"],
+      "en": ["Marjoram", "Sweet marjoram", "Knotted marjoram"],
+      "la": ["Origanum majorana"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Majoran ist ein mehrjähriges Kraut aus der Mittelmeerregion, bekannt für seinen süssen, pinienartigen und zitrusartigen Geschmack, der häufig in der mediterranen und nahöstlichen Küche verwendet wird.",
+      "fr": "La marjolaine est une herbe vivace originaire de la région méditerranéenne, connue pour sa saveur douce, de pin et d'agrumes, souvent utilisée dans les cuisines méditerranéenne et moyen-orientale.",
+      "it": "La maggiorana è un'erba perenne originaria della regione mediterranea, nota per il suo sapore dolce, di pino e agrumi, spesso utilizzata nelle cucine mediterranea e mediorientale.",
+      "en": "Marjoram is a perennial herb native to the Mediterranean region, known for its sweet, pine, and citrus flavor, commonly used in Mediterranean and Middle Eastern cuisines."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": null,
-    "srppp-parent-id": [null]
+    "srppp-parent-id": [10564]
   },
   {
     "srppp-id": 12627,
@@ -3462,40 +3462,40 @@
   {
     "srppp-id": 10005,
     "label": {
-        "de": ["Spargel"],
-        "fr": ["Asperge"],
-        "it": ["Asparagi"],
-        "en": [null],
-        "la": [null]
+      "de": ["Spargel", "Gemüsespargel", "Gemeiner Spargel"],
+      "fr": ["Asperge", "Asperge commune"],
+      "it": ["Asparagi", "Asparago comune"],
+      "en": ["Asparagus", "Garden asparagus", "Common asparagus"],
+      "la": ["Asparagus officinalis"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Spargel ist eine mehrjährige Pflanze, deren junge Triebe als beliebtes Gemüse verzehrt werden.",
+      "fr": "L'asperge est une plante vivace dont les jeunes pousses sont consommées comme un légume apprécié.",
+      "it": "L'asparago è una pianta perenne i cui giovani germogli sono consumati come un ortaggio apprezzato.",
+      "en": "Asparagus is a perennial plant whose young shoots are consumed as a popular vegetable."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
-    "type": null,
+    "polyphyletic": false,
+    "type": "vegetable",
     "srppp-parent-id": [10338]
   },
   {
     "srppp-id": 10004,
     "label": {
-        "de": ["Iris"],
-        "fr": ["Iris"],
-        "it": ["Iris"],
-        "en": [null],
-        "la": [null]
+      "de": ["Iris", "Schwertlilie"],
+      "fr": ["Iris", "Iris des jardins"],
+      "it": ["Iris", "Giaggiolo"],
+      "en": ["Iris"],
+      "la": ["Iris"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Iris, auch Schwertlilie genannt, ist eine mehrjährige Pflanze, die für ihre auffälligen Blüten geschätzt wird und in der traditionellen Medizin Verwendung findet.",
+      "fr": "L'iris, également appelé iris des jardins, est une plante vivace prisée pour ses fleurs éclatantes et utilisée en médecine traditionnelle.",
+      "it": "Il giaggiolo, noto anche come iris, è una pianta perenne apprezzata per i suoi fiori vivaci e utilizzata nella medicina tradizionale.",
+      "en": "The iris is a perennial plant valued for its striking flowers and its use in traditional medicine."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "medical",
     "srppp-parent-id": [12097]
   },
@@ -3522,180 +3522,180 @@
   {
     "srppp-id": 10006,
     "label": {
-        "de": ["Spinat"],
-        "fr": ["Épinard"],
-        "it": ["Spinaci"],
-        "en": [null],
-        "la": [null]
+      "de": ["Spinat", "Blattspinat"],
+      "fr": ["Épinard", "Épinard commun"],
+      "it": ["Spinaci", "Spinacio"],
+      "en": ["Spinach"],
+      "la": ["Spinacia oleracea"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Spinat ist ein grünes Blattgemüse, das reich an Vitaminen und Mineralstoffen ist und vielseitig in der Küche verwendet wird.",
+      "fr": "L'épinard est un légume à feuilles vertes, riche en vitamines et minéraux, utilisé de diverses manières en cuisine.",
+      "it": "Gli spinaci sono una verdura a foglia verde, ricca di vitamine e minerali, utilizzata in vari modi in cucina.",
+      "en": "Spinach is a green leafy vegetable rich in vitamins and minerals, widely used in various culinary dishes."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "vegetable",
     "srppp-parent-id": [10068]
   },
   {
     "srppp-id": 10001,
     "label": {
-        "de": ["Schalotten"],
-        "fr": ["Échalote"],
-        "it": ["Scalogni"],
-        "en": [null],
-        "la": [null]
+      "de": ["Schalotten", "Eschalotte"],
+      "fr": ["Échalote"],
+      "it": ["Scalogni", "Scalogno"],
+      "en": ["Shallot", "Eschalot", "Multiplier onion"],
+      "la": ["Allium cepa var. aggregatum"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Schalotten sind eine milde Zwiebelart, die in der Küche vielseitig verwendet wird.",
+      "fr": "L'échalote est un type d'oignon doux, largement utilisé en cuisine.",
+      "it": "Lo scalogno è un tipo di cipolla dal sapore delicato, ampiamente utilizzato in cucina.",
+      "en": "Shallots are a mild type of onion widely used in cooking."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "vegetable",
     "srppp-parent-id": [9963]
   },
   {
     "srppp-id": 10000,
     "label": {
-        "de": ["Mais"],
-        "fr": ["Maïs"],
-        "it": ["Mais"],
-        "en": [null],
-        "la": [null]
+      "de": ["Mais"],
+      "fr": ["Maïs"],
+      "it": ["Mais"],
+      "en": ["Maize", "Corn", "Indian corn"],
+      "la": ["Zea mays"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Mais ist ein wichtiges Getreide, das weltweit als Nahrungsmittel und Futtermittel angebaut wird.",
+      "fr": "Le maïs est une céréale importante cultivée dans le monde entier pour l'alimentation humaine et animale.",
+      "it": "Il mais è un cereale importante coltivato in tutto il mondo per l'alimentazione umana e animale.",
+      "en": "Maize is a vital cereal grain cultivated globally for both human consumption and animal feed."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "arable",
     "srppp-parent-id": [10197]
   },
   {
     "srppp-id": 10003,
     "label": {
-        "de": ["Schwarze Johannisbeere"],
-        "fr": ["Cassis"],
-        "it": ["Ribes nero"],
-        "en": [null],
-        "la": [null]
+      "de": ["Schwarze Johannisbeere", "Schwarze Ribisel", "Aalbeere", "Cassis"],
+      "fr": ["Cassis", "Groseille noire"],
+      "it": ["Ribes nero", "Cassis"],
+      "en": ["Blackcurrant"],
+      "la": ["Ribes nigrum"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Schwarze Johannisbeere ist ein Strauch, dessen vitaminreiche Beeren vielseitig in der Küche verwendet werden.",
+      "fr": "Le cassis est un arbuste dont les baies riches en vitamines sont largement utilisées en cuisine.",
+      "it": "Il ribes nero è un arbusto i cui frutti ricchi di vitamine sono ampiamente utilizzati in cucina.",
+      "en": "The blackcurrant is a shrub whose vitamin-rich berries are widely used in cooking."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "berry",
     "srppp-parent-id": [10127]
   },
   {
     "srppp-id": 10002,
     "label": {
-        "de": ["Schnittlauch"],
-        "fr": ["Ciboulette"],
-        "it": ["Erba cipollina"],
-        "en": [null],
-        "la": [null]
+      "de": ["Schnittlauch", "Binsenlauch"],
+      "fr": ["Ciboulette", "Civette"],
+      "it": ["Erba cipollina", "Cipollina"],
+      "en": ["Chives"],
+      "la": ["Allium schoenoprasum"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Schnittlauch ist ein mehrjähriges Kraut mit mildem Zwiebelgeschmack, das häufig zum Würzen von Speisen verwendet wird.",
+      "fr": "La ciboulette est une plante vivace au goût d'oignon doux, couramment utilisée pour assaisonner les plats.",
+      "it": "L'erba cipollina è una pianta perenne dal sapore delicato di cipolla, comunemente usata per insaporire i piatti.",
+      "en": "Chives are a perennial herb with a mild onion flavor, commonly used to season dishes."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "vegetable",
     "srppp-parent-id": [10186]
   },
   {
     "srppp-id": 9996,
     "label": {
-        "de": ["Rande"],
-        "fr": ["Betterave à salade"],
-        "it": ["Barbabietola"],
-        "en": [null],
-        "la": [null]
+      "de": ["Rande", "Rote Bete", "Rote Rübe"],
+      "fr": ["Betterave à salade", "Betterave rouge"],
+      "it": ["Barbabietola", "Barbabietola rossa"],
+      "en": ["Beetroot", "Red beet"],
+      "la": ["Beta vulgaris subsp. vulgaris var. conditiva"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Rande ist ein Wurzelgemüse mit tiefroter Farbe und süsslichem Geschmack, reich an Nährstoffen und vielseitig in der Küche einsetzbar.",
+      "fr": "La betterave à salade est un légume-racine de couleur rouge foncé et au goût sucré, riche en nutriments et polyvalent en cuisine.",
+      "it": "La barbabietola è una radice commestibile di colore rosso intenso e sapore dolce, ricca di nutrienti e versatile in cucina.",
+      "en": "Beetroot is a deep red root vegetable with a sweet flavor, rich in nutrients, and versatile in culinary uses."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "vegetable",
     "srppp-parent-id": [10068]
   },
   {
     "srppp-id": 9997,
     "label": {
-        "de": ["Rettich"],
-        "fr": ["Radis long"],
-        "it": ["Ramolaccio"],
-        "en": [null],
-        "la": [null]
+      "de": ["Rettich", "Radieschen"],
+      "fr": ["Radis long", "Radis"],
+      "it": ["Ramolaccio", "Ravanello"],
+      "en": ["Radish"],
+      "la": ["Raphanus sativus"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Rettich ist ein knackiges Wurzelgemüse mit pfeffrigem Geschmack, das häufig roh in Salaten verzehrt wird.",
+      "fr": "Le radis est un légume-racine croquant au goût poivré, souvent consommé cru en salade.",
+      "it": "Il ramolaccio è una radice commestibile dal sapore piccante, comunemente consumata cruda nelle insalate.",
+      "en": "Radish is a crisp root vegetable with a peppery flavor, commonly eaten raw in salads."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "vegetable",
     "srppp-parent-id": [9962]
   },
   {
     "srppp-id": 9998,
     "label": {
-        "de": ["Rhabarber"],
-        "fr": ["Rhubarbe"],
-        "it": ["Rabarbaro"],
-        "en": [null],
-        "la": [null]
+      "de": ["Rhabarber"],
+      "fr": ["Rhubarbe"],
+      "it": ["Rabarbaro"],
+      "en": ["Rhubarb"],
+      "la": ["Rheum rhabarbarum"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Rhabarber ist eine mehrjährige Pflanze, deren säuerliche Blattstiele in der Küche vielseitig verwendet werden, während die Blätter aufgrund ihres Gehalts an Oxalsäure ungeniessbar sind.",
+      "fr": "La rhubarbe est une plante vivace dont les pétioles acidulés sont largement utilisés en cuisine, tandis que les feuilles sont impropres à la consommation en raison de leur teneur en acide oxalique.",
+      "it": "Il rabarbaro è una pianta perenne i cui piccioli dal sapore acidulo sono ampiamente utilizzati in cucina, mentre le foglie non sono commestibili a causa del loro contenuto di acido ossalico.",
+      "en": "Rhubarb is a perennial plant whose tart-tasting stalks are widely used in cooking, while the leaves are inedible due to their oxalic acid content."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "vegetable",
     "srppp-parent-id": [9960]
   },
   {
     "srppp-id": 9999,
     "label": {
-        "de": ["Rote Johannisbeere"],
-        "fr": ["Groseilles à grappes"],
-        "it": ["Ribes rosso"],
-        "en": [null],
-        "la": [null]
+      "de": ["Rote Johannisbeere", "Rote Ribisel"],
+      "fr": ["Groseille à grappes", "Groseille rouge"],
+      "it": ["Ribes rosso"],
+      "en": ["Redcurrant", "Red currant"],
+      "la": ["Ribes rubrum"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Rote Johannisbeere ist ein laubabwerfender Strauch, der für seine leuchtend roten Beeren bekannt ist, die reich an Vitamin C sind und häufig in der Küche verwendet werden.",
+      "fr": "La groseille à grappes est un arbuste à feuilles caduques, réputé pour ses baies rouges riches en vitamine C, couramment utilisées en cuisine.",
+      "it": "Il ribes rosso è un arbusto deciduo noto per le sue bacche rosse ricche di vitamina C, comunemente utilizzate in cucina.",
+      "en": "The red currant is a deciduous shrub known for its bright red berries, rich in vitamin C, commonly used in culinary dishes."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "berry",
     "srppp-parent-id": [10127]
   },
@@ -4162,21 +4162,21 @@
   {
     "srppp-id": 10089,
     "label": {
-        "de": ["Zuckerrübe"],
-        "fr": ["Betterave à sucre"],
-        "it": ["Barbabietola da zucchero"],
-        "en": [null],
-        "la": [null]
+      "de": ["Zuckerrübe", "Weisse Rübe"],
+      "fr": ["Betterave à sucre", "Betterave sucrière"],
+      "it": ["Barbabietola da zucchero", "Bietola da zucchero"],
+      "en": ["Sugar beet"],
+      "la": ["Beta vulgaris subsp. vulgaris var. altissima"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Zuckerrübe ist eine zweijährige Pflanze, die hauptsächlich zur Zuckergewinnung in gemässigten Klimazonen angebaut wird.",
+      "fr": "La betterave à sucre est une plante bisannuelle, principalement cultivée pour la production de sucre dans les régions tempérées.",
+      "it": "La barbabietola da zucchero è una pianta biennale coltivata principalmente per la produzione di zucchero nelle regioni temperate.",
+      "en": "The sugar beet is a biennial plant primarily cultivated for sugar production in temperate regions."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
-    "type": null,
+    "polyphyletic": false,
+    "type": "arable",
     "srppp-parent-id": [10046]
   },
   {
@@ -4936,7 +4936,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "arable",
     "srppp-parent-id": [null]
   },
   {
@@ -4956,7 +4956,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [null]
   },
   {
@@ -4996,7 +4996,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "fruit",
     "srppp-parent-id": [null]
   },
   {
@@ -5462,21 +5462,21 @@
   {
     "srppp-id": 10116,
     "label": {
-        "de": ["Ackerbohne"],
-        "fr": ["Féverole"],
-        "it": ["Fava"],
-        "en": ["Fava bean", "Faba bean", "Field bean", "Bell bean", "Tic bean", "Horse bean", "Vicia faba"],
-        "la": ["Vicia faba"]
+      "de": ["Ackerbohne", "Puffbohne", "Saubohne", "Dicke Bohne"],
+      "fr": ["Féverole", "Grosse fève", "Fève des marais"],
+      "it": ["Fava", "Fava comune", "Fava da orto"],
+      "en": ["Fava bean", "Broad bean", "Field bean", "Bell bean", "Horse bean"],
+      "la": ["Vicia faba"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Ackerbohne ist eine alte Kulturpflanze, die für ihre eiweissreichen Samen geschätzt wird und in der Tierfütterung sowie in der menschlichen Ernährung Verwendung findet.",
+      "fr": "La féverole est une plante cultivée ancienne, appréciée pour ses graines riches en protéines, utilisée dans l'alimentation animale et humaine.",
+      "it": "La fava è una pianta coltivata da tempi antichi, apprezzata per i suoi semi ricchi di proteine, utilizzata nell'alimentazione animale e umana.",
+      "en": "The fava bean is an ancient cultivated plant valued for its protein-rich seeds, used in both animal feed and human diets."
     },
-    "wikidata-iri": ["Q131342"],
+    "wikidata-iri": [null],
     "polyphyletic": false,
-    "type": null,
+    "type": "arable",
     "srppp-parent-id": [10197]
   },
   {
@@ -5642,21 +5642,21 @@
   {
     "srppp-id": 10126,
     "label": {
-        "de": ["Zwetschge"],
-        "fr": ["Prunier (pruneau)"],
-        "it": ["Prugno"],
-        "en": ["Prune plum"],
-        "la": ["Prunus domestica subsp. domestica"]
+      "de": ["Zwetschge", "Zwetsche", "Zwetschke"],
+      "fr": ["Prunier (pruneau)", "Prunier d'Ente", "Quetsche"],
+      "it": ["Prugno", "Susina", "Prugna secca"],
+      "en": ["Prune plum", "Prune", "European plum"],
+      "la": ["Prunus domestica subsp. domestica"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Zwetschge ist eine Unterart der Pflaume, geschätzt für ihre ovalen, leicht zu entkernenden Früchte, die in Mitteleuropa vielseitig verwendet werden.",
+      "fr": "La quetsche est une sous-espèce du prunier, appréciée pour ses fruits ovales à noyau libre, largement utilisés en Europe centrale.",
+      "it": "La susina è una sottospecie del prugno, apprezzata per i suoi frutti ovali con nocciolo libero, ampiamente utilizzati nell'Europa centrale.",
+      "en": "The prune plum is a subspecies of the plum, valued for its oval, freestone fruits, widely used in Central Europe."
     },
-    "wikidata-iri": ["Q13223298"],
-    "polyphyletic": null,
-    "type": null,
+    "wikidata-iri": [null],
+    "polyphyletic": false,
+    "type": "fruit",
     "srppp-parent-id": [10011]
   },
   {
@@ -6056,7 +6056,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "berry",
     "srppp-parent-id": [null]
   },
   {
@@ -6096,7 +6096,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [null]
   },
   {
@@ -6116,7 +6116,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "arable",
     "srppp-parent-id": [null]
   },
   {
@@ -6236,7 +6236,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": "noncrop",
+    "type": "forestry",
     "srppp-parent-id": [null]
   },
   {
