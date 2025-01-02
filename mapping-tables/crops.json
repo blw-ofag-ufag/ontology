@@ -3542,40 +3542,40 @@
   {
     "srppp-id": 10001,
     "label": {
-        "de": ["Schalotten"],
-        "fr": ["Échalote"],
-        "it": ["Scalogni"],
-        "en": [null],
-        "la": [null]
+      "de": ["Schalotten", "Eschalotte"],
+      "fr": ["Échalote"],
+      "it": ["Scalogni", "Scalogno"],
+      "en": ["Shallot", "Eschalot", "Multiplier onion"],
+      "la": ["Allium cepa var. aggregatum"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Schalotten sind eine milde Zwiebelart, die in der Küche vielseitig verwendet wird.",
+      "fr": "L'échalote est un type d'oignon doux, largement utilisé en cuisine.",
+      "it": "Lo scalogno è un tipo di cipolla dal sapore delicato, ampiamente utilizzato in cucina.",
+      "en": "Shallots are a mild type of onion widely used in cooking."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "vegetable",
     "srppp-parent-id": [9963]
   },
   {
     "srppp-id": 10000,
     "label": {
-        "de": ["Mais"],
-        "fr": ["Maïs"],
-        "it": ["Mais"],
-        "en": [null],
-        "la": [null]
+      "de": ["Mais"],
+      "fr": ["Maïs"],
+      "it": ["Mais"],
+      "en": ["Maize", "Corn", "Indian corn"],
+      "la": ["Zea mays"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Mais ist ein wichtiges Getreide, das weltweit als Nahrungsmittel und Futtermittel angebaut wird.",
+      "fr": "Le maïs est une céréale importante cultivée dans le monde entier pour l'alimentation humaine et animale.",
+      "it": "Il mais è un cereale importante coltivato in tutto il mondo per l'alimentazione umana e animale.",
+      "en": "Maize is a vital cereal grain cultivated globally for both human consumption and animal feed."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "arable",
     "srppp-parent-id": [10197]
   },
@@ -3622,80 +3622,80 @@
   {
     "srppp-id": 9996,
     "label": {
-        "de": ["Rande"],
-        "fr": ["Betterave à salade"],
-        "it": ["Barbabietola"],
-        "en": [null],
-        "la": [null]
+      "de": ["Rande", "Rote Bete", "Rote Rübe"],
+      "fr": ["Betterave à salade", "Betterave rouge"],
+      "it": ["Barbabietola", "Barbabietola rossa"],
+      "en": ["Beetroot", "Red beet"],
+      "la": ["Beta vulgaris subsp. vulgaris var. conditiva"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Rande ist ein Wurzelgemüse mit tiefroter Farbe und süßlichem Geschmack, reich an Nährstoffen und vielseitig in der Küche einsetzbar.",
+      "fr": "La betterave à salade est un légume-racine de couleur rouge foncé et au goût sucré, riche en nutriments et polyvalent en cuisine.",
+      "it": "La barbabietola è una radice commestibile di colore rosso intenso e sapore dolce, ricca di nutrienti e versatile in cucina.",
+      "en": "Beetroot is a deep red root vegetable with a sweet flavor, rich in nutrients, and versatile in culinary uses."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "vegetable",
     "srppp-parent-id": [10068]
   },
   {
     "srppp-id": 9997,
     "label": {
-        "de": ["Rettich"],
-        "fr": ["Radis long"],
-        "it": ["Ramolaccio"],
-        "en": [null],
-        "la": [null]
+      "de": ["Rettich", "Radieschen"],
+      "fr": ["Radis long", "Radis"],
+      "it": ["Ramolaccio", "Ravanello"],
+      "en": ["Radish"],
+      "la": ["Raphanus sativus"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Rettich ist ein knackiges Wurzelgemüse mit pfeffrigem Geschmack, das häufig roh in Salaten verzehrt wird.",
+      "fr": "Le radis est un légume-racine croquant au goût poivré, souvent consommé cru en salade.",
+      "it": "Il ramolaccio è una radice commestibile dal sapore piccante, comunemente consumata cruda nelle insalate.",
+      "en": "Radish is a crisp root vegetable with a peppery flavor, commonly eaten raw in salads."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "vegetable",
     "srppp-parent-id": [9962]
   },
   {
     "srppp-id": 9998,
     "label": {
-        "de": ["Rhabarber"],
-        "fr": ["Rhubarbe"],
-        "it": ["Rabarbaro"],
-        "en": [null],
-        "la": [null]
+      "de": ["Rhabarber"],
+      "fr": ["Rhubarbe"],
+      "it": ["Rabarbaro"],
+      "en": ["Rhubarb"],
+      "la": ["Rheum rhabarbarum"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Rhabarber ist eine mehrjährige Pflanze, deren säuerliche Blattstiele in der Küche vielseitig verwendet werden, während die Blätter aufgrund ihres Gehalts an Oxalsäure ungenießbar sind.",
+      "fr": "La rhubarbe est une plante vivace dont les pétioles acidulés sont largement utilisés en cuisine, tandis que les feuilles sont impropres à la consommation en raison de leur teneur en acide oxalique.",
+      "it": "Il rabarbaro è una pianta perenne i cui piccioli dal sapore acidulo sono ampiamente utilizzati in cucina, mentre le foglie non sono commestibili a causa del loro contenuto di acido ossalico.",
+      "en": "Rhubarb is a perennial plant whose tart-tasting stalks are widely used in cooking, while the leaves are inedible due to their oxalic acid content."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "vegetable",
     "srppp-parent-id": [9960]
   },
   {
     "srppp-id": 9999,
     "label": {
-        "de": ["Rote Johannisbeere"],
-        "fr": ["Groseilles à grappes"],
-        "it": ["Ribes rosso"],
-        "en": [null],
-        "la": [null]
+      "de": ["Rote Johannisbeere", "Rote Ribisel"],
+      "fr": ["Groseille à grappes", "Groseille rouge"],
+      "it": ["Ribes rosso"],
+      "en": ["Redcurrant", "Red currant"],
+      "la": ["Ribes rubrum"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Rote Johannisbeere ist ein laubabwerfender Strauch, der für seine leuchtend roten Beeren bekannt ist, die reich an Vitamin C sind und häufig in der Küche verwendet werden.",
+      "fr": "La groseille à grappes est un arbuste à feuilles caduques, réputé pour ses baies rouges riches en vitamine C, couramment utilisées en cuisine.",
+      "it": "Il ribes rosso è un arbusto deciduo noto per le sue bacche rosse ricche di vitamina C, comunemente utilizzate in cucina.",
+      "en": "The red currant is a deciduous shrub known for its bright red berries, rich in vitamin C, commonly used in culinary dishes."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "berry",
     "srppp-parent-id": [10127]
   },
@@ -5462,19 +5462,19 @@
   {
     "srppp-id": 10116,
     "label": {
-        "de": ["Ackerbohne"],
-        "fr": ["Féverole"],
-        "it": ["Fava"],
-        "en": ["Fava bean", "Faba bean", "Field bean", "Bell bean", "Tic bean", "Horse bean", "Vicia faba"],
-        "la": ["Vicia faba"]
+      "de": ["Ackerbohne", "Puffbohne", "Saubohne", "Dicke Bohne"],
+      "fr": ["Féverole", "Grosse fève", "Fève des marais"],
+      "it": ["Fava", "Fava comune", "Fava da orto"],
+      "en": ["Fava bean", "Broad bean", "Field bean", "Bell bean", "Horse bean"],
+      "la": ["Vicia faba"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Ackerbohne ist eine alte Kulturpflanze, die für ihre eiweißreichen Samen geschätzt wird und in der Tierfütterung sowie in der menschlichen Ernährung Verwendung findet.",
+      "fr": "La féverole est une plante cultivée ancienne, appréciée pour ses graines riches en protéines, utilisée dans l'alimentation animale et humaine.",
+      "it": "La fava è una pianta coltivata da tempi antichi, apprezzata per i suoi semi ricchi di proteine, utilizzata nell'alimentazione animale e umana.",
+      "en": "The fava bean is an ancient cultivated plant valued for its protein-rich seeds, used in both animal feed and human diets."
     },
-    "wikidata-iri": ["Q131342"],
+    "wikidata-iri": [null],
     "polyphyletic": false,
     "type": "arable",
     "srppp-parent-id": [10197]
