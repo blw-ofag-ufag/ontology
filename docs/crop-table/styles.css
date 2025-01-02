@@ -71,8 +71,8 @@ tbody tr:hover {
 }
 
 /* Column Widths */
-th:nth-child(1) { width: 10%; }
-th:nth-child(2) { width: 25%; }
+th:nth-child(1) { width:  7%; }
+th:nth-child(2) { width: 28%; }
 th:nth-child(3) { width: 55%; }
 th:nth-child(4),
 td:nth-child(4) {
@@ -159,4 +159,13 @@ a:hover {
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
+}
+
+.preferred-name {
+    font-weight: 500;
+    opacity: 1;
+}
+
+.alt-name {
+    opacity: 0.4;
 }

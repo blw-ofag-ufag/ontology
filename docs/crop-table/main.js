@@ -53,25 +53,46 @@ function fetchData() {
     fetch(dataUrl)
         .then(response => response.json())
         .then(data => {
-            tableBody.innerHTML = '';
+            tableBody.innerHTML = '';  // Clear table
 
-            // Populate table
             data.forEach(item => {
                 const row = document.createElement('tr');
 
-                row.innerHTML = `
-                    <td>${item['srppp-id'] || ''}</td>
-                    <td>${item.label?.[lang]?.[0] || ''}</td>
-                    <td>${item.comment?.[lang] || ''}</td>
-                    <td>${getTypeEmoji(item.type)}</td>
-                `;
+                const idCell = document.createElement('td');
+                idCell.textContent = item['srppp-id'] || '';
+                row.appendChild(idCell);
+
+                const nameCell = document.createElement('td');
+                const names = item.label?.[lang] || [''];  // Get all names or fallback
+                nameCell.innerHTML = formatNames(names);  // Format and insert names
+                row.appendChild(nameCell);
+
+                const commentCell = document.createElement('td');
+                commentCell.textContent = item.comment?.[lang] || '';
+                row.appendChild(commentCell);
+
+                const typeCell = document.createElement('td');
+                typeCell.textContent = getTypeEmoji(item.type);  // Crop type emoji
+                row.appendChild(typeCell);
 
                 tableBody.appendChild(row);
             });
 
-            applyURLParams();  // Apply search/sort after populating
+            applyURLParams();
         })
         .catch(error => console.error('Fehler beim Laden der Daten:', error));
+}
+
+// Format names for display (highlight first, fade rest)
+function formatNames(names) {
+    if (names.length === 1) return names[0];  // Single name, no formatting
+
+    const preferred = `<span class="preferred-name">${names[0]}</span>`;
+    const alternates = names.slice(1)
+        .map(name => `<span class="alt-name">${name}</span>`)
+        .join('<span class="alt-name">, </span>');  // Comma wrapped with alt-name class
+
+    return `${preferred}${alternates ? '<span class="alt-name">, </span>' + alternates : ''}`;
 }
 
 // Map Crop Types to Emojis
@@ -132,14 +153,27 @@ function sortTable(columnIndex, preserveDirection = false) {
 // Filter/Search Table and Update URL
 function filterTable(searchTerm) {
     const rows = document.querySelectorAll('#cropsTable tbody tr');
+
+    // Split search term by "OR", "|", or "," (you can customize this)
+    const terms = searchTerm.split(/\s*OR\s*|\s*\|\s*|,\s*/).filter(Boolean);
+
+    // Build regex for case-insensitive matching
+    const regex = new RegExp(terms.join('|'), 'i');
+
+    // Apply filtering based on regex
     rows.forEach(row => {
-        row.style.display = row.textContent.toUpperCase().includes(searchTerm.toUpperCase()) ? '' : 'none';
+        row.style.display = regex.test(row.textContent) ? '' : 'none';
     });
 
-    // Update URL with search parameter
-    urlParams.set('search', searchTerm);
+    // Update or remove the search parameter from the URL
+    if (searchTerm.trim() === '') {
+        urlParams.delete('search');
+    } else {
+        urlParams.set('search', searchTerm);
+    }
     window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
 }
+
 
 // INITIALIZE ON PAGE LOAD
 document.addEventListener('DOMContentLoaded', function () {
