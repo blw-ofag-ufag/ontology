@@ -3462,40 +3462,40 @@
   {
     "srppp-id": 10005,
     "label": {
-        "de": ["Spargel"],
-        "fr": ["Asperge"],
-        "it": ["Asparagi"],
-        "en": [null],
-        "la": [null]
+      "de": ["Spargel", "Gemüsespargel", "Gemeiner Spargel"],
+      "fr": ["Asperge", "Asperge commune"],
+      "it": ["Asparagi", "Asparago comune"],
+      "en": ["Asparagus", "Garden asparagus", "Common asparagus"],
+      "la": ["Asparagus officinalis"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Spargel ist eine mehrjährige Pflanze, deren junge Triebe als beliebtes Gemüse verzehrt werden.",
+      "fr": "L'asperge est une plante vivace dont les jeunes pousses sont consommées comme un légume apprécié.",
+      "it": "L'asparago è una pianta perenne i cui giovani germogli sono consumati come un ortaggio apprezzato.",
+      "en": "Asparagus is a perennial plant whose young shoots are consumed as a popular vegetable."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
-    "type": null,
+    "polyphyletic": false,
+    "type": "vegetable",
     "srppp-parent-id": [10338]
   },
   {
     "srppp-id": 10004,
     "label": {
-        "de": ["Iris"],
-        "fr": ["Iris"],
-        "it": ["Iris"],
-        "en": [null],
-        "la": [null]
+      "de": ["Iris", "Schwertlilie"],
+      "fr": ["Iris", "Iris des jardins"],
+      "it": ["Iris", "Giaggiolo"],
+      "en": ["Iris"],
+      "la": ["Iris"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Iris, auch Schwertlilie genannt, ist eine mehrjährige Pflanze, die für ihre auffälligen Blüten geschätzt wird und in der traditionellen Medizin Verwendung findet.",
+      "fr": "L'iris, également appelé iris des jardins, est une plante vivace prisée pour ses fleurs éclatantes et utilisée en médecine traditionnelle.",
+      "it": "Il giaggiolo, noto anche come iris, è una pianta perenne apprezzata per i suoi fiori vivaci e utilizzata nella medicina tradizionale.",
+      "en": "The iris is a perennial plant valued for its striking flowers and its use in traditional medicine."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "medical",
     "srppp-parent-id": [12097]
   },
@@ -3522,20 +3522,20 @@
   {
     "srppp-id": 10006,
     "label": {
-        "de": ["Spinat"],
-        "fr": ["Épinard"],
-        "it": ["Spinaci"],
-        "en": [null],
-        "la": [null]
+      "de": ["Spinat", "Blattspinat"],
+      "fr": ["Épinard", "Épinard commun"],
+      "it": ["Spinaci", "Spinacio"],
+      "en": ["Spinach"],
+      "la": ["Spinacia oleracea"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Spinat ist ein grünes Blattgemüse, das reich an Vitaminen und Mineralstoffen ist und vielseitig in der Küche verwendet wird.",
+      "fr": "L'épinard est un légume à feuilles vertes, riche en vitamines et minéraux, utilisé de diverses manières en cuisine.",
+      "it": "Gli spinaci sono una verdura a foglia verde, ricca di vitamine e minerali, utilizzata in vari modi in cucina.",
+      "en": "Spinach is a green leafy vegetable rich in vitamins and minerals, widely used in various culinary dishes."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "vegetable",
     "srppp-parent-id": [10068]
   },
@@ -3582,40 +3582,40 @@
   {
     "srppp-id": 10003,
     "label": {
-        "de": ["Schwarze Johannisbeere"],
-        "fr": ["Cassis"],
-        "it": ["Ribes nero"],
-        "en": [null],
-        "la": [null]
+      "de": ["Schwarze Johannisbeere", "Schwarze Ribisel", "Aalbeere", "Cassis"],
+      "fr": ["Cassis", "Groseille noire"],
+      "it": ["Ribes nero", "Cassis"],
+      "en": ["Blackcurrant"],
+      "la": ["Ribes nigrum"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Schwarze Johannisbeere ist ein Strauch, dessen vitaminreiche Beeren vielseitig in der Küche verwendet werden.",
+      "fr": "Le cassis est un arbuste dont les baies riches en vitamines sont largement utilisées en cuisine.",
+      "it": "Il ribes nero è un arbusto i cui frutti ricchi di vitamine sono ampiamente utilizzati in cucina.",
+      "en": "The blackcurrant is a shrub whose vitamin-rich berries are widely used in cooking."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "berry",
     "srppp-parent-id": [10127]
   },
   {
     "srppp-id": 10002,
     "label": {
-        "de": ["Schnittlauch"],
-        "fr": ["Ciboulette"],
-        "it": ["Erba cipollina"],
-        "en": [null],
-        "la": [null]
+      "de": ["Schnittlauch", "Binsenlauch"],
+      "fr": ["Ciboulette", "Civette"],
+      "it": ["Erba cipollina", "Cipollina"],
+      "en": ["Chives"],
+      "la": ["Allium schoenoprasum"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Schnittlauch ist ein mehrjähriges Kraut mit mildem Zwiebelgeschmack, das häufig zum Würzen von Speisen verwendet wird.",
+      "fr": "La ciboulette est une plante vivace au goût d'oignon doux, couramment utilisée pour assaisonner les plats.",
+      "it": "L'erba cipollina è una pianta perenne dal sapore delicato di cipolla, comunemente usata per insaporire i piatti.",
+      "en": "Chives are a perennial herb with a mild onion flavor, commonly used to season dishes."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "vegetable",
     "srppp-parent-id": [10186]
   },
@@ -4162,20 +4162,20 @@
   {
     "srppp-id": 10089,
     "label": {
-        "de": ["Zuckerrübe"],
-        "fr": ["Betterave à sucre"],
-        "it": ["Barbabietola da zucchero"],
-        "en": [null],
-        "la": [null]
+      "de": ["Zuckerrübe", "Weisse Rübe"],
+      "fr": ["Betterave à sucre", "Betterave sucrière"],
+      "it": ["Barbabietola da zucchero", "Bietola da zucchero"],
+      "en": ["Sugar beet"],
+      "la": ["Beta vulgaris subsp. vulgaris var. altissima"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Zuckerrübe ist eine zweijährige Pflanze, die hauptsächlich zur Zuckergewinnung in gemässigten Klimazonen angebaut wird.",
+      "fr": "La betterave à sucre est une plante bisannuelle, principalement cultivée pour la production de sucre dans les régions tempérées.",
+      "it": "La barbabietola da zucchero è una pianta biennale coltivata principalmente per la produzione di zucchero nelle regioni temperate.",
+      "en": "The sugar beet is a biennial plant primarily cultivated for sugar production in temperate regions."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "arable",
     "srppp-parent-id": [10046]
   },
@@ -5642,20 +5642,20 @@
   {
     "srppp-id": 10126,
     "label": {
-        "de": ["Zwetschge"],
-        "fr": ["Prunier (pruneau)"],
-        "it": ["Prugno"],
-        "en": ["Prune plum"],
-        "la": ["Prunus domestica subsp. domestica"]
+      "de": ["Zwetschge", "Zwetsche", "Zwetschke"],
+      "fr": ["Prunier (pruneau)", "Prunier d'Ente", "Quetsche"],
+      "it": ["Prugno", "Susina", "Prugna secca"],
+      "en": ["Prune plum", "Prune", "European plum"],
+      "la": ["Prunus domestica subsp. domestica"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Zwetschge ist eine Unterart der Pflaume, geschätzt für ihre ovalen, leicht zu entkernenden Früchte, die in Mitteleuropa vielseitig verwendet werden.",
+      "fr": "La quetsche est une sous-espèce du prunier, appréciée pour ses fruits ovales à noyau libre, largement utilisés en Europe centrale.",
+      "it": "La susina è una sottospecie del prugno, apprezzata per i suoi frutti ovali con nocciolo libero, ampiamente utilizzati nell'Europa centrale.",
+      "en": "The prune plum is a subspecies of the plum, valued for its oval, freestone fruits, widely used in Central Europe."
     },
-    "wikidata-iri": ["Q13223298"],
-    "polyphyletic": null,
+    "wikidata-iri": [null],
+    "polyphyletic": false,
     "type": "fruit",
     "srppp-parent-id": [10011]
   },
