@@ -62,62 +62,62 @@
   {
     "srppp-id": 12630,
     "label": {
-        "de": ["Spitzwegerich"],
-        "fr": ["Plantain lancéolé"],
-        "it": ["Piantaggine lanciuola"],
-        "en": ["Plantago lanceolata"],
-        "la": [null]
+      "de": ["Spitzwegerich", "Spiesskraut"],
+      "fr": ["Plantain lancéolé", "Plantain étroit"],
+      "it": ["Piantaggine lanciuola", "Piantaggine lanceolata"],
+      "en": ["Ribwort plantain", "Narrowleaf plantain", "English plantain"],
+      "la": ["Plantago lanceolata"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Der Spitzwegerich ist eine mehrjährige Pflanze, die häufig an Strassenrändern und in Wiesen zu finden ist und traditionell in der Kräutermedizin verwendet wird.",
+      "fr": "Le plantain lancéolé est une plante vivace courante le long des routes et dans les prairies, utilisée traditionnellement en phytothérapie.",
+      "it": "La piantaggine lanciuola è una pianta perenne comune lungo le strade e nei prati, tradizionalmente utilizzata nella fitoterapia.",
+      "en": "Ribwort plantain is a perennial plant commonly found along roadsides and in meadows, traditionally used in herbal medicine."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": "medical",
-    "srppp-parent-id": [null]
+    "srppp-parent-id": [10565]
   },
   {
     "srppp-id": 14799,
     "label": {
-        "de": ["Eberesche"],
-        "fr": ["Sorbier des oiseleurs"],
-        "it": ["Sorbo degli ucellatori"],
-        "en": [null],
-        "la": [null]
+      "de": ["Eberesche", "Vogelbeere", "Drosselbeere"],
+      "fr": ["Sorbier des oiseleurs", "Sorbier"],
+      "it": ["Sorbo degli uccellatori", "Sorbo"],
+      "en": ["Rowan", "Mountain ash"],
+      "la": ["Sorbus aucuparia"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Eberesche ist ein laubabwerfender Baum, bekannt für seine leuchtend roten Beeren, die eine wichtige Nahrungsquelle für Vögel darstellen.",
+      "fr": "Le sorbier des oiseleurs est un arbre à feuilles caduques, réputé pour ses baies rouges vives, constituant une source de nourriture essentielle pour les oiseaux.",
+      "it": "Il sorbo degli uccellatori è un albero deciduo, noto per le sue bacche rosse brillanti, che rappresentano una fonte di cibo importante per gli uccelli.",
+      "en": "The rowan is a deciduous tree known for its bright red berries, which are a crucial food source for birds."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": null,
-    "srppp-parent-id": [null]
+    "srppp-parent-id": [10566]
   },
   {
     "srppp-id": 12626,
     "label": {
-        "de": ["Majoran"],
-        "fr": ["Marjolaine"],
-        "it": ["Maggiorana "],
-        "en": ["Marjoram"],
-        "la": [null]
+      "de": ["Majoran", "Wilder Majoran"],
+      "fr": ["Marjolaine", "Marjolaine vivace"],
+      "it": ["Maggiorana", "Maggiorana comune"],
+      "en": ["Marjoram", "Sweet marjoram", "Knotted marjoram"],
+      "la": ["Origanum majorana"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Majoran ist ein mehrjähriges Kraut aus der Mittelmeerregion, bekannt für seinen süßen, pinienartigen und zitrusartigen Geschmack, der häufig in der mediterranen und nahöstlichen Küche verwendet wird.",
+      "fr": "La marjolaine est une herbe vivace originaire de la région méditerranéenne, connue pour sa saveur douce, de pin et d'agrumes, souvent utilisée dans les cuisines méditerranéenne et moyen-orientale.",
+      "it": "La maggiorana è un'erba perenne originaria della regione mediterranea, nota per il suo sapore dolce, di pino e agrumi, spesso utilizzata nelle cucine mediterranea e mediorientale.",
+      "en": "Marjoram is a perennial herb native to the Mediterranean region, known for its sweet, pine, and citrus flavor, commonly used in Mediterranean and Middle Eastern cuisines."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
+    "polyphyletic": false,
     "type": null,
-    "srppp-parent-id": [null]
+    "srppp-parent-id": [10564]
   },
   {
     "srppp-id": 12627,
