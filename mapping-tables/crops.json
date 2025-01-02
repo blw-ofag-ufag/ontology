@@ -4176,7 +4176,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "arable",
     "srppp-parent-id": [10046]
   },
   {
@@ -4936,7 +4936,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "arable",
     "srppp-parent-id": [null]
   },
   {
@@ -4956,7 +4956,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [null]
   },
   {
@@ -4996,7 +4996,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "fruit",
     "srppp-parent-id": [null]
   },
   {
@@ -5476,7 +5476,7 @@
     },
     "wikidata-iri": ["Q131342"],
     "polyphyletic": false,
-    "type": null,
+    "type": "arable",
     "srppp-parent-id": [10197]
   },
   {
@@ -5656,7 +5656,7 @@
     },
     "wikidata-iri": ["Q13223298"],
     "polyphyletic": null,
-    "type": null,
+    "type": "fruit",
     "srppp-parent-id": [10011]
   },
   {
@@ -6056,7 +6056,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "berry",
     "srppp-parent-id": [null]
   },
   {
@@ -6096,7 +6096,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [null]
   },
   {
@@ -6116,7 +6116,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "arable",
     "srppp-parent-id": [null]
   },
   {
@@ -6236,7 +6236,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": "noncrop",
+    "type": "forestry",
     "srppp-parent-id": [null]
   },
   {
