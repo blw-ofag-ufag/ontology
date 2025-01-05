@@ -7,7 +7,7 @@ let lang = urlParams.get('lang') || 'de';
 
 // Fetch Translations on Page Load
 function fetchTranslations() {
-    fetch('https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/docs/crop-table/translations.json')
+    return fetch('https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/docs/crop-table/translations.json')
         .then(response => {
             if (!response.ok) throw new Error('Failed to load translations');
             return response.json();
@@ -25,8 +25,8 @@ function applyTranslations(lang) {
 
     document.title = t.title;
     document.getElementById('titleHeading').textContent = t.title;
-    document.getElementById('searchInput').placeholder = t.search;
     document.getElementById('subtitle').innerHTML = t.subtitle;
+    document.getElementById('searchInput').placeholder = t.search;
 
     const headers = t.columns;
     document.getElementById('col1').textContent = headers[0];
@@ -78,7 +78,6 @@ function formatNames(names) {
     const alternates = names.slice(1)
         .map(name => `<span class="alt-name">${name}</span>`)
         .join('<span class="alt-name">, </span>');
-
     return `${preferred}${alternates ? '<span class="alt-name">, </span>' + alternates : ''}`;
 }
 
@@ -103,31 +102,35 @@ function applyURLParams() {
     const searchTerm = urlParams.get('search');
     const sortColumn = urlParams.get('sort');
     const sortDirection = urlParams.get('dir');
-
     if (searchTerm) {
         document.getElementById('searchInput').value = searchTerm;
         filterTable(searchTerm);
     }
-
     if (sortColumn !== null && sortDirection !== null) {
         sortTable(parseInt(sortColumn), true);
     }
 }
 
-// INITIALIZE ON PAGE LOAD
+// Initialize on Page Load
 document.addEventListener('DOMContentLoaded', function () {
-    fetchTranslations();  // Fetch translations first
-    fetchData();          // Then fetch and populate the table
+    fetchTranslations().then(() => {
+        fetchData();
+    });
     document.getElementById('language').value = lang;
 });
 
-// Language Selection
+// Language Selection (Ensures Table Updates Properly)
 document.getElementById('language').addEventListener('change', function () {
     lang = this.value;
     urlParams.set('lang', lang);
+
+    // Update URL without reload
     window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
-    applyTranslations(lang);
-    fetchData();
+
+    // Fetch translations first, then reload the table
+    fetchTranslations().then(() => {
+        fetchData();
+    });
 });
 
 // Attach URL Update to Search Event
@@ -165,14 +168,13 @@ function sortTable(columnIndex, preserveDirection = false) {
     // Clear existing sort indicators
     headers.forEach(header => {
         const icon = header.querySelector('.sort-icon');
-        if (icon) icon.innerHTML = '';  // Remove existing icon
+        if (icon) icon.innerHTML = '';
     });
 
     // Add sort indicator to the sorted column
     const sortedHeader = headers[columnIndex].querySelector('.sort-icon');
     if (sortedHeader) {
         sortedHeader.innerHTML = currentDirection === 'asc' ? '▲' : '▼';
-        sortedHeader.style.color = 'green';  // Optional: Triangle in green
     }
 }
 

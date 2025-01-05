@@ -1,8 +1,8 @@
 {
     "de": {
         "title": "Kulturentabelle",
-        "subtitle": "<p>Hier findest du die Liste der landwirtschaftlichen Kulturen des Bundesamtes für Landwirtschaft BLW. Diese Liste ist <i>fast</i> komplett. Das tatsächliche File mit den Daten liegt auf <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.</p><p>Der Kulturentyp ist noch in der Entwicklung und besteht im Moment aus Ackerbau (🌾), Gemüsebau (🥬), Obst (🍎), Beerenbau (🫐), Weinbau (🍇), Medizinalpflanzen (🌿), Ornamentalkulturen (🌺), Forstwirtschaft (🌲), und Nicht-Kulturen (🏭).</p>",
-        "search": "Durchsuche nach Name, Kommentar etc.",
+        "subtitle": "<p>Hier findest du die Liste der landwirtschaftlichen Kulturen so, wie sie im Schweizer Pflanzenschutzmittelverzeichnis aufgeführt sind. Das tatsächliche File mit den Daten liegt auf <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.</p><p>Der Kulturentyp ist noch in der Entwicklung und besteht im Moment aus Ackerbau (🌾), Gemüsebau (🥬), Obst (🍎), Beerenbau (🫐), Weinbau (🍇), Medizinalpflanzen (🌿), Ornamentalkulturen (🌺), Forstwirtschaft (🌲), und Nicht-Kulturen (🏭).</p>",
+        "search": "Durchsuche nach ID, Name, Kommentar, oder Emoji.",
         "columns": ["ID", "Name", "Kommentare", "Typ"]
     },
     "fr": {

@@ -25,8 +25,8 @@ h1 {
 #searchInput {
     margin-bottom: 20px;
     padding: 12px 20px;
-    width: 100%;
-    max-width: 800px;
+    width: 90%;
+    max-width: 600px;
     font-size: 1rem;
     border: 2px solid #1db954;
     border-radius: 25px;
@@ -73,11 +73,11 @@ tbody tr:hover {
 /* Column Widths */
 th:nth-child(1) { width:  7%; }
 th:nth-child(2) { width: 28%; }
-th:nth-child(3) { width: 55%; }
+th:nth-child(3) { width: 50%; }
 th:nth-child(4),
 td:nth-child(4) {
     text-align: center;
-    width: 10%;
+    width: 15%;
 }
 
 .header {
@@ -172,6 +172,10 @@ a:hover {
 
 .sort-icon {
     margin-left: 5px;
-    font-size: 0.9em;
+    font-size: 0.7em;
     visibility: visible;  /* Default: Hide if not sorted */
+}
+
+th.sorted {
+    font-weight: bold;
 }
