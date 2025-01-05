@@ -84,7 +84,7 @@ function formatNames(names) {
 // Map Crop Types to Emojis
 function getTypeEmoji(type) {
     const typeMapping = {
-        arable: '🌾',
+        arable: '🌽',
         medical: '🌿',
         vegetable: '🥬',
         fruit: '🍎',
@@ -92,7 +92,8 @@ function getTypeEmoji(type) {
         viticulture: '🍇',
         ornamental: '🌺',
         forestry: '🌲',
-        noncrop: '🏭'
+        noncrop: '🏭',
+        varia: '🌱'
     };
     return typeMapping[type] || '';
 }
