@@ -26,19 +26,20 @@
     </div> 
 
     <input type="text" id="searchInput" placeholder="Suche nach Namen...">
+    
     <table id="cropsTable">
         <thead>
             <tr>
-                <th id="col1" onclick="sortTable(0)">SRPPP-ID</th>
-                <th id="col2" onclick="sortTable(1)">Name</th>
-                <th id="col3" onclick="sortTable(2)">Kommentare</th>
-                <th id="col4" onclick="sortTable(3)">Typ</th>
+                <th onclick="sortTable(0)">ID <span class="sort-icon"></span></th>
+                <th onclick="sortTable(1)">Name <span class="sort-icon"></span></th>
+                <th onclick="sortTable(2)">Comments <span class="sort-icon"></span></th>
+                <th onclick="sortTable(3)">Type <span class="sort-icon"></span></th>
             </tr>
         </thead>
         <tbody>
-            <!-- Table rows inserted dynamically -->
+            <!-- Rows populated by JS -->
         </tbody>
-    </table>
+    </table>    
 
     <script src="main.js"></script>
 </body>

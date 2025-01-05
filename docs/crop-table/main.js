@@ -1,40 +1,27 @@
-// Embedded translations (instead of fetching from a JSON file)
-const translations = {
-    "de": {
-        "title": "Kulturentabelle",
-        "subtitle": "<p>Hier findest du die Liste der landwirtschaftlichen Kulturen des Bundesamtes für Landwirtschaft BLW. Diese Liste ist <i>fast</i> komplett. Das tatsächliche File mit den Daten liegt auf <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.</p><p>Der Kulturentyp ist noch in der Entwicklung und besteht im Moment aus Ackerbau (🌾), Gemüsebau (🥬), Obst (🍎), Beerenbau (🫐), Weinbau (🍇), Medizinalpflanzen (🌿), Ornamentalkulturen (🌺), Forstwirtschaft (🌲), und Nicht-Kulturen (🏭).</p>",
-        "search": "Durchsuche nach Name, Kommentar etc.",
-        "columns": ["ID", "Name", "Kommentare", "Typ"]
-    },
-    "fr": {
-        "title": "Tableau des Cultures",
-        "subtitle": "<p>Voici la liste des cultures agricoles de l'Office fédéral de l'agriculture OFAG. Cette liste est <i>presque</i> complète. Le fichier réel contenant les données est disponible sur <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.</p><p>Le type de culture est encore en développement et comprend actuellement les grandes cultures (🌾), les légumes (🥬), les fruits (🍎), les baies (🫐), la viticulture (🍇), les plantes médicinales (🌿), les cultures ornementales (🌺), la sylviculture (🌲) et les non-cultures (🏭).</p>",
-        "search": "Rechercher par nom, commentaire, etc.",
-        "columns": ["ID", "Nom", "Commentaires", "Type"]
-    },
-    "it": {
-        "title": "Tabella delle Colture",
-        "subtitle": "<p>Qui trovi l'elenco delle colture agricole dell'Ufficio federale dell'agricoltura UFAG. Questo elenco è <i>quasi</i> completo. Il file reale con i dati è disponibile su <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.</p><p>Il tipo di coltura è ancora in fase di sviluppo e attualmente comprende seminativi (🌾), ortaggi (🥬), frutta (🍎), bacche (🫐), viticoltura (🍇), piante medicinali (🌿), colture ornamentali (🌺), selvicoltura (🌲) e non colture (🏭).</p>",
-        "search": "Cerca per nome, commento, ecc.",
-        "columns": ["ID", "Nome", "Commenti", "Tipo"]
-    },
-    "en": {
-        "title": "Crops Table",
-        "subtitle": "<p>Here you can find the list of agricultural crops from the Federal Office for Agriculture FOAG. This list is <i>almost</i> complete. The actual file with the data is available on <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.</p><p>The crop type is still under development and currently includes arable crops (🌾), vegetables (🥬), fruits (🍎), berries (🫐), viticulture (🍇), medicinal plants (🌿), ornamental crops (🌺), forestry (🌲), and non-crops (🏭).</p>",
-        "search": "Search by name, comment, etc.",
-        "columns": ["ID", "Name", "Comments", "Type"]
-    }
-};
-
 // Global Declarations
+let translations = {};  // Placeholder for fetched translations
 const tableBody = document.querySelector('#cropsTable tbody');
 const dataUrl = 'https://raw.githubusercontent.com/blw-ofag-ufag/ontology/main/mapping-tables/crops.json';
 const urlParams = new URLSearchParams(window.location.search);
 let lang = urlParams.get('lang') || 'de';
 
+// Fetch Translations on Page Load
+function fetchTranslations() {
+    fetch('https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/docs/crop-table/translations.json')
+        .then(response => {
+            if (!response.ok) throw new Error('Failed to load translations');
+            return response.json();
+        })
+        .then(data => {
+            translations = data;
+            applyTranslations(lang);  // Apply translations AFTER fetch
+        })
+        .catch(error => console.error('Error loading translations:', error));
+}
+
 // Apply Translations to Static Page Elements
 function applyTranslations(lang) {
-    const t = translations[lang] || translations['de'];
+    const t = translations[lang] || translations['de'];  // Fallback to German if not found
 
     document.title = t.title;
     document.getElementById('titleHeading').textContent = t.title;
@@ -63,7 +50,7 @@ function fetchData() {
                 row.appendChild(idCell);
 
                 const nameCell = document.createElement('td');
-                const names = item.label?.[lang] || [''];  // Get all names or fallback
+                const names = item.label?.[lang] || [''];
                 nameCell.innerHTML = formatNames(names);  // Format and insert names
                 row.appendChild(nameCell);
 
@@ -72,13 +59,13 @@ function fetchData() {
                 row.appendChild(commentCell);
 
                 const typeCell = document.createElement('td');
-                typeCell.textContent = getTypeEmoji(item.type);  // Crop type emoji
+                typeCell.textContent = getTypeEmoji(item.type);
                 row.appendChild(typeCell);
 
                 tableBody.appendChild(row);
             });
 
-            applyURLParams();
+            applyURLParams();  // Apply search and sort from URL
         })
         .catch(error => console.error('Fehler beim Laden der Daten:', error));
 }
@@ -90,7 +77,7 @@ function formatNames(names) {
     const preferred = `<span class="preferred-name">${names[0]}</span>`;
     const alternates = names.slice(1)
         .map(name => `<span class="alt-name">${name}</span>`)
-        .join('<span class="alt-name">, </span>');  // Comma wrapped with alt-name class
+        .join('<span class="alt-name">, </span>');
 
     return `${preferred}${alternates ? '<span class="alt-name">, </span>' + alternates : ''}`;
 }
@@ -127,16 +114,41 @@ function applyURLParams() {
     }
 }
 
+// INITIALIZE ON PAGE LOAD
+document.addEventListener('DOMContentLoaded', function () {
+    fetchTranslations();  // Fetch translations first
+    fetchData();          // Then fetch and populate the table
+    document.getElementById('language').value = lang;
+});
+
+// Language Selection
+document.getElementById('language').addEventListener('change', function () {
+    lang = this.value;
+    urlParams.set('lang', lang);
+    window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
+    applyTranslations(lang);
+    fetchData();
+});
+
+// Attach URL Update to Search Event
+document.getElementById('searchInput').addEventListener('input', function() {
+    const searchTerm = this.value;
+    filterTable(searchTerm);
+});
+
 // Sort Table by Column
 function sortTable(columnIndex, preserveDirection = false) {
     const table = document.getElementById('cropsTable');
+    const headers = table.querySelectorAll('th');  // Select all headers
     const rows = Array.from(table.rows).slice(1);
     let currentDirection = urlParams.get('dir') || 'asc';
 
+    // Toggle direction unless preserving
     if (!preserveDirection) {
         currentDirection = currentDirection === 'asc' ? 'desc' : 'asc';
     }
 
+    // Sort rows based on direction
     rows.sort((a, b) =>
         a.cells[columnIndex].textContent.localeCompare(b.cells[columnIndex].textContent)
         * (currentDirection === 'asc' ? 1 : -1)
@@ -145,16 +157,31 @@ function sortTable(columnIndex, preserveDirection = false) {
     tableBody.innerHTML = '';
     rows.forEach(row => tableBody.appendChild(row));
 
+    // Update URL with new sorting state
     urlParams.set('sort', columnIndex);
     urlParams.set('dir', currentDirection);
     window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
+
+    // Clear existing sort indicators
+    headers.forEach(header => {
+        const icon = header.querySelector('.sort-icon');
+        if (icon) icon.innerHTML = '';  // Remove existing icon
+    });
+
+    // Add sort indicator to the sorted column
+    const sortedHeader = headers[columnIndex].querySelector('.sort-icon');
+    if (sortedHeader) {
+        sortedHeader.innerHTML = currentDirection === 'asc' ? '▲' : '▼';
+        sortedHeader.style.color = 'green';  // Optional: Triangle in green
+    }
 }
+
 
 // Filter/Search Table and Update URL
 function filterTable(searchTerm) {
     const rows = document.querySelectorAll('#cropsTable tbody tr');
 
-    // Split search term by "OR", "|", or "," (you can customize this)
+    // Split search term by "OR", "|", or "," (we could further customize this)
     const terms = searchTerm.split(/\s*OR\s*|\s*\|\s*|,\s*/).filter(Boolean);
 
     // Build regex for case-insensitive matching
@@ -173,26 +200,3 @@ function filterTable(searchTerm) {
     }
     window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
 }
-
-
-// INITIALIZE ON PAGE LOAD
-document.addEventListener('DOMContentLoaded', function () {
-    applyTranslations(lang);
-    document.getElementById('language').value = lang;
-    fetchData();
-});
-
-// Language Selection
-document.getElementById('language').addEventListener('change', function () {
-    lang = this.value;
-    urlParams.set('lang', lang);
-    window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
-    applyTranslations(lang);
-    fetchData();
-});
-
-// Attach URL Update to Search Event
-document.getElementById('searchInput').addEventListener('input', function() {
-    const searchTerm = this.value;
-    filterTable(searchTerm);  // Filter and update URL
-});
