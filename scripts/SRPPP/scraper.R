@@ -288,9 +288,8 @@ for (i in 1:nrow(companies)) {
 
 sink()
 
-
 # ------------------------------------------------------------------
-# Write data about hazard codes (Code R)
+# Write data about hazard codes (Code R and Code S)
 # ------------------------------------------------------------------
 
 sink("data/hazard-statements.ttl")
@@ -386,6 +385,8 @@ sink()
 
 # Read JSON file with data
 stressors = jsonlite::read_json("mapping-tables/crop-stressors.json", simplifyVector = FALSE)
+
+lapply(stressors, function(x) if(x[["type"]]=="nonstressor") return(x$label$de)) |> unlist() |> paste(collapse = ", ")
 
 # Convert nested arrays to vectors
 stressors <- lapply(stressors, function(x) {

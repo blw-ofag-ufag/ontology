@@ -38,14 +38,6 @@
 :5-12098 a :CropGroup ;
     rdfs:label "Blumenzwiebeln und Blumenknollen"@de .
 
-:5-12626 a :CropGroup ;
-    rdfs:label "Majoran"@de,
-        "Marjoram"@en .
-
-:5-12630 a :CropGroup ;
-    rdfs:label "Spitzwegerich"@de,
-        "Plantago lanceolata"@en .
-
 :5-12891 a :CropGroup ;
     rdfs:label "Erntegut"@de .
 
@@ -97,9 +89,6 @@
 :5-14787 a :CropGroup ;
     rdfs:label "Schwarze Maulbeere"@de .
 
-:5-14799 a :CropGroup ;
-    rdfs:label "Eberesche"@de .
-
 :5-14801 a :CropGroup ;
     rdfs:label "Gemeine Felsenbirne"@de .
 
@@ -121,31 +110,52 @@
     rdfs:label "Brache"@de .
 
 :5-10000 a :CropGroup ;
-    rdfs:label "Mais"@de ;
+    rdfs:label "Mais"@de,
+        "Maize"@en ;
+    rdfs:comment "Mais ist ein wichtiges Getreide, das weltweit als Nahrungsmittel und Futtermittel angebaut wird."@de,
+        "Maize is a vital cereal grain cultivated globally for both human consumption and animal feed."@en ;
     :hasParentCropGroup :5-10197 .
 
 :5-10001 a :CropGroup ;
-    rdfs:label "Schalotten"@de ;
+    rdfs:label "Schalotten"@de,
+        "Shallot"@en ;
+    rdfs:comment "Schalotten sind eine milde Zwiebelart, die in der Küche vielseitig verwendet wird."@de,
+        "Shallots are a mild type of onion widely used in cooking."@en ;
     :hasParentCropGroup :5-9963 .
 
 :5-10002 a :CropGroup ;
-    rdfs:label "Schnittlauch"@de ;
+    rdfs:label "Schnittlauch"@de,
+        "Chives"@en ;
+    rdfs:comment "Schnittlauch ist ein mehrjähriges Kraut mit mildem Zwiebelgeschmack, das häufig zum Würzen von Speisen verwendet wird."@de,
+        "Chives are a perennial herb with a mild onion flavor, commonly used to season dishes."@en ;
     :hasParentCropGroup :5-10186 .
 
 :5-10003 a :CropGroup ;
-    rdfs:label "Schwarze Johannisbeere"@de ;
+    rdfs:label "Schwarze Johannisbeere"@de,
+        "Blackcurrant"@en ;
+    rdfs:comment "Die Schwarze Johannisbeere ist ein Strauch, dessen vitaminreiche Beeren vielseitig in der Küche verwendet werden."@de,
+        "The blackcurrant is a shrub whose vitamin-rich berries are widely used in cooking."@en ;
     :hasParentCropGroup :5-10127 .
 
 :5-10004 a :CropGroup ;
-    rdfs:label "Iris"@de ;
+    rdfs:label "Iris"@de,
+        "Iris"@en ;
+    rdfs:comment "Die Iris, auch Schwertlilie genannt, ist eine mehrjährige Pflanze, die für ihre auffälligen Blüten geschätzt wird und in der traditionellen Medizin Verwendung findet."@de,
+        "The iris is a perennial plant valued for its striking flowers and its use in traditional medicine."@en ;
     :hasParentCropGroup :5-12097 .
 
 :5-10005 a :CropGroup ;
-    rdfs:label "Spargel"@de ;
+    rdfs:label "Spargel"@de,
+        "Asparagus"@en ;
+    rdfs:comment "Spargel ist eine mehrjährige Pflanze, deren junge Triebe als beliebtes Gemüse verzehrt werden."@de,
+        "Asparagus is a perennial plant whose young shoots are consumed as a popular vegetable."@en ;
     :hasParentCropGroup :5-10338 .
 
 :5-10006 a :CropGroup ;
-    rdfs:label "Spinat"@de ;
+    rdfs:label "Spinat"@de,
+        "Spinach"@en ;
+    rdfs:comment "Spinat ist ein grünes Blattgemüse, das reich an Vitaminen und Mineralstoffen ist und vielseitig in der Küche verwendet wird."@de,
+        "Spinach is a green leafy vegetable rich in vitamins and minerals, widely used in various culinary dishes."@en ;
     :hasParentCropGroup :5-10068 .
 
 :5-10007 a :CropGroup ;
@@ -253,7 +263,10 @@
     :hasParentCropGroup :5-10197 .
 
 :5-10072 a :CropGroup ;
-    rdfs:label "Sojabohne"@de ;
+    rdfs:label "Sojabohne"@de,
+        "Soybean"@en ;
+    rdfs:comment "Die Sojabohne ist eine der weltweit wichtigsten Ölsaaten und Proteinquellen. Sie wird vielfältig verwendet, unter anderem in Lebensmitteln wie Tofu und Sojamilch, als Tierfutter und in industriellen Anwendungen."@de,
+        "Soybean is one of the world's leading sources of oil and protein. It is used in various ways, including foods like tofu and soy milk, as animal feed, and in industrial applications."@en ;
     :hasParentCropGroup :5-10197 .
 
 :5-10074 a :CropGroup ;
@@ -268,10 +281,6 @@
     rdfs:label "Speisezwiebel"@de ;
     :hasParentCropGroup :5-10031 .
 
-:5-10081 a :CropGroup ;
-    rdfs:label "Stangenbohne"@de ;
-    :hasParentCropGroup :5-10292 .
-
 :5-10082 a :CropGroup ;
     rdfs:label "Patisson"@de ;
     :hasParentCropGroup :5-10310 .
@@ -285,7 +294,10 @@
     :hasParentCropGroup :5-10046 .
 
 :5-10089 a :CropGroup ;
-    rdfs:label "Zuckerrübe"@de ;
+    rdfs:label "Zuckerrübe"@de,
+        "Sugar beet"@en ;
+    rdfs:comment "Die Zuckerrübe ist eine zweijährige Pflanze, die hauptsächlich zur Zuckergewinnung in gemässigten Klimazonen angebaut wird."@de,
+        "The sugar beet is a biennial plant primarily cultivated for sugar production in temperate regions."@en ;
     :hasParentCropGroup :5-10046 .
 
 :5-10091 a :CropGroup ;
@@ -321,7 +333,8 @@
 :5-10116 a :CropGroup ;
     rdfs:label "Ackerbohne"@de,
         "Fava bean"@en ;
-    :cropIsRelatedToBiologicalTaxon wd:Q131342 ;
+    rdfs:comment "Die Ackerbohne ist eine alte Kulturpflanze, die für ihre eiweissreichen Samen geschätzt wird und in der Tierfütterung sowie in der menschlichen Ernährung Verwendung findet."@de,
+        "The fava bean is an ancient cultivated plant valued for its protein-rich seeds, used in both animal feed and human diets."@en ;
     :hasParentCropGroup :5-10197 .
 
 :5-10124 a :CropGroup ;
@@ -331,7 +344,8 @@
 :5-10126 a :CropGroup ;
     rdfs:label "Zwetschge"@de,
         "Prune plum"@en ;
-    :cropIsRelatedToBiologicalTaxon wd:Q13223298 ;
+    rdfs:comment "Die Zwetschge ist eine Unterart der Pflaume, geschätzt für ihre ovalen, leicht zu entkernenden Früchte, die in Mitteleuropa vielseitig verwendet werden."@de,
+        "The prune plum is a subspecies of the plum, valued for its oval, freestone fruits, widely used in Central Europe."@en ;
     :hasParentCropGroup :5-10011 .
 
 :5-10132 a :CropGroup ;
@@ -679,10 +693,15 @@
 
 :5-10563 :hasChildCropGroup :5-12629 .
 
-:5-10564 :hasChildCropGroup :5-12627 .
+:5-10565 :hasChildCropGroup :5-12630 .
+
+:5-10566 :hasChildCropGroup :5-14799 .
 
 :5-11321 a :CropGroup ;
-    rdfs:label "Hartweizen"@de ;
+    rdfs:label "Hartweizen"@de,
+        "Durum wheat"@en ;
+    rdfs:comment "Hartweizen ist eine proteinreiche Weizenart, die besonders für die Herstellung von Teigwaren wie Nudeln geeignet ist."@de,
+        "Durum wheat is a high-protein wheat variety, especially suitable for the production of pasta."@en ;
     :hasParentCropGroup :5-10052 .
 
 :5-11325 a :CropGroup ;
@@ -731,6 +750,13 @@
     :cropIsRelatedToBiologicalTaxon wd:Q5723577 ;
     :hasParentCropGroup :5-10186 .
 
+:5-12626 a :CropGroup ;
+    rdfs:label "Majoran"@de,
+        "Marjoram"@en ;
+    rdfs:comment "Majoran ist ein mehrjähriges Kraut aus der Mittelmeerregion, bekannt für seinen süssen, pinienartigen und zitrusartigen Geschmack, der häufig in der mediterranen und nahöstlichen Küche verwendet wird."@de,
+        "Marjoram is a perennial herb native to the Mediterranean region, known for its sweet, pine, and citrus flavor, commonly used in Mediterranean and Middle Eastern cuisines."@en ;
+    :hasParentCropGroup :5-10564 .
+
 :5-12627 a :CropGroup ;
     rdfs:label "Oregano"@de,
         "Oregano"@en ;
@@ -755,6 +781,13 @@
     :cropIsRelatedToBiologicalTaxon wd:Q682257 ;
     :hasParentCropGroup :5-10563 .
 
+:5-12630 a :CropGroup ;
+    rdfs:label "Spitzwegerich"@de,
+        "Ribwort plantain"@en ;
+    rdfs:comment "Der Spitzwegerich ist eine mehrjährige Pflanze, die häufig an Strassenrändern und in Wiesen zu finden ist und traditionell in der Kräutermedizin verwendet wird."@de,
+        "Ribwort plantain is a perennial plant commonly found along roadsides and in meadows, traditionally used in herbal medicine."@en ;
+    :hasParentCropGroup :5-10565 .
+
 :5-12689 a :CropGroup ;
     rdfs:label "Linse"@de ;
     :hasParentCropGroup :5-9957 .
@@ -766,6 +799,8 @@
 :5-13905 a :CropGroup ;
     rdfs:label "Süsskartoffel"@de,
         "Sweet potato"@en ;
+    rdfs:comment "Die Süsskartoffel ist eine mehrjährige krautige Kletterpflanze, deren unterirdische Speicherwurzeln als Nahrungsmittel genutzt werden. Sie ist reich an Beta-Carotin und Vitamin A und dient sowohl als Lebensmittel für Menschen als auch als Futtermittel für Tiere."@de,
+        "The sweet potato is a perennial herbaceous climbing plant, whose underground storage roots are used as food. It is rich in beta-carotene and vitamin A, and serves as food for humans as well as fodder for animals."@en ;
     :hasParentCropGroup :5-15866 .
 
 :5-14382 a :CropGroup ;
@@ -787,6 +822,13 @@
         "Hemp is a versatile plant cultivated for industrial and consumable purposes."@en ;
     :cropIsRelatedToBiologicalTaxon wd:Q26726 ;
     :hasParentCropGroup :5-12069 .
+
+:5-14799 a :CropGroup ;
+    rdfs:label "Eberesche"@de,
+        "Rowan"@en ;
+    rdfs:comment "Die Eberesche ist ein laubabwerfender Baum, bekannt für seine leuchtend roten Beeren, die eine wichtige Nahrungsquelle für Vögel darstellen."@de,
+        "The rowan is a deciduous tree known for its bright red berries, which are a crucial food source for birds."@en ;
+    :hasParentCropGroup :5-10566 .
 
 :5-14985 a :CropGroup ;
     rdfs:label "Markstammkohl"@de ;
@@ -902,19 +944,31 @@
     :hasParentCropGroup :5-9962 .
 
 :5-9996 a :CropGroup ;
-    rdfs:label "Rande"@de ;
+    rdfs:label "Rande"@de,
+        "Beetroot"@en ;
+    rdfs:comment "Die Rande ist ein Wurzelgemüse mit tiefroter Farbe und süsslichem Geschmack, reich an Nährstoffen und vielseitig in der Küche einsetzbar."@de,
+        "Beetroot is a deep red root vegetable with a sweet flavor, rich in nutrients, and versatile in culinary uses."@en ;
     :hasParentCropGroup :5-10068 .
 
 :5-9997 a :CropGroup ;
-    rdfs:label "Rettich"@de ;
+    rdfs:label "Rettich"@de,
+        "Radish"@en ;
+    rdfs:comment "Rettich ist ein knackiges Wurzelgemüse mit pfeffrigem Geschmack, das häufig roh in Salaten verzehrt wird."@de,
+        "Radish is a crisp root vegetable with a peppery flavor, commonly eaten raw in salads."@en ;
     :hasParentCropGroup :5-9962 .
 
 :5-9998 a :CropGroup ;
-    rdfs:label "Rhabarber"@de ;
+    rdfs:label "Rhabarber"@de,
+        "Rhubarb"@en ;
+    rdfs:comment "Rhabarber ist eine mehrjährige Pflanze, deren säuerliche Blattstiele in der Küche vielseitig verwendet werden, während die Blätter aufgrund ihres Gehalts an Oxalsäure ungeniessbar sind."@de,
+        "Rhubarb is a perennial plant whose tart-tasting stalks are widely used in cooking, while the leaves are inedible due to their oxalic acid content."@en ;
     :hasParentCropGroup :5-9960 .
 
 :5-9999 a :CropGroup ;
-    rdfs:label "Rote Johannisbeere"@de ;
+    rdfs:label "Rote Johannisbeere"@de,
+        "Redcurrant"@en ;
+    rdfs:comment "Die Rote Johannisbeere ist ein laubabwerfender Strauch, der für seine leuchtend roten Beeren bekannt ist, die reich an Vitamin C sind und häufig in der Küche verwendet werden."@de,
+        "The red currant is a deciduous shrub known for its bright red berries, rich in vitamin C, commonly used in culinary dishes."@en ;
     :hasParentCropGroup :5-10127 .
 
 :5-10008 a :CropGroup ;
@@ -958,7 +1012,10 @@
         :5-12097 .
 
 :5-10094 a :CropGroup ;
-    rdfs:label "Winterweizen"@de ;
+    rdfs:label "Winterweizen"@de,
+        "Winter wheat"@en ;
+    rdfs:comment "Winterweizen wird im Herbst ausgesät und benötigt eine Kälteperiode zur Entwicklung. Er liefert höhere Erträge als Sommerweizen und ist in gemässigten Klimazonen weit verbreitet."@de,
+        "Winter wheat is sown in autumn and requires a cold period for development. It provides higher yields than spring wheat and is widely cultivated in temperate climates."@en ;
     :hasParentCropGroup :5-10167,
         :5-13784 .
 
@@ -1000,7 +1057,9 @@
 
 :5-10118 a :CropGroup ;
     rdfs:label "Sommerweizen"@de,
-        "Summer wheat"@en ;
+        "Spring wheat"@en ;
+    rdfs:comment "Sommerweizen wird im Frühjahr ausgesät und reift schneller als Winterweizen. Er eignet sich besonders für den Anbau in Regionen mit kurzen Vegetationsperioden oder als Ersatzkultur, wenn die Herbstsaat nicht möglich war."@de,
+        "Spring wheat is sown in spring and matures faster than winter wheat. It is particularly suitable for regions with short growing seasons or as a replacement crop when autumn sowing was not possible."@en ;
     :hasParentCropGroup :5-10164,
         :5-13784 .
 
@@ -1088,6 +1147,11 @@
     :hasParentCropGroup :5-10111,
         :5-12096 .
 
+:5-10292 a :CropGroup ;
+    rdfs:label "Bohnen mit Hülsen"@de ;
+    :hasChildCropGroup :5-10074 ;
+    :hasParentCropGroup :5-10128 .
+
 :5-10296 a :CropGroup ;
     rdfs:label "Birne / Nashi"@de ;
     :hasChildCropGroup :5-9972 ;
@@ -1122,6 +1186,9 @@
     rdfs:label "Portulak"@de ;
     :hasChildCropGroup :5-10033 ;
     :hasParentCropGroup :5-10025 .
+
+:5-10564 :hasChildCropGroup :5-12626,
+        :5-12627 .
 
 :5-12147 a :CropGroup ;
     rdfs:label "Nichtkulturland allgemein"@de ;
@@ -1203,7 +1270,10 @@
     :hasParentCropGroup :5-10197 .
 
 :5-10083 a :CropGroup ;
-    rdfs:label "Gerste"@de ;
+    rdfs:label "Gerste"@de,
+        "Barley"@en ;
+    rdfs:comment "Gerste ist ein einjähriges Gras, das Wuchshöhen von 0,7 bis 1,2 Metern erreicht. Sie wird weltweit sowohl als Nahrungsmittel für den Menschen als auch als Futtermittel für Tiere angebaut und spielt eine zentrale Rolle in der Bierproduktion."@de,
+        "Barley is an annual grass reaching heights of 0.7 to 1.2 meters. It is cultivated worldwide for both human consumption and animal feed and plays a central role in beer production."@en ;
     :hasChildCropGroup :5-10143,
         :5-9943 ;
     :hasParentCropGroup :5-10080 .
@@ -1239,12 +1309,6 @@
         :5-14383,
         :5-14384 .
 
-:5-10292 a :CropGroup ;
-    rdfs:label "Bohnen mit Hülsen"@de ;
-    :hasChildCropGroup :5-10074,
-        :5-10081 ;
-    :hasParentCropGroup :5-10128 .
-
 :5-10297 a :CropGroup ;
     rdfs:label "Rubus Arten"@de ;
     :hasChildCropGroup :5-9975,
@@ -1270,7 +1334,10 @@
     :hasParentCropGroup :5-10068 .
 
 :5-13784 a :CropGroup ;
-    rdfs:label "Weichweizen"@de ;
+    rdfs:label "Weichweizen"@de,
+        "Common wheat"@en ;
+    rdfs:comment "Weichweizen ist die weltweit am häufigsten angebaute Weizenart und dient hauptsächlich der Herstellung von Brot und Backwaren."@de,
+        "Common wheat is the most widely cultivated wheat species globally, primarily used for making bread and bakery products."@en ;
     :hasChildCropGroup :5-10094,
         :5-10118 ;
     :hasParentCropGroup :5-10052 .
@@ -1386,7 +1453,10 @@
     :hasParentCropGroup :5-10190 .
 
 :5-10052 a :CropGroup ;
-    rdfs:label "Weizen"@de ;
+    rdfs:label "Weizen"@de,
+        "Wheat"@en ;
+    rdfs:comment "Weizen ist ein einjähriges Ährengras, das weltweit als eine der wichtigsten Kulturpflanzen angebaut wird."@de,
+        "Wheat is an annual cereal grass cultivated worldwide as one of the main staple crops."@en ;
     :hasChildCropGroup :5-10122,
         :5-10271,
         :5-11321,
@@ -1521,7 +1591,10 @@
     :hasParentCropGroup :5-10195 .
 
 :5-10080 a :CropGroup ;
-    rdfs:label "Getreide"@de ;
+    rdfs:label "Getreide"@de,
+        "Cereals"@en ;
+    rdfs:comment "Getreide umfasst verschiedene Kulturpflanzen wie Weizen, Roggen, Gerste, Hafer, Mais, Reis und Hirse, die weltweit als Grundnahrungsmittel dienen."@de,
+        "Cereals include various cultivated plants such as wheat, rye, barley, oats, maize, rice, and millet, serving as staple foods worldwide."@en ;
     :hasChildCropGroup :5-10052,
         :5-10083,
         :5-10119,

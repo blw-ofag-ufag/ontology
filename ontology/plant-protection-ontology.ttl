@@ -23,7 +23,7 @@ wdt:P171 a owl:ObjectProperty ;
         "This ontology exemplifies the value of comprehensive and well-structured ontology development for the Swiss Federal Office for Agriculture (and more broadly the Swiss agri-food sector). By capturing the complexities of crop protection (with a focus on registered products) in a formal model, it enhances understanding of current rules and allows their effective communication via IT-services."@en ;
     dc1:title "Eine (demonstrative) Ontologie für den Pflanzenschutz in der Schweiz"@de,
         "A (demonstrative) ontology for crop protection in Switzerland"@en ;
-    owl:versionInfo "0.9" .
+    owl:versionInfo "0.10" .
 
 :AbioticStressor a owl:Class ;
     rdfs:label "Abiotischer Schadverursacher"@de,
@@ -149,6 +149,8 @@ wdt:P171 a owl:ObjectProperty ;
 :Obligation a owl:Class ;
     rdfs:label "Auflage"@de,
         "Obligation"@en ;
+    rdfs:comment "Auflage gemäss dem Schweizer Pflanzenschutzmittelregister."@de,
+        "Obligation according to the Swiss plant protection product registry."@en ;
     rdfs:subClassOf :Notice .
 
 :Pheromone a owl:Class ;
@@ -223,12 +225,6 @@ wdt:P171 a owl:ObjectProperty ;
     rdfs:domain :ComponentPortion ;
     rdfs:range xsd:float .
 
-:concerns a owl:ObjectProperty ;
-    rdfs:label "betrifft"@de,
-        "concerns"@en ;
-    rdfs:domain :Notice ;
-    rdfs:range :Action .
-
 :cropIsRelatedToBiologicalTaxon a owl:ObjectProperty ;
     rdfs:label "hängt zusammen mit dem biologischen Taxon"@de,
         "is related to biological taxon"@en ;
@@ -275,6 +271,13 @@ wdt:P171 a owl:ObjectProperty ;
     rdfs:domain :HazardStatement ;
     rdfs:range xsd:string .
 
+:hasNotice a owl:ObjectProperty ;
+    rdfs:label "hat Hinweis"@de,
+        "has notice"@en ;
+    rdfs:domain :Action ;
+    rdfs:range :Notice ;
+    owl:inverseOf :concerns .
+
 :hasPermissionHolder a owl:ObjectProperty ;
     rdfs:label "hat Verkaufsbewilligungshalter"@de,
         "has permission holder"@en ;
@@ -290,10 +293,16 @@ wdt:P171 a owl:ObjectProperty ;
     rdfs:domain :Product ;
     rdfs:range xsd:date .
 
+:hasUnit a owl:ObjectProperty ;
+    rdfs:label "hat Einheit"@de,
+        "has Unit"@en ;
+    rdfs:domain :TreatmentConstraint .
+
 :hasUpperDamageLimit a owl:DatatypeProperty ;
-    rdfs:label "obere Schadenslimite"@de,
-        "upper damage limit"@en ;
-    rdfs:comment "Indicates the damage limit in percentage (0% -100%) that a crop stressor can reasonably cause."@en ;
+    rdfs:label "Obere Schadenslimite"@de,
+        "Upper damage limit"@en ;
+    rdfs:comment "Gibt die Schadensgrenze in Prozent (0% -100%) an, die ein Stressfaktor für Nutzpflanzen vernünftigerweise verursachen kann."@de,
+        "Indicates the damage limit in percentage (0% -100%) that a crop stressor can reasonably cause."@en ;
     rdfs:domain :Damage ;
     rdfs:range xsd:float .
 
@@ -399,6 +408,59 @@ wdt:P171 a owl:ObjectProperty ;
         "knows"@en ;
     rdfs:domain foaf:Person .
 
+:maximumBBCH a owl:DatatypeProperty ;
+    rdfs:label "Maximales BBCH-Stadium"@de,
+        "Maximal BBCH stadium"@en ;
+    rdfs:domain :BBCH ;
+    rdfs:range xsd:float .
+
+:maximumRate a owl:DatatypeProperty ;
+    rdfs:label "Maximale Anwendungsrate"@de,
+        "Maximal application rate"@en ;
+    rdfs:comment "Gibt an, wie viel von diesem Produkt in einer Saison maximal verwendet werden darf."@de,
+        "Indicates how much of a given product may be maximally applied per season."@en ;
+    rdfs:domain :TreatmentRate ;
+    rdfs:range xsd:float .
+
+:maximumTreatmentDosage a owl:DatatypeProperty ;
+    rdfs:label "Maximale Dosierung"@de,
+        "Maximal dosage"@en ;
+    rdfs:domain :TreatmentDosage ;
+    rdfs:range xsd:float .
+
+:minimumBBCH a owl:DatatypeProperty ;
+    rdfs:label "Minimales BBCH-Stadium"@de,
+        "Minimal BBCH stadium"@en ;
+    rdfs:domain :BBCH ;
+    rdfs:range xsd:float .
+
+:minimumRate a owl:DatatypeProperty ;
+    rdfs:label "Minimale Anwendungsrate"@de,
+        "Minimal application rate"@en ;
+    rdfs:comment "Gibt an, wie viel von diesem Produkt in einer Saison minimal verwendet werden darf."@de,
+        "Indicates how much of a given product may be minimally applied per season."@en ;
+    rdfs:domain :TreatmentRate ;
+    rdfs:range xsd:float .
+
+:minimumTreatmentDosage a owl:DatatypeProperty ;
+    rdfs:label "Minimale Dosierung"@de,
+        "Minimal dosage"@en ;
+    rdfs:domain :TreatmentDosage ;
+    rdfs:range xsd:float .
+
+:minimumWaitingPeriod a owl:DatatypeProperty ;
+    rdfs:label "Minimale Wartezeit"@de,
+        "Minimal waiting period"@en ;
+    rdfs:domain :WaitingPeriod ;
+    rdfs:range xsd:float .
+
+:restrictsTreatment a owl:ObjectProperty ;
+    rdfs:label "Schränkt Anwendung ein"@de,
+        "Restricts treatment"@en ;
+    rdfs:domain :TreatmentConstraint ;
+    rdfs:range :Treatment ;
+    owl:inverseOf :hasTreatmentConstraint .
+
 schema:address a owl:ObjectProperty ;
     rdfs:label "hat Adresse"@de,
         "has address"@en ;
@@ -489,10 +551,10 @@ chebi:24431 a owl:Class ;
     owl:disjointWith :ActiveSubstance,
         :AdditiveToDeclare .
 
-:Treatment a owl:Class ;
-    rdfs:label "Behandlung"@de,
-        "Treatment"@en ;
-    rdfs:subClassOf :Action .
+:WaitingPeriod a owl:Class ;
+    rdfs:label "Wartefrist"@de,
+        "Waiting period"@en ;
+    rdfs:subClassOf :TreatmentConstraint .
 
 :affects a owl:ObjectProperty ;
     rdfs:label "betrifft"@de,
@@ -511,6 +573,12 @@ chebi:24431 a owl:Class ;
         "chemically defines"@en ;
     rdfs:domain :Substance ;
     rdfs:range :ChemicalProduct .
+
+:concerns a owl:ObjectProperty ;
+    rdfs:label "betrifft"@de,
+        "concerns"@en ;
+    rdfs:domain :Notice ;
+    rdfs:range :Action .
 
 :contains a owl:ObjectProperty ;
     rdfs:label "beinhaltet"@de,
@@ -570,6 +638,12 @@ chebi:24431 a owl:Class ;
     rdfs:domain :CropGroup ;
     rdfs:range :CropGroup .
 
+:hasTreatmentConstraint a owl:ObjectProperty ;
+    rdfs:label "hat Anwendungseinschränkung"@de,
+        "has treatment constraint"@en ;
+    rdfs:domain :Treatment ;
+    rdfs:range :TreatmentConstraint .
+
 :holdsPermissionToSell a owl:ObjectProperty ;
     rdfs:label "hat Bewilligung zum Verkauf von"@de,
         "holds Permission to sell"@en ;
@@ -619,6 +693,14 @@ chebi:24431 a owl:Class ;
     rdfs:subClassOf :Substance ;
     owl:disjointWith :ActiveSubstance .
 
+:BBCH a owl:Class ;
+    rdfs:label "Spritzfenster bezüglich BBCH-Stadium"@de,
+        "Application window regarding BBCH stadium"@en ;
+    rdfs:comment "Spritzfenster für Behandlungen basierend auf der BBCH-Skala, die die phänologischen Entwicklungsstadien von Pflanzen standardisiert."@de,
+        "Application window for treatments based on the BBCH scale, which standardizes the phenological development stages of plants."@en ;
+    rdfs:seeAlso <https://w.wiki/CdkJ> ;
+    rdfs:subClassOf :TreatmentConstraint .
+
 :BioticStressor a owl:Class ;
     rdfs:label "Biotischer Schadverursacher"@de,
         "Biotic crop stressor"@en ;
@@ -642,6 +724,18 @@ chebi:24431 a owl:Class ;
             owl:minCardinality "2"^^xsd:nonNegativeInteger ;
             owl:onProperty :hasComponentPortion ],
         :Substance .
+
+:TreatmentDosage a owl:Class ;
+    rdfs:label "Dosierung"@de,
+        "Dosage"@en ;
+    rdfs:subClassOf :TreatmentConstraint .
+
+:TreatmentRate a owl:Class ;
+    rdfs:label "Anwendungsrate"@de,
+        "Application rate"@en ;
+    rdfs:comment "Anwendungsrate für Behandlungen."@de,
+        "Application rate for treatments."@en ;
+    rdfs:subClassOf :TreatmentConstraint .
 
 :nonTargetOrganism a owl:Class ;
     rdfs:label "Nichtzielorganismus"@de,
@@ -669,9 +763,10 @@ schema:Country a owl:Class ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty :hasComponentSubstance ] .
 
-:Notice a owl:Class ;
-    rdfs:label "Hinweis"@de,
-        "Notice"@en .
+:Treatment a owl:Class ;
+    rdfs:label "Behandlung"@de,
+        "Treatment"@en ;
+    rdfs:subClassOf :Action .
 
 :interactsWith a owl:ObjectProperty ;
     rdfs:label "interagiert mit"@de,
@@ -689,22 +784,21 @@ schema:Country a owl:Class ;
         "Hazard statements"@en ;
     rdfs:comment "H-Sätze (Gefahrenhinweise) und die ergänzenden EUH-Sätze sind standardisierte Beschreibungen der spezifischen Gefahren, die von chemischen Stoffen oder Gemischen ausgehen, wie z. B. Toxizität, Entflammbarkeit oder Umweltschädlichkeit. Sie sind Teil des Global Harmonisierten Systems (GHS) und gewährleisten eine klare, einheitliche Kommunikation chemischer Gefahren weltweit."@de,
         "H-statements (Hazard Statements) and the complementary EUH-statements are standardized descriptions of the specific dangers posed by chemical substances or mixtures, such as toxicity, flammability, or environmental harm. They are part of the Globally Harmonized System (GHS) and ensure clear, consistent communication of chemical hazards worldwide."@en ;
-    rdfs:seeAlso <https://w.wiki/CVwr> .
+    rdfs:seeAlso <https://w.wiki/CVwr> ;
+    rdfs:subClassOf :Notice .
 
 schema:PostalAddress a owl:Class ;
     rdfs:label "Postadresse"@de,
         "Postal address"@en .
 
-:Action a owl:Class ;
-    rdfs:label "Schutzmassnahme"@de,
-        "Protective action"@en ;
-    rdfs:comment "A specific action taken to mitigate damage done to crops."@en ;
-    skos:scopeNote "Only use this class when the action is specifically *not* a treatment; i.e. the application of crop protection proucts on crops."@en .
-
 :CropProtectionProduct a owl:Class ;
     rdfs:label "Pflanzenschutzmittel"@de,
         "Crop protection product"@en ;
     rdfs:subClassOf :Product .
+
+:Notice a owl:Class ;
+    rdfs:label "Hinweis"@de,
+        "Notice"@en .
 
 :PureSubstance a owl:Class ;
     rdfs:label "Reine Substanz"@de,
@@ -719,6 +813,17 @@ wd:Q16521 a owl:Class ;
         "Biological taxon"@en ;
     rdfs:comment "Gruppe von einem oder mehreren Organismen, die ein Taxonom als Einheit betrachtet."@de,
         "Group of one or more organism(s), which a taxonomist adjudges to be a unit."@en .
+
+:Action a owl:Class ;
+    rdfs:label "Schutzmassnahme"@de,
+        "Protective action"@en ;
+    rdfs:comment "A specific action taken to mitigate damage done to crops."@en ;
+    skos:scopeNote "Only use this class when the action is specifically *not* a treatment; i.e. the application of crop protection proucts on crops."@en .
+
+:TreatmentConstraint a owl:Class ;
+    rdfs:label "Anwendungseinschränkung"@de,
+        "Treatment constraint"@en ;
+    rdfs:subClassOf :Notice .
 
 schema:Organization a owl:Class ;
     rdfs:label "Organisation"@de,

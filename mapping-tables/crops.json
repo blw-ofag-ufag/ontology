@@ -2303,9 +2303,9 @@
     "srppp-id": 13238,
     "label": {
         "de": ["Lager- und Produktionsräume allgemein"],
-        "fr": ["Lager- und Produktionsräume allgemein"],
-        "it": ["Lager- und Produktionsräume allgemein"],
-        "en": ["Lager- und Produktionsräume allgemein"],
+        "fr": ["Locali di stoccaggio e produzione in generale"],
+        "it": ["Locaux de stockage et de production en général"],
+        "en": ["General storage and production areas"],
         "la": [null]
     },
     "comment": {
