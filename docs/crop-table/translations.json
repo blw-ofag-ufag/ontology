@@ -1,25 +1,25 @@
 {
     "de": {
         "title": "Kulturentabelle",
-        "subtitle": "<p>Hier findest du die Liste der landwirtschaftlichen Kulturen so, wie sie im Schweizer Pflanzenschutzmittelverzeichnis aufgeführt sind. Das tatsächliche File mit den Daten liegt auf <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.</p><p>Der Kulturentyp ist noch in der Entwicklung und besteht im Moment aus Ackerbau (🌽), Gemüsebau (🥬), Obst (🍎), Beerenbau (🫐), Weinbau (🍇), Medizinalpflanzen (🌿), Ornamentalkulturen (🌺), Forstwirtschaft (🌲), Nicht-Kulturen (🏭) und Varia (🌱).</p>",
+        "subtitle": "Hier findest du die Liste der landwirtschaftlichen Kulturen so, wie sie im Schweizer Pflanzenschutzmittelverzeichnis aufgeführt sind. Das tatsächliche File mit den Daten liegt auf <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.",
         "search": "Durchsuche nach ID, Name, Kommentar, oder Emoji.",
         "columns": ["ID", "Name", "Kommentare", "Typ"]
     },
     "fr": {
         "title": "Tableau des Cultures",
-        "subtitle": "<p>Voici la liste des cultures agricoles telle qu'elle est présentée dans le registre des produits phytosanitaires de la Suisse. Le fichier réel contenant les données est disponible sur <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.</p><p>Le type de culture est encore en développement et comprend actuellement les grandes cultures (🌽), les légumes (🥬), les fruits (🍎), les baies (🫐), la viticulture (🍇), les plantes médicinales (🌿), les cultures ornementales (🌺), la sylviculture (🌲) et les non-cultures (🏭).</p>",
+        "subtitle": "Voici la liste des cultures agricoles telle qu'elle est présentée dans le registre des produits phytosanitaires de la Suisse. Le fichier réel contenant les données est disponible sur <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.",
         "search": "Rechercher par ID, nom, commentaire ou emoji.",
         "columns": ["ID", "Nom", "Commentaires", "Type"]
     },
     "it": {
         "title": "Tabella delle Colture",
-        "subtitle": "<p>Qui trovi l'elenco delle colture agricole come elencato nel registro svizzero dei prodotti fitosanitari. Il file reale con i dati è disponibile su <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.</p><p>Il tipo di coltura è ancora in fase di sviluppo e attualmente comprende seminativi (🌽), ortaggi (🥬), frutta (🍎), bacche (🫐), viticoltura (🍇), piante medicinali (🌿), colture ornamentali (🌺), selvicoltura (🌲) e non colture (🏭).</p>",
+        "subtitle": "Qui trovi l'elenco delle colture agricole come elencato nel registro svizzero dei prodotti fitosanitari. Il file reale con i dati è disponibile su <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.",
         "search": "Cerca per ID, nome, commento o emoji.",
         "columns": ["ID", "Nome", "Commenti", "Tipo"]
     },
     "en": {
         "title": "Crops Table",
-        "subtitle": "<p>Here you can find the list of agricultural crops as listed in the Swiss plant protection product directory. The actual file with the data is available on <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.</p><p>The crop type is still under development and currently includes arable crops (🌽), vegetables (🥬), fruits (🍎), berries (🫐), viticulture (🍇), medicinal plants (🌿), ornamental crops (🌺), forestry (🌲), and non-crops (🏭).</p>",
+        "subtitle": "Here you can find the list of agricultural crops as listed in the Swiss plant protection product directory. The actual file with the data is available on <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.",
         "search": "Search by ID, name, comment, or emoji.",
         "columns": ["ID", "Name", "Comments", "Type"]
     }

@@ -1,5 +1,6 @@
 // Global Declarations
 let translations = {};  // Placeholder for fetched translations
+let cropTypes = {};  // Store fetched crop types and emojis
 const tableBody = document.querySelector('#cropsTable tbody');
 const dataUrl = 'https://raw.githubusercontent.com/blw-ofag-ufag/ontology/main/mapping-tables/crops.json';
 const urlParams = new URLSearchParams(window.location.search);
@@ -38,6 +39,7 @@ function applyTranslations(lang) {
 }
 
 // Fetch and Populate Table
+// Fetch and Populate Table
 function fetchData() {
     fetch(dataUrl)
         .then(response => response.json())
@@ -53,7 +55,7 @@ function fetchData() {
 
                 const nameCell = document.createElement('td');
                 const names = item.label?.[lang] || [''];
-                nameCell.innerHTML = formatNames(names);  // Format and insert names
+                nameCell.innerHTML = formatNames(names);
                 row.appendChild(nameCell);
 
                 const commentCell = document.createElement('td');
@@ -61,16 +63,34 @@ function fetchData() {
                 row.appendChild(commentCell);
 
                 const typeCell = document.createElement('td');
-                typeCell.textContent = getTypeEmoji(item.type);
+                const { emoji, tooltip } = getTypeEmoji(item.type);
+                typeCell.textContent = emoji;
+                typeCell.setAttribute('data-title', tooltip);  // Store full tooltip content                
                 row.appendChild(typeCell);
 
                 tableBody.appendChild(row);
             });
 
-            applyURLParams();  // Apply search and sort from URL
+            applyURLParams();
         })
         .catch(error => console.error('Fehler beim Laden der Daten:', error));
 }
+
+// Fetch the Crop Types from JSON
+function fetchCropTypes() {
+    return fetch('https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/docs/crop-table/types.json')
+        .then(response => {
+            if (!response.ok) throw new Error('Failed to load crop types');
+            return response.json();
+        })
+        .then(data => {
+            cropTypes = data;
+        })
+        .catch(error => {
+            console.error('Error loading crop types:', error);
+        });
+}
+
 
 // Format names for display (highlight first, fade rest)
 function formatNames(names) {
@@ -83,21 +103,19 @@ function formatNames(names) {
     return `${preferred}${alternates ? '<span class="alt-name">, </span>' + alternates : ''}`;
 }
 
-// Map Crop Types to Emojis
+// Map Crop Types to Emojis (Dynamic from JSON)
 function getTypeEmoji(type) {
-    const typeMapping = {
-        arable: '🌽',
-        medical: '🌿',
-        vegetable: '🥬',
-        fruit: '🍎',
-        berry: '🫐',
-        viticulture: '🍇',
-        ornamental: '🌺',
-        forestry: '🌲',
-        noncrop: '🏭',
-        varia: '🌱'
+    const cropType = cropTypes[type];
+    if (!cropType) return { emoji: '❓', tooltip: 'Unknown type' };
+
+    const label = cropType.label?.[lang] || cropType.label?.['en'] || 'Unknown';
+    const comment = cropType.comment?.[lang] || cropType.comment?.['en'] || '';
+    const emoji = cropType.emoji || '❓';
+
+    return {
+        emoji: emoji,
+        tooltip: `${label}|${comment}|${emoji}`  // Pass name, comment, and emoji for formatting
     };
-    return typeMapping[type] || '';
 }
 
 // Apply Sorting and Search from URL
@@ -116,9 +134,10 @@ function applyURLParams() {
 
 // Initialize on Page Load
 document.addEventListener('DOMContentLoaded', function () {
-    fetchTranslations().then(() => {
-        fetchData();
-    });
+    Promise.all([fetchTranslations(), fetchCropTypes()])  // Fetch both translations and crop types
+        .then(() => {
+            fetchData();  // Populate table after translations and types are ready
+        });
     document.getElementById('language').value = lang;
 });
 
@@ -204,4 +223,43 @@ function filterTable(searchTerm) {
         urlParams.set('search', searchTerm);
     }
     window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
+}
+
+// Tooltip container
+const tooltip = document.getElementById('tooltip');
+
+// Show tooltip on hover (with multiline layout)
+tableBody.addEventListener('mouseover', function (event) {
+    const target = event.target;
+    if (target.tagName === 'TD' && target.getAttribute('data-title')) {
+        const tooltipText = target.getAttribute('data-title');
+        const [label, comment, emoji] = tooltipText.split('|');
+
+        tooltip.innerHTML = `
+            <div class="type-name">${emoji} ${label}</div>
+            <div class="type-comment">${comment}</div>
+        `;
+
+        tooltip.style.opacity = 1;
+        tooltip.style.visibility = 'visible';
+        positionTooltip(event);
+    }
+});
+
+// Hide tooltip and restore title on mouse leave (with fade-out delay)
+tableBody.addEventListener('mouseout', function (event) {
+    const target = event.target;
+    if (target.tagName === 'TD' && target.getAttribute('data-title')) {
+        tooltip.style.opacity = 0;
+        tooltip.style.visibility = 'hidden';
+    }
+});
+
+// Adjust tooltip position dynamically
+tableBody.addEventListener('mousemove', positionTooltip);
+
+function positionTooltip(event) {
+    const offset = 15;
+    tooltip.style.left = event.pageX + offset + 'px';
+    tooltip.style.top = event.pageY + offset + 'px';
 }
