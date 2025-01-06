@@ -27,7 +27,7 @@
         "it": "Le piante medicinali sono coltivate a scopi terapeutici o farmaceutici.",
         "en": "Medicinal plants are grown for therapeutic uses or for the pharmaceutical industry."
       },
-      "emoji": "🌿"
+      "emoji": "⚕️"
     },
     "vegetable": {
       "label": {
@@ -42,7 +42,7 @@
         "it": "Le colture orticole comprendono la produzione di parti vegetali commestibili, come carote, lattuga e pomodori.",
         "en": "Vegetable farming includes growing edible plant parts such as carrots, lettuce, and tomatoes."
       },
-      "emoji": "🥬"
+      "emoji": "🍆"
     },
     "fruit": {
       "label": {
@@ -119,6 +119,21 @@
       },
       "emoji": "🌲"
     },
+    "garden": {
+        "label": {
+          "de": "Kräutergarten",
+          "fr": "Jardin d'herbes aromatiques",
+          "it": "Giardino di erbe aromatiche",
+          "en": "Garden herbs"
+        },
+        "comment": {
+          "de": "Kräutergärten fokussieren sich auf den Anbau von Kräutern wie Basilikum, Oregano und anderen aromatischen Pflanzen.",
+          "fr": "Les jardins d'herbes aromatiques concernent la culture de plantes comme le basilic, l'origan et d'autres plantes aromatiques.",
+          "it": "I giardini di erbe aromatiche comprendono la coltivazione di piante come il basilico, l'origano e altre erbe aromatiche.",
+          "en": "Garden herbs typically involve growing plants such as basil, oregano, and other aromatic herbs."
+        },
+        "emoji": "🌿"
+    },
     "noncrop": {
       "label": {
         "de": "Nicht-landwirtschaftliche Nutzungen",
@@ -147,6 +162,6 @@
         "it": "Varie comprende altri tipi di colture o usi non rientranti nelle categorie precedenti.",
         "en": "Miscellaneous includes other crop types or uses that do not fit the above categories."
       },
-      "emoji": "🌱"
+      "emoji": "🧺"
     }
 }
