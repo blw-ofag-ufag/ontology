@@ -1,0 +1,152 @@
+{
+    "arable": {
+      "label": {
+        "de": "Ackerbaukulturen",
+        "fr": "Cultures arables",
+        "it": "Colture arabili",
+        "en": "Arable crops"
+      },
+      "comment": {
+        "de": "Ackerbau bezieht sich auf den Anbau von Kulturpflanzen, wie Getreide oder Kartoffeln, auf bearbeitetem Ackerland.",
+        "fr": "Les cultures arables concernent la production de plantes, comme les céréales ou les pommes de terre, sur des terres labourées.",
+        "it": "Le colture arabili comprendono la produzione di piante, come i cereali o le patate, su terreni lavorati.",
+        "en": "Arable farming refers to growing crops, such as cereals or potatoes, on tilled land."
+      },
+      "emoji": "🌽"
+    },
+    "medical": {
+      "label": {
+        "de": "Medizinische Pflanzen",
+        "fr": "Plantes médicinales",
+        "it": "Piante medicinali",
+        "en": "Medicinal plants"
+      },
+      "comment": {
+        "de": "Medizinische Pflanzen werden zu Heilzwecken oder für die Pharmaindustrie angebaut.",
+        "fr": "Les plantes médicinales sont cultivées à des fins thérapeutiques ou pharmaceutiques.",
+        "it": "Le piante medicinali sono coltivate a scopi terapeutici o farmaceutici.",
+        "en": "Medicinal plants are grown for therapeutic uses or for the pharmaceutical industry."
+      },
+      "emoji": "🌿"
+    },
+    "vegetable": {
+      "label": {
+        "de": "Gemüsekulturen",
+        "fr": "Cultures maraîchères",
+        "it": "Ortaggi",
+        "en": "Vegetables"
+      },
+      "comment": {
+        "de": "Gemüsekulturen umfassen den Anbau von essbaren Pflanzenteilen wie Karotten, Salat und Tomaten.",
+        "fr": "Les cultures maraîchères comprennent la production de parties de plantes comestibles, comme les carottes, la laitue ou les tomates.",
+        "it": "Le colture orticole comprendono la produzione di parti vegetali commestibili, come carote, lattuga e pomodori.",
+        "en": "Vegetable farming includes growing edible plant parts such as carrots, lettuce, and tomatoes."
+      },
+      "emoji": "🥬"
+    },
+    "fruit": {
+      "label": {
+        "de": "Obstbau",
+        "fr": "Arboriculture fruitière",
+        "it": "Frutticoltura",
+        "en": "Fruit crops"
+      },
+      "comment": {
+        "de": "Obstbau konzentriert sich auf den Anbau von Früchten wie Äpfeln, Birnen oder Kirschen.",
+        "fr": "L'arboriculture fruitière se concentre sur la culture de fruits tels que les pommes, les poires ou les cerises.",
+        "it": "La frutticoltura si concentra sulla coltivazione di frutti come mele, pere o ciliegie.",
+        "en": "Fruit farming focuses on the cultivation of fruits such as apples, pears, or cherries."
+      },
+      "emoji": "🍎"
+    },
+    "berry": {
+      "label": {
+        "de": "Beerenkulturen",
+        "fr": "Cultures de baies",
+        "it": "Colture di bacche",
+        "en": "Berry crops"
+      },
+      "comment": {
+        "de": "Beerenkulturen umfassen den Anbau von kleinen, saftigen Früchten wie Erdbeeren, Himbeeren oder Johannisbeeren.",
+        "fr": "Les cultures de baies comprennent la production de petits fruits juteux comme les fraises, les framboises ou les groseilles.",
+        "it": "Le colture di bacche comprendono la produzione di piccoli frutti succosi come fragole, lamponi o ribes.",
+        "en": "Berry farming involves growing small, juicy fruits such as strawberries, raspberries, or currants."
+      },
+      "emoji": "🫐"
+    },
+    "viticulture": {
+      "label": {
+        "de": "Weinbau",
+        "fr": "Viticulture",
+        "it": "Viticoltura",
+        "en": "Viticulture"
+      },
+      "comment": {
+        "de": "Weinbau beschäftigt sich mit dem Anbau von Weinreben zur Herstellung von Trauben und Wein.",
+        "fr": "La viticulture concerne la culture de la vigne pour la production de raisins et de vin.",
+        "it": "La viticoltura riguarda la coltivazione della vite per la produzione di uva e vino.",
+        "en": "Viticulture deals with the cultivation of grapevines for grapes and wine."
+      },
+      "emoji": "🍇"
+    },
+    "ornamental": {
+      "label": {
+        "de": "Zierpflanzenbau",
+        "fr": "Horticulture ornementale",
+        "it": "Piante ornamentali",
+        "en": "Ornamental plants"
+      },
+      "comment": {
+        "de": "Zierpflanzenbau beinhaltet die Produktion von Pflanzen für dekorative Zwecke, wie Blumen oder Ziersträucher.",
+        "fr": "L'horticulture ornementale comprend la production de plantes à des fins décoratives, comme les fleurs ou les arbustes d'ornement.",
+        "it": "Le piante ornamentali includono la produzione di piante a scopo decorativo, come i fiori o gli arbusti ornamentali.",
+        "en": "Ornamental horticulture involves the production of plants for decorative purposes, such as flowers or ornamental shrubs."
+      },
+      "emoji": "🌺"
+    },
+    "forestry": {
+      "label": {
+        "de": "Forstwirtschaft",
+        "fr": "Sylviculture",
+        "it": "Silvicoltura",
+        "en": "Forestry"
+      },
+      "comment": {
+        "de": "Forstwirtschaft umfasst die Bewirtschaftung von Wäldern zur Holzgewinnung und zum Schutz des Ökosystems.",
+        "fr": "La sylviculture consiste en la gestion des forêts pour la production de bois et la protection de l'écosystème.",
+        "it": "La silvicoltura comprende la gestione dei boschi per la produzione di legname e la protezione dell'ecosistema.",
+        "en": "Forestry involves managing forests for timber production and ecosystem conservation."
+      },
+      "emoji": "🌲"
+    },
+    "noncrop": {
+      "label": {
+        "de": "Nicht-landwirtschaftliche Nutzungen",
+        "fr": "Usages non agricoles",
+        "it": "Usi non agricoli",
+        "en": "Non-crop uses"
+      },
+      "comment": {
+        "de": "Nicht-landwirtschaftliche Nutzungen umfassen Flächen für Infrastruktur, Brachland oder andere Zwecke, die keine Nahrungsmittelproduktion betreffen.",
+        "fr": "Les usages non agricoles concernent les terrains destinés aux infrastructures, aux friches ou à d'autres usages hors production alimentaire.",
+        "it": "Gli usi non agricoli comprendono terreni destinati a infrastrutture, incolti o altri scopi non legati alla produzione di alimenti.",
+        "en": "Non-crop uses include land used for infrastructure, fallow areas, or other purposes unrelated to food production."
+      },
+      "emoji": "🏭"
+    },
+    "varia": {
+      "label": {
+        "de": "Verschiedenes",
+        "fr": "Divers",
+        "it": "Varie",
+        "en": "Miscellaneous"
+      },
+      "comment": {
+        "de": "Verschiedenes umfasst andere Arten von Kulturen oder Nutzungen, die nicht in die oben genannten Kategorien passen.",
+        "fr": "Divers englobe d'autres types de cultures ou d'usages ne relevant pas des catégories susmentionnées.",
+        "it": "Varie comprende altri tipi di colture o usi non rientranti nelle categorie precedenti.",
+        "en": "Miscellaneous includes other crop types or uses that do not fit the above categories."
+      },
+      "emoji": "🌱"
+    }
+}

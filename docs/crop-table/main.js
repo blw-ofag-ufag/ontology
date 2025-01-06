@@ -29,10 +29,12 @@ function applyTranslations(lang) {
     document.getElementById('searchInput').placeholder = t.search;
 
     const headers = t.columns;
-    document.getElementById('col1').textContent = headers[0];
-    document.getElementById('col2').textContent = headers[1];
-    document.getElementById('col3').textContent = headers[2];
-    document.getElementById('col4').textContent = headers[3];
+    const thElements = document.querySelectorAll('#cropsTable thead th');
+
+    thElements[0].textContent = headers[0];  // ID
+    thElements[1].textContent = headers[1];  // Name
+    thElements[2].textContent = headers[2];  // Comments
+    thElements[3].textContent = headers[3];  // Type
 }
 
 // Fetch and Populate Table
