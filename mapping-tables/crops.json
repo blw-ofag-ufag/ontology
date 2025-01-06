@@ -96,7 +96,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": false,
-    "type": null,
+    "type": "forestry",
     "srppp-parent-id": [10566]
   },
   {
@@ -116,7 +116,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": false,
-    "type": null,
+    "type": "garden",
     "srppp-parent-id": [10564]
   },
   {
@@ -162,61 +162,61 @@
   {
     "srppp-id": 14787,
     "label": {
-        "de": ["Schwarze Maulbeere"],
-        "fr": ["Mûrier noir"],
-        "it": ["Moro nero"],
-        "en": [null],
-        "la": [null]
+      "de": ["Schwarze Maulbeere"],
+      "fr": ["Mûrier noir"],
+      "it": ["Moro nero"],
+      "en": ["Black Mulberry"],
+      "la": ["Morus nigra"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Schwarze Maulbeere ist ein sommergrüner Baum, der für seine süssen, essbaren Früchte bekannt ist.",
+      "fr": "Le mûrier noir est un arbre à feuilles caduques, réputé pour ses fruits sucrés et comestibles.",
+      "it": "Il moro nero è un albero deciduo noto per i suoi frutti dolci e commestibili.",
+      "en": "The black mulberry is a deciduous tree known for its sweet, edible fruits."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
-    "type": null,
+    "polyphyletic": false,
+    "type": "berry",
     "srppp-parent-id": [null]
-  },
+  },  
   {
     "srppp-id": 14801,
     "label": {
-        "de": ["Gemeine Felsenbirne"],
-        "fr": ["Amélavier commun"],
-        "it": ["Pero corvino"],
-        "en": [null],
-        "la": [null]
+      "de": ["Gemeine Felsenbirne"],
+      "fr": ["Amélanchier commun"],
+      "it": ["Pero corvino"],
+      "en": ["Common Serviceberry"],
+      "la": ["Amelanchier ovalis"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Gemeine Felsenbirne ist ein sommergrüner Strauch, der für seine essbaren, süssen Früchte und seine attraktive Herbstfärbung bekannt ist.",
+      "fr": "L'amélanchier commun est un arbuste caduc réputé pour ses fruits comestibles et sucrés, ainsi que pour sa coloration automnale attrayante.",
+      "it": "Il pero corvino è un arbusto deciduo noto per i suoi frutti commestibili e dolci e per il suo attraente colore autunnale.",
+      "en": "The common serviceberry is a deciduous shrub known for its sweet, edible fruits and attractive autumn foliage."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
-    "type": null,
+    "polyphyletic": false,
+    "type": "forestry",
     "srppp-parent-id": [null]
-  },
+  },  
   {
     "srppp-id": 15866,
     "label": {
-        "de": ["Windengewächse (Convolvulaceae)"],
-        "fr": ["Convolvulacées (Convolvulaceae)"],
+        "de": ["Windengewächse"],
+        "fr": ["Convolvulacées"],
         "it": ["Convolvulaceae"],
-        "en": ["Convolvulaceae"],
-        "la": [null]
+        "en": ["Convolvulaceae", "Morning Glory Family"],
+        "la": ["Convolvulaceae"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+        "de": "Die Windengewächse sind eine Pflanzenfamilie mit vielen Arten, darunter Zier- und Nutzpflanzen wie Süsskartoffeln.",
+        "fr": "Les Convolvulacées sont une famille de plantes comprenant de nombreuses espèces, y compris des plantes ornementales et alimentaires comme la patate douce.",
+        "it": "Le Convolvulaceae sono una famiglia di piante con molte specie, tra cui piante ornamentali e alimentari come la patata dolce.",
+        "en": "The Convolvulaceae are a family of plants with many species, including ornamental and food plants such as sweet potatoes."
     },
-    "wikidata-iri": [null],
-    "polyphyletic": null,
-    "type": null,
+    "wikidata-iri": ["http://www.wikidata.org/entity/Q139026"],
+    "polyphyletic": false,
+    "type": "family",
     "srppp-parent-id": [null]
   },
   {
@@ -242,21 +242,21 @@
   {
     "srppp-id": 11984,
     "label": {
-        "de": ["Anemone"],
-        "fr": ["Anémone"],
-        "it": ["Anemone"],
-        "en": [null],
-        "la": [null]
+      "de": ["Anemone", "Windröschen"],
+      "fr": ["Anémone", "Fleur du vent"],
+      "it": ["Anemone", "Fiore del vento"],
+      "en": ["Anemone", "Windflower"],
+      "la": ["Anemone"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Anemone ist eine Gattung von Blütenpflanzen in der Familie der Hahnenfussgewächse (Ranunculaceae), bekannt als Windröschen.",
+      "fr": "L'anémone est un genre de plantes à fleurs de la famille des Renonculacées (Ranunculaceae), connue sous le nom de fleur du vent.",
+      "it": "L'anemone è un genere di piante da fiore della famiglia delle Ranunculaceae, noto come fiore del vento.",
+      "en": "Anemone is a genus of flowering plants in the buttercup family (Ranunculaceae), commonly known as windflowers."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
-    "type": null,
+    "polyphyletic": true,
+    "type": "genus",
     "srppp-parent-id": [null]
   },
   {
@@ -316,7 +316,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "medical",
     "srppp-parent-id": [10093]
   },
   {
@@ -336,7 +336,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [10325]
   },
   {
@@ -376,7 +376,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [9944]
   },
   {
@@ -396,7 +396,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [10304]
   },
   {
@@ -416,7 +416,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [10027]
   },
   {
@@ -456,7 +456,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [10027]
   },
   {
@@ -496,27 +496,27 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [10306]
   },
   {
     "srppp-id": 10328,
     "label": {
-        "de": ["Krautstiel"],
-        "fr": ["Bette à côte"],
-        "it": ["Costa"],
-        "en": ["Swiss chard "],
-        "la": [null]
+      "de": ["Krautstiel", "Mangold", "Stielmangold"],
+      "fr": ["Bette à côte", "Bette", "Poirée"],
+      "it": ["Costa", "Bietola da costa", "Bietola"],
+      "en": ["Swiss chard", "Silver beet", "Chard"],
+      "la": ["Beta vulgaris subsp. vulgaris, Flavescens Group"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Krautstiel, auch bekannt als Mangold, ist ein Blattgemüse aus der Familie der Amaranthaceae, geschätzt für seine nährstoffreichen Blätter und farbenfrohen Stiele.",
+      "fr": "La bette à côte, également appelée bette ou poirée, est un légume-feuille de la famille des Amaranthacées, apprécié pour ses feuilles nutritives et ses tiges colorées.",
+      "it": "La costa, conosciuta anche come bietola da costa, è un ortaggio a foglia della famiglia delle Amaranthaceae, apprezzato per le sue foglie nutrienti e i gambi colorati.",
+      "en": "Swiss chard, also known as silver beet, is a leafy green vegetable in the amaranth family (Amaranthaceae), valued for its nutritious leaves and colorful stalks."
     },
     "wikidata-iri": [null],
-    "polyphyletic": null,
-    "type": null,
+    "polyphyletic": false,
+    "type": "vegetable",
     "srppp-parent-id": [10306]
   },
   {
@@ -5736,7 +5736,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [10251]
   },
   {
