@@ -1,6 +1,6 @@
 @prefix : <https://agriculture.ld.admin.ch/foag/plant-protection#> .
 @prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
-@prefix dc1: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -18,10 +18,10 @@ wdt:P171 a owl:ObjectProperty ;
     rdfs:range wd:Q16521 .
 
 : a owl:Ontology ;
-    dc1:creator "Damian Oswald" ;
-    dc1:description "Diese Ontologie veranschaulicht den Wert einer umfassenden und gut strukturierten Ontologieentwicklung für das Bundesamt für Landwirtschaft (und allgemein den Schweizer Agrar- und Lebensmittelsektor). Durch die formale Modellierung der Komplexität des Pflanzenschutzes (mit Schwerpunkt auf zugelassenen Produkten) verbessert sie das Verständnis der aktuellen Regeln und ermöglicht deren effektive Kommunikation über IT-Dienste."@de,
+    dcterms:creator "Damian Oswald" ;
+    dcterms:description "Diese Ontologie veranschaulicht den Wert einer umfassenden und gut strukturierten Ontologieentwicklung für das Bundesamt für Landwirtschaft (und allgemein den Schweizer Agrar- und Lebensmittelsektor). Durch die formale Modellierung der Komplexität des Pflanzenschutzes (mit Schwerpunkt auf zugelassenen Produkten) verbessert sie das Verständnis der aktuellen Regeln und ermöglicht deren effektive Kommunikation über IT-Dienste."@de,
         "This ontology exemplifies the value of comprehensive and well-structured ontology development for the Swiss Federal Office for Agriculture (and more broadly the Swiss agri-food sector). By capturing the complexities of crop protection (with a focus on registered products) in a formal model, it enhances understanding of current rules and allows their effective communication via IT-services."@en ;
-    dc1:title "Eine (demonstrative) Ontologie für den Pflanzenschutz in der Schweiz"@de,
+    dcterms:title "Eine (demonstrative) Ontologie für den Pflanzenschutz in der Schweiz"@de,
         "A (demonstrative) ontology for crop protection in Switzerland"@en ;
     owl:versionInfo "0.10" .
 
@@ -39,6 +39,18 @@ wdt:P171 a owl:ObjectProperty ;
     rdfs:label "Akarizid"@de,
         "Acaricide"@en ;
     rdfs:subClassOf :ChemicalCropProtectionProduct .
+
+:ActiveSubstance rdfs:label "Aktivsubstanz"@de,
+        "Active substance"@en ;
+    rdfs:comment "Active substances are biologically active compounds which, in low concentrations, influence biochemical and physiological processes in plant, animal and human organisms quantitatively and/or qualitatively in the form of inhibition or activation."@en ;
+    rdfs:isDefinedBy <https://www.scienceindustries.ch/_file/27381/201903-begriffsklaerung-final-en.pdf> ;
+    rdfs:subClassOf :Substance ;
+    skos:altLabel "Active ingredient",
+        "Wirkstoff"@de .
+
+:AdditiveToDeclare rdfs:label "Zu deklarierende Additive"@de,
+        "Additives to declare"@en ;
+    rdfs:subClassOf :Substance .
 
 :AdhesionAgents a owl:Class ;
     rdfs:label "Netz- und Haftmittel"@de,
@@ -97,7 +109,7 @@ wdt:P171 a owl:ObjectProperty ;
 :BestPracticeRecommendations a owl:Class ;
     rdfs:label "Empfehlung"@de,
         "Recommendation"@en ;
-    rdfs:subClassOf :Notice .
+    rdfs:subClassOf :ActionNotice .
 
 :CodeR a owl:Class ;
     rdfs:label "R Code"@de,
@@ -151,7 +163,7 @@ wdt:P171 a owl:ObjectProperty ;
         "Obligation"@en ;
     rdfs:comment "Auflage gemäss dem Schweizer Pflanzenschutzmittelregister."@de,
         "Obligation according to the Swiss plant protection product registry."@en ;
-    rdfs:subClassOf :Notice .
+    rdfs:subClassOf :ActionNotice .
 
 :Pheromone a owl:Class ;
     rdfs:label "Pheromon"@de,
@@ -172,10 +184,7 @@ wdt:P171 a owl:ObjectProperty ;
 
 :Safener rdfs:label "Safener"@de,
         "Safener"@en ;
-    rdfs:subClassOf :Substance ;
-    owl:disjointWith :ActiveSubstance,
-        :AdditiveToDeclare,
-        :Synergist .
+    rdfs:subClassOf :Substance .
 
 :SeedDressing a owl:Class ;
     rdfs:label "Saatbeizmittel"@de,
@@ -191,6 +200,10 @@ wdt:P171 a owl:ObjectProperty ;
     rdfs:label "Vorratsschutzmittel"@de,
         "Storage protectors"@en ;
     rdfs:subClassOf :ChemicalProduct .
+
+:Synergist rdfs:label "Synergist"@de,
+        "Synergist"@en ;
+    rdfs:subClassOf :Substance .
 
 :Viricide a owl:Class ;
     rdfs:label "Virizid"@de,
@@ -271,13 +284,6 @@ wdt:P171 a owl:ObjectProperty ;
     rdfs:domain :HazardStatement ;
     rdfs:range xsd:string .
 
-:hasNotice a owl:ObjectProperty ;
-    rdfs:label "hat Hinweis"@de,
-        "has notice"@en ;
-    rdfs:domain :Action ;
-    rdfs:range :Notice ;
-    owl:inverseOf :concerns .
-
 :hasPermissionHolder a owl:ObjectProperty ;
     rdfs:label "hat Verkaufsbewilligungshalter"@de,
         "has permission holder"@en ;
@@ -333,6 +339,13 @@ wdt:P171 a owl:ObjectProperty ;
     rdfs:domain :ChemicalProduct ;
     rdfs:range :Substance ;
     owl:inverseOf :chemicallyDefines .
+
+:isConcernedBy a owl:ObjectProperty ;
+    rdfs:label "ist betroffen von"@de,
+        "is concerned by"@en ;
+    rdfs:domain :Action ;
+    rdfs:range :ActionNotice ;
+    owl:inverseOf :concerns .
 
 :isContainedIn a owl:ObjectProperty ;
     rdfs:label "ist beinhaltet in"@de,
@@ -430,15 +443,15 @@ wdt:P171 a owl:ObjectProperty ;
 
 :minimumBBCH a owl:DatatypeProperty ;
     rdfs:label "Minimales BBCH-Stadium"@de,
-        "Minimal BBCH stadium"@en ;
+        "Minimal BBCH stage"@en ;
+    rdfs:comment "Das minimale BBCH-Stadium der Zielkultur bei der Anwendung des Produktes."@de,
+        "The minimal BBCH stage of the target culture when applying the product."@en ;
     rdfs:domain :BBCH ;
     rdfs:range xsd:float .
 
 :minimumRate a owl:DatatypeProperty ;
     rdfs:label "Minimale Anwendungsrate"@de,
         "Minimal application rate"@en ;
-    rdfs:comment "Gibt an, wie viel von diesem Produkt in einer Saison minimal verwendet werden darf."@de,
-        "Indicates how much of a given product may be minimally applied per season."@en ;
     rdfs:domain :TreatmentRate ;
     rdfs:range xsd:float .
 
@@ -454,13 +467,6 @@ wdt:P171 a owl:ObjectProperty ;
     rdfs:domain :WaitingPeriod ;
     rdfs:range xsd:float .
 
-:restrictsTreatment a owl:ObjectProperty ;
-    rdfs:label "Schränkt Anwendung ein"@de,
-        "Restricts treatment"@en ;
-    rdfs:domain :TreatmentConstraint ;
-    rdfs:range :Treatment ;
-    owl:inverseOf :hasTreatmentConstraint .
-
 schema:address a owl:ObjectProperty ;
     rdfs:label "hat Adresse"@de,
         "has address"@en ;
@@ -475,7 +481,9 @@ schema:addressCountry a owl:ObjectProperty ;
 
 schema:addressLocality a owl:DatatypeProperty ;
     rdfs:label "hat Ortschaft"@de,
-        "has postal locality"@en .
+        "has postal locality"@en ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:string .
 
 schema:email a owl:DatatypeProperty ;
     rdfs:label "hat Email-Adresse"@de,
@@ -545,11 +553,10 @@ chebi:24431 a owl:Class ;
     rdfs:seeAlso <https://www.fedlex.admin.ch/eli/cc/2010/340/de#art_36> ;
     rdfs:subClassOf :Product .
 
-:Synergist rdfs:label "Synergist"@de,
-        "Synergist"@en ;
-    rdfs:subClassOf :Substance ;
-    owl:disjointWith :ActiveSubstance,
-        :AdditiveToDeclare .
+:Treatment a owl:Class ;
+    rdfs:label "Behandlung"@de,
+        "Treatment"@en ;
+    rdfs:subClassOf :Action .
 
 :WaitingPeriod a owl:Class ;
     rdfs:label "Wartefrist"@de,
@@ -577,7 +584,7 @@ chebi:24431 a owl:Class ;
 :concerns a owl:ObjectProperty ;
     rdfs:label "betrifft"@de,
         "concerns"@en ;
-    rdfs:domain :Notice ;
+    rdfs:domain :ActionNotice ;
     rdfs:range :Action .
 
 :contains a owl:ObjectProperty ;
@@ -638,12 +645,6 @@ chebi:24431 a owl:Class ;
     rdfs:domain :CropGroup ;
     rdfs:range :CropGroup .
 
-:hasTreatmentConstraint a owl:ObjectProperty ;
-    rdfs:label "hat Anwendungseinschränkung"@de,
-        "has treatment constraint"@en ;
-    rdfs:domain :Treatment ;
-    rdfs:range :TreatmentConstraint .
-
 :holdsPermissionToSell a owl:ObjectProperty ;
     rdfs:label "hat Bewilligung zum Verkauf von"@de,
         "holds Permission to sell"@en ;
@@ -688,16 +689,11 @@ chebi:24431 a owl:Class ;
     rdfs:domain :Action ;
     rdfs:range :CropGroup .
 
-:AdditiveToDeclare rdfs:label "Zu deklarierende Additive"@de,
-        "Additives to declare"@en ;
-    rdfs:subClassOf :Substance ;
-    owl:disjointWith :ActiveSubstance .
-
 :BBCH a owl:Class ;
-    rdfs:label "Spritzfenster bezüglich BBCH-Stadium"@de,
-        "Application window regarding BBCH stadium"@en ;
-    rdfs:comment "Spritzfenster für Behandlungen basierend auf der BBCH-Skala, die die phänologischen Entwicklungsstadien von Pflanzen standardisiert."@de,
-        "Application window for treatments based on the BBCH scale, which standardizes the phenological development stages of plants."@en ;
+    rdfs:label "Anwendungszeitpunkt"@de,
+        "Application time"@en ;
+    rdfs:comment "Anwendungszeitpunkt für Behandlungen basierend auf der BBCH-Skala, die die phänologischen Entwicklungsstadien von Pflanzen standardisiert."@de,
+        "Application time for treatments based on the BBCH scale, which standardizes the phenological development stages of plants."@en ;
     rdfs:seeAlso <https://w.wiki/CdkJ> ;
     rdfs:subClassOf :TreatmentConstraint .
 
@@ -709,6 +705,10 @@ chebi:24431 a owl:Class ;
     rdfs:isDefinedBy wd:Q3500367 ;
     rdfs:seeAlso <https://w.wiki/Byym> ;
     rdfs:subClassOf :CropStressor .
+
+:GeneralNotice a owl:Class ;
+    rdfs:label "Allgemeiner Hinweis"@de,
+        "General Notice"@en .
 
 :Insecticide a owl:Class ;
     rdfs:label "Insektizid"@de,
@@ -746,14 +746,6 @@ schema:Country a owl:Class ;
     rdfs:label "Land"@de,
         "Country"@en .
 
-:ActiveSubstance rdfs:label "Aktivsubstanz"@de,
-        "Active substance"@en ;
-    rdfs:comment "Active substances are biologically active compounds which, in low concentrations, influence biochemical and physiological processes in plant, animal and human organisms quantitatively and/or qualitatively in the form of inhibition or activation."@en ;
-    rdfs:isDefinedBy <https://www.scienceindustries.ch/_file/27381/201903-begriffsklaerung-final-en.pdf> ;
-    rdfs:subClassOf :Substance ;
-    skos:altLabel "Active ingredient",
-        "Wirkstoff"@de .
-
 :ComponentPortion a owl:Class ;
     rdfs:label "Komponentenportion"@de,
         "Component portion"@en ;
@@ -762,11 +754,6 @@ schema:Country a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty :hasComponentSubstance ] .
-
-:Treatment a owl:Class ;
-    rdfs:label "Behandlung"@de,
-        "Treatment"@en ;
-    rdfs:subClassOf :Action .
 
 :interactsWith a owl:ObjectProperty ;
     rdfs:label "interagiert mit"@de,
@@ -779,26 +766,28 @@ schema:Country a owl:Class ;
         "is defined by biological taxon"@en ;
     rdfs:range wd:Q16521 .
 
+:ActionNotice a owl:Class ;
+    rdfs:label "Hinweis bezüglich einer Schutzmassnahme"@de,
+        "Notice regarding a protective action"@en ;
+    rdfs:subClassOf :GeneralNotice .
+
 :HazardStatement a owl:Class ;
     rdfs:label "Sicherheitshinweise für Gefahrstoffe"@de,
         "Hazard statements"@en ;
     rdfs:comment "H-Sätze (Gefahrenhinweise) und die ergänzenden EUH-Sätze sind standardisierte Beschreibungen der spezifischen Gefahren, die von chemischen Stoffen oder Gemischen ausgehen, wie z. B. Toxizität, Entflammbarkeit oder Umweltschädlichkeit. Sie sind Teil des Global Harmonisierten Systems (GHS) und gewährleisten eine klare, einheitliche Kommunikation chemischer Gefahren weltweit."@de,
         "H-statements (Hazard Statements) and the complementary EUH-statements are standardized descriptions of the specific dangers posed by chemical substances or mixtures, such as toxicity, flammability, or environmental harm. They are part of the Globally Harmonized System (GHS) and ensure clear, consistent communication of chemical hazards worldwide."@en ;
     rdfs:seeAlso <https://w.wiki/CVwr> ;
-    rdfs:subClassOf :Notice .
+    rdfs:subClassOf :GeneralNotice .
 
-schema:PostalAddress a owl:Class ;
-    rdfs:label "Postadresse"@de,
-        "Postal address"@en .
+:TreatmentConstraint a owl:Class ;
+    rdfs:label "Anwendungseinschränkung"@de,
+        "Treatment constraint"@en ;
+    rdfs:subClassOf :ActionNotice .
 
 :CropProtectionProduct a owl:Class ;
     rdfs:label "Pflanzenschutzmittel"@de,
         "Crop protection product"@en ;
     rdfs:subClassOf :Product .
-
-:Notice a owl:Class ;
-    rdfs:label "Hinweis"@de,
-        "Notice"@en .
 
 :PureSubstance a owl:Class ;
     rdfs:label "Reine Substanz"@de,
@@ -807,6 +796,10 @@ schema:PostalAddress a owl:Class ;
         "A pure chemical substance is associated with exactly one CheBI chemical entity and cannot be a mixture. Pure substances and chemical mixtures are disjoint classes."@en ;
     rdfs:subClassOf :Substance ;
     owl:disjointWith :Mixture .
+
+schema:PostalAddress a owl:Class ;
+    rdfs:label "Postadresse"@de,
+        "Postal address"@en .
 
 wd:Q16521 a owl:Class ;
     rdfs:label "Biologisches Taxon"@de,
@@ -819,11 +812,6 @@ wd:Q16521 a owl:Class ;
         "Protective action"@en ;
     rdfs:comment "A specific action taken to mitigate damage done to crops."@en ;
     skos:scopeNote "Only use this class when the action is specifically *not* a treatment; i.e. the application of crop protection proucts on crops."@en .
-
-:TreatmentConstraint a owl:Class ;
-    rdfs:label "Anwendungseinschränkung"@de,
-        "Treatment constraint"@en ;
-    rdfs:subClassOf :Notice .
 
 schema:Organization a owl:Class ;
     rdfs:label "Organisation"@de,

@@ -17226,6 +17226,18 @@ ns1:6-15868 a ns1:BioticStressor,
         ns1:CropStressor ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q600498> .
 
+ns1:ActiveSubstance rdfs:label "Aktivsubstanz"@de,
+        "Active substance"@en ;
+    rdfs:comment "Active substances are biologically active compounds which, in low concentrations, influence biochemical and physiological processes in plant, animal and human organisms quantitatively and/or qualitatively in the form of inhibition or activation."@en ;
+    rdfs:isDefinedBy <https://www.scienceindustries.ch/_file/27381/201903-begriffsklaerung-final-en.pdf> ;
+    rdfs:subClassOf ns1:Substance ;
+    skos:altLabel "Active ingredient",
+        "Wirkstoff"@de .
+
+ns1:AdditiveToDeclare rdfs:label "Zu deklarierende Additive"@de,
+        "Additives to declare"@en ;
+    rdfs:subClassOf ns1:Substance .
+
 ns1:BCAisDefinedByBiologicalTaxon a owl:ObjectProperty ;
     rdfs:label "ist definiert durch das biologische Taxon"@de,
         "is defined by biological taxon"@en ;
@@ -17238,7 +17250,7 @@ ns1:BCAisDefinedByBiologicalTaxon a owl:ObjectProperty ;
 ns1:BestPracticeRecommendations a owl:Class ;
     rdfs:label "Empfehlung"@de,
         "Recommendation"@en ;
-    rdfs:subClassOf ns1:Notice .
+    rdfs:subClassOf ns1:ActionNotice .
 
 ns1:NonTargetOrganismIsDefinedByBiologicalTaxon a owl:ObjectProperty ;
     rdfs:label "ist definiert durch das biologische Taxon"@de,
@@ -17252,7 +17264,7 @@ ns1:Obligation a owl:Class ;
         "Obligation"@en ;
     rdfs:comment "Auflage gemäss dem Schweizer Pflanzenschutzmittelregister."@de,
         "Obligation according to the Swiss plant protection product registry."@en ;
-    rdfs:subClassOf ns1:Notice .
+    rdfs:subClassOf ns1:ActionNotice .
 
 ns1:Phytoregulator a owl:Class ;
     rdfs:label "Phytoregulator"@de,
@@ -17261,10 +17273,11 @@ ns1:Phytoregulator a owl:Class ;
 
 ns1:Safener rdfs:label "Safener"@de,
         "Safener"@en ;
-    rdfs:subClassOf ns1:Substance ;
-    owl:disjointWith ns1:ActiveSubstance,
-        ns1:AdditiveToDeclare,
-        ns1:Synergist .
+    rdfs:subClassOf ns1:Substance .
+
+ns1:Synergist rdfs:label "Synergist"@de,
+        "Synergist"@en ;
+    rdfs:subClassOf ns1:Substance .
 
 ns1:appliesToProduct a owl:ObjectProperty ;
     rdfs:label "bezieht sich auf das Produkt"@de,
@@ -17340,13 +17353,6 @@ ns1:hasHazardStatementCode a owl:DatatypeProperty ;
     rdfs:domain ns1:HazardStatement ;
     rdfs:range xsd:string .
 
-ns1:hasNotice a owl:ObjectProperty ;
-    rdfs:label "hat Hinweis"@de,
-        "has notice"@en ;
-    rdfs:domain ns1:Action ;
-    rdfs:range ns1:Notice ;
-    owl:inverseOf ns1:concerns .
-
 ns1:hasPermissionHolder a owl:ObjectProperty ;
     rdfs:label "hat Verkaufsbewilligungshalter"@de,
         "has permission holder"@en ;
@@ -17402,6 +17408,13 @@ ns1:isChemicallyDefinedBy a owl:ObjectProperty ;
     rdfs:domain ns1:ChemicalProduct ;
     rdfs:range ns1:Substance ;
     owl:inverseOf ns1:chemicallyDefines .
+
+ns1:isConcernedBy a owl:ObjectProperty ;
+    rdfs:label "ist betroffen von"@de,
+        "is concerned by"@en ;
+    rdfs:domain ns1:Action ;
+    rdfs:range ns1:ActionNotice ;
+    owl:inverseOf ns1:concerns .
 
 ns1:isContainedIn a owl:ObjectProperty ;
     rdfs:label "ist beinhaltet in"@de,
@@ -17499,15 +17512,15 @@ ns1:maximumTreatmentDosage a owl:DatatypeProperty ;
 
 ns1:minimumBBCH a owl:DatatypeProperty ;
     rdfs:label "Minimales BBCH-Stadium"@de,
-        "Minimal BBCH stadium"@en ;
+        "Minimal BBCH stage"@en ;
+    rdfs:comment "Das minimale BBCH-Stadium der Zielkultur bei der Anwendung des Produktes."@de,
+        "The minimal BBCH stage of the target culture when applying the product."@en ;
     rdfs:domain ns1:BBCH ;
     rdfs:range xsd:float .
 
 ns1:minimumRate a owl:DatatypeProperty ;
     rdfs:label "Minimale Anwendungsrate"@de,
         "Minimal application rate"@en ;
-    rdfs:comment "Gibt an, wie viel von diesem Produkt in einer Saison minimal verwendet werden darf."@de,
-        "Indicates how much of a given product may be minimally applied per season."@en ;
     rdfs:domain ns1:TreatmentRate ;
     rdfs:range xsd:float .
 
@@ -17523,13 +17536,6 @@ ns1:minimumWaitingPeriod a owl:DatatypeProperty ;
     rdfs:domain ns1:WaitingPeriod ;
     rdfs:range xsd:float .
 
-ns1:restrictsTreatment a owl:ObjectProperty ;
-    rdfs:label "Schränkt Anwendung ein"@de,
-        "Restricts treatment"@en ;
-    rdfs:domain ns1:TreatmentConstraint ;
-    rdfs:range ns1:Treatment ;
-    owl:inverseOf ns1:hasTreatmentConstraint .
-
 schema:address a owl:ObjectProperty ;
     rdfs:label "hat Adresse"@de,
         "has address"@en ;
@@ -17544,7 +17550,9 @@ schema:addressCountry a owl:ObjectProperty ;
 
 schema:addressLocality a owl:DatatypeProperty ;
     rdfs:label "hat Ortschaft"@de,
-        "has postal locality"@en .
+        "has postal locality"@en ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range xsd:string .
 
 schema:email a owl:DatatypeProperty ;
     rdfs:label "hat Email-Adresse"@de,
@@ -19840,11 +19848,10 @@ ns1:EnvironmentalCondition a owl:Class ;
     rdfs:label "Umweltbedingung"@de,
         "Environmental condition"@en .
 
-ns1:Synergist rdfs:label "Synergist"@de,
-        "Synergist"@en ;
-    rdfs:subClassOf ns1:Substance ;
-    owl:disjointWith ns1:ActiveSubstance,
-        ns1:AdditiveToDeclare .
+ns1:Treatment a owl:Class ;
+    rdfs:label "Behandlung"@de,
+        "Treatment"@en ;
+    rdfs:subClassOf ns1:Action .
 
 ns1:Viricide a owl:Class ;
     rdfs:label "Virizid"@de,
@@ -19877,7 +19884,7 @@ ns1:chemicallyDefines a owl:ObjectProperty ;
 ns1:concerns a owl:ObjectProperty ;
     rdfs:label "betrifft"@de,
         "concerns"@en ;
-    rdfs:domain ns1:Notice ;
+    rdfs:domain ns1:ActionNotice ;
     rdfs:range ns1:Action .
 
 ns1:contains a owl:ObjectProperty ;
@@ -19937,12 +19944,6 @@ ns1:hasParentCropGroup a owl:ObjectProperty ;
         "has parent crop group"@en ;
     rdfs:domain ns1:CropGroup ;
     rdfs:range ns1:CropGroup .
-
-ns1:hasTreatmentConstraint a owl:ObjectProperty ;
-    rdfs:label "hat Anwendungseinschränkung"@de,
-        "has treatment constraint"@en ;
-    rdfs:domain ns1:Treatment ;
-    rdfs:range ns1:TreatmentConstraint .
 
 ns1:holdsPermissionToSell a owl:ObjectProperty ;
     rdfs:label "hat Bewilligung zum Verkauf von"@de,
@@ -21882,16 +21883,11 @@ ns1:5-9960 a ns1:CropGroup ;
     ns1:hasChildCropGroup ns1:5-9998 ;
     ns1:hasParentCropGroup ns1:5-10195 .
 
-ns1:AdditiveToDeclare rdfs:label "Zu deklarierende Additive"@de,
-        "Additives to declare"@en ;
-    rdfs:subClassOf ns1:Substance ;
-    owl:disjointWith ns1:ActiveSubstance .
-
 ns1:BBCH a owl:Class ;
-    rdfs:label "Spritzfenster bezüglich BBCH-Stadium"@de,
-        "Application window regarding BBCH stadium"@en ;
-    rdfs:comment "Spritzfenster für Behandlungen basierend auf der BBCH-Skala, die die phänologischen Entwicklungsstadien von Pflanzen standardisiert."@de,
-        "Application window for treatments based on the BBCH scale, which standardizes the phenological development stages of plants."@en ;
+    rdfs:label "Anwendungszeitpunkt"@de,
+        "Application time"@en ;
+    rdfs:comment "Anwendungszeitpunkt für Behandlungen basierend auf der BBCH-Skala, die die phänologischen Entwicklungsstadien von Pflanzen standardisiert."@de,
+        "Application time for treatments based on the BBCH scale, which standardizes the phenological development stages of plants."@en ;
     rdfs:seeAlso <https://w.wiki/CdkJ> ;
     rdfs:subClassOf ns1:TreatmentConstraint .
 
@@ -21899,6 +21895,10 @@ ns1:BCABacteria a owl:Class ;
     rdfs:label "Bakterienprodukte"@de,
         "Bacterial products"@en ;
     rdfs:subClassOf ns1:BiologicalControlAgent .
+
+ns1:GeneralNotice a owl:Class ;
+    rdfs:label "Allgemeiner Hinweis"@de,
+        "General Notice"@en .
 
 ns1:Mixture a owl:Class ;
     rdfs:label "Chemisches Gemisch"@de,
@@ -22620,14 +22620,6 @@ ns1:AbioticStressor a owl:Class ;
     rdfs:subClassOf ns1:CropStressor ;
     owl:disjointWith ns1:BioticStressor .
 
-ns1:ActiveSubstance rdfs:label "Aktivsubstanz"@de,
-        "Active substance"@en ;
-    rdfs:comment "Active substances are biologically active compounds which, in low concentrations, influence biochemical and physiological processes in plant, animal and human organisms quantitatively and/or qualitatively in the form of inhibition or activation."@en ;
-    rdfs:isDefinedBy <https://www.scienceindustries.ch/_file/27381/201903-begriffsklaerung-final-en.pdf> ;
-    rdfs:subClassOf ns1:Substance ;
-    skos:altLabel "Active ingredient",
-        "Wirkstoff"@de .
-
 ns1:ComponentPortion a owl:Class ;
     rdfs:label "Komponentenportion"@de,
         "Component portion"@en ;
@@ -22636,11 +22628,6 @@ ns1:ComponentPortion a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty ns1:hasComponentSubstance ] .
-
-ns1:Treatment a owl:Class ;
-    rdfs:label "Behandlung"@de,
-        "Treatment"@en ;
-    rdfs:subClassOf ns1:Action .
 
 <https://register.ld.admin.ch/zefix/company/117076> ns1:holdsPermissionToSell ns1:1-W-1529,
         ns1:1-W-193,
@@ -24532,10 +24519,20 @@ ns1:5-9965 a ns1:CropGroup ;
         ns1:5-9992 ;
     ns1:hasParentCropGroup ns1:5-10192 .
 
+ns1:ActionNotice a owl:Class ;
+    rdfs:label "Hinweis bezüglich einer Schutzmassnahme"@de,
+        "Notice regarding a protective action"@en ;
+    rdfs:subClassOf ns1:GeneralNotice .
+
 ns1:Nematicide a owl:Class ;
     rdfs:label "Nematizid"@de,
         "Nematicide"@en ;
     rdfs:subClassOf ns1:ChemicalCropProtectionProduct .
+
+ns1:TreatmentConstraint a owl:Class ;
+    rdfs:label "Anwendungseinschränkung"@de,
+        "Treatment constraint"@en ;
+    rdfs:subClassOf ns1:ActionNotice .
 
 <https://register.ld.admin.ch/zefix/company/1211870> ns1:holdsPermissionToSell ns1:1-W-7066,
         ns1:1-W-7067,
@@ -26776,10 +26773,6 @@ ns1:5-9951 a ns1:CropGroup ;
         ns1:5-9981,
         ns1:5-9984 ;
     ns1:hasParentCropGroup ns1:5-10195 .
-
-ns1:Notice a owl:Class ;
-    rdfs:label "Hinweis"@de,
-        "Notice"@en .
 
 ns1:PureSubstance a owl:Class ;
     rdfs:label "Reine Substanz"@de,
@@ -29924,11 +29917,6 @@ ns1:Desinfectant a owl:Class ;
     rdfs:label "Desinfektionsmittel"@de,
         "Desinfectant"@en ;
     rdfs:subClassOf ns1:ChemicalProduct .
-
-ns1:TreatmentConstraint a owl:Class ;
-    rdfs:label "Anwendungseinschränkung"@de,
-        "Treatment constraint"@en ;
-    rdfs:subClassOf ns1:Notice .
 
 ns1:1-A-3116 a ns1:ChemicalCropProtectionProduct,
         ns1:ChemicalProduct,
@@ -63537,7 +63525,7 @@ ns1:HazardStatement a owl:Class ;
     rdfs:comment "H-Sätze (Gefahrenhinweise) und die ergänzenden EUH-Sätze sind standardisierte Beschreibungen der spezifischen Gefahren, die von chemischen Stoffen oder Gemischen ausgehen, wie z. B. Toxizität, Entflammbarkeit oder Umweltschädlichkeit. Sie sind Teil des Global Harmonisierten Systems (GHS) und gewährleisten eine klare, einheitliche Kommunikation chemischer Gefahren weltweit."@de,
         "H-statements (Hazard Statements) and the complementary EUH-statements are standardized descriptions of the specific dangers posed by chemical substances or mixtures, such as toxicity, flammability, or environmental harm. They are part of the Globally Harmonized System (GHS) and ensure clear, consistent communication of chemical hazards worldwide."@en ;
     rdfs:seeAlso <https://w.wiki/CVwr> ;
-    rdfs:subClassOf ns1:Notice .
+    rdfs:subClassOf ns1:GeneralNotice .
 
 ns1:BCAInsects a owl:Class ;
     rdfs:label "Insektenprodukte"@de,
