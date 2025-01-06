@@ -482,7 +482,7 @@
   {
     "srppp-id": 10329,
     "label": {
-        "de": ["Schnittmangold"],
+        "de": ["Schnittmangold", "Blattmangold"],
         "fr": ["Bette à tondre"],
         "it": ["Bietola da taglio"],
         "en": [null],
@@ -502,17 +502,17 @@
   {
     "srppp-id": 10328,
     "label": {
-      "de": ["Krautstiel", "Mangold", "Stielmangold"],
+      "de": ["Krautstiel", "Stielmangold"],
       "fr": ["Bette à côte", "Bette", "Poirée"],
       "it": ["Costa", "Bietola da costa", "Bietola"],
-      "en": ["Swiss chard", "Silver beet", "Chard"],
+      "en": ["Swiss chard", "Silver beet"],
       "la": ["Beta vulgaris subsp. vulgaris, Flavescens Group"]
     },
     "comment": {
-      "de": "Krautstiel, auch bekannt als Mangold, ist ein Blattgemüse aus der Familie der Amaranthaceae, geschätzt für seine nährstoffreichen Blätter und farbenfrohen Stiele.",
-      "fr": "La bette à côte, également appelée bette ou poirée, est un légume-feuille de la famille des Amaranthacées, apprécié pour ses feuilles nutritives et ses tiges colorées.",
-      "it": "La costa, conosciuta anche come bietola da costa, è un ortaggio a foglia della famiglia delle Amaranthaceae, apprezzato per le sue foglie nutrienti e i gambi colorati.",
-      "en": "Swiss chard, also known as silver beet, is a leafy green vegetable in the amaranth family (Amaranthaceae), valued for its nutritious leaves and colorful stalks."
+      "de": "Krautstiel, auch bekannt als Stielmangold, ist ein Blattgemüse aus der Familie der Amaranthaceae und ein Typ von Mangold (neben Schnittmangold). Die Pflanze hat grosse, dicke, grüne Blätter. Die Stiele selbst gibt es je nach Sorte in diversen Farben.",
+      "fr": null,
+      "it": null,
+      "en": null
     },
     "wikidata-iri": [null],
     "polyphyletic": false,
@@ -656,7 +656,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [10068]
   },
   {
