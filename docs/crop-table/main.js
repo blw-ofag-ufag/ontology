@@ -190,14 +190,17 @@ function sortTable(columnIndex, preserveDirection = false) {
     // Clear existing sort indicators
     headers.forEach(header => {
         const icon = header.querySelector('.sort-icon');
-        if (icon) icon.innerHTML = '';
-    });
+        console.log('Checking for sort-icon in header:', header, icon);  // Debugging
+        if (icon) icon.innerHTML = '';  // Clear any previous triangle
+    });    
 
     // Add sort indicator to the sorted column
-    const sortedHeader = headers[columnIndex].querySelector('.sort-icon');
-    if (sortedHeader) {
-        sortedHeader.innerHTML = currentDirection === 'asc' ? '▲' : '▼';
+    let sortedHeader = headers[columnIndex].querySelector('.sort-icon');
+    if (!sortedHeader) {
+        headers[columnIndex].innerHTML += '<span class="sort-icon"></span>';
+        sortedHeader = headers[columnIndex].querySelector('.sort-icon');
     }
+    sortedHeader.innerHTML = currentDirection === 'asc' ? '▲' : '▼';
 }
 
 

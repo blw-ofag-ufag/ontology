@@ -171,9 +171,9 @@ a:hover {
 }
 
 .sort-icon {
+    visibility: visible !important;
+    font-size: 1em;
     margin-left: 5px;
-    font-size: 0.7em;
-    visibility: visible;  /* Default: Hide if not sorted */
 }
 
 th.sorted {
