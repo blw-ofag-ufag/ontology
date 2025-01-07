@@ -422,37 +422,37 @@
   {
     "srppp-id": 10333,
     "label": {
-        "de": ["Rispentomaten"],
-        "fr": ["Tomate à grappe"],
-        "it": ["Pomodoro ramato"],
-        "en": [null],
-        "la": [null]
+      "de": ["Rispentomaten"],
+      "fr": ["Tomate à grappe"],
+      "it": ["Pomodoro ramato"],
+      "en": ["Vine tomatoes", "Tomatoes on the vine"],
+      "la": ["Solanum lycopersicum"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Rispentomaten sind Tomaten, die noch an der Rispe verkauft werden, was ihren Geschmack und ihre Frische verbessern soll.",
+      "fr": "Les tomates à grappe sont des tomates vendues encore attachées à la grappe, ce qui est censé améliorer leur saveur et leur fraîcheur.",
+      "it": "I pomodori ramati sono pomodori venduti ancora attaccati al ramo, il che dovrebbe migliorarne il sapore e la freschezza.",
+      "en": "Vine tomatoes are tomatoes sold still attached to the vine, which is believed to enhance their flavor and freshness."
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
     "type": null,
     "srppp-parent-id": [10027]
-  },
+  },  
   {
     "srppp-id": 10332,
     "label": {
-        "de": ["Cherrytomaten"],
-        "fr": ["Tomate-cerise"],
-        "it": ["Pomodoro ciliegia"],
-        "en": [null],
-        "la": [null]
+      "de": ["Cherrytomaten", "Kirschtomaten"],
+      "fr": ["Tomate-cerise"],
+      "it": ["Pomodoro ciliegia", "Pomodorini"],
+      "en": ["Cherry tomatoes"],
+      "la": ["Solanum lycopersicum var. cerasiforme"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Cherrytomaten (*Solanum lycopersicum* var. *cerasiforme*) sind kleine, runde Tomaten, die für ihren süßen Geschmack und ihre Saftigkeit bekannt sind.",
+      "fr": "La tomate-cerise (*Solanum lycopersicum* var. *cerasiforme*) est une petite tomate ronde, réputée pour sa saveur sucrée et sa jutosité.",
+      "it": "Il pomodoro ciliegia (*Solanum lycopersicum* var. *cerasiforme*) è un piccolo pomodoro rotondo, noto per il suo sapore dolce e la sua succosità.",
+      "en": "Cherry tomatoes (*Solanum lycopersicum* var. *cerasiforme*) are small, round tomatoes known for their sweet flavor and juiciness."
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
@@ -482,23 +482,23 @@
   {
     "srppp-id": 10329,
     "label": {
-        "de": ["Schnittmangold", "Blattmangold", "Beisskohl", "Römischer Kohl"],
-        "fr": ["Bette à tondre"],
-        "it": ["Bietola da taglio"],
-        "en": [null],
-        "la": [null]
+      "de": ["Schnittmangold", "Blattmangold", "Beisskohl", "Römischer Kohl"],
+      "fr": ["Bette à tondre", "Bette feuille"],
+      "it": ["Bietola da taglio", "Bietola da foglia"],
+      "en": ["Leaf chard", "Cutting chard", "Leaf beet"],
+      "la": ["Beta vulgaris subsp. vulgaris, Cicla Group"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Schnittmangold ist eine Mangoldvarietät mit zarten Blättern und dünnen Stielen, die ähnlich wie Spinat verwendet wird.",
+      "fr": "La bette à tondre est une variété de bette avec des feuilles tendres et des tiges fines, utilisée de manière similaire aux épinards.",
+      "it": "La bietola da taglio è una varietà di bietola con foglie tenere e gambi sottili, utilizzata in modo simile agli spinaci.",
+      "en": "Leaf chard is a variety of chard with tender leaves and thin stems, used similarly to spinach."
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
     "type": "vegetable",
     "srppp-parent-id": [10306]
-  },
+  },  
   {
     "srppp-id": 10328,
     "label": {
@@ -510,9 +510,9 @@
     },
     "comment": {
       "de": "Krautstiel, auch bekannt als Stielmangold, ist ein Blattgemüse aus der Familie der Amaranthaceae und ein Typ von Mangold (neben Schnittmangold). Die Pflanze hat grosse, dicke, grüne Blätter. Die Stiele selbst gibt es je nach Sorte in diversen Farben.",
-      "fr": null,
-      "it": null,
-      "en": null
+      "fr": "La bette à côte, également appelée poirée, est un légume-feuille de la famille des Amaranthacées et un type de bette (avec la bette à tondre). La plante a de grandes feuilles vertes et épaisses. Les côtes elles-mêmes sont de différentes couleurs selon la variété.",
+      "it": "La bietola da costa, conosciuta anche come costa, è un ortaggio a foglia della famiglia delle Amaranthaceae e un tipo di bietola (insieme alla bietola da taglio). La pianta ha grandi foglie verdi e spesse. I gambi stessi variano in diversi colori a seconda della varietà.",
+      "en": "Swiss chard, also known as silver beet, is a leafy vegetable from the Amaranthaceae family and a type of chard (alongside leaf chard). The plant has large, thick, green leaves. The stalks themselves come in various colors depending on the variety."
     },
     "wikidata-iri": [null],
     "polyphyletic": false,
@@ -4562,23 +4562,23 @@
   {
     "srppp-id": 10068,
     "label": {
-        "de": ["Gänsefussgewächse (Chenopodiaceae)"],
-        "fr": ["Chénopodiacées"],
-        "it": ["Chenopodiacee"],
-        "en": [null],
-        "la": [null]
+      "de": ["Gänsefussgewächse"],
+      "fr": ["Chénopodiacées"],
+      "it": ["Chenopodiacee"],
+      "en": ["Goosefoot family"],
+      "la": ["Chenopodiaceae"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Gänsefussgewächse (Chenopodiaceae) sind eine Familie von Blütenpflanzen, die Arten wie Spinat (*Spinacia oleracea*) und Zuckerrübe (*Beta vulgaris*) umfasst. Diese Pflanzen kommen häufig in salzhaltigen oder stickstoffreichen Böden vor, wie Küstengebieten und gestörten Lebensräumen.",
+      "fr": "Les Chénopodiacées (Chenopodiaceae) sont une famille de plantes à fleurs comprenant des espèces telles que l'épinard (*Spinacia oleracea*) et la betterave sucrière (*Beta vulgaris*). Ces plantes se trouvent souvent dans des sols salins ou riches en azote, comme les zones côtières et les habitats perturbés.",
+      "it": "Le Chenopodiacee (Chenopodiaceae) sono una famiglia di piante da fiore che include specie come gli spinaci (*Spinacia oleracea*) e la barbabietola da zucchero (*Beta vulgaris*). Queste piante si trovano spesso in terreni salini o ricchi di azoto, come le aree costiere e gli habitat disturbati.",
+      "en": "The Chenopodiaceae, or goosefoot family, is a family of flowering plants that includes species such as spinach (*Spinacia oleracea*) and sugar beet (*Beta vulgaris*). These plants are often found in saline or nitrogen-rich soils, such as coastal areas and disturbed habitats."
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": "medical",
+    "type": "varia",
     "srppp-parent-id": [10195]
-  },
+  },  
   {
     "srppp-id": 10071,
     "label": {
