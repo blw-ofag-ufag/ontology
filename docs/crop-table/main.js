@@ -5,6 +5,8 @@ const tableBody = document.querySelector('#cropsTable tbody');
 const dataUrl = 'https://raw.githubusercontent.com/blw-ofag-ufag/ontology/main/mapping-tables/crops.json';
 const urlParams = new URLSearchParams(window.location.search);
 let lang = urlParams.get('lang') || 'de';
+let originalData = [];  // Store the full unfiltered data globally
+let activeSearchTerm = '';  // Store the current search term globally
 
 // Fetch Translations on Page Load
 function fetchTranslations() {
@@ -39,74 +41,67 @@ function applyTranslations(lang) {
 
 // Fetch and Populate Table
 function fetchData() {
-    fetch(dataUrl)
+    return fetch(dataUrl)
         .then(response => response.json())
         .then(data => {
-            tableBody.innerHTML = '';  // Clear table
-
-            data.forEach(item => {
-                const row = document.createElement('tr');
-
-                // ID Column
-                const idCell = document.createElement('td');
-                idCell.textContent = item['srppp-id'] || '';
-                row.appendChild(idCell);
-
-                // Name Column with Tooltip
-                const nameCell = document.createElement('td');
-                const names = item.label?.[lang] || [''];
-                const latinNames = item.label?.['la'] || [];  // Extract Latin names separately
-                const comment = item.comment?.[lang] || '';
-
-                // Preferred name (first name in list)
-                const preferredName = names[0];
-                const alternativeNames = names.slice(1).join(', ');
-
-                // In-table name rendering (preferred + faded alternates)
-                nameCell.innerHTML = formatNames(names);
-
-                // Tooltip Content (HTML with line breaks)
-                let tooltipContent = `<div class="type-name"><b>${preferredName}</b></div>`;
-
-                // Add alternative names, faded
-                if (alternativeNames) {
-                    tooltipContent += `
-                        <div>
-                            <span class="alt-name">${alternativeNames}</span>
-                        </div>`;
-                }
-
-                // Add taxon (italic Latin names)
-                if (latinNames.length > 0) {
-                    tooltipContent += `
-                        <div>
-                            <i>${latinNames.join(', ')}</i>
-                        </div>`;
-                }
-
-                // Add description (comment)
-                if (comment) {
-                    tooltipContent += `
-                        <div class="type-comment">${comment}</div>`;
-                }
-
-                // Assign tooltip to cell
-                nameCell.setAttribute('data-title', tooltipContent);
-                row.appendChild(nameCell);
-
-                // Type (Emoji) Column
-                const typeCell = document.createElement('td');
-                const { emoji, tooltip } = getTypeEmoji(item.type);
-                typeCell.textContent = emoji;
-                typeCell.setAttribute('data-title', tooltip);
-                row.appendChild(typeCell);
-
-                tableBody.appendChild(row);
-            });
-
+            originalData = data;  // Cache full data globally
+            renderTable(data);  // Render table immediately
             applyURLParams();
         })
         .catch(error => console.error('Fehler beim Laden der Daten:', error));
+}
+
+// Separate table rendering into its own function, allowing us to call it repeatedly after filtering
+function renderTable(data) {
+    tableBody.innerHTML = '';  // Clear table
+
+    data.forEach(item => {
+        const row = document.createElement('tr');
+
+        // ID Column
+        const idCell = document.createElement('td');
+        idCell.textContent = item['srppp-id'] || '';
+        row.appendChild(idCell);
+
+        // Name Column
+        const nameCell = document.createElement('td');
+        const names = item.label?.[lang] || [''];
+        nameCell.innerHTML = formatNames(names);
+        nameCell.setAttribute('data-title', buildTooltip(item, lang));
+        row.appendChild(nameCell);
+
+        // Type (Emoji) Column
+        const typeCell = document.createElement('td');
+        const { emoji, tooltip } = getTypeEmoji(item.type);
+        typeCell.textContent = emoji;
+        typeCell.setAttribute('data-title', tooltip);
+        row.appendChild(typeCell);
+
+        tableBody.appendChild(row);
+    });
+}
+
+// Perform the search across all language labels in the JSON
+function filterBySearch(term) {
+    if (!term) {
+        renderTable(originalData);  // Reset table if search is empty
+        return;
+    }
+
+    // Split by ",", "OR", or "|" and create a regex pattern (case insensitive)
+    const terms = term.split(/\s*[,|]\s*|\s*OR\s*/).filter(Boolean);
+    const regex = new RegExp(terms.join('|'), 'i');  // Join with "|" to match any term
+
+    const filteredData = originalData.filter(item => {
+        return Object.keys(item.label).some(langKey => {
+            const names = item.label[langKey] || [];
+            return names.some(name => 
+                typeof name === 'string' && regex.test(name)  // Test against regex
+            );
+        });
+    });
+
+    renderTable(filteredData);
 }
 
 // Fetch the Crop Types from JSON
@@ -158,6 +153,43 @@ function getTypeEmoji(type) {
     };
 }
 
+// Define buildTooltip for Tooltips
+function buildTooltip(item, lang) {
+    const names = item.label?.[lang] || [''];
+    const latinNames = item.label?.['la'] || [];  // Latin names under "la"
+    const comment = item.comment?.[lang] || '';
+
+    const preferredName = names[0];
+    const alternativeNames = names.slice(1).join(', ');
+
+    // Tooltip Content (Build dynamically with graceful fallbacks)
+    let tooltipContent = `<div class="type-name"><b>${preferredName}</b></div>`;
+
+    // Add alternative names if available
+    if (alternativeNames) {
+        tooltipContent += `
+            <div>
+                <span class="alt-name">${alternativeNames}</span>
+            </div>`;
+    }
+
+    // Add Latin names (italicized)
+    if (latinNames.length > 0) {
+        tooltipContent += `
+            <div>
+                <i>${latinNames.join(', ')}</i>
+            </div>`;
+    }
+
+    // Add description (comment)
+    if (comment) {
+        tooltipContent += `
+            <div class="type-comment">${comment}</div>`;
+    }
+
+    return tooltipContent;
+}
+
 // Apply Sorting and Search from URL
 function applyURLParams() {
     const searchTerm = urlParams.get('search');
@@ -174,11 +206,17 @@ function applyURLParams() {
 
 // Initialize on Page Load
 document.addEventListener('DOMContentLoaded', function () {
-    Promise.all([fetchTranslations(), fetchCropTypes()])  // Fetch both translations and crop types
-        .then(() => {
-            fetchData();  // Populate table after translations and types are ready
+    fetchTranslations().then(() => {
+        fetchData().then(() => {
+            // Reapply search filter if search term is in URL
+            const searchTermFromURL = urlParams.get('search');
+            if (searchTermFromURL) {
+                activeSearchTerm = searchTermFromURL.trim();
+                document.getElementById('searchInput').value = activeSearchTerm;  // Reflect in UI
+                filterBySearch(activeSearchTerm);  // Apply search after data loads
+            }
         });
-    document.getElementById('language').value = lang;
+    });
 });
 
 // Language Selection (Ensures Table Updates Properly)
@@ -189,16 +227,28 @@ document.getElementById('language').addEventListener('change', function () {
     // Update URL without reload
     window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
 
-    // Fetch translations first, then reload the table
     fetchTranslations().then(() => {
-        fetchData();
+        renderTable(originalData);  // Re-render table in new language
+
+        // Reapply active search to filter the newly rendered table
+        if (activeSearchTerm) {
+            filterBySearch(activeSearchTerm);
+        }
     });
 });
 
 // Attach URL Update to Search Event
 document.getElementById('searchInput').addEventListener('input', function() {
-    const searchTerm = this.value;
-    filterTable(searchTerm);
+    activeSearchTerm = this.value.trim();
+    filterBySearch(activeSearchTerm);
+
+    // Update URL with search parameter
+    if (activeSearchTerm === '') {
+        urlParams.delete('search');
+    } else {
+        urlParams.set('search', activeSearchTerm);
+    }
+    window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
 });
 
 // Sort Table by Column
