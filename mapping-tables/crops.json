@@ -482,7 +482,7 @@
   {
     "srppp-id": 10329,
     "label": {
-        "de": ["Schnittmangold", "Blattmangold"],
+        "de": ["Schnittmangold", "Blattmangold", "Beisskohl", "Römischer Kohl"],
         "fr": ["Bette à tondre"],
         "it": ["Bietola da taglio"],
         "en": [null],
@@ -502,7 +502,7 @@
   {
     "srppp-id": 10328,
     "label": {
-      "de": ["Krautstiel", "Stielmangold"],
+      "de": ["Krautstiel", "Stielmangold", "Rippen-Mangold"],
       "fr": ["Bette à côte", "Bette", "Poirée"],
       "it": ["Costa", "Bietola da costa", "Bietola"],
       "en": ["Swiss chard", "Silver beet"],
@@ -642,23 +642,23 @@
   {
     "srppp-id": 10306,
     "label": {
-        "de": ["Mangold"],
-        "fr": ["Bette"],
-        "it": ["Bietola"],
-        "en": [null],
-        "la": [null]
+      "de": ["Mangold"],
+      "fr": ["Bette"],
+      "it": ["Bietola"],
+      "en": ["Chard"],
+      "la": ["Beta vulgaris subsp. vulgaris Cicla Group", "Beta vulgaris subsp. vulgaris Flavescens Group"]
     },
     "comment": {
-        "de": "Oberbegriff für Schnittmangold und Stielmangold.",
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Mangold ist eine Gemüsepflanze und eine Kulturform der Rübe, verwandt mit der Zuckerrübe, der Futterrübe und der Roten Rübe. Er stammt von der an Küstensäumen wachsenden Wilden Rübe oder See-Mangold (*Beta vulgaris* subsp. *maritima*) ab und gehört zur Unterfamilie der Betoideae in der Familie der Fuchsschwanzgewächse (Amaranthaceae). Schnittmangold und Krautstiel sind zwei Kultivargruppen von Mangold.",
+      "fr": "La bette, ou poirée, est une plante potagère et une forme cultivée de la betterave, apparentée à la betterave sucrière, à la betterave fourragère et à la betterave rouge. Elle descend de la betterave sauvage (*Beta vulgaris* subsp. *maritima*), qui pousse le long des côtes, et appartient à la sous-famille des Betoideae dans la famille des Amaranthacées. La bette à couper et la bette à carde sont deux groupes de cultivars de la bette.",
+      "it": "La bietola è una pianta orticola e una forma coltivata della barbabietola, imparentata con la barbabietola da zucchero, la barbabietola da foraggio e la barbabietola rossa. Deriva dalla barbabietola selvatica (*Beta vulgaris* subsp. *maritima*), che cresce lungo le coste, e appartiene alla sottofamiglia delle Betoideae nella famiglia delle Amarantacee. La bietola da taglio e la bietola da costa sono due gruppi di cultivar della bietola.",
+      "en": "Chard, also known as Swiss chard, is a vegetable plant and a cultivated form of beet, related to sugar beet, fodder beet, and red beet. It descends from the wild beet (*Beta vulgaris* subsp. *maritima*), which grows along coastal areas, and belongs to the subfamily Betoideae in the family Amaranthaceae. Leaf chard and stalk chard are two cultivar groups of chard."
     },
-    "wikidata-iri": [null],
-    "polyphyletic": null,
+    "wikidata-iri": ["Q157954"],
+    "polyphyletic": false,
     "type": "vegetable",
     "srppp-parent-id": [10068]
-  },
+  },  
   {
     "srppp-id": 11817,
     "label": {
