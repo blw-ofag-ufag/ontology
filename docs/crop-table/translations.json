@@ -3,24 +3,36 @@
         "title": "Kulturentabelle",
         "subtitle": "Hier findest du die Liste der landwirtschaftlichen Kulturen so, wie sie im Schweizer Pflanzenschutzmittelverzeichnis aufgeführt sind. Das tatsächliche File mit den Daten liegt auf <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.",
         "search": "Durchsuche nach ID, Name, Kommentar, oder Emoji.",
-        "columns": ["ID", "Name", "Kommentare", "Typ"]
+        "columns": ["ID", "Name", "Kommentare", "Typ"],
+        "taxon": "Taxon",
+        "alt_names": "Alternative Namen",
+        "description": "Beschreibung"
     },
     "fr": {
         "title": "Tableau des Cultures",
         "subtitle": "Voici la liste des cultures agricoles telle qu'elle est présentée dans le registre des produits phytosanitaires de la Suisse. Le fichier réel contenant les données est disponible sur <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.",
         "search": "Rechercher par ID, nom, commentaire ou emoji.",
-        "columns": ["ID", "Nom", "Commentaires", "Type"]
+        "columns": ["ID", "Nom", "Commentaires", "Type"],
+        "taxon": "Taxon",
+        "alt_names": "Noms alternatifs",
+        "description": "Description"
     },
     "it": {
         "title": "Tabella delle Colture",
         "subtitle": "Qui trovi l'elenco delle colture agricole come elencato nel registro svizzero dei prodotti fitosanitari. Il file reale con i dati è disponibile su <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.",
         "search": "Cerca per ID, nome, commento o emoji.",
-        "columns": ["ID", "Nome", "Commenti", "Tipo"]
+        "columns": ["ID", "Nome", "Commenti", "Tipo"],
+        "taxon": "Taxon",
+        "alt_names": "Nomi alternativi",
+        "description": "Descrizione"
     },
     "en": {
         "title": "Crops Table",
         "subtitle": "Here you can find the list of agricultural crops as listed in the Swiss plant protection product directory. The actual file with the data is available on <a href='https://github.com/blw-ofag-ufag/ontology/blob/main/mapping-tables/crops.json'>GitHub</a>.",
         "search": "Search by ID, name, comment, or emoji.",
-        "columns": ["ID", "Name", "Comments", "Type"]
+        "columns": ["ID", "Name", "Comments", "Type"],
+        "taxon": "Taxon",
+        "alt_names": "Alternative names",
+        "description": "Description"
     }
 }
