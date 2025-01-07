@@ -26,7 +26,7 @@ h1 {
     margin-bottom: 20px;
     padding: 12px 20px;
     width: 90%;
-    max-width: 600px;
+    max-width:800px;
     font-size: 1rem;
     border: 2px solid #1db954;
     border-radius: 25px;
@@ -72,9 +72,10 @@ tbody tr:hover {
 
 /* Column Widths */
 th:nth-child(1) { width: 10%; }
-th:nth-child(2) { width: 75%; }
-th:nth-child(3),
-td:nth-child(3) {
+th:nth-child(2) { width: 50%; }
+th:nth-child(3) { width: 25%; }
+th:nth-child(4),
+td:nth-child(4) {
     text-align: center;
     width: 15%;
 }
@@ -219,7 +220,6 @@ th.sorted {
 }
 
 .tooltip .type-name {
-    font-weight: bold;
     margin-bottom: 8px;
 }
 
@@ -227,4 +227,15 @@ th.sorted {
     font-size: 0.95em;
     margin-top: 6px;
     line-height: 1.5;
+}
+
+.parent-link {
+    color: inherit;  /* Inherit the table's default text color */
+    text-decoration: none;  /* No underline by default */
+    cursor: pointer;  /* Indicate clickability */
+}
+
+.parent-link:hover {
+    color: #1db954;  /* Green text on hover */
+    text-decoration: underline;  /* Optional underline on hover */
 }

@@ -344,6 +344,7 @@ sink()
 
 # Find all Detail nodes within the Culture MetaData
 crops_xml <- xml_find_all(xml_data, ".//MetaData[@name='Culture']/Detail")
+parent_ids = crops_xml |> xml_find_all("Parent") |> xml_attr("primaryKey")
 
 # Read JSON file about crops
 crops <- jsonlite::read_json("mapping-tables/crops.json")

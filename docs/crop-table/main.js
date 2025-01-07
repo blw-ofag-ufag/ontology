@@ -7,6 +7,7 @@ const urlParams = new URLSearchParams(window.location.search);
 let lang = urlParams.get('lang') || 'de';
 let originalData = [];  // Store the full unfiltered data globally
 let activeSearchTerm = '';  // Store the current search term globally
+let cropMap = {};  // Store crops by ID for lookup
 
 // Fetch Translations on Page Load
 function fetchTranslations() {
@@ -36,7 +37,8 @@ function applyTranslations(lang) {
 
     thElements[0].textContent = headers[0];  // ID
     thElements[1].textContent = headers[1];  // Name
-    thElements[2].textContent = headers[3];  // Type (adjusted to 3rd column)
+    thElements[2].textContent = headers[2];  // Parent
+    thElements[3].textContent = headers[3];  // Parent
 }
 
 // Fetch and Populate Table
@@ -44,8 +46,14 @@ function fetchData() {
     return fetch(dataUrl)
         .then(response => response.json())
         .then(data => {
-            originalData = data;  // Cache full data globally
-            renderTable(data);  // Render table immediately
+            originalData = data;  // Store full crop data
+
+            // Build cropMap for quick parent lookup
+            data.forEach(item => {
+                cropMap[item['srppp-id']] = item.label?.[lang]?.[0] || `ID: ${item['srppp-id']}`;
+            });
+
+            renderTable(data);  // Render table after map is built
             applyURLParams();
         })
         .catch(error => console.error('Fehler beim Laden der Daten:', error));
@@ -53,7 +61,7 @@ function fetchData() {
 
 // Separate table rendering into its own function, allowing us to call it repeatedly after filtering
 function renderTable(data) {
-    tableBody.innerHTML = '';  // Clear table
+    tableBody.innerHTML = '';  // Clear existing rows
 
     data.forEach(item => {
         const row = document.createElement('tr');
@@ -63,14 +71,32 @@ function renderTable(data) {
         idCell.textContent = item['srppp-id'] || '';
         row.appendChild(idCell);
 
-        // Name Column
+        // Name Column (with tooltip)
         const nameCell = document.createElement('td');
         const names = item.label?.[lang] || [''];
         nameCell.innerHTML = formatNames(names);
         nameCell.setAttribute('data-title', buildTooltip(item, lang));
         row.appendChild(nameCell);
 
-        // Type (Emoji) Column
+        // Parent Crop Column (NEW)
+        const parentCell = document.createElement('td');
+        const parentIds = item['srppp-parent-id'] || [];
+
+        // Filter out parents that don't exist in cropMap
+        const validParents = parentIds.filter(id => cropMap[id]);
+
+        if (validParents.length > 0) {
+            // Render clickable parent links
+            parentCell.innerHTML = validParents.map(id => {
+                const parentName = cropMap[id];
+                return `<a href="#" class="parent-link" data-id="${id}">${parentName}</a>`;
+            }).join(', ');
+        } else {
+            parentCell.textContent = '';  // No parent, or missing in cropMap
+        }
+        row.appendChild(parentCell);
+
+        // Type Column (with emoji)
         const typeCell = document.createElement('td');
         const { emoji, tooltip } = getTypeEmoji(item.type);
         typeCell.textContent = emoji;
@@ -78,6 +104,30 @@ function renderTable(data) {
         row.appendChild(typeCell);
 
         tableBody.appendChild(row);
+    });
+
+    // Attach click listeners to parent links
+    attachParentClickListeners();
+}
+
+// Handle Click Event on Parent Links
+function attachParentClickListeners() {
+    const parentLinks = document.querySelectorAll('.parent-link');
+
+    parentLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            const parentId = this.getAttribute('data-id');
+
+            // Apply search filter for parent crop by ID
+            activeSearchTerm = parentId;
+            document.getElementById('searchInput').value = parentId;
+            filterBySearch(parentId);
+
+            // Update URL with parent ID as the search term
+            urlParams.set('search', parentId);
+            window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
+        });
     });
 }
 
@@ -88,21 +138,27 @@ function filterBySearch(term) {
         return;
     }
 
-    // Split by ",", "OR", or "|" and create a regex pattern (case insensitive)
+    // Split search term for multi-term filtering (OR, comma, |)
     const terms = term.split(/\s*[,|]\s*|\s*OR\s*/).filter(Boolean);
-    const regex = new RegExp(terms.join('|'), 'i');  // Join with "|" to match any term
+    const regex = new RegExp(terms.join('|'), 'i');  // Build regex for terms
 
     const filteredData = originalData.filter(item => {
-        return Object.keys(item.label).some(langKey => {
+        // Match by ID or by crop names
+        const idMatch = item['srppp-id'].toString().includes(term);
+        
+        const nameMatch = Object.keys(item.label).some(langKey => {
             const names = item.label[langKey] || [];
             return names.some(name => 
-                typeof name === 'string' && regex.test(name)  // Test against regex
+                typeof name === 'string' && regex.test(name)
             );
         });
+
+        return idMatch || nameMatch;  // Include if either name or ID matches
     });
 
     renderTable(filteredData);
 }
+
 
 // Fetch the Crop Types from JSON
 function fetchCropTypes() {
@@ -163,22 +219,19 @@ function buildTooltip(item, lang) {
     const alternativeNames = names.slice(1).join(', ');
 
     // Tooltip Content (Build dynamically with graceful fallbacks)
-    let tooltipContent = `<div class="type-name"><b>${preferredName}</b></div>`;
+    let tooltipContent = `<div class="type-name"><b>${preferredName}</b>`;
+
+    // Join Latin names, but add parentheses only if they exist
+    const latin = latinNames.join(', ');
+    if (latin) {
+        tooltipContent += ` <i>(${latin})</i>`;
+    }
+    tooltipContent += `</div>`;
 
     // Add alternative names if available
     if (alternativeNames) {
         tooltipContent += `
-            <div>
-                <span class="alt-name">${alternativeNames}</span>
-            </div>`;
-    }
-
-    // Add Latin names (italicized)
-    if (latinNames.length > 0) {
-        tooltipContent += `
-            <div>
-                <i>${latinNames.join(', ')}</i>
-            </div>`;
+            <div><span class="alt-name">${alternativeNames}</span></div>`;
     }
 
     // Add description (comment)
@@ -189,6 +242,8 @@ function buildTooltip(item, lang) {
 
     return tooltipContent;
 }
+
+
 
 // Apply Sorting and Search from URL
 function applyURLParams() {

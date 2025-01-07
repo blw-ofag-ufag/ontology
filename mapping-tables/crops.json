@@ -862,17 +862,17 @@
   {
     "srppp-id": 10315,
     "label": {
-        "de": ["Pak-Choi"],
-        "fr": ["Pakchoi"],
-        "it": ["Pak-Choi"],
-        "en": [null],
-        "la": [null]
+      "de": ["Pak-Choi", "Chinesischer Blätterkohl", "Chinesischer Senfkohl"],
+      "fr": ["Pakchoi", "Chou chinois", "Bok choy"],
+      "it": ["Pak-Choi", "Cavolo cinese", "Bok choy"],
+      "en": ["Pak Choi", "Bok Choy", "Chinese White Cabbage"],
+      "la": ["Brassica rapa subsp. chinensis"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Pak-Choi (*Brassica rapa* subsp. *chinensis*), auch bekannt als Chinesischer Blätterkohl oder Bok Choy, ist ein Blattgemüse aus der Familie der Kreuzblütler. Ursprünglich in China beheimatet, wird es seit über 1.500 Jahren kultiviert und ist reich an Vitaminen A, C und K.",
+      "fr": "Le pakchoi (*Brassica rapa* subsp. *chinensis*), également connu sous le nom de chou chinois ou bok choy, est un légume-feuille de la famille des Brassicacées. Originaire de Chine, il est cultivé depuis plus de 1 500 ans et est riche en vitamines A, C et K.",
+      "it": "Il pak-choi (*Brassica rapa* subsp. *chinensis*), noto anche come cavolo cinese o bok choy, è una verdura a foglia della famiglia delle Brassicaceae. Originario della Cina, è coltivato da oltre 1.500 anni ed è ricco di vitamine A, C e K.",
+      "en": "Pak Choi (*Brassica rapa* subsp. *chinensis*), also known as bok choy or Chinese white cabbage, is a leafy green vegetable in the Brassicaceae family. Native to China, it has been cultivated for over 1,500 years and is rich in vitamins A, C, and K."
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
@@ -882,23 +882,23 @@
   {
     "srppp-id": 10312,
     "label": {
-        "de": ["Estragon"],
-        "fr": ["Estragon"],
-        "it": ["Dragoncello"],
-        "en": [null],
-        "la": [null]
+      "de": ["Estragon", "Dragon", "Schlangenkraut"],
+      "fr": ["Estragon", "Herbe dragon"],
+      "it": ["Dragoncello", "Estragone"],
+      "en": ["Tarragon", "Dragon herb"],
+      "la": ["Artemisia dracunculus"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Estragon (*Artemisia dracunculus*) ist eine mehrjährige Pflanze aus der Familie der Korbblütler, die für ihren aromatischen, anisartigen Geschmack geschätzt wird und häufig in der französischen Küche Verwendung findet.",
+      "fr": "L'estragon (*Artemisia dracunculus*) est une plante vivace de la famille des Astéracées, appréciée pour sa saveur aromatique rappelant l'anis, couramment utilisée dans la cuisine française.",
+      "it": "Il dragoncello (*Artemisia dracunculus*) è una pianta perenne della famiglia delle Asteraceae, apprezzata per il suo sapore aromatico simile all'anice, utilizzata frequentemente nella cucina francese.",
+      "en": "Tarragon (*Artemisia dracunculus*) is a perennial herb in the Asteraceae family, valued for its aromatic, anise-like flavor, commonly used in French cuisine."
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
     "type": "garden",
     "srppp-parent-id": [10186]
-  },
+  },  
   {
     "srppp-id": 11321,
     "label": {
@@ -922,17 +922,17 @@
   {
     "srppp-id": 11325,
     "label": {
-        "de": ["Klee zur Saatgutproduktion"],
-        "fr": ["Trèfles pour la production de semences"],
-        "it": ["Trifoglio per la produzione di sementi"],
-        "en": [null],
-        "la": [null]
+      "de": ["Klee zur Saatgutproduktion", "Saatklee"],
+      "fr": ["Trèfles pour la production de semences", "Trèfle semencier"],
+      "it": ["Trifoglio per la produzione di sementi", "Trifoglio da seme"],
+      "en": ["Clover for seed production", "Seed clover"],
+      "la": ["Trifolium spp."]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Klee (*Trifolium* spp.) ist eine Gattung von Leguminosen, die für Futter, Bodenverbesserung und Saatgutproduktion angebaut wird. Die Samenproduktion erfordert effektive Bestäubung, hauptsächlich durch Bienen.",
+      "fr": "Le trèfle (*Trifolium* spp.) est un genre de légumineuses cultivées pour le fourrage, l'amélioration des sols et la production de semences. La production de semences nécessite une pollinisation efficace, principalement par les abeilles.",
+      "it": "Il trifoglio (*Trifolium* spp.) è un genere di leguminose coltivate per foraggio, miglioramento del suolo e produzione di sementi. La produzione di semi richiede un'efficace impollinazione, principalmente da parte delle api.",
+      "en": "Clover (*Trifolium* spp.) is a genus of legumes cultivated for forage, soil improvement, and seed production. Seed production requires effective pollination, primarily by bees."
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
@@ -942,63 +942,63 @@
   {
     "srppp-id": 11326,
     "label": {
-        "de": ["Kartoffeln zur Pflanzgutproduktion"],
-        "fr": ["Pommes de terre pour la production de plants"],
-        "it": ["Patate per la produzione di tuberi-seme"],
-        "en": [null],
-        "la": [null]
+      "de": ["Kartoffeln zur Pflanzgutproduktion", "Saatkartoffeln"],
+      "fr": ["Pommes de terre pour la production de plants", "Pommes de terre de semence"],
+      "it": ["Patate per la produzione di tuberi-seme", "Patate da semina"],
+      "en": ["Potatoes for seed production", "Seed potatoes"],
+      "la": ["Solanum tuberosum"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Kartoffeln (*Solanum tuberosum*) werden vegetativ über Pflanzkartoffeln vermehrt, die speziell für die Pflanzung in nachfolgenden Anbausaisonen produziert werden, um die Qualität und den Ertrag der Ernte zu sichern.",
+      "fr": "Les pommes de terre (*Solanum tuberosum*) sont multipliées végétativement à l'aide de tubercules de semence, produits spécifiquement pour la plantation lors des saisons de culture suivantes afin d'assurer la qualité et le rendement des récoltes.",
+      "it": "Le patate (*Solanum tuberosum*) sono propagate vegetativamente utilizzando tuberi-seme, prodotti specificamente per la piantagione nelle stagioni di crescita successive, al fine di garantire la qualità e la resa del raccolto.",
+      "en": "Potatoes (*Solanum tuberosum*) are vegetatively propagated using seed tubers, produced specifically for planting in subsequent growing seasons to ensure crop quality and yield."
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
     "type": "arable",
     "srppp-parent-id": [10086]
-  },
+  },  
   {
     "srppp-id": 10340,
     "label": {
-        "de": ["Lippenblütler (Labiatae)"],
-        "fr": ["Lamiacées (Labiatae)"],
-        "it": ["Lamiacee (Labiatae)"],
-        "en": [null],
-        "la": [null]
+      "de": ["Lippenblütler (Labiatae)", "Lamiaceae"],
+      "fr": ["Lamiacées (Labiatae)", "Lamiaceae"],
+      "it": ["Lamiacee (Labiatae)", "Lamiaceae"],
+      "en": ["Lamiaceae", "Mint family"],
+      "la": ["Lamiaceae"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Lippenblütler (Lamiaceae oder Labiatae) sind eine Familie aromatischer Kräuter und Sträucher, zu der bekannte Arten wie Minze, Basilikum, Rosmarin und Salbei gehören. Sie zeichnen sich durch vierkantige Stängel, gegenständige Blätter und zygomorphe Blüten aus.",
+      "fr": "Les Lamiacées (Lamiaceae ou Labiatae) sont une famille de plantes aromatiques comprenant des herbes et des arbustes, incluant des espèces connues comme la menthe, le basilic, le romarin et la sauge. Elles se caractérisent par des tiges carrées, des feuilles opposées et des fleurs zygomorphes.",
+      "it": "Le Lamiacee (Lamiaceae o Labiatae) sono una famiglia di piante aromatiche che comprende erbe e arbusti, tra cui specie note come la menta, il basilico, il rosmarino e la salvia. Si distinguono per i fusti quadrangolari, le foglie opposte e i fiori zigomorfi.",
+      "en": "The Lamiaceae (Labiatae) family consists of aromatic herbs and shrubs, including well-known species such as mint, basil, rosemary, and sage. They are characterized by square stems, opposite leaves, and zygomorphic flowers."
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "varia",
     "srppp-parent-id": [10195]
-  },
+  },  
   {
     "srppp-id": 10341,
     "label": {
-        "de": ["Stachys"],
-        "fr": ["Crosnes du japon"],
-        "it": ["Tuberina"],
-        "en": [null],
-        "la": [null]
+      "de": ["Stachys", "Knollenziest", "Chinesische Artischocke"],
+      "fr": ["Crosnes du Japon", "Stachys", "Artichaut chinois"],
+      "it": ["Tuberina", "Stachys", "Carciofo cinese"],
+      "en": ["Stachys", "Chinese artichoke", "Crosne"],
+      "la": ["Stachys affinis"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Der Knollenziest (*Stachys affinis*), auch Chinesische Artischocke genannt, ist eine mehrjährige Pflanze aus der Familie der Lippenblütler, die für ihre essbaren, spiralförmigen Knollen geschätzt wird.",
+      "fr": "Le crosne du Japon (*Stachys affinis*), également appelé artichaut chinois, est une plante vivace de la famille des Lamiacées, cultivée pour ses tubercules comestibles en forme de spirale.",
+      "it": "La tuberina (*Stachys affinis*), conosciuta anche come carciofo cinese, è una pianta perenne della famiglia delle Lamiaceae, coltivata per i suoi tuberi commestibili a forma di spirale.",
+      "en": "The Chinese artichoke (*Stachys affinis*), also known as crosne, is a perennial plant in the mint family, valued for its edible, spiral-shaped tubers."
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
     "type": null,
     "srppp-parent-id": [10340]
-  },
+  },  
   {
     "srppp-id": 10342,
     "label": {
@@ -3402,37 +3402,37 @@
   {
     "srppp-id": 10008,
     "label": {
-        "de": ["Raps"],
-        "fr": ["Colza"],
-        "it": ["Colza"],
-        "en": [null],
-        "la": [null]
+      "de": ["Raps", "Ölraps"],
+      "fr": ["Colza", "Rave"],
+      "it": ["Colza", "Rapa"],
+      "en": ["Rapeseed", "Oilseed rape", "Rape"],
+      "la": ["Brassica napus subsp. napus"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Raps (*Brassica napus* subsp. *napus*), auch bekannt als Ölraps, ist eine leuchtend gelb blühende Pflanze aus der Familie der Kreuzblütler, die hauptsächlich wegen ihrer ölreichen Samen angebaut wird.",
+      "fr": "Le colza (*Brassica napus* subsp. *napus*), également appelé rave, est une plante à fleurs jaunes de la famille des Brassicacées, cultivée principalement pour ses graines riches en huile.",
+      "it": "La colza (*Brassica napus* subsp. *napus*), conosciuta anche come rapa, è una pianta a fiori gialli della famiglia delle Brassicaceae, coltivata principalmente per i suoi semi ricchi di olio.",
+      "en": "Rapeseed (*Brassica napus* subsp. *napus*), also known as oilseed rape, is a bright-yellow flowering plant in the mustard family, cultivated mainly for its oil-rich seeds."
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
     "type": "arable",
     "srppp-parent-id": [10197]
-  },
+  },  
   {
     "srppp-id": 10011,
     "label": {
-        "de": ["Zwetschge / Pflaume"],
-        "fr": ["Prunier (pruneau/prune)"],
-        "it": ["Prugno/Susino  "],
-        "en": [null],
-        "la": [null]
+      "de": ["Zwetschge", "Pflaume"],
+      "fr": ["Prunier", "Pruneau", "Prune"],
+      "it": ["Prugno", "Susino"],
+      "en": ["Plum", "Prune"],
+      "la": ["Prunus domestica"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Europäische Pflaume (*Prunus domestica*) ist ein Laubbaum aus der Familie der Rosengewächse, der Steinfrüchte produziert, die von tiefem Purpur bis Rot und Gelb bis Grün variieren.",
+      "fr": "Le prunier européen (*Prunus domestica*) est un arbre à feuilles caduques de la famille des Rosacées, produisant des fruits à noyau dont la couleur varie du violet profond au rouge et du jaune au vert.",
+      "it": "Il prugno europeo (*Prunus domestica*) è un albero deciduo della famiglia delle Rosaceae, che produce frutti con nocciolo di colore variabile dal viola intenso al rosso e dal giallo al verde.",
+      "en": "The European plum (*Prunus domestica*) is a deciduous tree in the Rosaceae family, producing stone fruits that range in color from deep purple to red and yellow to green."
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
@@ -3442,17 +3442,17 @@
   {
     "srppp-id": 10010,
     "label": {
-        "de": ["Zuckermais"],
-        "fr": ["Maïs sucré"],
-        "it": ["Mais dolce"],
-        "en": [null],
-        "la": [null]
+      "de": ["Zuckermais", "Süßmais"],
+      "fr": ["Maïs sucré", "Maïs doux"],
+      "it": ["Mais dolce", "Granturco dolce"],
+      "en": ["Sweet corn", "Sugar corn"],
+      "la": ["Zea mays convar. saccharata var. rugosa"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Zuckermais (*Zea mays* convar. *saccharata* var. *rugosa*) ist eine Maissorte mit hohem Zuckergehalt, die im Milchreifestadium geerntet und als Gemüse verzehrt wird.",
+      "fr": "Le maïs sucré (*Zea mays* convar. *saccharata* var. *rugosa*) est une variété de maïs à haute teneur en sucre, récoltée au stade laiteux et consommée comme légume.",
+      "it": "Il mais dolce (*Zea mays* convar. *saccharata* var. *rugosa*) è una varietà di mais ad alto contenuto di zucchero, raccolta nella fase lattiginosa e consumata come ortaggio.",
+      "en": "Sweet corn (*Zea mays* convar. *saccharata* var. *rugosa*) is a variety of maize with high sugar content, harvested in the milk stage and consumed as a vegetable."
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
@@ -3502,23 +3502,23 @@
   {
     "srppp-id": 10007,
     "label": {
-        "de": ["Stachelbeere"],
-        "fr": ["Groseilles à maquereau"],
-        "it": ["Uva spina"],
-        "en": [null],
-        "la": [null]
+      "de": ["Stachelbeere"],
+      "fr": ["Groseille à maquereau"],
+      "it": ["Uva spina"],
+      "en": ["Gooseberry"],
+      "la": ["Ribes uva-crispa"]
     },
     "comment": {
-        "de": null,
-        "fr": null,
-        "it": null,
-        "en": null
+      "de": "Die Stachelbeere (*Ribes uva-crispa*) ist ein sommergrüner Strauch, der essbare Beeren produziert, die von grün bis rot oder violett variieren.",
+      "fr": "La groseille à maquereau (*Ribes uva-crispa*) est un arbuste à feuilles caduques produisant des baies comestibles de couleur variant du vert au rouge ou violet.",
+      "it": "L'uva spina (*Ribes uva-crispa*) è un arbusto deciduo che produce bacche commestibili di colore variabile dal verde al rosso o viola.",
+      "en": "The gooseberry (*Ribes uva-crispa*) is a deciduous shrub producing edible berries that range in color from green to red or purple."
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
     "type": "berry",
     "srppp-parent-id": [10127]
-  },
+  },  
   {
     "srppp-id": 10006,
     "label": {
