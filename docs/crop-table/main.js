@@ -112,7 +112,7 @@ function fetchCropTypes() {
             return response.json();
         })
         .then(data => {
-            cropTypes = data;
+            cropTypes = data;  // Cache the crop types globally
         })
         .catch(error => {
             console.error('Error loading crop types:', error);
@@ -206,17 +206,20 @@ function applyURLParams() {
 
 // Initialize on Page Load
 document.addEventListener('DOMContentLoaded', function () {
-    fetchTranslations().then(() => {
-        fetchData().then(() => {
-            // Reapply search filter if search term is in URL
-            const searchTermFromURL = urlParams.get('search');
-            if (searchTermFromURL) {
-                activeSearchTerm = searchTermFromURL.trim();
-                document.getElementById('searchInput').value = activeSearchTerm;  // Reflect in UI
-                filterBySearch(activeSearchTerm);  // Apply search after data loads
-            }
-        });
-    });
+    // Wait for translations and crop types before fetching data
+    Promise.all([fetchTranslations(), fetchCropTypes()])
+        .then(() => {
+            fetchData().then(() => {
+                // Reapply search filter if search term is in URL
+                const searchTermFromURL = urlParams.get('search');
+                if (searchTermFromURL) {
+                    activeSearchTerm = searchTermFromURL.trim();
+                    document.getElementById('searchInput').value = activeSearchTerm;  // Reflect in UI
+                    filterBySearch(activeSearchTerm);  // Apply search after data loads
+                }
+            });
+        })
+        .catch(error => console.error('Error during initialization:', error));
 });
 
 // Language Selection (Ensures Table Updates Properly)
@@ -227,13 +230,21 @@ document.getElementById('language').addEventListener('change', function () {
     // Update URL without reload
     window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
 
-    fetchTranslations().then(() => {
-        renderTable(originalData);  // Re-render table in new language
+    Promise.all([fetchTranslations(), fetchCropTypes()]).then(() => {
+        fetchData().then(() => {
+            // Reapply search filter if needed
+            if (activeSearchTerm) {
+                filterBySearch(activeSearchTerm);
+            }
 
-        // Reapply active search to filter the newly rendered table
-        if (activeSearchTerm) {
-            filterBySearch(activeSearchTerm);
-        }
+            // Reapply sorting if sort parameters exist
+            const sortColumn = urlParams.get('sort');
+            const sortDirection = urlParams.get('dir');
+
+            if (sortColumn !== null && sortDirection !== null) {
+                sortTable(parseInt(sortColumn), true);  // Preserve current direction
+            }
+        });
     });
 });
 
@@ -254,37 +265,35 @@ document.getElementById('searchInput').addEventListener('input', function() {
 // Sort Table by Column
 function sortTable(columnIndex, preserveDirection = false) {
     const table = document.getElementById('cropsTable');
-    const headers = table.querySelectorAll('th');  // Select all headers
+    const headers = table.querySelectorAll('th');
     const rows = Array.from(table.rows).slice(1);
     let currentDirection = urlParams.get('dir') || 'asc';
 
-    // Toggle direction unless preserving
     if (!preserveDirection) {
+        // Toggle direction if not preserving current state
         currentDirection = currentDirection === 'asc' ? 'desc' : 'asc';
     }
 
-    // Sort rows based on direction
+    // Perform sorting
     rows.sort((a, b) =>
-        a.cells[columnIndex].textContent.localeCompare(b.cells[columnIndex].textContent)
-        * (currentDirection === 'asc' ? 1 : -1)
+        a.cells[columnIndex].textContent.localeCompare(b.cells[columnIndex].textContent) *
+        (currentDirection === 'asc' ? 1 : -1)
     );
 
-    tableBody.innerHTML = '';
+    tableBody.innerHTML = '';  // Clear and append sorted rows
     rows.forEach(row => tableBody.appendChild(row));
 
-    // Update URL with new sorting state
+    // Update URL to reflect sorting state
     urlParams.set('sort', columnIndex);
     urlParams.set('dir', currentDirection);
     window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
 
-    // Clear existing sort indicators
+    // Add sort indicator (triangle) to the sorted column
     headers.forEach(header => {
         const icon = header.querySelector('.sort-icon');
-        console.log('Checking for sort-icon in header:', header, icon);  // Debugging
-        if (icon) icon.innerHTML = '';  // Clear any previous triangle
-    });    
+        if (icon) icon.innerHTML = '';  // Clear existing icons
+    });
 
-    // Add sort indicator to the sorted column
     let sortedHeader = headers[columnIndex].querySelector('.sort-icon');
     if (!sortedHeader) {
         headers[columnIndex].innerHTML += '<span class="sort-icon"></span>';
@@ -292,7 +301,6 @@ function sortTable(columnIndex, preserveDirection = false) {
     }
     sortedHeader.innerHTML = currentDirection === 'asc' ? '▲' : '▼';
 }
-
 
 // Filter/Search Table and Update URL
 function filterTable(searchTerm) {
