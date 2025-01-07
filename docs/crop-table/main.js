@@ -34,11 +34,9 @@ function applyTranslations(lang) {
 
     thElements[0].textContent = headers[0];  // ID
     thElements[1].textContent = headers[1];  // Name
-    thElements[2].textContent = headers[2];  // Comments
-    thElements[3].textContent = headers[3];  // Type
+    thElements[2].textContent = headers[3];  // Type (adjusted to 3rd column)
 }
 
-// Fetch and Populate Table
 // Fetch and Populate Table
 function fetchData() {
     fetch(dataUrl)
@@ -49,23 +47,58 @@ function fetchData() {
             data.forEach(item => {
                 const row = document.createElement('tr');
 
+                // ID Column
                 const idCell = document.createElement('td');
                 idCell.textContent = item['srppp-id'] || '';
                 row.appendChild(idCell);
 
+                // Name Column with Tooltip
                 const nameCell = document.createElement('td');
                 const names = item.label?.[lang] || [''];
+                const latinNames = item.label?.['la'] || [];  // Extract Latin names separately
+                const comment = item.comment?.[lang] || '';
+
+                // Preferred name (first name in list)
+                const preferredName = names[0];
+                const alternativeNames = names.slice(1).join(', ');
+
+                // In-table name rendering (preferred + faded alternates)
                 nameCell.innerHTML = formatNames(names);
+
+                // Tooltip Content (HTML with line breaks)
+                let tooltipContent = `<div class="type-name"><b>${preferredName}</b></div>`;
+
+                // Add alternative names, faded
+                if (alternativeNames) {
+                    tooltipContent += `
+                        <div>
+                            <span class="alt-name">${alternativeNames}</span>
+                        </div>`;
+                }
+
+                // Add taxon (italic Latin names)
+                if (latinNames.length > 0) {
+                    tooltipContent += `
+                        <div>
+                            <i>${latinNames.join(', ')}</i>
+                        </div>`;
+                }
+
+                // Add description (comment)
+                if (comment) {
+                    tooltipContent += `
+                        <div class="type-comment">${comment}</div>`;
+                }
+
+                // Assign tooltip to cell
+                nameCell.setAttribute('data-title', tooltipContent);
                 row.appendChild(nameCell);
 
-                const commentCell = document.createElement('td');
-                commentCell.textContent = item.comment?.[lang] || '';
-                row.appendChild(commentCell);
-
+                // Type (Emoji) Column
                 const typeCell = document.createElement('td');
                 const { emoji, tooltip } = getTypeEmoji(item.type);
                 typeCell.textContent = emoji;
-                typeCell.setAttribute('data-title', tooltip);  // Store full tooltip content                
+                typeCell.setAttribute('data-title', tooltip);
                 row.appendChild(typeCell);
 
                 tableBody.appendChild(row);
@@ -100,6 +133,7 @@ function formatNames(names) {
     const alternates = names.slice(1)
         .map(name => `<span class="alt-name">${name}</span>`)
         .join('<span class="alt-name">, </span>');
+    
     return `${preferred}${alternates ? '<span class="alt-name">, </span>' + alternates : ''}`;
 }
 
@@ -112,9 +146,15 @@ function getTypeEmoji(type) {
     const comment = cropType.comment?.[lang] || cropType.comment?.['en'] || '';
     const emoji = cropType.emoji || '❓';
 
+    // Proper Tooltip with Label and Comment
+    const tooltipContent = `
+        <div class="type-name">${emoji} <b>${label}</b></div>
+        <div class="type-comment">${comment || '-'}</div>
+    `;
+
     return {
         emoji: emoji,
-        tooltip: `${label}|${comment}|${emoji}`  // Pass name, comment, and emoji for formatting
+        tooltip: tooltipContent
     };
 }
 
@@ -243,6 +283,17 @@ tableBody.addEventListener('mouseover', function (event) {
             <div class="type-comment">${comment}</div>
         `;
 
+        tooltip.style.opacity = 1;
+        tooltip.style.visibility = 'visible';
+        positionTooltip(event);
+    }
+});
+
+// Show tooltip on hover (for name and type)
+tableBody.addEventListener('mouseover', function (event) {
+    const target = event.target;
+    if (target.tagName === 'TD' && target.getAttribute('data-title')) {
+        tooltip.innerHTML = target.getAttribute('data-title');
         tooltip.style.opacity = 1;
         tooltip.style.visibility = 'visible';
         positionTooltip(event);

@@ -71,13 +71,17 @@ tbody tr:hover {
 }
 
 /* Column Widths */
-th:nth-child(1) { width:  7%; }
-th:nth-child(2) { width: 28%; }
-th:nth-child(3) { width: 50%; }
-th:nth-child(4),
-td:nth-child(4) {
+th:nth-child(1) { width: 15%; }
+th:nth-child(2) { width: 65%; }
+th:nth-child(3),
+td:nth-child(3) {
     text-align: center;
-    width: 15%;
+    width: 20%;
+}
+
+td[data-title] .preferred-name,
+td[data-title] .alt-name {
+    pointer-events: none;  /* Prevents tooltip from disappearing on hover */
 }
 
 .header {
@@ -168,6 +172,21 @@ a:hover {
 
 .alt-name {
     opacity: 0.4;
+    display: inline;  /* Ensure alternative names stay in-line within the table */
+}
+
+.tooltip .alt-name {
+    display: block;  /* Tooltip-specific: Force new line for alternatives */
+    margin-top: 4px;
+}
+
+.type-name b {
+    font-size: 1.1em;
+}
+
+.type-comment {
+    margin-top: 8px;
+    line-height: 1.4;
 }
 
 .sort-icon {
@@ -182,7 +201,7 @@ th.sorted {
 
 .tooltip {
     position: absolute;
-    background-color: rgba(30, 30, 30, 0.9);  /* Dark semi-transparent box */
+    background-color: rgba(30, 30, 30, 0.9);
     color: white;
     padding: 12px 16px;
     border-radius: 8px;
@@ -190,24 +209,22 @@ th.sorted {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     pointer-events: none;
     opacity: 0;
-    transition: opacity 0.3s ease, transform 0.2s ease, visibility 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.2s ease;
     transform: translateY(5px);
     z-index: 1000;
-    max-width: 350px;  /* Increase width for multiline text */
+    max-width: 400px;
     text-align: left;
     line-height: 1.4;
-    visibility: hidden;  /* Control fade-out with visibility */
+    visibility: hidden;
 }
 
-/* Bold style for type name */
 .tooltip .type-name {
     font-weight: bold;
-    display: flex;
-    align-items: center;
+    margin-bottom: 8px;
 }
 
-/* Smaller font for description */
 .tooltip .type-comment {
     font-size: 0.95em;
     margin-top: 6px;
+    line-height: 1.5;
 }

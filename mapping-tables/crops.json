@@ -676,7 +676,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "garden",
     "srppp-parent-id": [10186]
   },
   {
@@ -696,7 +696,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "garden",
     "srppp-parent-id": [10186]
   },
   {
@@ -716,7 +716,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [10093]
   },
   {
@@ -736,7 +736,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "garden",
     "srppp-parent-id": [10186]
   },
   {
@@ -756,7 +756,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [9962]
   },
   {
@@ -776,7 +776,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [9962]
   },
   {
@@ -816,7 +816,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [10020]
   },
   {
@@ -876,7 +876,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "vegetable",
     "srppp-parent-id": [10210]
   },
   {
@@ -896,7 +896,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "garden",
     "srppp-parent-id": [10186]
   },
   {
@@ -936,7 +936,7 @@
     },
     "wikidata-iri": [null],
     "polyphyletic": null,
-    "type": null,
+    "type": "arable",
     "srppp-parent-id": [10197]
   },
   {
