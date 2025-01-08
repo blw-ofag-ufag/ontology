@@ -175,17 +175,9 @@ function fetchCropTypes() {
         });
 }
 
-
-// Format names for display (highlight first, fade rest)
+// Format names for display (show preferred name only)
 function formatNames(names) {
-    if (names.length === 1) return names[0];  // Single name, no formatting
-
-    const preferred = `<span class="preferred-name">${names[0]}</span>`;
-    const alternates = names.slice(1)
-        .map(name => `<span class="alt-name">${name}</span>`)
-        .join('<span class="alt-name">, </span>');
-    
-    return `${preferred}${alternates ? '<span class="alt-name">, </span>' + alternates : ''}`;
+    return `<span class="preferred-name">${names[0]}</span>`;  // Only show the first name
 }
 
 // Map Crop Types to Emojis (Dynamic from JSON)
@@ -231,7 +223,7 @@ function buildTooltip(item, lang) {
     // Add alternative names if available
     if (alternativeNames) {
         tooltipContent += `
-            <div><span class="alt-name">${alternativeNames}</span></div>`;
+            <div><span class="alt-name">a.k.a. ${alternativeNames}</span></div>`;
     }
 
     // Add description (comment)
