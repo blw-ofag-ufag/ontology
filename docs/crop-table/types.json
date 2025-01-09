@@ -14,6 +14,21 @@
       },
       "emoji": "🌽"
     },
+    "mixture": {
+      "label": {
+        "de": "Mischkultur",
+        "fr": null,
+        "it": null,
+        "en": null
+      },
+      "comment": {
+        "de": "Die Mischkultur ist der ökologisch und ökonomisch begründete und vom Menschen herbeigeführte gleichzeitige Aufwuchs mehrerer Nutzpflanzenarten auf gleicher Fläche. Sie wird in Gartenbau, Landwirtschaft und Privatgarten angewendet.",
+        "fr": null,
+        "it": null,
+        "en": null
+      },
+      "emoji": "🌽"
+    },
     "medical": {
       "label": {
         "de": "Medizinische Pflanzen",

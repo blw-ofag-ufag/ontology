@@ -18,7 +18,7 @@
     "polyphyletic": null,
     "type": "arable",
     "srppp-parent-id": [10197]
-  },  
+  },
   {
     "srppp-id": 12628,
     "label": {
@@ -3422,7 +3422,7 @@
   {
     "srppp-id": 10011,
     "label": {
-      "de": ["Zwetschge", "Pflaume"],
+      "de": ["Pflaume"],
       "fr": ["Prunier", "Pruneau", "Prune"],
       "it": ["Prugno", "Susino"],
       "en": ["Plum", "Prune"],
@@ -5642,8 +5642,8 @@
   {
     "srppp-id": 10126,
     "label": {
-      "de": ["Zwetschge", "Zwetsche", "Zwetschke"],
-      "fr": ["Prunier (pruneau)", "Prunier d'Ente", "Quetsche"],
+      "de": ["Zwetschge", "Zwetsche", "Zwetschke", "Quetsche"],
+      "fr": ["Prunier (pruneau)", "Prunier d'Ente"],
       "it": ["Prugno", "Susina", "Prugna secca"],
       "en": ["Prune plum", "Prune", "European plum"],
       "la": ["Prunus domestica subsp. domestica"]

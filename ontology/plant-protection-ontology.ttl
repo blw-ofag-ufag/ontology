@@ -838,7 +838,7 @@ schema:Organization a owl:Class ;
         "Damage"@en .
 
 :Substance a owl:Class ;
-    rdfs:label "Substanz"@de,
+    rdfs:label "Wirkstoff"@de,
         "Substance"@en ;
     rdfs:comment "Eine chemische Substanz, die entweder eine reine Substanz oder ein Gemisch aus anderen Substanzen sein kann. Jede Substanz kann mit höchstens einer CheBI-Chemikalie verknüpft sein."@de,
         "A chemical substance, which may be either a pure substance or a mixture composed of other substances. Each substance can be associated with at most one CheBI chemical entity."@en ;
