@@ -11,6 +11,8 @@ library(tidyr)
 library(purrr)
 library(jsonlite)
 
+SRPPP$categories[,-1] |> unique() |> write.csv("produktekategorien_PSMV.csv", sep = ";")
+
 # ------------------------------------------------------------------
 # DEFINE HELPER FUNCTIONS
 # ------------------------------------------------------------------

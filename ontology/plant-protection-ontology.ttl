@@ -14,6 +14,8 @@
 wdt:P171 a owl:ObjectProperty ;
     rdfs:label "hat übergeordnetes Taxon"@de,
         "has parent taxon"@en ;
+    rdfs:comment "Nächsthöheres Taxon nach einem bestimmten taxonomischen Gesichtspunkt. Da es mehrere taxonomische Gesichtspunkte gibt, ist mehr als ein übergeordnetes Taxon möglich."@de,
+        "Next higher taxon according to a certain taxonomic viewpoint. As multiple taxonomic viewpoints exist, more than one parent taxon is possible."@en ;
     rdfs:domain wd:Q16521 ;
     rdfs:range wd:Q16521 .
 
@@ -23,7 +25,7 @@ wdt:P171 a owl:ObjectProperty ;
         "This ontology exemplifies the value of comprehensive and well-structured ontology development for the Swiss Federal Office for Agriculture (and more broadly the Swiss agri-food sector). By capturing the complexities of crop protection (with a focus on registered products) in a formal model, it enhances understanding of current rules and allows their effective communication via IT-services."@en ;
     dcterms:title "Eine (demonstrative) Ontologie für den Pflanzenschutz in der Schweiz"@de,
         "A (demonstrative) ontology for crop protection in Switzerland"@en ;
-    owl:versionInfo "0.10" .
+    owl:versionInfo "0.11" .
 
 :AbioticStressor a owl:Class ;
     rdfs:label "Abiotischer Schadverursacher"@de,
@@ -42,7 +44,8 @@ wdt:P171 a owl:ObjectProperty ;
 
 :ActiveSubstance rdfs:label "Aktivsubstanz"@de,
         "Active substance"@en ;
-    rdfs:comment "Active substances are biologically active compounds which, in low concentrations, influence biochemical and physiological processes in plant, animal and human organisms quantitatively and/or qualitatively in the form of inhibition or activation."@en ;
+    rdfs:comment "Aktivsubstanzen (auch Wirkstoffe genannt) sind biologisch aktive Verbindungen, die in geringen Konzentrationen biochemische und physiologische Prozesse in pflanzlichen, tierischen und menschlichen Organismen quantitativ und/oder qualitativ in Form von Hemmung oder Aktivierung beeinflussen."@de,
+        "Active substances (also known as active ingredients) are biologically active compounds which, in low concentrations, influence biochemical and physiological processes in plant, animal and human organisms quantitatively and/or qualitatively in the form of inhibition or activation."@en ;
     rdfs:isDefinedBy <https://www.scienceindustries.ch/_file/27381/201903-begriffsklaerung-final-en.pdf> ;
     rdfs:subClassOf :Substance ;
     skos:altLabel "Active ingredient",
@@ -335,7 +338,8 @@ wdt:P171 a owl:ObjectProperty ;
 :isChemicallyDefinedBy a owl:ObjectProperty ;
     rdfs:label "ist chemisch definiert durch"@de,
         "is chemically defined by"@en ;
-    rdfs:comment "This property links a chemical product to exactly one substance. It allows to decompose the product to all its chemical ingredients and the respective percentages."@en ;
+    rdfs:comment "Diese Eigenschaft verknüpft ein chemisches Produkt mit genau einer Substanz. Sie ermöglicht es, das Produkt in all seine chemischen Bestandteile und die jeweiligen Prozentsätze zu zerlegen."@de,
+        "This property links a chemical product to exactly one substance. It allows to decompose the product to all its chemical ingredients and the respective percentages."@en ;
     rdfs:domain :ChemicalProduct ;
     rdfs:range :Substance ;
     owl:inverseOf :chemicallyDefines .
@@ -494,7 +498,8 @@ schema:email a owl:DatatypeProperty ;
 schema:faxNumber a owl:DatatypeProperty ;
     rdfs:label "hat Fax-Nummer"@de,
         "has fax number"@en ;
-    rdfs:comment "The fax number of the company, formatted as per RFC 3966."@en ;
+    rdfs:comment "Die Faxnummer des Unternehmens, formatiert gemäss RFC 3966."@de,
+        "The fax number of the company, formatted as per RFC 3966."@en ;
     rdfs:domain schema:Organization ;
     rdfs:isDefinedBy <https://www.rfc-editor.org/rfc/rfc3966> ;
     rdfs:range xsd:string .
@@ -530,7 +535,8 @@ schema:streetAddress a owl:DatatypeProperty ;
 schema:telephone a owl:DatatypeProperty ;
     rdfs:label "hat Telefonnummer"@de,
         "has phone number"@en ;
-    rdfs:comment "The fax number of the company, formatted as per RFC 3966."@en ;
+    rdfs:comment "Die Telephonnummer des Unternehmens, formatiert gemäss RFC 3966."@de,
+        "The telephone number of the company, formatted as per RFC 3966."@en ;
     rdfs:domain schema:Organization ;
     rdfs:isDefinedBy <https://www.rfc-editor.org/rfc/rfc3966> ;
     rdfs:range xsd:string .
@@ -590,7 +596,8 @@ chebi:24431 a owl:Class ;
 :contains a owl:ObjectProperty ;
     rdfs:label "beinhaltet"@de,
         "contains"@en ;
-    rdfs:comment "This property links a chemical product to pure chemical substances. It exists for simple checks wether a chemical product contains a certain pure chemical substance."@en ;
+    rdfs:comment "Diese Eigenschaft verknüpft ein chemisches Produkt mit reinen chemischen Substanzen. Sie dient der einfachen Überprüfung, ob ein chemisches Produkt eine bestimmte reine chemische Substanz enthält."@de,
+        "This property links a chemical product to pure chemical substances. It exists for simple checks wether a chemical product contains a certain pure chemical substance."@en ;
     rdfs:domain :ChemicalProduct ;
     rdfs:range :PureSubstance .
 
@@ -740,7 +747,8 @@ chebi:24431 a owl:Class ;
 :nonTargetOrganism a owl:Class ;
     rdfs:label "Nichtzielorganismus"@de,
         "Non target organism"@en ;
-    rdfs:comment "Any organism other than the one against which the pesticide is applied."@en .
+    rdfs:comment "Jeder Organismus ausser dem, gegen den das Pestizid angewendet wird."@de,
+        "Any organism other than the one against which the pesticide is applied."@en .
 
 schema:Country a owl:Class ;
     rdfs:label "Land"@de,
@@ -810,8 +818,10 @@ wd:Q16521 a owl:Class ;
 :Action a owl:Class ;
     rdfs:label "Schutzmassnahme"@de,
         "Protective action"@en ;
-    rdfs:comment "A specific action taken to mitigate damage done to crops."@en ;
-    skos:scopeNote "Only use this class when the action is specifically *not* a treatment; i.e. the application of crop protection proucts on crops."@en .
+    rdfs:comment "Eine spezifische Massnahme zur Minderung von Schäden an einer landwirtschaftlichen Kultur."@de,
+        "A specific action taken to mitigate damage done to crops."@en ;
+    skos:scopeNote "Diese Klasse ist nur dann zu verwenden, wenn es sich bei der Massnahme ausdrücklich nicht um eine Behandlung handelt, d. h. um die Anwendung von Pflanzenschutzmitteln auf Nutzpflanzen."@de,
+        "Only use this class when the action is specifically not a treatment; i.e. the application of crop protection proucts on crops."@en .
 
 schema:Organization a owl:Class ;
     rdfs:label "Organisation"@de,
