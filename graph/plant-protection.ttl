@@ -17267,10 +17267,10 @@ ns1:NonTargetOrganismIsDefinedByBiologicalTaxon a owl:ObjectProperty ;
     rdfs:subPropertyOf ns1:isDefinedByBiologicalTaxon .
 
 ns1:Obligation a owl:Class ;
-    rdfs:label "Auflage"@de,
-        "Obligation"@en ;
-    rdfs:comment "Auflage gemäss dem Schweizer Pflanzenschutzmittelregister."@de,
-        "Obligation according to the Swiss plant protection product registry."@en ;
+    rdfs:label "Auflage zu Behandlungen"@de,
+        "Application requirement"@en ;
+    rdfs:comment "Eine Auflage ist eine spezifische Bedingung oder Anforderung, die für die sachgemässe Anwendung eines Pflanzenschutzmittels gemäss dem Schweizer Pflanzenschutzmittelverzeichnis erfüllt werden muss. Diese Auflagen sollen die sichere und effektive Verwendung des Produkts gewährleisten und Risiken für Mensch, Tier und Umwelt minimieren."@de,
+        "An application requirement is a specific condition or obligation that must be met for the proper use of a plant protection product according to the Swiss Plant Protection Product Register. These requirements are intended to ensure the safe and effective use of the product, minimizing risks to human health, animals, and the environment."@en ;
     rdfs:subClassOf ns1:ActionNotice .
 
 ns1:Phytoregulator a owl:Class ;
@@ -17282,13 +17282,18 @@ ns1:Safener rdfs:label "Safener"@de,
         "Safener"@en ;
     rdfs:subClassOf ns1:Substance .
 
-ns1:Synergist rdfs:label "Synergist"@de,
+ns1:Synergist a owl:Class ;
+    rdfs:label "Synergist"@de,
         "Synergist"@en ;
+    rdfs:comment "Ein Synergist ist eine Substanz, die selbst keine oder nur geringe insektizide Wirkung besitzt, aber die Wirksamkeit von Insektiziden erhöht. Synergisten wirken, indem sie die Entgiftungsmechanismen von Schädlingen hemmen, wodurch die Toxizität der Insektizide verstärkt wird."@de,
+        "A synergist is a substance that has little or no insecticidal effect on its own but enhances the efficacy of insecticides. Synergists function by inhibiting the detoxification mechanisms of pests, thereby increasing the toxicity of the insecticides."@en ;
     rdfs:subClassOf ns1:Substance .
 
 ns1:appliesToProduct a owl:ObjectProperty ;
     rdfs:label "bezieht sich auf das Produkt"@de,
         "applies to product"@en ;
+    rdfs:comment "Diese Eigenschaft verknüpft eine Gefahrenkennzeichnung mit dem Produkt, auf das sie sich bezieht."@de,
+        "This property associates a hazard statement with the product it pertains to."@en ;
     rdfs:domain ns1:HazardStatement ;
     rdfs:range ns1:Product ;
     owl:inverseOf ns1:hasHazardStatement .
@@ -17296,6 +17301,8 @@ ns1:appliesToProduct a owl:ObjectProperty ;
 ns1:bioticStressorIsDefinedByBiologicalTaxon a owl:ObjectProperty ;
     rdfs:label "ist definiert durch das biologische Taxon"@de,
         "is defined by biological taxon"@en ;
+    rdfs:comment "Diese Eigenschaft verknüpft einen biotischen Stressor mit dem biologischen Taxon, das ihn definiert."@de,
+        "This property links a biotic stressor to the biological taxon that defines it."@en ;
     rdfs:domain ns1:BioticStressor ;
     rdfs:range <http://www.wikidata.org/entity/Q16521> ;
     rdfs:subPropertyOf ns1:isDefinedByBiologicalTaxon .
@@ -17303,20 +17310,24 @@ ns1:bioticStressorIsDefinedByBiologicalTaxon a owl:ObjectProperty ;
 ns1:causesCollateralDamageTo a owl:ObjectProperty ;
     rdfs:label "führt zu einem Kollateralschaden bei"@de,
         "causes collateral damage to"@en ;
+    rdfs:comment "Diese Eigenschaft zeigt an, dass die Anwendung eines Produkts unbeabsichtigte Schäden bei Nicht-Zielorganismen verursachen kann."@de,
+        "This property signifies that the application of a product may lead to unintended harm to non-target organisms."@en ;
     rdfs:domain ns1:Product ;
     rdfs:range ns1:nonTargetOrganism .
 
 ns1:componentPercentage a owl:DatatypeProperty ;
     rdfs:label "Komponentenprozentsatz"@de,
-        "component percentage"@en ;
-    rdfs:comment "Gibt den Prozentsatz (0% – 100%) der Bestandssubstanz innerhalb eines Gemisches an."@de,
-        "Specifies the percentage (0% – 100%) of the component substance within a mixture."@en ;
+        "Component percentage"@en ;
+    rdfs:comment "Gibt den Prozentsatz (0% - 100%) der Bestandssubstanz innerhalb eines Gemisches an."@de,
+        "Specifies the percentage (0% - 100%) of the component substance within a mixture."@en ;
     rdfs:domain ns1:ComponentPortion ;
     rdfs:range xsd:float .
 
 ns1:cropIsRelatedToBiologicalTaxon a owl:ObjectProperty ;
     rdfs:label "hängt zusammen mit dem biologischen Taxon"@de,
         "is related to biological taxon"@en ;
+    rdfs:comment "Diese Eigenschaft verknüpft eine landwirtschaftliche Kultur mit dem biologischen Taxon, mit dem sie verbunden ist."@de,
+        "This property links a crop to the biological taxon it is associated with."@en ;
     rdfs:domain ns1:CropGroup ;
     rdfs:range <http://www.wikidata.org/entity/Q16521> ;
     rdfs:subPropertyOf ns1:isDefinedByBiologicalTaxon .
@@ -17324,12 +17335,16 @@ ns1:cropIsRelatedToBiologicalTaxon a owl:ObjectProperty ;
 ns1:enables a owl:ObjectProperty ;
     rdfs:label "ermöglicht"@de,
         "enables"@en ;
+    rdfs:comment "Diese Eigenschaft zeigt an, dass eine bestimmte Umweltbedingung eine bestimmte Art von Schaden ermöglicht oder verursacht."@de,
+        "This property signifies that a specific environmental condition facilitates or leads to a particular type of damage."@en ;
     rdfs:domain ns1:EnvironmentalCondition ;
     rdfs:range ns1:Damage .
 
 ns1:hasChildCropGroup a owl:ObjectProperty ;
     rdfs:label "hat Untergruppe"@de,
         "has child crop group"@en ;
+    rdfs:comment "Diese Eigenschaft zeigt an, dass eine Kulturgruppe eine andere Kulturgruppe als Untergruppe enthält."@de,
+        "This property indicates that a crop group includes another crop group as its subgroup."@en ;
     rdfs:domain ns1:CropGroup ;
     rdfs:range ns1:CropGroup ;
     owl:inverseOf ns1:hasParentCropGroup .
@@ -17337,39 +17352,45 @@ ns1:hasChildCropGroup a owl:ObjectProperty ;
 ns1:hasCountryOfOrigin a owl:ObjectProperty ;
     rdfs:label "hat Herkunftsland"@de,
         "has country of origin"@en ;
+    rdfs:comment "Diese Eigenschaft gibt das Land an, aus dem das Produkt stammt."@de,
+        "This property indicates the country where the product originates."@en ;
     rdfs:domain ns1:Product ;
     rdfs:range schema:Country .
 
 ns1:hasExhaustionDeadline a owl:DatatypeProperty ;
-    rdfs:label "hat ein Ablaufdatum der Nutzung"@de,
-        "has exhaustion deadline"@en ;
+    rdfs:label "Ablaufdatum der Nutzung"@de,
+        "Exhaustion deadline"@en ;
     rdfs:comment "Das Datum, an dem das Produkt nicht mehr genutzt werden darf, in der Regel nach der Widerrufung der Produktregistrierung."@de,
         "The date by which the product must no longer be used, typically after the product registration has been revoked."@en ;
     rdfs:domain ns1:Product ;
     rdfs:range xsd:date .
 
 ns1:hasForeignAdmissionNumber a owl:DatatypeProperty ;
-    rdfs:label "hat ausländische Zulassungsnummer"@de,
-        "has foreign admission number"@en ;
+    rdfs:label "Ausländische Zulassungsnummer"@de,
+        "Foreign admission number"@en ;
+    rdfs:comment "Diese Eigenschaft gibt die Zulassungs- oder Registrierungsnummer an, die dem Produkt in seinem Herkunftsland zugewiesen wurde."@de,
+        "This property specifies the admission or registration number assigned to the product in its country of origin."@en ;
     rdfs:domain ns1:ParallelImport ;
     rdfs:range xsd:string .
 
 ns1:hasHazardStatementCode a owl:DatatypeProperty ;
-    rdfs:label "hat Code bezüglich Sicherheitshinweisen für Gefahrstoffe"@de,
-        "has hazard statement code"@en ;
+    rdfs:label "Code bezüglich Sicherheitshinweisen für Gefahrstoffe"@de,
+        "Hazard statement code"@en ;
     rdfs:domain ns1:HazardStatement ;
     rdfs:range xsd:string .
 
 ns1:hasPermissionHolder a owl:ObjectProperty ;
     rdfs:label "hat Verkaufsbewilligungshalter"@de,
         "has permission holder"@en ;
+    rdfs:comment "Diese Eigenschaft verknüpft ein Produkt mit der Firma, die berechtigt ist, es zu verkaufen."@de,
+        "This property links a product to the company authorized to sell it."@en ;
     rdfs:domain ns1:Product ;
     rdfs:range schema:Organization ;
     owl:inverseOf ns1:holdsPermissionToSell .
 
 ns1:hasSoldoutDeadline a owl:DatatypeProperty ;
-    rdfs:label "hat eine Ausverkauft-Frist"@de,
-        "has sold out deadline"@en ;
+    rdfs:label "Ausverkauft-Frist"@de,
+        "Sold out deadline"@en ;
     rdfs:comment "Das Datum, an dem das Produkt nicht mehr verkauft werden darf, in der Regel nach der Widerrufung der Produktregistrierung."@de,
         "The date by which the product can no longer be sold, typically after the product registration has been revoked."@en ;
     rdfs:domain ns1:Product ;
@@ -17557,20 +17578,20 @@ schema:addressCountry a owl:ObjectProperty ;
     rdfs:range schema:Country .
 
 schema:addressLocality a owl:DatatypeProperty ;
-    rdfs:label "hat Ortschaft"@de,
-        "has postal locality"@en ;
+    rdfs:label "Ortschaft"@de,
+        "Postal locality"@en ;
     rdfs:domain schema:PostalAddress ;
     rdfs:range xsd:string .
 
 schema:email a owl:DatatypeProperty ;
-    rdfs:label "hat Email-Adresse"@de,
-        "has email address"@en ;
+    rdfs:label "Email-Adresse"@de,
+        "Email address"@en ;
     rdfs:domain schema:Organization ;
     rdfs:range xsd:string .
 
 schema:faxNumber a owl:DatatypeProperty ;
-    rdfs:label "hat Fax-Nummer"@de,
-        "has fax number"@en ;
+    rdfs:label "Fax-Nummer"@de,
+        "Fax number"@en ;
     rdfs:comment "Die Faxnummer des Unternehmens, formatiert gemäss RFC 3966."@de,
         "The fax number of the company, formatted as per RFC 3966."@en ;
     rdfs:domain schema:Organization ;
@@ -17578,36 +17599,36 @@ schema:faxNumber a owl:DatatypeProperty ;
     rdfs:range xsd:string .
 
 schema:legalName a owl:DatatypeProperty ;
-    rdfs:label "hat legalen Namen"@de,
-        "has legal name"@en ;
-    rdfs:comment "Der offizielle Name der Organisation, z.B. der eingetragene Firmenname."@de,
-        "The official name of the organization, e.g. the registered company name."@en ;
+    rdfs:label "Legaler Name"@de,
+        "Legal name"@en ;
+    rdfs:comment "Der offizielle Name der Organisation, d.h. für Schweizer Unternehmen der eingetragene Firmenname."@de,
+        "The official name of the organization, i.e. for Swiss companies the registered company name."@en ;
     rdfs:domain schema:Organization ;
     rdfs:range xsd:string .
 
 schema:postOfficeBoxNumber a owl:DatatypeProperty ;
     rdfs:label "Postfachnummer"@de,
-        "has post office box number"@en ;
+        "Post office box number"@en ;
     rdfs:comment "Die Postfachnummer für Postfachadressen."@de,
         "The post office box number for PO box addresses."@en ;
     rdfs:domain schema:PostalAddress ;
     rdfs:range xsd:string .
 
 schema:postalCode a owl:DatatypeProperty ;
-    rdfs:label "hat Postleitzahl"@de,
-        "has postal code"@en ;
+    rdfs:label "Postleitzahl"@de,
+        "Postal code"@en ;
     rdfs:domain schema:PostalAddress ;
     rdfs:range xsd:string .
 
 schema:streetAddress a owl:DatatypeProperty ;
-    rdfs:label "hat Strassenaddresse"@de,
-        "has street address"@en ;
+    rdfs:label "Strassenaddresse"@de,
+        "Street address"@en ;
     rdfs:domain schema:PostalAddress ;
     rdfs:range xsd:string .
 
 schema:telephone a owl:DatatypeProperty ;
-    rdfs:label "hat Telefonnummer"@de,
-        "has phone number"@en ;
+    rdfs:label "Telefonnummer"@de,
+        "Phone number"@en ;
     rdfs:comment "Die Telephonnummer des Unternehmens, formatiert gemäss RFC 3966."@de,
         "The telephone number of the company, formatted as per RFC 3966."@en ;
     rdfs:domain schema:Organization ;
@@ -19937,8 +19958,8 @@ ns1:hasComponentSubstance a owl:ObjectProperty ;
     rdfs:range ns1:Substance .
 
 ns1:hasFederalAdmissionNumber a owl:DatatypeProperty ;
-    rdfs:label "hat eidgenössische Zulassungsnummer"@de,
-        "has federal admission number"@en ;
+    rdfs:label "Eidgenössische Zulassungsnummer"@de,
+        "Federal admission number"@en ;
     rdfs:comment "Die eidgenössische Zulassungsnummer identifiziert eine Produktregistrierung eindeutig. Sie ist entweder als W-Nummer im Fall von Bundeszulassungen (z. B. W-18) oder als Parallelimportnummer mit dem Anfangsbuchstaben des Ursprungslandes im Code im Fall von Parallelimporten (z. B. I-2789 für einen Parallelimport aus Italien) aufgebaut. Nummern mit einem Bindestrich (z. B. W-18-1, W-18-2) stehen für gleichwertige Produkte, die sich im Besitz verschiedener juristischer Personen befinden, während Nummern ohne Bindestrich (z. B. W-18) für die ursprüngliche Registrierung stehen."@de,
         "The federal admission number uniquely identifies a product registration. It is either constructed as a W-Number in the case of federal admissions (e.g. W-18) or as a parallel import number with the country of origin starting letter in the code in the case of parallel imports (e.g. I-2789 for a parallel import from Italy). Numbers with a dash (e.g., W-18-1, W-18-2) represent equivalent products held by different legal entities, while numbers without a dash (e.g., W-18) represent the original registration."@en ;
     rdfs:domain ns1:Product ;
@@ -19969,8 +19990,10 @@ ns1:isMetabolizedTo a owl:ObjectProperty ;
     rdfs:range ns1:PureSubstance .
 
 ns1:isNonProfessionallyAllowed a owl:DatatypeProperty ;
-    rdfs:label "ist erlaubt für die nicht-berufliche Verwendung"@de,
-        "is non-professionally allowed"@en ;
+    rdfs:label "Erlaubnis für die nicht-berufliche Verwendung"@de,
+        "Allowance for non-professional use"@en ;
+    rdfs:comment "Diese Eigenschaft gibt an, ob ein Produkt für die nicht-berufliche Verwendung zugelassen ist, wie in Artikel 64 der Schweizer Pflanzenschutzmittelverordnung (PSMV) definiert."@de,
+        "This property indicates whether a product is permitted for non-professional use, as defined by Article 64 of the Swiss Plant Protection Products Ordinance (PSMV)."@en ;
     rdfs:domain ns1:Product ;
     rdfs:range xsd:boolean ;
     rdfs:seeAlso <https://www.fedlex.admin.ch/eli/cc/2010/340/de#art_64> .
@@ -19978,12 +20001,16 @@ ns1:isNonProfessionallyAllowed a owl:DatatypeProperty ;
 ns1:limits a owl:ObjectProperty ;
     rdfs:label "schränkt ein"@de,
         "limits"@en ;
+    rdfs:comment "Diese Eigenschaft zeigt an, dass ein Pflanzenschutzmittel bestimmte Schadensarten reduziert oder mildert."@de,
+        "This property indicates that a crop protection product reduces or mitigates specific types of damage."@en ;
     rdfs:domain ns1:CropProtectionProduct ;
     rdfs:range ns1:Damage .
 
 ns1:manages a owl:ObjectProperty ;
     rdfs:label "bekämpft"@de,
         "manages"@en ;
+    rdfs:comment "Diese Eigenschaft zeigt an, dass ein Pflanzenschutzmittel verwendet wird, um einen bestimmten Stressor zu bekämpfen."@de,
+        "This property indicates that a crop protection product is used to control or combat a specific crop stressor."@en ;
     rdfs:domain ns1:CropProtectionProduct ;
     rdfs:range ns1:CropStressor ;
     rdfs:subPropertyOf ns1:interactsWith .
@@ -19991,6 +20018,8 @@ ns1:manages a owl:ObjectProperty ;
 ns1:mitigates a owl:ObjectProperty ;
     rdfs:label "mindert"@de,
         "mitigates"@en ;
+    rdfs:comment "Diese Eigenschaft zeigt an, dass eine Handlung bestimmte Schadensarten reduziert oder lindert."@de,
+        "This property indicates that an action reduces or alleviates specific types of damage."@en ;
     rdfs:domain ns1:Action ;
     rdfs:range ns1:Damage .
 
@@ -24541,6 +24570,8 @@ ns1:ActionNotice a owl:Class ;
 ns1:Nematicide a owl:Class ;
     rdfs:label "Nematizid"@de,
         "Nematicide"@en ;
+    rdfs:comment "Ein Nematizid ist ein chemisches Pflanzenschutzmittel, das zur Bekämpfung von Nematoden (Fadenwürmern) eingesetzt wird. Diese Mittel sind entscheidend für den Schutz von Kulturpflanzen, da Nematoden erhebliche Schäden an Wurzelsystemen verursachen und die Ernteerträge mindern können."@de,
+        "A nematicide is a chemical crop protection product used to control nematodes (roundworms). These agents are crucial for protecting cultivated plants, as nematodes can cause significant damage to root systems and reduce crop yields."@en ;
     rdfs:subClassOf ns1:ChemicalCropProtectionProduct .
 
 ns1:TreatmentConstraint a owl:Class ;
@@ -37087,6 +37118,8 @@ ns1:2-11761 a schema:Organization ;
 ns1:NaturalDefenseStimulator a owl:Class ;
     rdfs:label "Stimulator der natürlichen Abwehrkräfte"@de,
         "Stimulator of natural defenses"@en ;
+    rdfs:comment "Ein Stimulator der natürlichen Abwehrkräfte ist ein chemisches Produkt, das die natürlichen Abwehrmechanismen von Pflanzen aktiviert. Durch die Stimulierung des pflanzeneigenen Immunsystems erhöhen diese Produkte die Resistenz der Pflanzen gegen Krankheiten und Schädlinge, ohne direkt auf die Pathogene einzuwirken."@de,
+        "A stimulator of natural defenses is a chemical product that activates the natural defense mechanisms of plants. By stimulating the plant's own immune system, these products enhance the plant's resistance to diseases and pests without directly targeting the pathogens."@en ;
     rdfs:subClassOf ns1:ChemicalProduct .
 
 ns1:Rodenticide a owl:Class ;
@@ -61338,8 +61371,8 @@ ns1:CodeS a owl:Class ;
         "Safety Phrase"@en ;
     rdfs:comment "Ein S-Satz ist ein standardisierter Sicherheitshinweis für den Umgang mit gefährlichen chemischen Stoffen. Diese Sätze wurden in der Europäischen Union verwendet, um sichere Handhabung, Lagerung und Notfallmassnahmen auf Sicherheitsdatenblättern und Etiketten zu empfehlen."@de,
         "A Safety Phrase is a standardized safety instruction for handling hazardous chemical substances. These phrases were used in the European Union to recommend safe handling, storage, and emergency measures on safety data sheets and labels."@en ;
-    rdfs:seeAlso "https://ec.europa.eu/taxation_customs/dds2/SAMANCTA/EN/Safety/RS_EN.htm",
-        "https://w.wiki/CjPv" ;
+    rdfs:seeAlso <https://ec.europa.eu/taxation_customs/dds2/SAMANCTA/EN/Safety/RS_EN.htm>,
+        <https://w.wiki/CjPv> ;
     rdfs:subClassOf ns1:HazardStatement .
 
 <https://register.ld.admin.ch/zefix/company/932153> ns1:holdsPermissionToSell ns1:1-W-6620,
@@ -61380,9 +61413,11 @@ ns1:CodeS a owl:Class ;
 ns1:Pheromone a owl:Class ;
     rdfs:label "Pheromon"@de,
         "Pheromone"@en ;
-    rdfs:comment "Pheromone (Insektenlockstoffe) sind..."@de,
-        "Pheromones (insect attractant) are ..."@en ;
-    rdfs:subClassOf ns1:Insecticide .
+    rdfs:comment "Pheromone sind chemische Substanzen, die von Insekten abgesondert werden, um mit Artgenossen zu kommunizieren. Sie beeinflussen Verhaltensweisen wie Paarung, Aggregation oder Spurverfolgung. In der Schädlingsbekämpfung werden synthetische Pheromone als Lockstoffe eingesetzt, um Schädlingspopulationen zu überwachen oder zu kontrollieren."@de,
+        "Pheromones are chemical substances secreted by insects to communicate with conspecifics. They influence behaviors such as mating, aggregation, or trail following. In pest management, synthetic pheromones are used as attractants to monitor or control pest populations."@en ;
+    rdfs:subClassOf ns1:BehavioralControlAgent ;
+    skos:altLabel "Insektenlockstoffe"@de,
+        "Insect Attractant"@en .
 
 ns1:SeedDressing a owl:Class ;
     rdfs:label "Saatbeizmittel"@de,
@@ -63378,8 +63413,8 @@ ns1:CodeR a owl:Class ;
         "Risk Phrase"@en ;
     rdfs:comment "Ein R-Satz ist eine standardisierte Risikobeschreibung für gefährliche chemische Stoffe, die spezifische Gefahren wie Toxizität oder Entflammbarkeit angibt. Diese wurden in der Europäischen Union verwendet, um Risiken auf Sicherheitsdatenblättern und Etiketten zu kennzeichnen."@de,
         "A Risk Phrase is a standardized description of the risks associated with hazardous chemical substances, indicating specific dangers such as toxicity or flammability. These were used in the European Union to denote risks on safety data sheets and labels."@en ;
-    rdfs:seeAlso "https://ec.europa.eu/taxation_customs/dds2/SAMANCTA/EN/Safety/RS_EN.htm",
-        "https://w.wiki/CjPj" ;
+    rdfs:seeAlso <https://ec.europa.eu/taxation_customs/dds2/SAMANCTA/EN/Safety/RS_EN.htm>,
+        <https://w.wiki/CjPj> ;
     rdfs:subClassOf ns1:HazardStatement .
 
 ns1:Bactericide a owl:Class ;
@@ -63392,6 +63427,8 @@ ns1:Bactericide a owl:Class ;
 ns1:Molluscicide a owl:Class ;
     rdfs:label "Molluskizid"@de,
         "Molluscicide"@en ;
+    rdfs:comment "Ein Molluskizid ist ein chemisches Pflanzenschutzmittel, das zur Bekämpfung von Weichtieren, insbesondere Schnecken und Nacktschnecken, eingesetzt wird. Es schützt landwirtschaftliche Kulturen vor Schäden, die durch diese Schädlinge verursacht werden."@de,
+        "A molluscicide is a chemical crop protection product used to control mollusks, particularly slugs and snails. It protects agricultural crops from damage caused by these pests."@en ;
     rdfs:subClassOf ns1:ChemicalCropProtectionProduct .
 
 <https://register.ld.admin.ch/zefix/company/1118792> ns1:holdsPermissionToSell ns1:1-W-2594-1,
@@ -64516,6 +64553,8 @@ ns1:CropStressor a owl:Class ;
 ns1:Fungicide a owl:Class ;
     rdfs:label "Fungizid"@de,
         "Fungicide"@en ;
+    rdfs:comment "Ein Fungizid ist ein chemisches Pflanzenschutzmittel, das zur Bekämpfung von Pilzkrankheiten in der Landwirtschaft eingesetzt wird. Es tötet Pilze oder hemmt ihr Wachstum, um Ernteerträge und -qualität zu schützen."@de,
+        "A fungicide is a chemical crop protection product used to combat fungal diseases in agriculture. It kills fungi or inhibits their growth to protect crop yields and quality."@en ;
     rdfs:subClassOf ns1:ChemicalCropProtectionProduct .
 
 ns1:ParallelImport a owl:Class ;
@@ -64529,6 +64568,8 @@ ns1:ParallelImport a owl:Class ;
 ns1:Herbicide a owl:Class ;
     rdfs:label "Herbizid"@de,
         "Herbicide"@en ;
+    rdfs:comment "Ein Herbizid ist ein chemisches Pflanzenschutzmittel, das zur Bekämpfung unerwünschter Pflanzen (Unkräuter) eingesetzt wird. Es hilft, das Wachstum von Unkräutern zu hemmen oder sie abzutöten, um die Erträge und Qualität der Kulturpflanzen zu schützen."@de,
+        "A herbicide is a chemical crop protection product used to control unwanted plants (weeds). It helps inhibit the growth of weeds or eliminate them to protect the yields and quality of cultivated crops."@en ;
     rdfs:subClassOf ns1:ChemicalCropProtectionProduct .
 
 ns1:ChemicalCropProtectionProduct a owl:Class ;
