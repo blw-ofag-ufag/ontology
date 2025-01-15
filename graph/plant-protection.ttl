@@ -17239,6 +17239,8 @@ ns1:ActiveSubstance rdfs:label "Aktivsubstanz"@de,
 
 ns1:AdditiveToDeclare rdfs:label "Zu deklarierende Additive"@de,
         "Additives to declare"@en ;
+    rdfs:comment "Additive, die in einem Produkt enthalten sind und deklariert werden müssen, beispielsweise aufgrund ihrer chemischen Eigenschaften oder potenziellen Auswirkungen."@de,
+        "Additives that are included in a product and must be declared, for example due to their chemical properties or potential effects."@en ;
     rdfs:subClassOf ns1:Substance .
 
 ns1:BCAisDefinedByBiologicalTaxon a owl:ObjectProperty ;
@@ -17251,8 +17253,10 @@ ns1:BCAisDefinedByBiologicalTaxon a owl:ObjectProperty ;
     rdfs:subPropertyOf ns1:isDefinedByBiologicalTaxon .
 
 ns1:BestPracticeRecommendations a owl:Class ;
-    rdfs:label "Empfehlung"@de,
-        "Recommendation"@en ;
+    rdfs:label "Schutzmassnahmenempfehlung"@de,
+        "Protective Action Recommendation"@en ;
+    rdfs:comment "Schutzmassnahmenempfehlungen geben Anleitung für die effektivsten und nachhaltigsten Massnahmen, um Schäden an spezifischen Nutzpflanzen zu verhindern oder zu minimieren, die durch bestimmte Stressfaktoren verursacht werden. Sie berücksichtigen die Art der Kultur, die Umweltbedingungen und die Besonderheiten des Stressfaktors."@de,
+        "Protective action recommendations provide guidance on the most effective and sustainable measures to prevent or minimize damage to specific crops caused by particular stressors. They consider the type of crop, environmental conditions, and characteristics of the stressor."@en ;
     rdfs:subClassOf ns1:ActionNotice .
 
 ns1:NonTargetOrganismIsDefinedByBiologicalTaxon a owl:ObjectProperty ;
@@ -21901,6 +21905,8 @@ ns1:BBCH a owl:Class ;
 ns1:BCABacteria a owl:Class ;
     rdfs:label "Bakterienprodukte"@de,
         "Bacterial products"@en ;
+    rdfs:comment "Bakterienprodukte sind biologische Schädlingsbekämpfungsmittel, die aus Bakterien bestehen oder von ihnen abgeleitet sind. Sie bekämpfen Schädlinge oder Krankheiten durch Mechanismen wie Konkurrenz, Produktion antimikrobieller Substanzen oder Förderung der Pflanzengesundheit."@de,
+        "Bacterial products are biological control agents composed of or derived from bacteria. They combat pests or diseases through mechanisms such as competition, production of antimicrobial substances, or enhancement of plant health."@en ;
     rdfs:subClassOf ns1:BiologicalControlAgent .
 
 ns1:GeneralNotice a owl:Class ;
@@ -33808,6 +33814,8 @@ ns1:5-10080 a ns1:CropGroup ;
 ns1:BCAFungi a owl:Class ;
     rdfs:label "Pilzprodukte"@de,
         "Fungal products"@en ;
+    rdfs:comment "Pilzprodukte sind biologische Schädlingsbekämpfungsmittel, die aus Pilzen bestehen oder von ihnen abgeleitet sind. Sie bekämpfen Schädlinge, Krankheiten oder Unkräuter durch Mechanismen wie Antagonismus, Parasitismus oder die Förderung der Pflanzengesundheit."@de,
+        "Fungal products are biological control agents composed of or derived from fungi. They combat pests, diseases, or weeds through mechanisms such as antagonism, parasitism, or enhancement of plant health."@en ;
     rdfs:subClassOf ns1:BiologicalControlAgent .
 
 <https://register.ld.admin.ch/zefix/company/1096353> ns1:holdsPermissionToSell ns1:1-W-6138,
@@ -53161,6 +53169,8 @@ ns1:2-7179 a schema:Organization ;
 ns1:BCAInsectViruses a owl:Class ;
     rdfs:label "Insektenvirenprodukte"@de,
         "Insect virus products"@en ;
+    rdfs:comment "Insektenvirenprodukte sind biologische Schädlingsbekämpfungsmittel, die Viren enthalten, die gezielt Insekten schädigen. Sie bieten eine umweltfreundliche Alternative zu chemischen Insektiziden, da sie spezifisch auf Schadinsekten wirken und andere Organismen schonen."@de,
+        "Insect virus products are biological control agents containing viruses that specifically harm insects. They provide an environmentally friendly alternative to chemical insecticides, as they target pests while being harmless to other organisms."@en ;
     rdfs:subClassOf ns1:BiologicalControlAgent .
 
 ns1:1-A-5359 a ns1:ChemicalCropProtectionProduct,
@@ -58703,7 +58713,10 @@ ns1:5-10195 a ns1:CropGroup ;
 ns1:BCAAgainstFungi a owl:Class ;
     rdfs:label "Produkte gegen Pilze"@de,
         "Products against fungi"@en ;
-    rdfs:subClassOf ns1:BiologicalControlAgent .
+    rdfs:comment "Produkte gegen Pilze sind biologische Schädlingsbekämpfungsmittel, die verwendet werden, um Pflanzen vor schädlichen Pilzen zu schützen. Sie basieren auf natürlichen Organismen oder deren Nebenprodukten und fördern nachhaltige landwirtschaftliche Praktiken."@de,
+        "Products against fungi are biological control agents used to protect plants from harmful fungi. They are based on natural organisms or their byproducts and support sustainable agricultural practices."@en ;
+    rdfs:subClassOf ns1:BiologicalControlAgent ;
+    skos:altLabel "Antifungal biological agents"@en .
 
 ns1:1-F-6680 a ns1:ChemicalCropProtectionProduct,
         ns1:ChemicalProduct,
@@ -61321,8 +61334,12 @@ ns1:BCAMites a owl:Class ;
     rdfs:subClassOf ns1:BiologicalControlAgent .
 
 ns1:CodeS a owl:Class ;
-    rdfs:label "S Code"@de,
-        "S Code"@en ;
+    rdfs:label "Sicherheits-Satz"@de,
+        "Safety Phrase"@en ;
+    rdfs:comment "Ein S-Satz ist ein standardisierter Sicherheitshinweis für den Umgang mit gefährlichen chemischen Stoffen. Diese Sätze wurden in der Europäischen Union verwendet, um sichere Handhabung, Lagerung und Notfallmassnahmen auf Sicherheitsdatenblättern und Etiketten zu empfehlen."@de,
+        "A Safety Phrase is a standardized safety instruction for handling hazardous chemical substances. These phrases were used in the European Union to recommend safe handling, storage, and emergency measures on safety data sheets and labels."@en ;
+    rdfs:seeAlso "https://ec.europa.eu/taxation_customs/dds2/SAMANCTA/EN/Safety/RS_EN.htm",
+        "https://w.wiki/CjPv" ;
     rdfs:subClassOf ns1:HazardStatement .
 
 <https://register.ld.admin.ch/zefix/company/932153> ns1:holdsPermissionToSell ns1:1-W-6620,
@@ -63139,6 +63156,8 @@ ns1:2-11773 a schema:Organization ;
 ns1:AdhesionAgents a owl:Class ;
     rdfs:label "Netz- und Haftmittel"@de,
         "Wetting and adhesion agents"@en ;
+    rdfs:comment "Netz- und Haftmittel sind chemische Produkte, die verwendet werden, um Pflanzenschutzmittel gleichmässig auf Pflanzenoberflächen zu verteilen und deren Anhaftung zu verbessern. Sie erhöhen die Effizienz und Wirksamkeit von Behandlungen."@de,
+        "Wetting and adhesion agents are chemical products used to distribute crop protection products evenly on plant surfaces and enhance their adhesion. They improve the efficiency and effectiveness of treatments."@en ;
     rdfs:subClassOf ns1:ChemicalProduct .
 
 <https://register.ld.admin.ch/zefix/company/594217> ns1:holdsPermissionToSell ns1:1-W-4682-4,
@@ -63355,13 +63374,19 @@ ns1:2-7174 a schema:Organization ;
     schema:name "STAR Agro Handels GmbH" .
 
 ns1:CodeR a owl:Class ;
-    rdfs:label "R Code"@de,
-        "R Code"@en ;
+    rdfs:label "R-Satz"@de,
+        "Risk Phrase"@en ;
+    rdfs:comment "Ein R-Satz ist eine standardisierte Risikobeschreibung für gefährliche chemische Stoffe, die spezifische Gefahren wie Toxizität oder Entflammbarkeit angibt. Diese wurden in der Europäischen Union verwendet, um Risiken auf Sicherheitsdatenblättern und Etiketten zu kennzeichnen."@de,
+        "A Risk Phrase is a standardized description of the risks associated with hazardous chemical substances, indicating specific dangers such as toxicity or flammability. These were used in the European Union to denote risks on safety data sheets and labels."@en ;
+    rdfs:seeAlso "https://ec.europa.eu/taxation_customs/dds2/SAMANCTA/EN/Safety/RS_EN.htm",
+        "https://w.wiki/CjPj" ;
     rdfs:subClassOf ns1:HazardStatement .
 
 ns1:Bactericide a owl:Class ;
     rdfs:label "Bakterizid"@de,
         "Bactericide"@en ;
+    rdfs:comment "Ein Bakterizid ist ein chemisches Pflanzenschutzmittel, das verwendet wird, um bakterielle Krankheitserreger zu bekämpfen, die landwirtschaftliche Kulturen schädigen. Es wird häufig eingesetzt, um bakterielle Infektionen wie Feuerbrand zu verhindern oder zu kontrollieren."@de,
+        "A bactericide is a chemical crop protection product used to combat bacterial pathogens that harm agricultural crops. It is often applied to prevent or control bacterial infections such as fire blight."@en ;
     rdfs:subClassOf ns1:ChemicalCropProtectionProduct .
 
 ns1:Molluscicide a owl:Class ;
@@ -63536,11 +63561,6 @@ ns1:HazardStatement a owl:Class ;
         "H-statements (Hazard Statements) and the complementary EUH-statements are standardized descriptions of the specific dangers posed by chemical substances or mixtures, such as toxicity, flammability, or environmental harm. They are part of the Globally Harmonized System (GHS) and ensure clear, consistent communication of chemical hazards worldwide."@en ;
     rdfs:seeAlso <https://w.wiki/CVwr> ;
     rdfs:subClassOf ns1:GeneralNotice .
-
-ns1:BCAInsects a owl:Class ;
-    rdfs:label "Insektenprodukte"@de,
-        "Insect products"@en ;
-    rdfs:subClassOf ns1:BiologicalControlAgent .
 
 <https://register.ld.admin.ch/zefix/company/1410761> ns1:holdsPermissionToSell ns1:1-W-4234,
         ns1:1-W-4574-1,
@@ -63808,6 +63828,8 @@ ns1:BCAInsects a owl:Class ;
 ns1:Acaricide a owl:Class ;
     rdfs:label "Akarizid"@de,
         "Acaricide"@en ;
+    rdfs:comment "Ein Akarizid ist ein chemisches Pflanzenschutzmittel, das zur Bekämpfung von Milben und Zecken eingesetzt wird, die häufig Schäden an landwirtschaftlichen Kulturen verursachen."@de,
+        "An acaricide is a chemical crop protection product used to control mites and ticks, which often cause damage to agricultural crops."@en ;
     rdfs:subClassOf ns1:ChemicalCropProtectionProduct .
 
 schema:PostalAddress a owl:Class ;
