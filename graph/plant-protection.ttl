@@ -61415,7 +61415,7 @@ ns1:Pheromone a owl:Class ;
         "Pheromone"@en ;
     rdfs:comment "Pheromone sind chemische Substanzen, die von Insekten abgesondert werden, um mit Artgenossen zu kommunizieren. Sie beeinflussen Verhaltensweisen wie Paarung, Aggregation oder Spurverfolgung. In der Schädlingsbekämpfung werden synthetische Pheromone als Lockstoffe eingesetzt, um Schädlingspopulationen zu überwachen oder zu kontrollieren."@de,
         "Pheromones are chemical substances secreted by insects to communicate with conspecifics. They influence behaviors such as mating, aggregation, or trail following. In pest management, synthetic pheromones are used as attractants to monitor or control pest populations."@en ;
-    rdfs:subClassOf ns1:BehavioralControlAgent ;
+    rdfs:subClassOf ns1:BiologicalControlAgent ;
     skos:altLabel "Insektenlockstoffe"@de,
         "Insect Attractant"@en .
 
@@ -63598,6 +63598,11 @@ ns1:HazardStatement a owl:Class ;
         "H-statements (Hazard Statements) and the complementary EUH-statements are standardized descriptions of the specific dangers posed by chemical substances or mixtures, such as toxicity, flammability, or environmental harm. They are part of the Globally Harmonized System (GHS) and ensure clear, consistent communication of chemical hazards worldwide."@en ;
     rdfs:seeAlso <https://w.wiki/CVwr> ;
     rdfs:subClassOf ns1:GeneralNotice .
+
+ns1:BCAInsects a owl:Class ;
+    rdfs:label "Insektenprodukte"@de,
+        "Insect products"@en ;
+    rdfs:subClassOf ns1:BiologicalControlAgent .
 
 <https://register.ld.admin.ch/zefix/company/1410761> ns1:holdsPermissionToSell ns1:1-W-4234,
         ns1:1-W-4574-1,

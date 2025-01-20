@@ -95,6 +95,11 @@ foag:BCAInsectViruses a owl:Class ;
         "Insect virus products are biological control agents containing viruses that specifically harm insects. They provide an environmentally friendly alternative to chemical insecticides, as they target pests while being harmless to other organisms."@en ;
     rdfs:subClassOf foag:BiologicalControlAgent .
 
+foag:BCAInsects a owl:Class ;
+    rdfs:label "Insektenprodukte"@de,
+        "Insect products"@en ;
+    rdfs:subClassOf foag:BiologicalControlAgent .
+
 foag:BCAMites a owl:Class ;
     rdfs:label "Milbenprodukte"@de,
         "Mite products"@en ;
@@ -205,7 +210,7 @@ foag:Pheromone a owl:Class ;
         "Pheromone"@en ;
     rdfs:comment "Pheromone sind chemische Substanzen, die von Insekten abgesondert werden, um mit Artgenossen zu kommunizieren. Sie beeinflussen Verhaltensweisen wie Paarung, Aggregation oder Spurverfolgung. In der Schädlingsbekämpfung werden synthetische Pheromone als Lockstoffe eingesetzt, um Schädlingspopulationen zu überwachen oder zu kontrollieren."@de,
         "Pheromones are chemical substances secreted by insects to communicate with conspecifics. They influence behaviors such as mating, aggregation, or trail following. In pest management, synthetic pheromones are used as attractants to monitor or control pest populations."@en ;
-    rdfs:subClassOf foag:BehavioralControlAgent ;
+    rdfs:subClassOf foag:BiologicalControlAgent ;
     skos:altLabel "Insektenlockstoffe"@de,
         "Insect Attractant"@en .
 
@@ -886,12 +891,6 @@ foag:Action a owl:Class ;
     skos:scopeNote "Diese Klasse ist nur dann zu verwenden, wenn es sich bei der Massnahme ausdrücklich nicht um eine Behandlung handelt, d. h. um die Anwendung von Pflanzenschutzmitteln auf Nutzpflanzen."@de,
         "Only use this class when the action is specifically not a treatment; i.e. the application of crop protection proucts on crops."@en .
 
-foag:BiologicalControlAgent a owl:Class ;
-    rdfs:label "Organismus für die biologische Schädlingsbekämpfung"@de,
-        "Biological control agent"@en ;
-    rdfs:subClassOf foag:CropProtectionProduct ;
-    owl:disjointWith foag:ChemicalProduct .
-
 schema:Organization a owl:Class ;
     rdfs:label "Organisation"@de,
         "Organization"@en .
@@ -899,6 +898,12 @@ schema:Organization a owl:Class ;
 foag:CropStressor a owl:Class ;
     rdfs:label "Schadverursacher"@de,
         "Crop stressor"@en .
+
+foag:BiologicalControlAgent a owl:Class ;
+    rdfs:label "Organismus für die biologische Schädlingsbekämpfung"@de,
+        "Biological control agent"@en ;
+    rdfs:subClassOf foag:CropProtectionProduct ;
+    owl:disjointWith foag:ChemicalProduct .
 
 foag:ChemicalCropProtectionProduct a owl:Class ;
     rdfs:label "Chemisches Pflanzenschutzmittel"@de,
