@@ -22,6 +22,7 @@ def merge_ttl_files(file_list, output_file):
 
 if __name__ == "__main__":
     file_list = [
+        "ontology/system-map-ontology.ttl",
         "ontology/plant-protection-ontology.ttl",
         "data/products.ttl",
         "data/companies.ttl",
