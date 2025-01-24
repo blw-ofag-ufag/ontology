@@ -1,6 +1,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ns1: <https://agriculture.ld.admin.ch/foag/plant-protection#> .
+@prefix ns2: <https://agriculture.ld.admin.ch/foag/system-map#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -17565,7 +17566,7 @@ ns1:minimumWaitingPeriod a owl:DatatypeProperty ;
     rdfs:domain ns1:WaitingPeriod ;
     rdfs:range xsd:float .
 
-<https://agriculture.ld.admin.ch/foag/system-map#> a owl:Ontology ;
+ns2: a owl:Ontology ;
     dcterms:creator "Federal Office for Agriculture" ;
     dcterms:description "Eine Ontologie zur Modellierung von Organisationen, IT-Systemen und Daten für das Schweizer Bundesamt für Landwirtschaft (FOAG)."@de,
         "An ontology to model organizations, IT systems and data for the Swiss Federal Office for Agriculture FOAG."@en ;
@@ -17573,73 +17574,112 @@ ns1:minimumWaitingPeriod a owl:DatatypeProperty ;
         "DigiAgriFoodCH System Map"@en ;
     owl:versionInfo "0.1" .
 
-<https://agriculture.ld.admin.ch/foag/system-map#contains> a owl:ObjectProperty ;
+ns2:S001 a ns2:Sector ;
+    rdfs:label "Branchenorganisationen- und Verbände"@de ;
+    ns2:subdomain ns2:S007 .
+
+ns2:S004 a ns2:Sector ;
+    rdfs:label "Bund"@de ;
+    ns2:subdomain ns2:S14 .
+
+ns2:S005 a ns2:Sector ;
+    rdfs:label "Kantone"@de .
+
+ns2:S006 a ns2:Sector ;
+    rdfs:label "IT-Unternehmen"@de .
+
+ns2:S008 a ns2:Sector ;
+    rdfs:label "Kontroll- und Zertifizierungsstellen"@de .
+
+ns2:S009 a ns2:Sector ;
+    rdfs:label "Labelorganisationen"@de .
+
+ns2:S010 a ns2:Sector ;
+    rdfs:label "Landwirtschaftliche Betriebe"@de .
+
+ns2:S011 a ns2:Sector ;
+    rdfs:label "Zuchtverbände"@de .
+
+ns2:S012 a ns2:Sector ;
+    rdfs:label "Produzentenverbände"@de .
+
+ns2:S015 a ns2:Sector ;
+    rdfs:label "Universitäten"@de ;
+    ns2:subdomain ns2:S013,
+        ns2:S014 .
+
+ns2:S016 a ns2:Sector ;
+    rdfs:label "Kantonale Beratungsstellen"@de ;
+    ns2:subdomain ns2:S002,
+        ns2:S003 .
+
+ns2:contains a owl:ObjectProperty ;
     rdfs:label "beinhaltet"@de,
         "contains"@en ;
     rdfs:comment "This relationship indicates that an IT system X contains the information unit Y. For example, AGIS contains information about farming area in Switzerland."@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#System> ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#Information> .
+    rdfs:domain ns2:System ;
+    rdfs:range ns2:Information .
 
-<https://agriculture.ld.admin.ch/foag/system-map#derivedFrom> a owl:ObjectProperty ;
+ns2:derivedFrom a owl:ObjectProperty ;
     rdfs:label "ist abgeleitet von"@de,
         "is derived from"@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#Information> ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#Information> .
+    rdfs:domain ns2:Information ;
+    rdfs:range ns2:Information .
 
-<https://agriculture.ld.admin.ch/foag/system-map#informationDomain> a owl:ObjectProperty ;
+ns2:informationSector a owl:ObjectProperty ;
     rdfs:label "gehört zu"@de,
         "belongs to"@en ;
-    rdfs:comment "Diese Beziehung zeigt an, dass das eine Informationseinheit X zur Domäne bzw. dem Bereich Y gehört."@de,
-        "This relationship indicates that a information unit X belongs to some domain Y."@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#Information> ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#Domain> ;
-    rdfs:subPropertyOf <https://agriculture.ld.admin.ch/foag/system-map#belongsTo> .
+    rdfs:comment "Diese Beziehung zeigt an, dass das eine Informationseinheit X zur Sektor bzw. dem Bereich Y gehört."@de,
+        "This relationship indicates that a information unit X belongs to some sector Y."@en ;
+    rdfs:domain ns2:Information ;
+    rdfs:range ns2:Sector ;
+    rdfs:subPropertyOf ns2:belongsTo .
 
-<https://agriculture.ld.admin.ch/foag/system-map#operates> a owl:ObjectProperty ;
+ns2:operates a owl:ObjectProperty ;
     rdfs:label "betreibt"@de,
         "operates"@en ;
     rdfs:comment "Diese Beziehung zeigt an, dass Organisation X für das Betriebssystem Y verantwortlich ist."@de,
         "This relationship indicates that organization X is in charge of operating system Y."@en ;
     rdfs:domain schema:Organization ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#System> ;
+    rdfs:range ns2:System ;
     rdfs:scopeNote "Wenn Organisation Y den Betrieb eines Systems X an einen Dienstleister Z auslagert, verwenden Sie weiterhin diese Betriebsbeziehung zwischen X und Y, da sie eher die Verantwortlichkeit als den technischen Betrieb widerspiegelt."@de,
         "If organization Y outsources the operation of a system X to a service provider Z, still use this operating relationship between X and Y since it reflects responsability rather than technical operation."@en .
 
-<https://agriculture.ld.admin.ch/foag/system-map#organizationAbbreviation> a owl:DatatypeProperty ;
+ns2:organizationAbbreviation a owl:DatatypeProperty ;
     rdfs:label "Organisationsabkürzung"@de,
         "Organization abbreviation"@en ;
     rdfs:domain schema:Organization ;
     rdfs:range xsd:string .
 
-<https://agriculture.ld.admin.ch/foag/system-map#organizationDomain> a owl:ObjectProperty ;
+ns2:organizationSector a owl:ObjectProperty ;
     rdfs:label "gehört zu"@de,
         "belongs to"@en ;
-    rdfs:comment "Diese Beziehung zeigt an, dass die Organisation X zur Domäne bzw. dem Bereich Y gehört."@de,
-        "This relationship indicates that an organization X belongs to some domain Y."@en ;
+    rdfs:comment "Diese Beziehung zeigt an, dass die Organisation X zur Sektor bzw. dem Bereich Y gehört."@de,
+        "This relationship indicates that an organization X belongs to some sector Y."@en ;
     rdfs:domain schema:Organization ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#Domain> ;
-    rdfs:subPropertyOf <https://agriculture.ld.admin.ch/foag/system-map#belongsTo> .
+    rdfs:range ns2:Sector ;
+    rdfs:subPropertyOf ns2:belongsTo .
 
-<https://agriculture.ld.admin.ch/foag/system-map#owns> a owl:ObjectProperty ;
+ns2:owns a owl:ObjectProperty ;
     rdfs:label "besitzt (teilweise)"@de,
         "(partially) owns"@en ;
     rdfs:domain schema:Organization ;
     rdfs:range schema:Organization .
 
-<https://agriculture.ld.admin.ch/foag/system-map#systemAbbreviation> a owl:DatatypeProperty ;
+ns2:systemAbbreviation a owl:DatatypeProperty ;
     rdfs:label "Abkürzung des IT-Systems"@de,
         "System abbreviation"@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#System> ;
+    rdfs:domain ns2:System ;
     rdfs:range xsd:string .
 
-<https://agriculture.ld.admin.ch/foag/system-map#systemDomain> a owl:ObjectProperty ;
+ns2:systemSector a owl:ObjectProperty ;
     rdfs:label "gehört zu"@de,
         "belongs to"@en ;
-    rdfs:comment "Diese Beziehung zeigt an, dass das IT-System X zur Domäne bzw. dem Bereich Y gehört."@de,
-        "This relationship indicates that an IT system X belongs to some domain Y."@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#System> ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#Domain> ;
-    rdfs:subPropertyOf <https://agriculture.ld.admin.ch/foag/system-map#belongsTo> .
+    rdfs:comment "Diese Beziehung zeigt an, dass das IT-System X zur Sektor bzw. dem Bereich Y gehört."@de,
+        "This relationship indicates that an IT system X belongs to some sector Y."@en ;
+    rdfs:domain ns2:System ;
+    rdfs:range ns2:Sector ;
+    rdfs:subPropertyOf ns2:belongsTo .
 
 schema:address a owl:ObjectProperty ;
     rdfs:label "hat Adresse"@de,
@@ -20121,19 +20161,32 @@ ns1:protects a owl:ObjectProperty ;
     rdfs:domain ns1:Action ;
     rdfs:range ns1:CropGroup .
 
-<https://agriculture.ld.admin.ch/foag/system-map#subdomain> a owl:ObjectProperty ;
-    rdfs:label "hat untergeordnete Domäne"@de,
-        "has subdomain"@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#Domain> ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#Domain> ;
-    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#superdomain> .
+ns2:S002 a ns2:Sector ;
+    rdfs:label "Beratung"@de .
 
-<https://agriculture.ld.admin.ch/foag/system-map#superdomain> a owl:ObjectProperty ;
-    rdfs:label "hat übergeordnete Domäne"@de,
-        "has superdomain"@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#Domain> ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#Domain> ;
-    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#subdomain> .
+ns2:S003 a ns2:Sector ;
+    rdfs:label "Kantone"@de ;
+    ns2:subdomain ns2:S014 .
+
+ns2:S007 a ns2:Sector ;
+    rdfs:label "Privatwirtschaft"@de .
+
+ns2:S013 a ns2:Sector ;
+    rdfs:label "Forschung"@de .
+
+ns2:subsector a owl:ObjectProperty ;
+    rdfs:label "hat untergeordnete Sektor"@de,
+        "has subsector"@en ;
+    rdfs:domain ns2:Sector ;
+    rdfs:range ns2:Sector ;
+    owl:inverseOf ns2:supersector .
+
+ns2:supersector a owl:ObjectProperty ;
+    rdfs:label "hat übergeordnete Sektor"@de,
+        "has supersector"@en ;
+    rdfs:domain ns2:Sector ;
+    rdfs:range ns2:Sector ;
+    owl:inverseOf ns2:subsector .
 
 <https://register.ld.admin.ch/zefix/company/1132670> ns1:holdsPermissionToSell ns1:1-W-4479-2 ;
     schema:addressCountry <https://ld.admin.ch/country/CHE> .
@@ -22076,6 +22129,9 @@ ns1:nonTargetOrganism a owl:Class ;
     rdfs:comment "Jeder Organismus ausser dem, gegen den das Pestizid angewendet wird."@de,
         "Any organism other than the one against which the pesticide is applied."@en .
 
+ns2:S014 a ns2:Sector ;
+    rdfs:label "Öffentlicher Sektor"@de .
+
 <https://register.ld.admin.ch/zefix/company/1119898> ns1:holdsPermissionToSell ns1:1-W-7021,
         ns1:1-W-7022 ;
     schema:addressCountry <https://ld.admin.ch/country/CHE> .
@@ -22778,12 +22834,12 @@ ns1:ComponentPortion a owl:Class ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty ns1:hasComponentSubstance ] .
 
-<https://agriculture.ld.admin.ch/foag/system-map#belongsTo> a owl:ObjectProperty ;
+ns2:belongsTo a owl:ObjectProperty ;
     rdfs:label "gehört zu"@de,
         "belongs to"@en ;
-    rdfs:comment "Diese Beziehung zeigt an, dass irgend ein Ding X zur Domäne bzw. dem Bereich Y gehört."@de,
-        "This relationship indicates that any thing X belongs to some domain Y."@en ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#Domain> .
+    rdfs:comment "Diese Beziehung zeigt an, dass irgend ein Ding X zur Sektor bzw. dem Bereich Y gehört."@de,
+        "This relationship indicates that any thing X belongs to some sector Y."@en ;
+    rdfs:range ns2:Sector .
 
 <https://register.ld.admin.ch/zefix/company/117076> ns1:holdsPermissionToSell ns1:1-W-1529,
         ns1:1-W-193,
@@ -23262,12 +23318,12 @@ ns1:isDefinedByBiologicalTaxon a owl:ObjectProperty ;
         "is defined by biological taxon"@en ;
     rdfs:range <http://www.wikidata.org/entity/Q16521> .
 
-<https://agriculture.ld.admin.ch/foag/system-map#Information> a owl:Class ;
+ns2:Information a owl:Class ;
     rdfs:label "Informationseinheit"@de,
         "Information unit"@en ;
     rdfs:comment "A piece of information in an IT system. Could be anything, really."@en .
 
-<https://agriculture.ld.admin.ch/foag/system-map#System> a owl:Class ;
+ns2:System a owl:Class ;
     rdfs:label "IT-System"@de,
         "IT system"@en ;
     rdfs:comment "Jedes IT-System (im abstrakten Sinne) mit einer oder mehreren Datenbanken. Beispiele für solche Systeme sind AGIS, das BI-System ASTAT des BLW oder die kantonalen IT-Systeme für die Landwirtschaft."@de,
@@ -33972,11 +34028,6 @@ ns1:BCAFungi a owl:Class ;
     rdfs:comment "Pilzprodukte sind biologische Schädlingsbekämpfungsmittel, die aus Pilzen bestehen oder von ihnen abgeleitet sind. Sie bekämpfen Schädlinge, Krankheiten oder Unkräuter durch Mechanismen wie Antagonismus, Parasitismus oder die Förderung der Pflanzengesundheit."@de,
         "Fungal products are biological control agents composed of or derived from fungi. They combat pests, diseases, or weeds through mechanisms such as antagonism, parasitism, or enhancement of plant health."@en ;
     rdfs:subClassOf ns1:BiologicalControlAgent .
-
-<https://agriculture.ld.admin.ch/foag/system-map#Domain> a owl:Class ;
-    rdfs:label "Domäne"@de,
-        "Domain"@en ;
-    skos:altLabel "Bereich"@de .
 
 <https://register.ld.admin.ch/zefix/company/1096353> ns1:holdsPermissionToSell ns1:1-W-6138,
         ns1:1-W-6139,
@@ -60634,6 +60685,11 @@ ns1:2-11609 a schema:Organization ;
     schema:address ns1:3-11609 ;
     schema:legalName "Syngenta France SAS" ;
     schema:name "Syngenta France SAS" .
+
+ns2:Sector a owl:Class ;
+    rdfs:label "Sektor"@de,
+        "Sector"@en ;
+    skos:altLabel "Bereich"@de .
 
 <https://register.ld.admin.ch/zefix/company/1169237> ns1:holdsPermissionToSell ns1:1-W-5092,
         ns1:1-W-5093,

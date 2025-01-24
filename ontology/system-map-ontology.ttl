@@ -1,12 +1,12 @@
+@prefix : <https://agriculture.ld.admin.ch/foag/system-map#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix sm: <https://agriculture.ld.admin.ch/foag/system-map#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-sm: a owl:Ontology ;
+: a owl:Ontology ;
     dcterms:creator "Federal Office for Agriculture" ;
     dcterms:description "Eine Ontologie zur Modellierung von Organisationen, IT-Systemen und Daten für das Schweizer Bundesamt für Landwirtschaft (FOAG)."@de,
         "An ontology to model organizations, IT systems and data for the Swiss Federal Office for Agriculture FOAG."@en ;
@@ -14,73 +14,73 @@ sm: a owl:Ontology ;
         "DigiAgriFoodCH System Map"@en ;
     owl:versionInfo "0.1" .
 
-sm:contains a owl:ObjectProperty ;
+:contains a owl:ObjectProperty ;
     rdfs:label "beinhaltet"@de,
         "contains"@en ;
     rdfs:comment "This relationship indicates that an IT system X contains the information unit Y. For example, AGIS contains information about farming area in Switzerland."@en ;
-    rdfs:domain sm:System ;
-    rdfs:range sm:Information .
+    rdfs:domain :System ;
+    rdfs:range :Information .
 
-sm:derivedFrom a owl:ObjectProperty ;
+:derivedFrom a owl:ObjectProperty ;
     rdfs:label "ist abgeleitet von"@de,
         "is derived from"@en ;
-    rdfs:domain sm:Information ;
-    rdfs:range sm:Information .
+    rdfs:domain :Information ;
+    rdfs:range :Information .
 
-sm:informationDomain a owl:ObjectProperty ;
+:informationSector a owl:ObjectProperty ;
     rdfs:label "gehört zu"@de,
         "belongs to"@en ;
-    rdfs:comment "Diese Beziehung zeigt an, dass das eine Informationseinheit X zur Domäne bzw. dem Bereich Y gehört."@de,
-        "This relationship indicates that a information unit X belongs to some domain Y."@en ;
-    rdfs:domain sm:Information ;
-    rdfs:range sm:Domain ;
-    rdfs:subPropertyOf sm:belongsTo .
+    rdfs:comment "Diese Beziehung zeigt an, dass das eine Informationseinheit X zur Sektor bzw. dem Bereich Y gehört."@de,
+        "This relationship indicates that a information unit X belongs to some sector Y."@en ;
+    rdfs:domain :Information ;
+    rdfs:range :Sector ;
+    rdfs:subPropertyOf :belongsTo .
 
-sm:operates a owl:ObjectProperty ;
+:operates a owl:ObjectProperty ;
     rdfs:label "betreibt"@de,
         "operates"@en ;
     rdfs:comment "Diese Beziehung zeigt an, dass Organisation X für das Betriebssystem Y verantwortlich ist."@de,
         "This relationship indicates that organization X is in charge of operating system Y."@en ;
     rdfs:domain schema:Organization ;
-    rdfs:range sm:System ;
+    rdfs:range :System ;
     rdfs:scopeNote "Wenn Organisation Y den Betrieb eines Systems X an einen Dienstleister Z auslagert, verwenden Sie weiterhin diese Betriebsbeziehung zwischen X und Y, da sie eher die Verantwortlichkeit als den technischen Betrieb widerspiegelt."@de,
         "If organization Y outsources the operation of a system X to a service provider Z, still use this operating relationship between X and Y since it reflects responsability rather than technical operation."@en .
 
-sm:organizationAbbreviation a owl:DatatypeProperty ;
+:organizationAbbreviation a owl:DatatypeProperty ;
     rdfs:label "Organisationsabkürzung"@de,
         "Organization abbreviation"@en ;
     rdfs:domain schema:Organization ;
     rdfs:range xsd:string .
 
-sm:organizationDomain a owl:ObjectProperty ;
+:organizationSector a owl:ObjectProperty ;
     rdfs:label "gehört zu"@de,
         "belongs to"@en ;
-    rdfs:comment "Diese Beziehung zeigt an, dass die Organisation X zur Domäne bzw. dem Bereich Y gehört."@de,
-        "This relationship indicates that an organization X belongs to some domain Y."@en ;
+    rdfs:comment "Diese Beziehung zeigt an, dass die Organisation X zur Sektor bzw. dem Bereich Y gehört."@de,
+        "This relationship indicates that an organization X belongs to some sector Y."@en ;
     rdfs:domain schema:Organization ;
-    rdfs:range sm:Domain ;
-    rdfs:subPropertyOf sm:belongsTo .
+    rdfs:range :Sector ;
+    rdfs:subPropertyOf :belongsTo .
 
-sm:owns a owl:ObjectProperty ;
+:owns a owl:ObjectProperty ;
     rdfs:label "besitzt (teilweise)"@de,
         "(partially) owns"@en ;
     rdfs:domain schema:Organization ;
     rdfs:range schema:Organization .
 
-sm:systemAbbreviation a owl:DatatypeProperty ;
+:systemAbbreviation a owl:DatatypeProperty ;
     rdfs:label "Abkürzung des IT-Systems"@de,
         "System abbreviation"@en ;
-    rdfs:domain sm:System ;
+    rdfs:domain :System ;
     rdfs:range xsd:string .
 
-sm:systemDomain a owl:ObjectProperty ;
+:systemSector a owl:ObjectProperty ;
     rdfs:label "gehört zu"@de,
         "belongs to"@en ;
-    rdfs:comment "Diese Beziehung zeigt an, dass das IT-System X zur Domäne bzw. dem Bereich Y gehört."@de,
-        "This relationship indicates that an IT system X belongs to some domain Y."@en ;
-    rdfs:domain sm:System ;
-    rdfs:range sm:Domain ;
-    rdfs:subPropertyOf sm:belongsTo .
+    rdfs:comment "Diese Beziehung zeigt an, dass das IT-System X zur Sektor bzw. dem Bereich Y gehört."@de,
+        "This relationship indicates that an IT system X belongs to some sector Y."@en ;
+    rdfs:domain :System ;
+    rdfs:range :Sector ;
+    rdfs:subPropertyOf :belongsTo .
 
 schema:memberOf a owl:ObjectProperty ;
     rdfs:label "ist eine Mitgliedsorganisation von"@de,
@@ -98,41 +98,41 @@ schema:subOrganization a owl:ObjectProperty ;
     rdfs:domain schema:Organization ;
     rdfs:range schema:Organization .
 
-sm:subdomain a owl:ObjectProperty ;
-    rdfs:label "hat untergeordnete Domäne"@de,
-        "has subdomain"@en ;
-    rdfs:domain sm:Domain ;
-    rdfs:range sm:Domain ;
-    owl:inverseOf sm:superdomain .
+:subsector a owl:ObjectProperty ;
+    rdfs:label "hat untergeordnete Sektor"@de,
+        "has subsector"@en ;
+    rdfs:domain :Sector ;
+    rdfs:range :Sector ;
+    owl:inverseOf :supersector .
 
-sm:superdomain a owl:ObjectProperty ;
-    rdfs:label "hat übergeordnete Domäne"@de,
-        "has superdomain"@en ;
-    rdfs:domain sm:Domain ;
-    rdfs:range sm:Domain ;
-    owl:inverseOf sm:subdomain .
+:supersector a owl:ObjectProperty ;
+    rdfs:label "hat übergeordnete Sektor"@de,
+        "has supersector"@en ;
+    rdfs:domain :Sector ;
+    rdfs:range :Sector ;
+    owl:inverseOf :subsector .
 
-sm:belongsTo a owl:ObjectProperty ;
+:belongsTo a owl:ObjectProperty ;
     rdfs:label "gehört zu"@de,
         "belongs to"@en ;
-    rdfs:comment "Diese Beziehung zeigt an, dass irgend ein Ding X zur Domäne bzw. dem Bereich Y gehört."@de,
-        "This relationship indicates that any thing X belongs to some domain Y."@en ;
-    rdfs:range sm:Domain .
+    rdfs:comment "Diese Beziehung zeigt an, dass irgend ein Ding X zur Sektor bzw. dem Bereich Y gehört."@de,
+        "This relationship indicates that any thing X belongs to some sector Y."@en ;
+    rdfs:range :Sector .
 
-sm:Information a owl:Class ;
+:Information a owl:Class ;
     rdfs:label "Informationseinheit"@de,
         "Information unit"@en ;
     rdfs:comment "A piece of information in an IT system. Could be anything, really."@en .
 
-sm:System a owl:Class ;
+:System a owl:Class ;
     rdfs:label "IT-System"@de,
         "IT system"@en ;
     rdfs:comment "Jedes IT-System (im abstrakten Sinne) mit einer oder mehreren Datenbanken. Beispiele für solche Systeme sind AGIS, das BI-System ASTAT des BLW oder die kantonalen IT-Systeme für die Landwirtschaft."@de,
         "Any IT system (in a abstracted sense) with one or many databases. Examples for such systems would be AGIS, the FOAG BI system ASTAT, or the cantonal agricultural IT systems."@en .
 
-sm:Domain a owl:Class ;
-    rdfs:label "Domäne"@de,
-        "Domain"@en ;
+:Sector a owl:Class ;
+    rdfs:label "Sektor"@de,
+        "Sector"@en ;
     skos:altLabel "Bereich"@de .
 
 schema:Organization a owl:Class ;
