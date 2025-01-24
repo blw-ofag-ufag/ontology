@@ -20,7 +20,7 @@ This repository is structured as follows:
 
 # 🌐 Demonstration sites
 
-- <https://blw-ufag-ofag.github.io/ontology/presentation>
-- <https://blw-ufag-ofag.github.io/ontology/embeddings>
-- <https://blw-ufag-ofag.github.io/ontology/class-table>
-- <https://blw-ufag-ofag.github.io/ontology/crop-table>
+- <https://blw-ofag-ufag.github.io/ontology/presentation>
+- <https://blw-ofag-ufag.github.io/ontology/embeddings>
+- <https://blw-ofag-ufag.github.io/ontology/class-table>
+- <https://blw-ofag-ufag.github.io/ontology/crop-table>
