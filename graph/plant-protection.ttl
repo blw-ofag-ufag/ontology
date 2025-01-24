@@ -17580,7 +17580,7 @@ ns2:S001 a ns2:Sector ;
 
 ns2:S004 a ns2:Sector ;
     rdfs:label "Bund"@de ;
-    ns2:subdomain ns2:S14 .
+    ns2:subdomain ns2:S014 .
 
 ns2:S005 a ns2:Sector ;
     rdfs:label "Kantone"@de .
@@ -22129,9 +22129,6 @@ ns1:nonTargetOrganism a owl:Class ;
     rdfs:comment "Jeder Organismus ausser dem, gegen den das Pestizid angewendet wird."@de,
         "Any organism other than the one against which the pesticide is applied."@en .
 
-ns2:S014 a ns2:Sector ;
-    rdfs:label "Öffentlicher Sektor"@de .
-
 <https://register.ld.admin.ch/zefix/company/1119898> ns1:holdsPermissionToSell ns1:1-W-7021,
         ns1:1-W-7022 ;
     schema:addressCountry <https://ld.admin.ch/country/CHE> .
@@ -22833,6 +22830,9 @@ ns1:ComponentPortion a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty ns1:hasComponentSubstance ] .
+
+ns2:S014 a ns2:Sector ;
+    rdfs:label "Öffentlicher Sektor"@de .
 
 ns2:belongsTo a owl:ObjectProperty ;
     rdfs:label "gehört zu"@de,

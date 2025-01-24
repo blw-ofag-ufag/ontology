@@ -7,7 +7,7 @@ sm:S001 a sm:Sector ;
 
 sm:S004 a sm:Sector ;
     rdfs:label "Bund"@de ;
-    sm:subdomain sm:S14 .
+    sm:subdomain sm:S014 .
 
 sm:S005 a sm:Sector ;
     rdfs:label "Kantone"@de .

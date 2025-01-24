@@ -17,3 +17,10 @@ This repository is structured as follows:
 3. `/shapes` contains SHACL shapes for the graph.
 4. `/graph` contains the entire graph, i.e. the merged ontologies, shapes and data files.
 5. `/scripts` contains scripts.
+
+# 🌐 Demonstration sites
+
+- <https://blw-ufag-ofag.github.io/ontology/presentation>
+- <https://blw-ufag-ofag.github.io/ontology/embeddings>
+- <https://blw-ufag-ofag.github.io/ontology/class-table>
+- <https://blw-ufag-ofag.github.io/ontology/crop-table>
