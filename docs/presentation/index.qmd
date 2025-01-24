@@ -1,7 +1,7 @@
 ---
 title: Eine Ontologie für den Schweizer Pflanzenschutz
 author: Damian Oswald
-date: today
+date: 2024-12-12
 date-format: long
 lang: de
 format:
@@ -56,17 +56,9 @@ Eine Ontologie zeigt, [welche Dinge existieren]{.underline} und [wie sie miteina
 
 Laut @gruber1993translation ist es "eine [formale]{.underline}, [explizite]{.underline} Spezifikation einer [gemeinsamen]{.underline} [Konzeptualisierung]{.underline}".
 
-<!-- [^1]: **Formal** bedeutet, dass die Ontologie in einer formalen Sprache mit definierten Regeln und formaler Semantik ausgedrückt wird, was eine maschinelle Verarbeitung ermöglicht. -->
-
-<!-- [^2]: **Explizit** heisst, dass alle Elemente und Beziehungen klar definiert und nicht *implizit* sind. -->
-
-<!-- [^3]: **Gemeinsame** bedeutet, dass die Ontologie von einer Gemeinschaft geteilt und verwendet wird, um das einheitliche Verständnis eines Bereichs zu fördern. -->
-
-<!-- [^4]: **Konzeptualisierung** bezieht sich auf die abstrakte Modellierung der relevanten Konzepte und deren Beziehungen. -->
-
 ##  {background-iframe="https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/docs/graph/ontology.ttl" background-interactive="true"}
 
-##  {background-iframe="https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/plant-protection.ttl" background-interactive="true"}
+##  {background-iframe="https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/graph/plant-protection.ttl" background-interactive="true"}
 
 # Wie könnt ihr uns helfen?
 

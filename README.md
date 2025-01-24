@@ -20,7 +20,7 @@ This repository is structured as follows:
 
 # 🌐 Demonstration sites
 
-- <https://blw-ofag-ufag.github.io/ontology/presentation>
-- <https://blw-ofag-ufag.github.io/ontology/embeddings>
-- <https://blw-ofag-ufag.github.io/ontology/class-table>
-- <https://blw-ofag-ufag.github.io/ontology/crop-table>
+- [**What is an ontology and how can it help us?**](https://blw-ofag-ufag.github.io/ontology/presentation) An internal presentation to give some motivation to work on this project, first held on 12 December 2024.
+- [**Clustering the many SRPPP obligations.**](https://blw-ofag-ufag.github.io/ontology/embeddings) A brief documentation of how the clustering of the Swiss registry of plant protection products (SRPPP) was performed using A.I.
+- [**Class overview:**](https://blw-ofag-ufag.github.io/ontology/class-table) Just an interactive table that fetches all class names and descriptions from LINDAS and counts the respective instances per class.
+- [**A crop table with alternative names:**](https://blw-ofag-ufag.github.io/ontology/crop-table) Alternative names are important for good user experiences in complex systems, because different people use differnt names for the same thing.
