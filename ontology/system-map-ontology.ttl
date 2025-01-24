@@ -35,16 +35,6 @@
     rdfs:domain :Information ;
     rdfs:range :Information .
 
-:operates a owl:ObjectProperty ;
-    rdfs:label "betreibt"@de,
-        "operates"@en ;
-    rdfs:comment "Diese Beziehung zeigt an, dass Organisation X für das Betriebssystem Y verantwortlich ist."@de,
-        "This relationship indicates that organization X is in charge of operating system Y."@en ;
-    rdfs:domain schema:Organization ;
-    rdfs:range :System ;
-    rdfs:scopeNote "Wenn Organisation Y den Betrieb eines Systems X an einen Dienstleister Z auslagert, verwenden Sie weiterhin diese Betriebsbeziehung zwischen X und Y, da sie eher die Verantwortlichkeit als den technischen Betrieb widerspiegelt. Die Beziehung ist auf niedrigstmöglicher Organisationsebene zu verwenden."@de,
-        "If organization Y outsources the operation of a system X to a service provider Z, still use this operating relationship between X and Y since it reflects responsability rather than technical operation. Also, use this on the lowest organizational level possible."@en .
-
 :isOperatedBy a owl:ObjectProperty ;
     owl:inverseOf :operates .
 
@@ -84,12 +74,15 @@ schema:subOrganization a owl:ObjectProperty,
     rdfs:range schema:Organization ;
     owl:inverseOf :superOrganization .
 
-:superOrganization a owl:ObjectProperty,
-        owl:TransitiveProperty;
-    rdfs:label "ist Teil von"@de,
-        "is a part of"@en ;
+:operates a owl:ObjectProperty ;
+    rdfs:label "betreibt"@de,
+        "operates"@en ;
+    rdfs:comment "Diese Beziehung zeigt an, dass Organisation X für das Betriebssystem Y verantwortlich ist."@de,
+        "This relationship indicates that organization X is in charge of operating system Y."@en ;
     rdfs:domain schema:Organization ;
-    rdfs:range schema:Organization .
+    rdfs:range :System ;
+    rdfs:scopeNote "Wenn Organisation Y den Betrieb eines Systems X an einen Dienstleister Z auslagert, verwenden Sie weiterhin diese Betriebsbeziehung zwischen X und Y, da sie eher die Verantwortlichkeit als den technischen Betrieb widerspiegelt. Die Beziehung ist auf niedrigstmöglicher Organisationsebene zu verwenden."@de,
+        "If organization Y outsources the operation of a system X to a service provider Z, still use this operating relationship between X and Y since it reflects responsability rather than technical operation. Also, use this on the lowest organizational level possible."@en .
 
 :subsector a owl:ObjectProperty,
         owl:TransitiveProperty ;
@@ -98,6 +91,13 @@ schema:subOrganization a owl:ObjectProperty,
     rdfs:domain :Sector ;
     rdfs:range :Sector ;
     owl:inverseOf :supersector .
+
+:superOrganization a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "ist Teil von"@de,
+        "is a part of"@en ;
+    rdfs:domain schema:Organization ;
+    rdfs:range schema:Organization .
 
 :supersector a owl:ObjectProperty ;
     rdfs:label "hat übergeordnete Sektor"@de,

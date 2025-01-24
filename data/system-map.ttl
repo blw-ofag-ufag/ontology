@@ -43,6 +43,9 @@ sm:SEC016 a sm:Sector ;
     sm:subsector sm:SEC002,
         sm:SEC003 .
 
+sm:SYS003 a sm:System ;
+    rdfs:label "AGATE" .
+
 sm:ORG002 a schema:Organization ;
     rdfs:label "Eidgenössisches Departement für Wirtschaft, Bildung und Forschung"@de,
         "Federal Department of Economic Affairs, Education and Research"@en ;
@@ -75,9 +78,6 @@ sm:SEC007 a sm:Sector ;
 sm:SEC013 a sm:Sector ;
     rdfs:label "Forschung"@de .
 
-sm:SEC014 a sm:Sector ;
-    rdfs:label "Öffentlicher Sektor"@de .
-
 sm:SYS001 a sm:System ;
     rdfs:label "Agrarpolitisches Informationssystem"@de ;
     sm:systemAbbreviation "AGIS" .
@@ -86,5 +86,6 @@ sm:SYS002 a sm:System ;
     rdfs:label "Business Intelligence System des BLW"@de ;
     sm:systemAbbreviation "ASTAT" .
 
-sm:SYS003 a sm:System ;
-    rdfs:label "AGATE" .
+sm:SEC014 a sm:Sector ;
+    rdfs:label "Öffentlicher Sektor"@de .
+

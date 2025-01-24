@@ -17582,7 +17582,7 @@ ns2:ORG001 a schema:Organization ;
 
 ns2:SEC001 a ns2:Sector ;
     rdfs:label "Branchenorganisationen- und Verbände"@de ;
-    ns2:subdomain ns2:SEC007 .
+    ns2:subsector ns2:SEC007 .
 
 ns2:SEC005 a ns2:Sector ;
     rdfs:label "Kantone"@de .
@@ -17607,13 +17607,16 @@ ns2:SEC012 a ns2:Sector ;
 
 ns2:SEC015 a ns2:Sector ;
     rdfs:label "Universitäten"@de ;
-    ns2:subdomain ns2:SEC013,
+    ns2:subsector ns2:SEC013,
         ns2:SEC014 .
 
 ns2:SEC016 a ns2:Sector ;
     rdfs:label "Kantonale Beratungsstellen"@de ;
-    ns2:subdomain ns2:SEC002,
+    ns2:subsector ns2:SEC002,
         ns2:SEC003 .
+
+ns2:SYS003 a ns2:System ;
+    rdfs:label "AGATE" .
 
 ns2:belongsTo a owl:ObjectProperty ;
     rdfs:label "gehört zu"@de,
@@ -17636,15 +17639,8 @@ ns2:derivedFrom a owl:ObjectProperty ;
     rdfs:domain ns2:Information ;
     rdfs:range ns2:Information .
 
-ns2:operates a owl:ObjectProperty ;
-    rdfs:label "betreibt"@de,
-        "operates"@en ;
-    rdfs:comment "Diese Beziehung zeigt an, dass Organisation X für das Betriebssystem Y verantwortlich ist."@de,
-        "This relationship indicates that organization X is in charge of operating system Y."@en ;
-    rdfs:domain schema:Organization ;
-    rdfs:range ns2:System ;
-    rdfs:scopeNote "Wenn Organisation Y den Betrieb eines Systems X an einen Dienstleister Z auslagert, verwenden Sie weiterhin diese Betriebsbeziehung zwischen X und Y, da sie eher die Verantwortlichkeit als den technischen Betrieb widerspiegelt. Die Beziehung ist auf niedrigstmöglicher Organisationsebene zu verwenden."@de,
-        "If organization Y outsources the operation of a system X to a service provider Z, still use this operating relationship between X and Y since it reflects responsability rather than technical operation. Also, use this on the lowest organizational level possible."@en .
+ns2:isOperatedBy a owl:ObjectProperty ;
+    owl:inverseOf ns2:operates .
 
 ns2:organizationAbbreviation a owl:DatatypeProperty ;
     rdfs:label "Organisationsabkürzung"@de,
@@ -17735,11 +17731,13 @@ schema:streetAddress a owl:DatatypeProperty ;
     rdfs:domain schema:PostalAddress ;
     rdfs:range xsd:string .
 
-schema:subOrganization a owl:ObjectProperty ;
+schema:subOrganization a owl:ObjectProperty,
+        owl:TransitiveProperty ;
     rdfs:label "beinhaltet Suborganisation"@de,
         "contains Suborganization"@en ;
     rdfs:domain schema:Organization ;
-    rdfs:range schema:Organization .
+    rdfs:range schema:Organization ;
+    owl:inverseOf ns2:superOrganization .
 
 schema:telephone a owl:DatatypeProperty ;
     rdfs:label "Telefonnummer"@de,
@@ -19992,7 +19990,9 @@ ns1:5-9999 a ns1:CropGroup ;
 
 ns1:EnvironmentalCondition a owl:Class ;
     rdfs:label "Umweltbedingung"@de,
-        "Environmental condition"@en .
+        "Environmental condition"@en ;
+    rdfs:comment "Repräsentiert jeden Umweltfaktor oder jede Umweltbedingung, die die Pflanzengesundheit, das Wachstum oder die Bewirtschaftung im landwirtschaftlichen Rahmen beeinflussen kann."@de,
+        "Represents any environmental factor or situation that can influence crop health, growth, or management within agriculture."@en .
 
 ns1:Treatment a owl:Class ;
     rdfs:label "Behandlung"@de,
@@ -20007,6 +20007,8 @@ ns1:Viricide a owl:Class ;
 ns1:WaitingPeriod a owl:Class ;
     rdfs:label "Wartefrist"@de,
         "Waiting period"@en ;
+    rdfs:comment "Repräsentiert das erforderliche Zeitintervall nach einer Behandlung, in dem dasselbe Produkt nicht erneut auf dieselbe Kulturpflanze angewendet werden sollte."@de,
+        "Represents the required time interval after a treatment during which the same product should not be applied again to the same crop."@en ;
     rdfs:subClassOf ns1:TreatmentConstraint .
 
 ns1:affects a owl:ObjectProperty ;
@@ -20164,11 +20166,11 @@ ns2:SEC002 a ns2:Sector ;
 
 ns2:SEC003 a ns2:Sector ;
     rdfs:label "Kantone"@de ;
-    ns2:subdomain ns2:SEC014 .
+    ns2:subsector ns2:SEC014 .
 
 ns2:SEC004 a ns2:Sector ;
     rdfs:label "Bund"@de ;
-    ns2:subdomain ns2:SEC014 .
+    ns2:subsector ns2:SEC014 .
 
 ns2:SEC007 a ns2:Sector ;
     rdfs:label "Privatwirtschaft"@de .
@@ -20184,12 +20186,30 @@ ns2:SYS002 a ns2:System ;
     rdfs:label "Business Intelligence System des BLW"@de ;
     ns2:systemAbbreviation "ASTAT" .
 
-ns2:subsector a owl:ObjectProperty ;
+ns2:operates a owl:ObjectProperty ;
+    rdfs:label "betreibt"@de,
+        "operates"@en ;
+    rdfs:comment "Diese Beziehung zeigt an, dass Organisation X für das Betriebssystem Y verantwortlich ist."@de,
+        "This relationship indicates that organization X is in charge of operating system Y."@en ;
+    rdfs:domain schema:Organization ;
+    rdfs:range ns2:System ;
+    rdfs:scopeNote "Wenn Organisation Y den Betrieb eines Systems X an einen Dienstleister Z auslagert, verwenden Sie weiterhin diese Betriebsbeziehung zwischen X und Y, da sie eher die Verantwortlichkeit als den technischen Betrieb widerspiegelt. Die Beziehung ist auf niedrigstmöglicher Organisationsebene zu verwenden."@de,
+        "If organization Y outsources the operation of a system X to a service provider Z, still use this operating relationship between X and Y since it reflects responsability rather than technical operation. Also, use this on the lowest organizational level possible."@en .
+
+ns2:subsector a owl:ObjectProperty,
+        owl:TransitiveProperty ;
     rdfs:label "hat untergeordnete Sektor"@de,
         "has subsector"@en ;
     rdfs:domain ns2:Sector ;
     rdfs:range ns2:Sector ;
     owl:inverseOf ns2:supersector .
+
+ns2:superOrganization a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "ist Teil von"@de,
+        "is a part of"@en ;
+    rdfs:domain schema:Organization ;
+    rdfs:range schema:Organization .
 
 ns2:supersector a owl:ObjectProperty ;
     rdfs:label "hat übergeordnete Sektor"@de,
@@ -24756,12 +24776,6 @@ ns1:TreatmentConstraint a owl:Class ;
         "Treatment constraint"@en ;
     rdfs:subClassOf ns1:ActionNotice .
 
-ns2:System a owl:Class ;
-    rdfs:label "IT-System"@de,
-        "IT system"@en ;
-    rdfs:comment "Jedes IT-System (im abstrakten Sinne) mit einer oder mehreren Datenbanken. Beispiele für solche Systeme sind AGIS, das BI-System ASTAT des BLW oder die kantonalen IT-Systeme für die Landwirtschaft."@de,
-        "Any IT system (in a abstracted sense) with one or many databases. Examples for such systems would be AGIS, the FOAG BI system ASTAT, or the cantonal agricultural IT systems."@en .
-
 <https://register.ld.admin.ch/zefix/company/1211870> ns1:holdsPermissionToSell ns1:1-W-7066,
         ns1:1-W-7067,
         ns1:1-W-7084,
@@ -27009,6 +27023,12 @@ ns1:PureSubstance a owl:Class ;
         "A pure chemical substance is associated with exactly one CheBI chemical entity and cannot be a mixture. Pure substances and chemical mixtures are disjoint classes."@en ;
     rdfs:subClassOf ns1:Substance ;
     owl:disjointWith ns1:Mixture .
+
+ns2:System a owl:Class ;
+    rdfs:label "IT-System"@de,
+        "IT system"@en ;
+    rdfs:comment "Jedes IT-System (im abstrakten Sinne) mit einer oder mehreren Datenbanken. Beispiele für solche Systeme sind AGIS, das BI-System ASTAT des BLW oder die kantonalen IT-Systeme für die Landwirtschaft."@de,
+        "Any IT system (in a abstracted sense) with one or many databases. Examples for such systems would be AGIS, the FOAG BI system ASTAT, or the cantonal agricultural IT systems."@en .
 
 <http://www.wikidata.org/entity/Q16521> a owl:Class ;
     rdfs:label "Biologisches Taxon"@de,
@@ -40735,7 +40755,11 @@ ns1:2-11629 a schema:Organization ;
 
 ns1:Damage a owl:Class ;
     rdfs:label "Schaden"@de,
-        "Damage"@en .
+        "Damage"@en ;
+    rdfs:comment "Repräsentiert die nachteiligen Auswirkungen oder Schäden, die einer spezifischen Kulturpflanze durch einen spezifischen Stressor zugefügt werden."@de,
+        "Represents the adverse effects or harm inflicted upon a specific crop due to a specific stressor."@en ;
+    rdfs:scopeNote "Diese Klasse ist zur Modellierung von Schäden vorgesehen, die bestimmte Kulturpflanzen infolge spezifischer Stressoren betreffen, um eine präzise Verfolgung und Verwaltung innerhalb des Pflanzenschutzrahmens zu ermöglichen."@de,
+        "This class is intended to model damages affecting particular crops as a result of specific stressors, facilitating precise tracking and management within the crop protection framework."@en .
 
 ns1:Substance a owl:Class ;
     rdfs:label "Wirkstoff"@de,
@@ -63598,9 +63622,9 @@ ns1:2-7174 a schema:Organization ;
 
 ns1:CodeR a owl:Class ;
     rdfs:label "R-Satz"@de,
-        "Risk Phrase"@en ;
+        "R phrase"@en ;
     rdfs:comment "Ein R-Satz ist eine standardisierte Risikobeschreibung für gefährliche chemische Stoffe, die spezifische Gefahren wie Toxizität oder Entflammbarkeit angibt. Diese wurden in der Europäischen Union verwendet, um Risiken auf Sicherheitsdatenblättern und Etiketten zu kennzeichnen."@de,
-        "A Risk Phrase is a standardized description of the risks associated with hazardous chemical substances, indicating specific dangers such as toxicity or flammability. These were used in the European Union to denote risks on safety data sheets and labels."@en ;
+        "A R phrase (for risk phrase) is a standardized description of the risks associated with hazardous chemical substances, indicating specific dangers such as toxicity or flammability. These were used in the European Union to denote risks on safety data sheets and labels."@en ;
     rdfs:seeAlso <https://ec.europa.eu/taxation_customs/dds2/SAMANCTA/EN/Safety/RS_EN.htm>,
         <https://w.wiki/CjPj> ;
     rdfs:subClassOf ns1:HazardStatement .
@@ -64069,7 +64093,11 @@ schema:PostalAddress a owl:Class ;
 schema:Organization a owl:Class ;
     rdfs:label "Organisation"@de,
         "Organization"@en ;
-    rdfs:comment "Eine (juristische) Einheit wie ein Unternehmen, eine Behörde oder eine Non-Profit-Organisation oder eine Untereinheit einer solchen."@de .
+    rdfs:comment "Eine (juristische) Einheit wie ein Unternehmen, eine Behörde oder eine Non-Profit-Organisation oder eine Untereinheit einer solchen."@de,
+        "Repräsentiert jede formelle Einheit, wie Unternehmen, Institutionen oder Vereinigungen, die im landwirtschaftlichen Bereich des Pflanzenschutzrahmens tätig sind."@de,
+        "Represents any formal entity, such as companies, institutions, or associations, involved in the agricultural sector within the crop protection framework."@en ;
+    rdfs:scopeNote "Diese Klasse ist zur Modellierung von Organisationen im Pflanzenschutz vorgesehen. Sofern möglich, sollten Instanzen aus dem Schweizer zentralen Firmenindex (Zefix) wiederverwendet werden, um Konsistenz und Integration mit bestehenden Schweizer Organisationsdaten zu gewährleisten."@de,
+        "This class is intended to model organizations involved in crop protection. Whenever possible, instances from the Swiss central company index (Zefix) should be reused to ensure consistency and integration with existing Swiss organizational data."@en .
 
 <https://register.ld.admin.ch/zefix/company/267983> ns1:holdsPermissionToSell ns1:1-W-1526,
         ns1:1-W-1526-1,
@@ -64724,7 +64752,11 @@ ns1:BiologicalControlAgent a owl:Class ;
 
 ns1:CropGroup a owl:Class ;
     rdfs:label "Landwirtschaftliche Kultur"@de,
-        "Crop group"@en .
+        "Crop"@en ;
+    rdfs:comment "Repräsentiert eine Kategorie von landwirtschaftlichen Pflanzen, die innerhalb des Pflanzenschutzrahmens gemeinsame Merkmale, Anbaumethoden oder Verwendungszwecke teilen."@de,
+        "Represents a category of agricultural plants that share common characteristics, cultivation methods, or purposes within the crop protection framework."@en ;
+    rdfs:scopeNote "Entwickelt zur Modellierung von Kulturgruppen, die aufgrund von Ähnlichkeiten in ihren biologischen Eigenschaften, Wachstumsanforderungen oder den für ihren Schutz eingesetzten Strategien gemeinsam bewirtschaftet werden."@de,
+        "Designed to model groups of crops that are managed collectively due to similarities in their biological attributes, growth requirements, or the strategies employed for their protection against stressors."@en .
 
 ns1:Insecticide a owl:Class ;
     rdfs:label "Insektizid"@de,
@@ -64742,7 +64774,11 @@ ns1:BioticStressor a owl:Class ;
 
 ns1:CropStressor a owl:Class ;
     rdfs:label "Schadverursacher"@de,
-        "Crop stressor"@en .
+        "Crop stressor"@en ;
+    rdfs:comment "Repräsentiert jeden Faktor oder Agenten, der die Pflanzengesundheit, den Ertrag oder die Qualität im landwirtschaftlichen Rahmen negativ beeinflusst."@de,
+        "Represents any factor or agent that negatively impacts crop health, yield, or quality within the agricultural framework."@en ;
+    rdfs:scopeNote "Diese Klasse ist zur Modellierung verschiedener Stressoren vorgesehen, die Pflanzen betreffen, einschliesslich biotischer und abiotischer Elemente, um die Identifizierung und das Management von Faktoren zu erleichtern, die die landwirtschaftliche Produktivität beeinträchtigen."@de,
+        "This class is intended to model various stressors affecting crops, including both biotic and abiotic elements, facilitating the identification and management of factors that compromise agricultural productivity."@en .
 
 ns1:Fungicide a owl:Class ;
     rdfs:label "Fungizid"@de,
@@ -64782,11 +64818,19 @@ ns1:ChemicalProduct a owl:Class ;
 ns1:CropProtectionProduct a owl:Class ;
     rdfs:label "Pflanzenschutzmittel"@de,
         "Crop protection product"@en ;
+    rdfs:comment "Repräsentiert Produkte, die speziell entwickelt wurden, um Pflanzen vor Stressoren, einschliesslich biotischer und abiotischer Faktoren, im landwirtschaftlichen Rahmen zu schützen."@de,
+        "Represents products specifically designed to protect crops from stressors, including both biotic and abiotic factors, within the agricultural framework."@en ;
+    rdfs:scopeNote "Obwohl alle Pflanzenschutzmittel dieser Klasse zugeordnet werden, gehört nicht jedes Produkt zum Pflanzenschutz. Diese Klasse richtet sich speziell an Produkte, die entwickelt wurden, um Stressoren, die Pflanzen beeinträchtigen, zu mindern oder zu verwalten, wodurch sie sich von anderen Produkten wie Wachstumsregulatoren unterscheiden, die zwar Produkte sind, aber nicht zum Pflanzenschutz gehören."@de,
+        "While all crop protection products are categorized under this class, not every product falls under plant protection. This class specifically targets products designed to mitigate or manage stressors affecting crops, distinguishing them from other products like growth regulators which, although they are products, do not fall under plant protection."@en ;
     rdfs:subClassOf ns1:Product .
 
 ns1:Product a owl:Class ;
     rdfs:label "Produkt"@de,
         "Product"@en ;
+    rdfs:comment "Repräsentiert jedes Element im Rahmen des Pflanzenschutzes, das mit einer eidgenössischen Zulassungsnummer registriert ist und spezifische Berechtigungen hinsichtlich der nicht-beruflichen Verwendung aufweist."@de,
+        "Represents any item within the crop protection framework that is registered with a federal admission number and has specified permissions regarding non-professional use."@en ;
+    rdfs:scopeNote "Diese Klasse ist für die Modellierung aller Pflanzenschutzmittel vorgesehen, die eine eidgenössische Registrierung erfordern und Einschränkungen oder Berechtigungen für die nicht-berufliche Nutzung gemäss den Schweizer Vorschriften aufweisen können."@de,
+        "This class is intended for modeling all crop protection products requiring federal registration and that may have restrictions or allowances for non-professional usage as defined by Swiss regulations."@en ;
     owl:equivalentClass [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty ns1:isNonProfessionallyAllowed ],
