@@ -17574,44 +17574,54 @@ ns2: a owl:Ontology ;
         "DigiAgriFoodCH System Map"@en ;
     owl:versionInfo "0.1" .
 
-ns2:S001 a ns2:Sector ;
+ns2:ORG001 a schema:Organization ;
+    rdfs:label "Der Bundesrat"@de,
+        "The Federal Council"@en ;
+    ns2:belongsTo ns2:SEC004 ;
+    ns2:subOrganization ns2:ORG002 .
+
+ns2:SEC001 a ns2:Sector ;
     rdfs:label "Branchenorganisationen- und Verbände"@de ;
-    ns2:subdomain ns2:S007 .
+    ns2:subdomain ns2:SEC007 .
 
-ns2:S004 a ns2:Sector ;
-    rdfs:label "Bund"@de ;
-    ns2:subdomain ns2:S014 .
-
-ns2:S005 a ns2:Sector ;
+ns2:SEC005 a ns2:Sector ;
     rdfs:label "Kantone"@de .
 
-ns2:S006 a ns2:Sector ;
+ns2:SEC006 a ns2:Sector ;
     rdfs:label "IT-Unternehmen"@de .
 
-ns2:S008 a ns2:Sector ;
+ns2:SEC008 a ns2:Sector ;
     rdfs:label "Kontroll- und Zertifizierungsstellen"@de .
 
-ns2:S009 a ns2:Sector ;
+ns2:SEC009 a ns2:Sector ;
     rdfs:label "Labelorganisationen"@de .
 
-ns2:S010 a ns2:Sector ;
+ns2:SEC010 a ns2:Sector ;
     rdfs:label "Landwirtschaftliche Betriebe"@de .
 
-ns2:S011 a ns2:Sector ;
+ns2:SEC011 a ns2:Sector ;
     rdfs:label "Zuchtverbände"@de .
 
-ns2:S012 a ns2:Sector ;
+ns2:SEC012 a ns2:Sector ;
     rdfs:label "Produzentenverbände"@de .
 
-ns2:S015 a ns2:Sector ;
+ns2:SEC015 a ns2:Sector ;
     rdfs:label "Universitäten"@de ;
-    ns2:subdomain ns2:S013,
-        ns2:S014 .
+    ns2:subdomain ns2:SEC013,
+        ns2:SEC014 .
 
-ns2:S016 a ns2:Sector ;
+ns2:SEC016 a ns2:Sector ;
     rdfs:label "Kantonale Beratungsstellen"@de ;
-    ns2:subdomain ns2:S002,
-        ns2:S003 .
+    ns2:subdomain ns2:SEC002,
+        ns2:SEC003 .
+
+ns2:belongsTo a owl:ObjectProperty ;
+    rdfs:label "gehört zu"@de,
+        "belongs to"@en ;
+    rdfs:comment "Diese Beziehung zeigt an, dass die Organisation X zur Sektor bzw. dem Bereich Y gehört."@de,
+        "This relationship indicates that an organization X belongs to some sector Y."@en ;
+    rdfs:domain schema:Organization ;
+    rdfs:range ns2:Sector .
 
 ns2:contains a owl:ObjectProperty ;
     rdfs:label "beinhaltet"@de,
@@ -17626,15 +17636,6 @@ ns2:derivedFrom a owl:ObjectProperty ;
     rdfs:domain ns2:Information ;
     rdfs:range ns2:Information .
 
-ns2:informationSector a owl:ObjectProperty ;
-    rdfs:label "gehört zu"@de,
-        "belongs to"@en ;
-    rdfs:comment "Diese Beziehung zeigt an, dass das eine Informationseinheit X zur Sektor bzw. dem Bereich Y gehört."@de,
-        "This relationship indicates that a information unit X belongs to some sector Y."@en ;
-    rdfs:domain ns2:Information ;
-    rdfs:range ns2:Sector ;
-    rdfs:subPropertyOf ns2:belongsTo .
-
 ns2:operates a owl:ObjectProperty ;
     rdfs:label "betreibt"@de,
         "operates"@en ;
@@ -17642,23 +17643,14 @@ ns2:operates a owl:ObjectProperty ;
         "This relationship indicates that organization X is in charge of operating system Y."@en ;
     rdfs:domain schema:Organization ;
     rdfs:range ns2:System ;
-    rdfs:scopeNote "Wenn Organisation Y den Betrieb eines Systems X an einen Dienstleister Z auslagert, verwenden Sie weiterhin diese Betriebsbeziehung zwischen X und Y, da sie eher die Verantwortlichkeit als den technischen Betrieb widerspiegelt."@de,
-        "If organization Y outsources the operation of a system X to a service provider Z, still use this operating relationship between X and Y since it reflects responsability rather than technical operation."@en .
+    rdfs:scopeNote "Wenn Organisation Y den Betrieb eines Systems X an einen Dienstleister Z auslagert, verwenden Sie weiterhin diese Betriebsbeziehung zwischen X und Y, da sie eher die Verantwortlichkeit als den technischen Betrieb widerspiegelt. Die Beziehung ist auf niedrigstmöglicher Organisationsebene zu verwenden."@de,
+        "If organization Y outsources the operation of a system X to a service provider Z, still use this operating relationship between X and Y since it reflects responsability rather than technical operation. Also, use this on the lowest organizational level possible."@en .
 
 ns2:organizationAbbreviation a owl:DatatypeProperty ;
     rdfs:label "Organisationsabkürzung"@de,
         "Organization abbreviation"@en ;
     rdfs:domain schema:Organization ;
     rdfs:range xsd:string .
-
-ns2:organizationSector a owl:ObjectProperty ;
-    rdfs:label "gehört zu"@de,
-        "belongs to"@en ;
-    rdfs:comment "Diese Beziehung zeigt an, dass die Organisation X zur Sektor bzw. dem Bereich Y gehört."@de,
-        "This relationship indicates that an organization X belongs to some sector Y."@en ;
-    rdfs:domain schema:Organization ;
-    rdfs:range ns2:Sector ;
-    rdfs:subPropertyOf ns2:belongsTo .
 
 ns2:owns a owl:ObjectProperty ;
     rdfs:label "besitzt (teilweise)"@de,
@@ -17671,15 +17663,6 @@ ns2:systemAbbreviation a owl:DatatypeProperty ;
         "System abbreviation"@en ;
     rdfs:domain ns2:System ;
     rdfs:range xsd:string .
-
-ns2:systemSector a owl:ObjectProperty ;
-    rdfs:label "gehört zu"@de,
-        "belongs to"@en ;
-    rdfs:comment "Diese Beziehung zeigt an, dass das IT-System X zur Sektor bzw. dem Bereich Y gehört."@de,
-        "This relationship indicates that an IT system X belongs to some sector Y."@en ;
-    rdfs:domain ns2:System ;
-    rdfs:range ns2:Sector ;
-    rdfs:subPropertyOf ns2:belongsTo .
 
 schema:address a owl:ObjectProperty ;
     rdfs:label "hat Adresse"@de,
@@ -20161,18 +20144,45 @@ ns1:protects a owl:ObjectProperty ;
     rdfs:domain ns1:Action ;
     rdfs:range ns1:CropGroup .
 
-ns2:S002 a ns2:Sector ;
+ns2:ORG002 a schema:Organization ;
+    rdfs:label "Eidgenössisches Departement für Wirtschaft, Bildung und Forschung"@de,
+        "Federal Department of Economic Affairs, Education and Research"@en ;
+    ns2:organizationAbbreviation "WBF"@de,
+        "EAER"@en ;
+    ns2:subOrganization ns2:ORG003 .
+
+ns2:ORG003 a schema:Organization ;
+    rdfs:label "Bundesamt für Landwirtschaft"@de,
+        "Federal Office for Agriculture"@en ;
+    ns2:operates ns2:SYS001,
+        ns2:SYS002 ;
+    ns2:organizationAbbreviation "BLW"@de,
+        "FOAG"@en .
+
+ns2:SEC002 a ns2:Sector ;
     rdfs:label "Beratung"@de .
 
-ns2:S003 a ns2:Sector ;
+ns2:SEC003 a ns2:Sector ;
     rdfs:label "Kantone"@de ;
-    ns2:subdomain ns2:S014 .
+    ns2:subdomain ns2:SEC014 .
 
-ns2:S007 a ns2:Sector ;
+ns2:SEC004 a ns2:Sector ;
+    rdfs:label "Bund"@de ;
+    ns2:subdomain ns2:SEC014 .
+
+ns2:SEC007 a ns2:Sector ;
     rdfs:label "Privatwirtschaft"@de .
 
-ns2:S013 a ns2:Sector ;
+ns2:SEC013 a ns2:Sector ;
     rdfs:label "Forschung"@de .
+
+ns2:SYS001 a ns2:System ;
+    rdfs:label "Agrarpolitisches Informationssystem"@de ;
+    ns2:systemAbbreviation "AGIS" .
+
+ns2:SYS002 a ns2:System ;
+    rdfs:label "Business Intelligence System des BLW"@de ;
+    ns2:systemAbbreviation "ASTAT" .
 
 ns2:subsector a owl:ObjectProperty ;
     rdfs:label "hat untergeordnete Sektor"@de,
@@ -22831,15 +22841,13 @@ ns1:ComponentPortion a owl:Class ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty ns1:hasComponentSubstance ] .
 
-ns2:S014 a ns2:Sector ;
-    rdfs:label "Öffentlicher Sektor"@de .
+ns2:Information a owl:Class ;
+    rdfs:label "Informationseinheit"@de,
+        "Information unit"@en ;
+    rdfs:comment "A piece of information in an IT system. Could be anything, really."@en .
 
-ns2:belongsTo a owl:ObjectProperty ;
-    rdfs:label "gehört zu"@de,
-        "belongs to"@en ;
-    rdfs:comment "Diese Beziehung zeigt an, dass irgend ein Ding X zur Sektor bzw. dem Bereich Y gehört."@de,
-        "This relationship indicates that any thing X belongs to some sector Y."@en ;
-    rdfs:range ns2:Sector .
+ns2:SEC014 a ns2:Sector ;
+    rdfs:label "Öffentlicher Sektor"@de .
 
 <https://register.ld.admin.ch/zefix/company/117076> ns1:holdsPermissionToSell ns1:1-W-1529,
         ns1:1-W-193,
@@ -23317,17 +23325,6 @@ ns1:isDefinedByBiologicalTaxon a owl:ObjectProperty ;
     rdfs:label "ist definiert durch das biologische Taxon"@de,
         "is defined by biological taxon"@en ;
     rdfs:range <http://www.wikidata.org/entity/Q16521> .
-
-ns2:Information a owl:Class ;
-    rdfs:label "Informationseinheit"@de,
-        "Information unit"@en ;
-    rdfs:comment "A piece of information in an IT system. Could be anything, really."@en .
-
-ns2:System a owl:Class ;
-    rdfs:label "IT-System"@de,
-        "IT system"@en ;
-    rdfs:comment "Jedes IT-System (im abstrakten Sinne) mit einer oder mehreren Datenbanken. Beispiele für solche Systeme sind AGIS, das BI-System ASTAT des BLW oder die kantonalen IT-Systeme für die Landwirtschaft."@de,
-        "Any IT system (in a abstracted sense) with one or many databases. Examples for such systems would be AGIS, the FOAG BI system ASTAT, or the cantonal agricultural IT systems."@en .
 
 <https://register.ld.admin.ch/zefix/company/1390097> ns1:holdsPermissionToSell ns1:1-W-4519,
         ns1:1-W-4520,
@@ -24758,6 +24755,12 @@ ns1:TreatmentConstraint a owl:Class ;
     rdfs:label "Anwendungseinschränkung"@de,
         "Treatment constraint"@en ;
     rdfs:subClassOf ns1:ActionNotice .
+
+ns2:System a owl:Class ;
+    rdfs:label "IT-System"@de,
+        "IT system"@en ;
+    rdfs:comment "Jedes IT-System (im abstrakten Sinne) mit einer oder mehreren Datenbanken. Beispiele für solche Systeme sind AGIS, das BI-System ASTAT des BLW oder die kantonalen IT-Systeme für die Landwirtschaft."@de,
+        "Any IT system (in a abstracted sense) with one or many databases. Examples for such systems would be AGIS, the FOAG BI system ASTAT, or the cantonal agricultural IT systems."@en .
 
 <https://register.ld.admin.ch/zefix/company/1211870> ns1:holdsPermissionToSell ns1:1-W-7066,
         ns1:1-W-7067,
@@ -60359,6 +60362,11 @@ ns1:1-W-6747-1 a ns1:ChemicalCropProtectionProduct,
         ns1:1-I-4890,
         ns1:1-W-6747 .
 
+ns2:Sector a owl:Class ;
+    rdfs:label "Sektor"@de,
+        "Sector"@en ;
+    skos:altLabel "Bereich"@de .
+
 <https://register.ld.admin.ch/zefix/company/1634453> ns1:holdsPermissionToSell ns1:1-W-3085,
         ns1:1-W-4034,
         ns1:1-W-4343,
@@ -60685,11 +60693,6 @@ ns1:2-11609 a schema:Organization ;
     schema:address ns1:3-11609 ;
     schema:legalName "Syngenta France SAS" ;
     schema:name "Syngenta France SAS" .
-
-ns2:Sector a owl:Class ;
-    rdfs:label "Sektor"@de,
-        "Sector"@en ;
-    skos:altLabel "Bereich"@de .
 
 <https://register.ld.admin.ch/zefix/company/1169237> ns1:holdsPermissionToSell ns1:1-W-5092,
         ns1:1-W-5093,

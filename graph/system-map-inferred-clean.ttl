@@ -1,0 +1,407 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sm: <https://agriculture.ld.admin.ch/foag/system-map#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+rdf:HTML a rdfs:Datatype .
+
+rdf:PlainLiteral a rdfs:Datatype .
+
+rdf:XMLLiteral a rdfs:Datatype .
+
+rdf:langString a rdfs:Datatype .
+
+rdfs:Literal a rdfs:Datatype .
+
+rdfs:comment a owl:AnnotationProperty .
+
+rdfs:isDefinedBy a owl:AnnotationProperty .
+
+rdfs:label a owl:AnnotationProperty .
+
+rdfs:seeAlso a owl:AnnotationProperty .
+
+xsd:NCName a rdfs:Datatype .
+
+xsd:NMTOKEN a rdfs:Datatype .
+
+xsd:Name a rdfs:Datatype .
+
+xsd:anyURI a rdfs:Datatype .
+
+xsd:base64Binary a rdfs:Datatype .
+
+xsd:boolean a rdfs:Datatype .
+
+xsd:byte a rdfs:Datatype .
+
+xsd:date a rdfs:Datatype .
+
+xsd:dateTime a rdfs:Datatype .
+
+xsd:dateTimeStamp a rdfs:Datatype .
+
+xsd:decimal a rdfs:Datatype .
+
+xsd:double a rdfs:Datatype .
+
+xsd:float a rdfs:Datatype .
+
+xsd:hexBinary a rdfs:Datatype .
+
+xsd:int a rdfs:Datatype .
+
+xsd:integer a rdfs:Datatype .
+
+xsd:language a rdfs:Datatype .
+
+xsd:long a rdfs:Datatype .
+
+xsd:negativeInteger a rdfs:Datatype .
+
+xsd:nonNegativeInteger a rdfs:Datatype .
+
+xsd:nonPositiveInteger a rdfs:Datatype .
+
+xsd:normalizedString a rdfs:Datatype .
+
+xsd:positiveInteger a rdfs:Datatype .
+
+xsd:short a rdfs:Datatype .
+
+xsd:time a rdfs:Datatype .
+
+xsd:token a rdfs:Datatype .
+
+xsd:unsignedByte a rdfs:Datatype .
+
+xsd:unsignedInt a rdfs:Datatype .
+
+xsd:unsignedLong a rdfs:Datatype .
+
+xsd:unsignedShort a rdfs:Datatype .
+
+owl:backwardCompatibleWith a owl:AnnotationProperty .
+
+owl:deprecated a owl:AnnotationProperty .
+
+owl:incompatibleWith a owl:AnnotationProperty .
+
+owl:priorVersion a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+sm: a owl:Ontology ;
+    dcterms:creator "Federal Office for Agriculture" ;
+    dcterms:description "Eine Ontologie zur Modellierung von Organisationen, IT-Systemen und Daten für das Schweizer Bundesamt für Landwirtschaft (FOAG)."@de,
+        "An ontology to model organizations, IT systems and data for the Swiss Federal Office for Agriculture FOAG."@en ;
+    dcterms:title "DigiAgriFoodCH Systemlandkarte"@de,
+        "DigiAgriFoodCH System Map"@en ;
+    owl:versionInfo "0.1" .
+
+sm:ORG001 a owl:Thing,
+        schema:Organization ;
+    rdfs:label "Der Bundesrat"@de,
+        "The Federal Council"@en ;
+    sm:belongsTo sm:SEC004 ;
+    sm:subOrganization sm:ORG002 .
+
+sm:SEC001 a owl:Thing,
+        sm:Sector ;
+    rdfs:label "Branchenorganisationen- und Verbände"@de ;
+    sm:subdomain sm:SEC007 .
+
+sm:SEC005 a owl:Thing,
+        sm:Sector ;
+    rdfs:label "Kantone"@de .
+
+sm:SEC006 a owl:Thing,
+        sm:Sector ;
+    rdfs:label "IT-Unternehmen"@de .
+
+sm:SEC008 a owl:Thing,
+        sm:Sector ;
+    rdfs:label "Kontroll- und Zertifizierungsstellen"@de .
+
+sm:SEC009 a owl:Thing,
+        sm:Sector ;
+    rdfs:label "Labelorganisationen"@de .
+
+sm:SEC010 a owl:Thing,
+        sm:Sector ;
+    rdfs:label "Landwirtschaftliche Betriebe"@de .
+
+sm:SEC011 a owl:Thing,
+        sm:Sector ;
+    rdfs:label "Zuchtverbände"@de .
+
+sm:SEC012 a owl:Thing,
+        sm:Sector ;
+    rdfs:label "Produzentenverbände"@de .
+
+sm:SEC015 a owl:Thing,
+        sm:Sector ;
+    rdfs:label "Universitäten"@de ;
+    sm:subdomain sm:SEC013,
+        sm:SEC014 .
+
+sm:SEC016 a owl:Thing,
+        sm:Sector ;
+    rdfs:label "Kantonale Beratungsstellen"@de ;
+    sm:subdomain sm:SEC002,
+        sm:SEC003 .
+
+sm:SYS003 a owl:Thing,
+        sm:System ;
+    rdfs:label "AGATE" .
+
+sm:ORG002 a owl:Thing,
+        schema:Organization ;
+    rdfs:label "Eidgenössisches Departement für Wirtschaft, Bildung und Forschung"@de,
+        "Federal Department of Economic Affairs, Education and Research"@en ;
+    sm:organizationAbbreviation "WBF"@de,
+        "EAER"@en ;
+    sm:subOrganization sm:ORG003 .
+
+sm:SEC002 a owl:Thing,
+        sm:Sector ;
+    rdfs:label "Beratung"@de .
+
+sm:SEC003 a owl:Thing,
+        sm:Sector ;
+    rdfs:label "Kantone"@de ;
+    sm:subdomain sm:SEC014 .
+
+sm:SEC004 a owl:Thing,
+        sm:Sector ;
+    rdfs:label "Bund"@de ;
+    sm:subdomain sm:SEC014 .
+
+sm:SEC007 a owl:Thing,
+        sm:Sector ;
+    rdfs:label "Privatwirtschaft"@de .
+
+sm:SEC013 a owl:Thing,
+        sm:Sector ;
+    rdfs:label "Forschung"@de .
+
+xsd:string a rdfs:Datatype .
+
+owl:Nothing a owl:Class ;
+    rdfs:subClassOf owl:Nothing,
+        owl:Thing,
+        sm:Information,
+        sm:Sector,
+        sm:System,
+        schema:Organization ;
+    owl:equivalentClass owl:Nothing .
+
+sm:SYS001 a owl:Thing,
+        sm:System ;
+    rdfs:label "Agrarpolitisches Informationssystem"@de ;
+    sm:isOperatedBy sm:ORG003 ;
+    sm:operates sm:ORG003 ;
+    sm:systemAbbreviation "AGIS" .
+
+sm:SYS002 a owl:Thing,
+        sm:System ;
+    rdfs:label "Business Intelligence System des BLW"@de ;
+    sm:isOperatedBy sm:ORG003 ;
+    sm:operates sm:ORG003 ;
+    sm:systemAbbreviation "ASTAT" .
+
+sm:belongsTo a owl:ObjectProperty ;
+    rdfs:label "gehört zu"@de,
+        "belongs to"@en ;
+    rdfs:comment "Diese Beziehung zeigt an, dass die Organisation X zur Sektor bzw. dem Bereich Y gehört."@de,
+        "This relationship indicates that an organization X belongs to some sector Y."@en ;
+    rdfs:domain owl:Thing,
+        schema:Organization ;
+    rdfs:range owl:Thing,
+        sm:Sector ;
+    rdfs:subPropertyOf sm:belongsTo ;
+    owl:equivalentProperty sm:belongsTo .
+
+sm:contains a owl:ObjectProperty ;
+    rdfs:label "beinhaltet"@de,
+        "contains"@en ;
+    rdfs:comment "This relationship indicates that an IT system X contains the information unit Y. For example, AGIS contains information about farming area in Switzerland."@en ;
+    rdfs:domain owl:Thing,
+        sm:System ;
+    rdfs:range owl:Thing,
+        sm:Information ;
+    rdfs:subPropertyOf sm:contains ;
+    owl:equivalentProperty sm:contains .
+
+sm:derivedFrom a owl:ObjectProperty ;
+    rdfs:label "ist abgeleitet von"@de,
+        "is derived from"@en ;
+    rdfs:domain owl:Thing,
+        sm:Information ;
+    rdfs:range owl:Thing,
+        sm:Information ;
+    rdfs:subPropertyOf sm:derivedFrom ;
+    owl:equivalentProperty sm:derivedFrom .
+
+sm:isOperatedBy a owl:ObjectProperty ;
+    rdfs:subPropertyOf sm:isOperatedBy ;
+    owl:equivalentProperty sm:isOperatedBy ;
+    owl:inverseOf sm:operates .
+
+sm:organizationAbbreviation a owl:DatatypeProperty ;
+    rdfs:label "Organisationsabkürzung"@de,
+        "Organization abbreviation"@en ;
+    rdfs:domain owl:Thing,
+        schema:Organization ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sm:organizationAbbreviation ;
+    owl:equivalentProperty sm:organizationAbbreviation .
+
+sm:owns a owl:ObjectProperty ;
+    rdfs:label "besitzt (teilweise)"@de,
+        "(partially) owns"@en ;
+    rdfs:domain owl:Thing,
+        schema:Organization ;
+    rdfs:range owl:Thing,
+        schema:Organization ;
+    rdfs:subPropertyOf sm:owns ;
+    owl:equivalentProperty sm:owns .
+
+sm:systemAbbreviation a owl:DatatypeProperty ;
+    rdfs:label "Abkürzung des IT-Systems"@de,
+        "System abbreviation"@en ;
+    rdfs:domain owl:Thing,
+        sm:System ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sm:systemAbbreviation ;
+    owl:equivalentProperty sm:systemAbbreviation .
+
+schema:memberOf a owl:ObjectProperty ;
+    rdfs:label "ist eine Mitgliedsorganisation von"@de,
+        "is a member organization of"@en ;
+    rdfs:comment "Diese Beziehung gibt an, dass eine Organisation X eine Mitgliedsorganisation einer anderen Organisation Y ist."@de,
+        "This relationship indicates that an organization X is a member organization of another organization Y."@en ;
+    rdfs:domain owl:Thing,
+        schema:Organization ;
+    rdfs:range owl:Thing,
+        schema:Organization ;
+    rdfs:scopeNote "Verwenden Sie diese Beziehung, um Mitgliedschaften von Branchenorganisationen, Berufsverbänden oder anderen kollektiven Einrichtungen darzustellen, bei denen Organisationen als Mitglieder teilnehmen. Verwenden Sie diese Eigenschaft nicht für individuelle Mitgliedschaften oder informelle Beziehungen."@de,
+        "Use this relationship for representing memberships of industry organizations, professional associations, or other collective entities where organizations participate as members. Avoid using this property for individual memberships or informal relationships."@en ;
+    rdfs:subPropertyOf schema:memberOf ;
+    owl:equivalentProperty schema:memberOf .
+
+schema:subOrganization a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "beinhaltet Suborganisation"@de,
+        "contains Suborganization"@en ;
+    rdfs:domain owl:Thing,
+        schema:Organization ;
+    rdfs:range owl:Thing,
+        schema:Organization ;
+    rdfs:subPropertyOf schema:subOrganization ;
+    owl:equivalentProperty schema:subOrganization ;
+    owl:inverseOf sm:superOrganization .
+
+sm:SEC014 a owl:Thing,
+        sm:Sector ;
+    rdfs:label "Öffentlicher Sektor"@de .
+
+sm:operates a owl:ObjectProperty ;
+    rdfs:label "betreibt"@de,
+        "operates"@en ;
+    rdfs:comment "Diese Beziehung zeigt an, dass Organisation X für das Betriebssystem Y verantwortlich ist."@de,
+        "This relationship indicates that organization X is in charge of operating system Y."@en ;
+    rdfs:domain owl:Thing,
+        schema:Organization ;
+    rdfs:range owl:Thing,
+        sm:System ;
+    rdfs:scopeNote "Wenn Organisation Y den Betrieb eines Systems X an einen Dienstleister Z auslagert, verwenden Sie weiterhin diese Betriebsbeziehung zwischen X und Y, da sie eher die Verantwortlichkeit als den technischen Betrieb widerspiegelt. Die Beziehung ist auf niedrigstmöglicher Organisationsebene zu verwenden."@de,
+        "If organization Y outsources the operation of a system X to a service provider Z, still use this operating relationship between X and Y since it reflects responsability rather than technical operation. Also, use this on the lowest organizational level possible."@en ;
+    rdfs:subPropertyOf sm:operates ;
+    owl:equivalentProperty sm:operates .
+
+sm:subsector a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "hat untergeordnete Sektor"@de,
+        "has subsector"@en ;
+    rdfs:domain owl:Thing,
+        sm:Sector ;
+    rdfs:range owl:Thing,
+        sm:Sector ;
+    rdfs:subPropertyOf sm:subsector ;
+    owl:equivalentProperty sm:subsector ;
+    owl:inverseOf sm:supersector .
+
+sm:superOrganization a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "ist Teil von"@de,
+        "is a part of"@en ;
+    rdfs:domain owl:Thing,
+        schema:Organization ;
+    rdfs:range owl:Thing,
+        schema:Organization ;
+    rdfs:subPropertyOf sm:superOrganization ;
+    owl:equivalentProperty sm:superOrganization .
+
+sm:supersector a owl:ObjectProperty ;
+    rdfs:label "hat übergeordnete Sektor"@de,
+        "has supersector"@en ;
+    rdfs:domain owl:Thing,
+        sm:Sector ;
+    rdfs:range owl:Thing,
+        sm:Sector ;
+    rdfs:subPropertyOf sm:supersector ;
+    owl:equivalentProperty sm:supersector ;
+    owl:inverseOf sm:subsector .
+
+sm:ORG003 a owl:Thing,
+        schema:Organization ;
+    rdfs:label "Bundesamt für Landwirtschaft"@de,
+        "Federal Office for Agriculture"@en ;
+    sm:isOperatedBy sm:SYS001,
+        sm:SYS002 ;
+    sm:operates sm:SYS001,
+        sm:SYS002 ;
+    sm:organizationAbbreviation "BLW"@de,
+        "FOAG"@en .
+
+sm:Information a owl:Class ;
+    rdfs:label "Informationseinheit"@de,
+        "Information unit"@en ;
+    rdfs:comment "A piece of information in an IT system. Could be anything, really."@en ;
+    rdfs:subClassOf owl:Thing,
+        sm:Information ;
+    owl:equivalentClass sm:Information .
+
+sm:System a owl:Class ;
+    rdfs:label "IT-System"@de,
+        "IT system"@en ;
+    rdfs:comment "Jedes IT-System (im abstrakten Sinne) mit einer oder mehreren Datenbanken. Beispiele für solche Systeme sind AGIS, das BI-System ASTAT des BLW oder die kantonalen IT-Systeme für die Landwirtschaft."@de,
+        "Any IT system (in a abstracted sense) with one or many databases. Examples for such systems would be AGIS, the FOAG BI system ASTAT, or the cantonal agricultural IT systems."@en ;
+    rdfs:subClassOf owl:Thing,
+        sm:System ;
+    owl:equivalentClass sm:System .
+
+schema:Organization a owl:Class ;
+    rdfs:label "Organisation"@de,
+        "Organization"@en ;
+    rdfs:comment "Eine (juristische) Einheit wie ein Unternehmen, eine Behörde oder eine Non-Profit-Organisation oder eine Untereinheit einer solchen."@de ;
+    rdfs:subClassOf owl:Thing,
+        schema:Organization ;
+    owl:equivalentClass schema:Organization .
+
+sm:Sector a owl:Class ;
+    rdfs:label "Sektor"@de,
+        "Sector"@en ;
+    rdfs:subClassOf owl:Thing,
+        sm:Sector ;
+    owl:equivalentClass sm:Sector ;
+    skos:altLabel "Bereich"@de .
+
+owl:Thing a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    owl:equivalentClass owl:Thing .

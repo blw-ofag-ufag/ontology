@@ -14,6 +14,14 @@
         "DigiAgriFoodCH System Map"@en ;
     owl:versionInfo "0.1" .
 
+:belongsTo a owl:ObjectProperty ;
+    rdfs:label "gehört zu"@de,
+        "belongs to"@en ;
+    rdfs:comment "Diese Beziehung zeigt an, dass die Organisation X zur Sektor bzw. dem Bereich Y gehört."@de,
+        "This relationship indicates that an organization X belongs to some sector Y."@en ;
+    rdfs:domain schema:Organization ;
+    rdfs:range :Sector .
+
 :contains a owl:ObjectProperty ;
     rdfs:label "beinhaltet"@de,
         "contains"@en ;
@@ -34,22 +42,17 @@
         "This relationship indicates that organization X is in charge of operating system Y."@en ;
     rdfs:domain schema:Organization ;
     rdfs:range :System ;
-    rdfs:scopeNote "Wenn Organisation Y den Betrieb eines Systems X an einen Dienstleister Z auslagert, verwenden Sie weiterhin diese Betriebsbeziehung zwischen X und Y, da sie eher die Verantwortlichkeit als den technischen Betrieb widerspiegelt."@de,
-        "If organization Y outsources the operation of a system X to a service provider Z, still use this operating relationship between X and Y since it reflects responsability rather than technical operation."@en .
+    rdfs:scopeNote "Wenn Organisation Y den Betrieb eines Systems X an einen Dienstleister Z auslagert, verwenden Sie weiterhin diese Betriebsbeziehung zwischen X und Y, da sie eher die Verantwortlichkeit als den technischen Betrieb widerspiegelt. Die Beziehung ist auf niedrigstmöglicher Organisationsebene zu verwenden."@de,
+        "If organization Y outsources the operation of a system X to a service provider Z, still use this operating relationship between X and Y since it reflects responsability rather than technical operation. Also, use this on the lowest organizational level possible."@en .
+
+:isOperatedBy a owl:ObjectProperty ;
+    owl:inverseOf :operates .
 
 :organizationAbbreviation a owl:DatatypeProperty ;
     rdfs:label "Organisationsabkürzung"@de,
         "Organization abbreviation"@en ;
     rdfs:domain schema:Organization ;
     rdfs:range xsd:string .
-
-:belongsTo a owl:ObjectProperty ;
-    rdfs:label "gehört zu"@de,
-        "belongs to"@en ;
-    rdfs:comment "Diese Beziehung zeigt an, dass die Organisation X zur Sektor bzw. dem Bereich Y gehört."@de,
-        "This relationship indicates that an organization X belongs to some sector Y."@en ;
-    rdfs:domain schema:Organization ;
-    rdfs:range :Sector .
 
 :owns a owl:ObjectProperty ;
     rdfs:label "besitzt (teilweise)"@de,
@@ -73,13 +76,23 @@ schema:memberOf a owl:ObjectProperty ;
     rdfs:scopeNote "Verwenden Sie diese Beziehung, um Mitgliedschaften von Branchenorganisationen, Berufsverbänden oder anderen kollektiven Einrichtungen darzustellen, bei denen Organisationen als Mitglieder teilnehmen. Verwenden Sie diese Eigenschaft nicht für individuelle Mitgliedschaften oder informelle Beziehungen."@de,
         "Use this relationship for representing memberships of industry organizations, professional associations, or other collective entities where organizations participate as members. Avoid using this property for individual memberships or informal relationships."@en .
 
-schema:subOrganization a owl:ObjectProperty ;
+schema:subOrganization a owl:ObjectProperty,
+        owl:TransitiveProperty ;
     rdfs:label "beinhaltet Suborganisation"@de,
         "contains Suborganization"@en ;
     rdfs:domain schema:Organization ;
+    rdfs:range schema:Organization ;
+    owl:inverseOf :superOrganization .
+
+:superOrganization a owl:ObjectProperty,
+        owl:TransitiveProperty;
+    rdfs:label "ist Teil von"@de,
+        "is a part of"@en ;
+    rdfs:domain schema:Organization ;
     rdfs:range schema:Organization .
 
-:subsector a owl:ObjectProperty ;
+:subsector a owl:ObjectProperty,
+        owl:TransitiveProperty ;
     rdfs:label "hat untergeordnete Sektor"@de,
         "has subsector"@en ;
     rdfs:domain :Sector ;

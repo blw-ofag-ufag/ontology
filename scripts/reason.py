@@ -1,15 +1,25 @@
-from owlready2 import *
+import rdflib
+from owlrl import DeductiveClosure, OWLRL_Semantics
 
-# Load ontology
-onto = get_ontology("ontology/system-map-ontology.ttl").load()
+# 1) Create an rdflib graph
+g = rdflib.Graph()
 
-# Load instances
-with open("data/system-map.ttl", "r") as f:
-    data = f.read()
-onto.load(fileobj=data, format="turtle")
+# 2) Parse ontology and data
+g.parse("ontology/system-map-ontology.ttl", format="turtle")
+g.parse("data/system-map.ttl", format="turtle")
 
-# Perform reasoning
-sync_reasoner()
+# 3) Perform inference (OWL 2 RL via owlrl)
+DeductiveClosure(OWLRL_Semantics).expand(g)
 
-# Save the inferred triples
-onto.save(file="graph/system-map-inferred.ttl", format="turtle")
+# 4) Clean up the graph
+for s, p, o in list(g):
+    # Remove triples where the subject is a literal
+    if isinstance(s, rdflib.Literal):
+        g.remove((s, p, o))
+    # Remove unnecessary `owl:sameAs` triples where subject == object
+    elif p == rdflib.OWL.sameAs and s == o:
+        g.remove((s, p, o))
+
+# 5) Save the cleaned graph
+g.serialize(destination="graph/system-map-inferred.ttl", format="turtle")
+print("Filtered inferred graph saved to graph/system-map-inferred.ttl.")
