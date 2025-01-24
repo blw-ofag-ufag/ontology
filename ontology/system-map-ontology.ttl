@@ -27,15 +27,6 @@
     rdfs:domain :Information ;
     rdfs:range :Information .
 
-:informationSector a owl:ObjectProperty ;
-    rdfs:label "gehört zu"@de,
-        "belongs to"@en ;
-    rdfs:comment "Diese Beziehung zeigt an, dass das eine Informationseinheit X zur Sektor bzw. dem Bereich Y gehört."@de,
-        "This relationship indicates that a information unit X belongs to some sector Y."@en ;
-    rdfs:domain :Information ;
-    rdfs:range :Sector ;
-    rdfs:subPropertyOf :belongsTo .
-
 :operates a owl:ObjectProperty ;
     rdfs:label "betreibt"@de,
         "operates"@en ;
@@ -52,14 +43,13 @@
     rdfs:domain schema:Organization ;
     rdfs:range xsd:string .
 
-:organizationSector a owl:ObjectProperty ;
+:belongsTo a owl:ObjectProperty ;
     rdfs:label "gehört zu"@de,
         "belongs to"@en ;
     rdfs:comment "Diese Beziehung zeigt an, dass die Organisation X zur Sektor bzw. dem Bereich Y gehört."@de,
         "This relationship indicates that an organization X belongs to some sector Y."@en ;
     rdfs:domain schema:Organization ;
-    rdfs:range :Sector ;
-    rdfs:subPropertyOf :belongsTo .
+    rdfs:range :Sector .
 
 :owns a owl:ObjectProperty ;
     rdfs:label "besitzt (teilweise)"@de,
@@ -72,15 +62,6 @@
         "System abbreviation"@en ;
     rdfs:domain :System ;
     rdfs:range xsd:string .
-
-:systemSector a owl:ObjectProperty ;
-    rdfs:label "gehört zu"@de,
-        "belongs to"@en ;
-    rdfs:comment "Diese Beziehung zeigt an, dass das IT-System X zur Sektor bzw. dem Bereich Y gehört."@de,
-        "This relationship indicates that an IT system X belongs to some sector Y."@en ;
-    rdfs:domain :System ;
-    rdfs:range :Sector ;
-    rdfs:subPropertyOf :belongsTo .
 
 schema:memberOf a owl:ObjectProperty ;
     rdfs:label "ist eine Mitgliedsorganisation von"@de,
@@ -111,13 +92,6 @@ schema:subOrganization a owl:ObjectProperty ;
     rdfs:domain :Sector ;
     rdfs:range :Sector ;
     owl:inverseOf :subsector .
-
-:belongsTo a owl:ObjectProperty ;
-    rdfs:label "gehört zu"@de,
-        "belongs to"@en ;
-    rdfs:comment "Diese Beziehung zeigt an, dass irgend ein Ding X zur Sektor bzw. dem Bereich Y gehört."@de,
-        "This relationship indicates that any thing X belongs to some sector Y."@en ;
-    rdfs:range :Sector .
 
 :Information a owl:Class ;
     rdfs:label "Informationseinheit"@de,

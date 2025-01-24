@@ -1,58 +1,81 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sm: <https://agriculture.ld.admin.ch/foag/system-map#> .
 
-sm:S001 a sm:Sector ;
+sm:SEC001 a sm:Sector ;
     rdfs:label "Branchenorganisationen- und Verbände"@de ;
-    sm:subdomain sm:S007 .
+    sm:subdomain sm:SEC007 .
 
-sm:S004 a sm:Sector ;
+sm:SEC004 a sm:Sector ;
     rdfs:label "Bund"@de ;
-    sm:subdomain sm:S014 .
+    sm:subdomain sm:SEC014 .
 
-sm:S005 a sm:Sector ;
+sm:SEC005 a sm:Sector ;
     rdfs:label "Kantone"@de .
 
-sm:S006 a sm:Sector ;
+sm:SEC006 a sm:Sector ;
     rdfs:label "IT-Unternehmen"@de .
 
-sm:S008 a sm:Sector ;
+sm:SEC008 a sm:Sector ;
     rdfs:label "Kontroll- und Zertifizierungsstellen"@de .
 
-sm:S009 a sm:Sector ;
+sm:SEC009 a sm:Sector ;
     rdfs:label "Labelorganisationen"@de .
 
-sm:S010 a sm:Sector ;
+sm:SEC010 a sm:Sector ;
     rdfs:label "Landwirtschaftliche Betriebe"@de .
 
-sm:S011 a sm:Sector ;
+sm:SEC011 a sm:Sector ;
     rdfs:label "Zuchtverbände"@de .
 
-sm:S012 a sm:Sector ;
+sm:SEC012 a sm:Sector ;
     rdfs:label "Produzentenverbände"@de .
 
-sm:S015 a sm:Sector ;
+sm:SEC015 a sm:Sector ;
     rdfs:label "Universitäten"@de ;
-    sm:subdomain sm:S013,
-        sm:S014 .
+    sm:subdomain sm:SEC013,
+        sm:SEC014 .
 
-sm:S016 a sm:Sector ;
+sm:SEC016 a sm:Sector ;
     rdfs:label "Kantonale Beratungsstellen"@de ;
-    sm:subdomain sm:S002,
-        sm:S003 .
+    sm:subdomain sm:SEC002,
+        sm:SEC003 .
 
-sm:S002 a sm:Sector ;
+sm:SEC002 a sm:Sector ;
     rdfs:label "Beratung"@de .
 
-sm:S003 a sm:Sector ;
+sm:SEC003 a sm:Sector ;
     rdfs:label "Kantone"@de ;
-    sm:subdomain sm:S014 .
+    sm:subdomain sm:SEC014 .
 
-sm:S007 a sm:Sector ;
+sm:SEC007 a sm:Sector ;
     rdfs:label "Privatwirtschaft"@de .
 
-sm:S013 a sm:Sector ;
+sm:SEC013 a sm:Sector ;
     rdfs:label "Forschung"@de .
 
-sm:S014 a sm:Sector ;
+sm:SEC014 a sm:Sector ;
     rdfs:label "Öffentlicher Sektor"@de .
 
+sm:ORG001 a schema:Organisation ;
+    rdfs:label "The Federal Council"@en,
+        "Der Bundesrat"@de .
+
+sm:ORG002 a schema:Organisation ;
+    rdfs:label "Federal Department of Economic Affairs, Education and Research"@en,
+        "Eidgenössisches Departement für Wirtschaft, Bildung und Forschung"@de ;
+    sm:organizationAbbreviation "EAER"@en,
+        "WBF"@de .
+
+sm:ORG003 a schema:Organisation ;
+    rdfs:label "Federal Office for Agriculture"@en,
+        "Bundesamt für Landwirtschaft"@de ;
+    sm:organizationAbbreviation "FOAG"@en,
+        "BLW"@de .
+
+sm:SYS001 a sm:System ;
+    rdfs:label "Agrarpolitisches Informationssystem"@de ;
+    sm:systemAbbreviation "AGIS" .
+
+sm:SYS002 a sm:System ;
+    rdfs:label "Business Intelligence System des BLW"@de ;
+    sm:systemAbbreviation "ASTAT" .
