@@ -1,8 +1,7 @@
-# 🧐 Visual ontology exploration
-
 > [!NOTE]
 > This GitHub repository is used as a proof-of-concept. It does not contain any official information from the Federal Office for Agriculture.
 
+# 🧐 Visual ontology exploration
 
 You can use the browser tool [WebVOWL](https://github.com/VisualDataWeb/WebVOWL) order to visually explore the ontologies. The following links will open the current drafts for ontologies:
 
@@ -22,6 +21,30 @@ This repository is structured as follows:
 6. `/docs` contains a bunch of example html documents that are served as GitHub pages.
 7. `/varia` various files.
 8. `/deprecated` deprecated files.
+
+# 🆙 How to upload the turtle files to LINDAS
+
+In order to upload a graph (as a turtle `.ttl` file) to the linked data service LINDAS, use the following cURL command:
+
+```curl
+curl \
+  --user lindas-foag:mySuperStrongPassword \
+  -X POST \
+  -H "Content-Type: text/turtle" \
+  --data-binary @graph/plant-protection.ttl \
+  "https://stardog-test.cluster.ldbar.ch/lindas?graph=https://lindas.admin.ch/foag/ontologies"
+```
+
+Replace `mySuperStrongPassword` with the actual password. Of course, `graph/plant-protection.ttl` could be set to another turtle file and `https://lindas.admin.ch/foag/ontologies` to another target graph.
+
+*If* data that was already uploaded was changed, clear the existing graph before posting. (Otherwise, stardog creates duplicate nodes for the changes.) To clear the graph, run:
+
+```curl
+curl \
+  --user lindas-foag:mySuperStrongPassword \
+  -X DELETE \
+  "https://stardog-test.cluster.ldbar.ch/lindas?graph=https://lindas.admin.ch/foag/ontologies"
+```
 
 # 🌐 Demonstration sites
 
