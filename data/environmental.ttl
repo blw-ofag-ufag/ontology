@@ -1,158 +1,162 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pp: <https://agriculture.ld.admin.ch/foag/plant-protection#> .
-@prefix wd: <https://www.wikidata.org/entity/> .
-
-########################################################################
-# Instances of pp:EnvironmentalCondition
-########################################################################
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 pp:ENV001 a pp:EnvironmentalCondition ;
-    rdfs:label "Rain"@en ,
-               "Regen"@de ;
-    rdfs:comment "Precipitation in the form of liquid water drops falling from clouds."@en ;
-    rdfs:comment "Niederschlag in Form von flüssigen Wassertropfen, die aus Wolken fallen."@de .
+    rdfs:label "Regen"@de,
+        "Rain"@en ;
+    rdfs:comment "Niederschlag in Form von flüssigen Wassertropfen, die aus Wolken fallen."@de,
+        "Precipitation in the form of liquid water drops falling from clouds."@en ;
+    pp:emoji "☔️" .
 
 pp:ENV002 a pp:EnvironmentalCondition ;
-    rdfs:label "Snow"@en ,
-               "Schnee"@de ;
-    rdfs:comment "Precipitation in the form of ice crystals."@en ;
-    rdfs:comment "Niederschlag in Form von Eiskristallen."@de .
+    rdfs:label "Schnee"@de,
+        "Snow"@en ;
+    rdfs:comment "Niederschlag in Form von Eiskristallen."@de,
+        "Precipitation in the form of ice crystals."@en ;
+    pp:emoji "☃️" .
 
 pp:ENV003 a pp:EnvironmentalCondition ;
-    rdfs:label "Hail"@en ,
-               "Hagel"@de ;
-    rdfs:comment "Solid precipitation in the form of balls or irregular lumps of ice."@en ;
-    rdfs:comment "Fester Niederschlag in Form von Kugeln oder unregelmässigen Eisbrocken."@de .
+    rdfs:label "Hagel"@de,
+        "Hail"@en ;
+    rdfs:comment "Fester Niederschlag in Form von Kugeln oder unregelmässigen Eisbrocken."@de,
+        "Solid precipitation in the form of balls or irregular lumps of ice."@en ;
+    pp:emoji "⛈️" .
 
 pp:ENV004 a pp:EnvironmentalCondition ;
-    rdfs:label "Wind"@en ,
-               "Wind"@de ;
-    rdfs:comment "Air in motion relative to the Earth's surface, influencing evapotranspiration and mechanical stress."@en ;
-    rdfs:comment "Luftbewegung in Bezug zur Erdoberfläche, die Evapotranspiration und mechanische Belastungen beeinflusst."@de .
+    rdfs:label "Wind"@de,
+        "Wind"@en ;
+    rdfs:comment "Luftbewegung in Bezug zur Erdoberfläche, die Evapotranspiration und mechanische Belastungen beeinflusst."@de,
+        "Air in motion relative to the Earth's surface, influencing evapotranspiration and mechanical stress."@en ;
+    pp:emoji "💨" .
 
 pp:ENV005 a pp:EnvironmentalCondition ;
-    rdfs:label "Temperature"@en ,
-               "Temperatur"@de ;
-    rdfs:comment "Degree of heat present in the environment, essential for plant metabolic processes."@en ;
-    rdfs:comment "Mass für den Wärmegrad in der Umwelt, der für pflanzliche Stoffwechselprozesse entscheidend ist."@de .
-
-pp:ENV005 a pp:EnvironmentalCondition ;
-    rdfs:label "Humidity"@en ,
-               "Luftfeuchtigkeit"@de ;
-    rdfs:comment "Amount of water vapor in the air, influencing plant transpiration and disease pressure."@en ;
-    rdfs:comment "Menge an Wasserdampf in der Luft, die die Pflanzentranspiration und den Krankheitsdruck beeinflusst."@de .
+    rdfs:label "Luftfeuchtigkeit"@de,
+        "Humidity"@en ;
+    rdfs:comment "Menge an Wasserdampf in der Luft, die die Pflanzentranspiration und den Krankheitsdruck beeinflusst."@de,
+        "Amount of water vapor in the air, influencing plant transpiration and disease pressure."@en ;
+    pp:emoji "💦" .
 
 pp:ENV006 a pp:EnvironmentalCondition ;
-    rdfs:label "Solar radiation"@en ,
-               "Sonneneinstrahlung"@de ;
-    rdfs:comment "Intensity and duration of sunlight reaching the crop, essential for photosynthesis."@en ;
-    rdfs:comment "Intensität und Dauer des Sonnenlichts, das die Kulturpflanzen erreicht, wesentlich für die Photosynthese."@de .
+    rdfs:label "Sonneneinstrahlung"@de,
+        "Solar radiation"@en ;
+    rdfs:comment "Intensität und Dauer des Sonnenlichts, das die Kulturpflanzen erreicht, wesentlich für die Photosynthese."@de,
+        "Intensity and duration of sunlight reaching the crop, essential for photosynthesis."@en ;
+    pp:emoji "☀️" .
 
 pp:ENV007 a pp:EnvironmentalCondition ;
-    rdfs:label "Soil moisture"@en ,
-               "Bodenfeuchte"@de ;
-    rdfs:comment "The amount of water contained in the soil, crucial for root uptake."@en ;
-    rdfs:comment "Die im Boden gespeicherte Wassermenge, entscheidend für die Wasseraufnahme durch die Wurzeln."@de .
+    rdfs:label "Bodenfeuchte"@de,
+        "Soil moisture"@en ;
+    rdfs:comment "Die im Boden gespeicherte Wassermenge, entscheidend für die Wasseraufnahme durch die Wurzeln."@de,
+        "The amount of water contained in the soil, crucial for root uptake."@en ;
+    pp:emoji "🪱" .
 
 pp:ENV008 a pp:EnvironmentalCondition ;
-    rdfs:label "Soil texture"@en ,
-               "Bodentextur"@de ;
-    rdfs:comment "Relative proportion of sand, silt, and clay particles in the soil."@en ;
-    rdfs:comment "Das Verhältnis von Sand-, Schluff- und Tonanteilen im Boden."@de .
+    rdfs:label "Bodentextur"@de,
+        "Soil texture"@en ;
+    rdfs:comment "Das Verhältnis von Sand-, Schluff- und Tonanteilen im Boden."@de,
+        "Relative proportion of sand, silt, and clay particles in the soil."@en ;
+    pp:emoji "🚜" .
 
 pp:ENV009 a pp:EnvironmentalCondition ;
-    rdfs:label "Soil fertility"@en ,
-               "Bodenfruchtbarkeit"@de ;
-    rdfs:comment "Capacity of soil to provide nutrients in adequate amounts and forms for plant growth."@en ;
-    rdfs:comment "Fähigkeit des Bodens, Pflanzen in ausreichenden Mengen und Formen mit Nährstoffen zu versorgen."@de .
+    rdfs:label "Bodenfruchtbarkeit"@de,
+        "Soil fertility"@en ;
+    rdfs:comment "Fähigkeit des Bodens, Pflanzen in ausreichenden Mengen und Formen mit Nährstoffen zu versorgen."@de,
+        "Capacity of soil to provide nutrients in adequate amounts and forms for plant growth."@en ;
+    pp:emoji "🪴" .
 
 pp:ENV010 a pp:EnvironmentalCondition ;
-    rdfs:label "Altitude"@en ,
-               "Höhe über Meeresspiegel"@de ;
-    rdfs:comment "Elevation above sea level, influencing temperature and atmospheric conditions."@en ;
-    rdfs:comment "Erhebung über dem Meeresspiegel, die Temperatur und atmosphärische Bedingungen beeinflusst."@de .
+    rdfs:label "Höhe über Meeresspiegel"@de,
+        "Altitude"@en ;
+    rdfs:comment "Erhebung über dem Meeresspiegel, die Temperatur und atmosphärische Bedingungen beeinflusst."@de,
+        "Elevation above sea level, influencing temperature and atmospheric conditions."@en ;
+    pp:emoji "⛰️" .
 
 pp:ENV011 a pp:EnvironmentalCondition ;
-    rdfs:label "Slope"@en ,
-               "Hangneigung"@de ;
-    rdfs:comment "Inclination or gradient of the land surface, affecting water runoff and erosion."@en ;
-    rdfs:comment "Neigung oder Gefälle der Landoberfläche, die Wasserabfluss und Erosion beeinflusst."@de .
+    rdfs:label "Hangneigung"@de,
+        "Slope"@en ;
+    rdfs:comment "Neigung oder Gefälle der Landoberfläche, die Wasserabfluss und Erosion beeinflusst."@de,
+        "Inclination or gradient of the land surface, affecting water runoff and erosion."@en ;
+    pp:emoji "📐" .
 
 pp:ENV012 a pp:AbioticStressor,
-    pp:EnvironmentalCondition ;
-    rdfs:label "Drought"@en ,
-               "Dürre"@de ;
-    rdfs:comment "Prolonged period of insufficient water availability causing stress in crops."@en ;
-    rdfs:comment "Länger andauernder Wassermangel, der zu Stress bei Kulturpflanzen führt."@de .
+        pp:EnvironmentalCondition ;
+    rdfs:label "Dürre"@de,
+        "Drought"@en ;
+    rdfs:comment "Länger andauernder Wassermangel, der zu Stress bei Kulturpflanzen führt."@de,
+        "Prolonged period of insufficient water availability causing stress in crops."@en ;
+    pp:emoji "🌵" .
 
 pp:ENV013 a pp:AbioticStressor,
-    pp:EnvironmentalCondition ;
-    rdfs:label "Flooding"@en ,
-               "Überschwemmung"@de ;
-    rdfs:comment "Excess water submerging the soil or crop, leading to reduced oxygen for roots."@en ;
-    rdfs:comment "Übermässiges Wasser, das Boden oder Pflanzen bedeckt und den Wurzeln Sauerstoff entzieht."@de .
+        pp:EnvironmentalCondition ;
+    rdfs:label "Überschwemmung"@de,
+        "Flooding"@en ;
+    rdfs:comment "Übermässiges Wasser, das Boden oder Pflanzen bedeckt und den Wurzeln Sauerstoff entzieht."@de,
+        "Excess water submerging the soil or crop, leading to reduced oxygen for roots."@en ;
+    pp:emoji "🌊" .
 
 pp:ENV014 a pp:AbioticStressor,
-    pp:EnvironmentalCondition ;
-    rdfs:label "Heat stress"@en ,
-               "Hitzestress"@de ;
-    rdfs:comment "High temperature conditions that inhibit plant growth and metabolic functions."@en ;
-    rdfs:comment "Hohe Temperaturbedingungen, die das Pflanzenwachstum und den Stoffwechsel beeinträchtigen."@de .
+        pp:EnvironmentalCondition ;
+    rdfs:label "Hitzestress"@de,
+        "Heat stress"@en ;
+    rdfs:comment "Hohe Temperaturbedingungen, die das Pflanzenwachstum und den Stoffwechsel beeinträchtigen."@de,
+        "High temperature conditions that inhibit plant growth and metabolic functions."@en ;
+    pp:emoji "🔥" .
 
 pp:ENV015 a pp:AbioticStressor,
-    pp:EnvironmentalCondition ;
-    rdfs:label "Frost"@en ,
-               "Frost"@de ;
-    rdfs:comment "Occurrence of sub-zero temperatures causing ice formation in plant tissues."@en ;
-    rdfs:comment "Auftreten von Minustemperaturen, die Eisbildung im Pflanzengewebe verursachen."@de .
+        pp:EnvironmentalCondition ;
+    rdfs:label "Frost"@de,
+        "Frost"@en ;
+    rdfs:comment "Auftreten von Minustemperaturen, die Eisbildung im Pflanzengewebe verursachen."@de,
+        "Occurrence of sub-zero temperatures causing ice formation in plant tissues."@en ;
+    pp:emoji "❄️" .
 
 pp:ENV016 a pp:AbioticStressor,
-    pp:EnvironmentalCondition ;
-    rdfs:label "Soil salinity"@en ,
-               "Bodenversalzung"@de ;
-    rdfs:comment "Excessive salt concentration in the soil, hindering water uptake by roots."@en ;
-    rdfs:comment "Übermässige Salzkonzentration im Boden, die die Wasseraufnahme durch die Wurzeln erschwert."@de .
+        pp:EnvironmentalCondition ;
+    rdfs:label "Bodenversalzung"@de,
+        "Soil salinity"@en ;
+    rdfs:comment "Übermässige Salzkonzentration im Boden, die die Wasseraufnahme durch die Wurzeln erschwert."@de,
+        "Excessive salt concentration in the soil, hindering water uptake by roots."@en ;
+    pp:emoji "🧂" .
 
 pp:ENV017 a pp:AbioticStressor,
-    pp:EnvironmentalCondition ;
-    rdfs:label "Waterlogging"@en ,
-               "Vernässung"@de ;
-    rdfs:comment "Saturation of soil with water, reducing oxygen availability to roots."@en ;
-    rdfs:comment "Übermässige Wassersättigung des Bodens, die den Wurzeln Sauerstoff entzieht."@de .
+        pp:EnvironmentalCondition ;
+    rdfs:label "Vernässung"@de,
+        "Waterlogging"@en ;
+    rdfs:comment "Übermässige Wassersättigung des Bodens, die den Wurzeln Sauerstoff entzieht."@de,
+        "Saturation of soil with water, reducing oxygen availability to roots."@en .
 
 pp:ENV018 a pp:AbioticStressor,
-    pp:EnvironmentalCondition ;
-    rdfs:label "Nutrient deficiency"@en ,
-               "Nährstoffmangel"@de ;
-    rdfs:comment "Insufficient essential nutrients (e.g., nitrogen, phosphorus) available to plants."@en ;
-    rdfs:comment "Unzureichende Versorgung der Pflanzen mit essenziellen Nährstoffen (z.B. Stickstoff, Phosphor)."@de .
+        pp:EnvironmentalCondition ;
+    rdfs:label "Nährstoffmangel"@de,
+        "Nutrient deficiency"@en ;
+    rdfs:comment "Unzureichende Versorgung der Pflanzen mit essenziellen Nährstoffen (z.B. Stickstoff, Phosphor)."@de,
+        "Insufficient essential nutrients (e.g., nitrogen, phosphorus) available to plants."@en .
 
 pp:ENV019 a pp:AbioticStressor,
-    pp:EnvironmentalCondition ;
-    rdfs:label "Nutrient toxicity"@en ,
-               "Nährstofftoxizität"@de ;
-    rdfs:comment "Excess of certain nutrients (e.g., boron, manganese) damaging plant tissues."@en ;
-    rdfs:comment "Überschuss bestimmter Nährstoffe (z.B. Bor, Mangan), der Pflanzengewebe schädigen kann."@de .
+        pp:EnvironmentalCondition ;
+    rdfs:label "Nährstofftoxizität"@de,
+        "Nutrient toxicity"@en ;
+    rdfs:comment "Überschuss bestimmter Nährstoffe (z.B. Bor, Mangan), der Pflanzengewebe schädigen kann."@de,
+        "Excess of certain nutrients (e.g., boron, manganese) damaging plant tissues."@en .
 
 pp:ENV020 a pp:AbioticStressor,
-    pp:EnvironmentalCondition ;
-    rdfs:label "Soil compaction"@en ,
-               "Bodenverdichtung"@de ;
-    rdfs:comment "Compression of soil particles reducing pore space, restricting root growth and oxygen flow."@en ;
-    rdfs:comment "Verdichtung von Bodenpartikeln, wodurch der Porenraum verringert und das Wurzelwachstum sowie der Sauerstofftransport eingeschränkt werden."@de .
+        pp:EnvironmentalCondition ;
+    rdfs:label "Bodenverdichtung"@de,
+        "Soil compaction"@en ;
+    rdfs:comment "Verdichtung von Bodenpartikeln, wodurch der Porenraum verringert und das Wurzelwachstum sowie der Sauerstofftransport eingeschränkt werden."@de,
+        "Compression of soil particles reducing pore space, restricting root growth and oxygen flow."@en .
 
 pp:ENV021 a pp:AbioticStressor,
-    pp:EnvironmentalCondition ;
-    rdfs:label "Chemical pollution"@en ,
-               "Chemische Verschmutzung"@de ;
-    rdfs:comment "Accumulation of harmful substances (e.g., heavy metals, industrial pollutants) in soil or water."@en ;
-    rdfs:comment "Anreicherung schädlicher Substanzen (z.B. Schwermetalle, Industrieabfälle) in Boden oder Wasser."@de .
+        pp:EnvironmentalCondition ;
+    rdfs:label "Chemische Verschmutzung"@de,
+        "Chemical pollution"@en ;
+    rdfs:comment "Anreicherung schädlicher Substanzen (z.B. Schwermetalle, Industrieabfälle) in Boden oder Wasser."@de,
+        "Accumulation of harmful substances (e.g., heavy metals, industrial pollutants) in soil or water."@en .
 
 pp:ENV022 a pp:AbioticStressor,
-    pp:EnvironmentalCondition ;
-    rdfs:label "Herbicide damage"@en ,
-               "Herbizidschaden"@de ;
-    rdfs:comment "Off-target or excessive herbicide application leading to injury or stress in crops."@en ;
-    rdfs:comment "Fehlanwendung oder übermässiger Einsatz von Herbiziden, der zu Schäden oder Stress bei Kulturpflanzen führt."@de .
+        pp:EnvironmentalCondition ;
+    rdfs:label "Herbizidschaden"@de,
+        "Herbicide damage"@en ;
+    rdfs:comment "Fehlanwendung oder übermässiger Einsatz von Herbiziden, der zu Schäden oder Stress bei Kulturpflanzen führt."@de,
+        "Off-target or excessive herbicide application leading to injury or stress in crops."@en .
+

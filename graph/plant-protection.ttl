@@ -17267,6 +17267,165 @@ ns1:ControlDamageThreshold a owl:Class ;
         "Defines the damage threshold at which control measures should be implemented to prevent further harm from a stressor."@en ;
     rdfs:subClassOf ns1:DamageThreshold .
 
+ns1:ENV001 a ns1:EnvironmentalCondition ;
+    rdfs:label "Regen"@de,
+        "Rain"@en ;
+    rdfs:comment "Niederschlag in Form von flüssigen Wassertropfen, die aus Wolken fallen."@de,
+        "Precipitation in the form of liquid water drops falling from clouds."@en ;
+    ns1:emoji "☔️" .
+
+ns1:ENV002 a ns1:EnvironmentalCondition ;
+    rdfs:label "Schnee"@de,
+        "Snow"@en ;
+    rdfs:comment "Niederschlag in Form von Eiskristallen."@de,
+        "Precipitation in the form of ice crystals."@en ;
+    ns1:emoji "☃️" .
+
+ns1:ENV003 a ns1:EnvironmentalCondition ;
+    rdfs:label "Hagel"@de,
+        "Hail"@en ;
+    rdfs:comment "Fester Niederschlag in Form von Kugeln oder unregelmässigen Eisbrocken."@de,
+        "Solid precipitation in the form of balls or irregular lumps of ice."@en ;
+    ns1:emoji "⛈️" .
+
+ns1:ENV004 a ns1:EnvironmentalCondition ;
+    rdfs:label "Wind"@de,
+        "Wind"@en ;
+    rdfs:comment "Luftbewegung in Bezug zur Erdoberfläche, die Evapotranspiration und mechanische Belastungen beeinflusst."@de,
+        "Air in motion relative to the Earth's surface, influencing evapotranspiration and mechanical stress."@en ;
+    ns1:emoji "💨" .
+
+ns1:ENV005 a ns1:EnvironmentalCondition ;
+    rdfs:label "Luftfeuchtigkeit"@de,
+        "Humidity"@en ;
+    rdfs:comment "Menge an Wasserdampf in der Luft, die die Pflanzentranspiration und den Krankheitsdruck beeinflusst."@de,
+        "Amount of water vapor in the air, influencing plant transpiration and disease pressure."@en ;
+    ns1:emoji "💦" .
+
+ns1:ENV006 a ns1:EnvironmentalCondition ;
+    rdfs:label "Sonneneinstrahlung"@de,
+        "Solar radiation"@en ;
+    rdfs:comment "Intensität und Dauer des Sonnenlichts, das die Kulturpflanzen erreicht, wesentlich für die Photosynthese."@de,
+        "Intensity and duration of sunlight reaching the crop, essential for photosynthesis."@en ;
+    ns1:emoji "☀️" .
+
+ns1:ENV007 a ns1:EnvironmentalCondition ;
+    rdfs:label "Bodenfeuchte"@de,
+        "Soil moisture"@en ;
+    rdfs:comment "Die im Boden gespeicherte Wassermenge, entscheidend für die Wasseraufnahme durch die Wurzeln."@de,
+        "The amount of water contained in the soil, crucial for root uptake."@en ;
+    ns1:emoji "🪱" .
+
+ns1:ENV008 a ns1:EnvironmentalCondition ;
+    rdfs:label "Bodentextur"@de,
+        "Soil texture"@en ;
+    rdfs:comment "Das Verhältnis von Sand-, Schluff- und Tonanteilen im Boden."@de,
+        "Relative proportion of sand, silt, and clay particles in the soil."@en ;
+    ns1:emoji "🚜" .
+
+ns1:ENV009 a ns1:EnvironmentalCondition ;
+    rdfs:label "Bodenfruchtbarkeit"@de,
+        "Soil fertility"@en ;
+    rdfs:comment "Fähigkeit des Bodens, Pflanzen in ausreichenden Mengen und Formen mit Nährstoffen zu versorgen."@de,
+        "Capacity of soil to provide nutrients in adequate amounts and forms for plant growth."@en ;
+    ns1:emoji "🪴" .
+
+ns1:ENV010 a ns1:EnvironmentalCondition ;
+    rdfs:label "Höhe über Meeresspiegel"@de,
+        "Altitude"@en ;
+    rdfs:comment "Erhebung über dem Meeresspiegel, die Temperatur und atmosphärische Bedingungen beeinflusst."@de,
+        "Elevation above sea level, influencing temperature and atmospheric conditions."@en ;
+    ns1:emoji "⛰️" .
+
+ns1:ENV011 a ns1:EnvironmentalCondition ;
+    rdfs:label "Hangneigung"@de,
+        "Slope"@en ;
+    rdfs:comment "Neigung oder Gefälle der Landoberfläche, die Wasserabfluss und Erosion beeinflusst."@de,
+        "Inclination or gradient of the land surface, affecting water runoff and erosion."@en ;
+    ns1:emoji "📐" .
+
+ns1:ENV012 a ns1:AbioticStressor,
+        ns1:EnvironmentalCondition ;
+    rdfs:label "Dürre"@de,
+        "Drought"@en ;
+    rdfs:comment "Länger andauernder Wassermangel, der zu Stress bei Kulturpflanzen führt."@de,
+        "Prolonged period of insufficient water availability causing stress in crops."@en ;
+    ns1:emoji "🌵" .
+
+ns1:ENV013 a ns1:AbioticStressor,
+        ns1:EnvironmentalCondition ;
+    rdfs:label "Überschwemmung"@de,
+        "Flooding"@en ;
+    rdfs:comment "Übermässiges Wasser, das Boden oder Pflanzen bedeckt und den Wurzeln Sauerstoff entzieht."@de,
+        "Excess water submerging the soil or crop, leading to reduced oxygen for roots."@en ;
+    ns1:emoji "🌊" .
+
+ns1:ENV014 a ns1:AbioticStressor,
+        ns1:EnvironmentalCondition ;
+    rdfs:label "Hitzestress"@de,
+        "Heat stress"@en ;
+    rdfs:comment "Hohe Temperaturbedingungen, die das Pflanzenwachstum und den Stoffwechsel beeinträchtigen."@de,
+        "High temperature conditions that inhibit plant growth and metabolic functions."@en ;
+    ns1:emoji "🔥" .
+
+ns1:ENV015 a ns1:AbioticStressor,
+        ns1:EnvironmentalCondition ;
+    rdfs:label "Frost"@de,
+        "Frost"@en ;
+    rdfs:comment "Auftreten von Minustemperaturen, die Eisbildung im Pflanzengewebe verursachen."@de,
+        "Occurrence of sub-zero temperatures causing ice formation in plant tissues."@en ;
+    ns1:emoji "❄️" .
+
+ns1:ENV016 a ns1:AbioticStressor,
+        ns1:EnvironmentalCondition ;
+    rdfs:label "Bodenversalzung"@de,
+        "Soil salinity"@en ;
+    rdfs:comment "Übermässige Salzkonzentration im Boden, die die Wasseraufnahme durch die Wurzeln erschwert."@de,
+        "Excessive salt concentration in the soil, hindering water uptake by roots."@en ;
+    ns1:emoji "🧂" .
+
+ns1:ENV017 a ns1:AbioticStressor,
+        ns1:EnvironmentalCondition ;
+    rdfs:label "Vernässung"@de,
+        "Waterlogging"@en ;
+    rdfs:comment "Übermässige Wassersättigung des Bodens, die den Wurzeln Sauerstoff entzieht."@de,
+        "Saturation of soil with water, reducing oxygen availability to roots."@en .
+
+ns1:ENV018 a ns1:AbioticStressor,
+        ns1:EnvironmentalCondition ;
+    rdfs:label "Nährstoffmangel"@de,
+        "Nutrient deficiency"@en ;
+    rdfs:comment "Unzureichende Versorgung der Pflanzen mit essenziellen Nährstoffen (z.B. Stickstoff, Phosphor)."@de,
+        "Insufficient essential nutrients (e.g., nitrogen, phosphorus) available to plants."@en .
+
+ns1:ENV019 a ns1:AbioticStressor,
+        ns1:EnvironmentalCondition ;
+    rdfs:label "Nährstofftoxizität"@de,
+        "Nutrient toxicity"@en ;
+    rdfs:comment "Überschuss bestimmter Nährstoffe (z.B. Bor, Mangan), der Pflanzengewebe schädigen kann."@de,
+        "Excess of certain nutrients (e.g., boron, manganese) damaging plant tissues."@en .
+
+ns1:ENV020 a ns1:AbioticStressor,
+        ns1:EnvironmentalCondition ;
+    rdfs:label "Bodenverdichtung"@de,
+        "Soil compaction"@en ;
+    rdfs:comment "Verdichtung von Bodenpartikeln, wodurch der Porenraum verringert und das Wurzelwachstum sowie der Sauerstofftransport eingeschränkt werden."@de,
+        "Compression of soil particles reducing pore space, restricting root growth and oxygen flow."@en .
+
+ns1:ENV021 a ns1:AbioticStressor,
+        ns1:EnvironmentalCondition ;
+    rdfs:label "Chemische Verschmutzung"@de,
+        "Chemical pollution"@en ;
+    rdfs:comment "Anreicherung schädlicher Substanzen (z.B. Schwermetalle, Industrieabfälle) in Boden oder Wasser."@de,
+        "Accumulation of harmful substances (e.g., heavy metals, industrial pollutants) in soil or water."@en .
+
+ns1:ENV022 a ns1:AbioticStressor,
+        ns1:EnvironmentalCondition ;
+    rdfs:label "Herbizidschaden"@de,
+        "Herbicide damage"@en ;
+    rdfs:comment "Fehlanwendung oder übermässiger Einsatz von Herbiziden, der zu Schäden oder Stress bei Kulturpflanzen führt."@de,
+        "Off-target or excessive herbicide application leading to injury or stress in crops."@en .
+
 ns1:EconomicDamageThreshold a owl:Class ;
     rdfs:label "Ökonomische Schadschwelle"@de,
         "Economic Damage Threshold"@en ;
@@ -17355,6 +17514,17 @@ ns1:earliesBBCH a owl:DatatypeProperty ;
     rdfs:domain ns1:Damage ;
     rdfs:range xsd:float .
 
+ns1:emoji a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Emoji"@de,
+        "Emoji"@en ;
+    rdfs:comment "Definiert ein Emoji, das als symbolische Darstellung eines Dings dienen kann."@de,
+        "Defines an emoji that can serve as a symbolic representation of a thing."@en ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range xsd:string ;
+    rdfs:scopeNote "Gedacht für die Verwendung bei Instanzen von Klassen, die sich wie Codelisten verhalten."@de,
+        "Intended for use with instances of classes that function similarly to enumerated types."@en .
+
 ns1:enables a owl:ObjectProperty ;
     rdfs:label "ermöglicht"@de,
         "enables"@en ;
@@ -17380,7 +17550,7 @@ ns1:hasCountryOfOrigin a owl:ObjectProperty ;
     rdfs:domain ns1:Product ;
     rdfs:range schema:Country .
 
-ns1:hasDamageThreshold a owl:Class ;
+ns1:hasDamageThreshold a owl:DatatypeProperty ;
     rdfs:label "hat Schadschwelle"@de,
         "has damage threshold"@en ;
     rdfs:domain ns1:Damage ;
@@ -22168,12 +22338,6 @@ ns1:BCABacteria a owl:Class ;
         "Bacterial products are biological control agents composed of or derived from bacteria. They combat pests or diseases through mechanisms such as competition, production of antimicrobial substances, or enhancement of plant health."@en ;
     rdfs:subClassOf ns1:BiologicalControlAgent .
 
-ns1:EnvironmentalCondition a owl:Class ;
-    rdfs:label "Umweltbedingung"@de,
-        "Environmental condition"@en ;
-    rdfs:comment "Repräsentiert jeden Umweltfaktor oder jede Umweltbedingung, die die Pflanzengesundheit, das Wachstum oder die Bewirtschaftung im landwirtschaftlichen Rahmen beeinflussen kann."@de,
-        "Represents any environmental factor or situation that can influence crop health, growth, or management within agriculture."@en .
-
 ns1:GeneralNotice a owl:Class ;
     rdfs:label "Allgemeiner Hinweis"@de,
         "General Notice"@en .
@@ -22893,17 +23057,6 @@ ns1:5-9953 a ns1:CropGroup ;
     ns1:hasChildCropGroup ns1:5-10037,
         ns1:5-10114 ;
     ns1:hasParentCropGroup ns1:5-10194 .
-
-ns1:AbioticStressor a owl:Class ;
-    rdfs:label "Abiotischer Schadverursacher"@de,
-        "Abiotic crop stressor"@en ;
-    rdfs:comment "Negative Auswirkungen nicht lebender Faktoren auf die Kulturpflanze in einer bestimmten Umgebung."@de,
-        "Negative impact of non-living factors on the crop in a specific environment."@en ;
-    rdfs:isDefinedBy <http://www.wikidata.org/entity/Q4667893> ;
-    rdfs:seeAlso <https://w.wiki/CJnE> ;
-    rdfs:subClassOf ns1:CropStressor,
-        ns1:EnvironmentalCondition ;
-    owl:disjointWith ns1:BioticStressor .
 
 ns1:ComponentPortion a owl:Class ;
     rdfs:label "Komponentenportion"@de,
@@ -53471,6 +53624,17 @@ ns1:2-7179 a schema:Organization ;
     schema:legalName "Syngenta Agro GmbH" ;
     schema:name "Syngenta Agro GmbH" .
 
+ns1:AbioticStressor a owl:Class ;
+    rdfs:label "Abiotischer Schadverursacher"@de,
+        "Abiotic crop stressor"@en ;
+    rdfs:comment "Negative Auswirkungen nicht lebender Faktoren auf die Kulturpflanze in einer bestimmten Umgebung."@de,
+        "Negative impact of non-living factors on the crop in a specific environment."@en ;
+    rdfs:isDefinedBy <http://www.wikidata.org/entity/Q4667893> ;
+    rdfs:seeAlso <https://w.wiki/CJnE> ;
+    rdfs:subClassOf ns1:CropStressor,
+        ns1:EnvironmentalCondition ;
+    owl:disjointWith ns1:BioticStressor .
+
 ns1:BCAInsectViruses a owl:Class ;
     rdfs:label "Insektenvirenprodukte"@de,
         "Insect virus products"@en ;
@@ -60782,6 +60946,12 @@ ns1:2-11609 a schema:Organization ;
     schema:address ns1:3-11609 ;
     schema:legalName "Syngenta France SAS" ;
     schema:name "Syngenta France SAS" .
+
+ns1:EnvironmentalCondition a owl:Class ;
+    rdfs:label "Umweltbedingung"@de,
+        "Environmental condition"@en ;
+    rdfs:comment "Repräsentiert jeden Umweltfaktor oder jede Umweltbedingung, die die Pflanzengesundheit, das Wachstum oder die Bewirtschaftung im landwirtschaftlichen Rahmen beeinflussen kann."@de,
+        "Represents any environmental factor or situation that can influence crop health, growth, or management within agriculture."@en .
 
 <https://register.ld.admin.ch/zefix/company/1169237> ns1:holdsPermissionToSell ns1:1-W-5092,
         ns1:1-W-5093,

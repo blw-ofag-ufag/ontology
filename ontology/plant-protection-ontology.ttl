@@ -321,6 +321,17 @@ pp:earliesBBCH a owl:DatatypeProperty ;
     rdfs:domain pp:Damage ;
     rdfs:range xsd:float .
 
+pp:emoji a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Emoji"@de,
+        "Emoji"@en ;
+    rdfs:comment "Definiert ein Emoji, das als symbolische Darstellung eines Dings dienen kann."@de,
+        "Defines an emoji that can serve as a symbolic representation of a thing."@en ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range xsd:string ;
+    rdfs:scopeNote "Gedacht für die Verwendung bei Instanzen von Klassen, die sich wie Codelisten verhalten."@de,
+        "Intended for use with instances of classes that function similarly to enumerated types."@en .
+
 pp:enables a owl:ObjectProperty ;
     rdfs:label "ermöglicht"@de,
         "enables"@en ;
@@ -346,7 +357,7 @@ pp:hasCountryOfOrigin a owl:ObjectProperty ;
     rdfs:domain pp:Product ;
     rdfs:range schema:Country .
 
-pp:hasDamageThreshold a owl:Class ;
+pp:hasDamageThreshold a owl:DatatypeProperty ;
     rdfs:label "hat Schadschwelle"@de,
         "has damage threshold"@en ;
     rdfs:domain pp:Damage ;
