@@ -17260,6 +17260,20 @@ ns1:BestPracticeRecommendations a owl:Class ;
         "Protective action recommendations provide guidance on the most effective and sustainable measures to prevent or minimize damage to specific crops caused by particular stressors. They consider the type of crop, environmental conditions, and characteristics of the stressor."@en ;
     rdfs:subClassOf ns1:ActionNotice .
 
+ns1:ControlDamageThreshold a owl:Class ;
+    rdfs:label "Bekämpfungsschadschwelle"@de,
+        "Control Damage Threshold"@en ;
+    rdfs:comment "Definiert die Schadensschwelle, ab der Massnahmen zur Bekämpfung eines Stressors ergriffen werden sollten, um weiteren Schaden zu verhindern."@de,
+        "Defines the damage threshold at which control measures should be implemented to prevent further harm from a stressor."@en ;
+    rdfs:subClassOf ns1:DamageThreshold .
+
+ns1:EconomicDamageThreshold a owl:Class ;
+    rdfs:label "Ökonomische Schadschwelle"@de,
+        "Economic Damage Threshold"@en ;
+    rdfs:comment "Definiert die Schadensschwelle, bei der der erwartete wirtschaftliche Schaden durch den Stressor die Kosten der Bekämpfungsmassnahmen übersteigt."@de,
+        "Defines the damage threshold at which the expected economic harm caused by the stressor exceeds the cost of control measures."@en ;
+    rdfs:subClassOf ns1:DamageThreshold .
+
 ns1:NonTargetOrganismIsDefinedByBiologicalTaxon a owl:ObjectProperty ;
     rdfs:label "ist definiert durch das biologische Taxon"@de,
         "is defined by biological taxon"@en ;
@@ -17333,6 +17347,14 @@ ns1:cropIsRelatedToBiologicalTaxon a owl:ObjectProperty ;
     rdfs:range <http://www.wikidata.org/entity/Q16521> ;
     rdfs:subPropertyOf ns1:isDefinedByBiologicalTaxon .
 
+ns1:earliesBBCH a owl:DatatypeProperty ;
+    rdfs:label "Frühestes BBCH-Stadium der Kulturpflanze"@de,
+        "Earlies BBCH stage of the crop"@en ;
+    rdfs:comment "Das früheste BBCH-Stadium der Kulturpflanze, bei welcher der Schaden schon auftreten kann."@de,
+        "The earliest BBCH stage of the crop at which the damage can already occur."@en ;
+    rdfs:domain ns1:Damage ;
+    rdfs:range xsd:float .
+
 ns1:enables a owl:ObjectProperty ;
     rdfs:label "ermöglicht"@de,
         "enables"@en ;
@@ -17357,6 +17379,12 @@ ns1:hasCountryOfOrigin a owl:ObjectProperty ;
         "This property indicates the country where the product originates."@en ;
     rdfs:domain ns1:Product ;
     rdfs:range schema:Country .
+
+ns1:hasDamageThreshold a owl:Class ;
+    rdfs:label "hat Schadschwelle"@de,
+        "has damage threshold"@en ;
+    rdfs:domain ns1:Damage ;
+    rdfs:range ns1:DamageThreshold .
 
 ns1:hasExhaustionDeadline a owl:DatatypeProperty ;
     rdfs:label "Ablaufdatum der Nutzung"@de,
@@ -17396,6 +17424,12 @@ ns1:hasSoldoutDeadline a owl:DatatypeProperty ;
         "The date by which the product can no longer be sold, typically after the product registration has been revoked."@en ;
     rdfs:domain ns1:Product ;
     rdfs:range xsd:date .
+
+ns1:hasTreatmentEfficacy a owl:DatatypeProperty ;
+    rdfs:label "hat Behandlungswirkung"@de,
+        "has treatment efficacy"@en ;
+    rdfs:domain ns1:Treatment ;
+    rdfs:range ns1:TreatmentEfficacy .
 
 ns1:hasUnit a owl:ObjectProperty ;
     rdfs:label "hat Einheit"@de,
@@ -17520,9 +17554,23 @@ ns1:knows a owl:ObjectProperty ;
         "knows"@en ;
     rdfs:domain foaf:Person .
 
-ns1:maximumBBCH a owl:DatatypeProperty ;
-    rdfs:label "Maximales BBCH-Stadium"@de,
-        "Maximal BBCH stadium"@en ;
+ns1:latestBBCH a owl:DatatypeProperty ;
+    rdfs:label "Spätestes BBCH-Stadium der Kulturpflanze"@de,
+        "Latest BBCH stage of the crop"@en ;
+    rdfs:comment "Das späteste BBCH-Stadium der Kulturpflanze, bei welcher der Schaden noch auftreten kann."@de,
+        "The latest BBCH stage of the crop at which the damage can still occur."@en ;
+    rdfs:domain ns1:Damage ;
+    rdfs:range xsd:float .
+
+ns1:maximumBBCHcrop a owl:DatatypeProperty ;
+    rdfs:label "Maximales BBCH-Stadium der Kulturpflanze"@de,
+        "Maximal BBCH stadium of the crop"@en ;
+    rdfs:domain ns1:BBCH ;
+    rdfs:range xsd:float .
+
+ns1:maximumBBCHweed a owl:DatatypeProperty ;
+    rdfs:label "Maximales BBCH-Stadium des Unkrautes"@de,
+        "Maximal BBCH stadium of the weed"@en ;
     rdfs:domain ns1:BBCH ;
     rdfs:range xsd:float .
 
@@ -17540,11 +17588,19 @@ ns1:maximumTreatmentDosage a owl:DatatypeProperty ;
     rdfs:domain ns1:TreatmentDosage ;
     rdfs:range xsd:float .
 
-ns1:minimumBBCH a owl:DatatypeProperty ;
-    rdfs:label "Minimales BBCH-Stadium"@de,
-        "Minimal BBCH stage"@en ;
-    rdfs:comment "Das minimale BBCH-Stadium der Zielkultur bei der Anwendung des Produktes."@de,
-        "The minimal BBCH stage of the target culture when applying the product."@en ;
+ns1:minimumBBCHcrop a owl:DatatypeProperty ;
+    rdfs:label "Minimales BBCH-Stadium der Kulturpflanze"@de,
+        "Minimal BBCH stage of the crop"@en ;
+    rdfs:comment "Das minimale BBCH-Stadium der Kulturpflanze bei der Anwendung des Produktes."@de,
+        "The minimal BBCH stage of the crop when applying the product."@en ;
+    rdfs:domain ns1:BBCH ;
+    rdfs:range xsd:float .
+
+ns1:minimumBBCHweed a owl:DatatypeProperty ;
+    rdfs:label "Minimales BBCH-Stadium der Kulturpflanze"@de,
+        "Minimal BBCH stage of the crop"@en ;
+    rdfs:comment "Das minimale BBCH-Stadium des Zielorganismus (Unkraut) bei der Anwendung des Produktes."@de,
+        "The minimal BBCH stage of the target organism (weed) when applying the product."@en ;
     rdfs:domain ns1:BBCH ;
     rdfs:range xsd:float .
 
@@ -19988,16 +20044,9 @@ ns1:5-9999 a ns1:CropGroup ;
         "The red currant is a deciduous shrub known for its bright red berries, rich in vitamin C, commonly used in culinary dishes."@en ;
     ns1:hasParentCropGroup ns1:5-10127 .
 
-ns1:EnvironmentalCondition a owl:Class ;
-    rdfs:label "Umweltbedingung"@de,
-        "Environmental condition"@en ;
-    rdfs:comment "Repräsentiert jeden Umweltfaktor oder jede Umweltbedingung, die die Pflanzengesundheit, das Wachstum oder die Bewirtschaftung im landwirtschaftlichen Rahmen beeinflussen kann."@de,
-        "Represents any environmental factor or situation that can influence crop health, growth, or management within agriculture."@en .
-
-ns1:Treatment a owl:Class ;
-    rdfs:label "Behandlung"@de,
-        "Treatment"@en ;
-    rdfs:subClassOf ns1:Action .
+ns1:TreatmentEfficacy a owl:Class ;
+    rdfs:label "Behandlungswirkung"@de,
+        "Treatment efficacy"@en .
 
 ns1:Viricide a owl:Class ;
     rdfs:label "Virizid"@de,
@@ -20080,7 +20129,7 @@ ns1:hasFederalAdmissionNumber a owl:DatatypeProperty ;
     rdfs:comment "Die eidgenössische Zulassungsnummer identifiziert eine Produktregistrierung eindeutig. Sie ist entweder als W-Nummer im Fall von Bundeszulassungen (z. B. W-18) oder als Parallelimportnummer mit dem Anfangsbuchstaben des Ursprungslandes im Code im Fall von Parallelimporten (z. B. I-2789 für einen Parallelimport aus Italien) aufgebaut. Nummern mit einem Bindestrich (z. B. W-18-1, W-18-2) stehen für gleichwertige Produkte, die sich im Besitz verschiedener juristischer Personen befinden, während Nummern ohne Bindestrich (z. B. W-18) für die ursprüngliche Registrierung stehen."@de,
         "The federal admission number uniquely identifies a product registration. It is either constructed as a W-Number in the case of federal admissions (e.g. W-18) or as a parallel import number with the country of origin starting letter in the code in the case of parallel imports (e.g. I-2789 for a parallel import from Italy). Numbers with a dash (e.g., W-18-1, W-18-2) represent equivalent products held by different legal entities, while numbers without a dash (e.g., W-18) represent the original registration."@en ;
     rdfs:domain ns1:Product ;
-    rdfs:range xsd:string .
+    rdfs:range xsd:NCName .
 
 ns1:hasHazardStatement a owl:ObjectProperty ;
     rdfs:label "hat Sicherheitshinweis für Gefahrenstoff"@de,
@@ -22112,20 +22161,18 @@ ns1:5-9960 a ns1:CropGroup ;
     ns1:hasChildCropGroup ns1:5-9998 ;
     ns1:hasParentCropGroup ns1:5-10195 .
 
-ns1:BBCH a owl:Class ;
-    rdfs:label "Anwendungszeitpunkt"@de,
-        "Application time"@en ;
-    rdfs:comment "Anwendungszeitpunkt für Behandlungen basierend auf der BBCH-Skala, die die phänologischen Entwicklungsstadien von Pflanzen standardisiert."@de,
-        "Application time for treatments based on the BBCH scale, which standardizes the phenological development stages of plants."@en ;
-    rdfs:seeAlso <https://w.wiki/CdkJ> ;
-    rdfs:subClassOf ns1:TreatmentConstraint .
-
 ns1:BCABacteria a owl:Class ;
     rdfs:label "Bakterienprodukte"@de,
         "Bacterial products"@en ;
     rdfs:comment "Bakterienprodukte sind biologische Schädlingsbekämpfungsmittel, die aus Bakterien bestehen oder von ihnen abgeleitet sind. Sie bekämpfen Schädlinge oder Krankheiten durch Mechanismen wie Konkurrenz, Produktion antimikrobieller Substanzen oder Förderung der Pflanzengesundheit."@de,
         "Bacterial products are biological control agents composed of or derived from bacteria. They combat pests or diseases through mechanisms such as competition, production of antimicrobial substances, or enhancement of plant health."@en ;
     rdfs:subClassOf ns1:BiologicalControlAgent .
+
+ns1:EnvironmentalCondition a owl:Class ;
+    rdfs:label "Umweltbedingung"@de,
+        "Environmental condition"@en ;
+    rdfs:comment "Repräsentiert jeden Umweltfaktor oder jede Umweltbedingung, die die Pflanzengesundheit, das Wachstum oder die Bewirtschaftung im landwirtschaftlichen Rahmen beeinflussen kann."@de,
+        "Represents any environmental factor or situation that can influence crop health, growth, or management within agriculture."@en .
 
 ns1:GeneralNotice a owl:Class ;
     rdfs:label "Allgemeiner Hinweis"@de,
@@ -22140,6 +22187,11 @@ ns1:Mixture a owl:Class ;
             owl:minCardinality "2"^^xsd:nonNegativeInteger ;
             owl:onProperty ns1:hasComponentPortion ],
         ns1:Substance .
+
+ns1:Treatment a owl:Class ;
+    rdfs:label "Behandlung"@de,
+        "Treatment"@en ;
+    rdfs:subClassOf ns1:Action .
 
 ns1:TreatmentDosage a owl:Class ;
     rdfs:label "Dosierung"@de,
@@ -22849,7 +22901,8 @@ ns1:AbioticStressor a owl:Class ;
         "Negative impact of non-living factors on the crop in a specific environment."@en ;
     rdfs:isDefinedBy <http://www.wikidata.org/entity/Q4667893> ;
     rdfs:seeAlso <https://w.wiki/CJnE> ;
-    rdfs:subClassOf ns1:CropStressor ;
+    rdfs:subClassOf ns1:CropStressor,
+        ns1:EnvironmentalCondition ;
     owl:disjointWith ns1:BioticStressor .
 
 ns1:ComponentPortion a owl:Class ;
@@ -22860,6 +22913,12 @@ ns1:ComponentPortion a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty ns1:hasComponentSubstance ] .
+
+ns1:DamageThreshold a owl:Class ;
+    rdfs:label "Schadschwelle"@de,
+        "Damage threshold"@en ;
+    rdfs:comment "Definiert die Schadensschwelle, ab der ein Stressor eine spezifische Kultur signifikant beeinträchtigt, und Massnahmen zur Reduzierung des Schadens erwogen werden sollten."@de,
+        "Defines the damage threshold at which a stressor significantly impacts a specific crop, and measures to mitigate the damage should be considered."@en .
 
 ns2:Information a owl:Class ;
     rdfs:label "Informationseinheit"@de,
@@ -23334,6 +23393,14 @@ ns1:5-9959 a ns1:CropGroup ;
         ns1:5-9970,
         ns1:5-9994 ;
     ns1:hasParentCropGroup ns1:5-10192 .
+
+ns1:BBCH a owl:Class ;
+    rdfs:label "Anwendungszeitpunkt"@de,
+        "Application time"@en ;
+    rdfs:comment "Anwendungszeitpunkt für Behandlungen basierend auf der BBCH-Skala, die die phänologischen Entwicklungsstadien von Pflanzen standardisiert."@de,
+        "Application time for treatments based on the BBCH scale, which standardizes the phenological development stages of plants."@en ;
+    rdfs:seeAlso <https://w.wiki/CdkJ> ;
+    rdfs:subClassOf ns1:TreatmentConstraint .
 
 ns1:interactsWith a owl:ObjectProperty ;
     rdfs:label "interagiert mit"@de,
@@ -40753,14 +40820,6 @@ ns1:2-11629 a schema:Organization ;
     schema:legalName "Arysta Lifescience Benelux SPRL" ;
     schema:name "Arysta Lifescience Benelux SPRL" .
 
-ns1:Damage a owl:Class ;
-    rdfs:label "Schaden"@de,
-        "Damage"@en ;
-    rdfs:comment "Repräsentiert die nachteiligen Auswirkungen oder Schäden, die einer spezifischen Kulturpflanze durch einen spezifischen Stressor zugefügt werden."@de,
-        "Represents the adverse effects or harm inflicted upon a specific crop due to a specific stressor."@en ;
-    rdfs:scopeNote "Diese Klasse ist zur Modellierung von Schäden vorgesehen, die bestimmte Kulturpflanzen infolge spezifischer Stressoren betreffen, um eine präzise Verfolgung und Verwaltung innerhalb des Pflanzenschutzrahmens zu ermöglichen."@de,
-        "This class is intended to model damages affecting particular crops as a result of specific stressors, facilitating precise tracking and management within the crop protection framework."@en .
-
 ns1:Substance a owl:Class ;
     rdfs:label "Wirkstoff"@de,
         "Substance"@en ;
@@ -51191,6 +51250,12 @@ ns1:2-7080 a schema:Organization ;
     schema:legalName "Eurofyto" ;
     schema:name "Eurofyto" .
 
+ns1:Damage a owl:Class ;
+    rdfs:label "(Potenzieller) Schaden"@de,
+        "(Potential) Damage"@en ;
+    rdfs:comment "Repräsentiert den (potenziellen) Schaden, die einer spezifischen Kultur durch einen spezifischen Stressor zugefügt werden kann."@de,
+        "Represents the adverse effects or harm (potentially) inflicted upon a specific crop due to a specific stressor."@en .
+
 ns1:1-A-4114 a ns1:ChemicalCropProtectionProduct,
         ns1:ChemicalProduct,
         ns1:CropProtectionProduct,
@@ -61537,8 +61602,8 @@ ns1:1-W-5218-3 a ns1:ChemicalCropProtectionProduct,
         ns1:1-W-5218-2 .
 
 ns1:SoapProduct a owl:Class ;
-    rdfs:label "Seifenpräparat"@de,
-        "Soap product"@en ;
+    rdfs:label "Seifenpräparat-Insektizide"@de,
+        "Soap product insecticides"@en ;
     rdfs:subClassOf ns1:Insecticide .
 
 <https://register.ld.admin.ch/zefix/company/243472> ns1:holdsPermissionToSell ns1:1-W-5012,
@@ -61579,10 +61644,10 @@ ns1:BCAMites a owl:Class ;
     rdfs:subClassOf ns1:BiologicalControlAgent .
 
 ns1:CodeS a owl:Class ;
-    rdfs:label "Sicherheits-Satz"@de,
-        "Safety Phrase"@en ;
-    rdfs:comment "Ein S-Satz ist ein standardisierter Sicherheitshinweis für den Umgang mit gefährlichen chemischen Stoffen. Diese Sätze wurden in der Europäischen Union verwendet, um sichere Handhabung, Lagerung und Notfallmassnahmen auf Sicherheitsdatenblättern und Etiketten zu empfehlen."@de,
-        "A Safety Phrase is a standardized safety instruction for handling hazardous chemical substances. These phrases were used in the European Union to recommend safe handling, storage, and emergency measures on safety data sheets and labels."@en ;
+    rdfs:label "S-Satz"@de,
+        "S phrase"@en ;
+    rdfs:comment "Ein S-Satz (= Sicherheits-Satz) ist ein standardisierter Sicherheitshinweis für den Umgang mit gefährlichen chemischen Stoffen. Diese Sätze wurden in der Europäischen Union verwendet, um sichere Handhabung, Lagerung und Notfallmassnahmen auf Sicherheitsdatenblättern und Etiketten zu empfehlen."@de,
+        "An S phrase (= safety phrase) is a standardized safety instruction for handling hazardous chemical substances. These phrases were used in the European Union to recommend safe handling, storage, and emergency measures on safety data sheets and labels."@en ;
     rdfs:seeAlso <https://ec.europa.eu/taxation_customs/dds2/SAMANCTA/EN/Safety/RS_EN.htm>,
         <https://w.wiki/CjPv> ;
     rdfs:subClassOf ns1:HazardStatement .
@@ -61627,7 +61692,7 @@ ns1:Pheromone a owl:Class ;
         "Pheromone"@en ;
     rdfs:comment "Pheromone sind chemische Substanzen, die von Insekten abgesondert werden, um mit Artgenossen zu kommunizieren. Sie beeinflussen Verhaltensweisen wie Paarung, Aggregation oder Spurverfolgung. In der Schädlingsbekämpfung werden synthetische Pheromone als Lockstoffe eingesetzt, um Schädlingspopulationen zu überwachen oder zu kontrollieren."@de,
         "Pheromones are chemical substances secreted by insects to communicate with conspecifics. They influence behaviors such as mating, aggregation, or trail following. In pest management, synthetic pheromones are used as attractants to monitor or control pest populations."@en ;
-    rdfs:subClassOf ns1:BiologicalControlAgent ;
+    rdfs:subClassOf ns1:Insecticide ;
     skos:altLabel "Insektenlockstoffe"@de,
         "Insect Attractant"@en .
 
@@ -63623,8 +63688,8 @@ ns1:2-7174 a schema:Organization ;
 ns1:CodeR a owl:Class ;
     rdfs:label "R-Satz"@de,
         "R phrase"@en ;
-    rdfs:comment "Ein R-Satz ist eine standardisierte Risikobeschreibung für gefährliche chemische Stoffe, die spezifische Gefahren wie Toxizität oder Entflammbarkeit angibt. Diese wurden in der Europäischen Union verwendet, um Risiken auf Sicherheitsdatenblättern und Etiketten zu kennzeichnen."@de,
-        "A R phrase (for risk phrase) is a standardized description of the risks associated with hazardous chemical substances, indicating specific dangers such as toxicity or flammability. These were used in the European Union to denote risks on safety data sheets and labels."@en ;
+    rdfs:comment "Ein R-Satz (= Risiko-Satz) ist eine standardisierte Risikobeschreibung für gefährliche chemische Stoffe, die spezifische Gefahren wie Toxizität oder Entflammbarkeit angibt. Diese wurden in der Europäischen Union verwendet, um Risiken auf Sicherheitsdatenblättern und Etiketten zu kennzeichnen."@de,
+        "An R phrase (= risk phrase) is a standardized description of the risks associated with hazardous chemical substances, indicating specific dangers such as toxicity or flammability. These were used in the European Union to denote risks on safety data sheets and labels."@en ;
     rdfs:seeAlso <https://ec.europa.eu/taxation_customs/dds2/SAMANCTA/EN/Safety/RS_EN.htm>,
         <https://w.wiki/CjPj> ;
     rdfs:subClassOf ns1:HazardStatement .

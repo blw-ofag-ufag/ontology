@@ -34,9 +34,9 @@ pp:AbioticStressor a owl:Class ;
         "Negative impact of non-living factors on the crop in a specific environment."@en ;
     rdfs:isDefinedBy wd:Q4667893 ;
     rdfs:seeAlso <https://w.wiki/CJnE> ;
-    rdfs:subClassOf pp:CropStressor ;
-    owl:disjointWith pp:BioticStressor ;
-    rdfs:subClassOf pp:EnvironmentalCondition .
+    rdfs:subClassOf pp:CropStressor,
+        pp:EnvironmentalCondition ;
+    owl:disjointWith pp:BioticStressor .
 
 pp:Acaricide a owl:Class ;
     rdfs:label "Akarizid"@de,
@@ -152,10 +152,24 @@ pp:CodeS a owl:Class ;
         <https://w.wiki/CjPv> ;
     rdfs:subClassOf pp:HazardStatement .
 
+pp:ControlDamageThreshold a owl:Class ;
+    rdfs:label "Bekämpfungsschadschwelle"@de,
+        "Control Damage Threshold"@en ;
+    rdfs:comment "Definiert die Schadensschwelle, ab der Massnahmen zur Bekämpfung eines Stressors ergriffen werden sollten, um weiteren Schaden zu verhindern."@de,
+        "Defines the damage threshold at which control measures should be implemented to prevent further harm from a stressor."@en ;
+    rdfs:subClassOf pp:DamageThreshold .
+
 pp:Desinfectant a owl:Class ;
     rdfs:label "Desinfektionsmittel"@de,
         "Desinfectant"@en ;
     rdfs:subClassOf pp:ChemicalProduct .
+
+pp:EconomicDamageThreshold a owl:Class ;
+    rdfs:label "Ökonomische Schadschwelle"@de,
+        "Economic Damage Threshold"@en ;
+    rdfs:comment "Definiert die Schadensschwelle, bei der der erwartete wirtschaftliche Schaden durch den Stressor die Kosten der Bekämpfungsmassnahmen übersteigt."@de,
+        "Defines the damage threshold at which the expected economic harm caused by the stressor exceeds the cost of control measures."@en ;
+    rdfs:subClassOf pp:DamageThreshold .
 
 pp:Fungicide a owl:Class ;
     rdfs:label "Fungizid"@de,
@@ -299,6 +313,14 @@ pp:cropIsRelatedToBiologicalTaxon a owl:ObjectProperty ;
     rdfs:range wd:Q16521 ;
     rdfs:subPropertyOf pp:isDefinedByBiologicalTaxon .
 
+pp:earliesBBCH a owl:DatatypeProperty ;
+    rdfs:label "Frühestes BBCH-Stadium der Kulturpflanze"@de,
+        "Earlies BBCH stage of the crop"@en ;
+    rdfs:comment "Das früheste BBCH-Stadium der Kulturpflanze, bei welcher der Schaden schon auftreten kann."@de,
+        "The earliest BBCH stage of the crop at which the damage can already occur."@en ;
+    rdfs:domain pp:Damage ;
+    rdfs:range xsd:float .
+
 pp:enables a owl:ObjectProperty ;
     rdfs:label "ermöglicht"@de,
         "enables"@en ;
@@ -323,6 +345,12 @@ pp:hasCountryOfOrigin a owl:ObjectProperty ;
         "This property indicates the country where the product originates."@en ;
     rdfs:domain pp:Product ;
     rdfs:range schema:Country .
+
+pp:hasDamageThreshold a owl:Class ;
+    rdfs:label "hat Schadschwelle"@de,
+        "has damage threshold"@en ;
+    rdfs:domain pp:Damage ;
+    rdfs:range pp:DamageThreshold .
 
 pp:hasExhaustionDeadline a owl:DatatypeProperty ;
     rdfs:label "Ablaufdatum der Nutzung"@de,
@@ -362,6 +390,12 @@ pp:hasSoldoutDeadline a owl:DatatypeProperty ;
         "The date by which the product can no longer be sold, typically after the product registration has been revoked."@en ;
     rdfs:domain pp:Product ;
     rdfs:range xsd:date .
+
+pp:hasTreatmentEfficacy a owl:DatatypeProperty ;
+    rdfs:label "hat Behandlungswirkung"@de,
+        "has treatment efficacy"@en ;
+    rdfs:domain pp:Treatment ;
+    rdfs:range pp:TreatmentEfficacy .
 
 pp:hasUnit a owl:ObjectProperty ;
     rdfs:label "hat Einheit"@de,
@@ -485,6 +519,14 @@ pp:knows a owl:ObjectProperty ;
     rdfs:label "kennt"@de,
         "knows"@en ;
     rdfs:domain foaf:Person .
+
+pp:latestBBCH a owl:DatatypeProperty ;
+    rdfs:label "Spätestes BBCH-Stadium der Kulturpflanze"@de,
+        "Latest BBCH stage of the crop"@en ;
+    rdfs:comment "Das späteste BBCH-Stadium der Kulturpflanze, bei welcher der Schaden noch auftreten kann."@de,
+        "The latest BBCH stage of the crop at which the damage can still occur."@en ;
+    rdfs:domain pp:Damage ;
+    rdfs:range xsd:float .
 
 pp:maximumBBCHcrop a owl:DatatypeProperty ;
     rdfs:label "Maximales BBCH-Stadium der Kulturpflanze"@de,
@@ -622,17 +664,6 @@ chebi:24431 a owl:Class ;
     rdfs:comment "Eine chemische Entität, wie in der CheBI-Ontologie definiert, dient als Referenzpunkt zur Identifizierung und Klassifizierung von Substanzen."@de,
         "A chemical entity as defined in the CheBI ontology, serving as a reference point for identifying and classifying substances."@en .
 
-pp:EnvironmentalCondition a owl:Class ;
-    rdfs:label "Umweltbedingung"@de,
-        "Environmental condition"@en ;
-    rdfs:comment "Repräsentiert jeden Umweltfaktor oder jede Umweltbedingung, die die Pflanzengesundheit, das Wachstum oder die Bewirtschaftung im landwirtschaftlichen Rahmen beeinflussen kann."@de,
-        "Represents any environmental factor or situation that can influence crop health, growth, or management within agriculture."@en .
-
-pp:Insecticide a owl:Class ;
-    rdfs:label "Insektizid"@de,
-        "Insecticide"@en ;
-    rdfs:subClassOf pp:ChemicalCropProtectionProduct .
-
 pp:ParallelImport a owl:Class ;
     rdfs:label "Parallelimport"@de,
         "Parallel import"@en ;
@@ -641,20 +672,9 @@ pp:ParallelImport a owl:Class ;
     rdfs:seeAlso <https://www.fedlex.admin.ch/eli/cc/2010/340/de#art_36> ;
     rdfs:subClassOf pp:Product .
 
-pp:Treatment a owl:Class ;
-    rdfs:label "Behandlung"@de,
-        "Treatment"@en ;
-    rdfs:subClassOf pp:Action .
-
 pp:TreatmentEfficacy a owl:Class ;
-    rdfs:label "Treatment efficacy"@en,
-        "Behandlungswirkung"@de .
-
-pp:hasTreatmentEfficacy a owl:DatatypeProperty ;
-    rdfs:label "has treatment efficacy"@en,
-        "hat Behandlungswirkung"@de ;
-    rdfs:domain pp:Treatment ;
-    rdfs:range pp:TreatmentEfficacy .
+    rdfs:label "Behandlungswirkung"@de,
+        "Treatment efficacy"@en .
 
 pp:WaitingPeriod a owl:Class ;
     rdfs:label "Wartefrist"@de,
@@ -798,14 +818,6 @@ pp:protects a owl:ObjectProperty ;
     rdfs:domain pp:Action ;
     rdfs:range pp:CropGroup .
 
-pp:BBCH a owl:Class ;
-    rdfs:label "Anwendungszeitpunkt"@de,
-        "Application time"@en ;
-    rdfs:comment "Anwendungszeitpunkt für Behandlungen basierend auf der BBCH-Skala, die die phänologischen Entwicklungsstadien von Pflanzen standardisiert."@de,
-        "Application time for treatments based on the BBCH scale, which standardizes the phenological development stages of plants."@en ;
-    rdfs:seeAlso <https://w.wiki/CdkJ> ;
-    rdfs:subClassOf pp:TreatmentConstraint .
-
 pp:BioticStressor a owl:Class ;
     rdfs:label "Biotischer Schadverursacher"@de,
         "Biotic crop stressor"@en ;
@@ -815,9 +827,20 @@ pp:BioticStressor a owl:Class ;
     rdfs:seeAlso <https://w.wiki/Byym> ;
     rdfs:subClassOf pp:CropStressor .
 
+pp:EnvironmentalCondition a owl:Class ;
+    rdfs:label "Umweltbedingung"@de,
+        "Environmental condition"@en ;
+    rdfs:comment "Repräsentiert jeden Umweltfaktor oder jede Umweltbedingung, die die Pflanzengesundheit, das Wachstum oder die Bewirtschaftung im landwirtschaftlichen Rahmen beeinflussen kann."@de,
+        "Represents any environmental factor or situation that can influence crop health, growth, or management within agriculture."@en .
+
 pp:GeneralNotice a owl:Class ;
     rdfs:label "Allgemeiner Hinweis"@de,
         "General Notice"@en .
+
+pp:Insecticide a owl:Class ;
+    rdfs:label "Insektizid"@de,
+        "Insecticide"@en ;
+    rdfs:subClassOf pp:ChemicalCropProtectionProduct .
 
 pp:Mixture a owl:Class ;
     rdfs:label "Chemisches Gemisch"@de,
@@ -828,6 +851,11 @@ pp:Mixture a owl:Class ;
             owl:minCardinality "2"^^xsd:nonNegativeInteger ;
             owl:onProperty pp:hasComponentPortion ],
         pp:Substance .
+
+pp:Treatment a owl:Class ;
+    rdfs:label "Behandlung"@de,
+        "Treatment"@en ;
+    rdfs:subClassOf pp:Action .
 
 pp:TreatmentDosage a owl:Class ;
     rdfs:label "Dosierung"@de,
@@ -859,6 +887,20 @@ pp:ComponentPortion a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty pp:hasComponentSubstance ] .
+
+pp:DamageThreshold a owl:Class ;
+    rdfs:label "Schadschwelle"@de,
+        "Damage threshold"@en ;
+    rdfs:comment "Definiert die Schadensschwelle, ab der ein Stressor eine spezifische Kultur signifikant beeinträchtigt, und Massnahmen zur Reduzierung des Schadens erwogen werden sollten."@de,
+        "Defines the damage threshold at which a stressor significantly impacts a specific crop, and measures to mitigate the damage should be considered."@en .
+
+pp:BBCH a owl:Class ;
+    rdfs:label "Anwendungszeitpunkt"@de,
+        "Application time"@en ;
+    rdfs:comment "Anwendungszeitpunkt für Behandlungen basierend auf der BBCH-Skala, die die phänologischen Entwicklungsstadien von Pflanzen standardisiert."@de,
+        "Application time for treatments based on the BBCH scale, which standardizes the phenological development stages of plants."@en ;
+    rdfs:seeAlso <https://w.wiki/CdkJ> ;
+    rdfs:subClassOf pp:TreatmentConstraint .
 
 pp:interactsWith a owl:ObjectProperty ;
     rdfs:label "interagiert mit"@de,
@@ -932,6 +974,12 @@ schema:Organization a owl:Class ;
     rdfs:scopeNote "Diese Klasse ist zur Modellierung von Organisationen im Pflanzenschutz vorgesehen. Sofern möglich, sollten Instanzen aus dem Schweizer zentralen Firmenindex (Zefix) wiederverwendet werden, um Konsistenz und Integration mit bestehenden Schweizer Organisationsdaten zu gewährleisten."@de,
         "This class is intended to model organizations involved in crop protection. Whenever possible, instances from the Swiss central company index (Zefix) should be reused to ensure consistency and integration with existing Swiss organizational data."@en .
 
+pp:BiologicalControlAgent a owl:Class ;
+    rdfs:label "Organismus für die biologische Schädlingsbekämpfung"@de,
+        "Biological control agent"@en ;
+    rdfs:subClassOf pp:CropProtectionProduct ;
+    owl:disjointWith pp:ChemicalProduct .
+
 pp:CropStressor a owl:Class ;
     rdfs:label "Schadverursacher"@de,
         "Crop stressor"@en ;
@@ -940,67 +988,11 @@ pp:CropStressor a owl:Class ;
     rdfs:scopeNote "Diese Klasse ist zur Modellierung verschiedener Stressoren vorgesehen, die Pflanzen betreffen, einschliesslich biotischer und abiotischer Elemente, um die Identifizierung und das Management von Faktoren zu erleichtern, die die landwirtschaftliche Produktivität beeinträchtigen."@de,
         "This class is intended to model various stressors affecting crops, including both biotic and abiotic elements, facilitating the identification and management of factors that compromise agricultural productivity."@en .
 
-pp:BiologicalControlAgent a owl:Class ;
-    rdfs:label "Organismus für die biologische Schädlingsbekämpfung"@de,
-        "Biological control agent"@en ;
-    rdfs:subClassOf pp:CropProtectionProduct ;
-    owl:disjointWith pp:ChemicalProduct .
-
 pp:ChemicalCropProtectionProduct a owl:Class ;
     rdfs:label "Chemisches Pflanzenschutzmittel"@de,
         "Chemical crop protection product"@en ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( pp:CropProtectionProduct pp:ChemicalProduct ) ] .
-
-pp:Damage a owl:Class ;
-    rdfs:label "(Potenzieller) Schaden"@de,
-        "(Potential) Damage"@en ;
-    rdfs:comment "Repräsentiert den (potenziellen) Schaden, die einer spezifischen Kultur durch einen spezifischen Stressor zugefügt werden kann."@de,
-        "Represents the adverse effects or harm (potentially) inflicted upon a specific crop due to a specific stressor."@en .
-
-pp:DamageThreshold a owl:Class ;
-    rdfs:label "Damage threshold"@en ,
-        "Schadschwelle"@de ;
-    rdfs:comment "Definiert die Schadensschwelle, ab der ein Stressor eine spezifische Kultur signifikant beeinträchtigt, und Massnahmen zur Reduzierung des Schadens erwogen werden sollten."@de ,
-        "Defines the damage threshold at which a stressor significantly impacts a specific crop, and measures to mitigate the damage should be considered."@en .
-
-pp:EconomicDamageThreshold a owl:Class ;
-    rdfs:subClassOf pp:DamageThreshold ;
-    rdfs:label "Ökonomische Schadschwelle"@de ,
-        "Economic Damage Threshold"@en ;
-    rdfs:comment "Definiert die Schadensschwelle, bei der der erwartete wirtschaftliche Schaden durch den Stressor die Kosten der Bekämpfungsmassnahmen übersteigt."@de ,
-        "Defines the damage threshold at which the expected economic harm caused by the stressor exceeds the cost of control measures."@en ;
-    rdfs:subClassOf pp:DamageThreshold .
-
-pp:ControlDamageThreshold a owl:Class ;
-    rdfs:subClassOf pp:DamageThreshold ;
-    rdfs:label "Bekämpfungsschadschwelle"@de ,
-        "Control Damage Threshold"@en ;
-    rdfs:comment "Definiert die Schadensschwelle, ab der Massnahmen zur Bekämpfung eines Stressors ergriffen werden sollten, um weiteren Schaden zu verhindern."@de ,
-        "Defines the damage threshold at which control measures should be implemented to prevent further harm from a stressor."@en ;
-    rdfs:subClassOf pp:DamageThreshold .
-
-pp:hasDamageThreshold a owl:Class ;
-    rdfs:label "has damage threshold"@en ,
-        "hat Schadschwelle"@de ;
-    rdfs:domain pp:Damage ;
-    rdfs:range pp:DamageThreshold .
-
-pp:earliesBBCH a owl:DatatypeProperty ;
-    rdfs:label "Frühestes BBCH-Stadium der Kulturpflanze"@de,
-        "Earlies BBCH stage of the crop"@en ;
-    rdfs:comment "Das früheste BBCH-Stadium der Kulturpflanze, bei welcher der Schaden schon auftreten kann."@de,
-        "The earliest BBCH stage of the crop at which the damage can already occur."@en ;
-    rdfs:domain pp:Damage ;
-    rdfs:range xsd:float .
-
-pp:latestBBCH a owl:DatatypeProperty ;
-    rdfs:label "Spätestes BBCH-Stadium der Kulturpflanze"@de,
-        "Latest BBCH stage of the crop"@en ;
-    rdfs:comment "Das späteste BBCH-Stadium der Kulturpflanze, bei welcher der Schaden noch auftreten kann."@de,
-        "The latest BBCH stage of the crop at which the damage can still occur."@en ;
-    rdfs:domain pp:Damage ;
-    rdfs:range xsd:float .
 
 pp:Substance a owl:Class ;
     rdfs:label "Wirkstoff"@de,
@@ -1025,6 +1017,12 @@ pp:CropGroup a owl:Class ;
         "Represents a category of agricultural plants that share common characteristics, cultivation methods, or purposes within the crop protection framework."@en ;
     rdfs:scopeNote "Entwickelt zur Modellierung von Kulturgruppen, die aufgrund von Ähnlichkeiten in ihren biologischen Eigenschaften, Wachstumsanforderungen oder den für ihren Schutz eingesetzten Strategien gemeinsam bewirtschaftet werden."@de,
         "Designed to model groups of crops that are managed collectively due to similarities in their biological attributes, growth requirements, or the strategies employed for their protection against stressors."@en .
+
+pp:Damage a owl:Class ;
+    rdfs:label "(Potenzieller) Schaden"@de,
+        "(Potential) Damage"@en ;
+    rdfs:comment "Repräsentiert den (potenziellen) Schaden, die einer spezifischen Kultur durch einen spezifischen Stressor zugefügt werden kann."@de,
+        "Represents the adverse effects or harm (potentially) inflicted upon a specific crop due to a specific stressor."@en .
 
 pp:Product a owl:Class ;
     rdfs:label "Produkt"@de,
