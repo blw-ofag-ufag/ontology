@@ -35,7 +35,8 @@ pp:AbioticStressor a owl:Class ;
     rdfs:isDefinedBy wd:Q4667893 ;
     rdfs:seeAlso <https://w.wiki/CJnE> ;
     rdfs:subClassOf pp:CropStressor ;
-    owl:disjointWith pp:BioticStressor .
+    owl:disjointWith pp:BioticStressor ;
+    rdfs:subClassOf pp:EnvironmentalCondition .
 
 pp:Acaricide a owl:Class ;
     rdfs:label "Akarizid"@de,
@@ -136,17 +137,17 @@ pp:BestPracticeRecommendations a owl:Class ;
 pp:CodeR a owl:Class ;
     rdfs:label "R-Satz"@de,
         "R phrase"@en ;
-    rdfs:comment "Ein R-Satz ist eine standardisierte Risikobeschreibung für gefährliche chemische Stoffe, die spezifische Gefahren wie Toxizität oder Entflammbarkeit angibt. Diese wurden in der Europäischen Union verwendet, um Risiken auf Sicherheitsdatenblättern und Etiketten zu kennzeichnen."@de,
-        "A R phrase (for risk phrase) is a standardized description of the risks associated with hazardous chemical substances, indicating specific dangers such as toxicity or flammability. These were used in the European Union to denote risks on safety data sheets and labels."@en ;
+    rdfs:comment "Ein R-Satz (= Risiko-Satz) ist eine standardisierte Risikobeschreibung für gefährliche chemische Stoffe, die spezifische Gefahren wie Toxizität oder Entflammbarkeit angibt. Diese wurden in der Europäischen Union verwendet, um Risiken auf Sicherheitsdatenblättern und Etiketten zu kennzeichnen."@de,
+        "An R phrase (= risk phrase) is a standardized description of the risks associated with hazardous chemical substances, indicating specific dangers such as toxicity or flammability. These were used in the European Union to denote risks on safety data sheets and labels."@en ;
     rdfs:seeAlso <https://ec.europa.eu/taxation_customs/dds2/SAMANCTA/EN/Safety/RS_EN.htm>,
         <https://w.wiki/CjPj> ;
     rdfs:subClassOf pp:HazardStatement .
 
 pp:CodeS a owl:Class ;
-    rdfs:label "Sicherheits-Satz"@de,
-        "Safety Phrase"@en ;
-    rdfs:comment "Ein S-Satz ist ein standardisierter Sicherheitshinweis für den Umgang mit gefährlichen chemischen Stoffen. Diese Sätze wurden in der Europäischen Union verwendet, um sichere Handhabung, Lagerung und Notfallmassnahmen auf Sicherheitsdatenblättern und Etiketten zu empfehlen."@de,
-        "A Safety Phrase is a standardized safety instruction for handling hazardous chemical substances. These phrases were used in the European Union to recommend safe handling, storage, and emergency measures on safety data sheets and labels."@en ;
+    rdfs:label "S-Satz"@de,
+        "S phrase"@en ;
+    rdfs:comment "Ein S-Satz (= Sicherheits-Satz) ist ein standardisierter Sicherheitshinweis für den Umgang mit gefährlichen chemischen Stoffen. Diese Sätze wurden in der Europäischen Union verwendet, um sichere Handhabung, Lagerung und Notfallmassnahmen auf Sicherheitsdatenblättern und Etiketten zu empfehlen."@de,
+        "An S phrase (= safety phrase) is a standardized safety instruction for handling hazardous chemical substances. These phrases were used in the European Union to recommend safe handling, storage, and emergency measures on safety data sheets and labels."@en ;
     rdfs:seeAlso <https://ec.europa.eu/taxation_customs/dds2/SAMANCTA/EN/Safety/RS_EN.htm>,
         <https://w.wiki/CjPv> ;
     rdfs:subClassOf pp:HazardStatement .
@@ -210,7 +211,7 @@ pp:Pheromone a owl:Class ;
         "Pheromone"@en ;
     rdfs:comment "Pheromone sind chemische Substanzen, die von Insekten abgesondert werden, um mit Artgenossen zu kommunizieren. Sie beeinflussen Verhaltensweisen wie Paarung, Aggregation oder Spurverfolgung. In der Schädlingsbekämpfung werden synthetische Pheromone als Lockstoffe eingesetzt, um Schädlingspopulationen zu überwachen oder zu kontrollieren."@de,
         "Pheromones are chemical substances secreted by insects to communicate with conspecifics. They influence behaviors such as mating, aggregation, or trail following. In pest management, synthetic pheromones are used as attractants to monitor or control pest populations."@en ;
-    rdfs:subClassOf pp:BiologicalControlAgent ;
+    rdfs:subClassOf pp:Insecticide ;
     skos:altLabel "Insektenlockstoffe"@de,
         "Insect Attractant"@en .
 
@@ -234,8 +235,8 @@ pp:SeedDressing a owl:Class ;
     rdfs:subClassOf pp:ChemicalCropProtectionProduct .
 
 pp:SoapProduct a owl:Class ;
-    rdfs:label "Seifenpräparat"@de,
-        "Soap product"@en ;
+    rdfs:label "Seifenpräparat-Insektizide"@de,
+        "Soap product insecticides"@en ;
     rdfs:subClassOf pp:Insecticide .
 
 pp:StorageProtectors a owl:Class ;
@@ -485,9 +486,15 @@ pp:knows a owl:ObjectProperty ;
         "knows"@en ;
     rdfs:domain foaf:Person .
 
-pp:maximumBBCH a owl:DatatypeProperty ;
-    rdfs:label "Maximales BBCH-Stadium"@de,
-        "Maximal BBCH stadium"@en ;
+pp:maximumBBCHcrop a owl:DatatypeProperty ;
+    rdfs:label "Maximales BBCH-Stadium der Kulturpflanze"@de,
+        "Maximal BBCH stadium of the crop"@en ;
+    rdfs:domain pp:BBCH ;
+    rdfs:range xsd:float .
+
+pp:maximumBBCHweed a owl:DatatypeProperty ;
+    rdfs:label "Maximales BBCH-Stadium des Unkrautes"@de,
+        "Maximal BBCH stadium of the weed"@en ;
     rdfs:domain pp:BBCH ;
     rdfs:range xsd:float .
 
@@ -505,11 +512,19 @@ pp:maximumTreatmentDosage a owl:DatatypeProperty ;
     rdfs:domain pp:TreatmentDosage ;
     rdfs:range xsd:float .
 
-pp:minimumBBCH a owl:DatatypeProperty ;
-    rdfs:label "Minimales BBCH-Stadium"@de,
-        "Minimal BBCH stage"@en ;
-    rdfs:comment "Das minimale BBCH-Stadium der Zielkultur bei der Anwendung des Produktes."@de,
-        "The minimal BBCH stage of the target culture when applying the product."@en ;
+pp:minimumBBCHcrop a owl:DatatypeProperty ;
+    rdfs:label "Minimales BBCH-Stadium der Kulturpflanze"@de,
+        "Minimal BBCH stage of the crop"@en ;
+    rdfs:comment "Das minimale BBCH-Stadium der Kulturpflanze bei der Anwendung des Produktes."@de,
+        "The minimal BBCH stage of the crop when applying the product."@en ;
+    rdfs:domain pp:BBCH ;
+    rdfs:range xsd:float .
+
+pp:minimumBBCHweed a owl:DatatypeProperty ;
+    rdfs:label "Minimales BBCH-Stadium der Kulturpflanze"@de,
+        "Minimal BBCH stage of the crop"@en ;
+    rdfs:comment "Das minimale BBCH-Stadium des Zielorganismus (Unkraut) bei der Anwendung des Produktes."@de,
+        "The minimal BBCH stage of the target organism (weed) when applying the product."@en ;
     rdfs:domain pp:BBCH ;
     rdfs:range xsd:float .
 
@@ -630,6 +645,16 @@ pp:Treatment a owl:Class ;
     rdfs:label "Behandlung"@de,
         "Treatment"@en ;
     rdfs:subClassOf pp:Action .
+
+pp:TreatmentEfficacy a owl:Class ;
+    rdfs:label "Treatment efficacy"@en,
+        "Behandlungswirkung"@de .
+
+pp:hasTreatmentEfficacy a owl:DatatypeProperty ;
+    rdfs:label "has treatment efficacy"@en,
+        "hat Behandlungswirkung"@de ;
+    rdfs:domain pp:Treatment ;
+    rdfs:range pp:TreatmentEfficacy .
 
 pp:WaitingPeriod a owl:Class ;
     rdfs:label "Wartefrist"@de,
@@ -928,12 +953,54 @@ pp:ChemicalCropProtectionProduct a owl:Class ;
             owl:intersectionOf ( pp:CropProtectionProduct pp:ChemicalProduct ) ] .
 
 pp:Damage a owl:Class ;
-    rdfs:label "Schaden"@de,
-        "Damage"@en ;
-    rdfs:comment "Repräsentiert die nachteiligen Auswirkungen oder Schäden, die einer spezifischen Kulturpflanze durch einen spezifischen Stressor zugefügt werden."@de,
-        "Represents the adverse effects or harm inflicted upon a specific crop due to a specific stressor."@en ;
-    rdfs:scopeNote "Diese Klasse ist zur Modellierung von Schäden vorgesehen, die bestimmte Kulturpflanzen infolge spezifischer Stressoren betreffen, um eine präzise Verfolgung und Verwaltung innerhalb des Pflanzenschutzrahmens zu ermöglichen."@de,
-        "This class is intended to model damages affecting particular crops as a result of specific stressors, facilitating precise tracking and management within the crop protection framework."@en .
+    rdfs:label "(Potenzieller) Schaden"@de,
+        "(Potential) Damage"@en ;
+    rdfs:comment "Repräsentiert den (potenziellen) Schaden, die einer spezifischen Kultur durch einen spezifischen Stressor zugefügt werden kann."@de,
+        "Represents the adverse effects or harm (potentially) inflicted upon a specific crop due to a specific stressor."@en .
+
+pp:DamageThreshold a owl:Class ;
+    rdfs:label "Damage threshold"@en ,
+        "Schadschwelle"@de ;
+    rdfs:comment "Definiert die Schadensschwelle, ab der ein Stressor eine spezifische Kultur signifikant beeinträchtigt, und Massnahmen zur Reduzierung des Schadens erwogen werden sollten."@de ,
+        "Defines the damage threshold at which a stressor significantly impacts a specific crop, and measures to mitigate the damage should be considered."@en .
+
+pp:EconomicDamageThreshold a owl:Class ;
+    rdfs:subClassOf pp:DamageThreshold ;
+    rdfs:label "Ökonomische Schadschwelle"@de ,
+        "Economic Damage Threshold"@en ;
+    rdfs:comment "Definiert die Schadensschwelle, bei der der erwartete wirtschaftliche Schaden durch den Stressor die Kosten der Bekämpfungsmassnahmen übersteigt."@de ,
+        "Defines the damage threshold at which the expected economic harm caused by the stressor exceeds the cost of control measures."@en ;
+    rdfs:subClassOf pp:DamageThreshold .
+
+pp:ControlDamageThreshold a owl:Class ;
+    rdfs:subClassOf pp:DamageThreshold ;
+    rdfs:label "Bekämpfungsschadschwelle"@de ,
+        "Control Damage Threshold"@en ;
+    rdfs:comment "Definiert die Schadensschwelle, ab der Massnahmen zur Bekämpfung eines Stressors ergriffen werden sollten, um weiteren Schaden zu verhindern."@de ,
+        "Defines the damage threshold at which control measures should be implemented to prevent further harm from a stressor."@en ;
+    rdfs:subClassOf pp:DamageThreshold .
+
+pp:hasDamageThreshold a owl:Class ;
+    rdfs:label "has damage threshold"@en ,
+        "hat Schadschwelle"@de ;
+    rdfs:domain pp:Damage ;
+    rdfs:range pp:DamageThreshold .
+
+pp:earliesBBCH a owl:DatatypeProperty ;
+    rdfs:label "Frühestes BBCH-Stadium der Kulturpflanze"@de,
+        "Earlies BBCH stage of the crop"@en ;
+    rdfs:comment "Das früheste BBCH-Stadium der Kulturpflanze, bei welcher der Schaden schon auftreten kann."@de,
+        "The earliest BBCH stage of the crop at which the damage can already occur."@en ;
+    rdfs:domain pp:Damage ;
+    rdfs:range xsd:float .
+
+pp:latestBBCH a owl:DatatypeProperty ;
+    rdfs:label "Spätestes BBCH-Stadium der Kulturpflanze"@de,
+        "Latest BBCH stage of the crop"@en ;
+    rdfs:comment "Das späteste BBCH-Stadium der Kulturpflanze, bei welcher der Schaden noch auftreten kann."@de,
+        "The latest BBCH stage of the crop at which the damage can still occur."@en ;
+    rdfs:domain pp:Damage ;
+    rdfs:range xsd:float .
 
 pp:Substance a owl:Class ;
     rdfs:label "Wirkstoff"@de,
