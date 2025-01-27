@@ -732,7 +732,7 @@ pp:hasFederalAdmissionNumber a owl:DatatypeProperty ;
     rdfs:comment "Die eidgenössische Zulassungsnummer identifiziert eine Produktregistrierung eindeutig. Sie ist entweder als W-Nummer im Fall von Bundeszulassungen (z. B. W-18) oder als Parallelimportnummer mit dem Anfangsbuchstaben des Ursprungslandes im Code im Fall von Parallelimporten (z. B. I-2789 für einen Parallelimport aus Italien) aufgebaut. Nummern mit einem Bindestrich (z. B. W-18-1, W-18-2) stehen für gleichwertige Produkte, die sich im Besitz verschiedener juristischer Personen befinden, während Nummern ohne Bindestrich (z. B. W-18) für die ursprüngliche Registrierung stehen."@de,
         "The federal admission number uniquely identifies a product registration. It is either constructed as a W-Number in the case of federal admissions (e.g. W-18) or as a parallel import number with the country of origin starting letter in the code in the case of parallel imports (e.g. I-2789 for a parallel import from Italy). Numbers with a dash (e.g., W-18-1, W-18-2) represent equivalent products held by different legal entities, while numbers without a dash (e.g., W-18) represent the original registration."@en ;
     rdfs:domain pp:Product ;
-    rdfs:range xsd:string .
+    rdfs:range xsd:NCName .
 
 pp:hasHazardStatement a owl:ObjectProperty ;
     rdfs:label "hat Sicherheitshinweis für Gefahrenstoff"@de,

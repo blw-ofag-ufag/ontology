@@ -5,8 +5,11 @@
 
 ## Visual ontology exploration
 
-To (visually) inspect the example ontology, open [this link](https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/graph/plant-protection.ttl) to open it using WebVOWL. The service fetches the ontology directly from this repository (i.e., from the `plant-protection.ttl` file).
+In order to visually explore the ontologies, you can use WebVOWL. The following links will open the current drafts for ontologies:
 
+- [**A plant protection ontology for Swiss agriculture.**](https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/ontology/plant-protection-ontology.ttl)
+- [**An ontology to model IT systems relevant for the Swiss agri-food sector.**](https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/ontology/system-map-ontology.ttl)
+- [**Fully connected ontology with instance count.**](https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/graph/plant-protection.ttl)
 
 ## Repository structure
 
