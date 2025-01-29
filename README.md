@@ -6,8 +6,7 @@
 You can use the browser tool [WebVOWL](https://github.com/VisualDataWeb/WebVOWL) order to visually explore the ontologies. The following links will open the current drafts for ontologies:
 
 - [**A plant protection ontology for Swiss agriculture.**](https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/ontology/plant-protection-ontology.ttl)
-- [**An ontology to model IT systems relevant for the Swiss agri-food sector.**](https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/ontology/system-map-ontology.ttl)
-- [**Fully connected ontology with instance count.**](https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/graph/plant-protection.ttl)
+- [**Plant protection ontology with instance count.**](https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/blw-ofag-ufag/ontology/refs/heads/main/graph/plant-protection.ttl) (Might take a little longer to load.)
 
 # 🌐 Demonstration sites
 

@@ -32,9 +32,7 @@ def merge_and_sort_ttl_files(file_list, output_file):
 
 if __name__ == "__main__":
     file_list = [
-        "ontology/system-map-ontology.ttl",
         "ontology/plant-protection-ontology.ttl",
-        "data/system-map.ttl",
         "data/products.ttl",
         "data/companies.ttl",
         "data/hazard-statements.ttl",
