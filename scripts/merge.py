@@ -1,24 +1,34 @@
 from rdflib import Graph
+from otsrdflib import OrderedTurtleSerializer
 import os
 
-def merge_ttl_files(file_list, output_file):
+def sort_and_overwrite_turtle(graph, file_path):
+    """Sorts the RDF graph and overwrites the given Turtle file."""
+    with open(file_path, 'wb') as f:
+        serializer = OrderedTurtleSerializer(graph)
+        serializer.serialize(f)
+
+    print(f"File '{file_path}' has been sorted and overwritten.")
+
+def merge_and_sort_ttl_files(file_list, output_file):
+    """Merges Turtle files, sorts them, and writes the sorted graph back to disk."""
     merged_graph = Graph()
+
     for file_path in file_list:
         if file_path.endswith(".ttl"):
             print(f"Processing file: {file_path}")
             graph = Graph()
             graph.parse(file_path, format="turtle")
-            
-            # Overwrite the original file with the reformatted content
-            graph.serialize(destination=file_path, format="turtle")
-            print(f"Reformatted file: {file_path}")
-            
+
+            # Sort and overwrite the original file
+            sort_and_overwrite_turtle(graph, file_path)
+
             # Merge into the main graph
             merged_graph += graph
     
-    # Serialize the merged graph
-    print(f"Writing merged graph to: {output_file}")
-    merged_graph.serialize(destination=output_file, format="turtle")
+    # Sort and serialize the merged graph
+    print(f"Writing sorted merged graph to: {output_file}")
+    sort_and_overwrite_turtle(merged_graph, output_file)
 
 if __name__ == "__main__":
     file_list = [
@@ -33,4 +43,5 @@ if __name__ == "__main__":
         "data/environmental.ttl"
     ]
     output_file = "graph/plant-protection.ttl"
-    merge_ttl_files(file_list, output_file)
+    
+    merge_and_sort_ttl_files(file_list, output_file)

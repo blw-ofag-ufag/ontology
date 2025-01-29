@@ -1,83 +1,6 @@
 @prefix pp: <https://agriculture.ld.admin.ch/foag/plant-protection#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-pp:ENV001 a pp:EnvironmentalCondition ;
-    rdfs:label "Regen"@de,
-        "Rain"@en ;
-    rdfs:comment "Niederschlag in Form von flüssigen Wassertropfen, die aus Wolken fallen."@de,
-        "Precipitation in the form of liquid water drops falling from clouds."@en ;
-    pp:emoji "☔️" .
-
-pp:ENV002 a pp:EnvironmentalCondition ;
-    rdfs:label "Schnee"@de,
-        "Snow"@en ;
-    rdfs:comment "Niederschlag in Form von Eiskristallen."@de,
-        "Precipitation in the form of ice crystals."@en ;
-    pp:emoji "☃️" .
-
-pp:ENV003 a pp:EnvironmentalCondition ;
-    rdfs:label "Hagel"@de,
-        "Hail"@en ;
-    rdfs:comment "Fester Niederschlag in Form von Kugeln oder unregelmässigen Eisbrocken."@de,
-        "Solid precipitation in the form of balls or irregular lumps of ice."@en ;
-    pp:emoji "⛈️" .
-
-pp:ENV004 a pp:EnvironmentalCondition ;
-    rdfs:label "Wind"@de,
-        "Wind"@en ;
-    rdfs:comment "Luftbewegung in Bezug zur Erdoberfläche, die Evapotranspiration und mechanische Belastungen beeinflusst."@de,
-        "Air in motion relative to the Earth's surface, influencing evapotranspiration and mechanical stress."@en ;
-    pp:emoji "💨" .
-
-pp:ENV005 a pp:EnvironmentalCondition ;
-    rdfs:label "Luftfeuchtigkeit"@de,
-        "Humidity"@en ;
-    rdfs:comment "Menge an Wasserdampf in der Luft, die die Pflanzentranspiration und den Krankheitsdruck beeinflusst."@de,
-        "Amount of water vapor in the air, influencing plant transpiration and disease pressure."@en ;
-    pp:emoji "💦" .
-
-pp:ENV006 a pp:EnvironmentalCondition ;
-    rdfs:label "Sonneneinstrahlung"@de,
-        "Solar radiation"@en ;
-    rdfs:comment "Intensität und Dauer des Sonnenlichts, das die Kulturpflanzen erreicht, wesentlich für die Photosynthese."@de,
-        "Intensity and duration of sunlight reaching the crop, essential for photosynthesis."@en ;
-    pp:emoji "☀️" .
-
-pp:ENV007 a pp:EnvironmentalCondition ;
-    rdfs:label "Bodenfeuchte"@de,
-        "Soil moisture"@en ;
-    rdfs:comment "Die im Boden gespeicherte Wassermenge, entscheidend für die Wasseraufnahme durch die Wurzeln."@de,
-        "The amount of water contained in the soil, crucial for root uptake."@en ;
-    pp:emoji "🪱" .
-
-pp:ENV008 a pp:EnvironmentalCondition ;
-    rdfs:label "Bodentextur"@de,
-        "Soil texture"@en ;
-    rdfs:comment "Das Verhältnis von Sand-, Schluff- und Tonanteilen im Boden."@de,
-        "Relative proportion of sand, silt, and clay particles in the soil."@en ;
-    pp:emoji "🚜" .
-
-pp:ENV009 a pp:EnvironmentalCondition ;
-    rdfs:label "Bodenfruchtbarkeit"@de,
-        "Soil fertility"@en ;
-    rdfs:comment "Fähigkeit des Bodens, Pflanzen in ausreichenden Mengen und Formen mit Nährstoffen zu versorgen."@de,
-        "Capacity of soil to provide nutrients in adequate amounts and forms for plant growth."@en ;
-    pp:emoji "🪴" .
-
-pp:ENV010 a pp:EnvironmentalCondition ;
-    rdfs:label "Höhe über Meeresspiegel"@de,
-        "Altitude"@en ;
-    rdfs:comment "Erhebung über dem Meeresspiegel, die Temperatur und atmosphärische Bedingungen beeinflusst."@de,
-        "Elevation above sea level, influencing temperature and atmospheric conditions."@en ;
-    pp:emoji "⛰️" .
-
-pp:ENV011 a pp:EnvironmentalCondition ;
-    rdfs:label "Hangneigung"@de,
-        "Slope"@en ;
-    rdfs:comment "Neigung oder Gefälle der Landoberfläche, die Wasserabfluss und Erosion beeinflusst."@de,
-        "Inclination or gradient of the land surface, affecting water runoff and erosion."@en ;
-    pp:emoji "📐" .
-
 pp:ENV012 a pp:AbioticStressor,
         pp:EnvironmentalCondition ;
     rdfs:label "Dürre"@de,
@@ -159,4 +82,81 @@ pp:ENV022 a pp:AbioticStressor,
         "Herbicide damage"@en ;
     rdfs:comment "Fehlanwendung oder übermässiger Einsatz von Herbiziden, der zu Schäden oder Stress bei Kulturpflanzen führt."@de,
         "Off-target or excessive herbicide application leading to injury or stress in crops."@en .
+
+pp:ENV001 a pp:EnvironmentalCondition ;
+    rdfs:label "Regen"@de,
+        "Rain"@en ;
+    rdfs:comment "Niederschlag in Form von flüssigen Wassertropfen, die aus Wolken fallen."@de,
+        "Precipitation in the form of liquid water drops falling from clouds."@en ;
+    pp:emoji "☔️" .
+
+pp:ENV002 a pp:EnvironmentalCondition ;
+    rdfs:label "Schnee"@de,
+        "Snow"@en ;
+    rdfs:comment "Niederschlag in Form von Eiskristallen."@de,
+        "Precipitation in the form of ice crystals."@en ;
+    pp:emoji "☃️" .
+
+pp:ENV003 a pp:EnvironmentalCondition ;
+    rdfs:label "Hagel"@de,
+        "Hail"@en ;
+    rdfs:comment "Fester Niederschlag in Form von Kugeln oder unregelmässigen Eisbrocken."@de,
+        "Solid precipitation in the form of balls or irregular lumps of ice."@en ;
+    pp:emoji "⛈️" .
+
+pp:ENV004 a pp:EnvironmentalCondition ;
+    rdfs:label "Wind"@de,
+        "Wind"@en ;
+    rdfs:comment "Luftbewegung in Bezug zur Erdoberfläche, die Evapotranspiration und mechanische Belastungen beeinflusst."@de,
+        "Air in motion relative to the Earth's surface, influencing evapotranspiration and mechanical stress."@en ;
+    pp:emoji "💨" .
+
+pp:ENV005 a pp:EnvironmentalCondition ;
+    rdfs:label "Luftfeuchtigkeit"@de,
+        "Humidity"@en ;
+    rdfs:comment "Menge an Wasserdampf in der Luft, die die Pflanzentranspiration und den Krankheitsdruck beeinflusst."@de,
+        "Amount of water vapor in the air, influencing plant transpiration and disease pressure."@en ;
+    pp:emoji "💦" .
+
+pp:ENV006 a pp:EnvironmentalCondition ;
+    rdfs:label "Sonneneinstrahlung"@de,
+        "Solar radiation"@en ;
+    rdfs:comment "Intensität und Dauer des Sonnenlichts, das die Kulturpflanzen erreicht, wesentlich für die Photosynthese."@de,
+        "Intensity and duration of sunlight reaching the crop, essential for photosynthesis."@en ;
+    pp:emoji "☀️" .
+
+pp:ENV007 a pp:EnvironmentalCondition ;
+    rdfs:label "Bodenfeuchte"@de,
+        "Soil moisture"@en ;
+    rdfs:comment "Die im Boden gespeicherte Wassermenge, entscheidend für die Wasseraufnahme durch die Wurzeln."@de,
+        "The amount of water contained in the soil, crucial for root uptake."@en ;
+    pp:emoji "🪱" .
+
+pp:ENV008 a pp:EnvironmentalCondition ;
+    rdfs:label "Bodentextur"@de,
+        "Soil texture"@en ;
+    rdfs:comment "Das Verhältnis von Sand-, Schluff- und Tonanteilen im Boden."@de,
+        "Relative proportion of sand, silt, and clay particles in the soil."@en ;
+    pp:emoji "🚜" .
+
+pp:ENV009 a pp:EnvironmentalCondition ;
+    rdfs:label "Bodenfruchtbarkeit"@de,
+        "Soil fertility"@en ;
+    rdfs:comment "Fähigkeit des Bodens, Pflanzen in ausreichenden Mengen und Formen mit Nährstoffen zu versorgen."@de,
+        "Capacity of soil to provide nutrients in adequate amounts and forms for plant growth."@en ;
+    pp:emoji "🪴" .
+
+pp:ENV010 a pp:EnvironmentalCondition ;
+    rdfs:label "Höhe über Meeresspiegel"@de,
+        "Altitude"@en ;
+    rdfs:comment "Erhebung über dem Meeresspiegel, die Temperatur und atmosphärische Bedingungen beeinflusst."@de,
+        "Elevation above sea level, influencing temperature and atmospheric conditions."@en ;
+    pp:emoji "⛰️" .
+
+pp:ENV011 a pp:EnvironmentalCondition ;
+    rdfs:label "Hangneigung"@de,
+        "Slope"@en ;
+    rdfs:comment "Neigung oder Gefälle der Landoberfläche, die Wasserabfluss und Erosion beeinflusst."@de,
+        "Inclination or gradient of the land surface, affecting water runoff and erosion."@en ;
+    pp:emoji "📐" .
 

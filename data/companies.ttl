@@ -1654,6 +1654,946 @@
     schema:legalName "TBH Agrochemie GmbH" ;
     schema:name "TBH Agrochemie GmbH" .
 
+:3-10106 a schema:PostalAddress ;
+    :addressLocality "Mägenwil" ;
+    :postalCode "5506" ;
+    :streetAddress "Eichlistr. 9" ;
+    schema:addressCountry <https://ld.admin.ch/country/CHE> .
+
+:3-10141 a schema:PostalAddress ;
+    :addressLocality "Aesch" ;
+    :postalCode "4147" ;
+    :streetAddress "Nordring 4" ;
+    schema:addressCountry <https://ld.admin.ch/country/CHE> .
+
+:3-10271 a schema:PostalAddress ;
+    :addressLocality "Albano" ;
+    :postalCode "I-24061" ;
+    :streetAddress "Via Tonale 15" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-10281 a schema:PostalAddress ;
+    :addressLocality "Limburgerhof" ;
+    :postOfficeBoxNumber "PF 120" ;
+    :postalCode "D-67117" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-10297 a schema:PostalAddress ;
+    :addressLocality "Levallois-Perret Cedex" ;
+    :streetAddress "49, avenue Georges-Pompidou" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-10340 a schema:PostalAddress ;
+    :addressLocality "Pont-du-Casse" ;
+    :postOfficeBoxNumber "B P 5" ;
+    :postalCode "47480" ;
+    :streetAddress "Bonnel" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-10367 a schema:PostalAddress ;
+    :addressLocality "Münsingen" ;
+    :postalCode "75525" ;
+    :streetAddress "Rudolf-Diesel-Strasse 2" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-10392 a schema:PostalAddress ;
+    :addressLocality "Cernay Cedex" ;
+    :postalCode "F-68701" ;
+    :streetAddress "82, Rue de Wittelsheim" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-10446 a schema:PostalAddress ;
+    :addressLocality "Bruxelles" ;
+    :postalCode "1050" ;
+    :streetAddress "Boulevard de la Plaine 9/3" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-10489 a schema:PostalAddress ;
+    :addressLocality "Lüneburg" ;
+    :streetAddress "Otto-Brenner-Str. 13-15" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-10504 a schema:PostalAddress ;
+    :addressLocality "Barcelona" ;
+    :postalCode "8100" ;
+    :streetAddress "Av. de Rafael Casanova, 81 Molle del Valles" ;
+    schema:addressCountry <https://ld.admin.ch/country/ESP> .
+
+:3-10555 a schema:PostalAddress ;
+    :addressLocality "Lemvig" ;
+    :postOfficeBoxNumber "P.O. Box 9" ;
+    :postalCode "7620" ;
+    schema:addressCountry <https://ld.admin.ch/country/DNK> .
+
+:3-10595 a schema:PostalAddress ;
+    :addressLocality "Ougrée" ;
+    :postalCode "4102" ;
+    :streetAddress "Rue de Renory, 26/2" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-10618 a schema:PostalAddress ;
+    :addressLocality "Milano" ;
+    :postalCode "20156" ;
+    :streetAddress "Viale Certosa 126-130" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-10619 a schema:PostalAddress ;
+    :addressLocality "Milano" ;
+    :postalCode "20153" ;
+    :streetAddress "Via Caldera, 21" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-10635 a schema:PostalAddress ;
+    :addressLocality "Harboore" ;
+    :postalCode "7673" ;
+    :streetAddress "Thyboronvej 78" ;
+    schema:addressCountry <https://ld.admin.ch/country/DNK> .
+
+:3-10639 a schema:PostalAddress ;
+    :addressLocality "Ludwigshafen" ;
+    :postalCode "D-67056" ;
+    :streetAddress "Carl Bosch Strasse 38" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-10662 a schema:PostalAddress ;
+    :addressLocality "Monheim am Rhein" ;
+    :postalCode "D-40789 " ;
+    :streetAddress "Alfred-Nobel-Str. 50" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-10664 a schema:PostalAddress ;
+    :addressLocality "Emmerthal" ;
+    :postalCode "D-31857" ;
+    :streetAddress "An der Mühle 3" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-10679 a schema:PostalAddress ;
+    :addressLocality "Lyon Cedex 09" ;
+    :postalCode "F 69266" ;
+    :streetAddress "14-20 Rue Pierre Baizet" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-10709 a schema:PostalAddress ;
+    :addressLocality "Frankfurt Griesheim" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-10711 a schema:PostalAddress ;
+    :addressLocality "Salerano su Lambro (Lo)" ;
+    :streetAddress "Via Vittorio Veneto 81" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-10716 a schema:PostalAddress ;
+    :addressLocality "Sint-Truiden" ;
+    :postalCode "B-3803" ;
+    :streetAddress "Leeuwerweg 138" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-10717 a schema:PostalAddress ;
+    :addressLocality "Frankfurt am Main" ;
+    :postalCode "D-65926" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-10727 a schema:PostalAddress ;
+    :addressLocality "Lyon Cedex 09" ;
+    :postOfficeBoxNumber "CP 106" ;
+    :postalCode "F 69266" ;
+    :streetAddress "16 rue Jean-Marie Leclair" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-10745 a schema:PostalAddress ;
+    :addressLocality "Levallois-Perret" ;
+    :postalCode "F 92531" ;
+    :streetAddress "53 rue Raspail" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-10767 a schema:PostalAddress ;
+    :addressLocality "Warrington" ;
+    :postalCode "WA3 6YN" ;
+    :streetAddress "Birchwood Park" ;
+    schema:addressCountry <https://ld.admin.ch/country/GBR> .
+
+:3-10796 a schema:PostalAddress ;
+    :addressLocality "Noguères" ;
+    :postalCode "F-64150" ;
+    :streetAddress "Route d'Artix" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-10868 a schema:PostalAddress ;
+    :addressLocality "Diegem" ;
+    :postalCode "B-1831" ;
+    :streetAddress "Pegasus Park / De Kleetlaan 12B" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-10873 a schema:PostalAddress ;
+    :addressLocality "Londerzeel" ;
+    :postalCode "1840" ;
+    :streetAddress "Neringstraat 15" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-10874 a schema:PostalAddress ;
+    :addressLocality "Mozzanica, Bergamo" ;
+    :postalCode "I-24050" ;
+    :streetAddress "S.S. n° 11, Km 190,2" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-10876 a schema:PostalAddress ;
+    :addressLocality "Schafhausen" ;
+    :postalCode "3415" ;
+    :streetAddress "Wydimattstrasse 22" ;
+    schema:addressCountry <https://ld.admin.ch/country/CHE> .
+
+:3-10880 a schema:PostalAddress ;
+    :addressLocality "Cesano Maderno" ;
+    :postalCode "I-20031" ;
+    :streetAddress "Via Marconato" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-10885 a schema:PostalAddress ;
+    :addressLocality "Stulln" ;
+    :postalCode "D-92551" ;
+    :streetAddress "Werksweg 2" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-10889 a schema:PostalAddress ;
+    :addressLocality "Herzogenburg" ;
+    :postalCode "A-3130" ;
+    :streetAddress " " ;
+    schema:addressCountry <https://ld.admin.ch/country/AUT> .
+
+:3-10918 a schema:PostalAddress ;
+    :addressLocality "Sandbach Cheshire" ;
+    :postalCode "CQ11 3QQ " ;
+    :streetAddress "Hall Lane, Rookery Bridge" ;
+    schema:addressCountry <https://ld.admin.ch/country/GBR> .
+
+:3-10962 a schema:PostalAddress ;
+    :addressLocality "Bruxelles" ;
+    :postalCode "1170" ;
+    :streetAddress "Chaussée de la Hulpe 178" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-10965 a schema:PostalAddress ;
+    :addressLocality "Ruisbroek" ;
+    :postalCode "1601" ;
+    :streetAddress "Humaniteitslaan 65" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-10976 a schema:PostalAddress ;
+    :addressLocality "CURACAO (ANTILLE  NL)" ;
+    :streetAddress "Kaya SFG (Jombi) Mensing 34 " ;
+    schema:addressCountry <https://ld.admin.ch/country/NLD> .
+
+:3-10980 a schema:PostalAddress ;
+    :addressLocality "Köln" ;
+    :postalCode "50670" ;
+    :streetAddress "Im MediaPark 4 d" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11009 a schema:PostalAddress ;
+    :addressLocality "Worcester" ;
+    :postOfficeBoxNumber "WR 2 5AA" ;
+    :streetAddress "3, The Bull Ring" ;
+    schema:addressCountry <https://ld.admin.ch/country/GBR> .
+
+:3-11036 a schema:PostalAddress ;
+    :addressLocality "Nyon" ;
+    :postalCode "1260" ;
+    :streetAddress "Chemin du Canal 5" ;
+    schema:addressCountry <https://ld.admin.ch/country/CHE> .
+
+:3-11044 a schema:PostalAddress ;
+    :addressLocality "Saint Didier Au Mont d'Or" ;
+    :postalCode "F-69370" ;
+    :streetAddress "10a, rue de la Voie Lactée" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-11066 a schema:PostalAddress ;
+    :addressLocality "Saint Didier Au Mont d'Or" ;
+    :postalCode "F-69370" ;
+    :streetAddress "PARC D'AFFAIRES DE CRECY 2, RUE CLAUDE CHAPPE" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-11071 a schema:PostalAddress ;
+    :addressLocality "Lauschied" ;
+    :postalCode "55568" ;
+    :streetAddress "Bärweiler Strasse 55" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11096 a schema:PostalAddress ;
+    :addressLocality "Leverkusen" ;
+    :postalCode "51369" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11116 a schema:PostalAddress ;
+    :addressLocality "Graz" ;
+    :postalCode "8020" ;
+    :streetAddress "Metahofgasse 30" ;
+    schema:addressCountry <https://ld.admin.ch/country/AUT> .
+
+:3-11117 a schema:PostalAddress ;
+    :addressLocality "B - 9000 Gent" ;
+    :streetAddress "Pantserschipstraat 207" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-11123 a schema:PostalAddress ;
+    :addressLocality "Mumbai 400 050" ;
+    :streetAddress "Domnic Road 29th, Bandra West" ;
+    schema:addressCountry <https://ld.admin.ch/country/IND> .
+
+:3-11141 a schema:PostalAddress ;
+    :addressLocality "Puteaux Cédex" ;
+    :postalCode "92800" ;
+    :streetAddress "23/25 rue Delarivière-Lefoullon, La Défense 9" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-11168 a schema:PostalAddress ;
+    :addressLocality "Asse" ;
+    :postalCode "1720" ;
+    :streetAddress "Heedstraat 58" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-11169 a schema:PostalAddress ;
+    :addressLocality "Mailand" ;
+    :postalCode "20054" ;
+    :streetAddress "Via E.Majorana  2" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-11189 a schema:PostalAddress ;
+    :addressLocality "Düsseldorf" ;
+    :postalCode "40212" ;
+    :streetAddress "Berliner Allee 42" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11190 a schema:PostalAddress ;
+    :addressLocality "St. Truiden" ;
+    :postalCode "3800" ;
+    :streetAddress "Lichtenberglaan 2019" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-11209 a schema:PostalAddress ;
+    :addressLocality "La Rozas, Madrid" ;
+    :postalCode "E-28232" ;
+    :streetAddress "Valle del Roncal 12-1 Pl Oficina N. 7" ;
+    schema:addressCountry <https://ld.admin.ch/country/ESP> .
+
+:3-11210 a schema:PostalAddress ;
+    :addressLocality "Milano" ;
+    :postalCode "I-20100" ;
+    :streetAddress "Viale Luigi Majno 17/A" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-11235 a schema:PostalAddress ;
+    :addressLocality "Paterna (Valencia)" ;
+    :postalCode "46988" ;
+    :streetAddress "Pol. Ind. Fuente del Jarro, Ciudad de Sevilla, 53" ;
+    schema:addressCountry <https://ld.admin.ch/country/ESP> .
+
+:3-11275 a schema:PostalAddress ;
+    :addressLocality "Selm" ;
+    :postalCode "59379" ;
+    :streetAddress "Olfener Str. 36" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11284 a schema:PostalAddress ;
+    :addressLocality "Isnes" ;
+    :postalCode "5032" ;
+    :streetAddress "Rue Georges Legrand 6" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-11313 a schema:PostalAddress ;
+    :addressLocality "Ertvelde" ;
+    :postalCode "9940" ;
+    :streetAddress "Assenedestraat 2" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-11324 a schema:PostalAddress ;
+    :addressLocality "Brüssel" ;
+    :postalCode "BE-1150" ;
+    :streetAddress "Avenue de Tervueren 270" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-11348 a schema:PostalAddress ;
+    :addressLocality "Stade" ;
+    :postalCode "D-21683" ;
+    :streetAddress "Stader Elbstrasse 26-28" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11350 a schema:PostalAddress ;
+    :addressLocality "Limburgerhof" ;
+    :postalCode "D-67117" ;
+    :streetAddress "Carl-Bosch-Str. 64" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11356 a schema:PostalAddress ;
+    :addressLocality "Muttenz" ;
+    :postalCode "4132" ;
+    :streetAddress "Hofackerstrasse 3a" ;
+    schema:addressCountry <https://ld.admin.ch/country/CHE> .
+
+:3-11400 a schema:PostalAddress ;
+    :addressLocality "Rheienfeld" ;
+    :postalCode "23858" ;
+    :streetAddress "Holländerkoppel 1a" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11414 a schema:PostalAddress ;
+    :addressLocality "Lyon Cedex 09" ;
+    :postalCode "69336" ;
+    :streetAddress "16, rue Jean-Marie Leclair - CS 90106" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-11416 a schema:PostalAddress ;
+    :addressLocality "Mumbai" ;
+    :postalCode "400 050" ;
+    :streetAddress "Dashrathlal Joshi Road, Vile Parle (West)" ;
+    schema:addressCountry <https://ld.admin.ch/country/IND> .
+
+:3-11419 a schema:PostalAddress ;
+    :addressLocality "LYON " ;
+    :postalCode "69003" ;
+    :streetAddress "19 Bd Eugène Duruelle" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-11434 a schema:PostalAddress ;
+    :addressLocality "Ludwigshafen" ;
+    :postalCode "D-67056" ;
+    :streetAddress "Carl-Bosch-Strasse 38 " ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11441 a schema:PostalAddress ;
+    :addressLocality "Ashdod" ;
+    :postalCode "77102" ;
+    :streetAddress "P.O. Box 262" ;
+    schema:addressCountry <https://ld.admin.ch/country/ISR> .
+
+:3-11444 a schema:PostalAddress ;
+    :addressLocality "Dublin 4" ;
+    :postalCode "Dublin 4" ;
+    :streetAddress "Nova UCD, Belfield Innovation Park , UCD Belfield" ;
+    schema:addressCountry <https://ld.admin.ch/country/IRL> .
+
+:3-11447 a schema:PostalAddress ;
+    :addressLocality "London" ;
+    :postalCode "NW11 7JT" ;
+    :streetAddress "Hamilton House, Mobledon Place" ;
+    schema:addressCountry <https://ld.admin.ch/country/GBR> .
+
+:3-11451 a schema:PostalAddress ;
+    :addressLocality "Hamburg" ;
+    :postalCode "20457" ;
+    :streetAddress "Singapurstrasse 1" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11452 a schema:PostalAddress ;
+    :addressLocality "Londerzeel" ;
+    :postalCode "1840" ;
+    :streetAddress "Technologielann 7" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-11453 a schema:PostalAddress ;
+    :addressLocality "Diegem" ;
+    :postalCode "1831" ;
+    :streetAddress "J.E.Mommertslaan 14" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-11467 a schema:PostalAddress ;
+    :addressLocality "Mailand" ;
+    :postalCode "20121" ;
+    :streetAddress "VIA PONTACCIO, 10" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-11471 a schema:PostalAddress ;
+    :addressLocality "Nikosia" ;
+    :postalCode "1061" ;
+    :streetAddress "3 Demetriou Vikella Street" ;
+    schema:addressCountry <https://ld.admin.ch/country/CYP> .
+
+:3-11545 a schema:PostalAddress ;
+    :addressLocality "AZ Utrecht" ;
+    :postalCode "3521" ;
+    :streetAddress "Stadsplateau 16" ;
+    schema:addressCountry <https://ld.admin.ch/country/NLD> .
+
+:3-11594 a schema:PostalAddress ;
+    :addressLocality "51149 Köln" ;
+    :streetAddress "Edmund-Rumpler-Str. 6" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11601 a schema:PostalAddress ;
+    :addressLocality "London" ;
+    :postalCode "WC1R 4HE" ;
+    :streetAddress "26-28 Bedford Row" ;
+    schema:addressCountry <https://ld.admin.ch/country/GBR> .
+
+:3-11605 a schema:PostalAddress ;
+    :addressLocality "Düsseldorf" ;
+    :postalCode "40217" ;
+    :streetAddress "Elisabethstrasse 44" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11609 a schema:PostalAddress ;
+    :addressLocality "Saint-Sauveur" ;
+    :postalCode "F-31790" ;
+    :streetAddress "12 Che de l'Hobit" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-11611 a schema:PostalAddress ;
+    :addressLocality "S. Carlo di Cesena (FC)" ;
+    :postalCode "I-47023" ;
+    :streetAddress "Via Terni 275" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-11612 a schema:PostalAddress ;
+    :addressLocality "Cambridge" ;
+    :postalCode "CB24 9PT " ;
+    :streetAddress "5 Pionee Court, Vision Park Histon" ;
+    schema:addressCountry <https://ld.admin.ch/country/GBR> .
+
+:3-11613 a schema:PostalAddress ;
+    :addressLocality "Milano" ;
+    :postalCode "20123" ;
+    :streetAddress "Via Carroccio, 8" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-11614 a schema:PostalAddress ;
+    :addressLocality "Méréville" ;
+    :postalCode "F-91660 " ;
+    :streetAddress "14 Rue de la Pierre Follege " ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-11615 a schema:PostalAddress ;
+    :addressLocality "Cernusco sul Naviglio (MI)" ;
+    :postalCode "I-20063" ;
+    :streetAddress "Centro Direzionale Villa Fiorita - Via Piero Gobet" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-11616 a schema:PostalAddress ;
+    :addressLocality "Langenfeld" ;
+    :postalCode "D-40764" ;
+    :streetAddress "Elisabeth- Selbert- Straße 4a" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11617 a schema:PostalAddress ;
+    :addressLocality "Baccon" ;
+    :postalCode "F-45130" ;
+    :streetAddress "VILCERY" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-11618 a schema:PostalAddress ;
+    :addressLocality "Bergamo" ;
+    :postalCode "24121" ;
+    :streetAddress "Via F. lli Bronzetti, 32/38" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-11622 a schema:PostalAddress ;
+    :addressLocality "Turin" ;
+    :postalCode "I-10137 " ;
+    :streetAddress "Corso Orbassano 368/18" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-11629 a schema:PostalAddress ;
+    :addressLocality "Ougrée" ;
+    :postalCode "4102" ;
+    :streetAddress "Rue de Renory 26/1" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-11633 a schema:PostalAddress ;
+    :addressLocality "Race" ;
+    :postalCode "2327" ;
+    :streetAddress "Grajski trg 21" ;
+    schema:addressCountry <https://ld.admin.ch/country/SVN> .
+
+:3-11695 a schema:PostalAddress ;
+    :addressLocality "Costanti" ;
+    :postalCode "43120" ;
+    :streetAddress "Av. Europa parcela 1-7, poligino de Costanti" ;
+    schema:addressCountry <https://ld.admin.ch/country/ESP> .
+
+:3-11696 a schema:PostalAddress ;
+    :addressLocality "Allerheiligen " ;
+    :postOfficeBoxNumber "8412" ;
+    :postalCode "8412" ;
+    :streetAddress "Europapark 1" ;
+    schema:addressCountry <https://ld.admin.ch/country/AUT> .
+
+:3-11699 a schema:PostalAddress ;
+    :addressLocality "Montsuzain" ;
+    :postOfficeBoxNumber "10150 " ;
+    :postalCode "F-10150" ;
+    :streetAddress "8 voie vallon" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-11705 a schema:PostalAddress ;
+    :addressLocality "Limburgerhof" ;
+    :postOfficeBoxNumber "67117" ;
+    :postalCode "D-67117" ;
+    :streetAddress "Speyerer Straße 2" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11706 a schema:PostalAddress ;
+    :addressLocality "Genua " ;
+    :postOfficeBoxNumber "16121 " ;
+    :postalCode "I-16121 " ;
+    :streetAddress "Via B. Bosco 57/3" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-11712 a schema:PostalAddress ;
+    :addressLocality "Padova" ;
+    :postOfficeBoxNumber "30131" ;
+    :postalCode "I-30131" ;
+    :streetAddress "Via Venezia, 9/A" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-11722 a schema:PostalAddress ;
+    :addressLocality "Warrington, Cheshire " ;
+    :postalCode "WA3 6YN" ;
+    :streetAddress "Birchwood Park" ;
+    schema:addressCountry <https://ld.admin.ch/country/GBR> .
+
+:3-11730 a schema:PostalAddress ;
+    :addressLocality "Stulln" ;
+    :postalCode "D-92551" ;
+    :streetAddress "Werksweg 2" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11734 a schema:PostalAddress ;
+    :addressLocality "Saint Didier Au Mont d'Or" ;
+    :postalCode "F-69370" ;
+    :streetAddress "10A, rue de la Voie Lactée" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-11738 a schema:PostalAddress ;
+    :addressLocality "Leverkusen " ;
+    :postOfficeBoxNumber "51373 " ;
+    :postalCode "D-51373 " ;
+    :streetAddress "Kaiser-Wilhelm-Allee 1 " ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11753 a schema:PostalAddress ;
+    :addressLocality "Lauschied" ;
+    :postalCode "55568" ;
+    :streetAddress "Bärweilerstrasse 55" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11757 a schema:PostalAddress ;
+    :addressLocality "London" ;
+    :postalCode "WC2N 5BW" ;
+    :streetAddress "1 Northumberland Ave, Westminster" ;
+    schema:addressCountry <https://ld.admin.ch/country/GBR> .
+
+:3-11759 a schema:PostalAddress ;
+    :addressLocality "Berkshire" ;
+    :postalCode " 1NT" ;
+    :streetAddress "Highlands House Reading Basingstoke Road, Spencers" ;
+    schema:addressCountry <https://ld.admin.ch/country/GBR> .
+
+:3-11761 a schema:PostalAddress ;
+    :addressLocality "Suresnes" ;
+    :postalCode " 92150" ;
+    :streetAddress "33 Rue de Verdun" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-11762 a schema:PostalAddress ;
+    :addressLocality "Brüssel" ;
+    :postalCode "BE-1150" ;
+    :streetAddress "Tour Itt., Avenue Louise 480, boite 12" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-11770 a schema:PostalAddress ;
+    :addressLocality "Grassobbio (Bergamo)" ;
+    :postalCode "24050" ;
+    :streetAddress "Via Zanica, 19" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-11773 a schema:PostalAddress ;
+    :addressLocality "Bydgoszcz" ;
+    :postalCode "85-862" ;
+    :streetAddress "ul Bydgoskich Przemyslowcow 6" ;
+    schema:addressCountry <https://ld.admin.ch/country/POL> .
+
+:3-11776 a schema:PostalAddress ;
+    :addressLocality "Brüssel" ;
+    :postalCode "1200" ;
+    :streetAddress "Boulevard de la Woluwe 60" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-11807 a schema:PostalAddress ;
+    :addressLocality "Milano" ;
+    :postalCode "20153" ;
+    :streetAddress "Via Caldera 21" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-11808 a schema:PostalAddress ;
+    :addressLocality "Berkshire" ;
+    :postalCode " 1NT" ;
+    :streetAddress "1 Bell Street, Maidenhead" ;
+    schema:addressCountry <https://ld.admin.ch/country/GBR> .
+
+:3-11810 a schema:PostalAddress ;
+    :addressLocality "Madrid" ;
+    :postalCode "28046" ;
+    :streetAddress "Calle Torneros 14" ;
+    schema:addressCountry <https://ld.admin.ch/country/ESP> .
+
+:3-11811 a schema:PostalAddress ;
+    :addressLocality "Cazis" ;
+    :postalCode "7408" ;
+    :streetAddress "Italienische Strasse 126" ;
+    schema:addressCountry <https://ld.admin.ch/country/CHE> .
+
+:3-11829 a schema:PostalAddress ;
+    :addressLocality "Bruxelles" ;
+    :postalCode "1170" ;
+    :streetAddress "rue du Trone 130" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-11830 a schema:PostalAddress ;
+    :addressLocality "Langenfeld" ;
+    :postalCode "D-40764" ;
+    :streetAddress "Elisabeth-Selbert-Straße 4a " ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11831 a schema:PostalAddress ;
+    :addressLocality "Milano" ;
+    :postalCode "20156" ;
+    :streetAddress "Viale Certosa 130" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-11833 a schema:PostalAddress ;
+    :addressLocality "Colombes" ;
+    :postalCode "92700" ;
+    :streetAddress "11 rue du Débarcadère" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-11842 a schema:PostalAddress ;
+    :addressLocality "Murcia" ;
+    :postalCode "30006" ;
+    :streetAddress "Carril Condomina n°3" ;
+    schema:addressCountry <https://ld.admin.ch/country/ESP> .
+
+:3-11843 a schema:PostalAddress ;
+    :addressLocality "Cambridgeshire" ;
+    :postOfficeBoxNumber "PE27 5HJ" ;
+    :postalCode "UK-Cambridgeshire" ;
+    :streetAddress "8 Cromwell Mews" ;
+    schema:addressCountry <https://ld.admin.ch/country/GBR> .
+
+:3-11846 a schema:PostalAddress ;
+    :addressLocality "Dublin 4" ;
+    :postalCode "Dublin 4" ;
+    :streetAddress "Nova UCD Belfield Innovation Park , UCD Belfield" ;
+    schema:addressCountry <https://ld.admin.ch/country/IRL> .
+
+:3-11854 a schema:PostalAddress ;
+    :addressLocality "Setúbal" ;
+    :postalCode "2910-440" ;
+    :streetAddress "Avnida do Rio Tejo, Herdade das Praias" ;
+    schema:addressCountry <https://ld.admin.ch/country/PRT> .
+
+:3-11858 a schema:PostalAddress ;
+    :addressLocality "Aesch" ;
+    :postalCode "4147" ;
+    :streetAddress "Nordring 4" ;
+    schema:addressCountry <https://ld.admin.ch/country/CHE> .
+
+:3-11890 a schema:PostalAddress ;
+    :addressLocality "Wasserbillig" ;
+    :postalCode "6617" ;
+    :streetAddress "Rte. D'Echternac 15" ;
+    schema:addressCountry <https://ld.admin.ch/country/LUX> .
+
+:3-11904 a schema:PostalAddress ;
+    :addressLocality "Saronno (VA)" ;
+    :postalCode "21047" ;
+    :streetAddress "Via Varese 25/G" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-11906 a schema:PostalAddress ;
+    :addressLocality "Wals-Siezenheim" ;
+    :postalCode "5071" ;
+    :streetAddress "Franz-Brötzner-Straße 11-13" ;
+    schema:addressCountry <https://ld.admin.ch/country/AUT> .
+
+:3-11907 a schema:PostalAddress ;
+    :addressLocality "CP Breda" ;
+    :postalCode "4818" ;
+    :streetAddress "Claudius Prinsenlaan 144 a," ;
+    schema:addressCountry <https://ld.admin.ch/country/NLD> .
+
+:3-11908 a schema:PostalAddress ;
+    :addressLocality "München" ;
+    :postalCode "D-81677" ;
+    :streetAddress "Riedenburger Str. 7" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11910 a schema:PostalAddress ;
+    :addressLocality "Graz" ;
+    :postalCode "8042" ;
+    :streetAddress "St. Peter Gürtel 8" ;
+    schema:addressCountry <https://ld.admin.ch/country/AUT> .
+
+:3-11911 a schema:PostalAddress ;
+    :addressLocality "Treviso" ;
+    :postalCode "31100" ;
+    :streetAddress "Via Monterumici 8" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-11932 a schema:PostalAddress ;
+    :addressLocality "Mumbai" ;
+    :postalCode "400 050" ;
+    :streetAddress "29th Road, Bandra (West)" ;
+    schema:addressCountry <https://ld.admin.ch/country/IND> .
+
+:3-11995 a schema:PostalAddress ;
+    :addressLocality "Troisdorf" ;
+    :postalCode "D-53840" ;
+    :streetAddress "Carl-Diem-Str. 3" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-11997 a schema:PostalAddress ;
+    :addressLocality "Köln" ;
+    :postalCode "50735" ;
+    :streetAddress "Nattermannallee 1" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-12027 a schema:PostalAddress ;
+    :addressLocality "Remeteszolos" ;
+    :postOfficeBoxNumber "140" ;
+    :postalCode "2090" ;
+    :streetAddress "Patak setany 140, 2090 Remeteszolos, HU" ;
+    schema:addressCountry <https://ld.admin.ch/country/HUN> .
+
+:3-12028 a schema:PostalAddress ;
+    :addressLocality "Antwerpen" ;
+    :postOfficeBoxNumber "7" ;
+    :postalCode "2000" ;
+    :streetAddress "Grote Mark" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-12029 a schema:PostalAddress ;
+    :addressLocality "Bergamo" ;
+    :postOfficeBoxNumber "32/28" ;
+    :postalCode "24121" ;
+    :streetAddress "Via F.lli Bronzetti" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-12030 a schema:PostalAddress ;
+    :addressLocality "Lyon" ;
+    :postOfficeBoxNumber "11" ;
+    :postalCode "69002" ;
+    :streetAddress "bis quai Perrache" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-7009 a schema:PostalAddress ;
+    :addressLocality "Pomezia (Roma)" ;
+    :postalCode "00040" ;
+    :streetAddress "Via Campobello, 1" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-7032 a schema:PostalAddress ;
+    :addressLocality "Ecully CEDEX" ;
+    :postalCode "69136" ;
+    :streetAddress "21, chemin de la Sauvegard" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-7034 a schema:PostalAddress ;
+    :addressLocality "Wien" ;
+    :postalCode "A-1011" ;
+    :streetAddress "Lerchenfelder Gürtel 9-11" ;
+    schema:addressCountry <https://ld.admin.ch/country/AUT> .
+
+:3-7048 a schema:PostalAddress ;
+    :addressLocality "Guyancourt" ;
+    :postalCode "78280" ;
+    :streetAddress "5 rue Galilée" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-7056 a schema:PostalAddress ;
+    :addressLocality "Cesena Maderno" ;
+    :postalCode "20031" ;
+    :streetAddress "Via Marvonato 8" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-7070 a schema:PostalAddress ;
+    :addressLocality "Paris Cedex 07" ;
+    :streetAddress "137, Rue de l'université" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-7080 a schema:PostalAddress ;
+    :addressLocality "Ieper" ;
+    :postalCode "8100" ;
+    :streetAddress "Industrielaan 6 B" ;
+    schema:addressCountry <https://ld.admin.ch/country/BEL> .
+
+:3-7100 a schema:PostalAddress ;
+    :addressLocality "Hamburg" ;
+    :postalCode "20095" ;
+    :streetAddress "Nordkanalstrasse 28" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-7126 a schema:PostalAddress ;
+    :addressLocality "AT Muiden" ;
+    :postalCode "1398" ;
+    schema:addressCountry <https://ld.admin.ch/country/NLD> .
+
+:3-7127 a schema:PostalAddress ;
+    :addressLocality "Düsseldorf" ;
+    :postalCode "40212" ;
+    :streetAddress "Vogelsanger Weg 91" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-7143 a schema:PostalAddress ;
+    :addressLocality "Maves" ;
+    :postalCode "41500" ;
+    :streetAddress "15, rue du Pont, Pontijou - RD 924" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-7151 a schema:PostalAddress ;
+    :addressLocality "CURACAO (ANTILLE  NL)" ;
+    :streetAddress "Kaya W.F.G. (Jombi) Mensing 34 P.O. Box 403" ;
+    schema:addressCountry <https://ld.admin.ch/country/NLD> .
+
+:3-7162 a schema:PostalAddress ;
+    :addressLocality "S.Maria Mugano" ;
+    :postalCode "41010" ;
+    :streetAddress "Via Bellaria 164" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-7170 a schema:PostalAddress ;
+    :addressLocality "Aix-en-Provence" ;
+    :postalCode "13090" ;
+    :streetAddress "VILLA CELONY, 1175 MONTEE D'AVIGNON" ;
+    schema:addressCountry <https://ld.admin.ch/country/FRA> .
+
+:3-7174 a schema:PostalAddress ;
+    :addressLocality "Allerheiligen " ;
+    :postalCode "8412" ;
+    :streetAddress "Europapark 1" ;
+    schema:addressCountry <https://ld.admin.ch/country/AUT> .
+
+:3-7179 a schema:PostalAddress ;
+    :addressLocality "Maintal" ;
+    :streetAddress "am Technologiepark 1 - 5" ;
+    schema:addressCountry <https://ld.admin.ch/country/DEU> .
+
+:3-7180 a schema:PostalAddress ;
+    :addressLocality "Wien" ;
+    :postalCode "1230" ;
+    :streetAddress "Anton-Baumgartner-Strasse 125" ;
+    schema:addressCountry <https://ld.admin.ch/country/AUT> .
+
+:3-7182 a schema:PostalAddress ;
+    :addressLocality "Milano" ;
+    :postalCode "20153" ;
+    :streetAddress "Via Gallarate, 139" ;
+    schema:addressCountry <https://ld.admin.ch/country/ITA> .
+
+:3-7183 a schema:PostalAddress ;
+    :addressLocality "Allerheiligen " ;
+    :postalCode "8412" ;
+    :streetAddress "Grossfeiting 16a" ;
+    schema:addressCountry <https://ld.admin.ch/country/AUT> .
+
 zefix:106909 :holdsPermissionToSell :1-W-1896,
         :1-W-2008,
         :1-W-2070,
@@ -3450,944 +4390,4 @@ zefix:99141 :holdsPermissionToSell :1-W-6598,
         :1-W-6804,
         :1-W-6979 ;
     schema:addressCountry <https://ld.admin.ch/country/CHE> .
-
-:3-10106 a schema:PostalAddress ;
-    :addressLocality "Mägenwil" ;
-    :postalCode "5506" ;
-    :streetAddress "Eichlistr. 9" ;
-    schema:addressCountry <https://ld.admin.ch/country/CHE> .
-
-:3-10141 a schema:PostalAddress ;
-    :addressLocality "Aesch" ;
-    :postalCode "4147" ;
-    :streetAddress "Nordring 4" ;
-    schema:addressCountry <https://ld.admin.ch/country/CHE> .
-
-:3-10271 a schema:PostalAddress ;
-    :addressLocality "Albano" ;
-    :postalCode "I-24061" ;
-    :streetAddress "Via Tonale 15" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-10281 a schema:PostalAddress ;
-    :addressLocality "Limburgerhof" ;
-    :postOfficeBoxNumber "PF 120" ;
-    :postalCode "D-67117" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-10297 a schema:PostalAddress ;
-    :addressLocality "Levallois-Perret Cedex" ;
-    :streetAddress "49, avenue Georges-Pompidou" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-10340 a schema:PostalAddress ;
-    :addressLocality "Pont-du-Casse" ;
-    :postOfficeBoxNumber "B P 5" ;
-    :postalCode "47480" ;
-    :streetAddress "Bonnel" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-10367 a schema:PostalAddress ;
-    :addressLocality "Münsingen" ;
-    :postalCode "75525" ;
-    :streetAddress "Rudolf-Diesel-Strasse 2" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-10392 a schema:PostalAddress ;
-    :addressLocality "Cernay Cedex" ;
-    :postalCode "F-68701" ;
-    :streetAddress "82, Rue de Wittelsheim" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-10446 a schema:PostalAddress ;
-    :addressLocality "Bruxelles" ;
-    :postalCode "1050" ;
-    :streetAddress "Boulevard de la Plaine 9/3" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-10489 a schema:PostalAddress ;
-    :addressLocality "Lüneburg" ;
-    :streetAddress "Otto-Brenner-Str. 13-15" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-10504 a schema:PostalAddress ;
-    :addressLocality "Barcelona" ;
-    :postalCode "8100" ;
-    :streetAddress "Av. de Rafael Casanova, 81 Molle del Valles" ;
-    schema:addressCountry <https://ld.admin.ch/country/ESP> .
-
-:3-10555 a schema:PostalAddress ;
-    :addressLocality "Lemvig" ;
-    :postOfficeBoxNumber "P.O. Box 9" ;
-    :postalCode "7620" ;
-    schema:addressCountry <https://ld.admin.ch/country/DNK> .
-
-:3-10595 a schema:PostalAddress ;
-    :addressLocality "Ougrée" ;
-    :postalCode "4102" ;
-    :streetAddress "Rue de Renory, 26/2" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-10618 a schema:PostalAddress ;
-    :addressLocality "Milano" ;
-    :postalCode "20156" ;
-    :streetAddress "Viale Certosa 126-130" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-10619 a schema:PostalAddress ;
-    :addressLocality "Milano" ;
-    :postalCode "20153" ;
-    :streetAddress "Via Caldera, 21" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-10635 a schema:PostalAddress ;
-    :addressLocality "Harboore" ;
-    :postalCode "7673" ;
-    :streetAddress "Thyboronvej 78" ;
-    schema:addressCountry <https://ld.admin.ch/country/DNK> .
-
-:3-10639 a schema:PostalAddress ;
-    :addressLocality "Ludwigshafen" ;
-    :postalCode "D-67056" ;
-    :streetAddress "Carl Bosch Strasse 38" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-10662 a schema:PostalAddress ;
-    :addressLocality "Monheim am Rhein" ;
-    :postalCode "D-40789 " ;
-    :streetAddress "Alfred-Nobel-Str. 50" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-10664 a schema:PostalAddress ;
-    :addressLocality "Emmerthal" ;
-    :postalCode "D-31857" ;
-    :streetAddress "An der Mühle 3" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-10679 a schema:PostalAddress ;
-    :addressLocality "Lyon Cedex 09" ;
-    :postalCode "F 69266" ;
-    :streetAddress "14-20 Rue Pierre Baizet" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-10709 a schema:PostalAddress ;
-    :addressLocality "Frankfurt Griesheim" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-10711 a schema:PostalAddress ;
-    :addressLocality "Salerano su Lambro (Lo)" ;
-    :streetAddress "Via Vittorio Veneto 81" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-10716 a schema:PostalAddress ;
-    :addressLocality "Sint-Truiden" ;
-    :postalCode "B-3803" ;
-    :streetAddress "Leeuwerweg 138" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-10717 a schema:PostalAddress ;
-    :addressLocality "Frankfurt am Main" ;
-    :postalCode "D-65926" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-10727 a schema:PostalAddress ;
-    :addressLocality "Lyon Cedex 09" ;
-    :postOfficeBoxNumber "CP 106" ;
-    :postalCode "F 69266" ;
-    :streetAddress "16 rue Jean-Marie Leclair" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-10745 a schema:PostalAddress ;
-    :addressLocality "Levallois-Perret" ;
-    :postalCode "F 92531" ;
-    :streetAddress "53 rue Raspail" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-10767 a schema:PostalAddress ;
-    :addressLocality "Warrington" ;
-    :postalCode "WA3 6YN" ;
-    :streetAddress "Birchwood Park" ;
-    schema:addressCountry <https://ld.admin.ch/country/GBR> .
-
-:3-10796 a schema:PostalAddress ;
-    :addressLocality "Noguères" ;
-    :postalCode "F-64150" ;
-    :streetAddress "Route d'Artix" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-10868 a schema:PostalAddress ;
-    :addressLocality "Diegem" ;
-    :postalCode "B-1831" ;
-    :streetAddress "Pegasus Park / De Kleetlaan 12B" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-10873 a schema:PostalAddress ;
-    :addressLocality "Londerzeel" ;
-    :postalCode "1840" ;
-    :streetAddress "Neringstraat 15" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-10874 a schema:PostalAddress ;
-    :addressLocality "Mozzanica, Bergamo" ;
-    :postalCode "I-24050" ;
-    :streetAddress "S.S. n° 11, Km 190,2" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-10876 a schema:PostalAddress ;
-    :addressLocality "Schafhausen" ;
-    :postalCode "3415" ;
-    :streetAddress "Wydimattstrasse 22" ;
-    schema:addressCountry <https://ld.admin.ch/country/CHE> .
-
-:3-10880 a schema:PostalAddress ;
-    :addressLocality "Cesano Maderno" ;
-    :postalCode "I-20031" ;
-    :streetAddress "Via Marconato" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-10885 a schema:PostalAddress ;
-    :addressLocality "Stulln" ;
-    :postalCode "D-92551" ;
-    :streetAddress "Werksweg 2" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-10889 a schema:PostalAddress ;
-    :addressLocality "Herzogenburg" ;
-    :postalCode "A-3130" ;
-    :streetAddress " " ;
-    schema:addressCountry <https://ld.admin.ch/country/AUT> .
-
-:3-10918 a schema:PostalAddress ;
-    :addressLocality "Sandbach Cheshire" ;
-    :postalCode "CQ11 3QQ " ;
-    :streetAddress "Hall Lane, Rookery Bridge" ;
-    schema:addressCountry <https://ld.admin.ch/country/GBR> .
-
-:3-10962 a schema:PostalAddress ;
-    :addressLocality "Bruxelles" ;
-    :postalCode "1170" ;
-    :streetAddress "Chaussée de la Hulpe 178" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-10965 a schema:PostalAddress ;
-    :addressLocality "Ruisbroek" ;
-    :postalCode "1601" ;
-    :streetAddress "Humaniteitslaan 65" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-10976 a schema:PostalAddress ;
-    :addressLocality "CURACAO (ANTILLE  NL)" ;
-    :streetAddress "Kaya SFG (Jombi) Mensing 34 " ;
-    schema:addressCountry <https://ld.admin.ch/country/NLD> .
-
-:3-10980 a schema:PostalAddress ;
-    :addressLocality "Köln" ;
-    :postalCode "50670" ;
-    :streetAddress "Im MediaPark 4 d" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11009 a schema:PostalAddress ;
-    :addressLocality "Worcester" ;
-    :postOfficeBoxNumber "WR 2 5AA" ;
-    :streetAddress "3, The Bull Ring" ;
-    schema:addressCountry <https://ld.admin.ch/country/GBR> .
-
-:3-11036 a schema:PostalAddress ;
-    :addressLocality "Nyon" ;
-    :postalCode "1260" ;
-    :streetAddress "Chemin du Canal 5" ;
-    schema:addressCountry <https://ld.admin.ch/country/CHE> .
-
-:3-11044 a schema:PostalAddress ;
-    :addressLocality "Saint Didier Au Mont d'Or" ;
-    :postalCode "F-69370" ;
-    :streetAddress "10a, rue de la Voie Lactée" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-11066 a schema:PostalAddress ;
-    :addressLocality "Saint Didier Au Mont d'Or" ;
-    :postalCode "F-69370" ;
-    :streetAddress "PARC D'AFFAIRES DE CRECY 2, RUE CLAUDE CHAPPE" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-11071 a schema:PostalAddress ;
-    :addressLocality "Lauschied" ;
-    :postalCode "55568" ;
-    :streetAddress "Bärweiler Strasse 55" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11096 a schema:PostalAddress ;
-    :addressLocality "Leverkusen" ;
-    :postalCode "51369" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11116 a schema:PostalAddress ;
-    :addressLocality "Graz" ;
-    :postalCode "8020" ;
-    :streetAddress "Metahofgasse 30" ;
-    schema:addressCountry <https://ld.admin.ch/country/AUT> .
-
-:3-11117 a schema:PostalAddress ;
-    :addressLocality "B - 9000 Gent" ;
-    :streetAddress "Pantserschipstraat 207" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-11123 a schema:PostalAddress ;
-    :addressLocality "Mumbai 400 050" ;
-    :streetAddress "Domnic Road 29th, Bandra West" ;
-    schema:addressCountry <https://ld.admin.ch/country/IND> .
-
-:3-11141 a schema:PostalAddress ;
-    :addressLocality "Puteaux Cédex" ;
-    :postalCode "92800" ;
-    :streetAddress "23/25 rue Delarivière-Lefoullon, La Défense 9" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-11168 a schema:PostalAddress ;
-    :addressLocality "Asse" ;
-    :postalCode "1720" ;
-    :streetAddress "Heedstraat 58" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-11169 a schema:PostalAddress ;
-    :addressLocality "Mailand" ;
-    :postalCode "20054" ;
-    :streetAddress "Via E.Majorana  2" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-11189 a schema:PostalAddress ;
-    :addressLocality "Düsseldorf" ;
-    :postalCode "40212" ;
-    :streetAddress "Berliner Allee 42" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11190 a schema:PostalAddress ;
-    :addressLocality "St. Truiden" ;
-    :postalCode "3800" ;
-    :streetAddress "Lichtenberglaan 2019" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-11209 a schema:PostalAddress ;
-    :addressLocality "La Rozas, Madrid" ;
-    :postalCode "E-28232" ;
-    :streetAddress "Valle del Roncal 12-1 Pl Oficina N. 7" ;
-    schema:addressCountry <https://ld.admin.ch/country/ESP> .
-
-:3-11210 a schema:PostalAddress ;
-    :addressLocality "Milano" ;
-    :postalCode "I-20100" ;
-    :streetAddress "Viale Luigi Majno 17/A" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-11235 a schema:PostalAddress ;
-    :addressLocality "Paterna (Valencia)" ;
-    :postalCode "46988" ;
-    :streetAddress "Pol. Ind. Fuente del Jarro, Ciudad de Sevilla, 53" ;
-    schema:addressCountry <https://ld.admin.ch/country/ESP> .
-
-:3-11275 a schema:PostalAddress ;
-    :addressLocality "Selm" ;
-    :postalCode "59379" ;
-    :streetAddress "Olfener Str. 36" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11284 a schema:PostalAddress ;
-    :addressLocality "Isnes" ;
-    :postalCode "5032" ;
-    :streetAddress "Rue Georges Legrand 6" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-11313 a schema:PostalAddress ;
-    :addressLocality "Ertvelde" ;
-    :postalCode "9940" ;
-    :streetAddress "Assenedestraat 2" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-11324 a schema:PostalAddress ;
-    :addressLocality "Brüssel" ;
-    :postalCode "BE-1150" ;
-    :streetAddress "Avenue de Tervueren 270" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-11348 a schema:PostalAddress ;
-    :addressLocality "Stade" ;
-    :postalCode "D-21683" ;
-    :streetAddress "Stader Elbstrasse 26-28" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11350 a schema:PostalAddress ;
-    :addressLocality "Limburgerhof" ;
-    :postalCode "D-67117" ;
-    :streetAddress "Carl-Bosch-Str. 64" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11356 a schema:PostalAddress ;
-    :addressLocality "Muttenz" ;
-    :postalCode "4132" ;
-    :streetAddress "Hofackerstrasse 3a" ;
-    schema:addressCountry <https://ld.admin.ch/country/CHE> .
-
-:3-11400 a schema:PostalAddress ;
-    :addressLocality "Rheienfeld" ;
-    :postalCode "23858" ;
-    :streetAddress "Holländerkoppel 1a" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11414 a schema:PostalAddress ;
-    :addressLocality "Lyon Cedex 09" ;
-    :postalCode "69336" ;
-    :streetAddress "16, rue Jean-Marie Leclair - CS 90106" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-11416 a schema:PostalAddress ;
-    :addressLocality "Mumbai" ;
-    :postalCode "400 050" ;
-    :streetAddress "Dashrathlal Joshi Road, Vile Parle (West)" ;
-    schema:addressCountry <https://ld.admin.ch/country/IND> .
-
-:3-11419 a schema:PostalAddress ;
-    :addressLocality "LYON " ;
-    :postalCode "69003" ;
-    :streetAddress "19 Bd Eugène Duruelle" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-11434 a schema:PostalAddress ;
-    :addressLocality "Ludwigshafen" ;
-    :postalCode "D-67056" ;
-    :streetAddress "Carl-Bosch-Strasse 38 " ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11441 a schema:PostalAddress ;
-    :addressLocality "Ashdod" ;
-    :postalCode "77102" ;
-    :streetAddress "P.O. Box 262" ;
-    schema:addressCountry <https://ld.admin.ch/country/ISR> .
-
-:3-11444 a schema:PostalAddress ;
-    :addressLocality "Dublin 4" ;
-    :postalCode "Dublin 4" ;
-    :streetAddress "Nova UCD, Belfield Innovation Park , UCD Belfield" ;
-    schema:addressCountry <https://ld.admin.ch/country/IRL> .
-
-:3-11447 a schema:PostalAddress ;
-    :addressLocality "London" ;
-    :postalCode "NW11 7JT" ;
-    :streetAddress "Hamilton House, Mobledon Place" ;
-    schema:addressCountry <https://ld.admin.ch/country/GBR> .
-
-:3-11451 a schema:PostalAddress ;
-    :addressLocality "Hamburg" ;
-    :postalCode "20457" ;
-    :streetAddress "Singapurstrasse 1" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11452 a schema:PostalAddress ;
-    :addressLocality "Londerzeel" ;
-    :postalCode "1840" ;
-    :streetAddress "Technologielann 7" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-11453 a schema:PostalAddress ;
-    :addressLocality "Diegem" ;
-    :postalCode "1831" ;
-    :streetAddress "J.E.Mommertslaan 14" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-11467 a schema:PostalAddress ;
-    :addressLocality "Mailand" ;
-    :postalCode "20121" ;
-    :streetAddress "VIA PONTACCIO, 10" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-11471 a schema:PostalAddress ;
-    :addressLocality "Nikosia" ;
-    :postalCode "1061" ;
-    :streetAddress "3 Demetriou Vikella Street" ;
-    schema:addressCountry <https://ld.admin.ch/country/CYP> .
-
-:3-11545 a schema:PostalAddress ;
-    :addressLocality "AZ Utrecht" ;
-    :postalCode "3521" ;
-    :streetAddress "Stadsplateau 16" ;
-    schema:addressCountry <https://ld.admin.ch/country/NLD> .
-
-:3-11594 a schema:PostalAddress ;
-    :addressLocality "51149 Köln" ;
-    :streetAddress "Edmund-Rumpler-Str. 6" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11601 a schema:PostalAddress ;
-    :addressLocality "London" ;
-    :postalCode "WC1R 4HE" ;
-    :streetAddress "26-28 Bedford Row" ;
-    schema:addressCountry <https://ld.admin.ch/country/GBR> .
-
-:3-11605 a schema:PostalAddress ;
-    :addressLocality "Düsseldorf" ;
-    :postalCode "40217" ;
-    :streetAddress "Elisabethstrasse 44" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11609 a schema:PostalAddress ;
-    :addressLocality "Saint-Sauveur" ;
-    :postalCode "F-31790" ;
-    :streetAddress "12 Che de l'Hobit" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-11611 a schema:PostalAddress ;
-    :addressLocality "S. Carlo di Cesena (FC)" ;
-    :postalCode "I-47023" ;
-    :streetAddress "Via Terni 275" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-11612 a schema:PostalAddress ;
-    :addressLocality "Cambridge" ;
-    :postalCode "CB24 9PT " ;
-    :streetAddress "5 Pionee Court, Vision Park Histon" ;
-    schema:addressCountry <https://ld.admin.ch/country/GBR> .
-
-:3-11613 a schema:PostalAddress ;
-    :addressLocality "Milano" ;
-    :postalCode "20123" ;
-    :streetAddress "Via Carroccio, 8" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-11614 a schema:PostalAddress ;
-    :addressLocality "Méréville" ;
-    :postalCode "F-91660 " ;
-    :streetAddress "14 Rue de la Pierre Follege " ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-11615 a schema:PostalAddress ;
-    :addressLocality "Cernusco sul Naviglio (MI)" ;
-    :postalCode "I-20063" ;
-    :streetAddress "Centro Direzionale Villa Fiorita - Via Piero Gobet" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-11616 a schema:PostalAddress ;
-    :addressLocality "Langenfeld" ;
-    :postalCode "D-40764" ;
-    :streetAddress "Elisabeth- Selbert- Straße 4a" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11617 a schema:PostalAddress ;
-    :addressLocality "Baccon" ;
-    :postalCode "F-45130" ;
-    :streetAddress "VILCERY" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-11618 a schema:PostalAddress ;
-    :addressLocality "Bergamo" ;
-    :postalCode "24121" ;
-    :streetAddress "Via F. lli Bronzetti, 32/38" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-11622 a schema:PostalAddress ;
-    :addressLocality "Turin" ;
-    :postalCode "I-10137 " ;
-    :streetAddress "Corso Orbassano 368/18" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-11629 a schema:PostalAddress ;
-    :addressLocality "Ougrée" ;
-    :postalCode "4102" ;
-    :streetAddress "Rue de Renory 26/1" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-11633 a schema:PostalAddress ;
-    :addressLocality "Race" ;
-    :postalCode "2327" ;
-    :streetAddress "Grajski trg 21" ;
-    schema:addressCountry <https://ld.admin.ch/country/SVN> .
-
-:3-11695 a schema:PostalAddress ;
-    :addressLocality "Costanti" ;
-    :postalCode "43120" ;
-    :streetAddress "Av. Europa parcela 1-7, poligino de Costanti" ;
-    schema:addressCountry <https://ld.admin.ch/country/ESP> .
-
-:3-11696 a schema:PostalAddress ;
-    :addressLocality "Allerheiligen " ;
-    :postOfficeBoxNumber "8412" ;
-    :postalCode "8412" ;
-    :streetAddress "Europapark 1" ;
-    schema:addressCountry <https://ld.admin.ch/country/AUT> .
-
-:3-11699 a schema:PostalAddress ;
-    :addressLocality "Montsuzain" ;
-    :postOfficeBoxNumber "10150 " ;
-    :postalCode "F-10150" ;
-    :streetAddress "8 voie vallon" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-11705 a schema:PostalAddress ;
-    :addressLocality "Limburgerhof" ;
-    :postOfficeBoxNumber "67117" ;
-    :postalCode "D-67117" ;
-    :streetAddress "Speyerer Straße 2" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11706 a schema:PostalAddress ;
-    :addressLocality "Genua " ;
-    :postOfficeBoxNumber "16121 " ;
-    :postalCode "I-16121 " ;
-    :streetAddress "Via B. Bosco 57/3" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-11712 a schema:PostalAddress ;
-    :addressLocality "Padova" ;
-    :postOfficeBoxNumber "30131" ;
-    :postalCode "I-30131" ;
-    :streetAddress "Via Venezia, 9/A" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-11722 a schema:PostalAddress ;
-    :addressLocality "Warrington, Cheshire " ;
-    :postalCode "WA3 6YN" ;
-    :streetAddress "Birchwood Park" ;
-    schema:addressCountry <https://ld.admin.ch/country/GBR> .
-
-:3-11730 a schema:PostalAddress ;
-    :addressLocality "Stulln" ;
-    :postalCode "D-92551" ;
-    :streetAddress "Werksweg 2" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11734 a schema:PostalAddress ;
-    :addressLocality "Saint Didier Au Mont d'Or" ;
-    :postalCode "F-69370" ;
-    :streetAddress "10A, rue de la Voie Lactée" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-11738 a schema:PostalAddress ;
-    :addressLocality "Leverkusen " ;
-    :postOfficeBoxNumber "51373 " ;
-    :postalCode "D-51373 " ;
-    :streetAddress "Kaiser-Wilhelm-Allee 1 " ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11753 a schema:PostalAddress ;
-    :addressLocality "Lauschied" ;
-    :postalCode "55568" ;
-    :streetAddress "Bärweilerstrasse 55" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11757 a schema:PostalAddress ;
-    :addressLocality "London" ;
-    :postalCode "WC2N 5BW" ;
-    :streetAddress "1 Northumberland Ave, Westminster" ;
-    schema:addressCountry <https://ld.admin.ch/country/GBR> .
-
-:3-11759 a schema:PostalAddress ;
-    :addressLocality "Berkshire" ;
-    :postalCode " 1NT" ;
-    :streetAddress "Highlands House Reading Basingstoke Road, Spencers" ;
-    schema:addressCountry <https://ld.admin.ch/country/GBR> .
-
-:3-11761 a schema:PostalAddress ;
-    :addressLocality "Suresnes" ;
-    :postalCode " 92150" ;
-    :streetAddress "33 Rue de Verdun" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-11762 a schema:PostalAddress ;
-    :addressLocality "Brüssel" ;
-    :postalCode "BE-1150" ;
-    :streetAddress "Tour Itt., Avenue Louise 480, boite 12" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-11770 a schema:PostalAddress ;
-    :addressLocality "Grassobbio (Bergamo)" ;
-    :postalCode "24050" ;
-    :streetAddress "Via Zanica, 19" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-11773 a schema:PostalAddress ;
-    :addressLocality "Bydgoszcz" ;
-    :postalCode "85-862" ;
-    :streetAddress "ul Bydgoskich Przemyslowcow 6" ;
-    schema:addressCountry <https://ld.admin.ch/country/POL> .
-
-:3-11776 a schema:PostalAddress ;
-    :addressLocality "Brüssel" ;
-    :postalCode "1200" ;
-    :streetAddress "Boulevard de la Woluwe 60" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-11807 a schema:PostalAddress ;
-    :addressLocality "Milano" ;
-    :postalCode "20153" ;
-    :streetAddress "Via Caldera 21" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-11808 a schema:PostalAddress ;
-    :addressLocality "Berkshire" ;
-    :postalCode " 1NT" ;
-    :streetAddress "1 Bell Street, Maidenhead" ;
-    schema:addressCountry <https://ld.admin.ch/country/GBR> .
-
-:3-11810 a schema:PostalAddress ;
-    :addressLocality "Madrid" ;
-    :postalCode "28046" ;
-    :streetAddress "Calle Torneros 14" ;
-    schema:addressCountry <https://ld.admin.ch/country/ESP> .
-
-:3-11811 a schema:PostalAddress ;
-    :addressLocality "Cazis" ;
-    :postalCode "7408" ;
-    :streetAddress "Italienische Strasse 126" ;
-    schema:addressCountry <https://ld.admin.ch/country/CHE> .
-
-:3-11829 a schema:PostalAddress ;
-    :addressLocality "Bruxelles" ;
-    :postalCode "1170" ;
-    :streetAddress "rue du Trone 130" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-11830 a schema:PostalAddress ;
-    :addressLocality "Langenfeld" ;
-    :postalCode "D-40764" ;
-    :streetAddress "Elisabeth-Selbert-Straße 4a " ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11831 a schema:PostalAddress ;
-    :addressLocality "Milano" ;
-    :postalCode "20156" ;
-    :streetAddress "Viale Certosa 130" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-11833 a schema:PostalAddress ;
-    :addressLocality "Colombes" ;
-    :postalCode "92700" ;
-    :streetAddress "11 rue du Débarcadère" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-11842 a schema:PostalAddress ;
-    :addressLocality "Murcia" ;
-    :postalCode "30006" ;
-    :streetAddress "Carril Condomina n°3" ;
-    schema:addressCountry <https://ld.admin.ch/country/ESP> .
-
-:3-11843 a schema:PostalAddress ;
-    :addressLocality "Cambridgeshire" ;
-    :postOfficeBoxNumber "PE27 5HJ" ;
-    :postalCode "UK-Cambridgeshire" ;
-    :streetAddress "8 Cromwell Mews" ;
-    schema:addressCountry <https://ld.admin.ch/country/GBR> .
-
-:3-11846 a schema:PostalAddress ;
-    :addressLocality "Dublin 4" ;
-    :postalCode "Dublin 4" ;
-    :streetAddress "Nova UCD Belfield Innovation Park , UCD Belfield" ;
-    schema:addressCountry <https://ld.admin.ch/country/IRL> .
-
-:3-11854 a schema:PostalAddress ;
-    :addressLocality "Setúbal" ;
-    :postalCode "2910-440" ;
-    :streetAddress "Avnida do Rio Tejo, Herdade das Praias" ;
-    schema:addressCountry <https://ld.admin.ch/country/PRT> .
-
-:3-11858 a schema:PostalAddress ;
-    :addressLocality "Aesch" ;
-    :postalCode "4147" ;
-    :streetAddress "Nordring 4" ;
-    schema:addressCountry <https://ld.admin.ch/country/CHE> .
-
-:3-11890 a schema:PostalAddress ;
-    :addressLocality "Wasserbillig" ;
-    :postalCode "6617" ;
-    :streetAddress "Rte. D'Echternac 15" ;
-    schema:addressCountry <https://ld.admin.ch/country/LUX> .
-
-:3-11904 a schema:PostalAddress ;
-    :addressLocality "Saronno (VA)" ;
-    :postalCode "21047" ;
-    :streetAddress "Via Varese 25/G" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-11906 a schema:PostalAddress ;
-    :addressLocality "Wals-Siezenheim" ;
-    :postalCode "5071" ;
-    :streetAddress "Franz-Brötzner-Straße 11-13" ;
-    schema:addressCountry <https://ld.admin.ch/country/AUT> .
-
-:3-11907 a schema:PostalAddress ;
-    :addressLocality "CP Breda" ;
-    :postalCode "4818" ;
-    :streetAddress "Claudius Prinsenlaan 144 a," ;
-    schema:addressCountry <https://ld.admin.ch/country/NLD> .
-
-:3-11908 a schema:PostalAddress ;
-    :addressLocality "München" ;
-    :postalCode "D-81677" ;
-    :streetAddress "Riedenburger Str. 7" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11910 a schema:PostalAddress ;
-    :addressLocality "Graz" ;
-    :postalCode "8042" ;
-    :streetAddress "St. Peter Gürtel 8" ;
-    schema:addressCountry <https://ld.admin.ch/country/AUT> .
-
-:3-11911 a schema:PostalAddress ;
-    :addressLocality "Treviso" ;
-    :postalCode "31100" ;
-    :streetAddress "Via Monterumici 8" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-11932 a schema:PostalAddress ;
-    :addressLocality "Mumbai" ;
-    :postalCode "400 050" ;
-    :streetAddress "29th Road, Bandra (West)" ;
-    schema:addressCountry <https://ld.admin.ch/country/IND> .
-
-:3-11995 a schema:PostalAddress ;
-    :addressLocality "Troisdorf" ;
-    :postalCode "D-53840" ;
-    :streetAddress "Carl-Diem-Str. 3" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-11997 a schema:PostalAddress ;
-    :addressLocality "Köln" ;
-    :postalCode "50735" ;
-    :streetAddress "Nattermannallee 1" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-12027 a schema:PostalAddress ;
-    :addressLocality "Remeteszolos" ;
-    :postOfficeBoxNumber "140" ;
-    :postalCode "2090" ;
-    :streetAddress "Patak setany 140, 2090 Remeteszolos, HU" ;
-    schema:addressCountry <https://ld.admin.ch/country/HUN> .
-
-:3-12028 a schema:PostalAddress ;
-    :addressLocality "Antwerpen" ;
-    :postOfficeBoxNumber "7" ;
-    :postalCode "2000" ;
-    :streetAddress "Grote Mark" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-12029 a schema:PostalAddress ;
-    :addressLocality "Bergamo" ;
-    :postOfficeBoxNumber "32/28" ;
-    :postalCode "24121" ;
-    :streetAddress "Via F.lli Bronzetti" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-12030 a schema:PostalAddress ;
-    :addressLocality "Lyon" ;
-    :postOfficeBoxNumber "11" ;
-    :postalCode "69002" ;
-    :streetAddress "bis quai Perrache" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-7009 a schema:PostalAddress ;
-    :addressLocality "Pomezia (Roma)" ;
-    :postalCode "00040" ;
-    :streetAddress "Via Campobello, 1" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-7032 a schema:PostalAddress ;
-    :addressLocality "Ecully CEDEX" ;
-    :postalCode "69136" ;
-    :streetAddress "21, chemin de la Sauvegard" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-7034 a schema:PostalAddress ;
-    :addressLocality "Wien" ;
-    :postalCode "A-1011" ;
-    :streetAddress "Lerchenfelder Gürtel 9-11" ;
-    schema:addressCountry <https://ld.admin.ch/country/AUT> .
-
-:3-7048 a schema:PostalAddress ;
-    :addressLocality "Guyancourt" ;
-    :postalCode "78280" ;
-    :streetAddress "5 rue Galilée" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-7056 a schema:PostalAddress ;
-    :addressLocality "Cesena Maderno" ;
-    :postalCode "20031" ;
-    :streetAddress "Via Marvonato 8" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-7070 a schema:PostalAddress ;
-    :addressLocality "Paris Cedex 07" ;
-    :streetAddress "137, Rue de l'université" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-7080 a schema:PostalAddress ;
-    :addressLocality "Ieper" ;
-    :postalCode "8100" ;
-    :streetAddress "Industrielaan 6 B" ;
-    schema:addressCountry <https://ld.admin.ch/country/BEL> .
-
-:3-7100 a schema:PostalAddress ;
-    :addressLocality "Hamburg" ;
-    :postalCode "20095" ;
-    :streetAddress "Nordkanalstrasse 28" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-7126 a schema:PostalAddress ;
-    :addressLocality "AT Muiden" ;
-    :postalCode "1398" ;
-    schema:addressCountry <https://ld.admin.ch/country/NLD> .
-
-:3-7127 a schema:PostalAddress ;
-    :addressLocality "Düsseldorf" ;
-    :postalCode "40212" ;
-    :streetAddress "Vogelsanger Weg 91" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-7143 a schema:PostalAddress ;
-    :addressLocality "Maves" ;
-    :postalCode "41500" ;
-    :streetAddress "15, rue du Pont, Pontijou - RD 924" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-7151 a schema:PostalAddress ;
-    :addressLocality "CURACAO (ANTILLE  NL)" ;
-    :streetAddress "Kaya W.F.G. (Jombi) Mensing 34 P.O. Box 403" ;
-    schema:addressCountry <https://ld.admin.ch/country/NLD> .
-
-:3-7162 a schema:PostalAddress ;
-    :addressLocality "S.Maria Mugano" ;
-    :postalCode "41010" ;
-    :streetAddress "Via Bellaria 164" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-7170 a schema:PostalAddress ;
-    :addressLocality "Aix-en-Provence" ;
-    :postalCode "13090" ;
-    :streetAddress "VILLA CELONY, 1175 MONTEE D'AVIGNON" ;
-    schema:addressCountry <https://ld.admin.ch/country/FRA> .
-
-:3-7174 a schema:PostalAddress ;
-    :addressLocality "Allerheiligen " ;
-    :postalCode "8412" ;
-    :streetAddress "Europapark 1" ;
-    schema:addressCountry <https://ld.admin.ch/country/AUT> .
-
-:3-7179 a schema:PostalAddress ;
-    :addressLocality "Maintal" ;
-    :streetAddress "am Technologiepark 1 - 5" ;
-    schema:addressCountry <https://ld.admin.ch/country/DEU> .
-
-:3-7180 a schema:PostalAddress ;
-    :addressLocality "Wien" ;
-    :postalCode "1230" ;
-    :streetAddress "Anton-Baumgartner-Strasse 125" ;
-    schema:addressCountry <https://ld.admin.ch/country/AUT> .
-
-:3-7182 a schema:PostalAddress ;
-    :addressLocality "Milano" ;
-    :postalCode "20153" ;
-    :streetAddress "Via Gallarate, 139" ;
-    schema:addressCountry <https://ld.admin.ch/country/ITA> .
-
-:3-7183 a schema:PostalAddress ;
-    :addressLocality "Allerheiligen " ;
-    :postalCode "8412" ;
-    :streetAddress "Grossfeiting 16a" ;
-    schema:addressCountry <https://ld.admin.ch/country/AUT> .
 

@@ -1,6 +1,15 @@
 @prefix : <https://agriculture.ld.admin.ch/foag/plant-protection#> .
 @prefix wd: <https://www.wikidata.org/wiki/> .
 
+:6-10800 a :AbioticStressor,
+        :CropStressor .
+
+:6-10875 a :AbioticStressor,
+        :CropStressor .
+
+:6-11139 a :AbioticStressor,
+        :CropStressor .
+
 :6-10349 a :BioticStressor,
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q133266 .
@@ -597,8 +606,6 @@
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q10665947 .
 
-:6-10585 a :CropStressor .
-
 :6-10589 a :BioticStressor,
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q108599739 .
@@ -740,8 +747,6 @@
 :6-10671 a :BioticStressor,
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q108687355 .
-
-:6-10673 a :CropStressor .
 
 :6-10678 a :BioticStressor,
         :CropStressor ;
@@ -979,26 +984,9 @@
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q7255252 .
 
-:6-10798 a :CropStressor .
-
-:6-10799 a :CropStressor .
-
-:6-10800 a :AbioticStressor,
-        :CropStressor .
-
-:6-10802 a :CropStressor .
-
-:6-10803 a :CropStressor .
-
-:6-10804 a :CropStressor .
-
 :6-10806 a :BioticStressor,
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q794323 .
-
-:6-10809 a :CropStressor .
-
-:6-10810 a :CropStressor .
 
 :6-10823 a :BioticStressor,
         :CropStressor ;
@@ -1065,8 +1053,6 @@
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q163527 .
 
-:6-10861 a :CropStressor .
-
 :6-10862 a :BioticStressor,
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q517643 .
@@ -1090,11 +1076,6 @@
 :6-10871 a :BioticStressor,
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q1235677 .
-
-:6-10873 a :CropStressor .
-
-:6-10875 a :AbioticStressor,
-        :CropStressor .
 
 :6-10882 a :BioticStressor,
         :CropStressor ;
@@ -1142,8 +1123,6 @@
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q289074,
         wd:Q84857640 .
-
-:6-10898 a :CropStressor .
 
 :6-10900 a :BioticStressor,
         :CropStressor ;
@@ -1268,8 +1247,6 @@
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q602740 .
 
-:6-10967 a :CropStressor .
-
 :6-10968 a :BioticStressor,
         :CropStressor .
 
@@ -1292,8 +1269,6 @@
 :6-10976 a :BioticStressor,
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q7216874 .
-
-:6-10977 a :CropStressor .
 
 :6-10979 a :BioticStressor,
         :CropStressor ;
@@ -1378,8 +1353,6 @@
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q2699011 .
 
-:6-11005 a :CropStressor .
-
 :6-11006 a :BioticStressor,
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q5147068 .
@@ -1448,8 +1421,6 @@
 :6-11037 a :BioticStressor,
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q10433893 .
-
-:6-11042 a :CropStressor .
 
 :6-11047 a :BioticStressor,
         :CropStressor ;
@@ -1558,14 +1529,9 @@
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q10649257 .
 
-:6-11139 a :AbioticStressor,
-        :CropStressor .
-
 :6-11144 a :BioticStressor,
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q598541 .
-
-:6-11151 a :CropStressor .
 
 :6-11157 a :BioticStressor,
         :CropStressor ;
@@ -1582,8 +1548,6 @@
 :6-11160 a :BioticStressor,
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q682164 .
-
-:6-11162 a :CropStressor .
 
 :6-11168 a :BioticStressor,
         :CropStressor ;
@@ -1741,8 +1705,6 @@
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q2207329 .
 
-:6-11227 a :CropStressor .
-
 :6-11229 a :BioticStressor,
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q337796 .
@@ -1811,8 +1773,6 @@
 :6-11263 a :BioticStressor,
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q10681915 .
-
-:6-11264 a :CropStressor .
 
 :6-11265 a :BioticStressor,
         :CropStressor ;
@@ -1969,8 +1929,6 @@
         wd:Q18539312,
         wd:Q841786 .
 
-:6-12631 a :CropStressor .
-
 :6-12668 a :BioticStressor,
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q10646258,
@@ -2038,8 +1996,6 @@
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q104978214 .
 
-:6-13677 a :CropStressor .
-
 :6-13704 a :BioticStressor,
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q6741484 .
@@ -2052,8 +2008,6 @@
 :6-13852 a :BioticStressor,
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q10457059 .
-
-:6-13946 a :CropStressor .
 
 :6-14147 a :BioticStressor,
         :CropStressor ;
@@ -2146,4 +2100,50 @@
 :6-15868 a :BioticStressor,
         :CropStressor ;
     :bioticStressorIsDefinedByBiologicalTaxon wd:Q600498 .
+
+:6-10585 a :CropStressor .
+
+:6-10673 a :CropStressor .
+
+:6-10798 a :CropStressor .
+
+:6-10799 a :CropStressor .
+
+:6-10802 a :CropStressor .
+
+:6-10803 a :CropStressor .
+
+:6-10804 a :CropStressor .
+
+:6-10809 a :CropStressor .
+
+:6-10810 a :CropStressor .
+
+:6-10861 a :CropStressor .
+
+:6-10873 a :CropStressor .
+
+:6-10898 a :CropStressor .
+
+:6-10967 a :CropStressor .
+
+:6-10977 a :CropStressor .
+
+:6-11005 a :CropStressor .
+
+:6-11042 a :CropStressor .
+
+:6-11151 a :CropStressor .
+
+:6-11162 a :CropStressor .
+
+:6-11227 a :CropStressor .
+
+:6-11264 a :CropStressor .
+
+:6-12631 a :CropStressor .
+
+:6-13677 a :CropStressor .
+
+:6-13946 a :CropStressor .
 
