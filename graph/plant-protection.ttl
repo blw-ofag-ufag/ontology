@@ -17228,7 +17228,8 @@ ns1:6-15868 a ns1:BioticStressor,
         ns1:CropStressor ;
     ns1:bioticStressorIsDefinedByBiologicalTaxon <https://www.wikidata.org/wiki/Q600498> .
 
-ns1:ActiveSubstance rdfs:label "Aktivsubstanz"@de,
+ns1:ActiveSubstance a owl:Class ;
+    rdfs:label "Aktivsubstanz"@de,
         "Active substance"@en ;
     rdfs:comment "Aktivsubstanzen (auch Wirkstoffe genannt) sind biologisch aktive Verbindungen, die in geringen Konzentrationen biochemische und physiologische Prozesse in pflanzlichen, tierischen und menschlichen Organismen quantitativ und/oder qualitativ in Form von Hemmung oder Aktivierung beeinflussen."@de,
         "Active substances (also known as active ingredients) are biologically active compounds which, in low concentrations, influence biochemical and physiological processes in plant, animal and human organisms quantitatively and/or qualitatively in the form of inhibition or activation."@en ;
@@ -17237,7 +17238,8 @@ ns1:ActiveSubstance rdfs:label "Aktivsubstanz"@de,
     skos:altLabel "Active ingredient",
         "Wirkstoff"@de .
 
-ns1:AdditiveToDeclare rdfs:label "Zu deklarierende Additive"@de,
+ns1:AdditiveToDeclare a owl:Class ;
+    rdfs:label "Zu deklarierende Additive"@de,
         "Additives to declare"@en ;
     rdfs:comment "Additive, die in einem Produkt enthalten sind und deklariert werden müssen, beispielsweise aufgrund ihrer chemischen Eigenschaften oder potenziellen Auswirkungen."@de,
         "Additives that are included in a product and must be declared, for example due to their chemical properties or potential effects."@en ;
@@ -17799,40 +17801,30 @@ ns1:minimumWaitingPeriod a owl:DatatypeProperty ;
         "DigiAgriFoodCH System Map"@en ;
     owl:versionInfo "0.2.2" .
 
-<https://agriculture.ld.admin.ch/foag/system-map#CLS005> a owl:Class ;
+<https://agriculture.ld.admin.ch/foag/system-map#CLS-005> a owl:Class ;
     rdfs:label "Informationseinheit mit besonders schützenswerten Personendaten"@de,
         "Information unit containing sensitive personal data"@en ;
     rdfs:seeAlso <https://www.fedlex.admin.ch/eli/oc/2022/491/de#art_5> ;
-    rdfs:subClassOf <https://agriculture.ld.admin.ch/foag/system-map#CLS004> .
+    rdfs:subClassOf <https://agriculture.ld.admin.ch/foag/system-map#CLS-004> .
 
-<https://agriculture.ld.admin.ch/foag/system-map#derives> a owl:ObjectProperty ;
-    rdfs:label "leitet ab von"@de,
-        "derives"@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS003> ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS003> ;
-    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#derivedFrom> .
-
-<https://agriculture.ld.admin.ch/foag/system-map#isOperatedBy> a owl:ObjectProperty ;
-    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#operates> .
-
-<https://agriculture.ld.admin.ch/foag/system-map#organizationAbbreviation> a owl:DatatypeProperty ;
-    rdfs:label "Organisationsabkürzung"@de,
-        "Organization abbreviation"@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS001> ;
-    rdfs:range xsd:string .
-
-<https://agriculture.ld.admin.ch/foag/system-map#subOrganization> a owl:ObjectProperty,
+<https://agriculture.ld.admin.ch/foag/system-map#PRP-002> a owl:ObjectProperty,
         owl:TransitiveProperty ;
     rdfs:label "beinhaltet Suborganisation"@de,
         "contains Suborganization"@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS001> ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS001> ;
-    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#superOrganization> .
+    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS-001> ;
+    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS-001> ;
+    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#PRP-001> .
 
-<https://agriculture.ld.admin.ch/foag/system-map#systemAbbreviation> a owl:DatatypeProperty ;
+<https://agriculture.ld.admin.ch/foag/system-map#PRP-007> a owl:DatatypeProperty ;
+    rdfs:label "Organisationsabkürzung"@de,
+        "Organization abbreviation"@en ;
+    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS-001> ;
+    rdfs:range xsd:string .
+
+<https://agriculture.ld.admin.ch/foag/system-map#PRP-010> a owl:DatatypeProperty ;
     rdfs:label "Abkürzung des IT-Systems"@de,
         "System abbreviation"@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS002> ;
+    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS-002> ;
     rdfs:range xsd:string .
 
 schema:address a owl:ObjectProperty ;
@@ -20296,76 +20288,96 @@ ns1:protects a owl:ObjectProperty ;
     rdfs:domain ns1:Action ;
     rdfs:range ns1:CropGroup .
 
-<https://agriculture.ld.admin.ch/foag/system-map#CLS004> a owl:Class ;
+<https://agriculture.ld.admin.ch/foag/system-map#CLS-004> a owl:Class ;
     rdfs:label "Informationseinheit mit Personendaten"@de,
         "Information unit containing personal data"@en ;
     rdfs:seeAlso <https://www.fedlex.admin.ch/eli/oc/2022/491/de#art_5> ;
-    rdfs:subClassOf <https://agriculture.ld.admin.ch/foag/system-map#CLS003> .
+    rdfs:subClassOf <https://agriculture.ld.admin.ch/foag/system-map#CLS-003> .
 
-<https://agriculture.ld.admin.ch/foag/system-map#contains> a owl:ObjectProperty ;
-    rdfs:label "beinhaltet"@de,
-        "contains"@en ;
-    rdfs:comment "Gibt an, dass ein IT-System X die Informationseinheit Y enthält. Beispielsweise enthält AGIS Informationen über landwirtschaftliche Flächen in der Schweiz."@de,
-        "Indicates that an IT system X contains the information unit Y. For example, AGIS contains information about farming area in Switzerland."@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS002> ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS003> ;
-    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#isContainedIn> .
+<https://agriculture.ld.admin.ch/foag/system-map#PRP-001> a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "ist Teil von"@de,
+        "is a part of"@en ;
+    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS-001> ;
+    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS-001> .
 
-<https://agriculture.ld.admin.ch/foag/system-map#hasMember> a owl:ObjectProperty ;
+<https://agriculture.ld.admin.ch/foag/system-map#PRP-003> a owl:ObjectProperty ;
     rdfs:label "hat Mitgliederorganisationen"@de,
         "has memeber organizations"@en ;
     rdfs:comment "Gibt an, dass eine Organisation X eine andere Organisation Y als Mitgliedsorganisation hat. Diese Beziehung soll Mitgliedschaften von Branchenorganisationen, Berufsverbänden oder anderen formelle Vereinigungen darzustellen, bei denen Organisationen als Mitglieder teilnehmen. Informelle Beziehungen gehören nicht dazu."@de,
         "Indicates that an organization X has another organization Y as a member organization. This relationship is used to represent memberships of industry organizations, professional associations, or other formal associations in which organizations participate as members. Informal relationships are not included."@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS001> ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS001> ;
-    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#memberOf> .
+    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS-001> ;
+    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS-001> ;
+    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#PRP-004> .
 
-<https://agriculture.ld.admin.ch/foag/system-map#isContainedIn> a owl:ObjectProperty ;
-    rdfs:label "beinhaltet"@de,
-        "contains"@en ;
-    rdfs:comment "Gibt an, dass eine Informationseinheit X im IT-System Y enthalten ist. Beispielsweise sind Informationen über landwirtschaftliche Flächen in der Schweiz in AGIS enthalten."@de,
-        "Indicates that an information unit X is contained in the IT system Y. For example, information about farming area in Switzerland is contained in AGIS."@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS002> ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS003> ;
-    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#contains> .
-
-<https://agriculture.ld.admin.ch/foag/system-map#memberOf> a owl:ObjectProperty ;
+<https://agriculture.ld.admin.ch/foag/system-map#PRP-004> a owl:ObjectProperty ;
     rdfs:label "ist eine Mitgliedsorganisation von"@de,
         "is a member organization of"@en ;
     rdfs:comment "Gibt an, dass eine Organisation X eine Mitgliedsorganisation einer anderen Organisation Y ist. Die Beziehung soll Mitgliedschaften von Branchenorganisationen, Berufsverbänden oder anderen formelle Vereinigungen darzustellen, bei denen Organisationen als Mitglieder teilnehmen. Informelle Beziehungen gehören nicht dazu."@de,
         "Indicates that an organization X is a member organization of another organization Y. The relationship is used to represent memberships of industry organizations, professional associations, or other formal associations in which organizations participate as members. Informal relationships are not included."@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS001> ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS001> ;
-    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#hasMember> .
+    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS-001> ;
+    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS-001> ;
+    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#PRP-003> .
 
-<https://agriculture.ld.admin.ch/foag/system-map#operates> a owl:ObjectProperty ;
+<https://agriculture.ld.admin.ch/foag/system-map#PRP-005> a owl:ObjectProperty ;
+    rdfs:label "ist (teilweise) in Besitz von"@de,
+        "is (partially) owned by"@en ;
+    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS-001> ;
+    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS-001> ;
+    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#PRP-006> .
+
+<https://agriculture.ld.admin.ch/foag/system-map#PRP-006> a owl:ObjectProperty ;
+    rdfs:label "besitzt (teilweise)"@de,
+        "(partially) owns"@en ;
+    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS-001> ;
+    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS-001> ;
+    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#PRP-005> .
+
+<https://agriculture.ld.admin.ch/foag/system-map#PRP-008> a owl:ObjectProperty ;
+    rdfs:label "wird betrieben von"@de,
+        "is operated by"@en ;
+    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#PRP-009> .
+
+<https://agriculture.ld.admin.ch/foag/system-map#PRP-009> a owl:ObjectProperty ;
     rdfs:label "betreibt"@de,
         "operates"@en ;
     rdfs:comment "Diese Beziehung zeigt an, dass Organisation X für das Betriebssystem Y verantwortlich ist. Wenn Organisation Y den Betrieb eines Systems X an einen Dienstleister Z auslagert, verwenden Sie weiterhin diese Betriebsbeziehung zwischen X und Y, da sie eher die Verantwortlichkeit als den technischen Betrieb widerspiegelt. Die Beziehung ist auf niedrigstmöglicher Organisationsebene zu verwenden."@de,
         "This relationship indicates that organization X is in charge of operating system Y. If organization Y outsources the operation of a system X to a service provider Z, still use this operating relationship between X and Y since it reflects responsability rather than technical operation. Also, use this on the lowest organizational level possible."@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS001> ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS002> .
+    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS-001> ;
+    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS-002> ;
+    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#PRP-008> .
 
-<https://agriculture.ld.admin.ch/foag/system-map#ownedBy> a owl:ObjectProperty ;
-    rdfs:label "ist (teilweise) in Besitz von"@de,
-        "is (partially) owned by"@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS001> ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS001> ;
-    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#owns> .
+<https://agriculture.ld.admin.ch/foag/system-map#PRP-011> a owl:ObjectProperty ;
+    rdfs:label "beinhaltet"@de,
+        "contains"@en ;
+    rdfs:comment "Gibt an, dass ein IT-System X die Informationseinheit Y enthält. Beispielsweise enthält AGIS Informationen über landwirtschaftliche Flächen in der Schweiz."@de,
+        "Indicates that an IT system X contains the information unit Y. For example, AGIS contains information about farming area in Switzerland."@en ;
+    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS-002> ;
+    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS-003> ;
+    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#PRP-012> .
 
-<https://agriculture.ld.admin.ch/foag/system-map#owns> a owl:ObjectProperty ;
-    rdfs:label "besitzt (teilweise)"@de,
-        "(partially) owns"@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS001> ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS001> ;
-    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#ownedBy> .
+<https://agriculture.ld.admin.ch/foag/system-map#PRP-012> a owl:ObjectProperty ;
+    rdfs:label "beinhaltet"@de,
+        "contains"@en ;
+    rdfs:comment "Gibt an, dass eine Informationseinheit X im IT-System Y enthalten ist. Beispielsweise sind Informationen über landwirtschaftliche Flächen in der Schweiz in AGIS enthalten."@de,
+        "Indicates that an information unit X is contained in the IT system Y. For example, information about farming area in Switzerland is contained in AGIS."@en ;
+    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS-002> ;
+    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS-003> ;
+    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#PRP-011> .
 
-<https://agriculture.ld.admin.ch/foag/system-map#superOrganization> a owl:ObjectProperty,
-        owl:TransitiveProperty ;
-    rdfs:label "ist Teil von"@de,
-        "is a part of"@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS001> ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS001> .
+<https://agriculture.ld.admin.ch/foag/system-map#PRP-013> a owl:ObjectProperty ;
+    rdfs:label "leitet ab von"@de,
+        "derives"@en ;
+    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS-003> ;
+    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS-003> ;
+    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#PRP-014> .
+
+<https://agriculture.ld.admin.ch/foag/system-map#PRP-014> a owl:ObjectProperty ;
+    rdfs:label "ist abgeleitet von"@de,
+        "is derived from"@en ;
+    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS-003> ;
+    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS-003> ;
+    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#PRP-013> .
 
 <https://register.ld.admin.ch/zefix/company/1132670> ns1:holdsPermissionToSell ns1:1-W-4479-2 ;
     schema:addressCountry <https://ld.admin.ch/country/CHE> .
@@ -22305,13 +22317,6 @@ ns1:nonTargetOrganism a owl:Class ;
     rdfs:comment "Jeder Organismus ausser dem, gegen den das Pestizid angewendet wird."@de,
         "Any organism other than the one against which the pesticide is applied."@en .
 
-<https://agriculture.ld.admin.ch/foag/system-map#derivedFrom> a owl:ObjectProperty ;
-    rdfs:label "ist abgeleitet von"@de,
-        "is derived from"@en ;
-    rdfs:domain <https://agriculture.ld.admin.ch/foag/system-map#CLS003> ;
-    rdfs:range <https://agriculture.ld.admin.ch/foag/system-map#CLS003> ;
-    owl:inverseOf <https://agriculture.ld.admin.ch/foag/system-map#derivedFrom> .
-
 <https://register.ld.admin.ch/zefix/company/1119898> ns1:holdsPermissionToSell ns1:1-W-7021,
         ns1:1-W-7022 ;
     schema:addressCountry <https://ld.admin.ch/country/CHE> .
@@ -23495,7 +23500,7 @@ ns1:isDefinedByBiologicalTaxon a owl:ObjectProperty ;
         "is defined by biological taxon"@en ;
     rdfs:range <http://www.wikidata.org/entity/Q16521> .
 
-<https://agriculture.ld.admin.ch/foag/system-map#CLS002> a owl:Class ;
+<https://agriculture.ld.admin.ch/foag/system-map#CLS-002> a owl:Class ;
     rdfs:label "IT-System"@de,
         "IT system"@en ;
     rdfs:comment "Jedes IT-System (im abstrakten Sinne) mit einer oder mehreren Datenbanken. Beispiele für solche Systeme sind AGIS, das BI-System ASTAT des BLW oder die kantonalen IT-Systeme für die Landwirtschaft."@de,
@@ -30317,7 +30322,7 @@ ns1:Desinfectant a owl:Class ;
         "Desinfectant"@en ;
     rdfs:subClassOf ns1:ChemicalProduct .
 
-<https://agriculture.ld.admin.ch/foag/system-map#CLS003> a owl:Class ;
+<https://agriculture.ld.admin.ch/foag/system-map#CLS-003> a owl:Class ;
     rdfs:label "Informationseinheit"@de,
         "Information unit"@en ;
     rdfs:comment "Eine Information in einem IT-System. Das kann wirklich alles Mögliche sein."@de,
@@ -53577,7 +53582,7 @@ ns1:BCAInsectViruses a owl:Class ;
         "Insect virus products are biological control agents containing viruses that specifically harm insects. They provide an environmentally friendly alternative to chemical insecticides, as they target pests while being harmless to other organisms."@en ;
     rdfs:subClassOf ns1:BiologicalControlAgent .
 
-<https://agriculture.ld.admin.ch/foag/system-map#CLS001> a owl:Class ;
+<https://agriculture.ld.admin.ch/foag/system-map#CLS-001> a owl:Class ;
     rdfs:label "Organisation"@de,
         "Organization"@en ;
     rdfs:comment "Eine (juristische) Einheit wie ein Unternehmen, eine Behörde oder eine Non-Profit-Organisation oder eine Untereinheit einer solchen."@de,

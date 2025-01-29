@@ -11,21 +11,17 @@
 @prefix wdt: <http://www.wikidata.org/prop/direct/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-wdt:P171 a owl:ObjectProperty ;
-    rdfs:label "hat übergeordnetes Taxon"@de,
-        "has parent taxon"@en ;
-    rdfs:comment "Nächsthöheres Taxon nach einem bestimmten taxonomischen Gesichtspunkt. Da es mehrere taxonomische Gesichtspunkte gibt, ist mehr als ein übergeordnetes Taxon möglich."@de,
-        "Next higher taxon according to a certain taxonomic viewpoint. As multiple taxonomic viewpoints exist, more than one parent taxon is possible."@en ;
-    rdfs:domain wd:Q16521 ;
-    rdfs:range wd:Q16521 .
+chebi:24431 a owl:Class ;
+    rdfs:label "Chemische Entität"@de,
+        "chemical entity"@en ;
+    rdfs:comment "Eine chemische Entität, wie in der CheBI-Ontologie definiert, dient als Referenzpunkt zur Identifizierung und Klassifizierung von Substanzen."@de,
+        "A chemical entity as defined in the CheBI ontology, serving as a reference point for identifying and classifying substances."@en .
 
-pp: a owl:Ontology ;
-    dcterms:creator "Federal Office for Agriculture" ;
-    dcterms:description "Diese Ontologie veranschaulicht den Wert einer umfassenden und gut strukturierten Ontologieentwicklung für das Bundesamt für Landwirtschaft (und allgemein den Schweizer Agrar- und Lebensmittelsektor). Durch die formale Modellierung der Komplexität des Pflanzenschutzes (mit Schwerpunkt auf zugelassenen Produkten) verbessert sie das Verständnis der aktuellen Regeln und ermöglicht deren effektive Kommunikation über IT-Dienste."@de,
-        "This ontology exemplifies the value of comprehensive and well-structured ontology development for the Swiss Federal Office for Agriculture (and more broadly the Swiss agri-food sector). By capturing the complexities of crop protection (with a focus on registered products) in a formal model, it enhances understanding of current rules and allows their effective communication via IT-services."@en ;
-    dcterms:title "Eine (demonstrative) Ontologie für den Pflanzenschutz in der Schweiz"@de,
-        "A (demonstrative) ontology for crop protection in Switzerland"@en ;
-    owl:versionInfo "0.11" .
+wd:Q16521 a owl:Class ;
+    rdfs:label "Biologisches Taxon"@de,
+        "Biological taxon"@en ;
+    rdfs:comment "Gruppe von einem oder mehreren Organismen, die ein Taxonom als Einheit betrachtet."@de,
+        "Group of one or more organism(s), which a taxonomist adjudges to be a unit."@en .
 
 pp:AbioticStressor a owl:Class ;
     rdfs:label "Abiotischer Schadverursacher"@de,
@@ -45,7 +41,21 @@ pp:Acaricide a owl:Class ;
         "An acaricide is a chemical crop protection product used to control mites and ticks, which often cause damage to agricultural crops."@en ;
     rdfs:subClassOf pp:ChemicalCropProtectionProduct .
 
-pp:ActiveSubstance rdfs:label "Aktivsubstanz"@de,
+pp:Action a owl:Class ;
+    rdfs:label "Schutzmassnahme"@de,
+        "Protective action"@en ;
+    rdfs:comment "Eine spezifische Massnahme zur Minderung von Schäden an einer landwirtschaftlichen Kultur."@de,
+        "A specific action taken to mitigate damage done to crops."@en ;
+    skos:scopeNote "Diese Klasse ist nur dann zu verwenden, wenn es sich bei der Massnahme ausdrücklich nicht um eine Behandlung handelt, d. h. um die Anwendung von Pflanzenschutzmitteln auf Nutzpflanzen."@de,
+        "Only use this class when the action is specifically not a treatment; i.e. the application of crop protection proucts on crops."@en .
+
+pp:ActionNotice a owl:Class ;
+    rdfs:label "Hinweis bezüglich einer Schutzmassnahme"@de,
+        "Notice regarding a protective action"@en ;
+    rdfs:subClassOf pp:GeneralNotice .
+
+pp:ActiveSubstance a owl:Class ;
+    rdfs:label "Aktivsubstanz"@de,
         "Active substance"@en ;
     rdfs:comment "Aktivsubstanzen (auch Wirkstoffe genannt) sind biologisch aktive Verbindungen, die in geringen Konzentrationen biochemische und physiologische Prozesse in pflanzlichen, tierischen und menschlichen Organismen quantitativ und/oder qualitativ in Form von Hemmung oder Aktivierung beeinflussen."@de,
         "Active substances (also known as active ingredients) are biologically active compounds which, in low concentrations, influence biochemical and physiological processes in plant, animal and human organisms quantitatively and/or qualitatively in the form of inhibition or activation."@en ;
@@ -54,7 +64,8 @@ pp:ActiveSubstance rdfs:label "Aktivsubstanz"@de,
     skos:altLabel "Active ingredient",
         "Wirkstoff"@de .
 
-pp:AdditiveToDeclare rdfs:label "Zu deklarierende Additive"@de,
+pp:AdditiveToDeclare a owl:Class ;
+    rdfs:label "Zu deklarierende Additive"@de,
         "Additives to declare"@en ;
     rdfs:comment "Additive, die in einem Produkt enthalten sind und deklariert werden müssen, beispielsweise aufgrund ihrer chemischen Eigenschaften oder potenziellen Auswirkungen."@de,
         "Additives that are included in a product and must be declared, for example due to their chemical properties or potential effects."@en ;
@@ -66,6 +77,14 @@ pp:AdhesionAgents a owl:Class ;
     rdfs:comment "Netz- und Haftmittel sind chemische Produkte, die verwendet werden, um Pflanzenschutzmittel gleichmässig auf Pflanzenoberflächen zu verteilen und deren Anhaftung zu verbessern. Sie erhöhen die Effizienz und Wirksamkeit von Behandlungen."@de,
         "Wetting and adhesion agents are chemical products used to distribute crop protection products evenly on plant surfaces and enhance their adhesion. They improve the efficiency and effectiveness of treatments."@en ;
     rdfs:subClassOf pp:ChemicalProduct .
+
+pp:BBCH a owl:Class ;
+    rdfs:label "Anwendungszeitpunkt"@de,
+        "Application time"@en ;
+    rdfs:comment "Anwendungszeitpunkt für Behandlungen basierend auf der BBCH-Skala, die die phänologischen Entwicklungsstadien von Pflanzen standardisiert."@de,
+        "Application time for treatments based on the BBCH scale, which standardizes the phenological development stages of plants."@en ;
+    rdfs:seeAlso <https://w.wiki/CdkJ> ;
+    rdfs:subClassOf pp:TreatmentConstraint .
 
 pp:BCAAgainstFungi a owl:Class ;
     rdfs:label "Produkte gegen Pilze"@de,
@@ -111,15 +130,6 @@ pp:BCANematodes a owl:Class ;
         "Nematode products"@en ;
     rdfs:subClassOf pp:BiologicalControlAgent .
 
-pp:BCAisDefinedByBiologicalTaxon a owl:ObjectProperty ;
-    rdfs:label "ist definiert durch das biologische Taxon"@de,
-        "is defined by biological taxon"@en ;
-    rdfs:comment "Ein Organismus für die biologische Schädlingsbekämpfung gehört zu einem bestimmten biologischen Taxon."@de,
-        "A biological control agent belongs to a certain biological taxon."@en ;
-    rdfs:domain pp:BiologicalControlAgent ;
-    rdfs:range wd:Q16521 ;
-    rdfs:subPropertyOf pp:isDefinedByBiologicalTaxon .
-
 pp:Bactericide a owl:Class ;
     rdfs:label "Bakterizid"@de,
         "Bactericide"@en ;
@@ -133,6 +143,34 @@ pp:BestPracticeRecommendations a owl:Class ;
     rdfs:comment "Schutzmassnahmenempfehlungen geben Anleitung für die effektivsten und nachhaltigsten Massnahmen, um Schäden an spezifischen Nutzpflanzen zu verhindern oder zu minimieren, die durch bestimmte Stressfaktoren verursacht werden. Sie berücksichtigen die Art der Kultur, die Umweltbedingungen und die Besonderheiten des Stressfaktors."@de,
         "Protective action recommendations provide guidance on the most effective and sustainable measures to prevent or minimize damage to specific crops caused by particular stressors. They consider the type of crop, environmental conditions, and characteristics of the stressor."@en ;
     rdfs:subClassOf pp:ActionNotice .
+
+pp:BiologicalControlAgent a owl:Class ;
+    rdfs:label "Organismus für die biologische Schädlingsbekämpfung"@de,
+        "Biological control agent"@en ;
+    rdfs:subClassOf pp:CropProtectionProduct ;
+    owl:disjointWith pp:ChemicalProduct .
+
+pp:BioticStressor a owl:Class ;
+    rdfs:label "Biotischer Schadverursacher"@de,
+        "Biotic crop stressor"@en ;
+    rdfs:comment "Biologische Schädigung einer Kulturpflanze."@de,
+        "Biological harm to a crop."@en ;
+    rdfs:isDefinedBy wd:Q3500367 ;
+    rdfs:seeAlso <https://w.wiki/Byym> ;
+    rdfs:subClassOf pp:CropStressor .
+
+pp:ChemicalCropProtectionProduct a owl:Class ;
+    rdfs:label "Chemisches Pflanzenschutzmittel"@de,
+        "Chemical crop protection product"@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( pp:CropProtectionProduct pp:ChemicalProduct ) ] .
+
+pp:ChemicalProduct a owl:Class ;
+    rdfs:label "Chemisches Produkt"@de,
+        "Chemical product"@en ;
+    rdfs:comment "Jedes Produkt, das sich einigermassen gut durch seine (chemischen) Inhaltsstoffe beschreiben lässt."@de,
+        "Any product that can be reasonably well described by its (chemical) ingredients."@en ;
+    rdfs:subClassOf pp:Product .
 
 pp:CodeR a owl:Class ;
     rdfs:label "R-Satz"@de,
@@ -152,12 +190,58 @@ pp:CodeS a owl:Class ;
         <https://w.wiki/CjPv> ;
     rdfs:subClassOf pp:HazardStatement .
 
+pp:ComponentPortion a owl:Class ;
+    rdfs:label "Komponentenportion"@de,
+        "Component portion"@en ;
+    rdfs:comment "Eine Komponentenportion stellt einen einzelnen Bestandteil eines Gemisches dar. Sie legt die Bestandssubstanz und deren Prozentsatz fest. Jede Komponentenportion muss genau eine Bestandssubstanz haben."@de,
+        "A component portion represents a single constituent of a mixture, specifying the component substance and its percentage. Each component portion must have exactly one component substance."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty pp:hasComponentSubstance ] .
+
 pp:ControlDamageThreshold a owl:Class ;
     rdfs:label "Bekämpfungsschadschwelle"@de,
         "Control Damage Threshold"@en ;
     rdfs:comment "Definiert die Schadensschwelle, ab der Massnahmen zur Bekämpfung eines Stressors ergriffen werden sollten, um weiteren Schaden zu verhindern."@de,
         "Defines the damage threshold at which control measures should be implemented to prevent further harm from a stressor."@en ;
     rdfs:subClassOf pp:DamageThreshold .
+
+pp:CropGroup a owl:Class ;
+    rdfs:label "Landwirtschaftliche Kultur"@de,
+        "Crop"@en ;
+    rdfs:comment "Repräsentiert eine Kategorie von landwirtschaftlichen Pflanzen, die innerhalb des Pflanzenschutzrahmens gemeinsame Merkmale, Anbaumethoden oder Verwendungszwecke teilen."@de,
+        "Represents a category of agricultural plants that share common characteristics, cultivation methods, or purposes within the crop protection framework."@en ;
+    rdfs:scopeNote "Entwickelt zur Modellierung von Kulturgruppen, die aufgrund von Ähnlichkeiten in ihren biologischen Eigenschaften, Wachstumsanforderungen oder den für ihren Schutz eingesetzten Strategien gemeinsam bewirtschaftet werden."@de,
+        "Designed to model groups of crops that are managed collectively due to similarities in their biological attributes, growth requirements, or the strategies employed for their protection against stressors."@en .
+
+pp:CropProtectionProduct a owl:Class ;
+    rdfs:label "Pflanzenschutzmittel"@de,
+        "Crop protection product"@en ;
+    rdfs:comment "Repräsentiert Produkte, die speziell entwickelt wurden, um Pflanzen vor Stressoren, einschliesslich biotischer und abiotischer Faktoren, im landwirtschaftlichen Rahmen zu schützen."@de,
+        "Represents products specifically designed to protect crops from stressors, including both biotic and abiotic factors, within the agricultural framework."@en ;
+    rdfs:scopeNote "Obwohl alle Pflanzenschutzmittel dieser Klasse zugeordnet werden, gehört nicht jedes Produkt zum Pflanzenschutz. Diese Klasse richtet sich speziell an Produkte, die entwickelt wurden, um Stressoren, die Pflanzen beeinträchtigen, zu mindern oder zu verwalten, wodurch sie sich von anderen Produkten wie Wachstumsregulatoren unterscheiden, die zwar Produkte sind, aber nicht zum Pflanzenschutz gehören."@de,
+        "While all crop protection products are categorized under this class, not every product falls under plant protection. This class specifically targets products designed to mitigate or manage stressors affecting crops, distinguishing them from other products like growth regulators which, although they are products, do not fall under plant protection."@en ;
+    rdfs:subClassOf pp:Product .
+
+pp:CropStressor a owl:Class ;
+    rdfs:label "Schadverursacher"@de,
+        "Crop stressor"@en ;
+    rdfs:comment "Repräsentiert jeden Faktor oder Agenten, der die Pflanzengesundheit, den Ertrag oder die Qualität im landwirtschaftlichen Rahmen negativ beeinflusst."@de,
+        "Represents any factor or agent that negatively impacts crop health, yield, or quality within the agricultural framework."@en ;
+    rdfs:scopeNote "Diese Klasse ist zur Modellierung verschiedener Stressoren vorgesehen, die Pflanzen betreffen, einschliesslich biotischer und abiotischer Elemente, um die Identifizierung und das Management von Faktoren zu erleichtern, die die landwirtschaftliche Produktivität beeinträchtigen."@de,
+        "This class is intended to model various stressors affecting crops, including both biotic and abiotic elements, facilitating the identification and management of factors that compromise agricultural productivity."@en .
+
+pp:Damage a owl:Class ;
+    rdfs:label "(Potenzieller) Schaden"@de,
+        "(Potential) Damage"@en ;
+    rdfs:comment "Repräsentiert den (potenziellen) Schaden, die einer spezifischen Kultur durch einen spezifischen Stressor zugefügt werden kann."@de,
+        "Represents the adverse effects or harm (potentially) inflicted upon a specific crop due to a specific stressor."@en .
+
+pp:DamageThreshold a owl:Class ;
+    rdfs:label "Schadschwelle"@de,
+        "Damage threshold"@en ;
+    rdfs:comment "Definiert die Schadensschwelle, ab der ein Stressor eine spezifische Kultur signifikant beeinträchtigt, und Massnahmen zur Reduzierung des Schadens erwogen werden sollten."@de,
+        "Defines the damage threshold at which a stressor significantly impacts a specific crop, and measures to mitigate the damage should be considered."@en .
 
 pp:Desinfectant a owl:Class ;
     rdfs:label "Desinfektionsmittel"@de,
@@ -171,6 +255,12 @@ pp:EconomicDamageThreshold a owl:Class ;
         "Defines the damage threshold at which the expected economic harm caused by the stressor exceeds the cost of control measures."@en ;
     rdfs:subClassOf pp:DamageThreshold .
 
+pp:EnvironmentalCondition a owl:Class ;
+    rdfs:label "Umweltbedingung"@de,
+        "Environmental condition"@en ;
+    rdfs:comment "Repräsentiert jeden Umweltfaktor oder jede Umweltbedingung, die die Pflanzengesundheit, das Wachstum oder die Bewirtschaftung im landwirtschaftlichen Rahmen beeinflussen kann."@de,
+        "Represents any environmental factor or situation that can influence crop health, growth, or management within agriculture."@en .
+
 pp:Fungicide a owl:Class ;
     rdfs:label "Fungizid"@de,
         "Fungicide"@en ;
@@ -178,12 +268,39 @@ pp:Fungicide a owl:Class ;
         "A fungicide is a chemical crop protection product used to combat fungal diseases in agriculture. It kills fungi or inhibits their growth to protect crop yields and quality."@en ;
     rdfs:subClassOf pp:ChemicalCropProtectionProduct .
 
+pp:GeneralNotice a owl:Class ;
+    rdfs:label "Allgemeiner Hinweis"@de,
+        "General Notice"@en .
+
+pp:HazardStatement a owl:Class ;
+    rdfs:label "Sicherheitshinweise für Gefahrstoffe"@de,
+        "Hazard statements"@en ;
+    rdfs:comment "H-Sätze (Gefahrenhinweise) und die ergänzenden EUH-Sätze sind standardisierte Beschreibungen der spezifischen Gefahren, die von chemischen Stoffen oder Gemischen ausgehen, wie z. B. Toxizität, Entflammbarkeit oder Umweltschädlichkeit. Sie sind Teil des Global Harmonisierten Systems (GHS) und gewährleisten eine klare, einheitliche Kommunikation chemischer Gefahren weltweit."@de,
+        "H-statements (Hazard Statements) and the complementary EUH-statements are standardized descriptions of the specific dangers posed by chemical substances or mixtures, such as toxicity, flammability, or environmental harm. They are part of the Globally Harmonized System (GHS) and ensure clear, consistent communication of chemical hazards worldwide."@en ;
+    rdfs:seeAlso <https://w.wiki/CVwr> ;
+    rdfs:subClassOf pp:GeneralNotice .
+
 pp:Herbicide a owl:Class ;
     rdfs:label "Herbizid"@de,
         "Herbicide"@en ;
     rdfs:comment "Ein Herbizid ist ein chemisches Pflanzenschutzmittel, das zur Bekämpfung unerwünschter Pflanzen (Unkräuter) eingesetzt wird. Es hilft, das Wachstum von Unkräutern zu hemmen oder sie abzutöten, um die Erträge und Qualität der Kulturpflanzen zu schützen."@de,
         "A herbicide is a chemical crop protection product used to control unwanted plants (weeds). It helps inhibit the growth of weeds or eliminate them to protect the yields and quality of cultivated crops."@en ;
     rdfs:subClassOf pp:ChemicalCropProtectionProduct .
+
+pp:Insecticide a owl:Class ;
+    rdfs:label "Insektizid"@de,
+        "Insecticide"@en ;
+    rdfs:subClassOf pp:ChemicalCropProtectionProduct .
+
+pp:Mixture a owl:Class ;
+    rdfs:label "Chemisches Gemisch"@de,
+        "Chemical mixture"@en ;
+    rdfs:comment "Ein chemisches Gemisch ist eine Art von Substanz, die aus mindestens zwei Komponentenportionen besteht, von denen jede eine Bestandssubstanz mit einem bestimmten Prozentsatz repräsentiert."@de,
+        "A chemical mixture is a type of substance that consists of at least two component portions, each representing a constituent substance with a specified percentage."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality "2"^^xsd:nonNegativeInteger ;
+            owl:onProperty pp:hasComponentPortion ],
+        pp:Substance .
 
 pp:Molluscicide a owl:Class ;
     rdfs:label "Molluskizid"@de,
@@ -206,19 +323,20 @@ pp:Nematicide a owl:Class ;
         "A nematicide is a chemical crop protection product used to control nematodes (roundworms). These agents are crucial for protecting cultivated plants, as nematodes can cause significant damage to root systems and reduce crop yields."@en ;
     rdfs:subClassOf pp:ChemicalCropProtectionProduct .
 
-pp:NonTargetOrganismIsDefinedByBiologicalTaxon a owl:ObjectProperty ;
-    rdfs:label "ist definiert durch das biologische Taxon"@de,
-        "is defined by biological taxon"@en ;
-    rdfs:domain pp:nonTargetOrganism ;
-    rdfs:range wd:Q16521 ;
-    rdfs:subPropertyOf pp:isDefinedByBiologicalTaxon .
-
 pp:Obligation a owl:Class ;
     rdfs:label "Auflage zu Behandlungen"@de,
         "Application requirement"@en ;
     rdfs:comment "Eine Auflage ist eine spezifische Bedingung oder Anforderung, die für die sachgemässe Anwendung eines Pflanzenschutzmittels gemäss dem Schweizer Pflanzenschutzmittelverzeichnis erfüllt werden muss. Diese Auflagen sollen die sichere und effektive Verwendung des Produkts gewährleisten und Risiken für Mensch, Tier und Umwelt minimieren."@de,
         "An application requirement is a specific condition or obligation that must be met for the proper use of a plant protection product according to the Swiss Plant Protection Product Register. These requirements are intended to ensure the safe and effective use of the product, minimizing risks to human health, animals, and the environment."@en ;
     rdfs:subClassOf pp:ActionNotice .
+
+pp:ParallelImport a owl:Class ;
+    rdfs:label "Parallelimport"@de,
+        "Parallel import"@en ;
+    rdfs:comment "Ein Parallelimport bezeichnet den Import von Pflanzenschutzmitteln, die in einem Land rechtmässig zugelassen sind und ohne ausdrückliche Zustimmung des Rechteinhabers in ein anderes Land eingeführt werden, sofern sie in Zusammensetzung und Zulassungsanforderungen einem bereits im Einfuhrland zugelassenen Produkt entsprechen. In der Schweiz erfordert ein solcher Import eine Generaleinfuhrbewilligung sowie die Einhaltung spezifischer Vorschriften zu Kennzeichnung, Verpackung und Verwendung gemäss dem schweizerischen Referenzprodukt. Dieses System gewährleistet die Verfügbarkeit von Produkten und berücksichtigt gleichzeitig Sicherheits-, Zulassungs- und Schutzrechte des geistigen Eigentums."@de,
+        "A parallel import refers to the importation of pesticide products that are legally authorized in one country and are brought into another without the direct consent of the intellectual property holder, provided they meet the same composition and regulatory standards as a product already authorized in the importing country. In Switzerland, such imports require a general import permit and compliance with specific labeling, packaging, and usage regulations aligned with the Swiss-approved reference product. This system ensures product availability while maintaining safety, regulatory adherence, and respect for intellectual property rights."@en ;
+    rdfs:seeAlso <https://www.fedlex.admin.ch/eli/cc/2010/340/de#art_36> ;
+    rdfs:subClassOf pp:Product .
 
 pp:Pheromone a owl:Class ;
     rdfs:label "Pheromon"@de,
@@ -234,14 +352,32 @@ pp:Phytoregulator a owl:Class ;
         "Phytoregulator"@en ;
     rdfs:subClassOf pp:ChemicalProduct .
 
+pp:Product a owl:Class ;
+    rdfs:label "Produkt"@de,
+        "Product"@en ;
+    rdfs:comment "Repräsentiert jedes Element im Rahmen des Pflanzenschutzes, das mit einer eidgenössischen Zulassungsnummer registriert ist und spezifische Berechtigungen hinsichtlich der nicht-beruflichen Verwendung aufweist."@de,
+        "Represents any item within the crop protection framework that is registered with a federal admission number and has specified permissions regarding non-professional use."@en ;
+    rdfs:scopeNote "Diese Klasse ist für die Modellierung aller Pflanzenschutzmittel vorgesehen, die eine eidgenössische Registrierung erfordern und Einschränkungen oder Berechtigungen für die nicht-berufliche Nutzung gemäss den Schweizer Vorschriften aufweisen können."@de,
+        "This class is intended for modeling all crop protection products requiring federal registration and that may have restrictions or allowances for non-professional usage as defined by Swiss regulations."@en ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty pp:isNonProfessionallyAllowed ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty pp:hasFederalAdmissionNumber ] .
+
+pp:PureSubstance a owl:Class ;
+    rdfs:label "Reine Substanz"@de,
+        "Pure substance"@en ;
+    rdfs:comment "Eine reine chemische Substanz ist mit genau einer CheBI-Chemikalie verknüpft und kann kein Gemisch sein. Reine Substanzen und chemische Gemische sind disjunkte Klassen."@de,
+        "A pure chemical substance is associated with exactly one CheBI chemical entity and cannot be a mixture. Pure substances and chemical mixtures are disjoint classes."@en ;
+    rdfs:subClassOf pp:Substance ;
+    owl:disjointWith pp:Mixture .
+
 pp:Rodenticide a owl:Class ;
     rdfs:label "Rodentizid"@de,
         "Rodenticide"@en ;
     rdfs:subClassOf pp:ChemicalCropProtectionProduct .
-
-pp:Safener rdfs:label "Safener"@de,
-        "Safener"@en ;
-    rdfs:subClassOf pp:Substance .
 
 pp:SeedDressing a owl:Class ;
     rdfs:label "Saatbeizmittel"@de,
@@ -258,6 +394,15 @@ pp:StorageProtectors a owl:Class ;
         "Storage protectors"@en ;
     rdfs:subClassOf pp:ChemicalProduct .
 
+pp:Substance a owl:Class ;
+    rdfs:label "Wirkstoff"@de,
+        "Substance"@en ;
+    rdfs:comment "Eine chemische Substanz, die entweder eine reine Substanz oder ein Gemisch aus anderen Substanzen sein kann. Jede Substanz kann mit höchstens einer CheBI-Chemikalie verknüpft sein."@de,
+        "A chemical substance, which may be either a pure substance or a mixture composed of other substances. Each substance can be associated with at most one CheBI chemical entity."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty pp:hasChebiIdentity ] .
+
 pp:Synergist a owl:Class ;
     rdfs:label "Synergist"@de,
         "Synergist"@en ;
@@ -265,36 +410,65 @@ pp:Synergist a owl:Class ;
         "A synergist is a substance that has little or no insecticidal effect on its own but enhances the efficacy of insecticides. Synergists function by inhibiting the detoxification mechanisms of pests, thereby increasing the toxicity of the insecticides."@en ;
     rdfs:subClassOf pp:Substance .
 
+pp:Treatment a owl:Class ;
+    rdfs:label "Behandlung"@de,
+        "Treatment"@en ;
+    rdfs:subClassOf pp:Action .
+
+pp:TreatmentConstraint a owl:Class ;
+    rdfs:label "Anwendungseinschränkung"@de,
+        "Treatment constraint"@en ;
+    rdfs:subClassOf pp:ActionNotice .
+
+pp:TreatmentDosage a owl:Class ;
+    rdfs:label "Dosierung"@de,
+        "Dosage"@en ;
+    rdfs:subClassOf pp:TreatmentConstraint .
+
+pp:TreatmentEfficacy a owl:Class ;
+    rdfs:label "Behandlungswirkung"@de,
+        "Treatment efficacy"@en .
+
+pp:TreatmentRate a owl:Class ;
+    rdfs:label "Anwendungsrate"@de,
+        "Application rate"@en ;
+    rdfs:comment "Anwendungsrate für Behandlungen."@de,
+        "Application rate for treatments."@en ;
+    rdfs:subClassOf pp:TreatmentConstraint .
+
 pp:Viricide a owl:Class ;
     rdfs:label "Virizid"@de,
         "Viricide"@en ;
     rdfs:subClassOf pp:ChemicalCropProtectionProduct .
 
-pp:appliesToProduct a owl:ObjectProperty ;
-    rdfs:label "bezieht sich auf das Produkt"@de,
-        "applies to product"@en ;
-    rdfs:comment "Diese Eigenschaft verknüpft eine Gefahrenkennzeichnung mit dem Produkt, auf das sie sich bezieht."@de,
-        "This property associates a hazard statement with the product it pertains to."@en ;
-    rdfs:domain pp:HazardStatement ;
-    rdfs:range pp:Product ;
-    owl:inverseOf pp:hasHazardStatement .
+pp:WaitingPeriod a owl:Class ;
+    rdfs:label "Wartefrist"@de,
+        "Waiting period"@en ;
+    rdfs:comment "Repräsentiert das erforderliche Zeitintervall nach einer Behandlung, in dem dasselbe Produkt nicht erneut auf dieselbe Kulturpflanze angewendet werden sollte."@de,
+        "Represents the required time interval after a treatment during which the same product should not be applied again to the same crop."@en ;
+    rdfs:subClassOf pp:TreatmentConstraint .
 
-pp:bioticStressorIsDefinedByBiologicalTaxon a owl:ObjectProperty ;
-    rdfs:label "ist definiert durch das biologische Taxon"@de,
-        "is defined by biological taxon"@en ;
-    rdfs:comment "Diese Eigenschaft verknüpft einen biotischen Stressor mit dem biologischen Taxon, das ihn definiert."@de,
-        "This property links a biotic stressor to the biological taxon that defines it."@en ;
-    rdfs:domain pp:BioticStressor ;
-    rdfs:range wd:Q16521 ;
-    rdfs:subPropertyOf pp:isDefinedByBiologicalTaxon .
+pp:nonTargetOrganism a owl:Class ;
+    rdfs:label "Nichtzielorganismus"@de,
+        "Non target organism"@en ;
+    rdfs:comment "Jeder Organismus ausser dem, gegen den das Pestizid angewendet wird."@de,
+        "Any organism other than the one against which the pesticide is applied."@en .
 
-pp:causesCollateralDamageTo a owl:ObjectProperty ;
-    rdfs:label "führt zu einem Kollateralschaden bei"@de,
-        "causes collateral damage to"@en ;
-    rdfs:comment "Diese Eigenschaft zeigt an, dass die Anwendung eines Produkts unbeabsichtigte Schäden bei Nicht-Zielorganismen verursachen kann."@de,
-        "This property signifies that the application of a product may lead to unintended harm to non-target organisms."@en ;
-    rdfs:domain pp:Product ;
-    rdfs:range pp:nonTargetOrganism .
+schema:Country a owl:Class ;
+    rdfs:label "Land"@de,
+        "Country"@en .
+
+schema:Organization a owl:Class ;
+    rdfs:label "Organisation"@de,
+        "Organization"@en ;
+    rdfs:comment "Repräsentiert jede formelle Einheit, wie Unternehmen, Institutionen oder Vereinigungen, die im landwirtschaftlichen Bereich des Pflanzenschutzrahmens tätig sind."@de,
+        "Represents any formal entity, such as companies, institutions, or associations, involved in the agricultural sector within the crop protection framework."@en ;
+    rdfs:scopeNote "Diese Klasse ist zur Modellierung von Organisationen im Pflanzenschutz vorgesehen. Sofern möglich, sollten Instanzen aus dem Schweizer zentralen Firmenindex (Zefix) wiederverwendet werden, um Konsistenz und Integration mit bestehenden Schweizer Organisationsdaten zu gewährleisten."@de,
+        "This class is intended to model organizations involved in crop protection. Whenever possible, instances from the Swiss central company index (Zefix) should be reused to ensure consistency and integration with existing Swiss organizational data."@en .
+
+schema:PostalAddress a owl:Class ;
+    rdfs:label "Postadresse"@de,
+        "Postal address"@en .
 
 pp:componentPercentage a owl:DatatypeProperty ;
     rdfs:label "Komponentenprozentsatz"@de,
@@ -304,15 +478,6 @@ pp:componentPercentage a owl:DatatypeProperty ;
     rdfs:domain pp:ComponentPortion ;
     rdfs:range xsd:float .
 
-pp:cropIsRelatedToBiologicalTaxon a owl:ObjectProperty ;
-    rdfs:label "hängt zusammen mit dem biologischen Taxon"@de,
-        "is related to biological taxon"@en ;
-    rdfs:comment "Diese Eigenschaft verknüpft eine landwirtschaftliche Kultur mit dem biologischen Taxon, mit dem sie verbunden ist."@de,
-        "This property links a crop to the biological taxon it is associated with."@en ;
-    rdfs:domain pp:CropGroup ;
-    rdfs:range wd:Q16521 ;
-    rdfs:subPropertyOf pp:isDefinedByBiologicalTaxon .
-
 pp:earliesBBCH a owl:DatatypeProperty ;
     rdfs:label "Frühestes BBCH-Stadium der Kulturpflanze"@de,
         "Earlies BBCH stage of the crop"@en ;
@@ -321,8 +486,7 @@ pp:earliesBBCH a owl:DatatypeProperty ;
     rdfs:domain pp:Damage ;
     rdfs:range xsd:float .
 
-pp:emoji a rdf:Property,
-        owl:DatatypeProperty ;
+pp:emoji a owl:DatatypeProperty ;
     rdfs:label "Emoji"@de,
         "Emoji"@en ;
     rdfs:comment "Definiert ein Emoji, das als symbolische Darstellung eines Dings dienen kann."@de,
@@ -331,31 +495,6 @@ pp:emoji a rdf:Property,
     rdfs:range xsd:string ;
     rdfs:scopeNote "Gedacht für die Verwendung bei Instanzen von Klassen, die sich wie Codelisten verhalten."@de,
         "Intended for use with instances of classes that function similarly to enumerated types."@en .
-
-pp:enables a owl:ObjectProperty ;
-    rdfs:label "ermöglicht"@de,
-        "enables"@en ;
-    rdfs:comment "Diese Eigenschaft zeigt an, dass eine bestimmte Umweltbedingung eine bestimmte Art von Schaden ermöglicht oder verursacht."@de,
-        "This property signifies that a specific environmental condition facilitates or leads to a particular type of damage."@en ;
-    rdfs:domain pp:EnvironmentalCondition ;
-    rdfs:range pp:Damage .
-
-pp:hasChildCropGroup a owl:ObjectProperty ;
-    rdfs:label "hat Untergruppe"@de,
-        "has child crop group"@en ;
-    rdfs:comment "Diese Eigenschaft zeigt an, dass eine Kulturgruppe eine andere Kulturgruppe als Untergruppe enthält."@de,
-        "This property indicates that a crop group includes another crop group as its subgroup."@en ;
-    rdfs:domain pp:CropGroup ;
-    rdfs:range pp:CropGroup ;
-    owl:inverseOf pp:hasParentCropGroup .
-
-pp:hasCountryOfOrigin a owl:ObjectProperty ;
-    rdfs:label "hat Herkunftsland"@de,
-        "has country of origin"@en ;
-    rdfs:comment "Diese Eigenschaft gibt das Land an, aus dem das Produkt stammt."@de,
-        "This property indicates the country where the product originates."@en ;
-    rdfs:domain pp:Product ;
-    rdfs:range schema:Country .
 
 pp:hasDamageThreshold a owl:DatatypeProperty ;
     rdfs:label "hat Schadschwelle"@de,
@@ -371,6 +510,14 @@ pp:hasExhaustionDeadline a owl:DatatypeProperty ;
     rdfs:domain pp:Product ;
     rdfs:range xsd:date .
 
+pp:hasFederalAdmissionNumber a owl:DatatypeProperty ;
+    rdfs:label "Eidgenössische Zulassungsnummer"@de,
+        "Federal admission number"@en ;
+    rdfs:comment "Die eidgenössische Zulassungsnummer identifiziert eine Produktregistrierung eindeutig. Sie ist entweder als W-Nummer im Fall von Bundeszulassungen (z. B. W-18) oder als Parallelimportnummer mit dem Anfangsbuchstaben des Ursprungslandes im Code im Fall von Parallelimporten (z. B. I-2789 für einen Parallelimport aus Italien) aufgebaut. Nummern mit einem Bindestrich (z. B. W-18-1, W-18-2) stehen für gleichwertige Produkte, die sich im Besitz verschiedener juristischer Personen befinden, während Nummern ohne Bindestrich (z. B. W-18) für die ursprüngliche Registrierung stehen."@de,
+        "The federal admission number uniquely identifies a product registration. It is either constructed as a W-Number in the case of federal admissions (e.g. W-18) or as a parallel import number with the country of origin starting letter in the code in the case of parallel imports (e.g. I-2789 for a parallel import from Italy). Numbers with a dash (e.g., W-18-1, W-18-2) represent equivalent products held by different legal entities, while numbers without a dash (e.g., W-18) represent the original registration."@en ;
+    rdfs:domain pp:Product ;
+    rdfs:range xsd:NCName .
+
 pp:hasForeignAdmissionNumber a owl:DatatypeProperty ;
     rdfs:label "Ausländische Zulassungsnummer"@de,
         "Foreign admission number"@en ;
@@ -384,15 +531,6 @@ pp:hasHazardStatementCode a owl:DatatypeProperty ;
         "Hazard statement code"@en ;
     rdfs:domain pp:HazardStatement ;
     rdfs:range xsd:string .
-
-pp:hasPermissionHolder a owl:ObjectProperty ;
-    rdfs:label "hat Verkaufsbewilligungshalter"@de,
-        "has permission holder"@en ;
-    rdfs:comment "Diese Eigenschaft verknüpft ein Produkt mit der Firma, die berechtigt ist, es zu verkaufen."@de,
-        "This property links a product to the company authorized to sell it."@en ;
-    rdfs:domain pp:Product ;
-    rdfs:range schema:Organization ;
-    owl:inverseOf pp:holdsPermissionToSell .
 
 pp:hasSoldoutDeadline a owl:DatatypeProperty ;
     rdfs:label "Ausverkauft-Frist"@de,
@@ -408,11 +546,6 @@ pp:hasTreatmentEfficacy a owl:DatatypeProperty ;
     rdfs:domain pp:Treatment ;
     rdfs:range pp:TreatmentEfficacy .
 
-pp:hasUnit a owl:ObjectProperty ;
-    rdfs:label "hat Einheit"@de,
-        "has Unit"@en ;
-    rdfs:domain pp:TreatmentConstraint .
-
 pp:hasUpperDamageLimit a owl:DatatypeProperty ;
     rdfs:label "Obere Schadenslimite"@de,
         "Upper damage limit"@en ;
@@ -421,115 +554,14 @@ pp:hasUpperDamageLimit a owl:DatatypeProperty ;
     rdfs:domain pp:Damage ;
     rdfs:range xsd:float .
 
-pp:involves a owl:ObjectProperty ;
-    rdfs:label "involviert"@de,
-        "involves"@en ;
-    rdfs:domain pp:Treatment ;
-    rdfs:range pp:Product .
-
-pp:isAffectedBy a owl:ObjectProperty ;
-    rdfs:label "ist betroffen von"@de,
-        "is affected by"@en ;
-    rdfs:domain pp:CropGroup ;
-    rdfs:range pp:Damage ;
-    owl:inverseOf pp:affects .
-
-pp:isCausedBy a owl:ObjectProperty ;
-    rdfs:label "wird verursacht von"@de,
-        "is caused by"@en ;
-    rdfs:domain pp:Damage ;
-    rdfs:range pp:CropStressor ;
-    owl:inverseOf pp:causes .
-
-pp:isChemicallyDefinedBy a owl:ObjectProperty ;
-    rdfs:label "ist chemisch definiert durch"@de,
-        "is chemically defined by"@en ;
-    rdfs:comment "Diese Eigenschaft verknüpft ein chemisches Produkt mit genau einer Substanz. Sie ermöglicht es, das Produkt in all seine chemischen Bestandteile und die jeweiligen Prozentsätze zu zerlegen."@de,
-        "This property links a chemical product to exactly one substance. It allows to decompose the product to all its chemical ingredients and the respective percentages."@en ;
-    rdfs:domain pp:ChemicalProduct ;
-    rdfs:range pp:Substance ;
-    owl:inverseOf pp:chemicallyDefines .
-
-pp:isConcernedBy a owl:ObjectProperty ;
-    rdfs:label "ist betroffen von"@de,
-        "is concerned by"@en ;
-    rdfs:domain pp:Action ;
-    rdfs:range pp:ActionNotice ;
-    owl:inverseOf pp:concerns .
-
-pp:isContainedIn a owl:ObjectProperty ;
-    rdfs:label "ist beinhaltet in"@de,
-        "is contained in"@en ;
-    rdfs:domain pp:PureSubstance ;
-    rdfs:range pp:ChemicalProduct ;
-    owl:inverseOf pp:contains .
-
-pp:isDamagedBy a owl:ObjectProperty ;
-    rdfs:label "wird beschädigt durch"@de,
-        "is damaged by"@en ;
-    rdfs:domain pp:CropGroup ;
-    rdfs:range pp:CropStressor ;
-    rdfs:subPropertyOf pp:interactsWith ;
-    owl:inverseOf pp:damages .
-
-pp:isLimitedBy a owl:ObjectProperty ;
-    rdfs:label "wird eingeschränkt durch"@de,
-        "is limited by"@en ;
-    rdfs:domain pp:Damage ;
-    rdfs:range pp:CropProtectionProduct ;
-    owl:inverseOf pp:limits .
-
-pp:isManagedBy a owl:ObjectProperty ;
-    rdfs:label "wird bekämpft von"@de,
-        "is managed by"@en ;
-    rdfs:domain pp:CropStressor ;
-    rdfs:range pp:CropProtectionProduct ;
-    rdfs:subPropertyOf pp:interactsWith ;
-    owl:inverseOf pp:manages .
-
-pp:isMetabolizedFrom a owl:ObjectProperty ;
-    rdfs:label "wird metabolisiert aus"@de,
-        "is metabolized from"@en ;
-    rdfs:domain pp:PureSubstance ;
-    rdfs:range pp:PureSubstance ;
-    owl:inverseOf pp:isMetabolizedTo .
-
-pp:isMitigatedBy a owl:ObjectProperty ;
-    rdfs:label "wird vermindert durch"@de,
-        "is mitigated by"@en ;
-    rdfs:domain pp:Damage ;
-    rdfs:range pp:Action ;
-    owl:inverseOf pp:mitigates .
-
-pp:isProtectedBy a owl:ObjectProperty ;
-    rdfs:label "wird geschützt durch"@de,
-        "is protected by"@en ;
-    rdfs:domain pp:CropGroup ;
-    rdfs:range pp:Action ;
-    owl:inverseOf pp:protects .
-
-pp:isSameProductAs a owl:ObjectProperty,
-        owl:SymmetricProperty ;
-    rdfs:label "ist dasselbe Produkt wie"@de,
-        "is the same product as"@en ;
-    rdfs:comment "Gibt an, dass zwei Produkte in ihrer chemischen Zusammensetzung oder in ihrem Organismus identisch sind, aber unter verschiedenen Namen verkauft werden. Solche zwei Produkte haben auch die gleiche Basis der Bundeszulassungsnummer. Zum Beispiel haben die Produkte mit den Zulassungsnummern W-6761 und W-6761-1 die gleiche chemische Zusammensetzung."@de,
-        "Indicates that two products are identical in their chemical composition or the contained organism but are sold under different names. Such two products also share the same federal admission number base. For example, the products with admission numbers W-6761 and W-6761-1 have the same chemical composition."@en ;
+pp:isNonProfessionallyAllowed a owl:DatatypeProperty ;
+    rdfs:label "Erlaubnis für die nicht-berufliche Verwendung"@de,
+        "Allowance for non-professional use"@en ;
+    rdfs:comment "Diese Eigenschaft gibt an, ob ein Produkt für die nicht-berufliche Verwendung zugelassen ist, wie in Artikel 64 der Schweizer Pflanzenschutzmittelverordnung (PSMV) definiert."@de,
+        "This property indicates whether a product is permitted for non-professional use, as defined by Article 64 of the Swiss Plant Protection Products Ordinance (PSMV)."@en ;
     rdfs:domain pp:Product ;
-    rdfs:range pp:Product .
-
-pp:isSimilarProductAs a owl:ObjectProperty,
-        owl:SymmetricProperty ;
-    rdfs:label "ist ein ähnliches Produkt wie"@de,
-        "is a similar product as"@en ;
-    rdfs:comment "Gibt an, dass zwei Produkte in ihrer Funktion ähnlich sind, obwohl sie in ihrer chemischen Zusammensetzung oder ihrem Organismus nicht identisch sind."@de,
-        "Indicates that two products are similar in their function, although not identical in their chemical composition or their organism."@en ;
-    rdfs:domain pp:Product ;
-    rdfs:range pp:Product .
-
-pp:knows a owl:ObjectProperty ;
-    rdfs:label "kennt"@de,
-        "knows"@en ;
-    rdfs:domain foaf:Person .
+    rdfs:range xsd:boolean ;
+    rdfs:seeAlso <https://www.fedlex.admin.ch/eli/cc/2010/340/de#art_64> .
 
 pp:latestBBCH a owl:DatatypeProperty ;
     rdfs:label "Spätestes BBCH-Stadium der Kulturpflanze"@de,
@@ -599,18 +631,6 @@ pp:minimumWaitingPeriod a owl:DatatypeProperty ;
     rdfs:domain pp:WaitingPeriod ;
     rdfs:range xsd:float .
 
-schema:address a owl:ObjectProperty ;
-    rdfs:label "hat Adresse"@de,
-        "has address"@en ;
-    rdfs:domain schema:Organization ;
-    rdfs:range schema:PostalAddress .
-
-schema:addressCountry a owl:ObjectProperty ;
-    rdfs:label "befindet sich in Land"@de,
-        "is located in country"@en ;
-    rdfs:domain schema:PostalAddress ;
-    rdfs:range schema:Country .
-
 schema:addressLocality a owl:DatatypeProperty ;
     rdfs:label "Ortschaft"@de,
         "Postal locality"@en ;
@@ -669,30 +689,29 @@ schema:telephone a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://www.rfc-editor.org/rfc/rfc3966> ;
     rdfs:range xsd:string .
 
-chebi:24431 a owl:Class ;
-    rdfs:label "Chemische Entität"@de,
-        "chemical entity"@en ;
-    rdfs:comment "Eine chemische Entität, wie in der CheBI-Ontologie definiert, dient als Referenzpunkt zur Identifizierung und Klassifizierung von Substanzen."@de,
-        "A chemical entity as defined in the CheBI ontology, serving as a reference point for identifying and classifying substances."@en .
+wdt:P171 a owl:ObjectProperty ;
+    rdfs:label "hat übergeordnetes Taxon"@de,
+        "has parent taxon"@en ;
+    rdfs:comment "Nächsthöheres Taxon nach einem bestimmten taxonomischen Gesichtspunkt. Da es mehrere taxonomische Gesichtspunkte gibt, ist mehr als ein übergeordnetes Taxon möglich."@de,
+        "Next higher taxon according to a certain taxonomic viewpoint. As multiple taxonomic viewpoints exist, more than one parent taxon is possible."@en ;
+    rdfs:domain wd:Q16521 ;
+    rdfs:range wd:Q16521 .
 
-pp:ParallelImport a owl:Class ;
-    rdfs:label "Parallelimport"@de,
-        "Parallel import"@en ;
-    rdfs:comment "Ein Parallelimport bezeichnet den Import von Pflanzenschutzmitteln, die in einem Land rechtmässig zugelassen sind und ohne ausdrückliche Zustimmung des Rechteinhabers in ein anderes Land eingeführt werden, sofern sie in Zusammensetzung und Zulassungsanforderungen einem bereits im Einfuhrland zugelassenen Produkt entsprechen. In der Schweiz erfordert ein solcher Import eine Generaleinfuhrbewilligung sowie die Einhaltung spezifischer Vorschriften zu Kennzeichnung, Verpackung und Verwendung gemäss dem schweizerischen Referenzprodukt. Dieses System gewährleistet die Verfügbarkeit von Produkten und berücksichtigt gleichzeitig Sicherheits-, Zulassungs- und Schutzrechte des geistigen Eigentums."@de,
-        "A parallel import refers to the importation of pesticide products that are legally authorized in one country and are brought into another without the direct consent of the intellectual property holder, provided they meet the same composition and regulatory standards as a product already authorized in the importing country. In Switzerland, such imports require a general import permit and compliance with specific labeling, packaging, and usage regulations aligned with the Swiss-approved reference product. This system ensures product availability while maintaining safety, regulatory adherence, and respect for intellectual property rights."@en ;
-    rdfs:seeAlso <https://www.fedlex.admin.ch/eli/cc/2010/340/de#art_36> ;
-    rdfs:subClassOf pp:Product .
+pp:BCAisDefinedByBiologicalTaxon a owl:ObjectProperty ;
+    rdfs:label "ist definiert durch das biologische Taxon"@de,
+        "is defined by biological taxon"@en ;
+    rdfs:comment "Ein Organismus für die biologische Schädlingsbekämpfung gehört zu einem bestimmten biologischen Taxon."@de,
+        "A biological control agent belongs to a certain biological taxon."@en ;
+    rdfs:domain pp:BiologicalControlAgent ;
+    rdfs:range wd:Q16521 ;
+    rdfs:subPropertyOf pp:isDefinedByBiologicalTaxon .
 
-pp:TreatmentEfficacy a owl:Class ;
-    rdfs:label "Behandlungswirkung"@de,
-        "Treatment efficacy"@en .
-
-pp:WaitingPeriod a owl:Class ;
-    rdfs:label "Wartefrist"@de,
-        "Waiting period"@en ;
-    rdfs:comment "Repräsentiert das erforderliche Zeitintervall nach einer Behandlung, in dem dasselbe Produkt nicht erneut auf dieselbe Kulturpflanze angewendet werden sollte."@de,
-        "Represents the required time interval after a treatment during which the same product should not be applied again to the same crop."@en ;
-    rdfs:subClassOf pp:TreatmentConstraint .
+pp:NonTargetOrganismIsDefinedByBiologicalTaxon a owl:ObjectProperty ;
+    rdfs:label "ist definiert durch das biologische Taxon"@de,
+        "is defined by biological taxon"@en ;
+    rdfs:domain pp:nonTargetOrganism ;
+    rdfs:range wd:Q16521 ;
+    rdfs:subPropertyOf pp:isDefinedByBiologicalTaxon .
 
 pp:affects a owl:ObjectProperty ;
     rdfs:label "betrifft"@de,
@@ -700,11 +719,37 @@ pp:affects a owl:ObjectProperty ;
     rdfs:domain pp:Damage ;
     rdfs:range pp:CropGroup .
 
+pp:appliesToProduct a owl:ObjectProperty ;
+    rdfs:label "bezieht sich auf das Produkt"@de,
+        "applies to product"@en ;
+    rdfs:comment "Diese Eigenschaft verknüpft eine Gefahrenkennzeichnung mit dem Produkt, auf das sie sich bezieht."@de,
+        "This property associates a hazard statement with the product it pertains to."@en ;
+    rdfs:domain pp:HazardStatement ;
+    rdfs:range pp:Product ;
+    owl:inverseOf pp:hasHazardStatement .
+
+pp:bioticStressorIsDefinedByBiologicalTaxon a owl:ObjectProperty ;
+    rdfs:label "ist definiert durch das biologische Taxon"@de,
+        "is defined by biological taxon"@en ;
+    rdfs:comment "Diese Eigenschaft verknüpft einen biotischen Stressor mit dem biologischen Taxon, das ihn definiert."@de,
+        "This property links a biotic stressor to the biological taxon that defines it."@en ;
+    rdfs:domain pp:BioticStressor ;
+    rdfs:range wd:Q16521 ;
+    rdfs:subPropertyOf pp:isDefinedByBiologicalTaxon .
+
 pp:causes a owl:ObjectProperty ;
     rdfs:label "verursacht"@de,
         "causes"@en ;
     rdfs:domain pp:CropStressor ;
     rdfs:range pp:Damage .
+
+pp:causesCollateralDamageTo a owl:ObjectProperty ;
+    rdfs:label "führt zu einem Kollateralschaden bei"@de,
+        "causes collateral damage to"@en ;
+    rdfs:comment "Diese Eigenschaft zeigt an, dass die Anwendung eines Produkts unbeabsichtigte Schäden bei Nicht-Zielorganismen verursachen kann."@de,
+        "This property signifies that the application of a product may lead to unintended harm to non-target organisms."@en ;
+    rdfs:domain pp:Product ;
+    rdfs:range pp:nonTargetOrganism .
 
 pp:chemicallyDefines a owl:ObjectProperty ;
     rdfs:label "definiert chemisch"@de,
@@ -726,12 +771,29 @@ pp:contains a owl:ObjectProperty ;
     rdfs:domain pp:ChemicalProduct ;
     rdfs:range pp:PureSubstance .
 
+pp:cropIsRelatedToBiologicalTaxon a owl:ObjectProperty ;
+    rdfs:label "hängt zusammen mit dem biologischen Taxon"@de,
+        "is related to biological taxon"@en ;
+    rdfs:comment "Diese Eigenschaft verknüpft eine landwirtschaftliche Kultur mit dem biologischen Taxon, mit dem sie verbunden ist."@de,
+        "This property links a crop to the biological taxon it is associated with."@en ;
+    rdfs:domain pp:CropGroup ;
+    rdfs:range wd:Q16521 ;
+    rdfs:subPropertyOf pp:isDefinedByBiologicalTaxon .
+
 pp:damages a owl:ObjectProperty ;
     rdfs:label "beschädigt"@de,
         "damages"@en ;
     rdfs:domain pp:CropStressor ;
     rdfs:range pp:CropGroup ;
     rdfs:subPropertyOf pp:interactsWith .
+
+pp:enables a owl:ObjectProperty ;
+    rdfs:label "ermöglicht"@de,
+        "enables"@en ;
+    rdfs:comment "Diese Eigenschaft zeigt an, dass eine bestimmte Umweltbedingung eine bestimmte Art von Schaden ermöglicht oder verursacht."@de,
+        "This property signifies that a specific environmental condition facilitates or leads to a particular type of damage."@en ;
+    rdfs:domain pp:EnvironmentalCondition ;
+    rdfs:range pp:Damage .
 
 pp:hasChebiIdentity a owl:ObjectProperty ;
     rdfs:label "hat CheBI-Identität"@de,
@@ -740,6 +802,15 @@ pp:hasChebiIdentity a owl:ObjectProperty ;
         "Associates a substance with its corresponding chemical entity in the CheBI ontology, facilitating standardized chemical identification."@en ;
     rdfs:domain pp:Substance ;
     rdfs:range chebi:24431 .
+
+pp:hasChildCropGroup a owl:ObjectProperty ;
+    rdfs:label "hat Untergruppe"@de,
+        "has child crop group"@en ;
+    rdfs:comment "Diese Eigenschaft zeigt an, dass eine Kulturgruppe eine andere Kulturgruppe als Untergruppe enthält."@de,
+        "This property indicates that a crop group includes another crop group as its subgroup."@en ;
+    rdfs:domain pp:CropGroup ;
+    rdfs:range pp:CropGroup ;
+    owl:inverseOf pp:hasParentCropGroup .
 
 pp:hasComponentPortion a owl:ObjectProperty ;
     rdfs:label "hat Komponentenportion"@de,
@@ -757,13 +828,13 @@ pp:hasComponentSubstance a owl:ObjectProperty ;
     rdfs:domain pp:ComponentPortion ;
     rdfs:range pp:Substance .
 
-pp:hasFederalAdmissionNumber a owl:DatatypeProperty ;
-    rdfs:label "Eidgenössische Zulassungsnummer"@de,
-        "Federal admission number"@en ;
-    rdfs:comment "Die eidgenössische Zulassungsnummer identifiziert eine Produktregistrierung eindeutig. Sie ist entweder als W-Nummer im Fall von Bundeszulassungen (z. B. W-18) oder als Parallelimportnummer mit dem Anfangsbuchstaben des Ursprungslandes im Code im Fall von Parallelimporten (z. B. I-2789 für einen Parallelimport aus Italien) aufgebaut. Nummern mit einem Bindestrich (z. B. W-18-1, W-18-2) stehen für gleichwertige Produkte, die sich im Besitz verschiedener juristischer Personen befinden, während Nummern ohne Bindestrich (z. B. W-18) für die ursprüngliche Registrierung stehen."@de,
-        "The federal admission number uniquely identifies a product registration. It is either constructed as a W-Number in the case of federal admissions (e.g. W-18) or as a parallel import number with the country of origin starting letter in the code in the case of parallel imports (e.g. I-2789 for a parallel import from Italy). Numbers with a dash (e.g., W-18-1, W-18-2) represent equivalent products held by different legal entities, while numbers without a dash (e.g., W-18) represent the original registration."@en ;
+pp:hasCountryOfOrigin a owl:ObjectProperty ;
+    rdfs:label "hat Herkunftsland"@de,
+        "has country of origin"@en ;
+    rdfs:comment "Diese Eigenschaft gibt das Land an, aus dem das Produkt stammt."@de,
+        "This property indicates the country where the product originates."@en ;
     rdfs:domain pp:Product ;
-    rdfs:range xsd:NCName .
+    rdfs:range schema:Country .
 
 pp:hasHazardStatement a owl:ObjectProperty ;
     rdfs:label "hat Sicherheitshinweis für Gefahrenstoff"@de,
@@ -777,11 +848,109 @@ pp:hasParentCropGroup a owl:ObjectProperty ;
     rdfs:domain pp:CropGroup ;
     rdfs:range pp:CropGroup .
 
+pp:hasPermissionHolder a owl:ObjectProperty ;
+    rdfs:label "hat Verkaufsbewilligungshalter"@de,
+        "has permission holder"@en ;
+    rdfs:comment "Diese Eigenschaft verknüpft ein Produkt mit der Firma, die berechtigt ist, es zu verkaufen."@de,
+        "This property links a product to the company authorized to sell it."@en ;
+    rdfs:domain pp:Product ;
+    rdfs:range schema:Organization ;
+    owl:inverseOf pp:holdsPermissionToSell .
+
+pp:hasUnit a owl:ObjectProperty ;
+    rdfs:label "hat Einheit"@de,
+        "has Unit"@en ;
+    rdfs:domain pp:TreatmentConstraint .
+
 pp:holdsPermissionToSell a owl:ObjectProperty ;
     rdfs:label "hat Bewilligung zum Verkauf von"@de,
         "holds Permission to sell"@en ;
     rdfs:domain schema:Organization ;
     rdfs:range pp:Product .
+
+pp:interactsWith a owl:ObjectProperty ;
+    rdfs:label "interagiert mit"@de,
+        "interacts with"@en ;
+    rdfs:comment "Allgemeine Beziehung für physische Dinge, die mit etwas anderem interagieren. Ein Tier *interagiert mit* seiner Nahrung. Ein Pestizid *interagiert mit* dem Zielorganismus."@de,
+        "General relationship for physical thingns that interact with something else. A animal *interacts with* its food. A pesticide *interacts with* the target organism."@en .
+
+pp:involves a owl:ObjectProperty ;
+    rdfs:label "involviert"@de,
+        "involves"@en ;
+    rdfs:domain pp:Treatment ;
+    rdfs:range pp:Product .
+
+pp:isAffectedBy a owl:ObjectProperty ;
+    rdfs:label "ist betroffen von"@de,
+        "is affected by"@en ;
+    rdfs:domain pp:CropGroup ;
+    rdfs:range pp:Damage ;
+    owl:inverseOf pp:affects .
+
+pp:isCausedBy a owl:ObjectProperty ;
+    rdfs:label "wird verursacht von"@de,
+        "is caused by"@en ;
+    rdfs:domain pp:Damage ;
+    rdfs:range pp:CropStressor ;
+    owl:inverseOf pp:causes .
+
+pp:isChemicallyDefinedBy a owl:ObjectProperty ;
+    rdfs:label "ist chemisch definiert durch"@de,
+        "is chemically defined by"@en ;
+    rdfs:comment "Diese Eigenschaft verknüpft ein chemisches Produkt mit genau einer Substanz. Sie ermöglicht es, das Produkt in all seine chemischen Bestandteile und die jeweiligen Prozentsätze zu zerlegen."@de,
+        "This property links a chemical product to exactly one substance. It allows to decompose the product to all its chemical ingredients and the respective percentages."@en ;
+    rdfs:domain pp:ChemicalProduct ;
+    rdfs:range pp:Substance ;
+    owl:inverseOf pp:chemicallyDefines .
+
+pp:isConcernedBy a owl:ObjectProperty ;
+    rdfs:label "ist betroffen von"@de,
+        "is concerned by"@en ;
+    rdfs:domain pp:Action ;
+    rdfs:range pp:ActionNotice ;
+    owl:inverseOf pp:concerns .
+
+pp:isContainedIn a owl:ObjectProperty ;
+    rdfs:label "ist beinhaltet in"@de,
+        "is contained in"@en ;
+    rdfs:domain pp:PureSubstance ;
+    rdfs:range pp:ChemicalProduct ;
+    owl:inverseOf pp:contains .
+
+pp:isDamagedBy a owl:ObjectProperty ;
+    rdfs:label "wird beschädigt durch"@de,
+        "is damaged by"@en ;
+    rdfs:domain pp:CropGroup ;
+    rdfs:range pp:CropStressor ;
+    rdfs:subPropertyOf pp:interactsWith ;
+    owl:inverseOf pp:damages .
+
+pp:isDefinedByBiologicalTaxon a owl:ObjectProperty ;
+    rdfs:label "ist definiert durch das biologische Taxon"@de,
+        "is defined by biological taxon"@en ;
+    rdfs:range wd:Q16521 .
+
+pp:isLimitedBy a owl:ObjectProperty ;
+    rdfs:label "wird eingeschränkt durch"@de,
+        "is limited by"@en ;
+    rdfs:domain pp:Damage ;
+    rdfs:range pp:CropProtectionProduct ;
+    owl:inverseOf pp:limits .
+
+pp:isManagedBy a owl:ObjectProperty ;
+    rdfs:label "wird bekämpft von"@de,
+        "is managed by"@en ;
+    rdfs:domain pp:CropStressor ;
+    rdfs:range pp:CropProtectionProduct ;
+    rdfs:subPropertyOf pp:interactsWith ;
+    owl:inverseOf pp:manages .
+
+pp:isMetabolizedFrom a owl:ObjectProperty ;
+    rdfs:label "wird metabolisiert aus"@de,
+        "is metabolized from"@en ;
+    rdfs:domain pp:PureSubstance ;
+    rdfs:range pp:PureSubstance ;
+    owl:inverseOf pp:isMetabolizedTo .
 
 pp:isMetabolizedTo a owl:ObjectProperty ;
     rdfs:label "wird metabolisiert zu"@de,
@@ -789,14 +958,42 @@ pp:isMetabolizedTo a owl:ObjectProperty ;
     rdfs:domain pp:PureSubstance ;
     rdfs:range pp:PureSubstance .
 
-pp:isNonProfessionallyAllowed a owl:DatatypeProperty ;
-    rdfs:label "Erlaubnis für die nicht-berufliche Verwendung"@de,
-        "Allowance for non-professional use"@en ;
-    rdfs:comment "Diese Eigenschaft gibt an, ob ein Produkt für die nicht-berufliche Verwendung zugelassen ist, wie in Artikel 64 der Schweizer Pflanzenschutzmittelverordnung (PSMV) definiert."@de,
-        "This property indicates whether a product is permitted for non-professional use, as defined by Article 64 of the Swiss Plant Protection Products Ordinance (PSMV)."@en ;
+pp:isMitigatedBy a owl:ObjectProperty ;
+    rdfs:label "wird vermindert durch"@de,
+        "is mitigated by"@en ;
+    rdfs:domain pp:Damage ;
+    rdfs:range pp:Action ;
+    owl:inverseOf pp:mitigates .
+
+pp:isProtectedBy a owl:ObjectProperty ;
+    rdfs:label "wird geschützt durch"@de,
+        "is protected by"@en ;
+    rdfs:domain pp:CropGroup ;
+    rdfs:range pp:Action ;
+    owl:inverseOf pp:protects .
+
+pp:isSameProductAs a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "ist dasselbe Produkt wie"@de,
+        "is the same product as"@en ;
+    rdfs:comment "Gibt an, dass zwei Produkte in ihrer chemischen Zusammensetzung oder in ihrem Organismus identisch sind, aber unter verschiedenen Namen verkauft werden. Solche zwei Produkte haben auch die gleiche Basis der Bundeszulassungsnummer. Zum Beispiel haben die Produkte mit den Zulassungsnummern W-6761 und W-6761-1 die gleiche chemische Zusammensetzung."@de,
+        "Indicates that two products are identical in their chemical composition or the contained organism but are sold under different names. Such two products also share the same federal admission number base. For example, the products with admission numbers W-6761 and W-6761-1 have the same chemical composition."@en ;
     rdfs:domain pp:Product ;
-    rdfs:range xsd:boolean ;
-    rdfs:seeAlso <https://www.fedlex.admin.ch/eli/cc/2010/340/de#art_64> .
+    rdfs:range pp:Product .
+
+pp:isSimilarProductAs a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "ist ein ähnliches Produkt wie"@de,
+        "is a similar product as"@en ;
+    rdfs:comment "Gibt an, dass zwei Produkte in ihrer Funktion ähnlich sind, obwohl sie in ihrer chemischen Zusammensetzung oder ihrem Organismus nicht identisch sind."@de,
+        "Indicates that two products are similar in their function, although not identical in their chemical composition or their organism."@en ;
+    rdfs:domain pp:Product ;
+    rdfs:range pp:Product .
+
+pp:knows a owl:ObjectProperty ;
+    rdfs:label "kennt"@de,
+        "knows"@en ;
+    rdfs:domain foaf:Person .
 
 pp:limits a owl:ObjectProperty ;
     rdfs:label "schränkt ein"@de,
@@ -829,223 +1026,27 @@ pp:protects a owl:ObjectProperty ;
     rdfs:domain pp:Action ;
     rdfs:range pp:CropGroup .
 
-pp:BioticStressor a owl:Class ;
-    rdfs:label "Biotischer Schadverursacher"@de,
-        "Biotic crop stressor"@en ;
-    rdfs:comment "Biologische Schädigung einer Kulturpflanze."@de,
-        "Biological harm to a crop."@en ;
-    rdfs:isDefinedBy wd:Q3500367 ;
-    rdfs:seeAlso <https://w.wiki/Byym> ;
-    rdfs:subClassOf pp:CropStressor .
+schema:address a owl:ObjectProperty ;
+    rdfs:label "hat Adresse"@de,
+        "has address"@en ;
+    rdfs:domain schema:Organization ;
+    rdfs:range schema:PostalAddress .
 
-pp:EnvironmentalCondition a owl:Class ;
-    rdfs:label "Umweltbedingung"@de,
-        "Environmental condition"@en ;
-    rdfs:comment "Repräsentiert jeden Umweltfaktor oder jede Umweltbedingung, die die Pflanzengesundheit, das Wachstum oder die Bewirtschaftung im landwirtschaftlichen Rahmen beeinflussen kann."@de,
-        "Represents any environmental factor or situation that can influence crop health, growth, or management within agriculture."@en .
+schema:addressCountry a owl:ObjectProperty ;
+    rdfs:label "befindet sich in Land"@de,
+        "is located in country"@en ;
+    rdfs:domain schema:PostalAddress ;
+    rdfs:range schema:Country .
 
-pp:GeneralNotice a owl:Class ;
-    rdfs:label "Allgemeiner Hinweis"@de,
-        "General Notice"@en .
+pp: a owl:Ontology ;
+    dcterms:creator "Federal Office for Agriculture" ;
+    dcterms:description "Diese Ontologie veranschaulicht den Wert einer umfassenden und gut strukturierten Ontologieentwicklung für das Bundesamt für Landwirtschaft (und allgemein den Schweizer Agrar- und Lebensmittelsektor). Durch die formale Modellierung der Komplexität des Pflanzenschutzes (mit Schwerpunkt auf zugelassenen Produkten) verbessert sie das Verständnis der aktuellen Regeln und ermöglicht deren effektive Kommunikation über IT-Dienste."@de,
+        "This ontology exemplifies the value of comprehensive and well-structured ontology development for the Swiss Federal Office for Agriculture (and more broadly the Swiss agri-food sector). By capturing the complexities of crop protection (with a focus on registered products) in a formal model, it enhances understanding of current rules and allows their effective communication via IT-services."@en ;
+    dcterms:title "Eine (demonstrative) Ontologie für den Pflanzenschutz in der Schweiz"@de,
+        "A (demonstrative) ontology for crop protection in Switzerland"@en ;
+    owl:versionInfo "0.11" .
 
-pp:Insecticide a owl:Class ;
-    rdfs:label "Insektizid"@de,
-        "Insecticide"@en ;
-    rdfs:subClassOf pp:ChemicalCropProtectionProduct .
-
-pp:Mixture a owl:Class ;
-    rdfs:label "Chemisches Gemisch"@de,
-        "Chemical mixture"@en ;
-    rdfs:comment "Ein chemisches Gemisch ist eine Art von Substanz, die aus mindestens zwei Komponentenportionen besteht, von denen jede eine Bestandssubstanz mit einem bestimmten Prozentsatz repräsentiert."@de,
-        "A chemical mixture is a type of substance that consists of at least two component portions, each representing a constituent substance with a specified percentage."@en ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:minCardinality "2"^^xsd:nonNegativeInteger ;
-            owl:onProperty pp:hasComponentPortion ],
-        pp:Substance .
-
-pp:Treatment a owl:Class ;
-    rdfs:label "Behandlung"@de,
-        "Treatment"@en ;
-    rdfs:subClassOf pp:Action .
-
-pp:TreatmentDosage a owl:Class ;
-    rdfs:label "Dosierung"@de,
-        "Dosage"@en ;
-    rdfs:subClassOf pp:TreatmentConstraint .
-
-pp:TreatmentRate a owl:Class ;
-    rdfs:label "Anwendungsrate"@de,
-        "Application rate"@en ;
-    rdfs:comment "Anwendungsrate für Behandlungen."@de,
-        "Application rate for treatments."@en ;
-    rdfs:subClassOf pp:TreatmentConstraint .
-
-pp:nonTargetOrganism a owl:Class ;
-    rdfs:label "Nichtzielorganismus"@de,
-        "Non target organism"@en ;
-    rdfs:comment "Jeder Organismus ausser dem, gegen den das Pestizid angewendet wird."@de,
-        "Any organism other than the one against which the pesticide is applied."@en .
-
-schema:Country a owl:Class ;
-    rdfs:label "Land"@de,
-        "Country"@en .
-
-pp:ComponentPortion a owl:Class ;
-    rdfs:label "Komponentenportion"@de,
-        "Component portion"@en ;
-    rdfs:comment "Eine Komponentenportion stellt einen einzelnen Bestandteil eines Gemisches dar. Sie legt die Bestandssubstanz und deren Prozentsatz fest. Jede Komponentenportion muss genau eine Bestandssubstanz haben."@de,
-        "A component portion represents a single constituent of a mixture, specifying the component substance and its percentage. Each component portion must have exactly one component substance."@en ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty pp:hasComponentSubstance ] .
-
-pp:DamageThreshold a owl:Class ;
-    rdfs:label "Schadschwelle"@de,
-        "Damage threshold"@en ;
-    rdfs:comment "Definiert die Schadensschwelle, ab der ein Stressor eine spezifische Kultur signifikant beeinträchtigt, und Massnahmen zur Reduzierung des Schadens erwogen werden sollten."@de,
-        "Defines the damage threshold at which a stressor significantly impacts a specific crop, and measures to mitigate the damage should be considered."@en .
-
-pp:BBCH a owl:Class ;
-    rdfs:label "Anwendungszeitpunkt"@de,
-        "Application time"@en ;
-    rdfs:comment "Anwendungszeitpunkt für Behandlungen basierend auf der BBCH-Skala, die die phänologischen Entwicklungsstadien von Pflanzen standardisiert."@de,
-        "Application time for treatments based on the BBCH scale, which standardizes the phenological development stages of plants."@en ;
-    rdfs:seeAlso <https://w.wiki/CdkJ> ;
-    rdfs:subClassOf pp:TreatmentConstraint .
-
-pp:interactsWith a owl:ObjectProperty ;
-    rdfs:label "interagiert mit"@de,
-        "interacts with"@en ;
-    rdfs:comment "Allgemeine Beziehung für physische Dinge, die mit etwas anderem interagieren. Ein Tier *interagiert mit* seiner Nahrung. Ein Pestizid *interagiert mit* dem Zielorganismus."@de,
-        "General relationship for physical thingns that interact with something else. A animal *interacts with* its food. A pesticide *interacts with* the target organism."@en .
-
-pp:isDefinedByBiologicalTaxon a owl:ObjectProperty ;
-    rdfs:label "ist definiert durch das biologische Taxon"@de,
-        "is defined by biological taxon"@en ;
-    rdfs:range wd:Q16521 .
-
-pp:ActionNotice a owl:Class ;
-    rdfs:label "Hinweis bezüglich einer Schutzmassnahme"@de,
-        "Notice regarding a protective action"@en ;
-    rdfs:subClassOf pp:GeneralNotice .
-
-pp:HazardStatement a owl:Class ;
-    rdfs:label "Sicherheitshinweise für Gefahrstoffe"@de,
-        "Hazard statements"@en ;
-    rdfs:comment "H-Sätze (Gefahrenhinweise) und die ergänzenden EUH-Sätze sind standardisierte Beschreibungen der spezifischen Gefahren, die von chemischen Stoffen oder Gemischen ausgehen, wie z. B. Toxizität, Entflammbarkeit oder Umweltschädlichkeit. Sie sind Teil des Global Harmonisierten Systems (GHS) und gewährleisten eine klare, einheitliche Kommunikation chemischer Gefahren weltweit."@de,
-        "H-statements (Hazard Statements) and the complementary EUH-statements are standardized descriptions of the specific dangers posed by chemical substances or mixtures, such as toxicity, flammability, or environmental harm. They are part of the Globally Harmonized System (GHS) and ensure clear, consistent communication of chemical hazards worldwide."@en ;
-    rdfs:seeAlso <https://w.wiki/CVwr> ;
-    rdfs:subClassOf pp:GeneralNotice .
-
-pp:TreatmentConstraint a owl:Class ;
-    rdfs:label "Anwendungseinschränkung"@de,
-        "Treatment constraint"@en ;
-    rdfs:subClassOf pp:ActionNotice .
-
-pp:CropProtectionProduct a owl:Class ;
-    rdfs:label "Pflanzenschutzmittel"@de,
-        "Crop protection product"@en ;
-    rdfs:comment "Repräsentiert Produkte, die speziell entwickelt wurden, um Pflanzen vor Stressoren, einschliesslich biotischer und abiotischer Faktoren, im landwirtschaftlichen Rahmen zu schützen."@de,
-        "Represents products specifically designed to protect crops from stressors, including both biotic and abiotic factors, within the agricultural framework."@en ;
-    rdfs:scopeNote "Obwohl alle Pflanzenschutzmittel dieser Klasse zugeordnet werden, gehört nicht jedes Produkt zum Pflanzenschutz. Diese Klasse richtet sich speziell an Produkte, die entwickelt wurden, um Stressoren, die Pflanzen beeinträchtigen, zu mindern oder zu verwalten, wodurch sie sich von anderen Produkten wie Wachstumsregulatoren unterscheiden, die zwar Produkte sind, aber nicht zum Pflanzenschutz gehören."@de,
-        "While all crop protection products are categorized under this class, not every product falls under plant protection. This class specifically targets products designed to mitigate or manage stressors affecting crops, distinguishing them from other products like growth regulators which, although they are products, do not fall under plant protection."@en ;
-    rdfs:subClassOf pp:Product .
-
-pp:PureSubstance a owl:Class ;
-    rdfs:label "Reine Substanz"@de,
-        "Pure substance"@en ;
-    rdfs:comment "Eine reine chemische Substanz ist mit genau einer CheBI-Chemikalie verknüpft und kann kein Gemisch sein. Reine Substanzen und chemische Gemische sind disjunkte Klassen."@de,
-        "A pure chemical substance is associated with exactly one CheBI chemical entity and cannot be a mixture. Pure substances and chemical mixtures are disjoint classes."@en ;
-    rdfs:subClassOf pp:Substance ;
-    owl:disjointWith pp:Mixture .
-
-schema:PostalAddress a owl:Class ;
-    rdfs:label "Postadresse"@de,
-        "Postal address"@en .
-
-wd:Q16521 a owl:Class ;
-    rdfs:label "Biologisches Taxon"@de,
-        "Biological taxon"@en ;
-    rdfs:comment "Gruppe von einem oder mehreren Organismen, die ein Taxonom als Einheit betrachtet."@de,
-        "Group of one or more organism(s), which a taxonomist adjudges to be a unit."@en .
-
-pp:Action a owl:Class ;
-    rdfs:label "Schutzmassnahme"@de,
-        "Protective action"@en ;
-    rdfs:comment "Eine spezifische Massnahme zur Minderung von Schäden an einer landwirtschaftlichen Kultur."@de,
-        "A specific action taken to mitigate damage done to crops."@en ;
-    skos:scopeNote "Diese Klasse ist nur dann zu verwenden, wenn es sich bei der Massnahme ausdrücklich nicht um eine Behandlung handelt, d. h. um die Anwendung von Pflanzenschutzmitteln auf Nutzpflanzen."@de,
-        "Only use this class when the action is specifically not a treatment; i.e. the application of crop protection proucts on crops."@en .
-
-schema:Organization a owl:Class ;
-    rdfs:label "Organisation"@de,
-        "Organization"@en ;
-    rdfs:comment "Repräsentiert jede formelle Einheit, wie Unternehmen, Institutionen oder Vereinigungen, die im landwirtschaftlichen Bereich des Pflanzenschutzrahmens tätig sind."@de,
-        "Represents any formal entity, such as companies, institutions, or associations, involved in the agricultural sector within the crop protection framework."@en ;
-    rdfs:scopeNote "Diese Klasse ist zur Modellierung von Organisationen im Pflanzenschutz vorgesehen. Sofern möglich, sollten Instanzen aus dem Schweizer zentralen Firmenindex (Zefix) wiederverwendet werden, um Konsistenz und Integration mit bestehenden Schweizer Organisationsdaten zu gewährleisten."@de,
-        "This class is intended to model organizations involved in crop protection. Whenever possible, instances from the Swiss central company index (Zefix) should be reused to ensure consistency and integration with existing Swiss organizational data."@en .
-
-pp:BiologicalControlAgent a owl:Class ;
-    rdfs:label "Organismus für die biologische Schädlingsbekämpfung"@de,
-        "Biological control agent"@en ;
-    rdfs:subClassOf pp:CropProtectionProduct ;
-    owl:disjointWith pp:ChemicalProduct .
-
-pp:CropStressor a owl:Class ;
-    rdfs:label "Schadverursacher"@de,
-        "Crop stressor"@en ;
-    rdfs:comment "Repräsentiert jeden Faktor oder Agenten, der die Pflanzengesundheit, den Ertrag oder die Qualität im landwirtschaftlichen Rahmen negativ beeinflusst."@de,
-        "Represents any factor or agent that negatively impacts crop health, yield, or quality within the agricultural framework."@en ;
-    rdfs:scopeNote "Diese Klasse ist zur Modellierung verschiedener Stressoren vorgesehen, die Pflanzen betreffen, einschliesslich biotischer und abiotischer Elemente, um die Identifizierung und das Management von Faktoren zu erleichtern, die die landwirtschaftliche Produktivität beeinträchtigen."@de,
-        "This class is intended to model various stressors affecting crops, including both biotic and abiotic elements, facilitating the identification and management of factors that compromise agricultural productivity."@en .
-
-pp:ChemicalCropProtectionProduct a owl:Class ;
-    rdfs:label "Chemisches Pflanzenschutzmittel"@de,
-        "Chemical crop protection product"@en ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( pp:CropProtectionProduct pp:ChemicalProduct ) ] .
-
-pp:Substance a owl:Class ;
-    rdfs:label "Wirkstoff"@de,
-        "Substance"@en ;
-    rdfs:comment "Eine chemische Substanz, die entweder eine reine Substanz oder ein Gemisch aus anderen Substanzen sein kann. Jede Substanz kann mit höchstens einer CheBI-Chemikalie verknüpft sein."@de,
-        "A chemical substance, which may be either a pure substance or a mixture composed of other substances. Each substance can be associated with at most one CheBI chemical entity."@en ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty pp:hasChebiIdentity ] .
-
-pp:ChemicalProduct a owl:Class ;
-    rdfs:label "Chemisches Produkt"@de,
-        "Chemical product"@en ;
-    rdfs:comment "Jedes Produkt, das sich einigermassen gut durch seine (chemischen) Inhaltsstoffe beschreiben lässt."@de,
-        "Any product that can be reasonably well described by its (chemical) ingredients."@en ;
-    rdfs:subClassOf pp:Product .
-
-pp:CropGroup a owl:Class ;
-    rdfs:label "Landwirtschaftliche Kultur"@de,
-        "Crop"@en ;
-    rdfs:comment "Repräsentiert eine Kategorie von landwirtschaftlichen Pflanzen, die innerhalb des Pflanzenschutzrahmens gemeinsame Merkmale, Anbaumethoden oder Verwendungszwecke teilen."@de,
-        "Represents a category of agricultural plants that share common characteristics, cultivation methods, or purposes within the crop protection framework."@en ;
-    rdfs:scopeNote "Entwickelt zur Modellierung von Kulturgruppen, die aufgrund von Ähnlichkeiten in ihren biologischen Eigenschaften, Wachstumsanforderungen oder den für ihren Schutz eingesetzten Strategien gemeinsam bewirtschaftet werden."@de,
-        "Designed to model groups of crops that are managed collectively due to similarities in their biological attributes, growth requirements, or the strategies employed for their protection against stressors."@en .
-
-pp:Damage a owl:Class ;
-    rdfs:label "(Potenzieller) Schaden"@de,
-        "(Potential) Damage"@en ;
-    rdfs:comment "Repräsentiert den (potenziellen) Schaden, die einer spezifischen Kultur durch einen spezifischen Stressor zugefügt werden kann."@de,
-        "Represents the adverse effects or harm (potentially) inflicted upon a specific crop due to a specific stressor."@en .
-
-pp:Product a owl:Class ;
-    rdfs:label "Produkt"@de,
-        "Product"@en ;
-    rdfs:comment "Repräsentiert jedes Element im Rahmen des Pflanzenschutzes, das mit einer eidgenössischen Zulassungsnummer registriert ist und spezifische Berechtigungen hinsichtlich der nicht-beruflichen Verwendung aufweist."@de,
-        "Represents any item within the crop protection framework that is registered with a federal admission number and has specified permissions regarding non-professional use."@en ;
-    rdfs:scopeNote "Diese Klasse ist für die Modellierung aller Pflanzenschutzmittel vorgesehen, die eine eidgenössische Registrierung erfordern und Einschränkungen oder Berechtigungen für die nicht-berufliche Nutzung gemäss den Schweizer Vorschriften aufweisen können."@de,
-        "This class is intended for modeling all crop protection products requiring federal registration and that may have restrictions or allowances for non-professional usage as defined by Swiss regulations."@en ;
-    owl:equivalentClass [ a owl:Restriction ;
-            owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty pp:isNonProfessionallyAllowed ],
-        [ a owl:Restriction ;
-            owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty pp:hasFederalAdmissionNumber ] .
+pp:Safener rdfs:label "Safener"@de,
+        "Safener"@en ;
+    rdfs:subClassOf pp:Substance .
 
