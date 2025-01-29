@@ -1,4 +1,1 @@
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix sm: <https://agriculture.ld.admin.ch/foag/system-map#> .
 
