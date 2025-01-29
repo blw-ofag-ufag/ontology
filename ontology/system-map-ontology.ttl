@@ -10,135 +10,136 @@ systemmap: a owl:Ontology ;
         "An ontology to model organizations, IT systems and data for the Swiss Federal Office for Agriculture FOAG."@en ;
     dcterms:title "DigiAgriFoodCH Systemlandkarte"@de,
         "DigiAgriFoodCH System Map"@en ;
-    owl:versionInfo "0.2.1" .
+    owl:versionInfo "0.2.2" .
 
-systemmap:SensitivePersonalInformation a owl:Class ;
+systemmap:CLS005 a owl:Class ;
     rdfs:label "Informationseinheit mit besonders schützenswerten Personendaten"@de,
         "Information unit containing sensitive personal data"@en ;
     rdfs:seeAlso <https://www.fedlex.admin.ch/eli/oc/2022/491/de#art_5> ;
-    rdfs:subClassOf systemmap:PersonalInformation .
-
-systemmap:contains a owl:ObjectProperty ;
-    rdfs:label "beinhaltet"@de,
-        "contains"@en ;
-    rdfs:comment "Indicates that an IT system X contains the information unit Y. For example, AGIS contains information about farming area in Switzerland."@en,
-        "Gibt an, dass ein IT-System X die Informationseinheit Y enthält. Beispielsweise enthält AGIS Informationen über landwirtschaftliche Flächen in der Schweiz."@de ;
-    rdfs:domain systemmap:System ;
-    rdfs:range systemmap:Information ;
-    owl:inverseOf systemmap:isContainedIn .
-
-systemmap:isContainedIn a owl:ObjectProperty ;
-    rdfs:label "beinhaltet"@de,
-        "contains"@en ;
-    rdfs:comment "Indicates that an information unit X is contained in the IT system Y. For example, information about farming area in Switzerland is contained in AGIS."@en,
-        "Gibt an, dass eine Informationseinheit X im IT-System Y enthalten ist. Beispielsweise sind Informationen über landwirtschaftliche Flächen in der Schweiz in AGIS enthalten."@de ;
-    rdfs:domain systemmap:System ;
-    rdfs:range systemmap:Information ;
-    owl:inverseOf systemmap:contains .
+    rdfs:subClassOf systemmap:CLS004 .
 
 systemmap:derives a owl:ObjectProperty ;
     rdfs:label "leitet ab von"@de,
         "derives"@en ;
-    rdfs:domain systemmap:Information ;
-    rdfs:range systemmap:Information ;
-    owl:inverseOf systemmap:derivedFrom .
-
-systemmap:derivedFrom a owl:ObjectProperty ;
-    rdfs:label "ist abgeleitet von"@de,
-        "is derived from"@en ;
-    rdfs:domain systemmap:Information ;
-    rdfs:range systemmap:Information ;
+    rdfs:domain systemmap:CLS003 ;
+    rdfs:range systemmap:CLS003 ;
     owl:inverseOf systemmap:derivedFrom .
 
 systemmap:isOperatedBy a owl:ObjectProperty ;
     owl:inverseOf systemmap:operates .
 
-systemmap:memberOf a owl:ObjectProperty ;
-    rdfs:label "ist eine Mitgliedsorganisation von"@de,
-        "is a member organization of"@en ;
-    rdfs:comment "Gibt an, dass eine Organisation X eine Mitgliedsorganisation einer anderen Organisation Y ist. Die Beziehung soll Mitgliedschaften von Branchenorganisationen, Berufsverbänden oder anderen formelle Vereinigungen darzustellen, bei denen Organisationen als Mitglieder teilnehmen. Informelle Beziehungen gehören nicht dazu."@de,
-        "Indicates that an organization X is a member organization of another organization Y. The relationship is used to represent memberships of industry organizations, professional associations, or other formal associations in which organizations participate as members. Informal relationships are not included."@en ;
-    rdfs:domain systemmap:Organization ;
-    rdfs:range systemmap:Organization ;
-    owl:inverseOf systemmap:hasMember .
-
-systemmap:hasMember a owl:ObjectProperty ;
-    rdfs:label "hat Mitgliederorganisationen"@de,
-        "has memeber organizations"@en ;
-    rdfs:comment "Gibt an, dass eine Organisation X eine andere Organisation Y als Mitgliedsorganisation hat. Diese Beziehung soll Mitgliedschaften von Branchenorganisationen, Berufsverbänden oder anderen formelle Vereinigungen darzustellen, bei denen Organisationen als Mitglieder teilnehmen. Informelle Beziehungen gehören nicht dazu."@de,
-        "Indicates that an organization X has another organization Y as a member organization. This relationship is used to represent memberships of industry organizations, professional associations, or other formal associations in which organizations participate as members. Informal relationships are not included."@en ;
-    rdfs:domain systemmap:Organization ;
-    rdfs:range systemmap:Organization ;
-    owl:inverseOf systemmap:memberOf .
-
 systemmap:organizationAbbreviation a owl:DatatypeProperty ;
     rdfs:label "Organisationsabkürzung"@de,
         "Organization abbreviation"@en ;
-    rdfs:domain systemmap:Organization ;
+    rdfs:domain systemmap:CLS001 ;
     rdfs:range xsd:string .
 
 systemmap:subOrganization a owl:ObjectProperty,
         owl:TransitiveProperty ;
     rdfs:label "beinhaltet Suborganisation"@de,
         "contains Suborganization"@en ;
-    rdfs:domain systemmap:Organization ;
-    rdfs:range systemmap:Organization ;
+    rdfs:domain systemmap:CLS001 ;
+    rdfs:range systemmap:CLS001 ;
     owl:inverseOf systemmap:superOrganization .
 
 systemmap:systemAbbreviation a owl:DatatypeProperty ;
     rdfs:label "Abkürzung des IT-Systems"@de,
         "System abbreviation"@en ;
-    rdfs:domain systemmap:System ;
+    rdfs:domain systemmap:CLS002 ;
     rdfs:range xsd:string .
 
-systemmap:PersonalInformation a owl:Class ;
+systemmap:CLS004 a owl:Class ;
     rdfs:label "Informationseinheit mit Personendaten"@de,
         "Information unit containing personal data"@en ;
     rdfs:seeAlso <https://www.fedlex.admin.ch/eli/oc/2022/491/de#art_5> ;
-    rdfs:subClassOf systemmap:Information .
+    rdfs:subClassOf systemmap:CLS003 .
+
+systemmap:contains a owl:ObjectProperty ;
+    rdfs:label "beinhaltet"@de,
+        "contains"@en ;
+    rdfs:comment "Gibt an, dass ein IT-System X die Informationseinheit Y enthält. Beispielsweise enthält AGIS Informationen über landwirtschaftliche Flächen in der Schweiz."@de,
+        "Indicates that an IT system X contains the information unit Y. For example, AGIS contains information about farming area in Switzerland."@en ;
+    rdfs:domain systemmap:CLS002 ;
+    rdfs:range systemmap:CLS003 ;
+    owl:inverseOf systemmap:isContainedIn .
+
+systemmap:hasMember a owl:ObjectProperty ;
+    rdfs:label "hat Mitgliederorganisationen"@de,
+        "has memeber organizations"@en ;
+    rdfs:comment "Gibt an, dass eine Organisation X eine andere Organisation Y als Mitgliedsorganisation hat. Diese Beziehung soll Mitgliedschaften von Branchenorganisationen, Berufsverbänden oder anderen formelle Vereinigungen darzustellen, bei denen Organisationen als Mitglieder teilnehmen. Informelle Beziehungen gehören nicht dazu."@de,
+        "Indicates that an organization X has another organization Y as a member organization. This relationship is used to represent memberships of industry organizations, professional associations, or other formal associations in which organizations participate as members. Informal relationships are not included."@en ;
+    rdfs:domain systemmap:CLS001 ;
+    rdfs:range systemmap:CLS001 ;
+    owl:inverseOf systemmap:memberOf .
+
+systemmap:isContainedIn a owl:ObjectProperty ;
+    rdfs:label "beinhaltet"@de,
+        "contains"@en ;
+    rdfs:comment "Gibt an, dass eine Informationseinheit X im IT-System Y enthalten ist. Beispielsweise sind Informationen über landwirtschaftliche Flächen in der Schweiz in AGIS enthalten."@de,
+        "Indicates that an information unit X is contained in the IT system Y. For example, information about farming area in Switzerland is contained in AGIS."@en ;
+    rdfs:domain systemmap:CLS002 ;
+    rdfs:range systemmap:CLS003 ;
+    owl:inverseOf systemmap:contains .
+
+systemmap:memberOf a owl:ObjectProperty ;
+    rdfs:label "ist eine Mitgliedsorganisation von"@de,
+        "is a member organization of"@en ;
+    rdfs:comment "Gibt an, dass eine Organisation X eine Mitgliedsorganisation einer anderen Organisation Y ist. Die Beziehung soll Mitgliedschaften von Branchenorganisationen, Berufsverbänden oder anderen formelle Vereinigungen darzustellen, bei denen Organisationen als Mitglieder teilnehmen. Informelle Beziehungen gehören nicht dazu."@de,
+        "Indicates that an organization X is a member organization of another organization Y. The relationship is used to represent memberships of industry organizations, professional associations, or other formal associations in which organizations participate as members. Informal relationships are not included."@en ;
+    rdfs:domain systemmap:CLS001 ;
+    rdfs:range systemmap:CLS001 ;
+    owl:inverseOf systemmap:hasMember .
 
 systemmap:operates a owl:ObjectProperty ;
     rdfs:label "betreibt"@de,
         "operates"@en ;
     rdfs:comment "Diese Beziehung zeigt an, dass Organisation X für das Betriebssystem Y verantwortlich ist. Wenn Organisation Y den Betrieb eines Systems X an einen Dienstleister Z auslagert, verwenden Sie weiterhin diese Betriebsbeziehung zwischen X und Y, da sie eher die Verantwortlichkeit als den technischen Betrieb widerspiegelt. Die Beziehung ist auf niedrigstmöglicher Organisationsebene zu verwenden."@de,
         "This relationship indicates that organization X is in charge of operating system Y. If organization Y outsources the operation of a system X to a service provider Z, still use this operating relationship between X and Y since it reflects responsability rather than technical operation. Also, use this on the lowest organizational level possible."@en ;
-    rdfs:domain systemmap:Organization ;
-    rdfs:range systemmap:System .
+    rdfs:domain systemmap:CLS001 ;
+    rdfs:range systemmap:CLS002 .
 
 systemmap:ownedBy a owl:ObjectProperty ;
     rdfs:label "ist (teilweise) in Besitz von"@de,
         "is (partially) owned by"@en ;
-    rdfs:domain systemmap:Organization ;
-    rdfs:range systemmap:Organization ;
+    rdfs:domain systemmap:CLS001 ;
+    rdfs:range systemmap:CLS001 ;
     owl:inverseOf systemmap:owns .
 
 systemmap:owns a owl:ObjectProperty ;
     rdfs:label "besitzt (teilweise)"@de,
         "(partially) owns"@en ;
-    rdfs:domain systemmap:Organization ;
-    rdfs:range systemmap:Organization ;
+    rdfs:domain systemmap:CLS001 ;
+    rdfs:range systemmap:CLS001 ;
     owl:inverseOf systemmap:ownedBy .
 
 systemmap:superOrganization a owl:ObjectProperty,
         owl:TransitiveProperty ;
     rdfs:label "ist Teil von"@de,
         "is a part of"@en ;
-    rdfs:domain systemmap:Organization ;
-    rdfs:range systemmap:Organization .
+    rdfs:domain systemmap:CLS001 ;
+    rdfs:range systemmap:CLS001 .
 
-systemmap:System a owl:Class ;
+systemmap:derivedFrom a owl:ObjectProperty ;
+    rdfs:label "ist abgeleitet von"@de,
+        "is derived from"@en ;
+    rdfs:domain systemmap:CLS003 ;
+    rdfs:range systemmap:CLS003 ;
+    owl:inverseOf systemmap:derivedFrom .
+
+systemmap:CLS002 a owl:Class ;
     rdfs:label "IT-System"@de,
         "IT system"@en ;
     rdfs:comment "Jedes IT-System (im abstrakten Sinne) mit einer oder mehreren Datenbanken. Beispiele für solche Systeme sind AGIS, das BI-System ASTAT des BLW oder die kantonalen IT-Systeme für die Landwirtschaft."@de,
         "Any IT system (in a abstracted sense) with one or many databases. Examples for such systems would be AGIS, the FOAG BI system ASTAT, or the cantonal agricultural IT systems."@en .
 
-systemmap:Information a owl:Class ;
+systemmap:CLS003 a owl:Class ;
     rdfs:label "Informationseinheit"@de,
         "Information unit"@en ;
-    rdfs:comment "A piece of information in an IT system. Could be anything, really."@en .
+    rdfs:comment "Eine Information in einem IT-System. Das kann wirklich alles Mögliche sein."@de,
+        "A piece of information in an IT system. Could be anything, really."@en .
 
-systemmap:Organization a owl:Class ;
+systemmap:CLS001 a owl:Class ;
     rdfs:label "Organisation"@de,
         "Organization"@en ;
-    rdfs:comment "Eine (juristische) Einheit wie ein Unternehmen, eine Behörde oder eine Non-Profit-Organisation oder eine Untereinheit einer solchen."@de .
-
+    rdfs:comment "Eine (juristische) Einheit wie ein Unternehmen, eine Behörde oder eine Non-Profit-Organisation oder eine Untereinheit einer solchen."@de,
+        "A (legal) entity such as a company, agency or non-profit organization, or a subunit of such an entity."@en .
