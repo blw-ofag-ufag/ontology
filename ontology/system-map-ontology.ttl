@@ -34,6 +34,36 @@ systemmap:CLS005 a owl:Class ;
     rdfs:seeAlso <https://www.fedlex.admin.ch/eli/oc/2022/491/de#art_5> ;
     rdfs:subClassOf systemmap:CLS004 .
 
+systemmap:CLS006 a owl:Class ;
+    rdfs:label "Öffentlich-rechtliche Organisation"@de,
+        "Public-sector organization"@en ;
+    rdfs:subClassOf systemmap:CLS001 .
+
+systemmap:CLS007 a owl:Class ;
+    rdfs:label "Privatrechtliche Organisation"@de,
+        "Private-sector organization"@en ;
+    rdfs:subClassOf systemmap:CLS001 .
+
+systemmap:CLS008 a owl:Class ;
+    rdfs:label "Organisation des Bundes"@de,
+        "Federal organization"@en ;
+    rdfs:subClassOf systemmap:CLS006 .
+
+systemmap:CLS009 a owl:Class ;
+    rdfs:label "Kantonale Organisation"@de,
+        "Cantonal organization"@en ;
+    rdfs:subClassOf systemmap:CLS006 .
+
+systemmap:CLS010 a owl:Class ;
+    rdfs:label "Landwirtschaftsamt eines Kantons"@de,
+        "Cantonal agricultural office"@en ;
+    rdfs:subClassOf systemmap:CLS009 .
+
+systemmap:CLS011 a owl:Class ;
+    rdfs:label "Kantonale Beratungsstelle"@de,
+        "Cantonal advice center"@en ;
+    rdfs:subClassOf systemmap:CLS009 .
+
 systemmap:PRP101 a owl:DatatypeProperty ;
     rdfs:label "Organisationsabkürzung"@de,
         "Organization abbreviation"@en ;
