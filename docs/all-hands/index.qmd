@@ -9,9 +9,7 @@ format:
     controls: true
 ---
 
-##  {background-image="https://fal.media/files/kangaroo/C1hMxfKsHRKhaHESP_NWA_b34d0d2a660040138c18a0af89f0b6ca.jpg" background-color="black"}
-
-## {background-iframe="https://www.psm.admin.ch/de/suche" background-interactive="true"}
+## {background-iframe="https://www.psm.admin.ch/de/produkte/2044-2" background-interactive="true"}
 
 ## Vollständige Liste der Auflagen
 
@@ -25,5 +23,3 @@ format:
 ```{=html}
 <iframe src="https://datawrapper.dwcdn.net/g4VJe/1/" width="100%", height="100%"></iframe>
 ```
-
-##  {background-image="https://fal.media/files/tiger/H7fRFLzdMHkTXrKYSXGQx_c34c9626330443bb8eb125b6f67a0ff0.jpg" background-color="black"}
