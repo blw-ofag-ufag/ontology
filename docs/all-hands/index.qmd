@@ -1,4 +1,8 @@
 ---
+title: Clustering der Auflagen aus dem PSM-Verzeichnis
+date: today
+date-format: long
+lang: de
 format:
   revealjs:
     theme: [resources/custom.scss]
